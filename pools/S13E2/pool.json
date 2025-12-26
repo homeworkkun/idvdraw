@@ -1,0 +1,376 @@
+{
+  "id": "S13E2",
+  "name": "第13赛季·精华2",
+  "essenceImage": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+  "diff_A": 2,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "Checkmate",
+        "img": "./img/dkkc4kdplzcvyovbco24pocmz23v8x3.png",
+        "type": "时装",
+        "description": "王车易位，会是致胜一步么？\n（【限定】时装，仅能在第十三赛季精华2中获得）",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "Re-Swim",
+        "img": "./img/7j78zsqtw5wqpzuyvxje5he8ijog8a2.png",
+        "type": "时装",
+        "description": "你喜欢泳道尽头的欢呼，还是喜欢碧波之下的安宁？",
+        "repeat": 1000
+      },
+      {
+        "name": "En ligne",
+        "img": "./img/k58xdei36xmka6lkg8c3e5eitnumfe7.png",
+        "type": "时装",
+        "description": "做好刺破幻梦的准备了么？",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "决胜日",
+        "img": "./img/6btyj9aymgsy9jete9lcu4w7gv98fqe.png",
+        "type": "时装",
+        "description": "这一次，谁会是那个受到胜利女神青睐的幸运儿呢？",
+        "repeat": 200
+      },
+      {
+        "name": "胜负手",
+        "img": "./img/hgax2sora84h6hj7ovkrcljfnhlxipd.png",
+        "type": "时装",
+        "description": "胜负由什么决定?天赋?努力?运气?还是冥冥之中，无形之手?",
+        "repeat": 200
+      },
+      {
+        "name": "直拳",
+        "img": "./img/a6ouk5k86kwi5hj6ommrbkwvm32zh87.png",
+        "type": "时装",
+        "description": "再次踏上拳台之前，也许该问问自己，是否有击倒过去的勇气。",
+        "repeat": 200
+      },
+      {
+        "name": "五光",
+        "img": "./img/qo8ndfeeihuxujijdyb9fhcyamvc7et.png",
+        "type": "时装",
+        "description": "松上鹤，樱上幕，芒上月，桐上凤凰，柳间……",
+        "repeat": 200
+      },
+      {
+        "name": "暴投",
+        "img": "./img/6dfdghg9sp7xa847jmoas97nnykic0i.png",
+        "type": "时装",
+        "description": "九局下半，投手准备",
+        "repeat": 200
+      },
+      {
+        "name": "快步",
+        "img": "./img/im3rzrzmy7t59qdc407pmxu459eidcc.png",
+        "type": "时装",
+        "description": "优秀的骑手，目之所及没有超越的对手，没有落马的风险，只有鲜花与荣誉的终点。",
+        "repeat": 200
+      },
+      {
+        "name": "摄影师-威胁",
+        "img": "./img/dnofeff0gjnmtqp5r8ac354xyjcckh0.png",
+        "type": "个性动作",
+        "description": "威胁动作，摄影师专属",
+        "repeat": 200
+      },
+      {
+        "name": "黄衣之主-威胁",
+        "img": "./img/dnofeff0gjnmtqp5r8ac354xyjcckh0.png",
+        "type": "个性动作",
+        "description": "威胁动作，黄衣之主专属",
+        "repeat": 200
+      },
+      {
+        "name": "疯眼-威胁",
+        "img": "./img/dnofeff0gjnmtqp5r8ac354xyjcckh0.png",
+        "type": "个性动作",
+        "description": "威胁动作，疯眼专属",
+        "repeat": 200
+      },
+      {
+        "name": "爱哭鬼-大笑",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "爱哭鬼专属匹配大厅等待动作，大笑",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "低调黄",
+        "img": "./img/ij85yvnteia311xcfqrwmq384yfywsu.png",
+        "type": "时装",
+        "description": "做好隐藏，保持低调！",
+        "repeat": 36
+      },
+      {
+        "name": "平和黄",
+        "img": "./img/1682tf3k42gdhz2ecca1jnnjee0andj.png",
+        "type": "时装",
+        "description": "见多了生死，内心也变得波澜不惊了。",
+        "repeat": 36
+      },
+      {
+        "name": "紫曲",
+        "img": "./img/rruav0vib5nw3f2so8r8tu32x3kqton.png",
+        "type": "时装",
+        "description": "伴随舞曲悦动的紫色身影，令人迷醉。",
+        "repeat": 36
+      },
+      {
+        "name": "黄泥沙",
+        "img": "./img/ah13wmqri9ldb0cnk33non8pqsntpei.png",
+        "type": "时装",
+        "description": "这件衣服不容易脏，至少看上去如此",
+        "repeat": 36
+      },
+      {
+        "name": "蓝水母",
+        "img": "./img/tgu7it6omp7rfc7g91dvwdn465g4fzg.png",
+        "type": "时装",
+        "description": "水母看似轻盈，贸然触碰可是会受伤的哦。",
+        "repeat": 36
+      },
+      {
+        "name": "绿面包",
+        "img": "./img/a2gkedvsreg54e4e3d84brzij5xxbaq.png",
+        "type": "时装",
+        "description": "发绿的面包能吃吗?对在里面的人这不是个问题。",
+        "repeat": 36
+      },
+      {
+        "name": "红枫叶",
+        "img": "./img/fcu4842enarh72y1nejafqzzbpt69hk.png",
+        "type": "时装",
+        "description": "枫叶变红，秋意转浓",
+        "repeat": 36
+      },
+      {
+        "name": "黑桅杆",
+        "img": "./img/h4qb3kdn7sdlxkpjy8r5hjg7z24lj0u.png",
+        "type": "时装",
+        "description": "坚固笔直的桅杆，传递胜利的讯息。",
+        "repeat": 36
+      },
+      {
+        "name": "绛月红",
+        "img": "./img/gepmnsu209s5sbj4xkhoxj5ycoipo1i.png",
+        "type": "时装",
+        "description": "在红月的照射下，她完成了人生的蜕变。",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，佣兵专属",
+        "repeat": 36
+      },
+      {
+        "name": "空军-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，空军专属",
+        "repeat": 36
+      },
+      {
+        "name": "先知-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，先知专属",
+        "repeat": 36
+      },
+      {
+        "name": "舞女-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，舞女专属",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "前锋匹配大厅动作，小憩 ",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "冒险家匹配大厅动作，准备 ",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "佣兵匹配大厅动作，准备 ",
+        "repeat": 36
+      },
+      {
+        "name": "律师-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "律师匹配大厅动作，准备 ",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "前锋匹配大厅动作，等待 ",
+        "repeat": 36
+      },
+      {
+        "name": "机械师遥控器-卡通",
+        "img": "./img/a83m1leq93voqjck6lcu4m6nwyhj2pc.png",
+        "type": "涂鸦",
+        "description": "机械师专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵兜帽-卡通",
+        "img": "./img/mp9vg1ro58g8ru73gihoxf1u0skalam.png",
+        "type": "涂鸦",
+        "description": "佣兵专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "鹿头号角-卡通",
+        "img": "./img/r20b9jpd5s9dmcclmkrl6i0qi2t8t8p.png",
+        "type": "涂鸦",
+        "description": "鹿头专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "“杰克”爪子-卡通",
+        "img": "./img/5sf9hxdgp9ygb3nltjcxxxgnwrhudkl.png",
+        "type": "涂鸦",
+        "description": "“杰克”专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-机械师",
+        "img": "./img/ky2otm71khnof8krmgn4ryulb22z5al.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-律师",
+        "img": "./img/2xehq0obxonaucm820wxr1t1xsd5srr.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-医生",
+        "img": "./img/55lzbc2np99jsgdo00wtu40irmoswrd.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "蜘蛛-灰影",
+        "img": "./img/nj6xl6vdqr2jjehnxq7duorwxyxb11l.png",
+        "type": "涂鸦",
+        "description": "蜘蛛专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "律师-灰影",
+        "img": "./img/npa5g6aj1klg4t7iychxsraw650arfh.png",
+        "type": "涂鸦",
+        "description": "律师专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "盲女-灰影",
+        "img": "./img/rs2ykyu2l8po51972nlbrmwf89p2s6p.png",
+        "type": "涂鸦",
+        "description": "盲女专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "魔术师-灰影",
+        "img": "./img/e8nfesyrdg8ry4udz6yo7os8h4de690.png",
+        "type": "涂鸦",
+        "description": "魔术师专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "调香师-灰影",
+        "img": "./img/dkzzfptdtu0k498xx177ih1cj21oqq0.png",
+        "type": "涂鸦",
+        "description": "调香师专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "佣兵-灰影",
+        "img": "./img/bz3mum4jniru314tkxwf7l3krm3e5kv.png",
+        "type": "涂鸦",
+        "description": "佣兵专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "祭司-剪影",
+        "img": "./img/bg46m2b3v4j39iewq857rjf8edayluq.png",
+        "type": "涂鸦",
+        "description": "祭司专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-冒险家",
+        "img": "./img/ctr29umihd1xhls9uvo2rnwuw02zfhm.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-舞女",
+        "img": "./img/r80b5bplzclav3if2bwztkgorli7iep.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-小丑",
+        "img": "./img/2ym5qpfhd1cy1ml4zi1ie9ex2x3ftc7.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-蜘蛛",
+        "img": "./img/nfxdtcg4kqe2e6836963iodlqfk9y6f.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      }
+    ]
+  }
+}

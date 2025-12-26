@@ -1,0 +1,476 @@
+{
+  "id": "jiyizhenbao",
+  "name": "记忆珍宝",
+  "essenceImage": "./img/ecnny7rta5r9ikhga20wlmiso4lv7fi.png",
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "金纹大触",
+        "img": "./img/5k4xyad3nu2ez9ylglcxf20pp71i028.png",
+        "type": "时装",
+        "description": "在融于奇诡雾色的过程中，他终于失去了原有的形体——“杰克”无处不及，无处不在……",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "绿纹大触",
+        "img": "./img/f34u82go3ll7zzmg8ccbztynsqmjuip.png",
+        "type": "时装",
+        "description": "这种原始的色泽连异化的雾都怪人都无法忍受，他正迫不及待地渴求一点猩红来点缀自己",
+        "repeat": 1000
+      },
+      {
+        "name": "白纹大触",
+        "img": "./img/a9dmv26fyay2j3x9dd7vg95739ae2yk.png",
+        "type": "时装",
+        "description": "这种原始的色泽连异化的雾都怪人都无法忍受，他正迫不及待地渴求一点猩红来点缀自己",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "月亮脸",
+        "img": "./img/tma2s9xb4dndwsj82ff25p3miepgg0c.png",
+        "type": "时装",
+        "description": "带上面具，换上皮衣，月夜之下，还有几个猎物在等自己呢?",
+        "repeat": 200
+      },
+      {
+        "name": "猩红",
+        "img": "./img/e4nszu7xqpmj71k1oh8kxcpbs79webp.png",
+        "type": "时装",
+        "description": "猩红的涂装警告着任何一个胆敢踏足猎场的不轨之人：不要轻易接近!",
+        "repeat": 200
+      },
+      {
+        "name": "探员",
+        "img": "./img/6255k5jha18t2ovoijfm3zx64a9csr4.png",
+        "type": "时装",
+        "description": "胸章上的简写只是一个伪装， 其真正的身份是MIB",
+        "repeat": 200
+      },
+      {
+        "name": "密语者",
+        "img": "./img/1dji1olwincywztkxtg8ukp1mvktewv.png",
+        "type": "时装",
+        "description": "谁都会好奇绷带之下的面容，但窥探之人最后只能体验到密语者用行动说话的利落",
+        "repeat": 200
+      },
+      {
+        "name": "木偶比利",
+        "img": "./img/l88l9481zwj7u1aogtxgza50q017y02.png",
+        "type": "时装",
+        "description": "有只木偶爱游戏，它的名字是比利，它的故事很诡异",
+        "repeat": 200
+      },
+      {
+        "name": "画师",
+        "img": "./img/4dk8epq5g167otfmkdhpgv24tzo7c8w.png",
+        "type": "时装",
+        "description": "每个人都会有梦想和追求，但是…克利切…画家？但愿不会又是一出装模作样的闹剧",
+        "repeat": 200
+      },
+      {
+        "name": "刺客披风",
+        "img": "./img/8xl9dr0f7bg51c7164pa46ff81echk1.png",
+        "type": "时装",
+        "description": "说真的，如果想低调行事达成隐秘任务，这一套装扮真不是个好的选择",
+        "repeat": 200
+      },
+      {
+        "name": "“杰克”-大笑",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "“杰克”匹配大厅动作，大笑",
+        "repeat": 200
+      },
+      {
+        "name": "小丑-大笑",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "小丑匹配大厅动作，大笑",
+        "repeat": 200
+      },
+      {
+        "name": "鹿头-大笑",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "鹿头匹配大厅动作，大笑",
+        "repeat": 200
+      },
+      {
+        "name": "厂长-大笑",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "厂长匹配大厅动作，大笑",
+        "repeat": 200
+      },
+      {
+        "name": "观察者",
+        "img": "./img/2qtmps61ochb52u203l0xo87rc4o2vg.png",
+        "type": "随从",
+        "description": "一个会记录你一举一动的玩意儿，你确定它不是监管者派来的?",
+        "repeat": 200
+      },
+      {
+        "name": "夜莺小姐",
+        "img": "./img/by5rrmi21epcnrxv7cch2ifn1wtitla.png",
+        "type": "随从",
+        "description": "夜莺小姐…是存在于幻象大厅的你吗？",
+        "repeat": 200
+      },
+      {
+        "name": "求生者-强烈节拍",
+        "img": "./img/fudpejklh59c0wecbv829rli3obob2o.png",
+        "type": "追击音乐",
+        "description": "求生者阵营的追击音乐",
+        "repeat": 200
+      },
+      {
+        "name": "监管者-强烈节拍",
+        "img": "./img/tdhomemhuwukfs4ay8501jir3o7z73o.png",
+        "type": "追击音乐",
+        "description": "监管者阵营的追击音乐",
+        "repeat": 200
+      },
+      {
+        "name": "求生者-黑色幽默",
+        "img": "./img/fudpejklh59c0wecbv829rli3obob2o.png",
+        "type": "追击音乐",
+        "description": "求生者阵营的追击音乐",
+        "repeat": 200
+      },
+      {
+        "name": "监管者-黑色幽默",
+        "img": "./img/tdhomemhuwukfs4ay8501jir3o7z73o.png",
+        "type": "追击音乐",
+        "description": "监管者阵营的追击音乐",
+        "repeat": 200
+      },
+      {
+        "name": "求生者-诡异乐园",
+        "img": "./img/fudpejklh59c0wecbv829rli3obob2o.png",
+        "type": "追击音乐",
+        "description": "求生者阵营的追击音乐",
+        "repeat": 200
+      },
+      {
+        "name": "监管者-诡异乐园",
+        "img": "./img/tdhomemhuwukfs4ay8501jir3o7z73o.png",
+        "type": "追击音乐",
+        "description": "监管者阵营的追击音乐",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "魔术师-挑衅",
+        "type": "个性动作",
+        "description": "挑衅动作，魔术师专属",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "repeat": 36
+      },
+      {
+        "name": "空军-挑衅",
+        "type": "个性动作",
+        "description": "挑衅动作，空军专属",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "repeat": 36
+      },
+      {
+        "name": "空军-躺地",
+        "type": "个性动作",
+        "description": "躺地动作，空军专属",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "repeat": 36
+      },
+      {
+        "name": "寂静闹钟",
+        "img": "./img/hud9omav51twp1jos8ffikrw1u1ksyr.png",
+        "type": "随从",
+        "description": "警告：随时可能响起!",
+        "repeat": 36
+      },
+      {
+        "name": "留声机",
+        "img": "./img/c07gr5x8cq1xxszm6bm805hoj1utlrm.png",
+        "type": "随从",
+        "description": "发出的声音都会被收录下来，如果能带着它逃出去，这段录音应该会很珍贵。",
+        "repeat": 36
+      },
+      {
+        "name": "蓝蝶",
+        "img": "./img/0hf4yyew4ih9enrx9e4jjq2jyrbzq88.png",
+        "type": "随从",
+        "description": "美丽的蓝蝶，会给予求生者心灵上的慰藉",
+        "repeat": 36
+      },
+      {
+        "name": "鹿头-卡通",
+        "img": "./img/7l6ciudvtiinz6qur9a8zmdgtk4u5np.png",
+        "type": "涂鸦",
+        "description": "鹿头专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "“杰克”-卡通",
+        "img": "./img/p81hdrlrr8o5q5fxbcbw4kds9l8scht.png",
+        "type": "涂鸦",
+        "description": "“杰克”专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "小丑-卡通",
+        "img": "./img/5a6xbwrbi4ey8c7kavbv92vz4we3bj1.png",
+        "type": "涂鸦",
+        "description": "小丑专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "医生-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "医生匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "园丁-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "园丁匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "佣兵匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "“慈善家”匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "律师-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "律师匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "冰蓝",
+        "img": "./img/2jgtcmebdv8us3mav1p19hqwvnrp2e4.png",
+        "type": "时装",
+        "description": "冰蓝的染料，与鹿头的冷酷内心非常契合",
+        "repeat": 36
+      },
+      {
+        "name": "大红袍",
+        "img": "./img/gn2rjeutjs8uliwgx87ekb5xesgdhke.png",
+        "type": "时装",
+        "description": "有未经证实的秘传：身着红袍在行业的地位，可是无法企及的",
+        "repeat": 36
+      },
+      {
+        "name": "宝石蓝",
+        "img": "./img/fqpzxekbnp621s7iv1k7maoc7t50jx2.png",
+        "type": "时装",
+        "description": "蓝色代表着可靠与才干",
+        "repeat": 36
+      },
+      {
+        "name": "赤脸",
+        "img": "./img/6me5gu025to1a7yaervfbuitm48tj2u.png",
+        "type": "时装",
+        "description": "遭受到无尽嘲弄的小丑，满脸都是愤怒!",
+        "repeat": 36
+      },
+      {
+        "name": "桃心粉",
+        "img": "./img/ivff271x3kglgpf1zogbjgnox6jhpc8.png",
+        "type": "时装",
+        "description": "桃花朵，桃金娘，樱花瓣~~",
+        "repeat": 36
+      },
+      {
+        "name": "亮铜爵",
+        "img": "./img/l53iqp2gcmrjxstb2a35rx9ke9jf0ul.png",
+        "type": "时装",
+        "description": "红色代表警告，绿色意寓安然，而黄色却最令人躁动不安",
+        "repeat": 36
+      },
+      {
+        "name": "回忆粉",
+        "img": "./img/5al0qbgcwwxrlbpc9w4wc4lgqecj7la.png",
+        "type": "时装",
+        "description": "暮年也不会放弃心中粉红的回忆",
+        "repeat": 36
+      },
+      {
+        "name": "明焰红",
+        "img": "./img/gnye51cnrfn7y582wftru699zbugudw.png",
+        "type": "时装",
+        "description": "疾如风，徐如林，侵掠如火",
+        "repeat": 36
+      },
+      {
+        "name": "紫石英",
+        "img": "./img/5spiu0pvuna9d7ao3iud8ybptnfz2tm.png",
+        "type": "时装",
+        "description": "紫石英听说是能作为药用的矿石，价值也不小",
+        "repeat": 36
+      },
+      {
+        "name": "草莓红",
+        "img": "./img/h24wu3m7rj726nqlze5beqec7egewl7.png",
+        "type": "时装",
+        "description": "白芝麻，红心粒，甜香汁~~",
+        "repeat": 36
+      },
+      {
+        "name": "甜杏黄",
+        "img": "./img/9u372yevojkaw7cydx31vt9dngy662l.png",
+        "type": "时装",
+        "description": "啊，这甘美的味道充满清甜芬芳",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "“慈善家”-剪影",
+        "type": "涂鸦",
+        "description": "“慈善家”专属涂鸦，剪影",
+        "img": "./img/6n8wrwfhu9her22e4q4wv1p9gzemhtu.png",
+        "repeat": 6
+      },
+      {
+        "name": "魔术师-剪影",
+        "type": "涂鸦",
+        "description": "魔术师专属涂鸦，剪影",
+        "img": "./img/33qyy967ttk8sve7m40moez2u2uxuvj.png",
+        "repeat": 6
+      },
+      {
+        "name": "园丁-剪影",
+        "type": "涂鸦",
+        "description": "园丁专属涂鸦，剪影",
+        "img": "./img/hdcbnm7xv7195qrcny1o6kz2013okbi.png",
+        "repeat": 6
+      },
+      {
+        "name": "厂长-剪影",
+        "type": "涂鸦",
+        "description": "厂长专属涂鸦，剪影",
+        "img": "./img/tevubygyz93td5paovsss73nsziot8l.png",
+        "repeat": 6
+      },
+      {
+        "name": "“杰克”-剪影",
+        "type": "涂鸦",
+        "description": "“杰克”专属涂鸦，剪影",
+        "img": "./img/of4cwpkun99j9sayxqm5tztn7ssz262.png",
+        "repeat": 6
+      },
+      {
+        "name": "小丑-剪影",
+        "type": "涂鸦",
+        "description": "小丑专属涂鸦，剪影",
+        "img": "./img/pjor4fpa3nl5dsqq2p4qrtreusjnajb.png",
+        "repeat": 6
+      },
+      {
+        "name": "工具箱-彩底",
+        "type": "涂鸦",
+        "description": "工具箱涂鸦，彩底",
+        "img": "./img/t8ygcqdpitghb3qtxs3gfs0aqx8t1ut.png",
+        "repeat": 6
+      },
+      {
+        "name": "快回来",
+        "type": "个性动作",
+        "description": "让队友快回来的动作",
+        "img": "./img/6bhm3wmfineaex5ff7oit7xkzmpsto5.png",
+        "repeat": 6
+      },
+      {
+        "name": "前锋",
+        "type": "头像",
+        "description": "前锋的基础头像",
+        "img": "./img/h0jmmd7c1u7cifkm2yr4t8w8g70ub8c.png",
+        "repeat": 6
+      },
+      {
+        "name": "机械师",
+        "type": "头像",
+        "description": "机械师的基础头像",
+        "img": "./img/6zkuttu5vx97sa8mlkqu5d0v4d2xqlt.png",
+        "repeat": 6
+      },
+      {
+        "name": "内测机械师",
+        "type": "头像",
+        "description": "内测机械师的基础头像",
+        "img": "./img/7xvs35rvn6r1s29terp2mqepy3vqcq2.png",
+        "repeat": 6
+      },
+      {
+        "name": "律师",
+        "type": "头像",
+        "description": "律师的基础头像",
+        "img": "./img/cbxei35nubp3owc3o557fmp1g4tugn1.png",
+        "repeat": 6
+      },
+      {
+        "name": "陌生人1号",
+        "type": "头像",
+        "description": "陌生人1号的基础头像",
+        "img": "./img/5zjw6puumpbiqet77acjcr3v6nwslnx.png",
+        "repeat": 6
+      },
+      {
+        "name": "园丁",
+        "type": "头像",
+        "description": "园丁的基础头像",
+        "img": "./img/k5n44gsphletfacsm14acyva1apnnt6.png",
+        "repeat": 6
+      },
+      {
+        "name": "月亮脸",
+        "type": "头像",
+        "description": "月亮脸的基础头像",
+        "img": "./img/n0ckt1ccf37vcjvzw3ftdteu7bcjvez.png",
+        "repeat": 6
+      },
+      {
+        "name": "侦探-吃惊",
+        "type": "头像",
+        "description": "侦探的萌版头像，吃惊",
+        "img": "./img/b0p6pv5tb6vm89t1fpzyo0yksmr8pga.png",
+        "repeat": 6
+      },
+      {
+        "name": "侦探-灵机一动",
+        "type": "头像",
+        "description": "侦探的萌版头像，灵机一动",
+        "img": "./img/e38wk292ums7ode23i1x5767kbjje40.png",
+        "repeat": 6
+      }
+    ]
+  },
+  "diff_A": 0,
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png"
+  }
+}

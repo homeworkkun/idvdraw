@@ -1,0 +1,77 @@
+{
+  "id": "lucky_dice_13",
+  "name": "幸运之骰·第13期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "日月相随": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/loxi775m5kxpuvysscrrd2wxjy37w6r.png",
+      "description": "遥遥相望，永生追随。",
+      "repeat": 200
+    },
+    "童真回忆": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/q9jtlxr2hbei9cy97d0ckuh6lmghbxp.png",
+      "description": "还记得童年的玩具吗?现在的你过得快乐吗?(通过2021“致童真的你”活动获得) ",
+      "repeat": 200
+    },
+    "野餐": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/r43sgpnl32gprnj2ta6r1s6qvqwsh3z.png",
+      "description": "天气这么好，忘掉烦恼，一起去野餐吧!(通过2021“致童真的你”活动获得) ",
+      "repeat": 6
+    },
+    "吃粽子": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/k7a7uyo9covijkrkx79kylos3fu6ec1.png",
+      "description": "端午节最重要的事就是吃粽子!(通过2021端午节活动获得) ",
+      "repeat": 6
+    },
+    "赛龙舟": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/44jm5iw92mgzabi41um9kxxmevw0p4v.png",
+      "description": "齐心协力才能划动龙舟。(通过2021端午节活动获得) ",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

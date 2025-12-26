@@ -1,0 +1,394 @@
+{
+  "id": "S22E2",
+  "name": "第22赛季·精华2",
+  "essenceImage": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+  "diff_A": 2,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [
+    {
+      "name": "-20%",
+      "rate": 0.8,
+      "chance": 0.03
+    },
+    {
+      "name": "-40%",
+      "rate": 0.6,
+      "chance": 0.015
+    }
+  ],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "试运者",
+        "img": "./img/kpvi1lgsf7moo5kas4wm0g6m0h1dymm.png",
+        "type": "时装",
+        "description": "生命并不公平，但游戏面前人人平等：一点或是六点，得失总是随机。( 【限定】时装，仅在第二十二赛季精华2中获得）",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "大师牌",
+        "img": "./img/l4dijwy3m48y25wf8f48r58rdmldny4.png",
+        "type": "时装",
+        "description": "擅长游戏者，最易沉沦于游戏",
+        "repeat": 1000
+      },
+      {
+        "name": "随机数",
+        "img": "./img/a0v40znnhzqwobk7oova9v71qd2ecqe.png",
+        "type": "时装",
+        "description": "最后会落在哪个数字呢？他最期待未知的结局。",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "三色无缘",
+        "img": "./img/qruhfzy0zg8uhix32suo43z06taq8sq.png",
+        "type": "时装",
+        "description": "缘分和时机缺一不可，错过一点便酿成无法弥补的败局。",
+        "repeat": 200
+      },
+      {
+        "name": "匣中惊喜",
+        "img": "./img/9hpqedmtk34ty5xdxrxu9zamxbp2y7u.png",
+        "type": "时装",
+        "description": "她告诉客人们，从箱子里拿出来的，未必都是好东西。",
+        "repeat": 200
+      },
+      {
+        "name": "执行人",
+        "img": "./img/mi0d4o27onu7lwttmmum0hsa8vivbum.png",
+        "type": "时装",
+        "description": "沉默的游戏场守门人，愿意为你提供这场游戏的入场券。",
+        "repeat": 200
+      },
+      {
+        "name": "出局",
+        "img": "./img/5oxm9cuhu3xvg1895q92mywq79jq4nm.png",
+        "type": "时装",
+        "description": "这和预计的结果不一样，但却是你自己的选择。",
+        "repeat": 200
+      },
+      {
+        "name": "幸运星",
+        "img": "./img/6ae9v14k1jao6uvhwxonwshfh17u1xx.png",
+        "type": "时装",
+        "description": "有句话说，运气是守恒的。",
+        "repeat": 200
+      },
+      {
+        "name": "病患-起舞",
+        "img": "./img/73nip7a7kcx0arn2v8y72o5xt153jyc.png",
+        "type": "个性动作",
+        "description": "起舞动作，病患专属",
+        "repeat": 200
+      },
+      {
+        "name": "“噩梦”-威胁",
+        "img": "./img/dnofeff0gjnmtqp5r8ac354xyjcckh0.png",
+        "type": "个性动作",
+        "description": "威胁动作，“噩梦”专属",
+        "repeat": 200
+      },
+      {
+        "name": "破轮-拜访",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "破轮专属匹配大厅等待动作，拜访",
+        "repeat": 200
+      },
+      {
+        "name": "小说家-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "小说家匹配大厅动作，小憩",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "平凡灰",
+        "img": "./img/47bgew6utc67g339kgmng0efe496hw6.png",
+        "type": "时装",
+        "description": "平平淡淡的人生有什么不好！",
+        "repeat": 36
+      },
+      {
+        "name": "紫罗兰",
+        "img": "./img/kpiflpo1sfdc1hi3uwoqu6ocv72tq72.png",
+        "type": "时装",
+        "description": "紫罗兰，风信子，薰衣草~~",
+        "repeat": 36
+      },
+      {
+        "name": "专注白",
+        "img": "./img/fabvxpyjyshj3jm3mwbrhmbhbkyr7id.png",
+        "type": "时装",
+        "description": "没有专注，就没有精品!",
+        "repeat": 36
+      },
+      {
+        "name": "幽静蓝",
+        "img": "./img/chpyas2owwi7brjdkogxg6robjfxhej.png",
+        "type": "时装",
+        "description": "即使在独处之时，也不能放松对自己的要求。",
+        "repeat": 36
+      },
+      {
+        "name": "天空蓝",
+        "img": "./img/pqak28if48xz62d87oxfejl8jcgnmgf.png",
+        "type": "时装",
+        "description": "草垛上空的天空曾是他美好的回忆。",
+        "repeat": 36
+      },
+      {
+        "name": "骄阳",
+        "img": "./img/sprkds8914i3qrlgb1n5mskv7uuuxra.png",
+        "type": "时装",
+        "description": "骄阳之下，谁还会回想起关于凛冬的往昔。",
+        "repeat": 36
+      },
+      {
+        "name": "夜宴灰",
+        "img": "./img/ih6dwh3r5s4jjmw6umpajgp16nad9uz.png",
+        "type": "时装",
+        "description": "即使是接待男爵，也要优雅从容",
+        "repeat": 36
+      },
+      {
+        "name": "红藻",
+        "img": "./img/bcn6uley7b4d30f2dj6h0jqffgiy81i.png",
+        "type": "时装",
+        "description": "旺盛的生机之下，湖泊已是一汪毒水。",
+        "repeat": 36
+      },
+      {
+        "name": "青苹果",
+        "img": "./img/ig7dp4zyatgzb1tlo88enyqz7zzgaum.png",
+        "type": "时装",
+        "description": "青苹果虽然酸涩，但等它成熟就已被别人摘走了",
+        "repeat": 36
+      },
+      {
+        "name": "严肃蓝",
+        "img": "./img/s7smh0clepavpl6q4ocfzkq258t4dap.png",
+        "type": "时装",
+        "description": "每一封信都会按时到达正确的地方!",
+        "repeat": 36
+      },
+      {
+        "name": "荒野白",
+        "img": "./img/bjfwqv89aw0i6mxac18eia9pnt1uo57.png",
+        "type": "时装",
+        "description": "在荒野上，没人听得到你的祈祷。",
+        "repeat": 36
+      },
+      {
+        "name": "调香师-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，调香师专属",
+        "repeat": 36
+      },
+      {
+        "name": "咒术师-欢呼",
+        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "type": "个性动作",
+        "description": "欢呼动作，咒术师专属",
+        "repeat": 36
+      },
+      {
+        "name": "勘探员-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，勘探员专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "入殓师-欢呼",
+        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "type": "个性动作",
+        "description": "欢呼动作，入殓师专属",
+        "repeat": 36
+      },
+      {
+        "name": "盲女-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "盲女匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "机械师-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "机械师匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "盲女-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "盲女匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "机械师-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "机械师匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "冒险家匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "26号守卫-个性",
+        "img": "./img/ocoo0kg5s1hd7xt69vjipcvb4pv8zyt.png",
+        "type": "涂鸦",
+        "description": "26号守卫专用涂鸦，默默地展示着她的个性宣言 ",
+        "repeat": 36
+      },
+      {
+        "name": "囚徒-个性",
+        "img": "./img/qouxafnnqaf3xr3zhggec4h3anbpzee.png",
+        "type": "涂鸦",
+        "description": "囚徒专用涂鸦，默默地展示着他的个性宣言",
+        "repeat": 36
+      },
+      {
+        "name": "牛仔-个性",
+        "img": "./img/8ji52lf3hcwiyfn2swh6gvj3hjmaj8t.png",
+        "type": "涂鸦",
+        "description": "牛仔专用涂鸦，默默地展示着他的个性宣言",
+        "repeat": 36
+      },
+      {
+        "name": "破轮-个性",
+        "img": "./img/iq9utio7hpknr483ls90iwjy420xmuc.png",
+        "type": "涂鸦",
+        "description": "破轮专用涂鸦，默默地展示着她的个性宣言",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-画家",
+        "img": "./img/5aofo3y5w17carmpeqqvkawl0epnbq7.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-击球手",
+        "img": "./img/nvus8hqopfnovujgfa43elzqd6dn1ua.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-玩具商",
+        "img": "./img/soefqj794uhy2ikbq6kwx99i4flq7ve.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "渔女-彩底",
+        "img": "./img/9b9ob2t41tlw07kh4b87slm9s17chbz.png",
+        "type": "涂鸦",
+        "description": "渔女涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "红蝶-彩底",
+        "img": "./img/qiiwxzn393eo4a4tpvlmjtcv8psm0y6.png",
+        "type": "涂鸦",
+        "description": "红蝶涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "黄衣之主-彩底",
+        "img": "./img/3jw8scpc75uxoiazqhn6h7f4i42pg2w.png",
+        "type": "涂鸦",
+        "description": "黄衣之主涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "牛仔-彩底",
+        "img": "./img/5rhvm8bun7px0n9iiw6r4nud9jjlkvi.png",
+        "type": "涂鸦",
+        "description": "牛仔涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "调香师-彩底",
+        "img": "./img/p6v1501m5yf10wro8qm15p21uq26t7b.png",
+        "type": "涂鸦",
+        "description": "调香师涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "宿伞之魂-彩底",
+        "img": "./img/3rxttvuxkkcz3k1qtqym7ypfibwn9pk.png",
+        "type": "涂鸦",
+        "description": "宿伞之魂涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "舞女-彩底",
+        "img": "./img/927p2tm2rh5ez4cbiuk3hgwu3yd2uw1.png",
+        "type": "涂鸦",
+        "description": "舞女涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-雕刻家",
+        "img": "./img/qhvg51nvg7l8usq7kagvfljqz93eqs3.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-小提琴家",
+        "img": "./img/nr1y5iygysyj9yyn77zv0v2lmh7koul.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-“博士”",
+        "img": "./img/nj0gki19jz1fw196go7fpw6mz006n49.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-击球手",
+        "img": "./img/nfzgtub88sddskl9nbb4jggkidlegun.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      }
+    ]
+  }
+}

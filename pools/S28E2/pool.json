@@ -1,0 +1,394 @@
+{
+  "id": "S28E2",
+  "name": "第28赛季·精华2",
+  "essenceImage": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+  "diff_A": 2,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [
+    {
+      "name": "-20%",
+      "rate": 0.8,
+      "chance": 0.03
+    },
+    {
+      "name": "-40%",
+      "rate": 0.6,
+      "chance": 0.015
+    }
+  ],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "亡灵之主",
+        "img": "./img/81q1bj9l62j4xr4goygavrcd8vgd6kc.png",
+        "type": "时装",
+        "description": "当那位年轻人踏入神殿，他也同样期待着神谕的显现。在那神秘的预示中，邪神之子的面容终于浮现。\n（【限定】时装，仅能在第二十八赛季精华2中获得）",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "神圣阿斯莫",
+        "img": "./img/35u4he8xcuflka66avjj7zvmc505bsy.png",
+        "type": "时装",
+        "description": "她默默地守护着她的小镇，等待着那位从影堡来的年轻人，将她的“守护”送到神殿。",
+        "repeat": 1000
+      },
+      {
+        "name": "天使向导",
+        "img": "./img/fj2g6i8tol6p4ka8dtpqb2pflls8ep9.png",
+        "type": "时装",
+        "description": "当他与阿斯莫断开连接，迷失的他沦为亡灵的猎物，他伺机待发直至新的主人出现。",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "亡灵侍卫",
+        "img": "./img/oabfib1grzg4cllt1vgfs9uksh87fcg.png",
+        "type": "时装",
+        "description": "他曾效忠于王国的公主，可当王国不复存在，公主下落不明，他徘徊求索直至化为永恒的暗影。",
+        "repeat": 200
+      },
+      {
+        "name": "半身人薇赛尔",
+        "img": "./img/15drz94wc4k98zu33zf2jzi7lvjwr0f.png",
+        "type": "时装",
+        "description": "她曾经的愿望是可以在小镇无忧无虑的生活，族人可以相互依偎取暖，可是她的愿望从来没有实现过。",
+        "repeat": 200
+      },
+      {
+        "name": "提夫林",
+        "img": "./img/5qy7d5xvdh8ksc8ytj6x3kkfswkmets.png",
+        "type": "时装",
+        "description": "她在奈斯特森林伪装着自己，在这弱肉强食的大陆上，只有拥有最为尖锐的利爪的人才能存活。",
+        "repeat": 200
+      },
+      {
+        "name": "半身人崔宾",
+        "img": "./img/jdrenchb65je0yuicjdi8wsf3q37unq.png",
+        "type": "时装",
+        "description": "只要永远有天真的傻子相信他的笑容，他就可以继续肆无忌惮下去，只有生意没有情谊。",
+        "repeat": 200
+      },
+      {
+        "name": "露琪亚的亡魂",
+        "img": "./img/0r64c7au45hip8uwcrn0cmq37u4sfo3.png",
+        "type": "时装",
+        "description": "当妹妹因疾病离世，她似乎也没有因此恢复曾有的疼爱。昔日的阳光已被阴霾掩埋，就跟王国的命运一样。",
+        "repeat": 200
+      },
+      {
+        "name": "梦之女巫-行礼",
+        "img": "./img/jvroaff1gx4rz5tt2ke934hrhhs2z5i.png",
+        "type": "个性动作",
+        "description": "行礼动作，梦之女巫专属",
+        "repeat": 200
+      },
+      {
+        "name": "孽蜥-行礼",
+        "img": "./img/jvroaff1gx4rz5tt2ke934hrhhs2z5i.png",
+        "type": "个性动作",
+        "description": "行礼动作，孽蜥专属",
+        "repeat": 200
+      },
+      {
+        "name": "牛仔-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "牛仔匹配大厅等待动作，小憩",
+        "repeat": 200
+      },
+      {
+        "name": "咒术师-准备",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "咒术师匹配大厅动作，准备",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "漆",
+        "img": "./img/kqqo3awkgpl514vy69xkg9v32n77h6q.png",
+        "type": "时装",
+        "description": "被黑色长裙包裹的成熟、颀长、丰美的躯体……一种艳羡和迷恋的对象，甚至激发着疯狂的妒意。 ",
+        "repeat": 36
+      },
+      {
+        "name": "感染",
+        "img": "./img/m7corsdipdgfuwu7569evm1cg2ll7fa.png",
+        "type": "时装",
+        "description": "不必担心这具身体会因感染而再次腐败，它与寄宿其中的邪恶一样坚不可摧。 ",
+        "repeat": 36
+      },
+      {
+        "name": "疾拂",
+        "img": "./img/5mh2fynba684p7k4dnb1zhfnionjq87.png",
+        "type": "时装",
+        "description": "胸口带着燥意的风暴再也难以抑制——将这里化为废墟，彻底破坏后才能有新的开始。 ",
+        "repeat": 36
+      },
+      {
+        "name": "戏谑绿",
+        "img": "./img/0vccgqaueuygfxyg1cicvizu2ytg0nw.png",
+        "type": "时装",
+        "description": "承受荒诞、承受不可理喻的一切，然后发出尖利的笑声。",
+        "repeat": 36
+      },
+      {
+        "name": "推罗紫",
+        "img": "./img/ffg7aim4cy8i0r24w4mf7mqbrp1brf1.png",
+        "type": "时装",
+        "description": "用昂贵的染料，精心染制小小的裙摆，也为她配上一柄玩具长剑吧，她不是属于谁的小小淑女。 ",
+        "repeat": 36
+      },
+      {
+        "name": "铜哨黄",
+        "img": "./img/dxmqwb29k7v1fe7vm0ureyvobllpgmf.png",
+        "type": "时装",
+        "description": "他依然很疼……但熟悉的哨声让忍耐都带着欢喜。 ",
+        "repeat": 36
+      },
+      {
+        "name": "海草绿",
+        "img": "./img/94ggd3mndojbtfnkyqbkm08syia3vny.png",
+        "type": "时装",
+        "description": "像是缎带轻盈、柔软，也像是挣不脱的可怖牢笼。 ",
+        "repeat": 36
+      },
+      {
+        "name": "旧页褐",
+        "img": "./img/mz7agqr1p749h9mcr2a238897dpwahc.png",
+        "type": "时装",
+        "description": "纸页已然发黄，但笔迹中近乎病态的专注和温情从未改变。",
+        "repeat": 36
+      },
+      {
+        "name": "静脉绿",
+        "img": "./img/0yt4m1i8ctlwfbh37nt9snoqqjnsnx9.png",
+        "type": "时装",
+        "description": "使用特殊的油彩为作品上色，使皮肤呈现出健康血管的纹理。",
+        "repeat": 36
+      },
+      {
+        "name": "林场绿",
+        "img": "./img/c9r340nz9rkewld3u2lsfoa8zrp303c.png",
+        "type": "时装",
+        "description": "回忆中充斥着鼻腔的总是松脂和树木的气息，这是童年的一部分。",
+        "repeat": 36
+      },
+      {
+        "name": "追忆蓝",
+        "img": "./img/jlebpowa584ier7e721n26o2vnaw5c5.png",
+        "type": "时装",
+        "description": "庄园曾望得见碧蓝的天空，和两个在林场追逐的小小身影。 ",
+        "repeat": 36
+      },
+      {
+        "name": "舞女-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，舞女专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "舞女-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，舞女专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "舞女-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，舞女专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "大副-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，大副专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "前锋匹配大厅动作，小憩 ",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "冒险家匹配大厅动作，准备 ",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "佣兵匹配大厅动作，准备 ",
+        "repeat": 36
+      },
+      {
+        "name": "律师-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "律师匹配大厅动作，准备 ",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "前锋匹配大厅动作，等待 ",
+        "repeat": 36
+      },
+      {
+        "name": "机械师遥控器-卡通",
+        "img": "./img/a83m1leq93voqjck6lcu4m6nwyhj2pc.png",
+        "type": "涂鸦",
+        "description": "机械师专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵兜帽-卡通",
+        "img": "./img/mp9vg1ro58g8ru73gihoxf1u0skalam.png",
+        "type": "涂鸦",
+        "description": "佣兵专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "鹿头号角-卡通",
+        "img": "./img/r20b9jpd5s9dmcclmkrl6i0qi2t8t8p.png",
+        "type": "涂鸦",
+        "description": "鹿头专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "“杰克”爪子-卡通",
+        "img": "./img/5sf9hxdgp9ygb3nltjcxxxgnwrhudkl.png",
+        "type": "涂鸦",
+        "description": "“杰克”专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-哭泣小丑",
+        "img": "./img/5tlz850mrjtemwzmgbatrpr7rz12zl8.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-古董商",
+        "img": "./img/7a94mt5jujl6yapx66oba3xatkffczx.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-教授",
+        "img": "./img/9vqagmr1g28jvpr4gimsd7mulhi9h2r.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "邮差-剪影 ",
+        "img": "./img/fya1s0nd7pmkczsvi59r9cizpolmewj.png",
+        "type": "涂鸦",
+        "description": "邮差专属涂鸦，剪影 ",
+        "repeat": 6
+      },
+      {
+        "name": "杂技演员-剪影 ",
+        "img": "./img/qctkhxigjr9xy5zj2hz6e0lfmx31c6m.png",
+        "type": "涂鸦",
+        "description": "杂技演员专属涂鸦，剪影 ",
+        "repeat": 6
+      },
+      {
+        "name": "红夫人-剪影 ",
+        "img": "./img/9xut01tk5th2licdvbb2wiv7w9awdcf.png",
+        "type": "涂鸦",
+        "description": "红夫人专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "小提琴家-灰影",
+        "img": "./img/o3vp99ceuh5ngkfpe1xvj7b6gqa9hng.png",
+        "type": "涂鸦",
+        "description": "小提琴家专属涂鸦，灰影系列 ",
+        "repeat": 6
+      },
+      {
+        "name": "雕刻家-灰影",
+        "img": "./img/q7wmpbk5e8qtstivmr2glc4u1t94339.png",
+        "type": "涂鸦",
+        "description": "雕刻家专属涂鸦，灰影系列 ",
+        "repeat": 6
+      },
+      {
+        "name": "昆虫学者-灰影",
+        "img": "./img/00c9wpo8e2o98jsoj9wgait9njwuhbv.png",
+        "type": "涂鸦",
+        "description": "昆虫学者专属涂鸦，灰影系列 ",
+        "repeat": 6
+      },
+      {
+        "name": "画家-灰影",
+        "img": "./img/inahcyr9sz6o7i6k25a5i2ef4c1zz6g.png",
+        "type": "涂鸦",
+        "description": "画家专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-哭泣小丑",
+        "img": "./img/pztmd9hpbjswzuj15brvxi7ijp896fz.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-蜡像师",
+        "img": "./img/otsze6v47hyesew3u5x5axi7u3xs2qy.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-“记录员”",
+        "img": "./img/ooq67xq1hl08mqtojx61us15awymgkj.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-小说家",
+        "img": "./img/76zxyzqihwy7frvdbkl34maz914xig2.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "id": "S30E2",
+  "name": "xxxHOLiC联动精华",
+  "essenceImage": "./img/la9wd78jfyriajlwhkg3lru4uuremph.png",
+  "diff_A": 0,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [
+    {
+      "name": "-20%",
+      "rate": 0.8,
+      "chance": 0.03
+    },
+    {
+      "name": "-40%",
+      "rate": 0.6,
+      "chance": 0.015
+    }
+  ],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 99
+  },
+  "items": {
+    "S": [
+      {
+        "name": "壹原侑子",
+        "img": "./img/j9l4qu4k61yu4zqdw904dcfntvwqes9.png",
+        "type": "时装",
+        "description": "壹原侑子的时装。\nxxxHOLiC联动精华限定稀世时装",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "百目鬼静",
+        "img": "./img/0lqikbmmjmevms1r98557dj115vxf8v.png",
+        "type": "时装",
+        "description": "百目鬼静的时装。\nxxxHOLiC联动精华限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "四月一日君寻",
+        "img": "./img/1t7kktxxhc3v2q5nyhj9mqtn0xhyxq1.png",
+        "type": "时装",
+        "description": "四月一日君寻的时装。\nxxxHOLiC联动精华限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "五月七日小羽",
+        "img": "./img/boz4o2kfuiol5iubrgc32v9q76rcsfv.png",
+        "type": "时装",
+        "description": "五月七日小羽的时装。\nxxxHOLiC联动精华限定奇珍时装",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "电子耳",
+        "img": "./img/tp7sucyi3bwycjdjaz0zz6n0co4h09p.png",
+        "type": "随身物品",
+        "description": "虽然造型有点特殊，但仍然是一副耳机。",
+        "repeat": 200
+      },
+      {
+        "name": "百目鬼静的弓",
+        "img": "./img/ssaojkyov8w6lv2v1jyazhi6oxjx9mp.png",
+        "type": "随身物品",
+        "description": "百目鬼静常用的弓。",
+        "repeat": 200
+      },
+      {
+        "name": "愿望气球",
+        "img": "./img/66zpsiqn0f5ki2psqv9evcg6nc4l44x.png",
+        "type": "随身物品",
+        "description": "存有美好梦境的气球，同样寄托着小小的愿望。",
+        "repeat": 200
+      },
+      {
+        "name": "红蝶-驻足",
+        "img": "./img/fdx0pt7u6kopto0y4cp4jv5k9ke492h.png",
+        "type": "个性动作",
+        "description": "驻足动作，红蝶专属",
+        "repeat": 200
+      },
+      {
+        "name": "佣兵-牵引",
+        "img": "./img/kzibxc186dpsce05k06vekbeu3hzmhn.png",
+        "type": "个性动作",
+        "description": "牵引动作，佣兵专属",
+        "repeat": 200
+      },
+      {
+        "name": "先知-争吵",
+        "img": "./img/k4sagda6hjlykcfkr3o0u45zm9yhaft.png",
+        "type": "个性动作",
+        "description": "争吵动作，先知专属",
+        "repeat": 200
+      },
+      {
+        "name": "“小女孩”-慰藉",
+        "img": "./img/imd5efonnujhqbqc2ei1onqdc4wqs46.png",
+        "type": "个性动作",
+        "description": "慰藉动作，“小女孩”专属",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "壹原侑子Ⅱ",
+        "img": "./img/7yi3wsxo1rz0e5rhy8f5np6qkn05vyf.png",
+        "type": "涂鸦",
+        "description": "《TV动画版xxxHOLiC》联动涂鸦（TV动画版xxxHOLiC联动限定获得）。",
+        "repeat": 36
+      },
+      {
+        "name": "百目鬼静",
+        "img": "./img/dscflbna74tfm3lgmrcb0ncskmnjff4.png",
+        "type": "涂鸦",
+        "description": "《TV动画版xxxHOLiC》联动涂鸦（TV动画版xxxHOLiC联动限定获得）。",
+        "repeat": 36
+      },
+      {
+        "name": "五月七日小羽",
+        "img": "./img/l349co0vcndpcouk8h2bkjj77elvza0.png",
+        "type": "涂鸦",
+        "description": "《TV动画版xxxHOLiC》联动涂鸦（TV动画版xxxHOLiC联动限定获得）。",
+        "repeat": 36
+      },
+      {
+        "name": "四月一日君寻",
+        "img": "./img/sbybmj1yuw2cmxitwsb5yknkeozde1w.png",
+        "type": "涂鸦",
+        "description": "《TV动画版xxxHOLiC》联动涂鸦（TV动画版xxxHOLiC联动限定获得）。",
+        "repeat": 36
+      },
+      {
+        "name": "小全&小多",
+        "img": "./img/2ksm4mtkvtpzour1diq6i6txviz8j8g.png",
+        "type": "涂鸦",
+        "description": "《TV动画版xxxHOLiC》联动涂鸦（TV动画版xxxHOLiC联动限定获得）。",
+        "repeat": 36
+      },
+      {
+        "name": "壹原侑子",
+        "img": "./img/tr40h7q5vvrdgz7tme3pw9ck4gshn93.png",
+        "type": "涂鸦",
+        "description": "《TV动画版xxxHOLiC》联动涂鸦（TV动画版xxxHOLiC联动限定获得）。",
+        "repeat": 36
+      },
+      {
+        "name": "百目鬼静",
+        "img": "./img/9kkocpgagztchwicn20vpq75yqdfowi.png",
+        "type": "头像",
+        "description": "《TV动画版xxxHOLiC》联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "摩可拿",
+        "img": "./img/kd13ohnlvs49k4jc4gycbm7sqoiqqdb.png",
+        "type": "头像",
+        "description": "《TV动画版xxxHOLiC》联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "五月七日小羽",
+        "img": "./img/d1qq56xn8a0x7ga5omdfghw6gmomav6.png",
+        "type": "头像",
+        "description": "《TV动画版xxxHOLiC》联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "壹原侑子",
+        "img": "./img/ps00uii5bjhllk7vdsz6bsnpiwneyrv.png",
+        "type": "头像",
+        "description": "《TV动画版xxxHOLiC》联动头像",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "id": "S27E3",
+  "name": "杀戮天使联动精华",
+  "essenceImage": "./img/h2yea3xiy4ue8iphdp254mdo2dba6t3.png",
+  "diff_A": 3,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [
+    {
+      "name": "-20%",
+      "rate": 0.8,
+      "chance": 0.03
+    },
+    {
+      "name": "-40%",
+      "rate": 0.6,
+      "chance": 0.015
+    }
+  ],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 9999,
+    "purple": 60,
+    "blue": 99
+  },
+  "items": {
+    "S": [],
+    "A": [
+      {
+        "name": "凯瑟琳·沃德",
+        "img": "./img/9g4d0nqj1nuozvl0fvgn8q874417za6.png",
+        "type": "时装",
+        "description": "凯瑟琳·沃德的时装。\nAngels of Death联动精华限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "爱德华·梅森",
+        "img": "./img/2ap2wjicg4hkq2ub12c0t5h89djwunm.png",
+        "type": "时装",
+        "description": "爱德华·梅森的时装。\nAngels of Death联动精华限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "瑞吉儿·加德纳",
+        "img": "./img/guw0up1su3lvqnez813i58sumqzosmt.png",
+        "type": "时装",
+        "description": "瑞吉儿·加德纳的时装。\nAngels of Death联动精华限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "丹尼尔·狄更斯",
+        "img": "./img/jcui51vrn27aqct2w0z235a44gi9cy3.png",
+        "type": "时装",
+        "description": "丹尼尔·狄更斯的时装。\nAngels of Death联动精华限定奇珍时装",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "“杰克”-躺地",
+        "img": "./img/kjinple2uex42cyw959qspod43rhd6d.png",
+        "type": "个性动作",
+        "description": "躺地动作，“杰克”专属",
+        "repeat": 200
+      },
+      {
+        "name": "爱哭鬼-送花",
+        "img": "./img/ignhra7ww18c2thngio19e8tqbrtcta.png",
+        "type": "个性动作",
+        "description": "送花动作，爱哭鬼专属",
+        "repeat": 200
+      },
+      {
+        "name": "“小女孩”-祈祷",
+        "img": "./img/3g0huoh3cyfv9rseczmgqt1utea59xr.png",
+        "type": "个性动作",
+        "description": "祈祷动作，“小女孩”专属",
+        "repeat": 200
+      },
+      {
+        "name": "空军-喜悦",
+        "img": "./img/jc09rotegsfov9z1tzh50mqp67uxtnp.png",
+        "type": "个性动作",
+        "description": "喜悦动作，空军专属",
+        "repeat": 200
+      },
+      {
+        "name": "教授-疯狂",
+        "img": "./img/oubtlrofv68u931f00ak5k30wf8jpo0.png",
+        "type": "个性动作",
+        "description": "疯狂动作，教授专属",
+        "repeat": 200
+      },
+      {
+        "name": "律师-审判",
+        "img": "./img/7daa449c81472hi2gozi8jmgkmm1kqn.png",
+        "type": "个性动作",
+        "description": "审判动作，律师专属",
+        "repeat": 200
+      },
+      {
+        "name": "手枪",
+        "img": "./img/d5m2laebvt4fhiou2z393yltezx12k7.png",
+        "type": "随身物品",
+        "description": "瑞吉儿·加德纳的手枪。\nAngels of Death联动精华限定独特随身物品",
+        "repeat": 200
+      },
+      {
+        "name": "十字弩",
+        "img": "./img/5bnnbf6bz9l4p3osbed31mjvjxcbe51.png",
+        "type": "随身物品",
+        "description": "亚伯拉罕·葛雷的十字弩。\nAngels of Death联动精华限定独特随身物品",
+        "repeat": 200
+      },
+      {
+        "name": "鞭子",
+        "img": "./img/lutn06zatay0518zr0wwawmt1fpwyqr.png",
+        "type": "随身物品",
+        "description": "凯瑟琳·沃德的鞭子。\nAngels of Death联动精华限定独特随身物品",
+        "repeat": 200
+      },
+      {
+        "name": "遥控开关",
+        "img": "./img/guy3r1may47vkewn88k61ns3py6veb8.png",
+        "type": "随身物品",
+        "description": "爱德华·梅森的遥控开关。\nAngels of Death联动精华限定独特随身物品",
+        "repeat": 200
+      },
+      {
+        "name": "异瞳储存罐",
+        "img": "./img/i906wz3pigro9u54n9vxt37qe80f7wl.png",
+        "type": "随身物品",
+        "description": "丹尼尔·狄更斯的异瞳储存罐。\nAngels of Death联动精华限定独特随身物品",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "凯瑟琳·沃德Ⅰ",
+        "img": "./img/0l64uks81xg4p0mfvdnms2xtymx0l42.png",
+        "type": "涂鸦",
+        "description": "《Angels of Death》联动涂鸦（《Angels of Death》联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "丹尼尔·狄更斯Ⅰ",
+        "img": "./img/ows58t0o594ybp7bkwfg2ojrcr1p3d3.png",
+        "type": "涂鸦",
+        "description": "《Angels of Death》联动涂鸦（《Angels of Death》联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "爱德华·梅森Ⅰ",
+        "img": "./img/blsrnl7xk6jazu7dgro2nm8hx131yqo.png",
+        "type": "涂鸦",
+        "description": "《Angels of Death》联动涂鸦（《Angels of Death》联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "艾札克·佛斯特Ⅰ",
+        "img": "./img/r1f0itk286nmkwrvtw2r0exk5gdell1.png",
+        "type": "涂鸦",
+        "description": "《Angels of Death》联动涂鸦（《Angels of Death》联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "瑞吉儿·加德纳Ⅰ",
+        "img": "./img/ji8b6edaz6l6xwn4n983w8wf8a73hlf.png",
+        "type": "涂鸦",
+        "description": "《Angels of Death》联动涂鸦（《Angels of Death》联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "艾札克·佛斯特Ⅱ",
+        "img": "./img/1t0f89tky9n7hrmdhrlw0alin34ki61.png",
+        "type": "涂鸦",
+        "description": "《Angels of Death》联动涂鸦（《Angels of Death》联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "爱德华·梅森Ⅱ",
+        "img": "./img/fcd1ss67hsmu3qzx2b4zngnrektbd7z.png",
+        "type": "涂鸦",
+        "description": "《Angels of Death》联动涂鸦（《Angels of Death》联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "丹尼尔·狄更斯Ⅱ",
+        "img": "./img/t3qt5urck8cpp2rehaq31afwz0ekly0.png",
+        "type": "涂鸦",
+        "description": "《Angels of Death》联动涂鸦（《Angels of Death》联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "凯瑟琳·沃德Ⅱ",
+        "img": "./img/4xazgkoc3uf461yaxn8gjnddfyo4xll.png",
+        "type": "涂鸦",
+        "description": "《Angels of Death》联动涂鸦（《Angels of Death》联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "瑞吉儿·加德纳Ⅱ",
+        "img": "./img/sure19rhmap2kd1up1ucbp3m108ed6m.png",
+        "type": "涂鸦",
+        "description": "《Angels of Death》联动涂鸦（《Angels of Death》联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "凯瑟琳·沃德",
+        "img": "./img/h7hnx6fdbmobfifp2hvy5ke1mem91lv.png",
+        "type": "头像",
+        "description": "《Angels of Death》联动头像（《Angels of Death》联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "丹尼尔·狄更斯",
+        "img": "./img/6g70e2p51p0o1md8hetnt5g7bl4x0ko.png",
+        "type": "头像",
+        "description": "《Angels of Death》联动头像（《Angels of Death》联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "爱德华·梅森",
+        "img": "./img/jcpfo2p3hzyqkfdwpx92vkn0o8bn1pj.png",
+        "type": "头像",
+        "description": "《Angels of Death》联动头像（《Angels of Death》联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "艾札克·佛斯特",
+        "img": "./img/5nnwn2koene57jh007jmi7tu9ljlfmp.png",
+        "type": "头像",
+        "description": "《Angels of Death》联动头像（《Angels of Death》联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "瑞吉儿·加德纳",
+        "img": "./img/o3o7n69lrd6lvji2khvu44g41zqszze.png",
+        "type": "头像",
+        "description": "《Angels of Death》联动头像（《Angels of Death》联动限定获得）",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

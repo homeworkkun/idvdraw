@@ -1,0 +1,2699 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第五人格精华模拟器</title>
+    <script src="/resource/tailwind.min.css"></script>
+    <link rel="stylesheet" href="/resource/fontawesome/css/all.min.css">
+    <style>
+        @import url('/resource/29ea7425af6c4890a35116efa392a58a.css');
+        
+        @font-face {
+            font-family: 'DFPOP1W5-GB';
+            src: url('/fonts.ttf') format('truetype');
+        }
+
+        :root { 
+            --color-gold: #e8c668; 
+            --color-purple: #b568e8; 
+            --color-blue: #689de8; 
+            --color-frame: #4ade80; /* 新增 F 级颜色 */
+            --bg-dark: #0f1115; 
+        }
+        
+        body { 
+            font-family: "DFPOP1W5-GB", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            color: #d1d5db; 
+            user-select: none; 
+            background-image: radial-gradient(circle at 50% 50%, #1f232e 0%, #0a0b0e 100%); 
+            min-height: 100vh; 
+        }
+
+        .font-gothic {
+            font-family: "DFPOP1W5-GB", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            user-select: none; 
+        }
+        .essence-card {
+            background-color: rgba(20, 23, 31, 0.9);
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .essence-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(232, 198, 104, 0.2);
+        }
+        .text-rarity-S { color: var(--color-gold); }
+        .text-rarity-A { color: var(--color-purple); }
+        .text-rarity-B { color: var(--color-blue); }
+        .text-rarity-F { color: var(--color-frame); }
+        .text-rarity-C { color: #65a30d; }
+        .text-rarity-D { color: #9ca3af; }
+        ::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-track { background: #0f1115; } ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        .idv-btn {
+            font-size: 0.8rem;
+            background: linear-gradient(180deg, #3a3a3a 0%, #1a1a1a 100%);
+            clip-path: polygon(5% 0, 100% 0, 100% 95%, 95% 100%, 0 100%, 0 5%);
+            border: 2px solid #888;
+            color: #ccc;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.2s;
+            padding: 0.5rem 1rem;
+        }
+        .idv-btn:hover { border-color: var(--color-gold); color: var(--color-gold); background: linear-gradient(180deg, #4a4a4a 0%, #2a2a2a 100%); text-shadow: 0 0 5px var(--color-gold); }
+        .idv-btn:active { transform: scale(0.95); }
+
+        .search-input {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.2s, background-color 0.2s;
+        }
+        .search-input:focus {
+            border-color: var(--color-gold);
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        /* ==================== 跑马灯 CSS (修复版) ==================== */
+        @keyframes marquee-seamless {
+            0%   { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .essence-description, .essence-title-container { 
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .marquee-inner-container {
+            display: inline-block;
+            animation-name: marquee-seamless;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 1.5s; 
+            animation-play-state: paused; 
+            white-space: nowrap;
+        }
+
+        .marquee-inner-container > span {
+            display: inline-block; 
+            padding-right: 2rem; 
+        }
+
+        .marquee-inner-container.running {
+            animation-play-state: running;
+        }
+        /* ========================================================== */
+
+        /* README 和 新增模态框的通用样式 */
+        .readme-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.75);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px); /* Safari */
+        }
+
+        .readme-modal-content {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 768px; /* iPad Pro 宽度 */
+            max-height: 90%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* 确保内容区可滚动 */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .readme-modal-header {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #222;
+        }
+
+        .readme-modal-body {
+            padding: 1.5rem;
+            overflow-y: auto; /* 使内容区可滚动 */
+            flex-grow: 1; /* 占据剩余空间 */
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .readme-modal-body h1 {
+            font-size: 1.8em; /* 一级标题 */
+            font-weight: bold;
+            color: var(--color-gold);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(232, 198, 104, 0.3);
+        }
+
+        .readme-modal-body h2 {
+            font-size: 1.4em; /* 二级标题 */
+            font-weight: bold;
+            color: var(--color-purple);
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+        /* 为模态框中的品质分组标题设置样式 */
+        .modal-body-h4 {
+            font-size: 1.2em; /* 四级标题 */
+            font-weight: bold;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid;
+        }
+        .modal-body-h4.rarity-S { color: var(--color-gold); border-color: rgba(232, 198, 104, 0.3); }
+        .modal-body-h4.rarity-A { color: var(--color-purple); border-color: rgba(181, 104, 232, 0.3); }
+        .modal-body-h4.rarity-B { color: var(--color-blue); border-color: rgba(104, 157, 232, 0.3); }
+        .modal-body-h4.rarity-F { color: var(--color-frame); border-color: rgba(74, 222, 128, 0.3); } /* F 级 */
+        .modal-body-h4.rarity-C { color: #65a30d; border-color: rgba(101, 163, 13, 0.3); }
+        .modal-body-h4.rarity-D { color: #9ca3af; border-color: rgba(156, 163, 175, 0.3); }
+
+
+        .readme-modal-body p {
+            margin-bottom: 1em;
+        }
+
+        .readme-modal-body hr {
+            border: none;
+            border-top: 1px dashed #555;
+            margin: 2rem 0;
+        }
+
+        /* 链接样式 */
+        .readme-modal-body a {
+            color: var(--color-blue); /* 使用主题蓝色作为链接颜色 */
+            text-decoration: underline;
+            transition: color 0.2s;
+        }
+        .readme-modal-body a:hover {
+            color: var(--color-gold); /* 鼠标悬停时变金色 */
+        }
+
+        .readme-modal-close-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #aaa;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .readme-modal-close-btn:hover {
+            color: #fff;
+        }
+
+        /* ==================== 物品详情模态框样式 (从 S37.html 复制) ==================== */
+        @keyframes fade-in-backdrop { from { backdrop-filter: blur(0px); background-color: rgba(0,0,0,0); } to { backdrop-filter: blur(8px); background-color: rgba(0,0,0,0.7); } }
+        @keyframes zoom-in-modal { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        #item-detail-modal.show { animation: fade-in-backdrop 0.3s forwards; }
+        #item-detail-modal.show > div { animation: zoom-in-modal 0.3s forwards; }
+        #detail-desc { white-space: pre-wrap; } /* 确保描述换行 */
+
+        /* 物品详情模态框标题的稀有度颜色 */
+        .modal-title-rarity-S { color: var(--color-gold); }
+        .modal-title-rarity-A { color: var(--color-purple); }
+        .modal-title-rarity-B { color: var(--color-blue); }
+        .modal-title-rarity-F { color: var(--color-frame); } /* F 级 */
+        .modal-title-rarity-C { color: #65a30d; }
+        .modal-title-rarity-D { color: #9ca3af; }
+
+        /* ==================== 物品图鉴中的单个物品样式 ==================== */
+        .owned-item-card {
+            transition: all 0.2s ease-in-out;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            text-align: center;
+            border: 1px solid transparent;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .owned-item-card:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            border-color: var(--color-gold);
+        }
+        .owned-item-card .img-container {
+            width: 100%;
+            background-color: #111318;
+            aspect-ratio: 1 / 1;
+            border-radius: 0.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .owned-item-card img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .owned-item-card .item-name-container {
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        /* 未获取物品的遮罩样式 */
+        .unowned-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.25rem;
+        }
+        
+        .lock-icon {
+            color: #ccc;
+            font-size: 1.5rem;
+        }
+        
+        /* 跑马灯效果样式 (修复版) */
+        @keyframes marquee {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .marquee-wrapper {
+            display: inline-block;
+            animation: marquee var(--marquee-duration, 10s) linear infinite;
+            padding-right: 2rem;
+            will-change: transform;
+            white-space: nowrap;
+        }
+
+        /* 新增：资源展示区域 */
+        .resource-display {
+          display: flex;
+          flex-wrap: wrap; /* 支持多行 */
+          align-items: center;
+          gap: 1rem;
+          padding: 0.5rem 1rem;
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 0.5rem;
+          border: 1px solid #444;
+        }
+
+        .resource-item {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+        
+        /* 精华图标调整样式 */
+        .essence-icon {
+            width: 70px; /* 减小图标大小 */
+            height: 70px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .essence-card:hover .essence-icon {
+            transform: scale(1.05);
+        }
+
+        /* 新增：商城按钮样式 */
+        .shop-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ff6b6b, #ffa502);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            z-index: 999;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+        }
+        .shop-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+        }
+        .shop-button i {
+            font-size: 24px;
+            color: white;
+        }
+        .shop-button::after {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(0.8);
+                opacity: 0.7;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.3;
+            }
+            100% {
+                transform: scale(0.8);
+                opacity: 0.7;
+            }
+        }
+        
+        /* ==================== 新增：与商城一致的加号按钮样式 ==================== */
+        .plus-btn-container {
+            width: 32px;
+            height: 32px;
+            background-color: #374151; /* gray-700 */
+            border-radius: 50%;
+            border: 1px solid #6b7280; /* gray-500 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            user-select: none;
+            margin-left: 0.5rem;
+        }
+
+        .plus-btn-container:hover {
+            background-color: #4b5563; /* gray-600 */
+            border-color: #9ca3af; /* gray-400 */
+            transform: scale(1.05);
+        }
+
+        .plus-btn {
+            font-family: Arial, sans-serif !important;
+            font-weight: bold !important;
+            font-size: 24px !important;
+            color: #fbbf24 !important; /* yellow-400 */
+            line-height: 1;
+            user-select: none;
+            pointer-events: none; /* 让点击事件穿透到容器 */
+        }
+
+        .plus-btn-container:hover .plus-btn {
+            color: #fcd34d !important; /* yellow-300 */
+        }
+        
+        /* 更多按钮弹窗样式 */
+        .more-modal-content {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        /* 横屏时调整弹窗宽度 */
+        @media (min-width: 768px) and (orientation: landscape) {
+            .more-modal-content {
+                max-width: 500px;
+            }
+        }
+
+        .more-modal-header {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #222;
+        }
+
+        .more-modal-body {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* 横屏时按钮排列为2列 */
+        @media (min-width: 768px) and (orientation: landscape) {
+            .more-modal-body {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+        }
+
+        .more-modal-btn {
+            width: 100%;
+            padding: 0.75rem;
+            text-align: center;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #ddd;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        /* 横屏时按钮高度统一 */
+        @media (min-width: 768px) and (orientation: landscape) {
+            .more-modal-btn {
+                margin: 0;
+            }
+        }
+
+        .more-modal-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--color-gold);
+            color: var(--color-gold);
+        }
+
+        .more-modal-btn.reset {
+            background: rgba(220, 38, 38, 0.1);
+            border-color: #dc2626;
+            color: #fecaca;
+        }
+
+        .more-modal-btn.reset:hover {
+            background: rgba(220, 38, 38, 0.2);
+            border-color: #ef4444;
+            color: #fca5a5;
+        }
+
+        /* 新增：切换开关样式 */
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 24px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: var(--color-gold);
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .toggle-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: 1rem;
+        }
+
+        .toggle-label {
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+        
+        /* 物品来源信息样式 */
+        .item-source-info {
+            font-size: 0.7rem;
+            color: #aaa;
+            margin-top: 0.25rem;
+            text-align: center;
+        }
+        
+        /* 响应式物品详情弹窗 */
+        .item-detail-modal-content {
+            width: 95vw;
+            max-width: 90vw;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        
+        @media (min-width: 640px) {
+            .item-detail-modal-content {
+                max-width: 500px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .item-detail-modal-content {
+                max-width: 600px;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .item-detail-modal-content {
+                max-width: 700px;
+            }
+        }
+        
+        @media (min-width: 1280px) {
+            .item-detail-modal-content {
+                max-width: 800px;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+
+    <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between bg-black/50 p-4 border border-gray-700 rounded-md mb-4 sticky top-4 z-10 backdrop-blur-sm">
+            
+            <div class="flex items-center justify-between w-full mb-2 sm:mb-0 sm:w-auto">
+                <h1 class="text-2xl sm:text-3xl text-amber-100 tracking-widest drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">精华列表</h1>
+                <!-- 手机端说明/更多按钮组 -->
+                <div class="flex items-center space-x-4 ml-4 sm:hidden">
+                    <button onclick="showReadmeModal()" class="idv-btn bg-blue-800/50 border-blue-700 text-blue-100 hover:bg-blue-700/50 hover:border-blue-500 hover:text-blue-50">
+                        <i class="fas fa-info-circle mr-1"></i> 说明
+                    </button>
+                    <button onclick="showMoreModal()" class="idv-btn bg-gray-800/50 border-gray-700 text-gray-100 hover:bg-gray-700/50 hover:border-gray-500 hover:text-gray-50">
+                        <i class="fas fa-ellipsis-h mr-1"></i> 更多
+                    </button>
+                </div>
+            </div>
+            
+            <!-- PC端按钮组 (物品图鉴、说明、更多) 和全局统计 -->
+            <div class="flex flex-col sm:flex-row items-center justify-between w-full gap-2 sm:gap-6 sm:w-auto sm:ml-4">
+                <!-- PC 端及以上屏幕尺寸的按钮组 -->
+                <div class="hidden sm:flex items-center space-x-4">
+                    <button onclick="showOwnedItemsModal()" class="idv-btn bg-green-800/50 border-green-700 text-green-100 hover:bg-green-700/50 hover:border-green-500 hover:text-green-50">
+                        <i class="fas fa-book mr-1"></i> 图鉴
+                    </button>
+                    <button onclick="showReadmeModal()" class="idv-btn bg-blue-800/50 border-blue-700 text-blue-100 hover:bg-blue-700/50 hover:border-blue-500 hover:text-blue-50">
+                        <i class="fas fa-info-circle mr-1"></i> 说明
+                    </button>
+                    <button onclick="showMoreModal()" class="idv-btn bg-gray-800/50 border-gray-700 text-gray-100 hover:bg-gray-700/50 hover:border-gray-500 hover:text-gray-50">
+                        <i class="fas fa-ellipsis-h mr-1"></i> 更多
+                    </button>
+                </div>
+                
+                <!-- 总抽数和资源显示 -->
+                <div class="flex flex-col sm:flex-row items-center gap-4"> 
+                    <!-- 新增：资源显示区域 -->
+                    <div class="resource-display" id="resource-display">
+                      <!-- Resources will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 手机端"物品图鉴"按钮（独占一行） -->
+        <div class="sm:hidden w-full mb-4">
+            <button onclick="showOwnedItemsModal()" class="idv-btn bg-green-800/50 border-green-700 text-green-100 hover:bg-green-700/50 hover:border-green-500 hover:text-green-50 w-full">
+                <i class="fas fa-book mr-1"></i> 图鉴
+            </button>
+        </div>
+
+        <!-- 搜索框 -->
+        <div class="bg-black/50 p-4 border border-gray-700 rounded-md mb-8 sticky top-[calc(4rem+1rem)] z-10 backdrop-blur-sm">
+            <input type="text" id="search-input" oninput="filterEssencePools()" placeholder="搜索精华 (ID, 名称, 描述, 角色)" class="search-input w-full">
+        </div>
+
+        <!-- 调整网格列数：增加每行显示数量 -->
+        <div id="essence-list-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-4">
+            <!-- 精华列表将在此处动态加载 -->
+            <div class="col-span-full text-center text-gray-500 py-10" id="loading-message">加载中...</div>
+        </div>
+    </div>
+
+    <!-- README 弹窗结构 -->
+    <div id="readme-modal-overlay" class="readme-modal-overlay hidden" onclick="closeReadmeModal(event)">
+        <div class="readme-modal-content" onclick="event.stopPropagation()">
+            <div class="readme-modal-header">
+                <h3 class="text-xl font-bold text-white">说明</h3>
+                <button class="readme-modal-close-btn" onclick="closeReadmeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="readme-modal-body" class="readme-modal-body">
+                <!-- README 内容将在此处加载 -->
+                加载中...
+            </div>
+        </div>
+    </div>
+
+    <!-- 新增：物品图鉴模态框 -->
+    <div id="owned-items-modal-overlay" class="readme-modal-overlay hidden" onclick="closeOwnedItemsModal(event)">
+        <div class="readme-modal-content" onclick="event.stopPropagation()">
+            <div class="readme-modal-header">
+                <h3 class="text-xl font-bold text-white"><i class="fas fa-book mr-2"></i>图鉴</h3>
+                <div class="flex items-center">
+                    <!-- 新增：展示未获取物品切换开关 -->
+                    <div class="toggle-container">
+                        <span class="toggle-label">展示未获取</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="show-unowned-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-400 ml-4">
+                        <i class="fas fa-arrow-alt-circle-down text-base"></i>
+                        <span id="modal-total-pulls" class="font-bold text-base">0</span>
+                        <button class="readme-modal-close-btn ml-4" onclick="closeOwnedItemsModal()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="owned-items-modal-body" class="readme-modal-body p-4">
+                <div class="text-center text-gray-500 py-4" id="owned-items-loading">加载中...</div>
+                <!-- 物品将在此处渲染，包含分组和排序 -->
+                <div id="owned-items-content"></div>
+                <div class="text-center text-gray-500 py-4 hidden" id="no-owned-items-message">您还没有获取任何物品。</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 新增：物品详情模态框 (响应式改进版) -->
+    <div id="item-detail-modal" class="fixed inset-0 z-[60] hidden items-center justify-center p-4" onclick="closeItemDetail()">
+        <div class="item-detail-modal-content bg-[#1a1c24] border-2 border-gray-700 rounded-lg shadow-2xl flex flex-col text-center relative overflow-hidden" onclick="event.stopPropagation()">
+            <div id="detail-rarity-glow" class="absolute top-0 left-1/2 -translate-x-1/2 w-[200%] h-64 opacity-30 blur-3xl pointer-events-none"></div>
+            <div class="relative p-6">
+                <h3 id="detail-name" class="font-gothic text-2xl tracking-widest">物品名称</h3>
+                <p id="detail-type" class="text-sm text-gray-400 mb-4">物品类型</p>
+                <img id="detail-img" src="" class="w-48 h-48 mx-auto my-4 object-contain drop-shadow-lg" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiMzMzMiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iIzU1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+PzwvdGV4dD48L3N2Zz4='">
+                <p id="detail-desc" class="text-gray-300 italic px-4">物品描述会显示在这里...</p>
+                <!-- 物品来源信息 -->
+                <div id="detail-source" class="text-gray-400 text-sm mt-4"></div>
+            </div>
+            <button onclick="closeItemDetail()" class="w-full mt-4 py-3 bg-black/30 text-gray-400 hover:bg-black/50 transition-colors">关闭</button>
+        </div>
+    </div>
+
+    <!-- 新增：更多按钮弹窗 -->
+    <div id="more-modal-overlay" class="readme-modal-overlay hidden" onclick="closeMoreModal(event)">
+        <div class="more-modal-content" onclick="event.stopPropagation()">
+            <div class="more-modal-header">
+                <h3 class="text-xl font-bold text-white">更多</h3>
+                <button class="readme-modal-close-btn" onclick="closeMoreModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="more-modal-body">
+                <button class="more-modal-btn" onclick="showFeedback()">
+                    <i class="fas fa-comment-dots mr-2"></i>意见反馈
+                </button>
+                <button class="more-modal-btn" onclick="showUpdateLog()">
+                    <i class="fas fa-history mr-2"></i>更新记录
+                </button>
+                <button class="more-modal-btn" onclick="showPossibilityInfo()">
+                    <i class="fas fa-question-circle mr-2"></i>概率说明
+                </button>
+                <button class="more-modal-btn" onclick="showTodoList()">
+                    <i class="fas fa-tasks mr-2"></i>计划更新功能列表
+                </button>
+                <button class="more-modal-btn" onclick="window.location.href='/editor.html'">
+                    <i class="fas fa-edit mr-2"></i>编辑器
+                </button>
+                <button class="more-modal-btn reset" onclick="clearAllData()">
+                    <i class="fas fa-trash-alt mr-2"></i>重置所有数据
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 概率说明弹窗 -->
+    <div id="possibility-modal-overlay" class="readme-modal-overlay hidden" onclick="closePossibilityModal(event)">
+        <div class="readme-modal-content" onclick="event.stopPropagation()">
+            <div class="readme-modal-header">
+                <h3 class="text-xl font-bold text-white">概率说明</h3>
+                <button class="readme-modal-close-btn" onclick="closePossibilityModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="possibility-modal-body" class="readme-modal-body">
+                加载中...
+            </div>
+        </div>
+    </div>
+
+    <!-- 计划更新功能列表弹窗 -->
+    <div id="todo-modal-overlay" class="readme-modal-overlay hidden" onclick="closeTodoModal(event)">
+        <div class="readme-modal-content" onclick="event.stopPropagation()">
+            <div class="readme-modal-header">
+                <h3 class="text-xl font-bold text-white">计划更新功能列表</h3>
+                <button class="readme-modal-close-btn" onclick="closeTodoModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="todo-modal-body" class="readme-modal-body">
+                加载中...
+            </div>
+        </div>
+    </div>
+
+    <!-- 新增：更新记录弹窗 -->
+    <div id="update-log-modal-overlay" class="readme-modal-overlay hidden" onclick="closeUpdateLogModal(event)">
+        <div class="readme-modal-content" onclick="event.stopPropagation()">
+            <div class="readme-modal-header">
+                <h3 class="text-xl font-bold text-white">更新记录</h3>
+                <button class="readme-modal-close-btn" onclick="closeUpdateLogModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="update-log-modal-body" class="readme-modal-body">
+                加载中...
+            </div>
+        </div>
+    </div>
+
+    <!-- 新增：意见反馈弹窗 -->
+    <div id="feedback-modal-overlay" class="readme-modal-overlay hidden" onclick="closeFeedbackModal(event)">
+        <div class="readme-modal-content" onclick="event.stopPropagation()">
+            <div class="readme-modal-header">
+                <h3 class="text-xl font-bold text-white">意见反馈</h3>
+                <button class="readme-modal-close-btn" onclick="closeFeedbackModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="readme-modal-body">
+                <iframe src="/WIKI/反馈#jinghuamoniqi" class="w-full h-[70vh]" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- 新增：商城按钮 -->
+    <div class="shop-button" onclick="window.location.href='/store.html'">
+        <i class="fas fa-shopping-cart"></i>
+    </div>
+
+    <script>
+        // ResourceManager.js
+        class ResourceManager {
+            static SHARED_KEY = 'shared_resources';
+            
+            /**
+             * 初始化全局资源（首次加载时）
+             * @param {Object} initialResources 初始资源配置
+             */
+            static initialize(initialResources = {}) {
+                let resources = JSON.parse(localStorage.getItem(this.SHARED_KEY));
+                if (!resources) {
+                    resources = {...initialResources};
+                    localStorage.setItem(this.SHARED_KEY, JSON.stringify(resources));
+                }
+                return resources;
+            }
+            
+            /**
+             * 获取指定资源的数量
+             * @param {string} resourceName 资源名称
+             * @returns {number}
+             */
+            static getResource(resourceName) {
+                const resources = JSON.parse(localStorage.getItem(this.SHARED_KEY)) || {};
+                return resources[resourceName] || 0;
+            }
+            
+            /**
+             * 设置指定资源的数量
+             * @param {string} resourceName 资源名称
+             * @param {number} amount 数量
+             */
+            static setResource(resourceName, amount) {
+                const resources = JSON.parse(localStorage.getItem(this.SHARED_KEY)) || {};
+                resources[resourceName] = amount;
+                localStorage.setItem(this.SHARED_KEY, JSON.stringify(resources));
+            }
+            
+            /**
+             * 扣除指定资源
+             * @param {string} resourceName 资源名称
+             * @param {number} amount 扣除数量
+             * @returns {boolean} 是否成功扣除
+             */
+            static deductResource(resourceName, amount) {
+                const current = this.getResource(resourceName);
+                if (current < amount) {
+                    return false;
+                }
+                this.setResource(resourceName, current - amount);
+                return true;
+            }
+            
+            /**
+             * 增加指定资源
+             * @param {string} resourceName 资源名称
+             * @param {number} amount 增加数量
+             */
+            static addResource(resourceName, amount) {
+                const current = this.getResource(resourceName);
+                this.setResource(resourceName, current + amount);
+            }
+        }
+
+        let loadedEssencePools = [];
+        // allItemsMap 存储结构变为 Map<string, ItemObject[]>
+        // 键是物品名称，值是一个数组，包含所有同名但 img/type 可能不同的独特物品
+        let allItemsMap = new Map(); 
+        const placeholderImg = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiMzMzMiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iIzU1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+PzwvdGV4dD48L3N2Zz4=';
+        // 更新稀有度映射，包含 F
+        const rarityMap = { S: "稀世", A: "奇珍", B: "独特", F: "头像框", C: "罕见", D: "普通" };
+        // 更新稀有度排序权重，F 介于 B 和 C 之间
+        const rarityOrder = { 'S': 5, 'A': 4, 'B': 3, 'F': 2.5, 'C': 2, 'D': 1 }; 
+
+        let globalTotalPulls = 0; // 全局总抽数
+        let typeSortOrder = []; // 存储从 types.json 加载的类型排序数组
+        let typePriorityMap = new Map(); // 存储类型到其优先级的映射
+
+        // 新增：存储精华的馈赠物品映射
+        let giftItemsMap = new Map();
+
+        // 新增：存储物品来源信息
+        let itemSourceMap = new Map();
+
+        // 新增：生成物品唯一标识符（兼容V1和V2格式）
+        function generateItemKey(item) {
+            // 兼容V1格式：name|type|img
+            // V2格式：name|type|rarity|img
+            if (item.rarity) {
+                // V2物品包含rarity
+                return `${item.name}|${item.type}|${item.rarity}|${item.img || ''}`;
+            } else {
+                // V1物品不包含rarity，使用旧格式
+                return `${item.name}|${item.type}|${item.img || ''}`;
+            }
+        }
+
+        async function loadOwnedJson() {
+            try {
+                const res = await fetch('/owned.json');
+                if (!res.ok) throw new Error(`Failed to load owned.json`);
+                return await res.json();
+            } catch (err) {
+                console.error("Error loading owned.json:", err);
+                return null;
+            }
+        }
+
+        async function loadResourceTypes() {
+          try {
+            const res = await fetch('/resource_types.json');
+            if (!res.ok) throw new Error(`Failed to load resource_types.json`);
+            return await res.json();
+          } catch (err) {
+            console.error("Error loading resource_types.json:", err);
+            return [];
+          }
+        }
+
+        function initializeGlobalResources(ownedData) {
+            const initialResources = ownedData?.initialResources || { inspiration: 1000, rank_treasure: 50, fragments: 500 };
+            return ResourceManager.initialize(initialResources);
+        }
+
+        function updateResourceDisplay(resourceTypes) {
+            // 检查DOM元素是否存在
+            const container = document.getElementById('resource-display');
+            if (!container) {
+                console.warn('Resource display container not found');
+                return;
+            }
+            
+            // 检查是否需要完全重建（首次加载或资源类型变化）
+            const needsRebuild = !container.dataset.initialized || 
+                                 container.dataset.resourceCount !== String(resourceTypes.length);
+            
+            if (needsRebuild) {
+                // 完全重建
+                container.innerHTML = '';
+                
+                // 先显示总抽数
+                const pullsEl = document.createElement('div');
+                pullsEl.className = 'resource-item';
+                pullsEl.id = 'total-pulls-display';
+                pullsEl.innerHTML = `
+                  <i class="fas fa-arrow-alt-circle-down text-white"></i>
+                  <span class="font-bold text-white">${globalTotalPulls}</span>
+                `;
+                container.appendChild(pullsEl);
+
+                if (resourceTypes && resourceTypes.length > 0) {
+                    resourceTypes.forEach(resourceType => {
+                        const value = ResourceManager.getResource(resourceType.name);
+                        const el = document.createElement('div');
+                        el.className = 'resource-item';
+                        el.id = `resource-display-${resourceType.name}`;
+                        el.innerHTML = `
+                          <img src="${resourceType.icon}" class="w-5 h-5">
+                          <span id="resource-${resourceType.name}" class="font-bold text-white">${value}</span>
+                        `;
+                        container.appendChild(el);
+                    }
+                );
+                }
+
+                // 添加 + 按钮 - 只在重建时创建一次
+                const plusBtnWrapper = document.createElement('div');
+                plusBtnWrapper.id = 'resource-plus-btn';
+                plusBtnWrapper.className = 'plus-btn-container';
+                plusBtnWrapper.innerHTML = '<span class="plus-btn">+</span>';
+                
+                // 使用原生事件绑定
+                plusBtnWrapper.onclick = function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('Plus button clicked!');
+                    openBonusModal();
+                    return false;
+                };
+
+                container.appendChild(plusBtnWrapper);
+                
+                // 标记已初始化
+                container.dataset.initialized = 'true';
+                container.dataset.resourceCount = String(resourceTypes.length);
+                
+                console.log('Resource display rebuilt with plus button');
+            } else {
+                // 只更新数值，不重建DOM
+                const pullsSpan = container.querySelector('#total-pulls-display span');
+                if (pullsSpan) {
+                    pullsSpan.textContent = globalTotalPulls;
+                }
+                
+                if (resourceTypes && resourceTypes.length > 0) {
+                    resourceTypes.forEach(resourceType => {
+                        const valueSpan = document.getElementById(`resource-${resourceType.name}`);
+                        if (valueSpan) {
+                            const newValue = ResourceManager.getResource(resourceType.name);
+                            valueSpan.textContent = newValue;
+                        }
+                    });
+                }
+            }
+        }
+
+        function openBonusModal() {
+            console.log('openBonusModal called');
+            
+            // 防止重复打开
+            const existingModal = document.getElementById('bonus-modal');
+            if (existingModal) {
+                console.log('Modal already exists, removing...');
+                existingModal.remove();
+            }
+
+            // 创建模态框
+            const modal = document.createElement('div');
+            modal.id = 'bonus-modal';
+            modal.className = 'fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[9999]';
+            modal.style.backdropFilter = 'blur(4px)';
+            
+            modal.innerHTML = `
+                <div class="bg-gray-900 border border-gray-700 rounded-lg p-6 relative w-[95vw] max-w-[900px] max-h-[90vh] overflow-auto" onclick="event.stopPropagation()">
+                    <button onclick="closeBonusModal()" class="absolute top-2 right-2 text-white text-2xl hover:text-gray-300 w-8 h-8 flex items-center justify-center">×</button>
+                    <iframe src="/bonus.html" class="w-full h-[70vh] border-0 mt-5"></iframe>
+                </div>
+            `;
+            
+            // 点击遮罩关闭
+            modal.onclick = function(e) {
+                if (e.target === modal) {
+                    closeBonusModal();
+                }
+            };
+            
+            document.body.appendChild(modal);
+            console.log('Modal created and added to body');
+        }
+
+        function closeBonusModal() {
+            const modal = document.getElementById('bonus-modal');
+            if (modal) {
+                modal.remove();
+                console.log('Modal closed');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const loadingMessage = document.getElementById('loading-message');
+
+            async function updateGlobalStats(resourceTypes) {
+                let totalFragments = 0;
+                let currentTotalPulls = 0;
+                
+                // --- 修复：区分 V1 和 V2 来源的计数 ---
+                let v1TotalPulls = 0;
+                let v2PoolIds = new Set(); // 存储所有 V2 池子的 ID
+                
+                // 1. 先找出所有 V2 池子的 ID
+                if (loadedEssencePools && Array.isArray(loadedEssencePools)) {
+                    loadedEssencePools.forEach(pool => {
+                        if (pool.version && pool.version.startsWith('V2')) {
+                            v2PoolIds.add(pool.id);
+                        }
+                    });
+                }
+
+                // 2. 遍历所有 data_<pool_id>，只累加 V1 的 total
+                for (let i = 0; i < localStorage.length; i++) {
+                    const key = localStorage.key(i);
+                    if (key && key.startsWith('data_')) {
+                        const poolId = key.substring(5); // Extract pool ID
+                        // 如果这个池子是 V2 的，则跳过，避免重复计算
+                        if (v2PoolIds.has(poolId)) {
+                            continue;
+                        }
+                        try {
+                            const state = JSON.parse(localStorage.getItem(key));
+                            if (state) {
+                                totalFragments += state.currencies?.fragments || 0;
+                                v1TotalPulls += state.total || 0; // 累加 V1 的 total
+                            }
+                        } catch (e) {
+                            console.error(`解析本地存储数据 ${key} 失败:`, e);
+                        }
+                    }
+                }
+
+                // 3. 读取 V2 的全局 total
+                let v2TotalPulls = 0;
+                try {
+                    const sharedPityState = JSON.parse(localStorage.getItem('shared_pity_state'));
+                    if (sharedPityState && sharedPityState.total !== undefined) {
+                        v2TotalPulls = sharedPityState.total;
+                    }
+                } catch (e) {
+                    console.error("解析 shared_pity_state 失败:", e);
+                }
+
+                // 4. 合并 V1 和 V2 的总抽取次数
+                currentTotalPulls = v1TotalPulls + v2TotalPulls;
+                // --- 修复结束 ---
+                
+                globalTotalPulls = currentTotalPulls; 
+                
+                // 安全更新DOM元素
+                const globalFragmentsEl = document.getElementById('global-fragments');
+                const globalTotalPullsEl = document.getElementById('global-total-pulls');
+                
+                if (globalFragmentsEl) {
+                    globalFragmentsEl.textContent = totalFragments;
+                }
+                if (globalTotalPullsEl) {
+                    globalTotalPullsEl.textContent = globalTotalPulls;
+                }
+
+                // Update resource display with latest values
+                updateResourceDisplay(resourceTypes);
+            }
+
+            try {
+                const ownedData = await loadOwnedJson();
+                const resources = initializeGlobalResources(ownedData);
+                const resourceTypes = await loadResourceTypes();
+
+                await updateGlobalStats(resourceTypes);
+                setInterval(async () => {
+                    await updateGlobalStats(resourceTypes);
+                }, 200); 
+
+                const response = await fetch('/more/list.json');
+                if (!response.ok) throw new Error(`无法加载 list.json (状态: ${response.status})`);
+                loadedEssencePools = await response.json();
+                
+                // 构建精华的馈赠物品映射
+                await buildGiftItemsMap();
+
+                if (loadingMessage) {
+                    loadingMessage.classList.add('hidden');
+                }
+                renderEssenceCards(loadedEssencePools);
+
+                // 加载 types.json
+                const typesResponse = await fetch('/types.json');
+                if (typesResponse.ok) {
+                    typeSortOrder = await typesResponse.json();
+                    typeSortOrder.forEach((type, index) => {
+                        typePriorityMap.set(type.trim(), index); // 存储 trimmed type 及其索引作为优先级
+                    });
+                    console.log("Type sort order loaded:", typeSortOrder);
+                } else {
+                    console.warn("Could not load types.json, using default type sorting.");
+                }
+                
+                // 新增：加载所有 pool.json 文件并缓存物品数据
+                await loadAllPoolItems();
+                // 新增：加载商店商品并添加到 allItemsMap
+                await loadStoreItems();
+                await loadJianyingXunbaoItems(); // 新增：加载鉴影寻宝商品
+
+                // 新增：公告弹窗
+                setTimeout(checkAnnouncementPopup, 1000);
+
+                // 添加切换开关事件监听
+                const toggle = document.getElementById('show-unowned-toggle');
+                if (toggle) {
+                    toggle.addEventListener('change', function() {
+                        // 重新渲染物品图鉴
+                        showOwnedItemsModal();
+                    });
+                }
+
+            } catch (error) {
+                console.error("加载精华列表或物品数据时出错:", error);
+                if (loadingMessage) {
+                    loadingMessage.textContent = `加载错误: ${error.message}`;
+                    loadingMessage.classList.remove('hidden');
+                }
+            }
+        });
+
+        // ==========================================================
+        // 新增：加载所有 pool.json 文件的函数
+        // ==========================================================
+        async function loadAllPoolItems() {
+            if (!loadedEssencePools || !Array.isArray(loadedEssencePools)) {
+                console.warn("loadedEssencePools 未定义或不是数组");
+                return;
+            }
+            const poolPromises = loadedEssencePools.map(async pool => {
+                try {
+                    const cacheBuster = `?t=${new Date().getTime()}`; // 防止缓存
+                    const response = await fetch(`/pools/${pool.id}/pool.json${cacheBuster}`);
+                    if (!response.ok) throw new Error(`无法加载 ${pool.id}/pool.json (状态: ${response.status})`);
+                    const poolConfig = await response.json();
+                    
+                    // 遍历所有稀有度等级的物品并添加到 allItemsMap
+                    for (const rarity in poolConfig.items) {
+                        if (poolConfig.items.hasOwnProperty(rarity)) {
+                            poolConfig.items[rarity].forEach(item => {
+                                // 确保每个物品都有 rarity 属性
+                                if (!item.rarity) {
+                                    item.rarity = rarity; 
+                                }
+                                // 对关键属性进行 trim() 处理
+                                const trimmedName = (item.name || '').trim();
+                                const trimmedImg = (item.img || '').trim();
+                                const trimmedType = (item.type || '').trim();
+                                const trimmedRarity = (item.rarity || '').trim();
+
+                                // 生成一个唯一标识，用于判断物品是否真正独特 (name, img, type, rarity 都相同才算同一物品)
+                                const uniqueKey = `${trimmedName}|${trimmedImg}|${trimmedType}|${trimmedRarity}`;
+                                
+                                // 获取该名称下的物品列表
+                                let itemsWithName = allItemsMap.get(trimmedName) || [];
+                                
+                                // 检查该独特物品是否已存在于列表中
+                                const exists = itemsWithName.some(existingItem => 
+                                    `${(existingItem.name || '').trim()}|${(existingItem.img || '').trim()}|${(existingItem.type || '').trim()}|${(existingItem.rarity || '').trim()}` === uniqueKey
+                                );
+
+                                if (!exists) {
+                                    // 如果不存在，则添加
+                                    itemsWithName.push({
+                                        ...item,
+                                        name: trimmedName,
+                                        img: trimmedImg,
+                                        type: trimmedType,
+                                        rarity: trimmedRarity
+                                    });
+                                    allItemsMap.set(trimmedName, itemsWithName);
+                                }
+                                
+                                // 记录物品来源
+                                if (!itemSourceMap.has(trimmedName)) {
+                                    itemSourceMap.set(trimmedName, []);
+                                }
+                                const sources = itemSourceMap.get(trimmedName);
+                                // 珍宝·旧赛季优先级最低
+                                if (pool.name.includes("珍宝·旧赛季")) {
+                                    sources.push(pool.name);
+                                } else {
+                                    sources.unshift(pool.name);
+                                }
+                            });
+                        }
+                    }
+                    
+                    // --- 新增：处理 V2 的 frameSettings.item ---
+                    if (poolConfig.frameSettings?.enabled && poolConfig.frameSettings.item) {
+                         const frameItem = {
+                             ...poolConfig.frameSettings.item,
+                             rarity: 'F' // 明确设置稀有度为 F
+                         };
+                         const trimmedName = (frameItem.name || '').trim();
+                         const trimmedImg = (frameItem.img || '').trim();
+                         const trimmedType = (frameItem.type || '').trim();
+                         const trimmedRarity = (frameItem.rarity || '').trim();
+                         
+                         const uniqueKey = `${trimmedName}|${trimmedImg}|${trimmedType}|${trimmedRarity}`;
+                         let itemsWithName = allItemsMap.get(trimmedName) || [];
+                         
+                         const exists = itemsWithName.some(existingItem => 
+                             `${(existingItem.name || '').trim()}|${(existingItem.img || '').trim()}|${(existingItem.type || '').trim()}|${(existingItem.rarity || '').trim()}` === uniqueKey
+                         );
+
+                         if (!exists) {
+                             itemsWithName.push({
+                                 ...frameItem,
+                                 name: trimmedName,
+                                 img: trimmedImg,
+                                 type: trimmedType,
+                                 rarity: trimmedRarity
+                             });
+                             allItemsMap.set(trimmedName, itemsWithName);
+                         }
+                         
+                         // 记录物品来源
+                         if (!itemSourceMap.has(trimmedName)) {
+                             itemSourceMap.set(trimmedName, []);
+                         }
+                         const sources = itemSourceMap.get(trimmedName);
+                         if (!sources.includes("商店")) {
+                             sources.push("商店");
+                         }
+                    }
+                    // --- 新增结束 ---
+                    
+                } catch (error) {
+                    console.warn(`加载或解析卡池 ${pool.id} 的 pool.json 失败:`, error);
+                }
+            });
+            await Promise.all(poolPromises);
+            console.log("所有卡池物品数据已缓存。", allItemsMap.size, "个独立名称组");
+            // console.log(allItemsMap); // 调试用，查看缓存的物品结构
+        }
+
+        // 新增：加载商店商品并添加到 allItemsMap
+        async function loadStoreItems() {
+            try {
+                const response = await fetch('/store/goods.json');
+                if (!response.ok) throw new Error(`无法加载商店商品`);
+                const storeItems = await response.json();
+                
+                // 将商店商品添加到 allItemsMap
+                storeItems.forEach(item => {
+                    const trimmedName = (item.name || '').trim();
+                    const trimmedImg = (item.img || '').trim();
+                    const trimmedType = (item.type || '').trim();
+                    const trimmedRarity = (item.rarity || 'B').trim(); // 商店商品默认B级
+                    
+                    // 生成唯一标识
+                    const uniqueKey = `${trimmedName}|${trimmedImg}|${trimmedType}|${trimmedRarity}`;
+                    
+                    // 获取该名称下的物品列表
+                    let itemsWithName = allItemsMap.get(trimmedName) || [];
+                    
+                    // 检查该商品是否已存在于列表中
+                    const exists = itemsWithName.some(existingItem => 
+                        `${(existingItem.name || '').trim()}|${(existingItem.img || '').trim()}|${(existingItem.type || '').trim()}|${(existingItem.rarity || '').trim()}` === uniqueKey
+                    );
+
+                    if (!exists) {
+                        // 添加商店商品到缓存
+                        itemsWithName.push({
+                            name: trimmedName,
+                            img: trimmedImg,
+                            type: trimmedType,
+                            rarity: trimmedRarity,
+                            description: item.description || "商店商品"
+                        });
+                        allItemsMap.set(trimmedName, itemsWithName);
+                    }
+                    
+                    // 记录物品来源（商店）
+                    if (!itemSourceMap.has(trimmedName)) {
+                        itemSourceMap.set(trimmedName, []);
+                    }
+                    const sources = itemSourceMap.get(trimmedName);
+                    sources.push("商店");
+                });
+                
+                console.log("商店商品已加载到缓存。", storeItems.length, "个商品");
+            } catch (error) {
+                console.warn("加载商店商品失败:", error);
+            }
+        }
+        // 新增：加载鉴影寻宝商品并添加到 allItemsMap
+        async function loadJianyingXunbaoItems() {
+            try {
+                // 1. 加载 JYXB/list.json 获取所有池子信息
+                const listResponse = await fetch('/JYXB/list.json');
+                if (!listResponse.ok) throw new Error(`无法加载鉴影寻宝列表`);
+                const jyxbList = await listResponse.json();
+                
+                // 2. 遍历所有池子，加载对应的 pool.json
+                const poolPromises = jyxbList.map(async poolInfo => {
+                    try {
+                        const poolId = poolInfo.id;
+                        const poolResponse = await fetch(`/JYXB/${poolId}/pool.json`);
+                        if (!poolResponse.ok) throw new Error(`无法加载鉴影寻宝池子 ${poolId}`);
+                        const poolConfig = await poolResponse.json();
+                        
+                        // 3. 遍历所有稀有度等级的物品并添加到 allItemsMap
+                        for (const rarity in poolConfig.items) {
+                            if (poolConfig.items.hasOwnProperty(rarity)) {
+                                poolConfig.items[rarity].forEach(item => {
+                                    // 确保每个物品都有 rarity 属性
+                                    if (!item.rarity) {
+                                        item.rarity = rarity; 
+                                    }
+                                    
+                                    // 对关键属性进行 trim() 处理
+                                    const trimmedName = (item.name || '').trim();
+                                    const trimmedImg = (item.img || '').trim();
+                                    const trimmedType = (item.type || '').trim();
+                                    const trimmedRarity = (item.rarity || '').trim();
+        
+                                    // 生成一个唯一标识
+                                    const uniqueKey = `${trimmedName}|${trimmedImg}|${trimmedType}|${trimmedRarity}`;
+                                    
+                                    // 获取该名称下的物品列表
+                                    let itemsWithName = allItemsMap.get(trimmedName) || [];
+                                    
+                                    // 检查该物品是否已存在于列表中
+                                    const exists = itemsWithName.some(existingItem => 
+                                        `${(existingItem.name || '').trim()}|${(existingItem.img || '').trim()}|${(existingItem.type || '').trim()}|${(existingItem.rarity || '').trim()}` === uniqueKey
+                                    );
+        
+                                    if (!exists) {
+                                        // 添加鉴影寻宝物品到缓存
+                                        itemsWithName.push({
+                                            ...item,
+                                            name: trimmedName,
+                                            img: trimmedImg,
+                                            type: trimmedType,
+                                            rarity: trimmedRarity
+                                        });
+                                        allItemsMap.set(trimmedName, itemsWithName);
+                                    }
+                                    
+                                    // 记录物品来源
+                                    if (!itemSourceMap.has(trimmedName)) {
+                                        itemSourceMap.set(trimmedName, []);
+                                    }
+                                    const sources = itemSourceMap.get(trimmedName);
+                                    sources.push(`鉴影寻宝${poolId}`);
+                                });
+                            }
+                        }
+                    } catch (error) {
+                        console.warn(`加载鉴影寻宝池子失败:`, error);
+                    }
+                });
+                
+                await Promise.all(poolPromises);
+                console.log("鉴影寻宝商品已加载到缓存。");
+                
+            } catch (error) {
+                console.warn("加载鉴影寻宝商品失败:", error);
+            }
+        }
+
+        // 新增：构建 giftItemsMap 供 displayOwnedItemDetail 使用
+        async function buildGiftItemsMap() {
+            const GIFT_THRESHOLDS = [80, 130, 180];
+            giftItemsMap.clear();
+
+            if (!loadedEssencePools || !Array.isArray(loadedEssencePools)) return;
+
+            for (const pool of loadedEssencePools) {
+                const awards = pool.award;
+                if (awards && typeof awards === 'object') {
+                    let totalPullsForThisPool = 0;
+                    const savedState = localStorage.getItem(`data_${pool.id}`);
+                    if (savedState) {
+                        try {
+                            const state = JSON.parse(savedState);
+                            totalPullsForThisPool = state.total || 0;
+                        } catch (e) {}
+                    }
+
+                    Object.entries(awards).forEach(([rewardKey, rewardData], index) => {
+                        const thresholdIndex = parseInt(rewardKey.replace(/[^0-9]/g, '')) || (index + 1);
+
+                        if (
+                            thresholdIndex >= 1 &&
+                            thresholdIndex <= 3 &&
+                            totalPullsForThisPool >= GIFT_THRESHOLDS[thresholdIndex - 1]
+                        ) {
+                            const [name, img, desc] = rewardData || [];
+                            if (name && img) {
+                                giftItemsMap.set(name, {
+                                    name: name,
+                                    img: img,
+                                    type: "精华的馈赠",
+                                    description: desc || "精华回馈专属奖励",
+                                    rarity: "A"
+                                });
+                                
+                                // 记录物品来源
+                                if (!itemSourceMap.has(name)) {
+                                    itemSourceMap.set(name, []);
+                                }
+                                const sources = itemSourceMap.get(name);
+                                sources.push(`${pool.name}的馈赠`);
+                            }
+                        }
+                    });
+                }
+            }
+        }
+
+
+        // ==================== 修复后的跑马灯效果函数 ====================
+        function applyMarqueeEffect(containerElement, textSpanElement) {
+            if (!containerElement || !textSpanElement) {
+                return;
+            }
+
+            requestAnimationFrame(() => {
+                const containerWidth = containerElement.clientWidth;
+                const textWidth = textSpanElement.scrollWidth;
+
+                let innerContainer = containerElement.querySelector('.marquee-inner-container');
+
+                if (textWidth > containerWidth) {
+                    if (!innerContainer) {
+                        innerContainer = document.createElement('div');
+                        innerContainer.classList.add('marquee-inner-container');
+                        
+                        // 清空容器并重新构建结构
+                        containerElement.innerHTML = '';
+                        innerContainer.appendChild(textSpanElement.cloneNode(true));
+                        
+                        // 添加克隆的span以实现无缝滚动
+                        const cloneSpan = textSpanElement.cloneNode(true);
+                        innerContainer.appendChild(cloneSpan);
+                        
+                        containerElement.appendChild(innerContainer);
+                    }
+
+                    const scrollSpeed = 50; 
+                    const duration = (textWidth + 32) / scrollSpeed; // 32px = 2rem padding
+                    
+                    innerContainer.style.animationDuration = `${duration}s`;
+                    innerContainer.classList.add('running');
+                } else {
+                    // 文字长度不超过容器宽度时，清理跑马灯结构
+                    if (innerContainer) {
+                        innerContainer.remove();
+                    }
+                    // 重新设置容器内容
+                    containerElement.innerHTML = '';
+                    containerElement.appendChild(textSpanElement.cloneNode(true));
+                    containerElement.style.textOverflow = 'ellipsis';
+                }
+            });
+        }
+
+        function renderEssenceCards(poolsToRender) {
+            const listContainer = document.getElementById('essence-list-container');
+            if (!listContainer) return;
+            
+            listContainer.innerHTML = '';
+
+            if (!poolsToRender || poolsToRender.length === 0) {
+                listContainer.innerHTML = '<div class="col-span-full text-center text-gray-500 py-10">没有找到匹配的精华。</div>';
+                return;
+            }
+
+            poolsToRender.forEach(pool => {
+                const poolId = pool.id;
+                const version = pool.version || 'V1.html';
+                const linkUrl = `/${version}#${poolId}`;
+                const card = document.createElement('a');
+                card.href = linkUrl;
+                card.className = 'essence-card block relative cursor-pointer group';
+
+                let totalPulls = 0, sCount = 0, aCount = 0, bCount = 0, fCount = 0; // 添加 fCount
+                const savedState = localStorage.getItem(`data_${poolId}`);
+                if (savedState) {
+                    try {
+                        const state = JSON.parse(savedState);
+                        totalPulls = state.total || 0;
+                        
+                        // --- 更新：读取各品质次数 ---
+                        if (state.rarityCounts) {
+                            // V2 格式 (由 V2.html 生成)
+                            ({ S: sCount = 0, A: aCount = 0, B: bCount = 0, F: fCount = 0 } = state.rarityCounts);
+                        } else if (state.history) {
+                            // V1 格式
+                            state.history.forEach(item => {
+                                if (item.r === 'S') sCount++;
+                                else if (item.r === 'A') aCount++;
+                                else if (item.r === 'B') bCount++;
+                                // V1 没有 F
+                            });
+                        }
+                        // --- 更新结束 ---
+                    } catch (e) {
+                        console.error(`解析精华 ${poolId} 的本地存储数据失败:`, e);
+                    }
+                }
+
+                // 创建标题和描述元素
+                const titleContainer = document.createElement('div');
+                titleContainer.className = 'text-xl font-bold text-white mb-1 essence-title-container';
+                
+                const titleTextSpan = document.createElement('span');
+                titleTextSpan.textContent = pool.name;
+                titleTextSpan.style.display = 'inline-block';
+
+                const descriptionContainer = document.createElement('div');
+                descriptionContainer.className = 'text-sm text-gray-400 mb-3 essence-description';
+                
+                const descriptionTextSpan = document.createElement('span');
+                descriptionTextSpan.textContent = pool.description;
+                descriptionTextSpan.style.display = 'inline-block';
+
+                // --- 更新：卡片 HTML 模板，支持显示 F ---
+                card.innerHTML = `
+                    <div class="relative w-full h-16 sm:h-20 md:h-24 bg-gray-900 flex items-center justify-center rounded-t-md overflow-hidden">
+                        <img src="${pool.image}" alt="${pool.name}" class="essence-icon">
+                    </div>
+                    <div class="p-3">
+                        <div id="title-placeholder-${poolId}"></div>
+                        <div id="description-placeholder-${poolId}"></div>
+                        <div class="text-sm text-gray-400 border-t border-gray-700 pt-2">
+                            <p class="mb-1"><i class="fas fa-arrow-alt-circle-down mr-1 text-blue-300"></i>总抽取: <span class="text-white font-bold">${totalPulls}</span></p>
+                            <div class="grid grid-cols-3 gap-1 text-xs mt-1">
+                                <p><span class="text-rarity-S font-bold">稀世:</span> <span class="text-white">${sCount}</span></p>
+                                <p><span class="text-rarity-A font-bold">奇珍:</span> <span class="text-white">${aCount}</span></p>
+                                <p><span class="text-rarity-B font-bold">独特:</span> <span class="text-white">${bCount}</span></p>
+                                <!-- 条件性显示 F 级计数 -->
+                                ${version.startsWith('V2') ? `` : ''}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                // --- 更新结束 --->
+                listContainer.appendChild(card);
+
+                // 替换占位符并应用跑马灯
+                const titlePlaceholder = card.querySelector(`#title-placeholder-${poolId}`);
+                if (titlePlaceholder) {
+                    titlePlaceholder.parentNode.replaceChild(titleContainer, titlePlaceholder);
+                    titleContainer.appendChild(titleTextSpan);
+                }
+                
+                const descriptionPlaceholder = card.querySelector(`#description-placeholder-${poolId}`);
+                if (descriptionPlaceholder) {
+                    descriptionPlaceholder.parentNode.replaceChild(descriptionContainer, descriptionPlaceholder);
+                    descriptionContainer.appendChild(descriptionTextSpan);
+                }
+
+                // 应用跑马灯效果
+                setTimeout(() => {
+                    applyMarqueeEffect(titleContainer, titleTextSpan);
+                    applyMarqueeEffect(descriptionContainer, descriptionTextSpan);
+                }, 100);
+            });
+        }
+
+        function clearAllData() {
+            if (confirm("确定要清空所有精华的所有抽取数据吗？此操作将删除所有模拟器数据且不可逆！")) {
+                const keysToRemove = [];
+                for (let i = 0; i < localStorage.length; i++) {
+                    const key = localStorage.key(i);
+                    if (key && key.startsWith('data_')) {
+                        keysToRemove.push(key);
+                    }
+                }
+                keysToRemove.forEach(key => localStorage.removeItem(key));
+                
+                // 同时清空全局拥有的物品 和 shared_resources
+                localStorage.removeItem('global_owned_items');
+                localStorage.removeItem('shared_resources'); // ← 新增这行
+                localStorage.removeItem('shared_pity_state'); // ← 清空V2的共享状态
+
+                renderEssenceCards(loadedEssencePools);
+                // 重新计算并更新全局统计数据
+                let totalFragments = 0;
+                let currentTotalPulls = 0;
+                for (let i = 0; i < localStorage.length; i++) {
+                    const key = localStorage.key(i);
+                    if (key && key.startsWith('data_')) {
+                        try {
+                            const state = JSON.parse(localStorage.getItem(key));
+                            if (state) {
+                                totalFragments += state.currencies?.fragments || 0;
+                                currentTotalPulls += state.total || 0;
+                            }
+                        } catch (e) {
+                            console.error(`解析本地存储数据 ${key} 失败:`, e);
+                        }
+                    }
+                }
+                globalTotalPulls = currentTotalPulls;
+                
+                // 安全更新DOM
+                const globalFragmentsEl = document.getElementById('global-fragments');
+                const globalTotalPullsEl = document.getElementById('global-total-pulls');
+                if (globalFragmentsEl) globalFragmentsEl.textContent = totalFragments;
+                if (globalTotalPullsEl) globalTotalPullsEl.textContent = globalTotalPulls;
+
+                alert("所有抽取数据已清空。");
+                closeMoreModal(); // 关闭更多弹窗
+            }
+        }
+
+        function filterEssencePools() {
+            const searchInput = document.getElementById('search-input');
+            if (!searchInput) return;
+            
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            let filteredPools = [];
+            if (loadedEssencePools && Array.isArray(loadedEssencePools)) {
+                filteredPools = searchTerm
+                    ? loadedEssencePools.filter(pool => 
+                        pool.id.toLowerCase().includes(searchTerm) ||
+                        pool.name.toLowerCase().includes(searchTerm) ||
+                        pool.description.toLowerCase().includes(searchTerm) ||
+                        (pool.characters && pool.characters.some(char => char.toLowerCase().includes(searchTerm)))
+                    )
+                    : loadedEssencePools;
+            }
+            renderEssenceCards(filteredPools);
+        }
+
+        window.addEventListener('storage', (event) => {
+            if (event.key && (event.key.startsWith('data_') || event.key === 'shared_pity_state') && event.newValue === null) {
+                renderEssenceCards(loadedEssencePools);
+                // 重新计算并更新全局统计数据
+                let totalFragments = 0;
+                let currentTotalPulls = 0;
+                for (let i = 0; i < localStorage.length; i++) {
+                    const key = localStorage.key(i);
+                    if (key && key.startsWith('data_')) {
+                        try {
+                            const state = JSON.parse(localStorage.getItem(key));
+                            if (state) {
+                                totalFragments += state.currencies?.fragments || 0;
+                                currentTotalPulls += state.total || 0;
+                            }
+                        } catch (e) {
+                            console.error(`解析本地存储数据 ${key} 失败:`, e);
+                        }
+                    }
+                }
+                globalTotalPulls = currentTotalPulls;
+                
+                // 安全更新DOM
+                const globalFragmentsEl = document.getElementById('global-fragments');
+                const globalTotalPullsEl = document.getElementById('global-total-pulls');
+                if (globalFragmentsEl) globalFragmentsEl.textContent = totalFragments;
+                if (globalTotalPullsEl) globalTotalPullsEl.textContent = globalTotalPulls;
+            }
+        });
+
+        // ==========================================================
+        // README 弹窗功能 (保持不变)
+        // ==========================================================
+        let readmeContentCache = ''; 
+
+        function parseMarkdown(markdownText) {
+            const lines = markdownText.split('\n');
+            let html = '';
+            let inParagraph = false; 
+
+            const processLineContent = (content) => {
+                content = content.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+                return content;
+            };
+
+            lines.forEach(line => {
+                line = line.trim(); 
+
+                if (line.startsWith('# ')) {
+                    if (inParagraph) { html += '</p>'; inParagraph = false; }
+                    html += `<h1>${processLineContent(line.substring(2).trim())}</h1>`;
+                } 
+                else if (line.startsWith('## ')) {
+                    if (inParagraph) { html += '</p>'; inParagraph = false; }
+                    html += `<h2>${processLineContent(line.substring(3).trim())}</h2>`;
+                }
+                else if (line === '---' || line === '***') {
+                    if (inParagraph) { html += '</p>'; inParagraph = false; }
+                    html += '<hr>';
+                }
+                else if (line === '') {
+                    if (inParagraph) { html += '</p>'; inParagraph = false; }
+                }
+                else {
+                    if (!inParagraph) {
+                        html += '<p>';
+                        inParagraph = true;
+                    }
+                    html += processLineContent(line) + ' '; 
+                }
+            });
+
+            if (inParagraph) {
+                html += '</p>';
+            }
+
+            return html;
+        }
+
+        async function showReadmeModal() {
+            const modalOverlay = document.getElementById('readme-modal-overlay');
+            const modalBody = document.getElementById('readme-modal-body');
+            
+            if (!modalOverlay || !modalBody) return;
+            
+            modalOverlay.classList.remove('hidden'); 
+
+            if (readmeContentCache) {
+                modalBody.innerHTML = readmeContentCache;
+                return;
+            }
+
+            modalBody.innerHTML = '加载中...'; 
+            try {
+                const response = await fetch('/more/readme.md'); 
+                if (!response.ok) {
+                    throw new Error(`无法加载 readme.md (状态: ${response.status})`);
+                }
+                const markdownText = await response.text();
+                const htmlContent = parseMarkdown(markdownText);
+                modalBody.innerHTML = htmlContent;
+                readmeContentCache = htmlContent; 
+            } catch (error) {
+                console.error("加载或解析 readme.md 时出错:", error);
+                modalBody.innerHTML = `<p class="text-red-400">加载说明文件失败: ${error.message}</p>`;
+            }
+        }
+
+        function closeReadmeModal(event) {
+            const modalOverlay = document.getElementById('readme-modal-overlay');
+            if (!modalOverlay) return;
+            
+            if (event && event.target.closest('.readme-modal-content')) {
+                return;
+            }
+            modalOverlay.classList.add('hidden');
+        }
+
+        // ==========================================================
+        // 新增：更多按钮弹窗功能
+        // ==========================================================
+        function showMoreModal() {
+            const modalOverlay = document.getElementById('more-modal-overlay');
+            if (!modalOverlay) return;
+            
+            modalOverlay.classList.remove('hidden');
+        }
+
+        function closeMoreModal(event) {
+            const modalOverlay = document.getElementById('more-modal-overlay');
+            if (!modalOverlay) return;
+            
+            if (event && event.target.closest('.more-modal-content')) {
+                return;
+            }
+            modalOverlay.classList.add('hidden');
+        }
+
+        // ==========================================================
+        // 新增：概率说明弹窗功能
+        // ==========================================================
+        let possibilityContentCache = '';
+
+        async function showPossibilityInfo() {
+            const modalOverlay = document.getElementById('possibility-modal-overlay');
+            const modalBody = document.getElementById('possibility-modal-body');
+            
+            if (!modalOverlay || !modalBody) return;
+            
+            // 先关闭更多弹窗
+            closeMoreModal();
+            
+            modalOverlay.classList.remove('hidden');
+            modalBody.innerHTML = '加载中...';
+
+            if (possibilityContentCache) {
+                modalBody.innerHTML = possibilityContentCache;
+                return;
+            }
+
+            try {
+                const response = await fetch('/more/possibility.md');
+                if (!response.ok) {
+                    throw new Error(`无法加载 possibility.md (状态: ${response.status})`);
+                }
+                const markdownText = await response.text();
+                const htmlContent = parseMarkdown(markdownText);
+                modalBody.innerHTML = htmlContent;
+                possibilityContentCache = htmlContent;
+            } catch (error) {
+                console.error("加载或解析 possibility.md 时出错:", error);
+                modalBody.innerHTML = `<p class="text-red-400">加载概率说明文件失败: ${error.message}</p>`;
+            }
+        }
+
+        function closePossibilityModal(event) {
+            const modalOverlay = document.getElementById('possibility-modal-overlay');
+            if (!modalOverlay) return;
+            
+            if (event && event.target.closest('.readme-modal-content')) {
+                return;
+            }
+            modalOverlay.classList.add('hidden');
+        }
+
+        // ==========================================================
+        // 新增：计划更新功能列表弹窗功能
+        // ==========================================================
+        let todoContentCache = '';
+
+        async function showTodoList() {
+            const modalOverlay = document.getElementById('todo-modal-overlay');
+            const modalBody = document.getElementById('todo-modal-body');
+            
+            if (!modalOverlay || !modalBody) return;
+            
+            // 先关闭更多弹窗
+            closeMoreModal();
+            
+            modalOverlay.classList.remove('hidden');
+            modalBody.innerHTML = '加载中...';
+
+            if (todoContentCache) {
+                modalBody.innerHTML = todoContentCache;
+                return;
+            }
+
+            try {
+                const response = await fetch('/more/todo.md');
+                if (!response.ok) {
+                    throw new Error(`无法加载 todo.md (状态: ${response.status})`);
+                }
+                const markdownText = await response.text();
+                const htmlContent = parseMarkdown(markdownText);
+                modalBody.innerHTML = htmlContent;
+                todoContentCache = htmlContent;
+            } catch (error) {
+                console.error("加载或解析 todo.md 时出错:", error);
+                modalBody.innerHTML = `<p class="text-red-400">加载计划更新功能列表文件失败: ${error.message}</p>`;
+            }
+        }
+
+        function closeTodoModal(event) {
+            const modalOverlay = document.getElementById('todo-modal-overlay');
+            if (!modalOverlay) return;
+            
+            if (event && event.target.closest('.readme-modal-content')) {
+                return;
+            }
+            modalOverlay.classList.add('hidden');
+        }
+
+        // ==========================================================
+        // 新增：更新记录弹窗功能
+        // ==========================================================
+        let updateLogContentCache = '';
+
+        async function showUpdateLog() {
+            const modalOverlay = document.getElementById('update-log-modal-overlay');
+            const modalBody = document.getElementById('update-log-modal-body');
+            
+            if (!modalOverlay || !modalBody) return;
+            
+            // 先关闭更多弹窗
+            closeMoreModal();
+            
+            modalOverlay.classList.remove('hidden');
+            modalBody.innerHTML = '加载中...';
+
+            if (updateLogContentCache) {
+                modalBody.innerHTML = updateLogContentCache;
+                return;
+            }
+
+            try {
+                const response = await fetch('/more/update.md');
+                if (!response.ok) {
+                    throw new Error(`无法加载 update.md (状态: ${response.status})`);
+                }
+                const markdownText = await response.text();
+                const htmlContent = parseMarkdown(markdownText);
+                modalBody.innerHTML = htmlContent;
+                updateLogContentCache = htmlContent;
+            } catch (error) {
+                console.error("加载或解析 update.md 时出错:", error);
+                modalBody.innerHTML = `<p class="text-red-400">加载更新记录文件失败: ${error.message}</p>`;
+            }
+        }
+
+        function closeUpdateLogModal(event) {
+            const modalOverlay = document.getElementById('update-log-modal-overlay');
+            if (!modalOverlay) return;
+            
+            if (event && event.target.closest('.readme-modal-content')) {
+                return;
+            }
+            modalOverlay.classList.add('hidden');
+        }
+
+        // ==========================================================
+        // 新增：意见反馈弹窗功能
+        // ==========================================================
+        function showFeedback() {
+            const modalOverlay = document.getElementById('feedback-modal-overlay');
+            if (!modalOverlay) return;
+            
+            // 先关闭更多弹窗
+            closeMoreModal();
+            
+            modalOverlay.classList.remove('hidden');
+        }
+
+        function closeFeedbackModal(event) {
+            const modalOverlay = document.getElementById('feedback-modal-overlay');
+            if (!modalOverlay) return;
+            
+            if (event && event.target.closest('.readme-modal-content')) {
+                return;
+            }
+            modalOverlay.classList.add('hidden');
+        }
+
+        // ==========================================================
+        // 新增：公告弹窗逻辑
+        // ==========================================================
+        async function checkAnnouncementPopup() {
+            try {
+                const res = await fetch('/more/announce.json');
+                if (!res.ok) throw new Error("无法加载公告");
+
+                const data = await res.json();
+                const lastAnnounceContent = localStorage.getItem('last_announce_content');
+                const dontShowToday = localStorage.getItem('dont_show_announce_today');
+
+                // 如果今日不提醒，则跳过
+                const today = new Date().toDateString();
+                if (dontShowToday === today && lastAnnounceContent === data.content) {
+                    return;
+                }
+
+                // 内容发生变化或第一次加载
+                if (lastAnnounceContent !== data.content) {
+                    showAnnounceModal(data.content);
+                    localStorage.setItem('last_announce_content', data.content);
+                }
+            } catch (err) {
+                console.warn("公告加载失败", err);
+            }
+        }
+
+        function showAnnounceModal(content) {
+            const overlay = document.createElement('div');
+            overlay.className = 'readme-modal-overlay';
+            overlay.id = 'announcement-overlay';
+
+            const parsedHTML = parseMarkdown(content);
+
+            overlay.innerHTML = `
+                <div class="readme-modal-content" onclick="event.stopPropagation()">
+                    <div class="readme-modal-header">
+                        <h3 class="text-xl font-bold text-white">📢 系统公告</h3>
+                        <button class="readme-modal-close-btn" onclick="closeAnnounceModal()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="readme-modal-body">
+                        ${parsedHTML}
+                    </div>
+                    <div style="padding: 1rem; display:flex; justify-content:space-between;">
+                        <label><input type="checkbox" id="dont-show-today-checkbox"> 今日不再提示</label>
+                        <button class="idv-btn bg-green-800/50 border-green-700 text-green-100 hover:bg-green-700/50 hover:border-green-500 hover:text-green-50" onclick="closeAnnounceModal()">关闭</button>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(overlay);
+
+            window.closeAnnounceModal = function () {
+                const checkbox = document.getElementById('dont-show-today-checkbox');
+                if (checkbox && checkbox.checked) {
+                    const today = new Date().toDateString();
+                    localStorage.setItem('dont_show_announce_today', today);
+                }
+                overlay.remove();
+            };
+        }
+
+        // ==========================================================
+        // 新增/修改：物品图鉴功能（包含 V1 和 V2 的物品）
+        // ==========================================================
+
+        /**
+         * 从 V1 的历史记录中提取已获取物品
+         * @returns {Array} 物品对象数组
+         */
+        function loadV1OwnedItemsFromHistory() {
+            const v1Items = [];
+            const processedKeys = new Set(); // 用于去重
+
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                if (key && key.startsWith('data_')) {
+                    const poolId = key.substring(5);
+                    // 检查该池子是否为 V1
+                    const poolInfo = loadedEssencePools.find(p => p.id === poolId);
+                    if (!poolInfo || !poolInfo.version || !poolInfo.version.startsWith('V1')) {
+                        continue; // 跳过非 V1 池子
+                    }
+
+                    try {
+                        const state = JSON.parse(localStorage.getItem(key));
+                        if (state && state.history && Array.isArray(state.history)) {
+                            state.history.forEach(record => {
+                                // V1 历史记录通常包含 { r, name, idx, time }
+                                // 我们需要从 allItemsMap 中找到对应的完整物品信息
+                                if (['S', 'A', 'B'].includes(record.r)) { // V1 只记录 S, A, B
+                                    const itemsWithName = allItemsMap.get(record.name?.trim());
+                                    if (itemsWithName && itemsWithName.length > 0) {
+                                        // 简单策略：取列表中的第一个，或尝试根据类型匹配（如果历史中有类型信息）
+                                        // 更精确的方法需要 V1 在 history 中也记录 type/img，但这可能不现实。
+                                        // 假设第一个即可，或根据 rarity 过滤
+                                        const matchedItem = itemsWithName.find(item => 
+                                            (item.rarity || 'unknown') === record.r
+                                        ) || itemsWithName[0];
+
+                                        if (matchedItem) {
+                                            const fullItem = {
+                                                name: matchedItem.name,
+                                                type: matchedItem.type,
+                                                img: matchedItem.img,
+                                                rarity: record.r, // 使用历史记录中的确切稀有度
+                                                description: matchedItem.description
+                                            };
+                                            const itemKey = generateItemKey(fullItem);
+                                            if (!processedKeys.has(itemKey)) {
+                                                processedKeys.add(itemKey);
+                                                v1Items.push(fullItem);
+                                            }
+                                        }
+                                    } else {
+                                        // 如果在 allItemsMap 中找不到，创建一个基础对象
+                                        // 这可能发生在 pool.json 被更新，但本地缓存未更新的情况下
+                                        console.warn(`V1: 在 allItemsMap 中未找到物品 ${record.name}`);
+                                        const fallbackItem = {
+                                             name: record.name,
+                                             type: "未知类型",
+                                             img: "", // 或使用占位图
+                                             rarity: record.r,
+                                             description: "物品描述未找到"
+                                        };
+                                        const itemKey = generateItemKey(fallbackItem);
+                                        if (!processedKeys.has(itemKey)) {
+                                            processedKeys.add(itemKey);
+                                            v1Items.push(fallbackItem);
+                                        }
+                                    }
+                                }
+                            });
+                        }
+                    } catch (e) {
+                        console.error(`解析 V1 池子 ${poolId} 的历史记录失败:`, e);
+                    }
+                }
+            }
+            return v1Items;
+        }
+
+        /**
+         * 从 V1 的全局拥有状态中提取所有已获取物品（包括C、D级别）
+         * @returns {Array} 物品对象数组
+         */
+        function loadV1OwnedItemsFromGlobalState() {
+            const v1Items = [];
+            const processedKeys = new Set();
+            // 从全局拥有的物品中读取V1的物品（这些包含了所有稀有度的物品）
+            const globalOwnedItems = loadGlobalOwnedItems(); // Key -> true
+            
+            for (const itemKey in globalOwnedItems) {
+                if (globalOwnedItems[itemKey]) {
+                    // 解析V1格式的Key: name|type|img
+                    const keyParts = itemKey.split('|');
+                    if (keyParts.length === 3) {
+                        // V1格式: name|type|img
+                        const [itemName, itemType, itemImg = ''] = keyParts;
+                        
+                        // 从allItemsMap中查找完整的物品信息
+                        const possibleItems = allItemsMap.get(itemName?.trim());
+                        if (possibleItems && possibleItems.length > 0) {
+                            // 查找匹配的物品
+                            let matchedItem = possibleItems.find(item => 
+                                (item.type || '').trim() === (itemType || '').trim() &&
+                                (item.img || '').trim() === (itemImg || '').trim()
+                            );
+                            
+                            // 如果没找到，取第一个
+                            if (!matchedItem) {
+                                matchedItem = possibleItems[0];
+                                console.warn(`V1 Global: 未精确匹配到物品 ${itemName}, 使用列表中第一个。Key: ${itemKey}`);
+                            }
+                            if (matchedItem) {
+                                const fullItem = {
+                                    name: matchedItem.name,
+                                    type: matchedItem.type,
+                                    img: matchedItem.img,
+                                    rarity: matchedItem.rarity || 'D', // 使用实际物品的稀有度，默认为D级
+                                    description: matchedItem.description
+                                };
+                                const finalKey = generateItemKey(fullItem);
+                                if (!processedKeys.has(finalKey)) {
+                                    processedKeys.add(finalKey);
+                                    v1Items.push(fullItem);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return v1Items;
+        }
+
+        /**
+         * 显示物品图鉴模态框 (包含 V1 和 V2)
+         */
+        function showOwnedItemsModal() {
+            const modalOverlay = document.getElementById('owned-items-modal-overlay');
+            const ownedItemsContent = document.getElementById('owned-items-content');
+            const loadingMessage = document.getElementById('owned-items-loading');
+            const noItemsMessage = document.getElementById('no-owned-items-message');
+            const modalTotalPullsElement = document.getElementById('modal-total-pulls');
+            const showUnownedToggle = document.getElementById('show-unowned-toggle');
+
+            if (!modalOverlay) return;
+            
+            modalOverlay.classList.remove('hidden');
+            
+            if (ownedItemsContent) ownedItemsContent.innerHTML = '';
+            if (loadingMessage) loadingMessage.classList.remove('hidden');
+            if (noItemsMessage) noItemsMessage.classList.add('hidden');
+            if (modalTotalPullsElement) modalTotalPullsElement.textContent = globalTotalPulls;
+
+            // 获取切换开关状态
+            const showUnowned = showUnownedToggle && showUnownedToggle.checked;
+
+            // 1. 从全局共享的 ownedItems 中读取 V2 (以及可能的 V1) 已拥有的物品 Key
+            const globalOwnedItems = loadGlobalOwnedItems(); // Key -> true
+            const uniqueOwnedItemsMap = new Map(); 
+            const processedKeys = new Set(); // 用于最终去重
+            
+            // 2. 根据 Key 从 allItemsMap 中解析出完整的物品对象
+            for (const itemKey in globalOwnedItems) {
+                if (globalOwnedItems[itemKey]) { 
+                    // 兼容两种格式的Key解析
+                    let itemName, itemType, itemRarity, itemImg;
+                    
+                    const keyParts = itemKey.split('|');
+                    if (keyParts.length === 3) {
+                        // V1格式: name|type|img
+                        [itemName, itemType, itemImg = ''] = keyParts;
+                        itemRarity = 'unknown'; // V1没有明确存储rarity，在后面会从allItemsMap中获取
+                    } else if (keyParts.length === 4) {
+                        // V2格式: name|type|rarity|img
+                        [itemName, itemType, itemRarity='unknown', itemImg = ''] = keyParts;
+                    } else {
+                        continue; // 无效格式
+                    }
+                    
+                    const possibleItems = allItemsMap.get(itemName?.trim());
+                    if (possibleItems && possibleItems.length > 0) {
+                        // 查找匹配的物品 (优先匹配 type, img)
+                        let matchedItem = possibleItems.find(item => 
+                            (item.type || '').trim() === (itemType || '').trim() &&
+                            (item.img || '').trim() === (itemImg || '').trim()
+                        );
+                        
+                        // 如果没精确匹配到，尝试放宽条件
+                        if (!matchedItem) {
+                            matchedItem = possibleItems[0];
+                            console.warn(`Index: 未精确匹配到物品 ${itemName}, 使用列表中第一个。Key: ${itemKey}`);
+                        }
+
+                        if (matchedItem) {
+                            // 使用完整的唯一键存储
+                            const compositeKey = `${matchedItem.name}|${matchedItem.img}|${matchedItem.type}|${matchedItem.rarity}`;
+                            if (!uniqueOwnedItemsMap.has(compositeKey)) {
+                                uniqueOwnedItemsMap.set(compositeKey, {
+                                    ...matchedItem,
+                                    rarity: matchedItem.rarity, // 使用实际物品的稀有度
+                                    isOwned: true // 标记为已拥有
+                                });
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 3. 从 V1 历史记录中加载物品 (S, A, B级别)
+            const v1ItemsFromHistory = loadV1OwnedItemsFromHistory();
+            v1ItemsFromHistory.forEach(item => {
+                const key = generateItemKey(item);
+                if (!processedKeys.has(key)) {
+                    processedKeys.add(key);
+                    const compositeKey = `${item.name}|${item.img}|${item.type}|${item.rarity}`;
+                    if (!uniqueOwnedItemsMap.has(compositeKey)) {
+                        uniqueOwnedItemsMap.set(compositeKey, {
+                            ...item,
+                            isOwned: true // 标记为已拥有
+                        });
+                    }
+                }
+            });
+        
+            // 4. 从 V1 全局拥有状态中加载所有物品（包括C、D级别）
+            const v1ItemsFromGlobal = loadV1OwnedItemsFromGlobalState();
+            v1ItemsFromGlobal.forEach(item => {
+                const key = generateItemKey(item);
+                if (!processedKeys.has(key)) {
+                    processedKeys.add(key);
+                    const compositeKey = `${item.name}|${item.img}|${item.type}|${item.rarity}`;
+                    if (!uniqueOwnedItemsMap.has(compositeKey)) {
+                        uniqueOwnedItemsMap.set(compositeKey, {
+                            ...item,
+                            isOwned: true // 标记为已拥有
+                        });
+                    }
+                }
+            });
+
+            // 5. ===================== 新增：精华的馈赠奖励收集 =====================
+            const GIFT_THRESHOLDS = [80, 130, 180];
+            const giftItems = [];
+
+            if (loadedEssencePools && Array.isArray(loadedEssencePools)) {
+                loadedEssencePools.forEach(pool => {
+                    const awards = pool.award;
+                    if (awards && typeof awards === 'object') {
+                        let totalPullsForThisPool = 0;
+                        const savedState = localStorage.getItem(`data_${pool.id}`);
+                        if (savedState) {
+                            try {
+                                const state = JSON.parse(savedState);
+                                totalPullsForThisPool = state.total || 0;
+                            } catch (e) {}
+                        }
+
+                        Object.entries(awards).forEach(([rewardKey, rewardData], index) => {
+                            const thresholdIndex = parseInt(rewardKey.replace(/[^0-9]/g, '')) || (index + 1);
+
+                            if (
+                                thresholdIndex >= 1 &&
+                                thresholdIndex <= 3 &&
+                                totalPullsForThisPool >= GIFT_THRESHOLDS[thresholdIndex - 1]
+                            ) {
+                                const [name, img, desc] = rewardData || [];
+                                if (name && img) {
+                                    giftItems.push({
+                                        name: name,
+                                        img: img,
+                                        type: "精华的馈赠",
+                                        description: desc || "精华回馈专属奖励",
+                                        rarity: "A", // 馈赠奖励通常视为 A 级
+                                        isOwned: true // 标记为已拥有
+                                    });
+                                }
+                            }
+                        });
+                    }
+                });
+            }
+            // ======================== END 精华的馈赠收集 ==========================
+
+            if (loadingMessage) loadingMessage.classList.add('hidden');
+
+            // 如果是展示所有物品模式（包括未获取），则合并所有物品
+            let allUniqueItemsArray = [];
+            if (showUnowned) {
+                // 获取所有物品（包括未获取的）
+                allItemsMap.forEach((itemsArray, itemName) => {
+                    itemsArray.forEach(item => {
+                        const compositeKey = `${item.name}|${item.img}|${item.type}|${item.rarity}`;
+                        if (!uniqueOwnedItemsMap.has(compositeKey)) {
+                            uniqueOwnedItemsMap.set(compositeKey, {
+                                ...item,
+                                isOwned: false // 标记为未拥有
+                            });
+                        }
+                    });
+                });
+            }
+
+            // 合并真实物品与馈赠奖励
+            allUniqueItemsArray = [...Array.from(uniqueOwnedItemsMap.values()), ...giftItems];
+
+            if (allUniqueItemsArray.length === 0) {
+                if (noItemsMessage) noItemsMessage.classList.remove('hidden');
+                return;
+            }
+
+            // 按品质分组
+            // 更新 groupedItems 以包含 F
+            const groupedItems = { S: [], A: [], B: [], F: [], C: [], D: [] };
+            allUniqueItemsArray.forEach(item => {
+                // 如果是精华馈赠类型，不加入常规品质分组
+                if (item.type === "精华的馈赠") {
+                    return; // 跳过
+                }
+                const rarity = item.rarity || 'D';
+                if (groupedItems[rarity]) {
+                    groupedItems[rarity].push(item);
+                }
+            });
+
+            // 组内排序：先按 type (根据 types.json 优先级)，再按 name
+            const sortItems = (a, b) => {
+                const typeA = (a.type || '').trim();
+                const typeB = (b.type || '').trim();
+                const nameA = (a.name || '').trim();
+                const nameB = (b.name || '').trim();
+
+                // 1. 根据 typeSortOrder 定义的优先级排序
+                const priorityA = typePriorityMap.has(typeA) ? typePriorityMap.get(typeA) : Infinity;
+                const priorityB = typePriorityMap.has(typeB) ? typePriorityMap.get(typeB) : Infinity;
+
+                if (priorityA !== priorityB) {
+                    return priorityA - priorityB; // 优先级数字越小，越靠前
+                }
+
+                // 2. 如果 type 相同或都不在 types.json 中，则按 name 排序
+                return nameA.localeCompare(nameB);
+            };
+
+            for (const rarity in groupedItems) {
+                if (groupedItems.hasOwnProperty(rarity)) {
+                     groupedItems[rarity].sort(sortItems);
+                }
+            }
+
+            // 渲染分组后的物品（手动指定显示顺序，包含 F）
+            let htmlContent = '';
+            // 更新显示顺序，包含 F
+            const rarityDisplayOrder = ['S', 'A', 'B', 'F', 'C', 'D'];
+
+            // 特别处理：插入【精华的馈赠】分类到最前面（排在 S 前面）
+            if (giftItems.length > 0) {
+                htmlContent += `<h4 class="modal-body-h4 rarity-A">精华的馈赠</h4>`;
+                htmlContent += `<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3 mb-8">`;
+                giftItems.forEach(item => {
+                    const itemImg = item.img || placeholderImg;
+                    const itemName = item.name || '未知物品';
+                    htmlContent += `
+                        <div class="owned-item-card" 
+                             title="${itemName}\n${item.type}\n${rarityMap[item.rarity] || '未知稀有度'}" 
+                             onclick="displayOwnedItemDetail('${item.name}', '${item.img}', '${item.type}', '${item.rarity}', ${item.isOwned})">
+                            <div class="img-container">
+                                <img src="${itemImg}" alt="${itemName}" loading="lazy" onerror="this.src='${placeholderImg}'">
+                            </div>
+                            <div class="item-name-container">
+                                <span class="text-gray-300 text-rarity-${item.rarity || 'D'}">${itemName}</span>
+                            </div>
+                        </div>
+                    `;
+                });
+                htmlContent += `</div>`;
+            }
+
+            // 其他品质物品按原样渲染
+            rarityDisplayOrder.forEach(rarity => {
+                if (groupedItems[rarity] && groupedItems[rarity].length > 0) {
+                    htmlContent += `<h4 class="modal-body-h4 rarity-${rarity}">${rarityMap[rarity]}</h4>`;
+                    htmlContent += `<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3 mb-8">`;
+                    groupedItems[rarity].forEach(item => {
+                        const itemImg = item.img || placeholderImg;
+                        const itemName = item.name || '未知物品';
+                        const isOwned = item.isOwned !== false; // 默认为true
+                        
+                        htmlContent += `
+                            <div class="owned-item-card" 
+                                 title="${itemName}\n${item.type}\n${rarityMap[item.rarity] || '未知稀有度'}" 
+                                 onclick="displayOwnedItemDetail('${item.name}', '${item.img}', '${item.type}', '${item.rarity}', ${isOwned})">
+                                <div class="img-container">
+                                    <img src="${itemImg}" alt="${itemName}" loading="lazy" onerror="this.src='${placeholderImg}'">
+                                    ${!isOwned ? '<div class="unowned-overlay"><i class="fas fa-lock lock-icon"></i></div>' : ''}
+                                </div>
+                                <div class="item-name-container">
+                                    <span class="text-gray-300 text-rarity-${item.rarity || 'D'}">${itemName}</span>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    htmlContent += `</div>`;
+                }
+            });
+            
+            if (ownedItemsContent) ownedItemsContent.innerHTML = htmlContent;
+            
+            // 应用跑马灯效果
+            setTimeout(() => {
+                const itemContainers = document.querySelectorAll('.item-name-container');
+                itemContainers.forEach(container => {
+                    const span = container.querySelector('span');
+                    if (span) {
+                        container.classList.remove('truncate');
+                        
+                        if (span.scrollWidth > (container.clientWidth + 1)) {
+                            const originalText = span.textContent;
+                            container.innerHTML = `<div class="marquee-wrapper" style="white-space: nowrap;"><span>${originalText}&nbsp;&nbsp;&nbsp;${originalText}</span></div>`;
+                            
+                            const wrapper = container.querySelector('.marquee-wrapper');
+                            const innerSpan = wrapper.querySelector('span');
+                            
+                            const scrollSpeed = 30;
+                            const totalWidth = innerSpan.scrollWidth / 2;
+                            const duration = totalWidth / scrollSpeed;
+                            
+                            if (wrapper) {
+                                wrapper.style.setProperty('--marquee-duration', `${duration}s`);
+                            }
+                        }
+                    }
+                });
+            }, 50);
+        }
+
+        /**
+         * 关闭物品图鉴模态框
+         * @param {Event} event - 用于判断是否点击了遮罩层而非弹窗内容
+         */
+        function closeOwnedItemsModal(event) {
+            const modalOverlay = document.getElementById('owned-items-modal-overlay');
+            if (!modalOverlay) return;
+            
+            if (event && event.target.closest('.readme-modal-content')) {
+                return;
+            }
+            modalOverlay.classList.add('hidden');
+        }
+
+        /**
+         * 显示单个物品的详细信息模态框
+         * @param {string} itemName - 物品的名称
+         * @param {string} itemImg - 物品的图片URL
+         * @param {string} itemType - 物品的类型
+         * @param {string} itemRarity - 物品的稀有度
+         * @param {boolean} isOwned - 是否已拥有该物品
+         */
+        function displayOwnedItemDetail(itemName, itemImg, itemType, itemRarity, isOwned = true) {
+            const trimmedName = (itemName || '').trim();
+            const trimmedImg = (itemImg || '').trim();
+            const trimmedType = (itemType || '').trim();
+            const trimmedRarity = (itemRarity || '').trim();
+
+            let item = null;
+
+            // 判断是否是精华的馈赠类型
+            if (trimmedType === "精华的馈赠") {
+                // 从预先准备好的 giftItemsMap 查找真实的描述等信息
+                item = giftItemsMap.get(trimmedName);
+                if (!item) {
+                    // 如果找不到，则回退到默认配置
+                    item = {
+                        name: trimmedName,
+                        img: trimmedImg,
+                        type: "精华的馈赠",
+                        description: "精华回馈专属奖励",
+                        rarity: "A"
+                    };
+                }
+            } else {
+                // 从真实物品池中查找
+                const itemsWithName = allItemsMap.get(trimmedName);
+                if (itemsWithName) {
+                    item = itemsWithName.find(i => 
+                        (i.img || '').trim() === trimmedImg && 
+                        (i.type || '').trim() === trimmedType &&
+                        (i.rarity || '').trim() === trimmedRarity
+                    );
+                    // 如果没找到完全匹配的，尝试放宽条件
+                    if (!item) {
+                        item = itemsWithName.find(i => 
+                            (i.rarity || '').trim() === trimmedRarity
+                        );
+                    }
+                    if (!item) {
+                        item = itemsWithName[0]; // fallback
+                    }
+                }
+            }
+
+            if (!item) {
+                console.warn(`未找到物品: Name=${itemName}, Img=${itemImg}, Type=${itemType}, Rarity=${itemRarity}`);
+                // 即使找不到完整信息，也尝试显示基本信息
+                item = {
+                    name: trimmedName,
+                    img: trimmedImg,
+                    type: trimmedType,
+                    rarity: trimmedRarity,
+                    description: "物品描述未找到"
+                };
+            }
+
+            const detailNameEl = document.getElementById('detail-name');
+            const detailTypeEl = document.getElementById('detail-type');
+            const detailDescEl = document.getElementById('detail-desc');
+            const detailImgEl = document.getElementById('detail-img');
+            const detailRarityGlowEl = document.getElementById('detail-rarity-glow');
+            const detailSourceEl = document.getElementById('detail-source'); // 物品来源元素
+            
+            if (detailNameEl) detailNameEl.textContent = item.name || '未知物品';
+            if (detailTypeEl) detailTypeEl.textContent = item.type || '未知类型';
+            
+            // 支持 \n 换行，并限制只保留 <br> 标签（增强安全性）
+            if (detailDescEl) {
+                let safeDescription = (item.description || '暂无描述。');
+                
+                // 先 escape HTML 特殊字符以防 XSS
+                safeDescription = safeDescription
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;');
+                    
+                // 再还原 <br> 并替换 \n 为 <br>
+                safeDescription = safeDescription
+                    .replace(/\\n/g, '<br>');
+
+                detailDescEl.innerHTML = safeDescription;
+            }
+            
+            if (detailImgEl) detailImgEl.src = item.img || '';
+
+            if (detailRarityGlowEl) {
+                // 更新发光颜色映射，包含 F
+                const rarityColors = { S: '#e8c668', A: '#b568e8', B: '#689de8', F: '#4ade80', C: '#65a30d', D: '#9ca3af' }; 
+                const itemRarity = item.rarity || 'D'; 
+                detailRarityGlowEl.style.background = rarityColors[itemRarity] || 'transparent';
+            }
+            
+            const detailNameEl2 = document.getElementById('detail-name');
+            if (detailNameEl2) {
+                // 更新详情标题颜色类，包含 F
+                detailNameEl2.className = `font-gothic text-2xl tracking-widest modal-title-rarity-${item.rarity || 'D'}`;
+            }
+            
+            // 显示物品来源信息（始终显示）
+            if (detailSourceEl) {
+                const sources = itemSourceMap.get(item.name) || [];
+                if (sources.length > 0) {
+                    // 移除珍宝·旧赛季，如果存在其他来源
+                    const filteredSources = sources.filter(source => !source.includes("珍宝·旧赛季"));
+                    const displaySources = filteredSources.length > 0 ? filteredSources : sources;
+                    
+                    if (displaySources.length === 1) {
+                        detailSourceEl.innerHTML = `获取来源：<span class="text-yellow-400">${displaySources[0]}</span>`;
+                    } else {
+                        detailSourceEl.innerHTML = `获取来源：<span class="text-yellow-400">${displaySources[0]}等${displaySources.length}个</span>`;
+                    }
+                } else {
+                    detailSourceEl.textContent = "获取来源：未知";
+                }
+                detailSourceEl.classList.remove('hidden');
+            }
+
+            const modal = document.getElementById('item-detail-modal');
+            if (modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex', 'show');
+            }
+
+            closeOwnedItemsModal(); // 关闭物品图鉴模态框
+        }
+
+        /**
+         * 关闭物品详情模态框
+         */
+        function closeItemDetail() {
+            const modal = document.getElementById('item-detail-modal');
+            const ownedItemsModal = document.getElementById('owned-items-modal-overlay');
+            
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex', 'show');
+            }
+            if (ownedItemsModal) {
+                ownedItemsModal.classList.remove('hidden'); // 重新打开物品图鉴模态框
+            }
+        }
+        
+        // 新增：加载全局拥有的物品 (复制自 V1/V2)
+        function loadGlobalOwnedItems() {
+            const globalStorageKey = 'global_owned_items';
+            const saved = localStorage.getItem(globalStorageKey);
+            return saved ? JSON.parse(saved) : {};
+        }
+    </script>
+</body>
+</html>

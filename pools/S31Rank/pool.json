@@ -1,0 +1,363 @@
+{
+  "id": "S31Rank",
+  "name": "第31赛季·排位珍宝（四阶）",
+  "essenceImage": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+  "diff_A": 2,
+  "initialCurrencies": {
+    "inspiration": 1000,
+    "fragments": 0
+  },
+  "discountInfo": {
+    "chance": 0,
+    "rate": 0.75
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 12
+  },
+  "frameSettings": {
+    "enabled": true,
+    "pityThreshold": 7,
+    "item": {
+      "name": "排位头像框兑换卡",
+      "type": "头像框",
+      "rarity": "F",
+      "img": "./img/bgijcaxbmaz8gwi87bschozs2pntw4m.png",
+      "description": "可用于兑换一个排位头像框。",
+      "repeat": 100
+    }
+  },
+  "items": {
+    "S": [
+      {
+        "name": "燃烧的乐章",
+        "img": "./img/ha95n0nw7iauwh8jmf1x15futdzaltm.png",
+        "type": "随身物品",
+        "description": "当演奏这一乐章时，空气中总会莫名出现硫磺与沥青的味道。 \n特殊效果：特殊抱人动作 替换技能效果 \n小提琴家稀世随身物品",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "案件模拟",
+        "img": "./img/onxqm3j2s1vx4f21ev0tc0mnk9kmm99.png",
+        "type": "随身物品",
+        "description": "为了确保描述的细节正确，有时你不得不亲手实践一下。 \n特殊效果：替换技能效果 \n小说家奇珍随身物品",
+        "repeat": 1000
+      },
+      {
+        "name": "欢呼",
+        "img": "./img/gc6yuz4pcvi6m57p8rbn1a10w0xn7y0.png",
+        "type": "随身物品",
+        "description": "向胜利冲刺！ \n特殊效果：替换技能效果\n拉拉队员奇珍随身物品",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "马刺",
+        "img": "./img/599oo7glfq4x9v40pyq834jiua7vija.png",
+        "type": "随身物品",
+        "description": "可以不用，但不能没有。 ",
+        "repeat": 200
+      },
+      {
+        "name": "天气预报",
+        "img": "./img/skbrzzgn8onvv8zegj4bloxnsvfsl6f.png",
+        "type": "随身物品",
+        "description": "今日天气：大雪\n明日天气：大雪\n下周天气：大雪。 ",
+        "repeat": 200
+      },
+      {
+        "name": "名片盒",
+        "img": "./img/5fgr5x3zr54ozci4xt2z1ksnydhjnwh.png",
+        "type": "随身物品",
+        "description": "谁知道什么时候用得上呢？ ",
+        "repeat": 200
+      },
+      {
+        "name": "转化",
+        "img": "./img/m2ftusumckd86qmyz5eittrbtna6b9c.png",
+        "type": "随身物品",
+        "description": "在祂眼中，人与植物并无不同。 ",
+        "repeat": 200
+      },
+      {
+        "name": "红夫人-拜访",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "红夫人专属匹配大厅等待动作，拜访，求生者可见",
+        "repeat": 200
+      },
+      {
+        "name": "26号守卫-拜访",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "26号守卫专属匹配大厅等待动作，拜访，求生者可见",
+        "repeat": 200
+      },
+      {
+        "name": "大副-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "大副匹配大厅等待动作，小憩",
+        "repeat": 200
+      },
+      {
+        "name": "野人-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "野人匹配大厅等待动作，小憩",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "竹叶青",
+        "img": "./img/s94573qe5fplcrcetiolgjyy0ryuqe5.png",
+        "type": "时装",
+        "description": "山水竹林里是谁的身影？ ",
+        "repeat": 36
+      },
+      {
+        "name": "沉稳紫",
+        "img": "./img/3fh6i4bic5h7wkf16mtlck6y370p46v.png",
+        "type": "时装",
+        "description": "穷极一生所求，惟科学和真理。 ",
+        "repeat": 36
+      },
+      {
+        "name": "火药橙",
+        "img": "./img/s57y3e5p982shupzs8aey0eittwa08e.png",
+        "type": "时装",
+        "description": "为了做出改变，总能想出一些办法。 ",
+        "repeat": 36
+      },
+      {
+        "name": "玩具商-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，玩具商专属",
+        "repeat": 36
+      },
+      {
+        "name": "“心理学家”-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，“心理学家”专属",
+        "repeat": 36
+      },
+      {
+        "name": "病患-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，病患专属",
+        "repeat": 36
+      },
+      {
+        "name": "击球手-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，击球手专属",
+        "repeat": 36
+      },
+      {
+        "name": "园丁-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "园丁匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "佣兵匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "冒险家匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "空军-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "空军匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "“慈善家”匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "医生-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "医生匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "职业侦探",
+        "img": "./img/9rhhglkyq9ufc54g228jawlzb88ts1l.png",
+        "type": "随身物品",
+        "description": "求生者随身物品，职业侦探",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-调香师",
+        "img": "./img/saek9avg3hgwfg1y8q9g71uimh54rlw.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-前锋",
+        "img": "./img/qplslwvlonyevb96ct4q32jidm3mufg.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "大副-灰化",
+        "img": "./img/le6zdrsjhnajz038w8aob4cuwk70f8n.png",
+        "type": "涂鸦",
+        "description": "大副专用涂鸦，灰化 ",
+        "repeat": 6
+      },
+      {
+        "name": "红蝶-灰化",
+        "img": "./img/fxcux4x2bje0692m1xu0ahukq3z8kwj.png",
+        "type": "涂鸦",
+        "description": "红蝶专用涂鸦，灰化 ",
+        "repeat": 6
+      },
+      {
+        "name": "牛仔-灰化",
+        "img": "./img/oh7wtecomwdecdk9xngtqwf37v7t722.png",
+        "type": "涂鸦",
+        "description": "牛仔专用涂鸦，灰化 ",
+        "repeat": 6
+      },
+      {
+        "name": "破轮-灰化",
+        "img": "./img/exx1f8r8mf8i3bha0jwo75v1wnwcm1s.png",
+        "type": "涂鸦",
+        "description": "破轮专用涂鸦，灰化 ",
+        "repeat": 6
+      },
+      {
+        "name": "“囚徒”-灰化",
+        "img": "./img/8cnvsrtbim017m0iue5pgpu5rsly02s.png",
+        "type": "涂鸦",
+        "description": "“囚徒”专用涂鸦，灰化 ",
+        "repeat": 6
+      },
+      {
+        "name": "摄影师-灰化",
+        "img": "./img/6u7xqjeig4d5gmpq8rmh1iwl9648yi8.png",
+        "type": "涂鸦",
+        "description": "摄影师专用涂鸦，灰化 ",
+        "repeat": 6
+      },
+      {
+        "name": "“使徒”-灰化",
+        "img": "./img/is5v7qvqzkyimd01sbve6kyyzxqlf8m.png",
+        "type": "涂鸦",
+        "description": "“使徒”专用涂鸦，灰化 ",
+        "repeat": 6
+      },
+      {
+        "name": "守墓人-灰化",
+        "img": "./img/73l0enh7vku41rchq368kupeponl7qd.png",
+        "type": "涂鸦",
+        "description": "守墓人专用涂鸦，灰化 ",
+        "repeat": 6
+      },
+      {
+        "name": "玩具商-灰化",
+        "img": "./img/8ci7srh1tx06epqy1u3lxpgafpopxwa.png",
+        "type": "涂鸦",
+        "description": "玩具商专用涂鸦，灰化 ",
+        "repeat": 6
+      },
+      {
+        "name": "舞女-灰化",
+        "img": "./img/119wwx0tyya1fwu7486dacly0s2gi4c.png",
+        "type": "涂鸦",
+        "description": "舞女专用涂鸦，灰化 ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-大副",
+        "img": "./img/5loezsxysh1jph0eqtchjjge2qwevbn.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-梦之女巫",
+        "img": "./img/7rmbvckdyhqpjmauixihxaumoai35sn.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-孽蜥",
+        "img": "./img/d5un3hage9wnem9g3xv9baqzssrfovf.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-入殓师",
+        "img": "./img/8iv09467xwch9vjkhbuvqegquzl0jur.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-宿伞之魂（二）",
+        "img": "./img/260vd4fieaxsematk6lk3lpdkwfqh0x.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-红蝶（二）",
+        "img": "./img/gof92v6bjhdfzavplzjue1ygq7ci3sf.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-杂技演员",
+        "img": "./img/csysna1agingew3nq24zlleowizuhul.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "不解",
+        "img": "./img/466v6gh8gjs0fyt74xw9dbl6gnfvzdr.png",
+        "type": "个性动作",
+        "description": "表示不解的动作",
+        "repeat": 6
+      }
+    ]
+  }
+}

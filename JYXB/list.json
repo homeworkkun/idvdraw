@@ -1,0 +1,31 @@
+[
+  {
+    "id": "JYXB12",
+    "name": "鉴影寻宝第12期",
+    "description": "鉴影寻宝第12期",
+    "image": "./img/3f3i38wu76650y7q771dg6z89cwew3v.png",
+    "version": "jianyingxunbao.html",
+    "cost": "10",
+    "cost_type": "huoqi",
+    "award": {
+      "奖励1": [
+        "个性动作解锁卡",
+        "./img/aw2hxd73b2098jetua6bhh9chwz7cyb.png",
+        "解锁卡"
+      ],
+      "奖励2": [
+        "独特随身物品解锁卡",
+        "./img/h3dwtomsr643nwe2daq5lp30qytglmt.png",
+        "解锁卡"
+      ],
+      "奖励3": [
+        "独特时装解锁卡",
+        "./img/2gw00yk3tp9voqjdaa5nt1gz87xmv08.png",
+        "解锁卡"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  }
+]

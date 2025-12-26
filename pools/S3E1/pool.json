@@ -1,0 +1,355 @@
+{
+  "id": "S3E1",
+  "name": "第3赛季·精华1",
+  "essenceImage": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+  "diff_A": 2,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "国王的裁缝",
+        "img": "./img/imrudeeoi4ogkap0cv7gmiwbm5czw4q.png",
+        "type": "时装",
+        "description": "他是个聪明的骗子，量衣尺只是他哄骗国王的武器（【限定】时装，仅能在第三赛季精华1中获得）",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "慵懒的兔先生",
+        "img": "./img/a9eefn5k7qy1i2gqf7hscbhieqeku2r.png",
+        "type": "时装",
+        "description": "如果你跑得够快的话，为什么不打个盹？",
+        "repeat": 1000
+      },
+      {
+        "name": "警醒的龟先生",
+        "img": "./img/14piq5qq66nh6td682iemra8q0p8865.png",
+        "type": "时装",
+        "description": "在比赛中保持清醒是很重要的。",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "幸运的年轻人",
+        "img": "./img/4oq4pzbnaffs4bcjkzm92newy8pqgrg.png",
+        "type": "时装",
+        "description": "给他一些滑溜溜的东西，他就会怕得发起抖来。",
+        "repeat": 200
+      },
+      {
+        "name": "丛林的召唤",
+        "img": "./img/07vuho8h7wchpsdhzh3q41wid5dl3ax.png",
+        "type": "时装",
+        "description": "温暖而华丽的质感，野性与优雅的融合。平淡的生活偶尔也需要一点激情。",
+        "repeat": 200
+      },
+      {
+        "name": "虚华",
+        "img": "./img/hqny1hxblckf0rfgkh2xpx9zm6xwdvi.png",
+        "type": "时装",
+        "description": "先敬衣冠后敬人，克利切表示同意。",
+        "repeat": 200
+      },
+      {
+        "name": "污浊",
+        "img": "./img/5wkdwinuhsaxz00qifc5wr2cp3en3mg.png",
+        "type": "时装",
+        "description": "生活是场肮脏的游戏，生存下来的是肮脏的玩家。",
+        "repeat": 200
+      },
+      {
+        "name": "破船素描",
+        "img": "./img/o6mz2hxjq3xu6o9lhoo6rv5aujrsfd9.png",
+        "type": "随身物品",
+        "description": "仅靠一张粗糙的素描，完全无法再现当时的诡异之景。",
+        "repeat": 200
+      },
+      {
+        "name": "婚礼请柬",
+        "img": "./img/9gpduoy3x2hzgvpobkh6x93n6usovhz.png",
+        "type": "随身物品",
+        "description": "不知遗忘在何处的请柬，已经成了一场悲剧演出的过期门票。",
+        "repeat": 200
+      },
+      {
+        "name": "调香师-张望",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "调香师匹配大厅动作，张望",
+        "repeat": 200
+      },
+      {
+        "name": "牛仔-张望",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "牛仔匹配大厅动作，张望",
+        "repeat": 200
+      },
+      {
+        "name": "祭司-张望",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "祭司匹配大厅动作，张望",
+        "repeat": 200
+      },
+      {
+        "name": "空军-张望",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "空军匹配大厅动作，张望",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "萌版小丑",
+        "img": "./img/defzyo5li7hamu9dcu08ic83wlyij3w.png",
+        "type": "头像",
+        "description": "小丑的萌版头像",
+        "repeat": 36
+      },
+      {
+        "name": "律师-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，律师专属",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，冒险家专属",
+        "repeat": 36
+      },
+      {
+        "name": "医生-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，医生专属",
+        "repeat": 36
+      },
+      {
+        "name": "秋意绿",
+        "img": "./img/rgknl22gyth6m8femixwruufqi8e35v.png",
+        "type": "时装",
+        "description": "有人会问，对于盲女而言，服饰的配色有任何意义吗？－－至少她会成为别人眼中的风景线",
+        "repeat": 36
+      },
+      {
+        "name": "浅叶爵",
+        "img": "./img/rhhklmy8mruoq8lbcpwlfi2iptxh2i7.png",
+        "type": "时装",
+        "description": "有时候拿叶子切片练练手，也是不错的消遣",
+        "repeat": 36
+      },
+      {
+        "name": "金红帛",
+        "img": "./img/kdorn3cvj4qir956xvnpidprtxi5tq7.png",
+        "type": "时装",
+        "description": "嚓嚓嗦嗦，金色的绸帛这么剪开会不会太浪费了?",
+        "repeat": 36
+      },
+      {
+        "name": "抹茶绿",
+        "img": "./img/7h8y2233w7u13fuzqlkjflzjpntr4q3.png",
+        "type": "时装",
+        "description": "绿色代表着活力与机智",
+        "repeat": 36
+      },
+      {
+        "name": "创意紫",
+        "img": "./img/jra4rkpv9wosozp8eq2n5q7zmfoiqq4.png",
+        "type": "时装",
+        "description": "悦目的颜色也能激发创意！",
+        "repeat": 36
+      },
+      {
+        "name": "玫瑰爵",
+        "img": "./img/o8is5p6n8mxe72sv7svtyljwyq5k228.png",
+        "type": "时装",
+        "description": "千万别误会，这身玫瑰色不过是为与红酒相配，与其他液体毫无关系",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "魔术师匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "“慈善家”匹配大厅动作，准备",
+        "repeat": 36
+      },
+      {
+        "name": "空军-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "空军匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "律师-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "律师匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "魔术师匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”-卡通",
+        "img": "./img/halx2lkbq0mvpyvl4pyc97yoj7fi6h5.png",
+        "type": "涂鸦",
+        "description": "“慈善家”专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-卡通",
+        "img": "./img/5657wos2qj8gq9yz35vdpwq6s5o26qo.png",
+        "type": "涂鸦",
+        "description": "佣兵专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "医生-卡通",
+        "img": "./img/mbp0mzg9gk1m7rk1esvhatnly5wrhne.png",
+        "type": "涂鸦",
+        "description": "医生专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "律师-抢白",
+        "img": "./img/ka3a6mfrsisf6zcskzuhdwoyg9yyiz7.png",
+        "type": "涂鸦",
+        "description": "律师专属涂鸦，抢白",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "金纹大触-卡通",
+        "img": "./img/fqu9q3m4mdftm82agjg2bkdnbe2i9iw.png",
+        "type": "涂鸦",
+        "description": "“杰克”专属涂鸦，卡通",
+        "repeat": 6
+      },
+      {
+        "name": "佣兵弹簧手-卡通",
+        "img": "./img/fwol7o4xa7ub0y4r3m9o9at83aknvh6.png",
+        "type": "涂鸦",
+        "description": "佣兵专属涂鸦，卡通",
+        "repeat": 6
+      },
+      {
+        "name": "红蝶-剪影",
+        "img": "./img/1t2rjvxeq4ul2lzhnqntt348s2jompz.png",
+        "type": "涂鸦",
+        "description": "红蝶专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "金匠-剪影",
+        "img": "./img/lqg5bthwfuylnilyg26yemqoh4r6ws9.png",
+        "type": "涂鸦",
+        "description": "鹿头专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "黄衣之主-剪影",
+        "img": "./img/o2lnz92pnqk033721sdmiinbe6st9vy.png",
+        "type": "涂鸦",
+        "description": "黄衣之主专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "蜘蛛-萌版",
+        "img": "./img/s2gjnvpmtr7bedccujnthz4xabb6ejv.png",
+        "type": "涂鸦",
+        "description": "蜘蛛专用涂鸦，萌版",
+        "repeat": 6
+      },
+      {
+        "name": "红蝶般若-卡通",
+        "img": "./img/47c9imqznqlaltpvlxf10wo5jzc0deo.png",
+        "type": "涂鸦",
+        "description": "红蝶专属涂鸦，卡通",
+        "repeat": 6
+      },
+      {
+        "name": "前锋-剪影",
+        "img": "./img/o6kb303mo8tneh1f22lm5yyxsd5l5hy.png",
+        "type": "涂鸦",
+        "description": "前锋专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "厂长-萌版",
+        "img": "./img/mptzyf91me6qyk1bg39vg8aujk6ixr0.png",
+        "type": "涂鸦",
+        "description": "厂长专用涂鸦，萌版",
+        "repeat": 6
+      },
+      {
+        "name": "游记-彩底",
+        "img": "./img/71jj2a43et51xrlpmg2vtl02mdb6uqm.png",
+        "type": "涂鸦",
+        "description": "游记涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "地狱感知",
+        "img": "./img/dx0hthwll4khpo16r0aaxp1objjfhk8.png",
+        "type": "头像",
+        "description": "地狱感知的基础头像",
+        "repeat": 6
+      },
+      {
+        "name": "鹿头",
+        "img": "./img/ng6sffy8ize4hk20qrw1pu8xkl2s3zi.png",
+        "type": "头像",
+        "description": "鹿头的基础头像",
+        "repeat": 6
+      },
+      {
+        "name": "木偶比利",
+        "img": "./img/jc06lr4jalfxrcxe51xdutdz4jvq3qg.png",
+        "type": "头像",
+        "description": "木偶比利的基础头像",
+        "repeat": 6
+      },
+      {
+        "name": "医生",
+        "img": "./img/4qh02y6iwi9p41pwk2makupxml12ey5.png",
+        "type": "头像",
+        "description": "医生的基础头像",
+        "repeat": 6
+      }
+    ]
+  }
+}

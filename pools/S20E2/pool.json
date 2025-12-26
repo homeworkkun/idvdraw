@@ -1,0 +1,330 @@
+{
+  "id": "S20E2",
+  "name": "深渊珍宝Ⅴ",
+  "essenceImage": "./img/rip9jqh7v4rjao87yupwia9ouchzgom.png",
+  "diff_A": 0,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [
+    {
+      "name": "-20%",
+      "rate": 0.8,
+      "chance": 0.03
+    },
+    {
+      "name": "-40%",
+      "rate": 0.6,
+      "chance": 0.015
+    }
+  ],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "永夜极光",
+        "img": "./img/9y9x0nwxof0n4lpvrvk6h9qmhqepv7f.png",
+        "type": "时装",
+        "description": "掌控者之名的真意，和其真面目一样鲜有人知：她希望成为这座永夜之都的极光一—如极地遇难者在失去体温前，最后聊以慰藉的美丽。\n深渊珍宝Ⅴ限定稀世时装",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "霓虹先锋",
+        "img": "./img/qheqt9asw7tm365sl5fzol1wzxt3u6d.png",
+        "type": "时装",
+        "description": "在他拆掉霓虹灯，以最浮夸的方式反抗所有诱惑时，他意外发现霓虹灯管中潜伏着以颜色为载体的诡异生命体。\n深渊珍宝Ⅴ限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "花边新闻",
+        "img": "./img/8zwlz68lswyvnkq4ss01gvmzj2uiwcz.png",
+        "type": "时装",
+        "description": "以收集花边新闻为由，她一直嗅探着大都会浮华背后的秘密和丑闻：只有她自制的测谎仪和犀利提问，才能刺激到人们早已麻木的神经。\n深渊珍宝Ⅴ限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "海盗电台",
+        "img": "./img/6dh1b6yw5vy5ic4ut0o43gpnf354a6f.png",
+        "type": "时装",
+        "description": "在无人问津的港口，他勉力维持着无处启航的“海盗电台”，抢占广播频段的每个间隙以警醒众人：整座城市不过是一处浮华的孤岛。\n深渊珍宝Ⅴ限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "放映厅",
+        "img": "./img/j2o8766hs7lvqyoqzhdhpaknms3f766.png",
+        "type": "时装",
+        "description": "大都会的院线里没有痛苦悲伤，警醒批判。但在他瞒天过海地剪辑下，空洞的影片里终于出现了一些经典镜头——哪怕只是一闪而过。\n深渊珍宝Ⅴ限定奇珍时装",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "军乐队",
+        "img": "./img/o4dfoday7p1h2jtw5ef3nzk93l82buh.png",
+        "type": "时装",
+        "description": "作为头牌明星的公关负责人，他认为媒体大战中的所有报导、广告、舆论都是武器，应如军乐中的每段旋律编排一样精准、有效。\n深渊珍宝Ⅴ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "化妆师",
+        "img": "./img/fa38cw2fy4rlhx79ze6qwahccojn7b3.png",
+        "type": "时装",
+        "description": "当大都会的迷醉者们终于无法忽视自己身体的异变时，只会想到为了遮丑而求助于化妆师——这里没有医院，也不需要医院。\n深渊珍宝Ⅴ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "粉刷匠",
+        "img": "./img/lhb63ju74rigbsqlr28lh9j3pnhp3er.png",
+        "type": "时装",
+        "description": "大都会的欢享之夜永无日出。他只能将自己绘画天赋拘束在一块块广告墙上，寄生在遍布整座城市的霓虹灯牌之下。\n深渊珍宝Ⅴ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "治安官",
+        "img": "./img/kj8qzm63gqkwwysnbkaxli534pf8y4e.png",
+        "type": "时装",
+        "description": "头牌明星作为掌控者，并不需要调用治安官的武力来铲除异己。在没有硝烟的媒体大战中，真正的力量是舆论和影响力。\n深渊珍宝Ⅴ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "交通旗",
+        "img": "./img/bwsi11nq1f512hzogkwb9h4nepf6uaj.png",
+        "type": "时装",
+        "description": "大都会少有外界的娱乐和新闻，但关于一个赛车拉力赛的消息却总有专人定期更新。这不是掌控者所能摆布的，而是源于更幕后的势力。\n深渊珍宝Ⅴ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "玩具商-准备",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "玩具商匹配大厅等待动作，准备",
+        "repeat": 200
+      },
+      {
+        "name": "病患-张望",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "病患专属匹配大厅等待动作，张望",
+        "repeat": 200
+      },
+      {
+        "name": "雕刻家-大笑",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "雕刻家专属匹配大厅等待动作，大笑",
+        "repeat": 200
+      },
+      {
+        "name": "“噩梦”-示威",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "“噩梦”专属匹配大厅等待动作，示威",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "枯草黄",
+        "img": "./img/ias300850a033hlgid6x3x3xglanb1u.png",
+        "type": "时装",
+        "description": "枯黄的草原是野火燃烧的温床。",
+        "repeat": 36
+      },
+      {
+        "name": "朱褐石",
+        "img": "./img/p7slx0b0lj7llm2qprii2y0p12eehhm.png",
+        "type": "时装",
+        "description": "产自地下矿物的颜料，有着一种独特的厚重感。",
+        "repeat": 36
+      },
+      {
+        "name": "花紫",
+        "img": "./img/7hiw8hxz4n33sj5m83axz128jdg68a0.png",
+        "type": "时装",
+        "description": "如果演出服只有一种紫色，一定会觉得非常无趣！",
+        "repeat": 36
+      },
+      {
+        "name": "帆布白",
+        "img": "./img/il8v0r2q1u28bq5idorvtp8p2sodpfz.png",
+        "type": "时装",
+        "description": "出航之初的白帆，在归来时又会变成什么颜色呢?",
+        "repeat": 36
+      },
+      {
+        "name": "大麦酒",
+        "img": "./img/n5gcwz0z7amv0lzm50bkxfu82apfjnz.png",
+        "type": "时装",
+        "description": "麦芽酿制的褐色，是健康甘醇的象征",
+        "repeat": 36
+      },
+      {
+        "name": "蓝香橙",
+        "img": "./img/8me5j4thp23bc1j3psel1n41i6d3h9f.png",
+        "type": "时装",
+        "description": "这可是一种带有纯正果味儿的利口酒！",
+        "repeat": 36
+      },
+      {
+        "name": "湖蓝漆",
+        "img": "./img/ngvvvagd8iingc2hrk5zgucik2prhyy.png",
+        "type": "时装",
+        "description": "别误会，它只是换了一个冷色涂装，并没有降低半点热情。",
+        "repeat": 36
+      },
+      {
+        "name": "紫钢",
+        "img": "./img/8wo06b7hmdqsojs13m4fjn098bow2v0.png",
+        "type": "时装",
+        "description": "邦邦升级了紫色的外饰，很高兴再次认识你!",
+        "repeat": 36
+      },
+      {
+        "name": "入殓师-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，入殓师专属",
+        "repeat": 36
+      },
+      {
+        "name": "勘探员-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，勘探员专属",
+        "repeat": 36
+      },
+      {
+        "name": "野人-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，野人专属",
+        "repeat": 36
+      },
+      {
+        "name": "调酒师-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，调酒师专属",
+        "repeat": 36
+      },
+      {
+        "name": "守墓人-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，守墓人专属",
+        "repeat": 36
+      },
+      {
+        "name": "“囚徒”-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，“囚徒”专属",
+        "repeat": 36
+      },
+      {
+        "name": "咒术师-花边新闻",
+        "img": "./img/92qhi81p70a7myfhq32xrvpe389zlq7.png",
+        "type": "涂鸦",
+        "description": "咒术师专属涂鸦，花边新闻",
+        "repeat": 36
+      },
+      {
+        "name": "邮差-报纸怪客",
+        "img": "./img/r4owbu5oue3diqdd1388kbm0gvwar6e.png",
+        "type": "涂鸦",
+        "description": "邮差专属涂鸦，报纸怪客",
+        "repeat": 36
+      },
+      {
+        "name": "“囚徒”-放映厅",
+        "img": "./img/2fbushknagwgu5n3lnmhs7imebouezz.png",
+        "type": "涂鸦",
+        "description": "“囚徒”专属涂鸦，放映厅",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-霓虹先锋",
+        "img": "./img/cl2xii5ejcfiqxi9fq36kq61ggugs33.png",
+        "type": "涂鸦",
+        "description": "前锋专属涂鸦，霓虹先锋",
+        "repeat": 36
+      },
+      {
+        "name": "大副-海盗电台",
+        "img": "./img/fi1wo1iijuvsryae0mc5ktbf4trs91p.png",
+        "type": "涂鸦",
+        "description": "大副专属涂鸦，海盗电台",
+        "repeat": 36
+      },
+      {
+        "name": "野人-另一面",
+        "img": "./img/a7291wiock556wtlqx2oby1o7tr2p4l.png",
+        "type": "头像",
+        "description": "野人的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "厂长-另一面",
+        "img": "./img/d952ki1wvpv57yypwfuebgrebmaaltg.png",
+        "type": "头像",
+        "description": "厂长的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "大副-另一面",
+        "img": "./img/n3hd9rnpf1gbka3gue29kn7m345ut6o.png",
+        "type": "头像",
+        "description": "大副的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "“杰克”-另一面",
+        "img": "./img/8utj81bkzu44lbmbzr2ag73jrflw8ww.png",
+        "type": "头像",
+        "description": "“杰克”的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "鹿头-另一面",
+        "img": "./img/4wyx92x2farqf3yw5x4n361myquxt70.png",
+        "type": "头像",
+        "description": "鹿头的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "小丑-另一面",
+        "img": "./img/h5fuypwi38zxkt5enpc3w6g0wowjq13.png",
+        "type": "头像",
+        "description": "小丑的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "杂技演员-另一面",
+        "img": "./img/j7kcdnbc9jha76gjetw6d587znitwea.png",
+        "type": "头像",
+        "description": "杂技演员的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "咒术师-另一面",
+        "img": "./img/fub0s8azrd8dbuqeuovc8s0r6wra8sf.png",
+        "type": "头像",
+        "description": "咒术师的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

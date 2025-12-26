@@ -1,0 +1,77 @@
+{
+  "id": "lucky_dice_18",
+  "name": "幸运之骰·第18期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "恭贺新春": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/6riikcpfe98o38phos57uab8v76q9qc.png",
+      "description": "锣鼓喧天戏舞狮。（2019年春节活动首次获得） ",
+      "repeat": 200
+    },
+    "鼠年吉祥": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/5gkur5sc9v5i4ay20hv4533qastf8fv.png",
+      "description": "贴窗户啊，放鞭炮，喜迎新春。（2020年春节活动首次获得） ",
+      "repeat": 200
+    },
+    "年夜饭": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/bsoq6nhm0qdn2fiu0mdpdk28056cufa.png",
+      "description": "除夕围炉，红纸压崇，岁岁平安~（2020年春节活动首次获得） ",
+      "repeat": 6
+    },
+    "佣兵-感恩派对": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/iil8jtr2w2kp86bv3hriis3ks1zedj1.png",
+      "description": "感恩节活动涂鸦，佣兵",
+      "repeat": 6
+    },
+    "前锋-感恩派对": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/7fqz9f6w53q89e5yz09cf4r7suc2f09.png",
+      "description": "感恩节活动涂鸦，前锋",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

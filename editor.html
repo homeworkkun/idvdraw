@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精华池内容可视化编辑器</title>
+    <script src="/resource/tailwind.min.css"></script>
+    <link rel="stylesheet" href="/resource/fontawesome/css/all.min.css">
+    <style>
+        body { background-color: #111827; color: #d1d5db; }
+        .form-input, .form-textarea, .form-select {
+            background-color: #1f2937; border: 1px solid #4b5563;
+            color: #d1d5db; border-radius: 0.375rem; padding: 0.5rem 0.75rem;
+            width: 100%; transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .form-input:focus, .form-textarea:focus, .form-select:focus {
+            outline: none; border-color: #60a5fa;
+            box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.5);
+        }
+        .form-checkbox {
+            height: 1.25rem; width: 1.25rem; border-radius: 0.25rem;
+            background-color: #1f2937; border: 1px solid #4b5563;
+            color: #3b82f6;
+        }
+        .form-checkbox:checked { background-color: #3b82f6; }
+        .card { background-color: #1f2937; border: 1px solid #374151; border-radius: 0.5rem; }
+        .sub-card { background-color: #2b3749; border: 1px solid #4b5563; border-radius: 0.375rem; }
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 0.5rem 1rem; border-radius: 0.375rem;
+            font-weight: 600; transition: background-color 0.2s; cursor: pointer;
+        }
+        .btn-primary { background-color: #3b82f6; color: white; }
+        .btn-primary:hover { background-color: #2563eb; }
+        .btn-secondary { background-color: #4b5563; color: white; }
+        .btn-secondary:hover { background-color: #6b7280; }
+        .btn-danger { background-color: #ef4444; color: white; }
+        .btn-danger:hover { background-color: #dc2626; }
+        .btn-success { background-color: #22c55e; color: white; }
+        .btn-success:hover { background-color: #16a34a; }
+        .rarity-S { border-left: 4px solid #f59e0b; }
+        .rarity-A { border-left: 4px solid #a855f7; }
+        .rarity-B { border-left: 4px solid #3b82f6; }
+        .rarity-C { border-left: 4px solid #22c55e; }
+        .rarity-D { border-left: 4px solid #6b7280; }
+        
+        /* 弹窗样式 */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex; align-items: center; justify-content: center;
+            z-index: 50; opacity: 0; transition: opacity 0.3s; pointer-events: none;
+        }
+        .modal-overlay.is-visible { opacity: 1; pointer-events: auto; }
+        .modal-content {
+            background-color: #1f2937; border-radius: 0.5rem;
+            width: 90%; max-width: 800px;
+            display: flex; flex-direction: column;
+            transform: scale(0.95); transition: transform 0.3s;
+        }
+        .modal-content-lg { height: 80vh; }
+        .modal-overlay.is-visible .modal-content { transform: scale(1); }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-5xl mx-auto">
+        <header class="mb-8 p-4 bg-gray-900/50 rounded-lg border border-gray-700 backdrop-blur-sm sticky top-4 z-20">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <h1 class="text-3xl font-bold text-white">精华池内容可视化编辑器</h1>
+                <div class="flex items-center gap-3 flex-wrap justify-center">
+                    <button onclick="openImportModal()" class="btn btn-secondary"><i class="fas fa-upload mr-2"></i>从 JSON 导入</button>
+                    <button onclick="loadDefaultData()" class="btn btn-secondary"><i class="fas fa-undo mr-2"></i>加载默认数据</button>
+                    <button onclick="generateJson()" class="btn btn-primary"><i class="fas fa-cogs mr-2"></i>生成并查看 JSON</button>
+                </div>
+            </div>
+        </header>
+
+        <div id="editor-container" class="space-y-8">
+            <!-- 全局设置 (可折叠) -->
+            <div class="card">
+                <div id="global-settings-header" class="flex justify-between items-center p-4 cursor-pointer" onclick="toggleGlobalSettings()">
+                    <h2 class="text-2xl font-semibold">全局设置</h2>
+                    <i id="global-settings-icon" class="fas fa-chevron-down transition-transform"></i>
+                </div>
+                <div id="global-settings-body" class="p-6 pt-0 space-y-4 hidden">
+                    <div id="global-settings-form"></div>
+                </div>
+            </div>
+            <!-- 物品编辑器 -->
+            <div class="card p-6 space-y-4">
+                <h2 class="text-2xl font-semibold border-b border-gray-600 pb-2">物品列表</h2>
+                <div id="items-editor" class="space-y-6"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JSON 导出弹窗 -->
+    <div id="json-export-modal" class="modal-overlay">
+        <div class="modal-content modal-content-lg">
+            <div class="flex justify-between items-center p-4 border-b border-gray-600">
+                <h3 class="text-xl font-semibold">生成的 pool.json</h3>
+                <div class="flex items-center gap-3">
+                    <button id="copy-btn" onclick="copyJsonToClipboard()" class="btn btn-primary"><i class="fas fa-copy mr-2"></i>复制</button>
+                    <button onclick="closeModal('json-export-modal')" class="btn btn-secondary"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div class="p-4 flex-grow">
+                <textarea id="json-output" class="form-textarea w-full h-full font-mono text-sm" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JSON 导入弹窗 -->
+    <div id="json-import-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="flex justify-between items-center p-4 border-b border-gray-600">
+                <h3 class="text-xl font-semibold">从 JSON 导入</h3>
+                <button onclick="closeModal('json-import-modal')" class="btn btn-secondary"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="p-4 flex-grow space-y-4">
+                <p class="text-gray-400">请将 pool.json 的内容粘贴到下方文本框中。</p>
+                <textarea id="json-import-input" class="form-textarea w-full h-64 font-mono text-sm" placeholder="在此处粘贴JSON..."></textarea>
+                <div class="text-right">
+                    <button onclick="importJson()" class="btn btn-success"><i class="fas fa-check mr-2"></i>确认导入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+// 1. 初始数据
+const initialData = {
+  "id": "", "name": "第赛季·精华", "essenceImage": "", "diff_A": 1, "注释":"diff_A:0代表完全不会重复出奇珍物品，diff_A:1代表精华抽取时，将最多连续获得2次相同的奇珍物品，diff_A:2代表会重复", "initialCurrencies": { "inspiration": 100000, "fragments": 0 }, "discounts": [{ "name": "-20%", "rate": 0.8, "chance": 0.03 },{"name": "-40%","rate": 0.6,"chance": 0.015}], "fragmentsInfo": { "name": "碎片", "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png", "type": "通用货币" }, "pitySettings": { "gold": 200, "purple": 60, "blue": 10 },
+  "items": {
+    "S": [{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 2000 }],
+    "A": [{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 1000 }, { "name": "", "img": "", "type": "时装", "description": "", "repeat": 1000 }],
+    "B": [{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 200 },{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 200 },{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 200 },{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 200 },{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 200 },{ "name": "", "img": "", "type": "个性动作", "description": "", "repeat": 200 },{ "name": "", "img": "", "type": "个性动作", "description": "", "repeat": 200 },{ "name": "", "img": "/resource/912d4b99ec0d60277901025c664817f1.png", "type": "等待动作", "description": "", "repeat": 200 },{ "name": "", "img": "/resource/912d4b99ec0d60277901025c664817f1.png", "type": "等待动作", "description": "", "repeat": 200 }],
+    "C": [{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "时装", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "个性动作", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "个性动作", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "个性动作", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "个性动作", "description": "", "repeat": 36 },{ "name": "", "img": "/resource/81c376691ed8e0ce77fa14161417a716.png", "type": "等待动作", "description": "", "repeat": 36 },{ "name": "", "img": "/resource/81c376691ed8e0ce77fa14161417a716.png", "type": "等待动作", "description": "", "repeat": 36 },{ "name": "", "img": "/resource/81c376691ed8e0ce77fa14161417a716.png", "type": "等待动作", "description": "", "repeat": 36 },{ "name": "", "img": "/resource/81c376691ed8e0ce77fa14161417a716.png", "type": "等待动作", "description": "", "repeat": 36 },{ "name": "", "img": "/resource/81c376691ed8e0ce77fa14161417a716.png", "type": "等待动作", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "涂鸦", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "涂鸦", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "涂鸦", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "涂鸦", "description": "", "repeat": 36 },{ "name": "", "img": "", "type": "头像", "description": "黑白回忆系列头像\\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。” ", "repeat": 36 },{ "name": "", "img": "", "type": "头像", "description": "黑白回忆系列头像\\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”", "repeat": 36 },{ "name": "", "img": "", "type": "头像", "description": "黑白回忆系列头像\\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”", "repeat": 36 }], 
+    "D": [{ "name": "", "img": "", "type": "涂鸦", "description": "", "repeat": 6 },{ "name": "", "img": "", "type": "涂鸦", "description": "", "repeat": 6 },{ "name": "", "img": "", "type": "涂鸦", "description": "", "repeat": 6 },{ "name": "", "img": "", "type": "涂鸦", "description": "", "repeat": 6 },{ "name": "", "img": "", "type": "涂鸦", "description": "", "repeat": 6 },{ "name": "", "img": "", "type": "涂鸦", "description": "", "repeat": 6 },{ "name": "", "img": "", "type": "涂鸦", "description": "", "repeat": 6 },{ "name": "", "img": "", "type": "头像", "description": "彩色回忆系列头像\\n“记住这一瞬间的心情，并让这段时光永留在心底” ", "repeat": 6 },{ "name": "", "img": "", "type": "头像", "description": "彩色回忆系列头像\\n“记住这一瞬间的心情，并让这段时光永留在心底” ", "repeat": 6 },{ "name": "", "img": "", "type": "头像", "description": "彩色回忆系列头像\\n“记住这一瞬间的心情，并让这段时光永留在心底” ", "repeat": 6 },{ "name": "", "img": "", "type": "头像", "description": "彩色回忆系列头像\\n“记住这一瞬间的心情，并让这段时光永留在心底” ", "repeat": 6 }]
+  }
+};
+let poolData = {};
+const LOCAL_STORAGE_KEY = 'poolJsonEditorData';
+
+// 2. 本地存储函数
+function saveDataToLocal() {
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(poolData));
+}
+
+function loadDataFromLocal() {
+    const savedData = localStorage.getItem(LOCAL_STORAGE_KEY);
+    if (savedData) {
+        poolData = JSON.parse(savedData);
+    } else {
+        poolData = JSON.parse(JSON.stringify(initialData));
+    }
+}
+
+// 3. 渲染函数
+function renderEditor() {
+    const globalForm = document.getElementById('global-settings-form');
+    const itemsEditor = document.getElementById('items-editor');
+    
+    globalForm.innerHTML = '';
+    itemsEditor.innerHTML = '';
+
+    // 动态渲染全局设置
+    for (const key in poolData) {
+        if (key === 'items') continue;
+        const value = poolData[key];
+        let inputHtml = '';
+
+        // --- 适配 `discounts` (数组) 和 `discountInfo` (对象) ---
+        if (key === 'discounts' && Array.isArray(value)) {
+            inputHtml = `<div class="p-3 border border-gray-600 rounded-md space-y-2">
+                            <div class="flex justify-between items-center">
+                                <h4 class="font-semibold text-lg text-gray-300">折扣列表 (discounts)</h4>
+                                <button onclick="addDiscount()" class="btn btn-secondary btn-sm"><i class="fas fa-plus mr-1"></i>添加折扣</button>
+                            </div>`;
+            value.forEach((discount, index) => {
+                inputHtml += `<div class="sub-card p-3 space-y-2 relative">
+                                <button onclick="deleteDiscount(${index})" class="absolute top-2 right-2 btn btn-danger btn-sm !p-1 w-6 h-6"><i class="fas fa-times"></i></button>
+                                ${createFormRow('name', discount.name, `data-key="discounts" data-index="${index}" data-subkey="name"`)}
+                                ${createFormRow('rate', discount.rate, `data-key="discounts" data-index="${index}" data-subkey="rate"`, 'number')}
+                                ${createFormRow('chance', discount.chance, `data-key="discounts" data-index="${index}" data-subkey="chance"`, 'number')}
+                              </div>`;
+            });
+            inputHtml += `</div>`;
+        } else if (key === 'discountInfo' && typeof value === 'object' && value !== null && !Array.isArray(value)) {
+            inputHtml = `<div class="p-3 border border-gray-600 rounded-md space-y-2">
+                            <h4 class="font-semibold text-lg text-gray-300">${key}</h4>
+                            ${createFormRow('rate', value.rate, `data-key="discountInfo" data-subkey="rate"`, 'number')}
+                            ${createFormRow('chance', value.chance, `data-key="discountInfo" data-subkey="chance"`, 'number')}
+                         </div>`;
+        // --- 适配 `greenSettings` (可能不存在) ---
+        } else if (key === 'greenSettings' && typeof value === 'object' && value !== null) {
+            inputHtml = `<div class="p-3 border border-gray-600 rounded-md space-y-2">
+                            <h4 class="font-semibold text-lg text-gray-300">${key}</h4>
+                            ${createFormRow('enabled', value.enabled, `data-key="greenSettings" data-subkey="enabled"`, 'checkbox')}
+                            <div class="sub-card p-3 space-y-2">
+                                <h5 class="font-medium text-md text-gray-300">item</h5>
+                                ${createFormRow('name', value.item.name, `data-key="greenSettings" data-subkey="item" data-itemkey="name"`)}
+                                ${createFormRow('type', value.item.type, `data-key="greenSettings" data-subkey="item" data-itemkey="type"`)}
+                                ${createFormRow('rarity', value.item.rarity, `data-key="greenSettings" data-subkey="item" data-itemkey="rarity"`)}
+                                ${createFormRow('img', value.item.img, `data-key="greenSettings" data-subkey="item" data-itemkey="img"`, 'textarea')}
+                                ${createFormRow('description', value.item.description, `data-key="greenSettings" data-subkey="item" data-itemkey="description"`, 'textarea')}
+                                ${createFormRow('repeat', value.item.repeat, `data-key="greenSettings" data-subkey="item" data-itemkey="repeat"`, 'number')}
+                            </div>
+                         </div>`;
+        }
+        // --- 通用对象和原始值处理 ---
+        else if (typeof value === 'object' && value !== null) {
+            inputHtml = `<div class="p-3 border border-gray-600 rounded-md space-y-2">
+                            <h4 class="font-semibold text-lg text-gray-300">${key}</h4>`;
+            for (const subKey in value) {
+                inputHtml += createFormRow(subKey, value[subKey], `data-key="${key}" data-subkey="${subKey}"`);
+            }
+            inputHtml += `</div>`;
+        } else {
+            inputHtml = createFormRow(key, value, `data-key="${key}"`);
+        }
+        globalForm.innerHTML += inputHtml;
+    }
+
+    // 渲染物品列表
+    const rarities = ['S', 'A', 'B', 'C', 'D'];
+    rarities.forEach(rarity => {
+        if (!poolData.items[rarity]) poolData.items[rarity] = [];
+        let rarityHtml = `<div class="p-4 border border-gray-700 rounded-lg rarity-${rarity}">
+                            <div class="flex justify-between items-center mb-4">
+                                <h3 class="text-xl font-bold text-gray-200">稀有度: ${rarity}</h3>
+                                <button onclick="addItem('${rarity}')" class="btn btn-secondary btn-sm"><i class="fas fa-plus mr-2"></i>添加物品</button>
+                            </div>
+                            <div id="items-list-${rarity}" class="space-y-4">`;
+        
+        poolData.items[rarity].forEach((item, index) => {
+            rarityHtml += `<div class="card p-4 grid grid-cols-1 md:grid-cols-3 gap-4 relative">
+                <div class="md:col-span-1 flex flex-col items-center">
+                    <img id="img-preview-${rarity}-${index}" src="${item.img}" alt="图片预览" class="w-28 h-28 object-cover rounded-md mb-2 border border-gray-500 bg-gray-800" onerror="this.src='https://via.placeholder.com/112x112/1f2937/6b7280?text=Invalid+URL'">
+                </div>
+                <div class="md:col-span-2 space-y-3">
+                    ${createFormRow('name', item.name, `data-rarity="${rarity}" data-index="${index}" data-key="name"`)}
+                    ${createFormRow('img (URL)', item.img, `data-rarity="${rarity}" data-index="${index}" data-key="img" oninput="updateDataAndPreview(this, '${rarity}', ${index})"`,'textarea')}
+                    ${createFormRow('type', item.type, `data-rarity="${rarity}" data-index="${index}" data-key="type"`)}
+                    ${createFormRow('description', item.description, `data-rarity="${rarity}" data-index="${index}" data-key="description"`, 'textarea')}
+                    ${createFormRow('repeat', item.repeat, `data-rarity="${rarity}" data-index="${index}" data-key="repeat"`, 'number')}
+                </div>
+                <button onclick="deleteItem('${rarity}', ${index})" class="absolute top-2 right-2 btn btn-danger btn-sm !p-2 w-8 h-8"><i class="fas fa-trash-alt"></i></button>
+            </div>`;
+        });
+
+        rarityHtml += `</div></div>`;
+        itemsEditor.innerHTML += rarityHtml;
+    });
+}
+
+function createFormRow(label, value, dataAttributes, type = 'text') {
+    let inputHtml;
+    const commonAttrs = `class="form-input" ${dataAttributes} oninput="updateData(this)"`;
+
+    if (type === 'checkbox') {
+        const checked = value ? 'checked' : '';
+        inputHtml = `<div class="flex items-center gap-2">
+                        <input type="checkbox" id="checkbox-${label}" class="form-checkbox" ${checked} ${dataAttributes} onchange="updateData(this)">
+                        <label for="checkbox-${label}" class="text-sm font-medium text-gray-400">${label}</label>
+                     </div>`;
+    } else if (type === 'textarea') {
+        const rows = (label === 'img (URL)' || label === 'description') ? 3 : 1;
+        inputHtml = `<textarea rows="${rows}" class="form-textarea" ${dataAttributes} oninput="updateData(this)">${escapeHtml(value)}</textarea>`;
+    } else {
+        const inputType = typeof value === 'number' ? 'number' : 'text';
+        inputHtml = `<input type="${inputType}" value="${escapeHtml(value)}" ${commonAttrs}>`;
+    }
+
+    return `<div class="w-full">
+                ${type !== 'checkbox' ? `<label class="block text-sm font-medium text-gray-400 mb-1">${label}</label>` : ''}
+                ${inputHtml}
+            </div>`;
+}
+
+// 4. 数据更新和操作函数
+function updateData(element) {
+    const { key, subkey, index, rarity, itemkey } = element.dataset;
+    let value;
+    if (element.type === 'checkbox') {
+        value = element.checked;
+    } else if (element.type === 'number') {
+        value = Number(element.value) || 0; // Fallback to 0 if NaN
+    } else {
+        value = element.value;
+    }
+
+    if (rarity !== undefined && index !== undefined) { // 物品列表
+        poolData.items[rarity][index][key] = value;
+    } else if (key === 'discounts' && index !== undefined && subkey !== undefined) { // 折扣数组
+        poolData.discounts[index][subkey] = value;
+    } else if (key === 'greenSettings' && subkey === 'item' && itemkey !== undefined) { // greenSettings.item
+        poolData.greenSettings.item[itemkey] = value;
+    } else if (key !== undefined && subkey !== undefined) { // 普通嵌套对象
+        poolData[key][subkey] = value;
+    } else if (key !== undefined) { // 顶层键
+        poolData[key] = value;
+    }
+    saveDataToLocal();
+}
+
+function updateDataAndPreview(element, rarity, index) {
+    updateData(element);
+    const imgElement = document.getElementById(`img-preview-${rarity}-${index}`);
+    if (imgElement) {
+        imgElement.src = poolData.items[rarity][index].img;
+    }
+}
+
+function addItem(rarity) {
+    const newItem = { name: "", img: "", type: "新类型", description: "", repeat: 0 };
+    poolData.items[rarity].push(newItem);
+    saveDataToLocal();
+    renderEditor();
+}
+
+function deleteItem(rarity, index) {
+    if (confirm(`确定要删除这个位于稀有度 ${rarity} 的物品吗？`)) {
+        poolData.items[rarity].splice(index, 1);
+        saveDataToLocal();
+        renderEditor();
+    }
+}
+
+function addDiscount() {
+    if (!poolData.discounts) {
+        poolData.discounts = [];
+    }
+    poolData.discounts.push({ name: "新折扣", rate: 0.5, chance: 0.01 });
+    saveDataToLocal();
+    renderEditor();
+}
+
+function deleteDiscount(index) {
+    if (confirm('确定要删除这个折扣吗？')) {
+        poolData.discounts.splice(index, 1);
+        saveDataToLocal();
+        renderEditor();
+    }
+}
+
+function loadDefaultData() {
+    if (confirm("确定要加载默认数据吗？当前所有修改都将丢失。")) {
+        poolData = JSON.parse(JSON.stringify(initialData));
+        saveDataToLocal();
+        renderEditor();
+    }
+}
+
+// 5. 全局设置折叠功能
+function toggleGlobalSettings() {
+    const body = document.getElementById('global-settings-body');
+    const icon = document.getElementById('global-settings-icon');
+    body.classList.toggle('hidden');
+    icon.classList.toggle('rotate-180');
+}
+
+// 6. JSON 导入导出与弹窗
+function generateJson() {
+    const dataToExport = JSON.parse(JSON.stringify(poolData));
+    if (dataToExport['注释']) {
+        delete dataToExport['注释'];
+    }
+    const standardJsonString = JSON.stringify(dataToExport, null, 2);
+    const finalJsonString = standardJsonString.replace(/\\\\n/g, '\\n');
+    document.getElementById('json-output').value = finalJsonString;
+    openModal('json-export-modal');
+}
+
+function openModal(modalId) {
+    document.getElementById(modalId).classList.add('is-visible');
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).classList.remove('is-visible');
+}
+
+function openImportModal() {
+    document.getElementById('json-import-input').value = '';
+    openModal('json-import-modal');
+}
+
+function importJson() {
+    const jsonString = document.getElementById('json-import-input').value;
+    if (!jsonString.trim()) {
+        alert('输入框不能为空！');
+        return;
+    }
+    try {
+        const newData = JSON.parse(jsonString);
+        if (typeof newData !== 'object' || !newData.items || !newData.id) {
+            throw new Error('JSON 格式不正确，缺少 id 或 items 字段。');
+        }
+        poolData = newData;
+        saveDataToLocal();
+        renderEditor();
+        closeModal('json-import-modal');
+        alert('导入成功！');
+    } catch (e) {
+        alert(`导入失败：\n${e.message}`);
+    }
+}
+
+function copyJsonToClipboard() {
+    const jsonOutput = document.getElementById('json-output');
+    navigator.clipboard.writeText(jsonOutput.value).then(() => {
+        const copyBtn = document.getElementById('copy-btn');
+        const originalText = copyBtn.innerHTML;
+        copyBtn.innerHTML = `<i class="fas fa-check mr-2"></i>已复制!`;
+        setTimeout(() => {
+            copyBtn.innerHTML = originalText;
+        }, 2000);
+    }).catch(err => {
+        alert('复制失败: ', err);
+    });
+}
+
+// 7. 辅助函数和初始化
+function escapeHtml(unsafe) {
+    if (typeof unsafe !== 'string') return unsafe;
+    return unsafe.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadDataFromLocal();
+    renderEditor();
+    // 默认展开全局设置
+    // const header = document.getElementById('global-settings-header');
+    // if (header) {
+    //   header.click();
+    // }
+});
+</script>
+
+</body>
+</html>

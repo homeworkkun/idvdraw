@@ -1,0 +1,330 @@
+{
+  "id": "S25E2",
+  "name": "深渊珍宝Ⅵ",
+  "essenceImage": "./img/0xwehh79epcrbwsz3i06jo8ry70ol0d.png",
+  "diff_A": 0,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [
+    {
+      "name": "-20%",
+      "rate": 0.8,
+      "chance": 0.03
+    },
+    {
+      "name": "-40%",
+      "rate": 0.6,
+      "chance": 0.015
+    }
+  ],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "亘古双星",
+        "img": "./img/6o2nenffaz59b53cp7mt1pjxubguh32.png",
+        "type": "时装",
+        "description": "浮夸的表演、庸俗的桥段······囚于牢笼般的秀场中，他最恼怒的就是低俗的哄笑。犹格斯的代言人深知: 只有直面暗夜低语下的星穹，才能捕捉到真正精彩的瞬间，献上真正的愉悦一一那纯粹的混乱、恐惧、绝望······\n深渊珍宝Ⅵ限定稀世时装",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "生态圈",
+        "img": "./img/6bpa1z1rrvs7no9mys2plzwzo42phap.png",
+        "type": "时装",
+        "description": "完美的演员从不错过任何潮流话题: 特摄片、宇宙探索、精致时髦的女主······恐惧激发了她最生动完美的一次演绎，可惜，漂亮的脸蛋被陡然侵蚀的微型“生态圈”挡了个严实。\n深渊珍宝Ⅵ限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "炮弹飞船",
+        "img": "./img/h1appirllg9qvo7q92hmgcr6akrp3zo.png",
+        "type": "时装",
+        "description": "关于飞船的幻想千奇百怪，而用大炮将炮弹飞船打上星空，是他读到过的最有趣的一种。他不会错过将此实现的机会，但这趟妄想与现实交错的旅途终点依旧让他不知所措。\n深渊珍宝Ⅵ限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "线控信号",
+        "img": "./img/mh9nt2ww4l5in5em329ct68ju2ngqc5.png",
+        "type": "时装",
+        "description": "舞台上，她的扳手能让任何一个零件、一根电线乖乖听话。而在舞台下，那些设备总会“意外”失控，在扰动的信号中低喃细语着秘密。\n深渊珍宝Ⅵ限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "异星开采",
+        "img": "./img/qxxevfl4ai4pp806fvktqiapg3clpg0.png",
+        "type": "时装",
+        "description": "把字刻在石头上!一一这是他剧本中既定的计划，也是地质学家探索异星时独有的庆祝方式。但他绝没想到，一切居然以最荒诞的形式，在眼前成真了。\n深渊珍宝Ⅵ限定奇珍时装",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "跟组编剧",
+        "img": "./img/ckysmp3lyr8u3lprbo4gqscfgne3vtm.png",
+        "type": "时装",
+        "description": "比起在戏外编排他人，自己跟组随机应变修改剧本的确更具挑战。但眼看神秘的投资人在参演中肆意篡改剧情时，不知所措的编剧又身处在何人主笔的剧目之中?\n深渊珍宝Ⅵ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "安全员",
+        "img": "./img/bryelif8oekp2tus9l83sll417xqgpe.png",
+        "type": "时装",
+        "description": "他早已忘记在此相遇的原因，只在乎与那位服装师每次言谈时的奇妙感受一一有时如被钢丝吊上高空般紧张，有时又如身处漂浮空间般晕眩,恍若失重般的晕眩。\n深渊珍宝Ⅵ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "“服装师”",
+        "img": "./img/soq01nwkg5ilj1fiel4bm7zpl1vefdt.png",
+        "type": "时装",
+        "description": "那些并不是最美观精致的服装，但却是她为每个人量身定制的杰作，还缝制了一点小小的惊喜——让一切都好像本该长在他们身体上一样。\n深渊珍宝Ⅵ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "特效化妆",
+        "img": "./img/tuq6myv4vxvmkfwm1oxe6qbmgdtdgmu.png",
+        "type": "时装",
+        "description": "妆容之下，已无人能认出他的真容：以假乱真的异肢、超乎寻常的弹跳、嘶哑不清的低吼······演员们为之惊呼，亦为之生惧。\n深渊珍宝Ⅵ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "探班粉丝",
+        "img": "./img/cjyvd2o4bj23wl6qq6s2vvnolp8p4su.png",
+        "type": "时装",
+        "description": "完美的演员在哪儿都能吸引到狂热粉丝。他悄悄潜伏在观众中，伺机从那处娇小的“生态圈”中掠取一点纪念品——却未料自己见证了超乎想象的镜头。\n深渊珍宝Ⅵ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "病患-等待",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "病患匹配大厅动作，等待",
+        "repeat": 200
+      },
+      {
+        "name": "哭泣小丑-张望",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "哭泣小丑匹配大厅动作，张望",
+        "repeat": 200
+      },
+      {
+        "name": "哭泣小丑-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "哭泣小丑匹配大厅动作，小憩",
+        "repeat": 200
+      },
+      {
+        "name": "“心理学家”-等待",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "“心理学家”匹配大厅动作，等待",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "靛",
+        "img": "./img/9xru6fr7ebmy52d29im0qdwr6y1ntiv.png",
+        "type": "时装",
+        "description": "一种代表冷却的颜色，生命的火烛在恶意中燃尽，成为沉睡在石膏外壳中的冰冷躯体。",
+        "repeat": 36
+      },
+      {
+        "name": "焦土",
+        "img": "./img/89bn2065ho3h990vtu2b8du7inlkjy6.png",
+        "type": "时装",
+        "description": "电闪雷鸣，一个疯狂的天才，一个渎神的造物",
+        "repeat": 36
+      },
+      {
+        "name": "蒙尘",
+        "img": "./img/jmnbk8vsyvfrnjpy9intzf9ofla5x76.png",
+        "type": "时装",
+        "description": "名誉和偏爱是速朽的，被托举着飞向高空，就注定会跌落在尘土里。",
+        "repeat": 36
+      },
+      {
+        "name": "寡言棕",
+        "img": "./img/k7abasdye2qef1afm6l2j63jzq7tni8.png",
+        "type": "时装",
+        "description": "扭曲的身体形态像是牢笼，连哭声都被囚禁。",
+        "repeat": 36
+      },
+      {
+        "name": "秸秆绿",
+        "img": "./img/kt1ooiwi39106u3spte50jhpsj3iefv.png",
+        "type": "时装",
+        "description": "将透黄的秸秆精心编织，筑成玩具雏鸟温暖的新巢。",
+        "repeat": 36
+      },
+      {
+        "name": "旧墙褐",
+        "img": "./img/tq04y38bwgdut02v28va8kefrg4xsek.png",
+        "type": "时装",
+        "description": "年复一年地望着这阴湿、窄小的牢笼，手腕被束缚…接下来又是什么？",
+        "repeat": 36
+      },
+      {
+        "name": "毒环蓝",
+        "img": "./img/afu2sp17vsr9me1bmbe6oqz9kjs9gwj.png",
+        "type": "时装",
+        "description": "她闪烁着警戒的、诱人的生物性色彩，并向猎物注入复仇的毒汁。",
+        "repeat": 36
+      },
+      {
+        "name": "追忆灰",
+        "img": "./img/n7froj3p3ykgx199uojn5v782q34tvg.png",
+        "type": "时装",
+        "description": "冷峻地思考问题，追求突破界限和常理的探索。",
+        "repeat": 36
+      },
+      {
+        "name": "邮差-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，邮差专属",
+        "repeat": 36
+      },
+      {
+        "name": "击球手-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，击球手专属",
+        "repeat": 36
+      },
+      {
+        "name": "玩具商-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，玩具商专属",
+        "repeat": 36
+      },
+      {
+        "name": "病患-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，病患专属",
+        "repeat": 36
+      },
+      {
+        "name": "哭泣小丑-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，哭泣小丑专属",
+        "repeat": 36
+      },
+      {
+        "name": "“心理学家”-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，“心理学家”专属",
+        "repeat": 36
+      },
+      {
+        "name": "玩具商-线控信号",
+        "img": "./img/4oyrvp4lr26dhwgtvqfjmaaq6uf74kk.png",
+        "type": "涂鸦",
+        "description": "玩具商专属涂鸦，线控信号",
+        "repeat": 36
+      },
+      {
+        "name": "昆虫学者-生态圈",
+        "img": "./img/263vxde4gtlqpwy0r1gbnns3a2codbl.png",
+        "type": "涂鸦",
+        "description": "昆虫学者专属涂鸦，生态圈",
+        "repeat": 36
+      },
+      {
+        "name": "哭泣小丑-炮弹飞船",
+        "img": "./img/a6uxl4v9dhzsdjo55f8foyf9zg74oc3.png",
+        "type": "涂鸦",
+        "description": "哭泣小丑专属涂鸦，炮弹飞船",
+        "repeat": 36
+      },
+      {
+        "name": "守墓人-异星开采",
+        "img": "./img/3gw26eddycr8oatrwpm38jj0o2s3dtw.png",
+        "type": "涂鸦",
+        "description": "守墓人专属涂鸦，异星开采",
+        "repeat": 36
+      },
+      {
+        "name": "击球手-迫降专家",
+        "img": "./img/mx5piy8mejk987vw7cbti4gyxs4qt3p.png",
+        "type": "涂鸦",
+        "description": "击球手专属涂鸦，迫降专家",
+        "repeat": 36
+      },
+      {
+        "name": "红夫人-另一面",
+        "img": "./img/fflxj30w9psgs1uywvogtagx1b587ea.png",
+        "type": "头像",
+        "description": "红夫人的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "“囚徒”-另一面",
+        "img": "./img/c5gd11u7sc3dofiqrascyx3aho75r1v.png",
+        "type": "头像",
+        "description": "“囚徒”的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "守墓人-另一面",
+        "img": "./img/h08hp1drz5dwz8a4iw8rxo07q8547ff.png",
+        "type": "头像",
+        "description": "守墓人的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "邮差-另一面",
+        "img": "./img/14eovgxyu3n9qmnf9fytyds5m8zghp6.png",
+        "type": "头像",
+        "description": "邮差的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "调酒师-另一面",
+        "img": "./img/q3mbysosthbkgzjnf8ymllpi14xemqq.png",
+        "type": "头像",
+        "description": "调酒师的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "“使徒”-另一面",
+        "img": "./img/skw5prnah1qpyc4zvp95rqcvuzod769.png",
+        "type": "头像",
+        "description": "“使徒”的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "26号守卫-另一面",
+        "img": "./img/iu3yoxzilreascmbe74xmkpbjczdwpv.png",
+        "type": "头像",
+        "description": "26号守卫的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "孽蜥-另一面",
+        "img": "./img/lqy0605grutjczgwqhmqupl90q00e8f.png",
+        "type": "头像",
+        "description": "孽蜥的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

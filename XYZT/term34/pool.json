@@ -1,0 +1,84 @@
+{
+  "id": "lucky_dice_34",
+  "name": "幸运之骰·第34期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "园丁-思念": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/ml8s573fae8e8oqxhciyghw2rnbfavg.png",
+      "description": "园丁-思念头像框，2022年中秋活动首次获得 ",
+      "repeat": 200
+    },
+    "大漠秋思": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/qdc0c0r8f2l8k1tgfdnbht4z1bozgm6.png",
+      "description": "驼铃声响，埋藏在沙漠中的秋日记忆也逐渐复苏。（2023年“大漠怀秋”活动首次获得） ",
+      "repeat": 200
+    },
+    "月下营帐": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/etz08y0oc5kopynlem7v47v9hs13ozv.png",
+      "description": "记忆中的月下舞影，在月圆之时能否重逢？（2023年“大漠怀秋”活动首次获得） ",
+      "repeat": 200
+    },
+    "月下小憩": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/r31jxf1mgy97swap7g4zh5iffa3stqj.png",
+      "description": "和月亮一起放慢脚步，享受林间宁静的小憩。（通过2024年中秋活动首次获得） ",
+      "repeat": 200
+    },
+    "厂长-思念": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/edgj7i5pf73s6n3k2r26zlp9wtbvlvg.png",
+      "description": "厂长-思念头像，2022年中秋活动首次获得 ",
+      "repeat": 6
+    },
+    "月色诗篇": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/j6ndka0ttmuyo26blvk7urt0l484q77.png",
+      "description": "月色往往是幻想、隐喻与诗歌的摇篮。（通过2024年中秋活动首次获得） ",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

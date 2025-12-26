@@ -1,0 +1,84 @@
+{
+  "id": "lucky_dice_37",
+  "name": "幸运之骰·第37期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "窗外": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/5ihkeituaicdmhm0ujwi4gy1g652ne6.png",
+      "description": "窗外是秋天的味道,装点以期待的颜色。（通过2022“丽莎的游乐园”活动首次获得） ",
+      "repeat": 200
+    },
+    "感恩节派对": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/saem7zetw852loh1qmu6f9ls9lp87lt.png",
+      "description": "让欢乐与感恩交织成最热烈的节日狂欢！（通过2023年感恩节活动首次获得） ",
+      "repeat": 200
+    },
+    "丰收时节": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/s4yyy23n0t0g2tst8ltpvdrp385moaw.png",
+      "description": "丰收满载的喜悦，温暖节庆的光彩。（通过2024年感恩节活动首次获得） ",
+      "repeat": 200
+    },
+    "第五个愿望": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/rv5ee2tr44v808lrbkpdqbvc8l6ez09.png",
+      "description": "谢谢你陪伴艾玛度过第五个感恩节，祝愿你和艾玛的节日愿望都顺利实现。（通过2022“丽莎的游乐园”活动首次获得）",
+      "repeat": 6
+    },
+    "火鸡快跑": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/6sjcppv0o6dl9m2ystflcqs7i2b6dz8.png",
+      "description": "庆祝节日的方式可不止有晚宴！（通过2023年感恩节活动首次获得） ",
+      "repeat": 6
+    },
+    "火鸡大餐": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/anpv9igcpcgl8kz704ri4ijiy1jpykq.png",
+      "description": "大快朵颐！（通过2024年感恩节活动首次获得） ",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

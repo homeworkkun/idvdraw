@@ -1,0 +1,84 @@
+{
+  "id": "lucky_dice_36",
+  "name": "幸运之骰·第36期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "贝克街221B号": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/70ol0t05updalh1sqult2ha85m05320.png",
+      "description": "柯南·道尔联动头像框",
+      "repeat": 200
+    },
+    "“华生小姐”": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/68mi5627fw8mjifr07w9elv7amyqqo2.png",
+      "description": "柯南·道尔联动头像",
+      "repeat": 6
+    },
+    "福尔摩斯": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/mn776imtmj0m19mmwdqyod8hmlt89rm.png",
+      "description": "柯南·道尔联动头像",
+      "repeat": 6
+    },
+    "华生医生": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/hpbbwfz7le8hk6bpyd82zl0vyjpy4bv.png",
+      "description": "柯南·道尔联动头像",
+      "repeat": 6
+    },
+    "艺术品商人": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/qucdlkiebvfpkptbsuma9qmuuui2dbp.png",
+      "description": "柯南·道尔联动头像",
+      "repeat": 6
+    },
+    "雷斯垂德探长": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/owx4xghpxfzy51wuaxojrm730arvpsj.png",
+      "description": "柯南·道尔联动头像",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

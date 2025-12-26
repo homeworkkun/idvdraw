@@ -1,0 +1,76 @@
+{
+  "tiers": [
+    {
+      "id": "tuya",
+      "name": "涂鸦",
+      "probability": 0.0537,
+      "items": [
+        {
+          "name": "佣兵-体育课",
+          "weight": 1.0
+        },
+        {
+          "name": "园丁-手工课",
+          "weight": 1.0
+        },
+        {
+          "name": "机械师-密码机课",
+          "weight": 1.0
+        },
+        {
+          "name": "如何急救",
+          "weight": 1.0
+        },
+        {
+          "name": "绑椅指南",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "id": "avatar",
+      "name": "头像",
+      "probability": 0.0323,
+      "items": [
+        {
+          "name": "满分答卷",
+          "weight": 1.0
+        },
+        {
+          "name": "再见面的校园",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "id": "qizhentiyaka",
+      "name": "奇珍时装体验卡",
+      "probability": 0.1075,
+      "items": [
+        {
+          "name": "通用奇珍时装体验卡*1天",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "id": "tiyanka",
+      "name": "体验卡",
+      "probability": 0.8065,
+      "items": [
+        {
+          "name": "监管者角色体验卡*1天",
+          "weight": 1.0
+        },
+        {
+          "name": "求生者角色体验卡*1天",
+          "weight": 1.0
+        },
+        {
+          "name": "通用独特时装体验卡*1天",
+          "weight": 1.0
+        }
+      ]
+    }
+  ]
+}

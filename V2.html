@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第五人格精华模拟器</title>
+    <script src="/resource/tailwind.min.css"></script>
+    <link rel="stylesheet" href="/resource/fontawesome/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'DFPOP1W5-GB';
+            src: url('/fonts.ttf') format('truetype');
+        }
+
+        :root { --color-gold: #e8c668; --color-purple: #b568e8; --color-blue: #689de8; --color-frame: #4ade80; --bg-dark: #0f1115; --bg-panel: rgba(20, 23, 31, 0.95); }
+        /* 调整根字体大小，确保在小屏幕上有足够的空间 */
+        html { font-size: clamp(10px, 0.8vw + 8px, 16px); } 
+        
+        body { 
+            font-family: "DFPOP1W5-GB", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            background-color: var(--bg-dark); 
+            color: #d1d5db; 
+            user-select: none; 
+            background-image: radial-gradient(circle at 50% 50%, #1f232e 0%, #0a0b0e 100%); 
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .font-gothic { font-family:"DFPOP1W5-GB", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        @keyframes breathe { 0%, 100% { transform: scale(1); filter: drop-shadow(0 0 10px rgba(232, 198, 104, 0.3)); } 50% { transform: scale(1.05); filter: drop-shadow(0 0 20px rgba(232, 198, 104, 0.6)); } }
+        @keyframes shake { 0% { transform: translate(1px, 1px) rotate(0deg); } 10% { transform: translate(-1px, -2px) rotate(-1deg); } 20% { transform: translate(-3px, 0px) rotate(1deg); } 30% { transform: translate(3px, 2px) rotate(0deg); } 40% { transform: translate(1px, -1px) rotate(1deg); } 50% { transform: translate(-1px, 2px) rotate(-1deg); } 60% { transform: translate(-3px, 1px) rotate(0deg); } 70% { transform: translate(3px, 1px) rotate(-1deg); } 80% { transform: translate(-1px, -1px) rotate(1deg); } 90% { transform: translate(1px, 2px) rotate(0deg); } 100% { transform: translate(1px, -2px) rotate(-1deg); } }
+        @keyframes explode-flash { 0%, 100% { opacity: 0; transform: scale(3); } 50% { opacity: 1; transform: scale(1); } }
+        @keyframes card-flip { from { transform: rotateY(90deg) scale(0.9); opacity: 0; } to { transform: rotateY(0deg) scale(1); opacity: 1; } }
+        @keyframes scanline { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }
+        @keyframes fade-in-backdrop { from { backdrop-filter: blur(0px); background-color: rgba(0,0,0,0); } to { backdrop-filter: blur(8px); background-color: rgba(0,0,0,0.7); } }
+        @keyframes zoom-in-modal { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        @keyframes convert-to-fragments { 0% { transform: scale(1) rotate(0deg); filter: brightness(1); } 40% { transform: scale(1.1) rotate(5deg); filter: brightness(1.5) drop-shadow(0 0 15px white); } 100% { transform: scale(0) rotate(10deg); filter: brightness(2); } }
+        .converting { animation: convert-to-fragments 0.6s ease-in-out forwards; }
+        .essence-orb { width: clamp(150px, 35vmin, 220px); height: clamp(150px, 35vmin, 220px); background: radial-gradient(circle at 30% 30%, #444, #000); border-radius: 50%; position: relative; box-shadow: inset 0 0 30px #000, 0 0 20px rgba(0,0,0,0.8); cursor: pointer; transition: all 0.3s; }
+        .essence-orb.breathing { animation: breathe 3s infinite ease-in-out; }
+        .essence-orb.shaking { animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both infinite; }
+        .idv-btn { font-size: clamp(1rem, 1.5vw + 0.5rem, 1.25rem); background: linear-gradient(180deg, #3a3a3a 0%, #1a1a1a 100%); border: 2px solid #888; color: #ccc; text-transform: uppercase; letter-spacing: 2px; transition: all 0.2s; clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%); }
+        .idv-btn:hover:not(:disabled) { border-color: var(--color-gold); color: var(--color-gold); background: linear-gradient(180deg, #4a4a4a 0%, #2a2a2a 100%); text-shadow: 0 0 5px var(--color-gold); }
+        .idv-btn:active:not(:disabled) { transform: scale(0.95); }
+        .idv-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .flash-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: white; opacity: 0; pointer-events: none; z-index: 100; }
+        .scan-line { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0; overflow: hidden; }
+        .card.rarity-S { border-color: var(--color-gold) !important; box-shadow: 0 0 20px var(--color-gold) !important; }
+        .card.rarity-A { border-color: var(--color-purple) !important; box-shadow: 0 0 15px var(--color-purple) !important; }
+        .card.rarity-B { border-color: var(--color-blue) !important; box-shadow: 0 0 10px var(--color-blue) !important; }
+        .card.rarity-F { border-color: var(--color-frame) !important; box-shadow: 0 0 10px var(--color-frame) !important; }
+        .text-rarity-S { color: var(--color-gold); } .text-rarity-A { color: var(--color-purple); } .text-rarity-B { color: var(--color-blue); }
+        .text-rarity-F { color: var(--color-frame); } .text-rarity-C { color: #65a30d; } .text-rarity-D { color: #9ca3af; }
+        #item-detail-modal.show { animation: fade-in-backdrop 0.3s forwards; }
+        #item-detail-modal.show > div { animation: zoom-in-modal 0.3s forwards; }
+        #detail-desc { white-space: pre-wrap; }
+        ::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-track { background: #0f1115; } ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        
+        .pool-item { transition: all 0.2s ease-in-out; background-color: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.5rem; text-align: center; border: 1px solid transparent; cursor: pointer; }
+        .pool-item:hover { background-color: rgba(255, 255, 255, 0.1); transform: translateY(-2px); }
+        .pool-item.not-owned { filter: grayscale(80%); opacity: 0.6; }
+        .pool-item.owned { border-color: var(--color-gold); }
+        .pool-item .img-container { width: 100%; background-color: #111318; aspect-ratio: 1 / 1; border-radius: 0.25rem; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .pool-item img { max-width: 100%; max-height: 100%; object-fit: contain; }
+        
+        @keyframes marquee { 0%   { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .pool-item p { margin-top: 0.5rem; font-size: 0.75rem; white-space: nowrap; overflow: hidden; }
+        .marquee-wrapper { display: inline-block; animation: marquee var(--marquee-duration, 10s) linear infinite; padding-right: 2rem; will-change: transform; }
+
+        .border-rarity-S { border-color: var(--color-gold); } .border-rarity-A { border-color: var(--color-purple); } .border-rarity-B { border-color: var(--color-blue); }
+        .border-rarity-F { border-color: var(--color-frame); } .border-rarity-C { border-color: #65a30d; } .border-rarity-D { border-color: #9ca3af; }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .spin-animation {
+            animation: spin 2s linear infinite;
+        }
+
+        /* 针对小屏幕优化抽卡按钮的字体大小，使其更紧凑 */
+        @media (max-width: 640px) {
+            .idv-btn {
+                font-size: clamp(0.8rem, 2.5vw, 1.1rem); /* 缩小字体 */
+                letter-spacing: 1px; /* 缩小字间距 */
+                height: 3.5rem; /* 统一并缩小按钮高度 */
+            }
+            /* 调整按钮上方的灵感消耗文字大小 */
+            .button-cost-text {
+                font-size: 0.7rem; /* 缩小灵感消耗文字 */
+            }
+        }
+        
+        /* 横屏适配 */
+        @media (orientation: landscape) and (max-height: 550px) {
+            #result-screen {
+                padding-top: 1rem;
+            }
+            
+            #cards-container {
+                max-height: calc(100vh - 120px);
+                overflow-y: auto;
+            }
+            
+            #cards-container .grid {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                gap: 0.5rem;
+            }
+            
+            .card {
+                aspect-ratio: 2/3;
+                min-height: 120px;
+            }
+            
+            .card .text-sm {
+                font-size: 0.7rem;
+            }
+            
+            #result-footer {
+                flex-direction: row;
+                gap: 1rem;
+            }
+            
+            #result-footer .idv-btn {
+                width: auto;
+                min-width: 120px;
+                padding: 0.5rem 1rem;
+            }
+        }
+
+        /* 特殊横屏尺寸适配 (900*500) */
+        @media (min-width: 850px) and (max-height: 550px) {
+            #cards-container .grid {
+                grid-template-columns: repeat(10, 1fr);
+            }
+            
+            .card {
+                min-height: 100px;
+            }
+        }
+    </style>
+</head>
+<body class="h-screen w-screen flex flex-col items-center justify-center relative p-2 sm:p-4">
+
+    <div class="scan-line"></div>
+    <div id="flash-layer" class="flash-overlay"></div>
+    <div id="main-screen" class="relative w-full h-full flex flex-col items-center justify-center p-4 z-10 transition-opacity duration-500">
+        <div class="absolute top-0 w-full h-24 bg-gradient-to-b from-black/50 to-transparent pointer-events-none"></div>
+        <div class="absolute top-4 left-4 flex gap-2 sm:gap-4 text-sm z-20 bg-black/50 p-2 sm:p-3 border border-gray-700 rounded-md backdrop-blur-sm">
+            <div class="flex items-center gap-2"><img src="/resource/abb5919fc5926eb8e2da46469ff98487.png" class="w-5 h-5"><span id="currency-fragments" class="font-sans font-bold text-white">-</span></div>
+            <div class="flex items-center gap-2"><img src="/resource/72bb95f8b126d3f86e41af05eb20d930.png" class="w-5 h-5"><span id="currency-inspiration" class="font-sans font-bold text-white">-</span></div>
+        </div>
+        <div class="absolute top-20 sm:top-8 text-center px-4 w-full">
+            <h1 id="pool-name" class="text-amber-100 tracking-widest drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" style="font-size: clamp(1.75rem, 5vw, 3rem);">加载中...</h1>
+            <p id="pool-desc" class="text-xs text-gray-500 tracking-[0.2em] mt-1">加载中...</p>
+        </div>
+        <div class="absolute top-4 right-4 flex gap-2 sm:gap-4 z-20">
+            <button onclick="app.togglePoolPreview()" class="text-gray-400 hover:text-white transition-colors text-right"><i class="fa-solid fa-gem text-xl sm:text-2xl"></i><span class="block text-xs mt-1">奖池</span></button>
+            <button onclick="app.toggleHistory()" class="text-gray-400 hover:text-white transition-colors text-right"><i class="fa-solid fa-history text-xl sm:text-2xl"></i><span class="block text-xs mt-1">记录</span></button>
+            <button id="music-toggle-btn" class="text-gray-400 hover:text-white transition-colors text-right" onclick="app.toggleMusic()">
+                <i class="fa-solid fa-music text-xl sm:text-2xl"></i>
+                <span class="block text-xs mt-1" id="music-status-text">播放</span>
+            </button>
+        </div>
+
+        <!-- 保底信息面板 -->
+        <div id="pity-panel" class="absolute left-4 bottom-44 text-sm z-20 bg-black/50 p-3 border border-gray-700 rounded-md backdrop-blur-sm">
+            <p><span class="text-yellow-500">稀世保底:</span> <span id="pity-gold" class="font-bold">-</span></p>
+            <p><span class="text-purple-400">奇珍保底:</span> <span id="pity-purple" class="font-bold">-</span></p>
+            <p><span class="text-blue-400">独特保底:</span> <span id="pity-blue" class="font-bold">-</span></p>
+            <p><span class="text-green-400">头像框保底:</span> <span id="pity-frame" class="font-bold">-</span></p>
+            <p class="mt-2 pt-2 border-t border-gray-600/50 text-xs text-gray-500">排位珍宝抽取总次数: <span id="total-pulls" class="text-white">0</span></p>
+        </div>
+        
+        <!-- 每个奖池的抽取次数 -->
+        <div id="pool-stats-panel" class="absolute left-4 bottom-32 text-sm z-20 bg-black/50 p-3 border border-gray-700 rounded-md backdrop-blur-sm">
+             <p>当前奖池抽取次数: <span id="current-pool-pulls" class="font-bold">0</span></p>
+        </div>
+
+        <div class="flex-1 flex items-center justify-center">
+            <div class="relative group">
+                <div id="essence-orb" class="essence-orb breathing flex items-center justify-center" onclick="app.pull(1)"><img id="essence-img" src="" alt="Essence" class="w-3/5 h-3/5 object-contain relative z-20 filter drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)] transition-transform duration-200"></div>
+                <div class="absolute -inset-4 bg-amber-500/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            </div>
+        </div>
+        <!-- 按钮容器修改为并排显示，并调整间距和高度 -->
+        <div id="button-container" class="flex flex-row gap-3 w-full justify-center items-end px-4 pb-6">
+            <div class="flex flex-col items-center gap-1 flex-1 max-w-[160px]">
+                <div class="text-xs text-amber-200/70 mb-1 button-cost-text">珍宝 x1</div>
+                <button id="btn-pull-1" onclick="app.pull(1)" class="idv-btn w-full h-14 font-bold flex items-center justify-center"><span>开启 1 次</span></button>
+            </div>
+            <div class="flex flex-col items-center gap-1 flex-1 max-w-[160px]">
+                <div id="pull-10-cost" class="text-xs text-amber-200/70 mb-1 button-cost-text">珍宝 x10</div>
+                <button id="btn-pull-10" onclick="app.pull(10)" class="idv-btn w-full h-14 font-bold flex items-center justify-center bg-gradient-to-t from-amber-900/40 to-transparent border-amber-700/50">
+                    <span id="btn-pull-10-text" class="text-amber-100">开启 10 次</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="result-screen" class="fixed inset-0 z-40 bg-black/95 hidden flex-col items-center justify-start pt-4 sm:pt-8">
+        <div id="result-header" class="mb-4 text-center opacity-0"><h2 class="text-white tracking-widest border-b border-gray-700 pb-2 px-8 inline-block" style="font-size: clamp(1.5rem, 4vw, 2.25rem);">抽取内容</h2></div>
+        <div id="cards-container" class="flex-1 w-full max-w-6xl overflow-y-auto px-2"></div>
+        <!-- 抽取内容展示界面的按钮改为并排显示 -->
+        <div id="result-footer" class="mt-4 mb-2 opacity-0 flex flex-col sm:flex-row gap-4 items-center justify-center"></div>
+    </div>
+    
+    <div id="item-detail-modal" class="fixed inset-0 z-[60] hidden items-center justify-center p-4" onclick="app.closeItemDetail()">
+        <div class="w-[95vw] max-w-md bg-[#1a1c24] border-2 border-gray-700 rounded-lg shadow-2xl flex flex-col text-center relative overflow-hidden" onclick="event.stopPropagation()">
+            <div id="detail-rarity-glow" class="absolute top-0 left-1/2 -translate-x-1/2 w-[200%] h-64 opacity-30 blur-3xl pointer-events-none"></div>
+            <div class="relative p-6">
+                <h3 id="detail-name" class="font-gothic text-2xl tracking-widest">物品名称</h3>
+                <p id="detail-type" class="text-sm text-gray-400 mb-4">物品类型</p>
+                <img id="detail-img" src="" class="w-48 h-48 mx-auto my-4 object-contain drop-shadow-lg" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZHN0PSIxMDAiIGZpbGw9IiMzMzMiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iIzU1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+PzwvdGV4dD48L3N2Zz4='">
+                <p id="detail-desc" class="text-gray-300 italic px-4">物品描述会显示在这里...</p>
+            </div>
+            <button onclick="app.closeItemDetail()" class="w-full mt-4 py-3 bg-black/30 text-gray-400 hover:bg-black/50 transition-colors">关闭</button>
+        </div>
+    </div>
+
+    <div id="history-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-2"><div class="bg-[#1a1c24] border border-gray-600 w-[95vw] max-w-2xl h-[90vh] md:max-h-[80vh] flex flex-col rounded-lg shadow-2xl"><div class="bg-[#111] p-4 border-b border-gray-700 flex justify-between items-center"><h3 class="text-amber-500 font-gothic text-lg md:text-xl"><i class="fas fa-history mr-2"></i>获得记录</h3><div><button onclick="app.clearData()" class="text-xs text-red-400 border border-red-900 px-2 py-1 rounded hover:bg-red-900/50 mr-2 md:mr-4">清空数据</button><button onclick="app.toggleHistory()" class="text-gray-400 text-2xl">&times;</button></div></div><div id="history-list" class="flex-1 overflow-y-auto p-4"></div></div></div>
+    
+    <div id="pool-preview-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-2">
+        <div class="bg-[#1a1c24] border border-gray-600 w-[95vw] max-w-4xl h-[90vh] md:max-h-[80vh] flex flex-col rounded-lg shadow-2xl">
+            <div class="bg-[#111] p-4 border-b border-gray-700 flex justify-between items-center">
+                <h3 class="text-amber-500 font-gothic text-lg md:text-xl"><i class="fas fa-gem mr-2"></i>精华内容一览</h3>
+                <button onclick="app.togglePoolPreview()" class="text-gray-400 text-2xl">&times;</button>
+            </div>
+            <div id="pool-preview-list" class="flex-1 overflow-y-auto p-4"></div>
+        </div>
+    </div>
+    
+    <a href="/index.html" class="fixed bottom-4 right-4 z-30 text-gray-400 hover:text-white transition-colors text-right">
+        <i class="fa-solid fa-house text-xl sm:text-2xl"></i>
+        <span class="block text-xs mt-1">首页</span>
+    </a>
+
+    <audio id="background-music" preload="auto"></audio>
+
+    <script>
+        // ResourceManager.js 内容
+        class ResourceManager {
+            static SHARED_KEY = 'shared_resources';
+            
+            static initialize(initialResources = {}) {
+                let resources = JSON.parse(localStorage.getItem(this.SHARED_KEY));
+                if (!resources) {
+                    resources = {...initialResources};
+                    localStorage.setItem(this.SHARED_KEY, JSON.stringify(resources));
+                }
+                return resources;
+            }
+            
+            static getResource(resourceName) {
+                const resources = JSON.parse(localStorage.getItem(this.SHARED_KEY)) || {};
+                return resources[resourceName] || 0;
+            }
+            
+            static setResource(resourceName, amount) {
+                const resources = JSON.parse(localStorage.getItem(this.SHARED_KEY)) || {};
+                resources[resourceName] = amount;
+                localStorage.setItem(this.SHARED_KEY, JSON.stringify(resources));
+            }
+            
+            static deductResource(resourceName, amount) {
+                const current = this.getResource(resourceName);
+                if (current < amount) {
+                    return false;
+                }
+                this.setResource(resourceName, current - amount);
+                return true;
+            }
+            
+            static addResource(resourceName, amount) {
+                const current = this.getResource(resourceName);
+                this.setResource(resourceName, current + amount);
+            }
+        }
+
+        class EssenceApp {
+            static SHARED_PITY_KEY = 'shared_pity_state'; // 共享保底状态 KEY
+            
+            constructor() {
+                this.config = null; this.state = null; this.isAnimating = false;
+                this.probabilities = null; this.currentResults = [];
+                this.musicList = [];
+                this.audioElement = null;
+                this.currentMusic = null;
+                this.isMusicPlaying = false;
+                this.introPlayed = false;
+                
+                // 新增：全局共享的拥有状态
+                this.globalOwnedItems = this.loadGlobalOwnedItems();
+            }
+            
+            async init() {
+                try {
+                    // 获取 hash 中的奖池 ID
+                    const poolIdFromHash = window.location.hash.slice(1);
+                    let basePath = '/pools';
+                    
+                    if (poolIdFromHash) {
+                        basePath = `/pools/${poolIdFromHash}`;
+                    }
+                    const cacheBuster = `?t=${new Date().getTime()}`;
+                    const poolResponse = await fetch(`${basePath}/pool.json${cacheBuster}`);
+                    if (!poolResponse.ok) throw new Error(`无法加载 ${basePath}/pool.json (状态: ${poolResponse.status})`);
+                    this.config = await poolResponse.json();
+                    this.loadState(); 
+                    const probResponse = await fetch(`${basePath}/possibility.json${cacheBuster}`);
+                    if (!probResponse.ok) throw new Error(`无法加载 ${basePath}/possibility.json (状态: ${probResponse.status})`);
+                    this.probabilities = (await probResponse.json()).probabilities;
+
+                    const musicResponse = await fetch('/music/musiclist.json'); 
+                    if (!musicResponse.ok) {
+                        console.warn("无法加载 musiclist.json，音乐功能将不可用。");
+                        this.musicList = [];
+                    } else {
+                        this.musicList = await musicResponse.json();
+                    }
+
+                } catch (error) {
+                    console.error("加载配置文件或音乐列表时出错:", error);
+                    alert(`错误: ${error.message}！请检查文件是否存在且格式正确。`);
+                    this.isAnimating = true;
+                }
+                this.initUI();
+                this.initMusicPlayer();
+            }
+            
+            // 新增：加载全局拥有的物品
+            loadGlobalOwnedItems() {
+                const globalStorageKey = 'global_owned_items';
+                const saved = localStorage.getItem(globalStorageKey);
+                return saved ? JSON.parse(saved) : {};
+            }
+            
+            // 新增：保存全局拥有的物品
+            saveGlobalOwnedItems() {
+                const globalStorageKey = 'global_owned_items';
+                localStorage.setItem(globalStorageKey, JSON.stringify(this.globalOwnedItems));
+            }
+            
+            loadState() {
+                const defaultState = {
+                    total: 0,
+                    pityGold: 0,
+                    pityPurple: 0,
+                    pityBlue: 0,
+                    pityFrame: 0, // V2: 新增 F 级保底计数器
+                    history: [],
+                    ownedItems: {},
+                    discountAvailable: false,
+                    lastAPullName: null,
+                    consecutiveAPullCount: 0,
+                    poolPullCounts: {} // V2: 修复：初始化为对象，用于存储各池子详细数据
+                };
+
+                let savedState = JSON.parse(localStorage.getItem(EssenceApp.SHARED_PITY_KEY));
+                if (!savedState) {
+                    savedState = defaultState;
+                }
+
+                this.state = savedState;
+            }
+
+            clearData() {
+                if(confirm("确定清空所有抽卡记录、货币和所有排位珍宝的保底进度？将重置为初始状态。")) {
+                    localStorage.removeItem(EssenceApp.SHARED_PITY_KEY);
+                    this.loadState(); this.saveData();
+                    document.getElementById('history-modal').classList.add('hidden');
+                    document.getElementById('pool-preview-modal').classList.add('hidden');
+                }
+            }
+
+            saveData() { 
+                localStorage.setItem(EssenceApp.SHARED_PITY_KEY, JSON.stringify(this.state)); 
+                this.updateUI(); 
+            }
+            
+            initUI() {
+                if (!this.config) return;
+                document.title = this.config.name;
+                document.getElementById('pool-name').innerText = this.config.name;
+                const { gold, purple, blue } = this.config.pitySettings;
+                // V2: 从 frameSettings 获取保底值
+                const frameThreshold = this.config.frameSettings?.pityThreshold || 0;
+                document.getElementById('pool-desc').innerText = `保底: ${gold}金 / ${purple}紫 `;
+                document.getElementById('essence-img').src = this.config.essenceImage;
+                this.updateUI();
+            }
+            
+            updateUI() {
+                if (!this.config || !this.state) return;
+                const { gold, purple, blue } = this.config.pitySettings;
+                // V2: 从 frameSettings 获取保底值
+                const frameThreshold = this.config.frameSettings?.pityThreshold || 0;
+
+                document.getElementById('pity-gold').innerText = `${gold - this.state.pityGold} / ${gold}`;
+                document.getElementById('pity-purple').innerText = `${purple - this.state.pityPurple} / ${purple}`;
+                document.getElementById('pity-blue').innerText = `${blue - this.state.pityBlue} / ${blue}`;
+                
+                // V2: 更新 F 级保底显示
+                const pityFrameEl = document.getElementById('pity-frame');
+                if (this.config.frameSettings?.enabled && frameThreshold) {
+                    pityFrameEl.parentElement.style.display = 'block';
+                    pityFrameEl.innerText = `${frameThreshold - this.state.pityFrame} / ${frameThreshold}`;
+                } else {
+                    pityFrameEl.parentElement.style.display = 'none';
+                }
+
+                document.getElementById('total-pulls').innerText = this.state.total;
+                document.getElementById('currency-fragments').innerText = ResourceManager.getResource('fragments');
+                document.getElementById('currency-inspiration').innerText = ResourceManager.getResource('rank_treasure');
+                
+                // V2: 修复：更新当前奖池抽取次数显示 (从 poolPullCounts 读取)
+                const currentPoolId = this.config?.id;
+                let poolPullCount = 0;
+                if (currentPoolId && this.state.poolPullCounts && this.state.poolPullCounts[currentPoolId]) {
+                    poolPullCount = this.state.poolPullCounts[currentPoolId].total || 0;
+                }
+                const poolStatsPanel = document.getElementById('pool-stats-panel');
+                const poolPullsElement = document.getElementById('current-pool-pulls');
+                if (poolStatsPanel && poolPullsElement) {
+                    poolPullsElement.textContent = poolPullCount;
+                }
+                
+                const pull10CostEl = document.getElementById('pull-10-cost');
+                const pull10BtnTextEl = document.getElementById('btn-pull-10-text');
+                const fullPrice = 10;
+                if (this.state.discountAvailable) {
+                    const discountedPrice = Math.round(fullPrice * this.config.discountInfo.rate);
+                    pull10CostEl.innerHTML = `珍宝 <del class="text-red-500/50">${fullPrice}</del> <span class="text-green-400">${discountedPrice}</span>`;
+                    pull10BtnTextEl.classList.add('text-green-300');
+                } else {
+                    pull10CostEl.innerHTML = `珍宝 x${fullPrice}`;
+                    pull10BtnTextEl.classList.remove('text-green-300');
+                }
+            }
+            
+            _checkInspiration(count) {
+                let cost = count === 10 ? 10 : 1;
+                if (count === 10 && this.state.discountAvailable) {
+                    cost = Math.round(cost * this.config.discountInfo.rate);
+                }
+                const availableRankTreasure = ResourceManager.getResource('rank_treasure');
+                if (availableRankTreasure < cost) {
+                    alert(`珍宝不足！${count > 1 ? `抽取 ${count} 次` : '再次抽取'}需要 ${cost}, 当前拥有 ${availableRankTreasure}`);
+                    return false;
+                }
+                return true;
+            }
+
+            // V2: 更新 determineRandomRarity 以支持 F 级 (如果 possibility.json 中定义了 F_chance)
+            determineRandomRarity() {
+                const p = this.probabilities;
+                // 注意: index 是 pityCount - 1
+                const goldChance = p.S[this.state.pityGold - 1] || 1.0; 
+                if (Math.random() < goldChance) return 'S';
+                const purpleChance = p.A[this.state.pityPurple - 1] || 1.0;
+                if (Math.random() < purpleChance) return 'A';
+                const blueChance = p.B[this.state.pityBlue - 1] || 1.0;
+                if (Math.random() < blueChance) return 'B';
+                // V2: 检查是否有 F 级随机概率
+                if (p.F && p.F.length > 0) {
+                     const frameChance = p.F[this.state.pityFrame - 1] || p.F_chance || 0;
+                     if (Math.random() < frameChance) return 'F';
+                }
+                // V2: 检查 C 级随机概率 (如果仍存在)
+                if (p.C_chance && Math.random() < p.C_chance) return 'C';
+                return 'D';
+            }
+
+            // V2: 更新 generateItemKey 以包含 rarity，提高唯一性
+            generateItemKey(item) {
+                // 使用 name, type, img, rarity 组合生成 key
+                return `${item.name}|${item.type}|${item.rarity}|${item.img || ''}`;
+            }
+
+            selectAItemBasedOnRules() {
+                let aPool = [...this.config.items.A];
+                let selectedItem;
+                switch (this.config.diff_A) {
+                    case 0:
+                        const unownedAPool = aPool.filter(item => {
+                            const itemKey = this.generateItemKey(item);
+                            return !this.globalOwnedItems[itemKey]; // 使用全局状态
+                        });
+                        selectedItem = unownedAPool.length > 0
+                            ? unownedAPool[Math.floor(Math.random() * unownedAPool.length)]
+                            : aPool[Math.floor(Math.random() * aPool.length)];
+                        break;
+                    case 1:
+                        if (this.state.consecutiveAPullCount >= 2 && this.state.lastAPullName) {
+                            const differentPool = aPool.filter(item => item.name !== this.state.lastAPullName);
+                            selectedItem = differentPool.length > 0
+                                ? differentPool[Math.floor(Math.random() * differentPool.length)]
+                                : aPool[Math.floor(Math.random() * aPool.length)];
+                        } else {
+                            selectedItem = aPool[Math.floor(Math.random() * aPool.length)];
+                        }
+                        break;
+                    case 2: default:
+                        selectedItem = aPool[Math.floor(Math.random() * aPool.length)];
+                        break;
+                }
+                return selectedItem;
+            }
+
+            async pull(count, retry = false) {
+                if (!this._checkInspiration(count)) { 
+                    this.isAnimating = false; 
+                    document.getElementById('btn-pull-1').disabled = false; 
+                    document.getElementById('btn-pull-10').disabled = false; 
+                    return; 
+                }
+                if (this.isAnimating) return;
+                this.isAnimating = true;
+                if(retry) { this.closeResult(false); } 
+                
+                let cost = count === 10 ? 10 : 1;
+                if (count === 10 && this.state.discountAvailable) { cost = Math.round(cost * this.config.discountInfo.rate); }
+                
+                // 使用 ResourceManager 扣除资源
+                if (!ResourceManager.deductResource('rank_treasure', cost)) {
+                    alert('资源扣除失败！');
+                    this.isAnimating = false;
+                    return;
+                }
+                
+                if (count === 10 && this.state.discountAvailable) { this.state.discountAvailable = false; }
+                
+                document.getElementById('btn-pull-1').disabled = true; document.getElementById('btn-pull-10').disabled = true;
+                const orb = document.getElementById('essence-orb');
+                orb.classList.remove('breathing'); orb.classList.add('shaking');
+                this.currentResults = []; let maxTier = 'D'; const tierValue = { D: 0, C: 1, F: 2, B: 3, A: 4, S: 5 }; // V2: 更新 tierValue
+                
+                for (let i = 0; i < count; i++) {
+                    // --- [V2 核心逻辑] ---
+
+                    // 1. 所有计数器+1
+                    this.state.total++;
+                    this.state.pityGold++;
+                    this.state.pityPurple++;
+                    this.state.pityBlue++;
+                    this.state.pityFrame++; // V2: F 级计数器也增加
+
+                    // 2. 先进行动态概率的随机判定
+                    let randomRarity = this.determineRandomRarity();
+                    
+                    // 3. 检查硬保底，并修正/提升稀有度 (注意优先级 S > A > B > F)
+                    let finalRarity = randomRarity;
+                    const { gold, purple, blue } = this.config.pitySettings;
+                    // V2: 从 frameSettings 获取保底阈值
+                    const frameThreshold = this.config.frameSettings?.pityThreshold || 0;
+                    
+                    if (this.state.pityGold >= gold) finalRarity = 'S';
+                    else if (this.state.pityPurple >= purple && tierValue[finalRarity] < tierValue['A']) finalRarity = 'A';
+                    else if (this.state.pityBlue >= blue && tierValue[finalRarity] < tierValue['B']) finalRarity = 'B';
+                    // V2: 检查 F 级保底
+                    else if (this.config.frameSettings?.enabled && this.state.pityFrame >= frameThreshold && tierValue[finalRarity] < tierValue['F']) finalRarity = 'F';
+
+                    // 4. 根据最终稀有度选择物品
+                    let itemTemplate;
+                    // V2: F 级物品只能是保底头像框
+                    if (finalRarity === 'F') {
+                        itemTemplate = { ...this.config.frameSettings.item };
+                    } else if (finalRarity === 'A') {
+                        itemTemplate = this.selectAItemBasedOnRules();
+                        if (this.config.diff_A === 1) {
+                            if (itemTemplate.name === this.state.lastAPullName) this.state.consecutiveAPullCount++;
+                            else { this.state.lastAPullName = itemTemplate.name; this.state.consecutiveAPullCount = 1; }
+                        }
+                    } else {
+                        // S, B, C, D 等级从对应奖池随机
+                        const pool = this.config.items[finalRarity] || [];
+                        itemTemplate = pool.length > 0 ? pool[Math.floor(Math.random() * pool.length)] : { name: `未知${finalRarity}级物品`, type: `未知类型`, rarity: finalRarity };
+                    }
+                    
+                    // 5. 根据最终抽出的稀有度重置保底计数 (V2: 关键改动 - S/A 不重置 F)
+                    if (finalRarity === 'S') {
+                        this.state.pityGold = 0;
+                        // V2: 注释掉或移除 S 重置 F 的逻辑
+                        // if (this.config.frameSettings?.enabled) this.state.pityFrame = 0; 
+                    } else if (finalRarity === 'A') {
+                        this.state.pityPurple = 0;
+                        // V2: 注释掉或移除 A 重置 F 的逻辑
+                        // if (this.config.frameSettings?.enabled) this.state.pityFrame = 0;
+                    } else if (finalRarity === 'B') {
+                        this.state.pityBlue = 0;
+                    } else if (finalRarity === 'F') { // V2: 只有抽到 F 才重置 F 计数器
+                        this.state.pityFrame = 0;
+                    }
+                    
+                    // 6. 整理并记录本次抽卡结果
+                    let finalItem = { ...itemTemplate, rarity: finalRarity };
+                    if (['S', 'A', 'B', 'F'].includes(finalRarity)) { // V2: 历史记录包含 F
+                        this.state.history.unshift({ r: finalRarity, name: finalItem.name, idx: this.state.total, time: new Date().toLocaleTimeString() });
+                    }
+                    if (tierValue[finalRarity] > tierValue[maxTier]) { maxTier = finalRarity; }
+
+                    // 使用新的物品唯一标识符判断是否重复（使用全局状态）
+                    const itemKey = this.generateItemKey(finalItem);
+                    if (this.globalOwnedItems[itemKey]) { 
+                        finalItem.isRepeat = true; 
+                    } 
+                    else { 
+                        this.globalOwnedItems[itemKey] = true; 
+                        this.saveGlobalOwnedItems(); // 保存全局状态
+                    }
+                    this.currentResults.push(finalItem);
+                }
+
+                // V2: 修复：更新当前奖池的抽取次数和各品质次数，并生成 index.html 可读数据
+                const currentPoolId = this.config.id;
+                if (currentPoolId) {
+                    // a. 确保 poolPullCounts 中该池子的条目结构正确
+                    if (!this.state.poolPullCounts) {
+                        this.state.poolPullCounts = {};
+                    }
+                    if (!this.state.poolPullCounts[currentPoolId]) {
+                        this.state.poolPullCounts[currentPoolId] = { total: 0, rarities: { S: 0, A: 0, B: 0, F: 0 } };
+                    }
+
+                    // b. 更新总次数
+                    this.state.poolPullCounts[currentPoolId].total += count;
+
+                    // c. 统计本次抽取中各稀有度的数量并更新
+                    const rarityCountInThisPull = { S: 0, A: 0, B: 0, F: 0 };
+                    this.currentResults.forEach(result => { // this.currentResults 存储了本次所有抽取结果
+                        if (rarityCountInThisPull.hasOwnProperty(result.rarity)) {
+                            rarityCountInThisPull[result.rarity]++;
+                        }
+                    });
+
+                    for (const rarity in rarityCountInThisPull) {
+                        this.state.poolPullCounts[currentPoolId].rarities[rarity] += rarityCountInThisPull[rarity];
+                    }
+
+                    // d. 构造 index.html 可读的数据结构 (模仿 V1 的 data_<pool_id>)
+                    const indexCompatibleData = {
+                        total: this.state.poolPullCounts[currentPoolId].total,
+                        // 如果 index.html 需要历史，可以构造一个简化的，但通常不需要
+                        // history: this.state.history.filter(h => h.poolId === currentPoolId), // 如果历史里加了 poolId
+                        rarityCounts: { ...this.state.poolPullCounts[currentPoolId].rarities } // Copy the rarities object
+                    };
+
+                    // e. 保存到 localStorage，使用 V1 兼容的 key 格式，供 index.html 读取
+                    try {
+                        localStorage.setItem(`data_${currentPoolId}`, JSON.stringify(indexCompatibleData));
+                        console.log(`[V2] 已为池 ${currentPoolId} 更新 index 兼容数据:`, indexCompatibleData);
+                    } catch (e) {
+                        console.error(`[V2] 保存池 ${currentPoolId} 的 index 兼容数据失败:`, e);
+                    }
+                }
+
+
+                this.saveData();
+                await new Promise(r => setTimeout(r, 800));
+                const flash = document.getElementById('flash-layer');
+                // V2: 添加 F 级闪光颜色
+                let flashColor = {S: '#e8c668', A: '#e8c668', B: '#689de8', F: '#689de8'}[maxTier] || '#689de8';
+                flash.style.background = `radial-gradient(circle, #fff 10%, ${flashColor} 90%)`;
+                flash.style.animation = 'explode-flash 0.5s forwards';
+                await new Promise(r => setTimeout(r, 250));
+                document.getElementById('main-screen').classList.add('hidden');
+                flash.style.opacity = 0;
+                this.showResultScreen(this.currentResults);
+                await new Promise(r => setTimeout(r, 500));
+                orb.classList.remove('shaking'); orb.classList.add('breathing');
+                flash.style.animation = ''; this.isAnimating = false;
+                document.getElementById('btn-pull-1').disabled = false; document.getElementById('btn-pull-10').disabled = false;
+                if (Math.random() < this.config.discountInfo.chance && !this.state.discountAvailable) {
+                    this.state.discountAvailable = true; this.saveData();
+                    setTimeout(() => alert('灵光一现！获得下次十连抽-25%折扣！'), 1000);
+                }
+            }
+            
+            async showResultScreen(items) {
+                const container = document.getElementById('cards-container'); const screen = document.getElementById('result-screen'); const header = document.getElementById('result-header'); const footer = document.getElementById('result-footer');
+                screen.classList.remove('hidden'); screen.classList.add('flex'); container.innerHTML = ''; footer.innerHTML = '';
+                header.style.opacity = '0'; footer.style.opacity = '0';
+                
+                const cardGrid = document.createElement('div');
+                if (items.length === 1) { 
+                    cardGrid.className = 'w-full flex justify-center items-center py-4';
+                } else { 
+                    cardGrid.className = 'grid grid-cols-3 sm:grid-cols-5 gap-2 w-full max-w-6xl p-2'; 
+                }
+                container.appendChild(cardGrid);
+
+                // V2: 更新 rarityMap
+                const rarityMap = { S: "稀世", A: "奇珍", B: "独特", F: "头像框", C: "罕见", D: "普通" };
+                items.forEach((item, index) => {
+                    // V2: 简化显示逻辑，直接根据 rarityMap 显示
+                    let displayRarityText = rarityMap[item.rarity] || item.rarity;
+
+                    const card = document.createElement('div'); card.id = `result-card-${index}`;
+                    const sizeClass = items.length === 1 ? 'w-5/6 max-w-[200px] aspect-[2/3]' : 'w-full aspect-[2/3]';
+                    const imgContent = item.img ? `<img src="${item.img}" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" onerror="this.style.display='none'">` : `<div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-800"><i class="fa-solid fa-user-secret text-4xl mb-2 text-rarity-${item.rarity}"></i></div>`;
+                    card.setAttribute('onclick', `app.showItemDetail(${index})`);
+                    if (item.isRepeat) { card.classList.add('is-repeat'); }
+                    card.className = `card ${sizeClass} rarity-${item.rarity} bg-gray-900 rounded-lg flex flex-col relative group cursor-pointer shadow-2xl border-2 border-gray-700 ${item.isRepeat ? 'is-repeat' : ''}`;
+                    card.style.animation = `card-flip 0.4s ease-out forwards ${index * 0.15 + 0.5}s`; card.style.opacity = '0';
+                    card.innerHTML = `<div class="absolute inset-0 bg-black/20 z-10"></div><div class="absolute top-0 right-0 p-2 z-20"><span class="font-bold font-gothic text-lg sm:text-xl italic text-rarity-${item.rarity} drop-shadow-md">${displayRarityText}</span></div><div class="card-image-container flex-1 relative overflow-hidden bg-gray-900">${imgContent}<div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-black via-black/70 to-transparent z-10"></div></div><div class="card-name-container relative z-20 p-2 text-center border-t border-white/10"><div class="text-xs sm:text-sm font-bold text-gray-200 tracking-wide truncate">${item.type || '道具'}</div></div>`;
+                    cardGrid.appendChild(card);
+                });
+                
+                const pullCount = items.length;
+                footer.innerHTML = `
+                    <button onclick="app.closeResult()" class="idv-btn w-48 py-3">确 认</button>
+                    <button onclick="app.pull(${pullCount}, true)" class="idv-btn w-48 py-3 text-amber-100 border-amber-700">再次 x${pullCount}</button>
+                `;
+
+                await new Promise(r => setTimeout(r, 200));
+                header.style.transition = 'opacity 1s'; header.style.opacity = '1';
+                const allCardsAnimationTime = items.length * 150 + 500;
+                await new Promise(r => setTimeout(r, allCardsAnimationTime));
+                footer.style.transition = 'opacity 0.5s'; footer.style.opacity = '1';
+                this.handleRepeatConversion();
+            }
+            handleRepeatConversion() {
+                setTimeout(() => {
+                    this.currentResults.forEach((item, index) => {
+                        if (item.isRepeat) {
+                            // V2: 更新特殊头像框判断逻辑，使用新的 key 和 frameSettings
+                            const itemKey = this.generateItemKey(item);
+                            const frameItemTemplate = this.config.frameSettings?.item;
+                            let specialFrameKey = null;
+                            if (frameItemTemplate) {
+                                // 创建 frame item 的 key 用于比较
+                                specialFrameKey = this.generateItemKey({...frameItemTemplate, rarity: 'F'});
+                            }
+                            const isSpecialFrame = this.config.frameSettings?.enabled && itemKey === specialFrameKey;
+                            
+                            if (!isSpecialFrame) {
+                                const card = document.getElementById(`result-card-${index}`);
+                                if (card) {
+                                    card.classList.add('converting'); 
+                                    // 使用 ResourceManager 增加碎片
+                                    ResourceManager.addResource('fragments', item.repeat || 0);
+                                    setTimeout(() => {
+                                        const imgContainer = card.querySelector('.card-image-container'); const nameContainer = card.querySelector('.card-name-container');
+                                        imgContainer.innerHTML = `<img src="${this.config.fragmentsInfo.img}" class="absolute inset-0 w-full h-full object-contain p-4 transition-opacity" onerror="this.style.display='none'">`;
+                                        nameContainer.innerHTML = `<div class="text-xs sm:text-sm font-bold text-gray-200 tracking-wide truncate">${this.config.fragmentsInfo.name} +${item.repeat}</div>`;
+                                        card.classList.remove('converting'); card.style.animation = 'card-flip 0.4s ease-out forwards';
+                                        this.saveData();
+                                    }, 600);
+                                }
+                            }
+                        }
+                    });
+                }, 2000);
+            }
+            closeResult(showMain = true) {
+                const screen = document.getElementById('result-screen');
+                screen.classList.add('hidden'); screen.classList.remove('flex');
+                if(showMain) document.getElementById('main-screen').classList.remove('hidden');
+            }
+            _displayDetailModal(item) {
+                if (!item) return;
+                document.getElementById('detail-name').textContent = item.name || '未知物品';
+                document.getElementById('detail-type').textContent = item.type || '未知类型';
+                document.getElementById('detail-desc').textContent = `${item.description || '暂无描述。'}`;
+                document.getElementById('detail-img').src = item.img || '';
+                const glow = document.getElementById('detail-rarity-glow');
+                // V2: 更新发光颜色映射
+                const rarityColors = { S: 'gold', A: 'purple', B: 'royalblue', F: 'green' };
+                const rarity = item.rarity || Object.keys(this.config.items).find(r => this.config.items[r]?.some?.(i => i.name === item.name)) || '';
+                glow.style.background = rarityColors[rarity] || 'transparent';
+                const modal = document.getElementById('item-detail-modal');
+                modal.classList.remove('hidden'); modal.classList.add('flex', 'show');
+            }
+            showItemDetail(index) { this._displayDetailModal(this.currentResults[index]); }
+            showPoolItemDetail(rarity, index) { this._displayDetailModal(this.config.items[rarity][index]); }
+            closeItemDetail() {
+                const modal = document.getElementById('item-detail-modal');
+                modal.classList.add('hidden'); modal.classList.remove('flex', 'show');
+            }
+
+            toggleHistory() {
+                const el = document.getElementById('history-modal');
+                el.classList.toggle('hidden');
+                if (!el.classList.contains('hidden')) {
+                    const list = document.getElementById('history-list');
+                    // V2: 更新历史记录显示，包含 F
+                    const rarityMap = { S: "稀世", A: "奇珍"}; 
+                    const filteredHistory = this.state.history.filter(h => ['S', 'A'].includes(h.r)); 
+                    // V2: 更新颜色类
+                    const rarityColorClasses = { S: 'text-yellow-500', A: 'text-purple-400' };
+                    list.innerHTML = filteredHistory.map(h => 
+                        `<div class="flex justify-between p-2 border-b border-gray-700/50 ${rarityColorClasses[h.r] || 'text-gray-400'}">` +
+                        `<span>[${rarityMap[h.r] || h.r}] ${h.name}</span>` + 
+                        `<span class="text-xs text-gray-500">第${h.idx}抽</span>` +
+                        `</div>`
+                    ).join('') || '<div class="text-center text-gray-500 mt-4">暂无高品质记录</div>';
+                }
+            }
+
+            togglePoolPreview() {
+                const el = document.getElementById('pool-preview-modal'); el.classList.toggle('hidden');
+                if (!el.classList.contains('hidden')) { this.renderPoolPreview(); }
+            }
+            renderPoolPreview() {
+                const listContainer = document.getElementById('pool-preview-list');
+                if (!this.config || !this.state) { listContainer.innerHTML = '<p class="text-center text-gray-500">加载数据失败...</p>'; return; }
+                // V2: 更新 rarities 映射
+                let htmlContent = '';
+                const rarities = { S: "稀世", A: "奇珍", B: "独特", C: "罕见", D: "普通" }; // 移除了 F，单独处理
+                const placeholderImg = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZHN0PSIxMDAiIGZpbGw9IiMzMzMiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iIzU1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+PzwvdGV4dD48L3N2Zz4=';
+                
+                // 按照正确的顺序渲染各个等级
+                // 稀世
+                if (this.config.items.S && this.config.items.S.length > 0) {
+                    htmlContent += `<div class="mb-8"><h4 class="text-rarity-S font-gothic text-xl mb-4 border-b-2 border-rarity-S/30 pb-2">稀世</h4><div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">`;
+                    this.config.items.S.forEach((item, index) => {
+                        const itemKey = this.generateItemKey({...item, rarity: 'S'});
+                        const isOwned = this.globalOwnedItems[itemKey];
+                        const ownedClass = isOwned ? 'owned' : 'not-owned';
+                        const itemImg = item.img || placeholderImg;
+                        htmlContent += `<div class="pool-item ${ownedClass}" title="${item.name}\n${item.type}" onclick="app.showPoolItemDetail('S', ${index})"><div class="img-container"><img src="${itemImg}" alt="${item.name}" loading="lazy" onerror="this.src='${placeholderImg}'"></div><p class="text-gray-300 truncate"><span class="inline-block">${item.name}</span></p></div>`;
+                    });
+                    htmlContent += `</div></div>`;
+                }
+
+                // 奇珍
+                if (this.config.items.A && this.config.items.A.length > 0) {
+                    htmlContent += `<div class="mb-8"><h4 class="text-rarity-A font-gothic text-xl mb-4 border-b-2 border-rarity-A/30 pb-2">奇珍</h4><div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">`;
+                    this.config.items.A.forEach((item, index) => {
+                        const itemKey = this.generateItemKey({...item, rarity: 'A'});
+                        const isOwned = this.globalOwnedItems[itemKey];
+                        const ownedClass = isOwned ? 'owned' : 'not-owned';
+                        const itemImg = item.img || placeholderImg;
+                        htmlContent += `<div class="pool-item ${ownedClass}" title="${item.name}\n${item.type}" onclick="app.showPoolItemDetail('A', ${index})"><div class="img-container"><img src="${itemImg}" alt="${item.name}" loading="lazy" onerror="this.src='${placeholderImg}'"></div><p class="text-gray-300 truncate"><span class="inline-block">${item.name}</span></p></div>`;
+                    });
+                    htmlContent += `</div></div>`;
+                }
+
+                // 独特
+                if (this.config.items.B && this.config.items.B.length > 0) {
+                    htmlContent += `<div class="mb-8"><h4 class="text-rarity-B font-gothic text-xl mb-4 border-b-2 border-rarity-B/30 pb-2">独特</h4><div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">`;
+                    this.config.items.B.forEach((item, index) => {
+                        const itemKey = this.generateItemKey({...item, rarity: 'B'});
+                        const isOwned = this.globalOwnedItems[itemKey];
+                        const ownedClass = isOwned ? 'owned' : 'not-owned';
+                        const itemImg = item.img || placeholderImg;
+                        htmlContent += `<div class="pool-item ${ownedClass}" title="${item.name}\n${item.type}" onclick="app.showPoolItemDetail('B', ${index})"><div class="img-container"><img src="${itemImg}" alt="${item.name}" loading="lazy" onerror="this.src='${placeholderImg}'"></div><p class="text-gray-300 truncate"><span class="inline-block">${item.name}</span></p></div>`;
+                    });
+                    htmlContent += `</div></div>`;
+                }
+
+                // 头像框 (放在独特和罕见之间)
+                if (this.config.frameSettings?.enabled) {
+                     const frameItem = this.config.frameSettings.item;
+                     const frameKey = this.generateItemKey({...frameItem, rarity: 'F'});
+                     const isFrameOwned = this.globalOwnedItems[frameKey];
+                     const frameOwnedClass = isFrameOwned ? 'owned' : 'not-owned';
+                     const frameImg = frameItem.img || placeholderImg;
+                     htmlContent += `<div class="mb-8"><h4 class="text-rarity-F font-gothic text-xl mb-4 border-b-2 border-rarity-F/30 pb-2">头像框</h4><div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">`;
+                     htmlContent += `<div class="pool-item ${frameOwnedClass}" title="${frameItem.name}\n${frameItem.type}" onclick="app.showPoolItemDetail('F', 0)"><div class="img-container"><img src="${frameImg}" alt="${frameItem.name}" loading="lazy" onerror="this.src='${placeholderImg}'"></div><p class="text-gray-300 truncate"><span class="inline-block">${frameItem.name}</span></p></div>`;
+                     htmlContent += `</div></div>`;
+                }
+
+                // 罕见
+                if (this.config.items.C && this.config.items.C.length > 0) {
+                    htmlContent += `<div class="mb-8"><h4 class="text-rarity-C font-gothic text-xl mb-4 border-b-2 border-rarity-C/30 pb-2">罕见</h4><div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">`;
+                    this.config.items.C.forEach((item, index) => {
+                        const itemKey = this.generateItemKey({...item, rarity: 'C'});
+                        const isOwned = this.globalOwnedItems[itemKey];
+                        const ownedClass = isOwned ? 'owned' : 'not-owned';
+                        const itemImg = item.img || placeholderImg;
+                        htmlContent += `<div class="pool-item ${ownedClass}" title="${item.name}\n${item.type}" onclick="app.showPoolItemDetail('C', ${index})"><div class="img-container"><img src="${itemImg}" alt="${item.name}" loading="lazy" onerror="this.src='${placeholderImg}'"></div><p class="text-gray-300 truncate"><span class="inline-block">${item.name}</span></p></div>`;
+                    });
+                    htmlContent += `</div></div>`;
+                }
+
+                // 普通
+                if (this.config.items.D && this.config.items.D.length > 0) {
+                    htmlContent += `<div class="mb-8"><h4 class="text-rarity-D font-gothic text-xl mb-4 border-b-2 border-rarity-D/30 pb-2">普通</h4><div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">`;
+                    this.config.items.D.forEach((item, index) => {
+                        const itemKey = this.generateItemKey({...item, rarity: 'D'});
+                        const isOwned = this.globalOwnedItems[itemKey];
+                        const ownedClass = isOwned ? 'owned' : 'not-owned';
+                        const itemImg = item.img || placeholderImg;
+                        htmlContent += `<div class="pool-item ${ownedClass}" title="${item.name}\n${item.type}" onclick="app.showPoolItemDetail('D', ${index})"><div class="img-container"><img src="${itemImg}" alt="${item.name}" loading="lazy" onerror="this.src='${placeholderImg}'"></div><p class="text-gray-300 truncate"><span class="inline-block">${item.name}</span></p></div>`;
+                    });
+                    htmlContent += `</div></div>`;
+                }
+
+                listContainer.innerHTML = htmlContent;
+                
+                setTimeout(() => {
+                    const itemPs = listContainer.querySelectorAll('.pool-item p');
+                    itemPs.forEach(p => {
+                        const span = p.querySelector('span');
+                        p.classList.remove('truncate');
+                        
+                        if (span && span.scrollWidth > (p.clientWidth + 1)) {
+                            const originalText = span.textContent;
+                            p.innerHTML = `<div class="marquee-wrapper" style="white-space: nowrap;"><span>${originalText}&nbsp;&nbsp;&nbsp;${originalText}</span></div>`;
+                            
+                            const wrapper = p.querySelector('.marquee-wrapper');
+                            const innerSpan = wrapper.querySelector('span');
+                            
+                            const scrollSpeed = 30;
+                            const totalWidth = innerSpan.scrollWidth / 2;
+                            const duration = totalWidth / scrollSpeed;
+                            
+                            wrapper.style.setProperty('--marquee-duration', `${duration}s`);
+                        } else {
+                            p.classList.add('truncate');
+                        }
+                    });
+                }, 50);
+            }
+
+            initMusicPlayer() {
+                this.audioElement = document.getElementById('background-music');
+                if (this.musicList.length === 0) {
+                    console.warn("音乐列表为空，音乐功能将不可用。");
+                    this._updateMusicButtonUI();
+                    return;
+                }
+
+                const randomIndex = Math.floor(Math.random() * this.musicList.length);
+                this.currentMusic = this.musicList[randomIndex];
+                this.audioElement.volume = 0.3;
+
+                this.audioElement.onended = () => {
+                    if (!this.introPlayed && this.currentMusic.introFilename) {
+                        this.audioElement.src = `/music/${this.currentMusic.loopFilename}`;
+                        this.audioElement.loop = true;
+                        this.introPlayed = true;
+                        this.audioElement.play().catch(e => console.error("播放循环部分失败:", e));
+                    }
+                };
+                
+                this._loadAndPlayCurrentMusic();
+            }
+
+            _loadAndPlayCurrentMusic() {
+                if (!this.currentMusic) return;
+
+                if (this.currentMusic.introFilename) {
+                    this.audioElement.src = `/music/${this.currentMusic.introFilename}`;
+                    this.audioElement.loop = false;
+                    this.introPlayed = false;
+                } else {
+                    this.audioElement.src = `/music/${this.currentMusic.loopFilename}`;
+                    this.audioElement.loop = true;
+                    this.introPlayed = true;
+                }
+
+                this.audioElement.play()
+                    .then(() => {
+                        this.isMusicPlaying = true;
+                        this._updateMusicButtonUI();
+                    })
+                    .catch(error => {
+                        console.warn("音乐自动播放被阻止:", error);
+                        this.isMusicPlaying = false;
+                        this._updateMusicButtonUI();
+                    });
+            }
+
+            playMusic() {
+                if (this.audioElement && !this.isMusicPlaying) {
+                    if (!this.introPlayed && this.currentMusic && this.currentMusic.introFilename && this.audioElement.paused && this.audioElement.currentTime === 0) {
+                         this._loadAndPlayCurrentMusic();
+                         return;
+                    }
+                    this.audioElement.play()
+                        .then(() => {
+                            this.isMusicPlaying = true;
+                            this._updateMusicButtonUI();
+                        })
+                        .catch(error => {
+                            console.error("播放音乐失败:", error);
+                        });
+                }
+            }
+
+            pauseMusic() {
+                if (this.audioElement && this.isMusicPlaying) {
+                    this.audioElement.pause();
+                    this.isMusicPlaying = false;
+                    this._updateMusicButtonUI();
+                }
+            }
+
+            toggleMusic() {
+                if (this.isMusicPlaying) {
+                    this.pauseMusic();
+                } else {
+                    this.playMusic();
+                }
+            }
+
+            _updateMusicButtonUI() {
+                const musicButton = document.getElementById('music-toggle-btn');
+                const musicIcon = musicButton.querySelector('i');
+                const musicStatusText = document.getElementById('music-status-text');
+
+                if (this.isMusicPlaying) {
+                    musicIcon.classList.remove('fa-volume-mute');
+                    musicIcon.classList.add('fa-music', 'spin-animation');
+                    musicStatusText.textContent = '播放';
+                } else {
+                    musicIcon.classList.remove('fa-music', 'spin-animation');
+                    musicIcon.classList.add('fa-volume-mute');
+                    musicStatusText.textContent = '暂停';
+                }
+            }
+        }
+        let app;
+        document.addEventListener('DOMContentLoaded', async () => {
+            app = new EssenceApp();
+            await app.init();
+
+            // 屏幕尺寸检查
+            const MIN_WIDTH = 200;
+            const MIN_HEIGHT = 450;
+            const smallScreenAlertShown = sessionStorage.getItem('smallScreenAlertShown');
+
+            if ((window.innerWidth < MIN_WIDTH || window.innerHeight < MIN_HEIGHT) && !smallScreenAlertShown) {
+                alert(`您的屏幕尺寸（${window.innerWidth}x${window.innerHeight}）过小，可能会导致出现显示问题。建议使用更宽/高的屏幕。`);
+                sessionStorage.setItem('smallScreenAlertShown', 'true'); // 设置标志，避免重复弹窗
+            }
+        });
+    </script>
+</body>
+</html>

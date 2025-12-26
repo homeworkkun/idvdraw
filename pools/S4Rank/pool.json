@@ -1,0 +1,321 @@
+{
+  "id": "S4Rank",
+  "name": "第4赛季·排位珍宝（四阶）",
+  "essenceImage": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+  "diff_A": 2,
+  "initialCurrencies": {
+    "inspiration": 1000,
+    "fragments": 0
+  },
+  "discountInfo": {
+    "chance": 0,
+    "rate": 0.75
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 12
+  },
+  "frameSettings": {
+    "enabled": false,
+    "pityThreshold": 7,
+    "item": {
+      "name": "排位头像框兑换卡",
+      "type": "头像框",
+      "rarity": "F",
+      "img": "./img/bgijcaxbmaz8gwi87bschozs2pntw4m.png",
+      "description": "可用于兑换一个排位头像框。",
+      "repeat": 100
+    }
+  },
+  "items": {
+    "S": [
+      {
+        "name": "厌离",
+        "img": "./img/trimeaf879ul0u0akji4c207qhzmmhj.png",
+        "type": "随身物品",
+        "description": "未若今别不相逢，诳言春雨濡袖湿\n特殊效果：替换化身特效，替换抱人动作\n红蝶稀世品质随身物品",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "尼古拉斯的遗嘱",
+        "img": "./img/jpy9z3qpatzb525ofkt1be4gjnhg81c.png",
+        "type": "随身物品",
+        "description": "传说里面藏着不死药的配方\n特殊效果：治疗时召唤炼金阵\n医生奇珍品质随身物品",
+        "repeat": 1000
+      },
+      {
+        "name": "白羽",
+        "img": "./img/33i85au7wmbbc54fzs3xe2p46q2kmq7.png",
+        "type": "随身物品",
+        "description": "用神奇的白色羽毛制成\n增加役鸟守护特效\n先知奇珍品质随身物品",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "护林人之弓",
+        "img": "./img/cee9bc5sy6gbk93o3dl7ar3z1jgddd0.png",
+        "type": "随身物品",
+        "description": "不归林守护者的象征",
+        "repeat": 200
+      },
+      {
+        "name": "金铃",
+        "img": "./img/gdo0ptj8f5o2y3gcdwwhzrv8p8f66ze.png",
+        "type": "随身物品",
+        "description": "舞者们喜欢的饰物",
+        "repeat": 200
+      },
+      {
+        "name": "旱烟斗",
+        "img": "./img/ku1z282wm7irlra2twbaav9ssgexrhf.png",
+        "type": "随身物品",
+        "description": "一位酋长的礼物，代表友谊与和平",
+        "repeat": 200
+      },
+      {
+        "name": "铃鼓",
+        "img": "./img/1k6k93x513qq4y8z4l4jh10hkfbxsld.png",
+        "type": "随身物品",
+        "description": "噢，卡门，跟着节拍一起起舞吧!",
+        "repeat": 200
+      },
+      {
+        "name": "“慈善家”-张望",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "“慈善家”匹配大厅动作，张望",
+        "repeat": 200
+      },
+      {
+        "name": "冒险家-张望",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "冒险家匹配大厅动作，张望",
+        "repeat": 200
+      },
+      {
+        "name": "佣兵-张望",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "佣兵匹配大厅动作，张望",
+        "repeat": 200
+      },
+      {
+        "name": "前锋-张望",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "前锋匹配大厅动作，张望",
+        "repeat": 200
+      },
+      {
+        "name": "第4赛季-剑齿虎",
+        "img": "./img/dx1i08c78hn72tlgcwzhquesjdkfl7s.png",
+        "type": "头像框",
+        "description": "监管者第四赛季四阶段位头像框，形象为剑齿虎",
+        "repeat": 200
+      },
+      {
+        "name": "第4赛季-猛犸",
+        "img": "./img/4x09fin204aeb698jpdmf2vqyfa4irm.png",
+        "type": "头像框",
+        "description": "求生者第四赛季四阶段位头像框，形象为猛犸",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "园丁-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，园丁专属",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，佣兵专属",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，魔术师专属",
+        "repeat": 36
+      },
+      {
+        "name": "律师-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，律师专属",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，魔术师专属",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-卡通",
+        "img": "./img/8ebffqlpkv03tabeokht9v49tgqjgn6.png",
+        "type": "涂鸦",
+        "description": "冒险家专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-卡通",
+        "img": "./img/qn77myhqtzdhyfwiedhsjb1hewc51y3.png",
+        "type": "涂鸦",
+        "description": "魔术师专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "园丁-卡通",
+        "img": "./img/822ojwk54q4w47ovqa8lqx52i2m9p5t.png",
+        "type": "涂鸦",
+        "description": "园丁专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "厂长-卡通",
+        "img": "./img/kjybjcnn5q1cv37ro7prkk9llk3k75b.png",
+        "type": "涂鸦",
+        "description": "厂长专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "职业侦探",
+        "img": "./img/9rhhglkyq9ufc54g228jawlzb88ts1l.png",
+        "type": "随身物品",
+        "description": "求生者随身物品，职业侦探",
+        "repeat": 36
+      },
+      {
+        "name": "反面侦探",
+        "img": "./img/81gbo3v8sdro3d2zs09ywzh7avd92ai.png",
+        "type": "随身物品",
+        "description": "监管者随身物品，反面侦探",
+        "repeat": 36
+      },
+      {
+        "name": "萌版厂长",
+        "img": "./img/4y6kzujt8j5lqdyq7ahlqhco6zqpioc.png",
+        "type": "头像",
+        "description": "厂长的萌版头像",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "电锯-灰化",
+        "img": "./img/i38lx7y6ldnehlnsn813os8qgwfn218.png",
+        "type": "涂鸦",
+        "description": "电锯涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "护手-灰化",
+        "img": "./img/h9gn037j7tpn9cuea8ih5aosy28g5re.png",
+        "type": "涂鸦",
+        "description": "护手涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "手爪-灰化",
+        "img": "./img/o8c2moa43ye27l8ojkxutbg0yihgury.png",
+        "type": "涂鸦",
+        "description": "手爪涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "手电筒-灰化",
+        "img": "./img/deeewgbvv7xzu71vcj6xt7owpjoepst.png",
+        "type": "涂鸦",
+        "description": "手电筒涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "游记-灰化",
+        "img": "./img/d4o155efksi2dqlwji3h0crmfunakdz.png",
+        "type": "涂鸦",
+        "description": "游记涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "巡视者-灰化",
+        "img": "./img/iqhx8tkbngzrsdi9rm22kv6udtmae8l.png",
+        "type": "涂鸦",
+        "description": "巡视者涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "地图-灰化",
+        "img": "./img/dzvew61o6zteflkb7pwnrfj9dr3yl6r.png",
+        "type": "涂鸦",
+        "description": "地图涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "前锋",
+        "img": "./img/h0jmmd7c1u7cifkm2yr4t8w8g70ub8c.png",
+        "type": "头像",
+        "description": "前锋的基础头像",
+        "repeat": 6
+      },
+      {
+        "name": "空军",
+        "img": "./img/i36jwfr2bukde3am8tuah2r711hfi4j.png",
+        "type": "头像",
+        "description": "空军的基础头像",
+        "repeat": 6
+      },
+      {
+        "name": "机械师",
+        "img": "./img/6zkuttu5vx97sa8mlkqu5d0v4d2xqlt.png",
+        "type": "头像",
+        "description": "机械师的基础头像",
+        "repeat": 6
+      },
+      {
+        "name": "律师",
+        "img": "./img/cbxei35nubp3owc3o557fmp1g4tugn1.png",
+        "type": "头像",
+        "description": "律师的基础头像",
+        "repeat": 6
+      },
+      {
+        "name": "陌生人1号",
+        "img": "./img/5zjw6puumpbiqet77acjcr3v6nwslnx.png",
+        "type": "头像",
+        "description": "陌生人1号的基础头像",
+        "repeat": 6
+      },
+      {
+        "name": "园丁",
+        "img": "./img/k5n44gsphletfacsm14acyva1apnnt6.png",
+        "type": "头像",
+        "description": "园丁的基础头像",
+        "repeat": 6
+      },
+      {
+        "name": "月亮脸",
+        "img": "./img/n0ckt1ccf37vcjvzw3ftdteu7bcjvez.png",
+        "type": "头像",
+        "description": "月亮脸的基础头像",
+        "repeat": 6
+      }
+    ]
+  }
+}

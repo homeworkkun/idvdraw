@@ -1,0 +1,77 @@
+{
+  "id": "lucky_dice_17",
+  "name": "幸运之骰·第17期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "圣诞铃": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/e9kjm8yolgshgyo8k6du72bsfhdeol3.png",
+      "description": "铃儿响叮当。（2018年圣诞节活动首次获得）",
+      "repeat": 200
+    },
+    "圣诞夜曲": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/4ct7rwr2eo398n8y4qgpk4u067m8hi2.png",
+      "description": "“既然你如此慷慨，就让我为你演奏一首吧”。（2020年圣诞节活动首次获得）",
+      "repeat": 200
+    },
+    "绝命之瞬": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/c5xodool0mjuowi9biq0xnozr02mgpp.png",
+      "description": "弹片划破夜空，奏响冰与火的旋律。（2019年万圣节活动首次获得）",
+      "repeat": 6
+    },
+    "黄衣之主-感恩派对": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/fgjnb872v2xjd592h761olk5e9iht1q.png",
+      "description": "感恩节活动涂鸦，黄衣之主",
+      "repeat": 6
+    },
+    "祭司-感恩派对": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/8r9gt3bbruor0gqtd071mom6b6g2w2x.png",
+      "description": "感恩节活动涂鸦，祭司",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

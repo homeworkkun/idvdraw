@@ -1,0 +1,77 @@
+{
+  "id": "lucky_dice_11",
+  "name": "幸运之骰·第11期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "自然之庇佑": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/tveora1shkqygab9wedw08yft9qfouj.png",
+      "description": "2020永恒之森活动头像框 ",
+      "repeat": 200
+    },
+    "温暖的家": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/2uir4rmepfuyhgu6fpcpulj4xat0h1z.png",
+      "description": "孕育着生命的巨木之森才是他们的家(通过2021“重建森林”活动获得) ",
+      "repeat": 200
+    },
+    "萤灯": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/59k1b2penwg4j4u98myjxnk8n10zo86.png",
+      "description": "与萤火虫一起享受这美丽、寂静的夜(通过2021“重建森林”活动获得) ",
+      "repeat": 6
+    },
+    "机械师-练习": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/n7tcx0mnxuziqnnei1hhlm5u46s3aoy.png",
+      "description": "机械师专属涂鸦-练习，参与2021年520游戏热爱日活动获得 ",
+      "repeat": 6
+    },
+    "红蝶-吃货": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/2r6pxm3ac2anagwshgckegtzw6vgnlm.png",
+      "description": "吃货主题涂鸦，红蝶专属",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

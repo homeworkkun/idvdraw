@@ -1,0 +1,401 @@
+{
+  "id": "S36E3",
+  "name": "第36赛季·精华3",
+  "essenceImage": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+  "diff_A": 1,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [
+    {
+      "name": "-20%",
+      "rate": 0.8,
+      "chance": 0.03
+    },
+    {
+      "name": "-40%",
+      "rate": 0.6,
+      "chance": 0.015
+    }
+  ],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "采风的仙灵",
+        "img": "./img/aub7jvk2vsvd5dq4zm9ccmw1nujdkea.png",
+        "type": "时装",
+        "description": "灵感在风的滋养下永不腐坏，它们被精心保藏在瓶子里，激发出创意的火花。\n（【限定】时装，仅能在第三十六赛季精华3中获得） ",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "郁金香之梦",
+        "img": "./img/i8yklivqvsq5xq1ho6hdx2c1hkrqzg4.png",
+        "type": "时装",
+        "description": "返航的愿望在花粉的媒介下萌生，却又最终化为泡沫，在阳光下消散殆尽。 ",
+        "repeat": 1000
+      },
+      {
+        "name": "蓝釉先生",
+        "img": "./img/pp7tc5nuol664rxbutjwr9u4x5arwsz.png",
+        "type": "时装",
+        "description": "最完美的作品往往来源于内心深处的美好回忆，比如家乡的风车，和再也回不去的童年。 ",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "大话王",
+        "img": "./img/g2bchq5bgz5gmseetojcnq618n47leq.png",
+        "type": "时装",
+        "description": "空中的岛屿真的存在——就在飓风中心！ ",
+        "repeat": 200
+      },
+      {
+        "name": "守恒律",
+        "img": "./img/rpb8odmb485l6u9mo8uvntoa8o4zx4w.png",
+        "type": "时装",
+        "description": "能量的转化一定遵循守恒定律——这也是世间万物亘古不变的法则。 ",
+        "repeat": 200
+      },
+      {
+        "name": "梦乡铃",
+        "img": "./img/e8sk13yqjot76r51jnqbc1p3muuv5pd.png",
+        "type": "时装",
+        "description": "铃声响起的时候，迷失于幻境的人，沉醉于美梦的人，误入歧途的人，都该醒来的。 ",
+        "repeat": 200
+      },
+      {
+        "name": "永动岛",
+        "img": "./img/qjggyo2rpdxibwtn0l5qt47hvq7aghl.png",
+        "type": "时装",
+        "description": "驱动岛屿永动的方式一定存在！秘密……就在这堆图纸里。 ",
+        "repeat": 200
+      },
+      {
+        "name": "储风罐",
+        "img": "./img/hhpercv0u9htuctibtxs1jsd7rs6e9c.png",
+        "type": "时装",
+        "description": "成功需要反复实验，哪怕带来爆炸、事故，都在所不惜。 ",
+        "repeat": 200
+      },
+      {
+        "name": "破轮-威胁",
+        "img": "./img/dnofeff0gjnmtqp5r8ac354xyjcckh0.png",
+        "type": "个性动作",
+        "description": "威胁动作，破轮专属",
+        "repeat": 200
+      },
+      {
+        "name": "教授-起舞",
+        "img": "./img/73nip7a7kcx0arn2v8y72o5xt153jyc.png",
+        "type": "个性动作",
+        "description": "起舞动作，教授专属",
+        "repeat": 200
+      },
+      {
+        "name": "“噩梦”-威胁",
+        "img": "./img/dnofeff0gjnmtqp5r8ac354xyjcckh0.png",
+        "type": "个性动作",
+        "description": "威胁动作，“噩梦”专属",
+        "repeat": 200
+      },
+      {
+        "name": "破轮-拜访",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "破轮专属匹配大厅等待动作，拜访",
+        "repeat": 200
+      },
+      {
+        "name": "小说家-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "小说家匹配大厅动作，小憩",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "鲜明绿",
+        "img": "./img/ra276jcerc0xlun8k8o09yw9b2utk2k.png",
+        "type": "时装",
+        "description": "舞台上的新装，稍稍鲜明的绿色衬衣，将他的窘迫和笨拙新鲜地切开展览。",
+        "repeat": 36
+      },
+      {
+        "name": "平等绿",
+        "img": "./img/mtx1o9l1jf5upgrspv4dr50tiruzki6.png",
+        "type": "时装",
+        "description": "当采用一些不那么温和的手段抵抗，平等并非毫无办法。",
+        "repeat": 36
+      },
+      {
+        "name": "深渊蓝",
+        "img": "./img/ml01w53o3lyja79usud524u0qd1sal3.png",
+        "type": "时装",
+        "description": "他的恶意与疯狂驱动了这个精美的嵌套结构。 ",
+        "repeat": 36
+      },
+      {
+        "name": "探索蓝",
+        "img": "./img/l1bnsds35hwcjoqzptxzj5xilikfb3e.png",
+        "type": "时装",
+        "description": "他站在这里，意识到自己被牵扯进了一件不被外界所认可的事，但他依旧渴望那未知的神秘。",
+        "repeat": 36
+      },
+      {
+        "name": "纤弱青",
+        "img": "./img/tlywsbqz06b04bo4m074r6snhrieeje.png",
+        "type": "时装",
+        "description": "属于我的救赎，会降临吗？",
+        "repeat": 36
+      },
+      {
+        "name": "丁香紫",
+        "img": "./img/1urgh68wy4jyb0veetcvsl8xgbup6c2.png",
+        "type": "时装",
+        "description": "美丽而淡雅的花色，她若在定会欢喜。",
+        "repeat": 36
+      },
+      {
+        "name": "理想红",
+        "img": "./img/nl2fa5drqte5ummvc5b4tm2v926b2rn.png",
+        "type": "时装",
+        "description": "飞行与机械，光想想也能让人热血沸腾啊！",
+        "repeat": 36
+      },
+      {
+        "name": "坚韧棕",
+        "img": "./img/83gkioz0jwm4k5iq8zr01r16a2dqpm5.png",
+        "type": "时装",
+        "description": "无论是真相或是谎言，我都会一并了解。",
+        "repeat": 36
+      },
+      {
+        "name": "沙土褐",
+        "img": "./img/9r69ldm7gemu8a99l12lywbcsmmxb3v.png",
+        "type": "时装",
+        "description": "耐心的蛰伏，依靠的是野兽般的直觉。 ",
+        "repeat": 36
+      },
+      {
+        "name": "庄重蓝",
+        "img": "./img/rl6s6388icamtzu0bnty8wvofwsxdr7.png",
+        "type": "时装",
+        "description": "静谧的思考方能与内心对话。",
+        "repeat": 36
+      },
+      {
+        "name": "偏执绿",
+        "img": "./img/2d4l63s9ydzxhellpn4laxiusydn1u7.png",
+        "type": "时装",
+        "description": "痛苦是重生的必经之路。 ",
+        "repeat": 36
+      },
+      {
+        "name": "哭泣小丑-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，哭泣小丑专属",
+        "repeat": 36
+      },
+      {
+        "name": "昆虫学者-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，昆虫学者专属",
+        "repeat": 36
+      },
+      {
+        "name": "小说家-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，小说家专属",
+        "repeat": 36
+      },
+      {
+        "name": "教授-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，教授专属",
+        "repeat": 36
+      },
+      {
+        "name": "盲女-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "盲女匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "机械师-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "机械师匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "盲女-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "盲女匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "机械师-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "机械师匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "冒险家匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "渔女-个性",
+        "img": "./img/kf25okyaot7q6dt4udxhcuhb2ws7p4t.png",
+        "type": "涂鸦",
+        "description": "渔女专用涂鸦，默默地展示着她的个性宣言 ",
+        "repeat": 36
+      },
+      {
+        "name": "病患-个性",
+        "img": "./img/jw8j91i79z4cmop89xijoddopvff177.png",
+        "type": "涂鸦",
+        "description": "病患专用涂鸦，默默地展示着他的个性宣言",
+        "repeat": 36
+      },
+      {
+        "name": "击球手-个性",
+        "img": "./img/afjbevmw43wa9ccwfkstv8iqv7kdmq1.png",
+        "type": "涂鸦",
+        "description": "击球手专用涂鸦，默默地展示着他的个性宣言",
+        "repeat": 36
+      },
+      {
+        "name": "“心理学家”-个性",
+        "img": "./img/r1ov4i2fa15vkwfx3u21lvx7dcby0kb.png",
+        "type": "涂鸦",
+        "description": "“心理学家”专用涂鸦，默默地展示着她的个性宣言",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-画家",
+        "img": "./img/5aofo3y5w17carmpeqqvkawl0epnbq7.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-击球手",
+        "img": "./img/nvus8hqopfnovujgfa43elzqd6dn1ua.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-玩具商",
+        "img": "./img/soefqj794uhy2ikbq6kwx99i4flq7ve.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "画家-萌版",
+        "img": "./img/1sur81ccml337zdcgrhnbn8k6h8yqnx.png",
+        "type": "涂鸦",
+        "description": "画家专用涂鸦，萌版 ",
+        "repeat": 6
+      },
+      {
+        "name": "大副-萌版",
+        "img": "./img/27djeryi40xy7rz6lwnqxsos3dm3rso.png",
+        "type": "涂鸦",
+        "description": "大副专用涂鸦，萌版",
+        "repeat": 6
+      },
+      {
+        "name": "祭司-萌版",
+        "img": "./img/k1kplz9uvam7t548yp3i9lville8368.png",
+        "type": "涂鸦",
+        "description": "祭司专用涂鸦，萌版",
+        "repeat": 6
+      },
+      {
+        "name": "冒险家-萌版",
+        "img": "./img/nnunx0n4g59dhpy3y4215m0vovfmqp7.png",
+        "type": "涂鸦",
+        "description": "冒险家专用涂鸦，萌版",
+        "repeat": 6
+      },
+      {
+        "name": "牛仔-萌版",
+        "img": "./img/apzbybxfjattdf0q3cqhychng4yp9rp.png",
+        "type": "涂鸦",
+        "description": "牛仔专用涂鸦，萌版",
+        "repeat": 6
+      },
+      {
+        "name": "“慈善家”-萌版",
+        "img": "./img/rvgkp9lfh8286uiqc6fsn8g94i5wg15.png",
+        "type": "涂鸦",
+        "description": "“慈善家”专用涂鸦，萌版",
+        "repeat": 6
+      },
+      {
+        "name": "“囚徒”-萌版",
+        "img": "./img/ls3cfomkzj9lcq71b4abas4jjbdyacx.png",
+        "type": "涂鸦",
+        "description": "“囚徒”专用涂鸦，萌版",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-隐士",
+        "img": "./img/ahctkkqvbavdydvqvx4s6ba0tx1euju.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-作曲家",
+        "img": "./img/jpygw8gyvla7zt70wo9cj4farnflgl8.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-古董商",
+        "img": "./img/0jfdkovootnl15r2674gup32hfr6mx7.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-教授",
+        "img": "./img/7w5wepkxev88v49lity3ol8ibbluvtd.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      }
+    ]
+  }
+}

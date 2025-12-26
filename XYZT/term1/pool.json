@@ -1,0 +1,77 @@
+{
+  "id": "lucky_dice_1",
+  "name": "幸运之骰·第1期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 9999,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "童年幻想": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/tliiggqwk28rpzmyni5sgu9i6jlp55e.png",
+      "description": "童年的幻想无边无际,儿童节头像框",
+      "repeat": 200
+    },
+    "劳动节活动": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/d4iqiffgbomqx398db3k9rdehipn2m6.png",
+      "description": "吱呀作响是劳动的口号~（2018年劳动节活动首次获得）",
+      "repeat": 200
+    },
+    "中秋节": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/jsboc57ir03ut00z5j3go5nh2uugynl.png",
+      "description": "中秋节活动奖励头像",
+      "repeat": 6
+    },
+    "开服狂欢": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/3lsdptfh0t4r02qxwdz38jyq8t8jnm2.png",
+      "description": "开服狂欢活动头像",
+      "repeat": 6
+    },
+    "一周年": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/5vvdhri9e7em85cmr3bbym1ff3jwcab.png",
+      "description": "蛋糕狂欢活动奖励头像",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

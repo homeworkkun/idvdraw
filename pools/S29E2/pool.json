@@ -1,0 +1,394 @@
+{
+  "id": "S29E2",
+  "name": "第29赛季·精华2",
+  "essenceImage": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+  "diff_A": 1,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [
+    {
+      "name": "-20%",
+      "rate": 0.8,
+      "chance": 0.03
+    },
+    {
+      "name": "-40%",
+      "rate": 0.6,
+      "chance": 0.015
+    }
+  ],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "箜篌",
+        "img": "./img/kxp0l0uhzvoddirmpk7i2tr2u7gnl14.png",
+        "type": "时装",
+        "description": "手工艺品总比那些有生命的小家伙更容易控制——一些源于血泪的改良，或许能带来一场更为精彩的演出。\n（【限定】时装，仅能在第二十九赛季精华2中获得）",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "夜光杯",
+        "img": "./img/ppae8nyvu1hnoq37ibosr7tior2eiwl.png",
+        "type": "时装",
+        "description": "当盛装美酒的玉盏，也能在月下熠熠生辉，它就实现了远超器物本身的价值，更象征着兄长手艺和意志的赓续。",
+        "repeat": 1000
+      },
+      {
+        "name": "镏金铜鹿",
+        "img": "./img/33xedzvomxg2d0vot47f7dtw8vx5zqe.png",
+        "type": "时装",
+        "description": "那只镏金铜鹿，立在角落注视着、沉默着，等待着属于它的时代的来临。",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "帛鱼",
+        "img": "./img/iaoyek97gppij3352dwbk0mrym2n414.png",
+        "type": "时装",
+        "description": "游鱼指引着绿洲的方向，但它的所有者，已经跟随湖泊的移动，不见踪影。",
+        "repeat": 200
+      },
+      {
+        "name": "信书",
+        "img": "./img/3mzgzjp76nh78ijv5hruyqjntirofoi.png",
+        "type": "时装",
+        "description": "传书的鸟类记录了胡杨树下的誓言：如遇危险，图穷匕见。",
+        "repeat": 200
+      },
+      {
+        "name": "铸钱",
+        "img": "./img/06cwbq1zegia5rgyd734ssq7ued7ix0.png",
+        "type": "时装",
+        "description": "只要是雇主想要的东西，无论多困难，只要给够钱……都能帮你弄到手。",
+        "repeat": 200
+      },
+      {
+        "name": "宝相花",
+        "img": "./img/15c64ltjzbhu48noxk6bps3gumytwon.png",
+        "type": "时装",
+        "description": "完美的艺术品已经制作完毕，艺术品的制造者……此时终于也可以安然离开。",
+        "repeat": 200
+      },
+      {
+        "name": "花枝镜",
+        "img": "./img/k3kd6qi9s2grmh226zsgazllub5zd6f.png",
+        "type": "时装",
+        "description": "镜子并非如此只能用作妆点与陪衬，它更可以传递复杂的信号，是行动中不可或缺的一环。",
+        "repeat": 200
+      },
+      {
+        "name": "咒术师-起舞",
+        "img": "./img/73nip7a7kcx0arn2v8y72o5xt153jyc.png",
+        "type": "个性动作",
+        "description": "起舞动作，咒术师专属 ",
+        "repeat": 200
+      },
+      {
+        "name": "勘探员-起舞",
+        "img": "./img/73nip7a7kcx0arn2v8y72o5xt153jyc.png",
+        "type": "个性动作",
+        "description": "起舞动作，勘探员专属 ",
+        "repeat": 200
+      },
+      {
+        "name": "孽蜥-警觉",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "孽蜥专属匹配大厅等待动作，警觉 ",
+        "repeat": 200
+      },
+      {
+        "name": "大副-起身",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "大副匹配大厅动作，起身 ",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "漆",
+        "img": "./img/kqqo3awkgpl514vy69xkg9v32n77h6q.png",
+        "type": "时装",
+        "description": "被黑色长裙包裹的成熟、颀长、丰美的躯体……一种艳羡和迷恋的对象，甚至激发着疯狂的妒意。 ",
+        "repeat": 36
+      },
+      {
+        "name": "感染",
+        "img": "./img/m7corsdipdgfuwu7569evm1cg2ll7fa.png",
+        "type": "时装",
+        "description": "不必担心这具身体会因感染而再次腐败，它与寄宿其中的邪恶一样坚不可摧。 ",
+        "repeat": 36
+      },
+      {
+        "name": "疾拂",
+        "img": "./img/5mh2fynba684p7k4dnb1zhfnionjq87.png",
+        "type": "时装",
+        "description": "胸口带着燥意的风暴再也难以抑制——将这里化为废墟，彻底破坏后才能有新的开始。 ",
+        "repeat": 36
+      },
+      {
+        "name": "戏谑绿",
+        "img": "./img/0vccgqaueuygfxyg1cicvizu2ytg0nw.png",
+        "type": "时装",
+        "description": "承受荒诞、承受不可理喻的一切，然后发出尖利的笑声。",
+        "repeat": 36
+      },
+      {
+        "name": "推罗紫",
+        "img": "./img/ffg7aim4cy8i0r24w4mf7mqbrp1brf1.png",
+        "type": "时装",
+        "description": "用昂贵的染料，精心染制小小的裙摆，也为她配上一柄玩具长剑吧，她不是属于谁的小小淑女。 ",
+        "repeat": 36
+      },
+      {
+        "name": "铜哨黄",
+        "img": "./img/dxmqwb29k7v1fe7vm0ureyvobllpgmf.png",
+        "type": "时装",
+        "description": "他依然很疼……但熟悉的哨声让忍耐都带着欢喜。 ",
+        "repeat": 36
+      },
+      {
+        "name": "海草绿",
+        "img": "./img/94ggd3mndojbtfnkyqbkm08syia3vny.png",
+        "type": "时装",
+        "description": "像是缎带轻盈、柔软，也像是挣不脱的可怖牢笼。 ",
+        "repeat": 36
+      },
+      {
+        "name": "旧页褐",
+        "img": "./img/mz7agqr1p749h9mcr2a238897dpwahc.png",
+        "type": "时装",
+        "description": "纸页已然发黄，但笔迹中近乎病态的专注和温情从未改变。",
+        "repeat": 36
+      },
+      {
+        "name": "静脉绿",
+        "img": "./img/0yt4m1i8ctlwfbh37nt9snoqqjnsnx9.png",
+        "type": "时装",
+        "description": "使用特殊的油彩为作品上色，使皮肤呈现出健康血管的纹理。",
+        "repeat": 36
+      },
+      {
+        "name": "林场绿",
+        "img": "./img/c9r340nz9rkewld3u2lsfoa8zrp303c.png",
+        "type": "时装",
+        "description": "回忆中充斥着鼻腔的总是松脂和树木的气息，这是童年的一部分。",
+        "repeat": 36
+      },
+      {
+        "name": "追忆蓝",
+        "img": "./img/jlebpowa584ier7e721n26o2vnaw5c5.png",
+        "type": "时装",
+        "description": "庄园曾望得见碧蓝的天空，和两个在林场追逐的小小身影。 ",
+        "repeat": 36
+      },
+      {
+        "name": "舞女-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，舞女专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "舞女-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，舞女专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "舞女-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，舞女专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "大副-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，大副专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "前锋匹配大厅动作，小憩 ",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "冒险家匹配大厅动作，准备 ",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "佣兵匹配大厅动作，准备 ",
+        "repeat": 36
+      },
+      {
+        "name": "律师-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "律师匹配大厅动作，准备 ",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "前锋匹配大厅动作，等待 ",
+        "repeat": 36
+      },
+      {
+        "name": "机械师遥控器-卡通",
+        "img": "./img/a83m1leq93voqjck6lcu4m6nwyhj2pc.png",
+        "type": "涂鸦",
+        "description": "机械师专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵兜帽-卡通",
+        "img": "./img/mp9vg1ro58g8ru73gihoxf1u0skalam.png",
+        "type": "涂鸦",
+        "description": "佣兵专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "鹿头号角-卡通",
+        "img": "./img/r20b9jpd5s9dmcclmkrl6i0qi2t8t8p.png",
+        "type": "涂鸦",
+        "description": "鹿头专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "“杰克”爪子-卡通",
+        "img": "./img/5sf9hxdgp9ygb3nltjcxxxgnwrhudkl.png",
+        "type": "涂鸦",
+        "description": "“杰克”专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-哭泣小丑",
+        "img": "./img/5tlz850mrjtemwzmgbatrpr7rz12zl8.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-古董商",
+        "img": "./img/7a94mt5jujl6yapx66oba3xatkffczx.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-教授",
+        "img": "./img/9vqagmr1g28jvpr4gimsd7mulhi9h2r.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "邮差-剪影 ",
+        "img": "./img/fya1s0nd7pmkczsvi59r9cizpolmewj.png",
+        "type": "涂鸦",
+        "description": "邮差专属涂鸦，剪影 ",
+        "repeat": 6
+      },
+      {
+        "name": "杂技演员-剪影 ",
+        "img": "./img/qctkhxigjr9xy5zj2hz6e0lfmx31c6m.png",
+        "type": "涂鸦",
+        "description": "杂技演员专属涂鸦，剪影 ",
+        "repeat": 6
+      },
+      {
+        "name": "红夫人-剪影 ",
+        "img": "./img/9xut01tk5th2licdvbb2wiv7w9awdcf.png",
+        "type": "涂鸦",
+        "description": "红夫人专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "小提琴家-灰影",
+        "img": "./img/o3vp99ceuh5ngkfpe1xvj7b6gqa9hng.png",
+        "type": "涂鸦",
+        "description": "小提琴家专属涂鸦，灰影系列 ",
+        "repeat": 6
+      },
+      {
+        "name": "雕刻家-灰影",
+        "img": "./img/q7wmpbk5e8qtstivmr2glc4u1t94339.png",
+        "type": "涂鸦",
+        "description": "雕刻家专属涂鸦，灰影系列 ",
+        "repeat": 6
+      },
+      {
+        "name": "昆虫学者-灰影",
+        "img": "./img/00c9wpo8e2o98jsoj9wgait9njwuhbv.png",
+        "type": "涂鸦",
+        "description": "昆虫学者专属涂鸦，灰影系列 ",
+        "repeat": 6
+      },
+      {
+        "name": "画家-灰影",
+        "img": "./img/inahcyr9sz6o7i6k25a5i2ef4c1zz6g.png",
+        "type": "涂鸦",
+        "description": "画家专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-画家",
+        "img": "./img/59y47n6achyelcqplhzi99vknaigvrt.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-昆虫学者",
+        "img": "./img/l2j3px7uldmjng8u0ifpvru50hc7wde.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-使徒",
+        "img": "./img/jjho1uxmve2veppyxcvb8gurkr0kvr6.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-摄影师",
+        "img": "./img/dyzh5d6d623mnqisb0e3nh1ind56u06.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      }
+    ]
+  }
+}

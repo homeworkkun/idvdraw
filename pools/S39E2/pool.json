@@ -1,0 +1,197 @@
+{
+  "id": "S39E2",
+  "name": "葬送的芙莉莲联动精华",
+  "essenceImage": "./img/5c8da6kyfk4sz81ua2eb9643j9wtr22.png",
+  "diff_A": 0,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [
+    {
+      "name": "-20%",
+      "rate": 0.8,
+      "chance": 0.03
+    },
+    {
+      "name": "-40%",
+      "rate": 0.6,
+      "chance": 0.015
+    }
+  ],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 99
+  },
+  "items": {
+    "S": [
+      {
+        "name": "芙莉莲",
+        "img": "./img/6v0kw5w3cf0n7n6nc7ugphrlagw2d4y.png",
+        "type": "时装",
+        "description": "芙莉莲的服装。\n葬送的芙莉莲联动精华限定稀世时装",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "菲伦",
+        "img": "./img/kjrbz7lufjbjj628koxa5hpb7y0q345.png",
+        "type": "时装",
+        "description": "菲伦的时装。\n葬送的芙莉莲联动精华限定奇珍时装 ",
+        "repeat": 1000
+      },
+      {
+        "name": "休塔尔克",
+        "img": "./img/gj3v7dn78mz4ax8q1n6l42u5863nvyl.png",
+        "type": "时装",
+        "description": "休塔尔克的时装。 \n葬送的芙莉莲联动精华限定奇珍时装 ",
+        "repeat": 1000
+      },
+      {
+        "name": "阿乌拉",
+        "img": "./img/77xah1ktbal3ajuw8f7vhpkhbivf2ko.png",
+        "type": "时装",
+        "description": "阿乌拉的时装。\n葬送的芙莉莲联动精华限定奇珍时装 ",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "剑",
+        "img": "./img/cax6jlfeni4zv78a7ck9br7l9fjnvoi.png",
+        "type": "随身物品",
+        "description": "阿乌拉的剑。 \n葬送的芙莉莲联动限定独特随身物品 ",
+        "repeat": 200
+      },
+      {
+        "name": "好友的照片",
+        "img": "./img/68yq3gfh8k88xyy6ubr52wppmozo5l3.png",
+        "type": "随身物品",
+        "description": "赞因好友的照片。 \n葬送的芙莉莲联动限定独特随身物品 ",
+        "repeat": 200
+      },
+      {
+        "name": "法杖",
+        "img": "./img/dbw3yssocloge782y3gnm1a2dcmb7ql.png",
+        "type": "随身物品",
+        "description": "菲伦的法杖。 \n葬送的芙莉莲联动限定独特随身物品 ",
+        "repeat": 200
+      },
+      {
+        "name": "斧头",
+        "img": "./img/qdbddwj8fswbzqvcjxxb0tkbb6sn0u9.png",
+        "type": "随身物品",
+        "description": "休塔尔克的斧头。 \n葬送的芙莉莲联动限定独特随身物品 ",
+        "repeat": 200
+      },
+      {
+        "name": "逃生魔像",
+        "img": "./img/ip2k7z09cklqd1nzb7q13d8m4b8uezs.png",
+        "type": "随身物品",
+        "description": "魔法师选拔测验中的逃生魔像道具。 \n葬送的芙莉莲联动限定独特随身物品 ",
+        "repeat": 200
+      },
+      {
+        "name": "“骑士”-跪地",
+        "img": "./img/3kc2xgv0xd3l7e3gb0uie5aauu3n6er.png",
+        "type": "个性动作",
+        "description": "跪地动作，“骑士”专属 ",
+        "repeat": 200
+      },
+      {
+        "name": "祭司-臣服于我",
+        "img": "./img/g3aypvuzt61lvkx4kt02v4krsdl9lgk.png",
+        "type": "个性动作",
+        "description": "臣服于我动作，祭司专属 ",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "芙莉莲",
+        "img": "./img/256n6p9uveiictdxd8indbmnhbgtvmv.png",
+        "type": "涂鸦",
+        "description": "葬送的芙莉莲联动涂鸦（葬送的芙莉莲联动限定获得） ",
+        "repeat": 36
+      },
+      {
+        "name": "菲伦",
+        "img": "./img/6x0uy2d24dog2o4honv1rlvt10cj10v.png",
+        "type": "涂鸦",
+        "description": "葬送的芙莉莲联动涂鸦（葬送的芙莉莲联动限定获得） ",
+        "repeat": 36
+      },
+      {
+        "name": "休塔尔克",
+        "img": "./img/qz3t3stdg8d42nvdydnx961iubbpc4z.png",
+        "type": "涂鸦",
+        "description": "葬送的芙莉莲联动涂鸦（葬送的芙莉莲联动限定获得） ",
+        "repeat": 36
+      },
+      {
+        "name": "辛美尔",
+        "img": "./img/f20witij8n0xr8nw8ma62jvfysymlny.png",
+        "type": "涂鸦",
+        "description": "葬送的芙莉莲联动涂鸦（葬送的芙莉莲联动限定获得） ",
+        "repeat": 36
+      },
+      {
+        "name": "赞因",
+        "img": "./img/06qutlxxt6f1n5t26zk62n6a3ti56rg.png",
+        "type": "涂鸦",
+        "description": "葬送的芙莉莲联动涂鸦（葬送的芙莉莲联动限定获得） ",
+        "repeat": 36
+      },
+      {
+        "name": "阿乌拉",
+        "img": "./img/nuzqfucaneetsehvsl2mvun7b60a4v5.png",
+        "type": "涂鸦",
+        "description": "葬送的芙莉莲联动涂鸦（葬送的芙莉莲联动限定获得） ",
+        "repeat": 36
+      },
+      {
+        "name": "对不起！对不起嘛！",
+        "img": "./img/a65o14rqrlflbc3ltcwvl276j7m9s49.png",
+        "type": "涂鸦",
+        "description": "葬送的芙莉莲联动涂鸦（葬送的芙莉莲联动限定获得） ",
+        "repeat": 36
+      },
+      {
+        "name": "是我赢了",
+        "img": "./img/rl0egq2rj3kwqvzeduv0lbvzdj8skii.png",
+        "type": "涂鸦",
+        "description": "葬送的芙莉莲联动涂鸦（葬送的芙莉莲联动限定获得） ",
+        "repeat": 36
+      },
+      {
+        "name": "赶快给我交往啊！",
+        "img": "./img/frjsiin47sagzpd4csrmws6635u7kj9.png",
+        "type": "涂鸦",
+        "description": "葬送的芙莉莲联动涂鸦（葬送的芙莉莲联动限定获得） ",
+        "repeat": 36
+      },
+      {
+        "name": "安然入睡",
+        "img": "./img/ijcprabenc9wvcubiom3g4rk544vc8t.png",
+        "type": "涂鸦",
+        "description": "葬送的芙莉莲联动涂鸦（葬送的芙莉莲联动限定获得） ",
+        "repeat": 36
+      },
+      {
+        "name": "帅哥姿势",
+        "img": "./img/jrkrc9peg6emq9k8i7e8liyyfjfr14u.png",
+        "type": "涂鸦",
+        "description": "葬送的芙莉莲联动涂鸦（葬送的芙莉莲联动限定获得） ",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

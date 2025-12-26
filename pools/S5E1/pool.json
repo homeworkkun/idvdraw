@@ -1,0 +1,291 @@
+{
+  "id": "S5E1",
+  "name": "深渊珍宝Ⅱ",
+  "essenceImage": "./img/n2ks9ffqcuwlpip9zqecwwci8fzrh36.png",
+  "diff_A": 0,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "邪眼寄主",
+        "img": "./img/c0u6os17fic0dorv9vl3p3bssixi986.png",
+        "type": "时装",
+        "description": "在背叛的那一刻，他就知道复苏的邪眼将令自己坠入深渊，令整个城市都陷入疯狂——但都好过一切在冰封中寂静无声。\n深渊珍宝限定稀世时装",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "蒸汽少年",
+        "img": "./img/0tmzpb3hybhs9ugv3wghqbul39hm0ow.png",
+        "type": "时装",
+        "description": "邪眼能重新点燃高塔核心拯救这个冰封的城市，但更可能把一切推入另一个未知深渊——面对真相之后的抉择，少年将如何自处?\n深渊珍宝限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "时之砂",
+        "img": "./img/me7h7t06fkfgblmquzyifqiobbx97uc.png",
+        "type": "时装",
+        "description": "高塔封冻，能源枯竭，她预见城市终将被严寒吞噬，但无法预见那个少年的最终选择——即便时间能短暂倒流，命运却无从掌握。\n深渊珍宝限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "光学镜面",
+        "img": "./img/79z6p0pe20mkzfbrl710cj6smb47mnv.png",
+        "type": "时装",
+        "description": "作为团长，他恪守着冒险团世代封存邪眼的使命，只敢在光与影的幻象中满足占有欲——直到那场背叛将他彻底击垮。\n深渊珍宝限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "音波",
+        "img": "./img/9linq48z414esevk41kje5sm31ao9s4.png",
+        "type": "时装",
+        "description": "她追寻着来自深渊的呼唤，终于在熔炉高塔定位到了叛徒的位置，一切都将在那里有所了断。\n深渊珍宝限定奇珍时装",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "铁帽团长",
+        "img": "./img/a825sz0rpp8kz6rvi4fszlow9ldlxgl.png",
+        "type": "时装",
+        "description": "走投无路的人组成了铁帽团，他们将蒸汽之都视为最后的居所。无论用何种极端的方式，他们都会在这里活下去。\n深渊珍宝限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "铁帽警长",
+        "img": "./img/8ust578xdpt96zhvzc5vbo8ha9xrc9j.png",
+        "type": "时装",
+        "description": "蒸汽之都是所有法外之人的庇护所，这里奉行着海盗般强者为尊的生存法则，但并不妨碍有人以义警自称。\n深渊珍宝限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "铁帽黑手",
+        "img": "./img/qjfu2fitlly3cjgi34e1btorp3m312h.png",
+        "type": "时装",
+        "description": "他靠着叛徒的消息偷到了冒险团的宝箱，但那个会咬人的玩意儿让他吃足了苦头。\n深渊珍宝限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "化学剂师",
+        "img": "./img/kx58qlbfk1jikrk5opnqe185qo3s3zo.png",
+        "type": "时装",
+        "description": "严寒阻滞了邪眼的复苏，但无法阻止它对人心的影响，她获得了灵感，激发了潜能，陷入了疯狂\n深渊珍宝限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "银行家",
+        "img": "./img/93mdjw62b9z3axbi345c4y035v73xvi.png",
+        "type": "时装",
+        "description": "蒸汽之都的通货不是钱币，而是熔炉高塔从地热攫取的每一份热源。高塔的核心熄灭不久后，他所保管的塔顶钥匙亦不知所踪。\n深渊珍宝限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "盲女-抛雪球",
+        "img": "./img/adfychpqak7vv5ayhfc0pfu2d4tityp.png",
+        "type": "个性动作",
+        "description": "抛雪球动作，盲女专属",
+        "repeat": 200
+      },
+      {
+        "name": "佣兵-抛雪球",
+        "img": "./img/adfychpqak7vv5ayhfc0pfu2d4tityp.png",
+        "type": "个性动作",
+        "description": "抛雪球动作，佣兵专属",
+        "repeat": 200
+      },
+      {
+        "name": "调香师-抛雪球",
+        "img": "./img/adfychpqak7vv5ayhfc0pfu2d4tityp.png",
+        "type": "个性动作",
+        "description": "抛雪球动作，调香师专属",
+        "repeat": 200
+      },
+      {
+        "name": "魔术师-抛雪球",
+        "img": "./img/adfychpqak7vv5ayhfc0pfu2d4tityp.png",
+        "type": "个性动作",
+        "description": "抛雪球动作，魔术师专属",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "棕",
+        "img": "./img/sx53bxqizvm0ovh7nl94qa7gjhj9l8d.png",
+        "type": "时装",
+        "description": "朴实的颜色能让低调的人走运吗？",
+        "repeat": 36
+      },
+      {
+        "name": "翠舞",
+        "img": "./img/shzbmbpnilantrwsernqqkudolvedmn.png",
+        "type": "时装",
+        "description": "翠竹般纤细秀逸的舞姿。",
+        "repeat": 36
+      },
+      {
+        "name": "夜紫",
+        "img": "./img/qaoc8qvncvdyxdxlfyy71a0luecoh1q.png",
+        "type": "时装",
+        "description": "一抹鬼魅的紫色搅动了黑夜的寂静。",
+        "repeat": 36
+      },
+      {
+        "name": "幽香粉",
+        "img": "./img/c6vjkirhivciqsckwohxs9iyi633i2u.png",
+        "type": "时装",
+        "description": "幽香淡去后，留下的是什么颜色呢?",
+        "repeat": 36
+      },
+      {
+        "name": "赤服",
+        "img": "./img/c72tfhx6fiwyuqpwdg5n5tebxy2ynlf.png",
+        "type": "时装",
+        "description": "赤色的华服会让自己成为焦点，但不会减少对生死应有的敬畏。",
+        "repeat": 36
+      },
+      {
+        "name": "黄铜",
+        "img": "./img/jclz97qeode2qw4emcxh8njs1d7yhl8.png",
+        "type": "时装",
+        "description": "闪亮的黄铜色代表着精致的工艺流程!",
+        "repeat": 36
+      },
+      {
+        "name": "调香师-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，调香师专属",
+        "repeat": 36
+      },
+      {
+        "name": "牛仔-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，牛仔专属",
+        "repeat": 36
+      },
+      {
+        "name": "调香师-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，调香师专属",
+        "repeat": 36
+      },
+      {
+        "name": "牛仔-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，牛仔专属",
+        "repeat": 36
+      },
+      {
+        "name": "调香师-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，调香师专属",
+        "repeat": 36
+      },
+      {
+        "name": "牛仔-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，牛仔专属",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-动物",
+        "img": "./img/3yhi69pmyri909vt5h2dbyk5ye6yki1.png",
+        "type": "涂鸦",
+        "description": "冒险家专属涂鸦，动物",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-动物",
+        "img": "./img/duezrxq1gj5poozoii81kwydac7sj9g.png",
+        "type": "涂鸦",
+        "description": "魔术师专属涂鸦，动物",
+        "repeat": 36
+      },
+      {
+        "name": "律师-动物",
+        "img": "./img/r0mcvi1i7j8ilnrbnfp2nrw16df6750.png",
+        "type": "涂鸦",
+        "description": "律师专属涂鸦，动物",
+        "repeat": 36
+      },
+      {
+        "name": "空军-动物",
+        "img": "./img/qtuah2h725rc3s18ohf12ql3e2bflna.png",
+        "type": "涂鸦",
+        "description": "空军专属涂鸦，动物",
+        "repeat": 36
+      },
+      {
+        "name": "调香师-动物",
+        "img": "./img/qc2mpv86rrznqfsrlipjoto3nlldiyl.png",
+        "type": "涂鸦",
+        "description": "调香师专属涂鸦，动物",
+        "repeat": 36
+      },
+      {
+        "name": "牛仔-动物",
+        "img": "./img/ffc4wx6mr9m7y8e5s0rtjox8vjnjr5u.png",
+        "type": "涂鸦",
+        "description": "牛仔专属涂鸦，动物",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-动物",
+        "img": "./img/15nznnnxugb7ixqoau8muttl7d3hkrn.png",
+        "type": "涂鸦",
+        "description": "前锋专属涂鸦，动物",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-另一面",
+        "img": "./img/bwrxat6tozzv5x6nf0xzmdgqqhg8nzn.png",
+        "type": "头像",
+        "description": "冒险家的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-另一面",
+        "img": "./img/0gx2btzq2550aanq7w63nqezuhsdcum.png",
+        "type": "头像",
+        "description": "佣兵的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-另一面",
+        "img": "./img/5swh41yjhqgcva53h6c5a7zkkbkaw19.png",
+        "type": "头像",
+        "description": "前锋的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-另一面",
+        "img": "./img/4yk462tbsqttextyurj2b1l10mt1qw4.png",
+        "type": "头像",
+        "description": "魔术师的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

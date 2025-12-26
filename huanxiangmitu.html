@@ -1,0 +1,83 @@
+
+<!-- store.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幻象迷途</title>
+    <script src="/resource/tailwind.min.css"></script>
+    <link rel="stylesheet" href="/resource/fontawesome/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .construction-container {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 2px solid #ffcc00;
+            max-width: 500px;
+            width: 90%;
+        }
+        .construction-icon {
+            font-size: 5rem;
+            color: #ffcc00;
+            margin-bottom: 1.5rem;
+            animation: bounce 2s infinite;
+        }
+        .construction-text {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+        }
+        .construction-subtext {
+            color: #ccc;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .back-button {
+            background: linear-gradient(to right, #ffcc00, #ff9900);
+            color: #000;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4);
+        }
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 204, 0, 0.6);
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="construction-container">
+        <div class="construction-icon">
+            <i class="fas fa-tools"></i>
+        </div>
+        <div class="construction-text">搭建中</div>
+        <div class="construction-subtext">功能正在开发中，请稍后再来</div>
+        <!-- 修改按钮行为：返回到 /抽卡 路径 -->
+        <button class="back-button" onclick="window.location.href='/store'">
+            <i class="fas fa-arrow-left mr-2"></i>返回主页
+        </button>
+    </div>
+</body>
+</html>

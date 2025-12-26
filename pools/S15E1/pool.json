@@ -1,0 +1,263 @@
+{
+  "id": "S15E1",
+  "name": "枪弹辩驳联动精华2",
+  "essenceImage": "./img/0qy5il8a8s5bouvqdhd5rxjgldfii3y.png",
+  "diff_A": 0,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 99
+  },
+  "items": {
+    "S": [
+      {
+        "name": "日向创",
+        "img": "./img/rvnx3ifd1bk02ia1ji8vhma7fbmowkn.png",
+        "type": "时装",
+        "description": "希望峰学园预备学科学生。充满正义感的普通人\n枪弹辩驳联动精华2限定稀世时装",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "罪木蜜柑",
+        "img": "./img/j0ds1sxc3ofbl2dwv1dth9ek8fbrr9h.png",
+        "type": "时装",
+        "description": "希望峰学园第77期学生，“超高中级的保健委员”。性格非常内向\n枪弹辩驳联动精华2限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "七海千秋",
+        "img": "./img/gps0al3bkdw69v733jme4ihzopr4tel.png",
+        "type": "时装",
+        "description": "希望峰学园第77期学生，“超高中级的游戏玩家”。玩游戏时非常集中，一旦松懈下来就很容易犯困的类型。\n枪弹辩驳联动精华2限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "狛枝凪斗",
+        "img": "./img/7da81ue9w54gmyr7kguf9f0cdkx9z3n.png",
+        "type": "时装",
+        "description": "希望峰学园第77期学生，“超高中级的幸运”。即使在绝望的情况下，也相信着伙伴和希望。\n枪弹辩驳联动精华2限定奇珍时装",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "勘探员-超高中级的“前进”",
+        "img": "./img/3m60pdyetcxhgptokxcpg2d5hd6ti9w.png",
+        "type": "个性动作",
+        "description": "前进动作，勘探员专属。枪弹辩驳联动",
+        "repeat": 200
+      },
+      {
+        "name": "医生-超高中级的“躺地”",
+        "img": "./img/ei843ex86369mevypmiokl6rwa003nz.png",
+        "type": "个性动作",
+        "description": "躺地动作，医生专属。枪弹辩驳联动",
+        "repeat": 200
+      },
+      {
+        "name": "佣兵-超高中级的“大笑”",
+        "img": "./img/hg6yjzuvqmvd2q997it6c7onor8dkjx.png",
+        "type": "个性动作",
+        "description": "大笑动作，佣兵专属。枪弹辩驳联动",
+        "repeat": 200
+      },
+      {
+        "name": "机械师-超高中级的“疲惫”",
+        "img": "./img/inlcyvrvsuboh0z3nkarcltsngk9fgr.png",
+        "type": "个性动作",
+        "description": "疲惫动作，机械师专属。枪弹辩驳联动",
+        "repeat": 200
+      },
+      {
+        "name": "勘探员-回望",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "勘探员匹配大厅动作，回望",
+        "repeat": 200
+      },
+      {
+        "name": "佣兵-打招呼",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "佣兵匹配大厅动作，打招呼",
+        "repeat": 200
+      },
+      {
+        "name": "医生-害怕",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "医生匹配大厅动作，害怕",
+        "repeat": 200
+      },
+      {
+        "name": "机械师-观察",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "机械师匹配大厅动作，观察（枪弹辩驳联动限定获得）",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "勘探员-价值150万日元的贴纸",
+        "img": "./img/9yxwyed6gzxopsxz5a514gtjy4d5klc.png",
+        "type": "涂鸦",
+        "description": "价值150万日元的贴纸涂鸦，勘探员专属(枪弹辩驳联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "机械师-兔美日记本",
+        "img": "./img/1sfqvx76gzjt21lng3skwvqzyyxhaaw.png",
+        "type": "涂鸦",
+        "description": "免美日记本涂鸦，机械师专属(枪弹辩驳联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-希望峰学生档案",
+        "img": "./img/jctaz0v84989rzleujcll7pk0flawtm.png",
+        "type": "涂鸦",
+        "description": "希望峰学生档案涂鸦，佣兵专属(枪弹辩驳联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "医生-限量手袋",
+        "img": "./img/ocghq8agkgts11ajerkl9hm0qsizoij.png",
+        "type": "涂鸦",
+        "description": "限量手袋涂鸦，医生专属(枪弹辩驳联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "日向创",
+        "img": "./img/qlcvqfvod7ct721x0endg5oobsjda2e.png",
+        "type": "头像",
+        "description": "超高中级的？？？，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "狛枝凪斗",
+        "img": "./img/7uk3t2zwb5pizfa6rkncq896slac2da.png",
+        "type": "头像",
+        "description": "超高中级的幸运，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "七海千秋",
+        "img": "./img/4wmqxkga2kcyhtlipzevcrrm0haxi8t.png",
+        "type": "头像",
+        "description": "超高中级的游戏玩家，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "十神白夜",
+        "img": "./img/bdktf4btliaqjuysubi6h093rb3aao0.png",
+        "type": "头像",
+        "description": "超高中级的名门公子，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "小泉真昼",
+        "img": "./img/buvraeedtuum595e7y6k6nkli6fhksu.png",
+        "type": "头像",
+        "description": "超高中级的摄影师，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "西园寺日寄子",
+        "img": "./img/l5hj5c0rndxjpgxch7vouk6uor4v78p.png",
+        "type": "头像",
+        "description": "超高中级的日本舞蹈家，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "二大猫丸",
+        "img": "./img/4ti0tkyp4ousk1hetc7vwxi038xmwkh.png",
+        "type": "头像",
+        "description": "超高中级的社团经理，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "终里赤音",
+        "img": "./img/l34ermettky2jd5qugbkyxt48amcf5g.png",
+        "type": "头像",
+        "description": "超高中级的体操选手，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "九头龙冬彦",
+        "img": "./img/m89hbjo4dn47nsmnns5xpojl7xx8l7w.png",
+        "type": "头像",
+        "description": "超高中级的极道，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "边谷山佩子",
+        "img": "./img/6y9zfzog3t2j9ht1hw643kk5w49dm8j.png",
+        "type": "头像",
+        "description": "超高中级的剑道家，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "田中眼蛇梦",
+        "img": "./img/s4bil9z4pqmx29jn7m8cui770xg9ztk.png",
+        "type": "头像",
+        "description": "超高中级的饲育委员，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "索尼娅内瓦曼",
+        "img": "./img/4f5ydj3qvlj59m2hfeuwuxufaax3509.png",
+        "type": "头像",
+        "description": "超高中级的公主，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "左右田和一",
+        "img": "./img/hgar38n9gt995qn1lupj5978e2dlmcb.png",
+        "type": "头像",
+        "description": "超高中级的机械工程师，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "罪木蜜柑",
+        "img": "./img/rl3p73859jyuzneuhd5386dyoe8xuyw.png",
+        "type": "头像",
+        "description": "超高中级的保健委员，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "澪田唯吹",
+        "img": "./img/0nb149mxc7916y805pf7zmcdsei3lsn.png",
+        "type": "头像",
+        "description": "超高中级的轻音部，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "花村辉辉",
+        "img": "./img/73mux9101m0qxbs97jxv93h8p2jngse.png",
+        "type": "头像",
+        "description": "超高中级的厨师，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "黑白美",
+        "img": "./img/3hgmw8km0xr6k1sp8mnp0f7pl7nmqa3.png",
+        "type": "头像",
+        "description": "希望峰学园领队老师，枪弹辩驳联动头像",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

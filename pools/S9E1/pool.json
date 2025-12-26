@@ -1,0 +1,390 @@
+{
+  "id": "S9E1",
+  "name": "第9赛季·精华1",
+  "essenceImage": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+  "diff_A": 2,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "裁决之酒",
+        "img": "./img/efbmzoxwchbu4zmpz68px4z32vpwjoa.png",
+        "type": "时装",
+        "description": "每一个叛徒，都会饮下仇恨的毒酒。\n（【限定】时装，仅能在第九赛季精华1中获得）",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "彼岸",
+        "img": "./img/9bx2e2dkwge5rpm3xkxuj7w4n1eeq2f.png",
+        "type": "时装",
+        "description": "是什么释放了那愤怒的灵魂，是干涸的爱意?还是破碎的容颜?",
+        "repeat": 1000
+      },
+      {
+        "name": "安魂曲",
+        "img": "./img/2qdnmmqriekip6b8ckcvoeh7ockquyz.png",
+        "type": "时装",
+        "description": "他早已用那把银色的镰刀，斩断与过去所有关联。",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "逆刃",
+        "img": "./img/03roah9o5uupoe43s4giv3aeskjrkvb.png",
+        "type": "时装",
+        "description": "小心，她的爱抚锋利如刀。",
+        "repeat": 200
+      },
+      {
+        "name": "利爪",
+        "img": "./img/5s9rl5s3xwbt4gw8tgdck5ijr9cldnh.png",
+        "type": "时装",
+        "description": "“那是先生最称手的武器－－在失控之前。”",
+        "repeat": 200
+      },
+      {
+        "name": "解药",
+        "img": "./img/ny8io5cqoqugwwm77rjwqlqcchngyxh.png",
+        "type": "时装",
+        "description": "”如果仇恨是毒酒，那该如何调配解药？“",
+        "repeat": 200
+      },
+      {
+        "name": "猎犬",
+        "img": "./img/1kglv9kcjxyktx7z0kfmlo4z9n358we.png",
+        "type": "时装",
+        "description": "新秩序下，遵循古老的道义，是一件非常危险的事情。",
+        "repeat": 200
+      },
+      {
+        "name": "硝",
+        "img": "./img/tu8bctchjzmzwz95rhb89yog5364xwf.png",
+        "type": "时装",
+        "description": "我讨厌的东西：受潮的雷管，火药的杂质，过期的橙汁，活着的叛徒",
+        "repeat": 200
+      },
+      {
+        "name": "谜题",
+        "img": "./img/d4rwt3vxvtfysdmp0peoq5g18w3lvhz.png",
+        "type": "时装",
+        "description": "她用理性区分是非，却用直觉判定善恶吧。",
+        "repeat": 200
+      },
+      {
+        "name": "蜘蛛-行礼",
+        "img": "./img/jvroaff1gx4rz5tt2ke934hrhhs2z5i.png",
+        "type": "个性动作",
+        "description": "行礼动作，蜘蛛专属",
+        "repeat": 200
+      },
+      {
+        "name": "爱哭鬼-威胁",
+        "img": "./img/dnofeff0gjnmtqp5r8ac354xyjcckh0.png",
+        "type": "个性动作",
+        "description": "威胁动作，爱哭鬼专属",
+        "repeat": 200
+      },
+      {
+        "name": "先知-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "先知匹配大厅等待动作，小憩",
+        "repeat": 200
+      },
+      {
+        "name": "勘探员-起身",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "勘探员匹配大厅动作，起身",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "绿帽",
+        "img": "./img/j1mci311j99qwaig9jweu3lnbmwn22i.png",
+        "type": "时装",
+        "description": "只要没人叫他“花椰菜”，小丑还是很乐意以绿帽造型来活跃气氛的",
+        "repeat": 36
+      },
+      {
+        "name": "白蜡",
+        "img": "./img/2qo52u05v038q2qflz46eyl2wlwa53k.png",
+        "type": "时装",
+        "description": "失去执念的绝望，失去挚爱的苍白",
+        "repeat": 36
+      },
+      {
+        "name": "珊瑚红",
+        "img": "./img/3etgdwrpifk7vdsxl4nhkx3uhex2ygg.png",
+        "type": "时装",
+        "description": "红色代表着热情与执着",
+        "repeat": 36
+      },
+      {
+        "name": "匿踪绿",
+        "img": "./img/m5esvmj2xv235ub7zkrcieexent781j.png",
+        "type": "时装",
+        "description": "活跃的绿色也有静谧的一面",
+        "repeat": 36
+      },
+      {
+        "name": "黑领",
+        "img": "./img/ra99xhcyvpef9pqopxhbq8mtrkrmgbl.png",
+        "type": "时装",
+        "description": "就这身衣服，干什么活染上什么污渍都不必担心",
+        "repeat": 36
+      },
+      {
+        "name": "秋意绿",
+        "img": "./img/rgknl22gyth6m8femixwruufqi8e35v.png",
+        "type": "时装",
+        "description": "有人会问，对于盲女而言，服饰的配色有任何意义吗？－－至少她会成为别人眼中的风景线",
+        "repeat": 36
+      },
+      {
+        "name": "浅叶爵",
+        "img": "./img/rhhklmy8mruoq8lbcpwlfi2iptxh2i7.png",
+        "type": "时装",
+        "description": "有时候拿叶子切片练练手，也是不错的消遣",
+        "repeat": 36
+      },
+      {
+        "name": "金红帛",
+        "img": "./img/kdorn3cvj4qir956xvnpidprtxi5tq7.png",
+        "type": "时装",
+        "description": "嚓嚓嗦嗦，金色的绸帛这么剪开会不会太浪费了?",
+        "repeat": 36
+      },
+      {
+        "name": "抹茶绿",
+        "img": "./img/7h8y2233w7u13fuzqlkjflzjpntr4q3.png",
+        "type": "时装",
+        "description": "绿色代表着活力与机智",
+        "repeat": 36
+      },
+      {
+        "name": "创意紫",
+        "img": "./img/jra4rkpv9wosozp8eq2n5q7zmfoiqq4.png",
+        "type": "时装",
+        "description": "悦目的颜色也能激发创意！",
+        "repeat": 36
+      },
+      {
+        "name": "玫瑰爵",
+        "img": "./img/o8is5p6n8mxe72sv7svtyljwyq5k228.png",
+        "type": "时装",
+        "description": "千万别误会，这身玫瑰色不过是为与红酒相配，与其他液体毫无关系",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-欢呼",
+        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "type": "个性动作",
+        "description": "欢呼动作，魔术师专属",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-欢呼",
+        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "type": "个性动作",
+        "description": "欢呼动作，冒险家专属",
+        "repeat": 36
+      },
+      {
+        "name": "机械师-欢呼",
+        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "type": "个性动作",
+        "description": "欢呼动作，机械师专属",
+        "repeat": 36
+      },
+      {
+        "name": "律师-欢呼",
+        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "type": "个性动作",
+        "description": "欢呼动作，律师专属",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "魔术师匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "“慈善家”匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "空军-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "空军匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "律师-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "律师匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "魔术师匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "厂长鲨鱼棒-卡通",
+        "img": "./img/4i0ofirwp4sx8djg2xcv8ql2wzmpd9o.png",
+        "type": "涂鸦",
+        "description": "厂长专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "黄衣之主触手-卡通",
+        "img": "./img/shjm1hh8ltg330n67qczm1oy9yilac7.png",
+        "type": "涂鸦",
+        "description": "黄衣之主专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "蜘蛛尖刀-卡通",
+        "img": "./img/tewbhetg1jgkseg8ah8npmzogcu829c.png",
+        "type": "涂鸦",
+        "description": "蜘蛛专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”手电筒-卡通",
+        "img": "./img/551k8jcebopu6we7igxy89mbuvvc8hs.png",
+        "type": "涂鸦",
+        "description": "“慈善家”专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-冒险家",
+        "img": "./img/hrh547qdhxd7otplcgcqipdfk5hkjdb.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-魔术师",
+        "img": "./img/lk9u1pqn9rwy1qyhhx3ofk9na12haso.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-园丁",
+        "img": "./img/r2scij24a0342jeozmhm387kjcnn3tb.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "小丑-灰影",
+        "img": "./img/74p7vm63nm8746i7te9dgp2dnu7c1i1.png",
+        "type": "涂鸦",
+        "description": "小丑专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "“慈善家”-灰影",
+        "img": "./img/ihwzg8b79kyznac8huvo2i3s6dbezc7.png",
+        "type": "涂鸦",
+        "description": "“慈善家”专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "祭司-灰影",
+        "img": "./img/pyhjb81lb0iyehwjcp5ytkaag7pc9vq.png",
+        "type": "涂鸦",
+        "description": "祭司专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "冒险家-灰影",
+        "img": "./img/t3qx2tlpmt44a2nuvzgzd5y158wbmya.png",
+        "type": "涂鸦",
+        "description": "冒险家专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "舞女-灰影",
+        "img": "./img/4q1803sdyug773pgdn86fgpwpth4vkv.png",
+        "type": "涂鸦",
+        "description": "舞女专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "幸运儿-灰影",
+        "img": "./img/i13krl5pczjp36ao1ua36gxs59tz07v.png",
+        "type": "涂鸦",
+        "description": "幸运儿专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "祭司-灰化",
+        "img": "./img/bw03ljrop85do39dsi2y0cg29nu2510.png",
+        "type": "涂鸦",
+        "description": "祭司涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-鹿头",
+        "img": "./img/1vulub3m2sbttr4te31zp5yjiya31z9.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-空军",
+        "img": "./img/lrtzbpohsl58r4lyhdknyqw959j6w9y.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-红蝶",
+        "img": "./img/5hec4qvd6g6lvdwgouhmykdk6l4k6zr.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-律师",
+        "img": "./img/qmwjr9rdvlo8mzczf7nhn903a3zgfwl.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      }
+    ]
+  }
+}

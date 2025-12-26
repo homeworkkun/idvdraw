@@ -1,0 +1,84 @@
+{
+  "id": "lucky_dice_38",
+  "name": "幸运之骰·第38期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "银色圣诞": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/rv7ygyadxoygoy0swncf8s2ujk2x1f8.png",
+      "description": "2022“圣诞夜之谜”活动头像框，通过2022圣诞活动首次获得。",
+      "repeat": 200
+    },
+    "圣诞赠礼": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/lhxtzaygdeyrge115fsp9o1qoxi2bby.png",
+      "description": "赠予祝福，交换礼物。被装饰好的圣诞树，见证了许多个人绽放笑容的瞬间。（通过2023年“冬日雪夜之信”活动首次获得）",
+      "repeat": 200
+    },
+    "圣诞舞台": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/o4dm88f1q9efdiy3rt2zkr2w78qvzvc.png",
+      "description": "圣诞夜的舞台上，正热闹地演绎着最温暖的冬日篇章。（2024年“圣夜魔术奇秀”活动首次获得）",
+      "repeat": 200
+    },
+    "魔术兔子": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/gh88z38an4bgyon14srno1mlp92par7.png",
+      "description": "每一个魔术师的礼帽里，都藏着一只可爱的小兔子。（2024年“圣夜魔术奇秀”活动首次获得）",
+      "repeat": 6
+    },
+    "冰雪精灵": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/ntw7188dnvwwgdkpnm96l0hiei341sh.png",
+      "description": "在没有融化的这一夜里，雪人只想陪在你的身边。（通过2023年“冬日雪夜之信”活动首次获得）",
+      "repeat": 6
+    },
+    "圣诞“麋鹿”": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/dweaeltxpzub5oep2qwr2abuqy7wa8v.png",
+      "description": "2022“圣诞夜之谜”活动头像，通过2022圣诞活动首次获得。",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

@@ -1,0 +1,394 @@
+{
+  "id": "S39E1",
+  "name": "第39赛季·精华1",
+  "essenceImage": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+  "diff_A": 1,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [
+    {
+      "name": "-20%",
+      "rate": 0.8,
+      "chance": 0.03
+    },
+    {
+      "name": "-40%",
+      "rate": 0.6,
+      "chance": 0.015
+    }
+  ],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 200,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "薄金",
+        "img": "./img/gnqmtt5zabnjjg7gk2c8ulnl9b3kx3p.png",
+        "type": "时装",
+        "description": "人们将太多野心与欲望投向这冰冷的惰性金属，让它足以颠倒对错，模糊善恶；亦能熔铸荣耀，重构秩序的新章。\n（【限定】时装，仅能在第三十九赛季精华1中获得） ",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "冥契",
+        "img": "./img/hssamdvg5jcv8483oq70jvvegpy1ndm.png",
+        "type": "时装",
+        "description": "过往的罪成为刻入灵魂的伤痕，他将自我放逐，于最黑暗处背负起新的枷锁。 ",
+        "repeat": 1000
+      },
+      {
+        "name": "银锑 ",
+        "img": "./img/nbnyb2p62o9ivxyn25hcox63ah6ggdz.png",
+        "type": "时装",
+        "description": "美丽而洁净的色泽总会给人带来一种安然的错觉，让他们忽略潜藏其中的真正危险。 ",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "巡视守卫",
+        "img": "./img/028x2i03k5wwxrcyzbeeul776pw6a8z.png",
+        "type": "时装",
+        "description": "秩序的实现，源自每一次对规则的执行。 ",
+        "repeat": 200
+      },
+      {
+        "name": "螫针",
+        "img": "./img/5yzz7642b016jnldc9dkjqjl3l3fzbr.png",
+        "type": "时装",
+        "description": "足以致命的螫针让绝大多数来访者都学会了如何保持距离。 ",
+        "repeat": 200
+      },
+      {
+        "name": "银行经理",
+        "img": "./img/5j0wlmer5hml2ry7i3pxngfn1lomdmn.png",
+        "type": "时装",
+        "description": "账簿上的每一笔数字，最终都将被命运清偿。 ",
+        "repeat": 200
+      },
+      {
+        "name": "故事迷",
+        "img": "./img/rwo94aaeg2qe2vrg3edat9xy1bwot6l.png",
+        "type": "时装",
+        "description": "电波满载来自远方的幻想，编织出永不落幕的冒险之梦。 ",
+        "repeat": 200
+      },
+      {
+        "name": "锢影",
+        "img": "./img/8eqbycvfmy5z1mrj73sjkiiz4r7gqos.png",
+        "type": "时装",
+        "description": "影子是无法被禁锢的，他意识到这点后，终于明白了触碰自由的方法。 ",
+        "repeat": 200
+      },
+      {
+        "name": "入殓师-起舞",
+        "img": "./img/73nip7a7kcx0arn2v8y72o5xt153jyc.png",
+        "type": "个性动作",
+        "description": "起舞动作，入殓师专属",
+        "repeat": 200
+      },
+      {
+        "name": "守夜人-行礼",
+        "img": "./img/jvroaff1gx4rz5tt2ke934hrhhs2z5i.png",
+        "type": "个性动作",
+        "description": "行礼动作，守夜人专属",
+        "repeat": 200
+      },
+      {
+        "name": "“使徒”-示威",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "“使徒”专属匹配大厅等待动作，示威",
+        "repeat": 200
+      },
+      {
+        "name": "红夫人-笑颜",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "红夫人专属匹配大厅等待动作，笑颜",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "黑男爵",
+        "img": "./img/ber8uob9bqy4xmxy96jfz5gcav6jnn5.png",
+        "type": "时装",
+        "description": "黑色是为了肃穆，不是为了惊吓",
+        "repeat": 36
+      },
+      {
+        "name": "肃静蓝",
+        "img": "./img/eg6erhmscjhsttd6486vycoccz1svk4.png",
+        "type": "时装",
+        "description": "即使面对死亡，这颜色也能让人平静",
+        "repeat": 36
+      },
+      {
+        "name": "葡萄酒",
+        "img": "./img/q9w5wetz4cetavzu9w9nrur40kke1q0.png",
+        "type": "时装",
+        "description": "表演前的一杯酒有助于保持手部稳定",
+        "repeat": 36
+      },
+      {
+        "name": "墨黑",
+        "img": "./img/oyenkrfu4ncnp13wc0ekqeup3tx2vmh.png",
+        "type": "时装",
+        "description": "深沉的思维会如墨色般浓重。",
+        "repeat": 36
+      },
+      {
+        "name": "青苔",
+        "img": "./img/a6miq035eikt8absz7dmtzn9vo1m5t9.png",
+        "type": "时装",
+        "description": "在荒芜之地蔓延，直至生机取代死气。 ",
+        "repeat": 36
+      },
+      {
+        "name": "休闲黄",
+        "img": "./img/kqtcfxcitxn8402gw219neihyif6g85.png",
+        "type": "时装",
+        "description": "偶尔离开工作岗位，也不可放松对自己的要求",
+        "repeat": 36
+      },
+      {
+        "name": "白糖",
+        "img": "./img/4p022ygil1a8t3duxxocdw3xqc33w99.png",
+        "type": "时装",
+        "description": "他曾经很喜欢糖的甜味，但现在已经没法喜欢了。",
+        "repeat": 36
+      },
+      {
+        "name": "落日黄",
+        "img": "./img/qfmjrxkh2r04po2goh7q4t71rg9tix5.png",
+        "type": "时装",
+        "description": "太阳会落下，我不会。",
+        "repeat": 36
+      },
+      {
+        "name": "紫乌头",
+        "img": "./img/gzyr0uylfhti95h0ay008s4rk0p2ulc.png",
+        "type": "时装",
+        "description": "遇见它而呼吸急促，不是因为它的美丽，而是因为它的毒性。",
+        "repeat": 36
+      },
+      {
+        "name": "绯红",
+        "img": "./img/bdtx7r5ltdni4ecjxoyg32g0nttp185.png",
+        "type": "时装",
+        "description": "最鲜艳的色彩，才能吸引最多的目光",
+        "repeat": 36
+      },
+      {
+        "name": "风度粉",
+        "img": "./img/92f9xpwh7jf0l9m9ejlezlyb42ubzus.png",
+        "type": "时装",
+        "description": "上门送信时，一个微笑能带给人好心情! ",
+        "repeat": 36
+      },
+      {
+        "name": "古董商-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，古董商专属",
+        "repeat": 36
+      },
+      {
+        "name": "入殓师-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，入殓师专属",
+        "repeat": 36
+      },
+      {
+        "name": "杂技演员-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，杂技演员专属",
+        "repeat": 36
+      },
+      {
+        "name": "杂技演员-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，杂技演员专属",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "魔术师匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "“慈善家”匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "空军-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "空军匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "律师-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "律师匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "魔术师匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "摄影师-个性",
+        "img": "./img/5yu4cooh4623zf2qyekj035nv2mtrid.png",
+        "type": "涂鸦",
+        "description": "摄影师专用涂鸦，默默地展示着他的个性宣言 ",
+        "repeat": 36
+      },
+      {
+        "name": "调酒师-个性",
+        "img": "./img/oqzl28puc78re4jay8nfmp9k1gx3oxp.png",
+        "type": "涂鸦",
+        "description": "调酒师专用涂鸦，默默地展示着她的个性宣言 ",
+        "repeat": 36
+      },
+      {
+        "name": "舞女-个性",
+        "img": "./img/a4lll1j4byy2g8mep8nu13gruulddf2.png",
+        "type": "涂鸦",
+        "description": "舞女专用涂鸦，默默地展示着她的个性宣言 ",
+        "repeat": 36
+      },
+      {
+        "name": "宿伞之魂-个性",
+        "img": "./img/kcemljf56pmvl7t811qwtdv3ylq1h2k.png",
+        "type": "涂鸦",
+        "description": "宿伞之魂专用涂鸦，默默地展示着他的个性宣言 ",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-作曲家",
+        "img": "./img/araqsrdh3vm0o0s9jkqthn0fonixoul.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-记者",
+        "img": "./img/mo56p6191t5tje7rxal810a1px2vwr3.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-小说家",
+        "img": "./img/0s2n9o713m6im7k72e144o8mu8g2kut.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "“噩梦”-彩底",
+        "img": "./img/6ojfao69s7all9jenjduu50qlbasn7l.png",
+        "type": "涂鸦",
+        "description": "“噩梦”涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "“小女孩”-彩底",
+        "img": "./img/ohxbvk99s1a1k6y52eb03gmy30hq11u.png",
+        "type": "涂鸦",
+        "description": "“小女孩”涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "病患-彩底",
+        "img": "./img/q268v8m7epo388c70x712n2f9xen6sf.png",
+        "type": "涂鸦",
+        "description": "病患涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "击球手-彩底",
+        "img": "./img/nnfu7jjwh1l586y402htzmy8tbydfhk.png",
+        "type": "涂鸦",
+        "description": "击球手涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "哭泣小丑-彩底",
+        "img": "./img/goq43anxwt16z5l3ro1qje6j94eyr38.png",
+        "type": "涂鸦",
+        "description": "哭泣小丑涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "蜡像师-彩底",
+        "img": "./img/gmdna63sxolutd5vnosx98r8mgcpysp.png",
+        "type": "涂鸦",
+        "description": "蜡像师涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "“心理学家”-彩底",
+        "img": "./img/fti1k0bgdkx21d8emphuhbao00chaok.png",
+        "type": "涂鸦",
+        "description": "“心理学家”涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-勘探员",
+        "img": "./img/g2uii0jfy634bw0oo5aquj5udqs381o.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-咒术师",
+        "img": "./img/fdaczg4zwg1rm9tvz20ts75twtumx04.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-26号守卫",
+        "img": "./img/gzlth0i10fmrfvsgwwgdy5yb9nwwkm4.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-红夫人",
+        "img": "./img/a3d5d7gfcl2bzfufe4q2d3ki7v5gnku.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      }
+    ]
+  }
+}

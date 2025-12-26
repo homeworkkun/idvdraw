@@ -1,0 +1,394 @@
+{
+  "id": "S34E2",
+  "name": "第34赛季·精华2",
+  "essenceImage": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+  "diff_A": 1,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [
+    {
+      "name": "-20%",
+      "rate": 0.8,
+      "chance": 0.03
+    },
+    {
+      "name": "-40%",
+      "rate": 0.6,
+      "chance": 0.015
+    }
+  ],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "灰云",
+        "img": "./img/5ca18u2j8pod41v4pdsxksipqj894c1.png",
+        "type": "时装",
+        "description": "敲击而出的火星引燃了轰鸣的机器，新的光芒替代太阳点亮大地。人们相信，天空上那格外厚重的云层，盖住的不过是旧时代的余晖。\n（【限定】时装，仅能在第三十四赛季精华2中获得） ",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "动力芯",
+        "img": "./img/chn3yddayh455i219rumx1l3smohp8o.png",
+        "type": "时装",
+        "description": "源源不断的燃料供养起永不停歇的机芯，每一条指令都化作流水线中的轰鸣，淹没所有杂音。 ",
+        "repeat": 1000
+      },
+      {
+        "name": "清洁翼",
+        "img": "./img/efdwa1h5l7no593xl0f2uuyb7ou9kjh.png",
+        "type": "时装",
+        "description": "拂过面颊的微风不曾吹动云雾，她将希望寄托在手中透明的薄翼上，期望它能够带她穿过这片灰沉的天际。 ",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "齿轮组",
+        "img": "./img/7pwndmwo6rnfegfwq0a1d03x5u84alq.png",
+        "type": "时装",
+        "description": "齿轮转动着拖曳起钢铁的机体，循环往复，千篇一律。 ",
+        "repeat": 200
+      },
+      {
+        "name": "炉膛",
+        "img": "./img/sg3rrxyf74gnb8dx85y05vpt8qya8vd.png",
+        "type": "时装",
+        "description": "它总是不止息地燃烧，泵出的炽热蒸汽无形无影，却蕴含足以改变世界的力量。 ",
+        "repeat": 200
+      },
+      {
+        "name": "寻花人",
+        "img": "./img/oenhbem600cw38if7vw405dkqctsk1u.png",
+        "type": "时装",
+        "description": "阳光、雨露，她试图寻觅诗歌中描述的那些明媚花影与缤纷色彩，却只触碰到干枯的枝桠。 ",
+        "repeat": 200
+      },
+      {
+        "name": "春之诗",
+        "img": "./img/m9g3n1vwva6onyjo1mcrxc00qodxslz.png",
+        "type": "时装",
+        "description": "他蘸着回忆写下春天的诗，将新绿留于后来人的想象之中。 ",
+        "repeat": 200
+      },
+      {
+        "name": "投资人",
+        "img": "./img/i0av0hgsyiqek6go4pd1npo3zm8xh2z.png",
+        "type": "时装",
+        "description": "他总是伴随着变革到来，然后，站至成功者那边。 ",
+        "repeat": 200
+      },
+      {
+        "name": "红夫人-行礼",
+        "img": "./img/jvroaff1gx4rz5tt2ke934hrhhs2z5i.png",
+        "type": "个性动作",
+        "description": "行礼动作，红夫人专属",
+        "repeat": 200
+      },
+      {
+        "name": "摄影师-行礼",
+        "img": "./img/jvroaff1gx4rz5tt2ke934hrhhs2z5i.png",
+        "type": "个性动作",
+        "description": "行礼动作，摄影师专属 ",
+        "repeat": 200
+      },
+      {
+        "name": "杂技演员-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "杂技演员匹配大厅等待动作，小憩 ",
+        "repeat": 200
+      },
+      {
+        "name": "邮差-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "黯淡红",
+        "img": "./img/7hdwm5tborm6kkxhyfnuy2um1k94biz.png",
+        "type": "时装",
+        "description": "他好像生来属于褪色的背景板，没有人在乎他的心是否也会因为喜悦而跳动。 ",
+        "repeat": 36
+      },
+      {
+        "name": "公正蓝",
+        "img": "./img/2jtr8bebz8ngj2prksihl9naydhq00k.png",
+        "type": "时装",
+        "description": "绝无偏倚，并以自身的意志将其推行到底，这是她最初的信仰。 ",
+        "repeat": 36
+      },
+      {
+        "name": "迷雾棕",
+        "img": "./img/92gvkcxx2fr0k7m22wak0ve10gdaxz2.png",
+        "type": "时装",
+        "description": "迷雾背后是陷阱，但它足够诱惑人心。 ",
+        "repeat": 36
+      },
+      {
+        "name": "鳞片绿",
+        "img": "./img/o5qkzvx62q7eh1sgxm7zoomscpqjqp9.png",
+        "type": "时装",
+        "description": "细小、坚韧的鳞片，来自进化的馈赠，一种自然美学上的意义。 ",
+        "repeat": 36
+      },
+      {
+        "name": "贵族蓝",
+        "img": "./img/cfsczgvpdcoxyq13jp6tgo0rayqvb5d.png",
+        "type": "时装",
+        "description": "优渥的出身也避免不了一些尴尬的处境。 ",
+        "repeat": 36
+      },
+      {
+        "name": "独立褐",
+        "img": "./img/hhtz72h7pbkbb6na6dmmw117h1ylmw1.png",
+        "type": "时装",
+        "description": "启程，绝不退却！ ",
+        "repeat": 36
+      },
+      {
+        "name": "月光蓝",
+        "img": "./img/qadfjklgfrewecls9cx95zmlx70nnt4.png",
+        "type": "时装",
+        "description": "空洞的眼睛散发出月亮的光芒，令人不自觉地心生畏惧。 ",
+        "repeat": 36
+      },
+      {
+        "name": "热烈红",
+        "img": "./img/4vsp1j6yrbjjz6p7m0zl7i0r2ng0ps6.png",
+        "type": "时装",
+        "description": "朝气蓬勃的颜色，正好适合上赛场的时候穿。 ",
+        "repeat": 36
+      },
+      {
+        "name": "感染绿",
+        "img": "./img/rswnqb3rvf4sbn17op9x2qr9pw9r0ly.png",
+        "type": "时装",
+        "description": "日益扩散的不仅是感染，还有恐惧。 ",
+        "repeat": 36
+      },
+      {
+        "name": "月影青",
+        "img": "./img/5ku5nlkrrkg353of5eb7v7y1l4thcyq.png",
+        "type": "时装",
+        "description": "青濛濛的月光，透过作家的窗棂照在那支老旧的白笛上。 ",
+        "repeat": 36
+      },
+      {
+        "name": "初绽杏",
+        "img": "./img/2ykut5na1ge5hdzuq22e92iabru9xue.png",
+        "type": "时装",
+        "description": "杏粉色的花苞······或许有人知道她长大后的样子。",
+        "repeat": 36
+      },
+      {
+        "name": "“心理学家”-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，“心理学家”专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "病患-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，病患专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "作曲家-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，作曲家专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "画家-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，画家专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "前锋匹配大厅动作，小憩 ",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "冒险家匹配大厅动作，准备 ",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "佣兵匹配大厅动作，准备 ",
+        "repeat": 36
+      },
+      {
+        "name": "律师-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "律师匹配大厅动作，准备 ",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "前锋匹配大厅动作，等待 ",
+        "repeat": 36
+      },
+      {
+        "name": "爱哭鬼-卡通",
+        "img": "./img/ej4ltasult404xzdpqp84jzolt61jv3.png",
+        "type": "涂鸦",
+        "description": "爱哭鬼专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "大副-卡通",
+        "img": "./img/buqrfirjahve9r1a54efnz5vnmxox23.png",
+        "type": "涂鸦",
+        "description": "大副专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "调香师-卡通",
+        "img": "./img/5ejb7zkr9sjaxlp3aah7wald7mhsxzh.png",
+        "type": "涂鸦",
+        "description": "调香师专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "宿伞之魂-卡通",
+        "img": "./img/flnxqmuimhn2ky8rz5sflgo48f8e5aw.png",
+        "type": "涂鸦",
+        "description": "宿伞之魂专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-慈善家",
+        "img": "./img/1gv8t1eiq4iqufptpzxthm919xyd7xi.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-牛仔",
+        "img": "./img/4a06lfkgvpguk07xvmgx9gcuvd3eigf.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-舞女",
+        "img": "./img/5oqp11g0lxcrx7s3wgj7he0knylcmkr.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "小提琴家-剪影 ",
+        "img": "./img/4pwjzyq6h2uid6c5t0kzevxx4v37hww.png",
+        "type": "涂鸦",
+        "description": "小提琴家专属涂鸦，剪影 ",
+        "repeat": 6
+      },
+      {
+        "name": "雕刻家-剪影 ",
+        "img": "./img/pqnynifr5cmqini7rztsyan8kpdfpwb.png",
+        "type": "涂鸦",
+        "description": "雕刻家专属涂鸦，剪影 ",
+        "repeat": 6
+      },
+      {
+        "name": "昆虫学者-剪影 ",
+        "img": "./img/jwn2lcyw5nsu7oo7m767kcwj2rbmpf5.png",
+        "type": "涂鸦",
+        "description": "昆虫学者专属涂鸦，剪影 ",
+        "repeat": 6
+      },
+      {
+        "name": "画家-剪影 ",
+        "img": "./img/dutnejbg1h9umj0hgw2pvj37lqdrlgr.png",
+        "type": "涂鸦",
+        "description": "画家专属涂鸦，剪影 ",
+        "repeat": 6
+      },
+      {
+        "name": "“噩梦”-剪影 ",
+        "img": "./img/tipco5iullvmas8ilj6ttfi3fi2yxtl.png",
+        "type": "涂鸦",
+        "description": "“噩梦”专属涂鸦，剪影 ",
+        "repeat": 6
+      },
+      {
+        "name": "爱哭鬼-剪影 ",
+        "img": "./img/auxtjmbongsm2j8477dhhigv3xnisj7.png",
+        "type": "涂鸦",
+        "description": "爱哭鬼专属涂鸦，剪影 ",
+        "repeat": 6
+      },
+      {
+        "name": "“博士”-剪影",
+        "img": "./img/gwb260ptmn7hjdake6c2rncna4uupeg.png",
+        "type": "涂鸦",
+        "description": "“博士”专属涂鸦，剪影 ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-画家",
+        "img": "./img/59y47n6achyelcqplhzi99vknaigvrt.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-昆虫学者",
+        "img": "./img/l2j3px7uldmjng8u0ifpvru50hc7wde.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-使徒",
+        "img": "./img/jjho1uxmve2veppyxcvb8gurkr0kvr6.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-摄影师",
+        "img": "./img/dyzh5d6d623mnqisb0e3nh1ind56u06.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      }
+    ]
+  }
+}

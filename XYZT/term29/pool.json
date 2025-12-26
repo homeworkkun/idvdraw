@@ -1,0 +1,77 @@
+{
+  "id": "lucky_dice_29",
+  "name": "幸运之骰·第29期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "贺元宵": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/o84td2krxh83c4nky8399cuy8oxhg06.png",
+      "description": "赏花灯、望明月、吃汤圆，阖家欢乐过元宵。(通过2021元宵节活动获得) ",
+      "repeat": 200
+    },
+    "拜年啦": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/b2abfjzxi77ymriczuuf5xayom5pc9o.png",
+      "description": "罗比祝你新春大吉！",
+      "repeat": 6
+    },
+    "团团圆圆": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/ijaukn2lxiv5cqwvw50rnvo6edeon0t.png",
+      "description": "人间至味是团圆。(通过2021元宵节活动获得) ",
+      "repeat": 6
+    },
+    "归巢": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/lnq8lvytdquf2k01c1lmrvh33ikj98l.png",
+      "description": "小动物们重回家园后，安心进入沉眠的蛋壳先生（通过2021“重建森林”活动获得） ",
+      "repeat": 6
+    },
+    "祭司-惊鸿": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/3jwenqgxa4zpyhuhewljxbrxwly3o1a.png",
+      "description": "祭司专属涂鸦，神女奏琵琶 ",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

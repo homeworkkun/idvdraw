@@ -1,0 +1,263 @@
+{
+  "id": "S16E1",
+  "name": "约定的梦幻岛联动精华",
+  "essenceImage": "./img/7e94mkqkxvg26m6ska5k786z2xmmvo6.png",
+  "diff_A": 0,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 99
+  },
+  "items": {
+    "S": [
+      {
+        "name": "伊莎贝拉",
+        "img": "./img/de5i51198x6pdsiqac1tfeto1q628g8.png",
+        "type": "时装",
+        "description": "伊莎贝拉的服装\n约定的梦幻岛联动精华限定稀世时装",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "诺曼",
+        "img": "./img/65ntf0q5cxjbrw2lti8dxjj4opigdhh.png",
+        "type": "时装",
+        "description": "诺曼的服装\n约定的梦幻岛联动精华限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "雷",
+        "img": "./img/8ehrosaejgmgqst68wytbn5hix77782.png",
+        "type": "时装",
+        "description": "雷的服装\n约定的梦幻岛联动精华限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "艾玛",
+        "img": "./img/5nhs8mtexh5rvs7orj1gu51zem1h1s2.png",
+        "type": "时装",
+        "description": "艾玛的服装\n约定的梦幻岛联动精华限定奇珍时装",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "小巴尼",
+        "img": "./img/hc1szc8nxe08zjkuvizmtejp0f2gkfl.png",
+        "type": "随身物品",
+        "description": "柯尼的玩偶兔子\n约定的梦幻岛联动精华限定独特随身物品",
+        "repeat": 200
+      },
+      {
+        "name": "纸杯电话",
+        "img": "./img/cunw06ks9ek7s8njb400kyvhev8n1ms.png",
+        "type": "随身物品",
+        "description": "诺曼收藏的纸杯电话\n约定的梦幻岛联动精华限定独特随身物品",
+        "repeat": 200
+      },
+      {
+        "name": "雷的书",
+        "img": "./img/szp5hlv88xzw140hpgudfed0y9ku3av.png",
+        "type": "随身物品",
+        "description": "雷经常阅读的书籍\n约定的梦幻岛联动精华限定独特随身物品",
+        "repeat": 200
+      },
+      {
+        "name": "艾玛的提灯",
+        "img": "./img/gq7zaz4nlxxk3uthho7nqvu3wk8z83p.png",
+        "type": "随身物品",
+        "description": "艾玛使用的提灯\n约定的梦幻岛联动精华限定独特随身物品",
+        "repeat": 200
+      },
+      {
+        "name": "伊莎贝拉的定位器",
+        "img": "./img/ommuqaz7g22s4a6q12tgbipu35ibjn6.png",
+        "type": "随身物品",
+        "description": "伊莎贝拉使用的定位器\n约定的梦幻岛联动精华限定独特随身物品",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "入殓师-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，入殓师专属",
+        "repeat": 36
+      },
+      {
+        "name": "“囚徒”-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，“囚徒”专属",
+        "repeat": 36
+      },
+      {
+        "name": "红夫人-伤脑筋",
+        "img": "./img/pyush3wecg5qlo0bhuo6wpgn74kmpnn.png",
+        "type": "个性动作",
+        "description": "伤脑筋动作，红夫人专属",
+        "repeat": 36
+      },
+      {
+        "name": "园丁-雀跃",
+        "img": "./img/14aafjisvq9co9rseald95vhkcs6u40.png",
+        "type": "个性动作",
+        "description": "雀跃动作，园丁专属",
+        "repeat": 36
+      },
+      {
+        "name": "伊莎贝拉",
+        "img": "./img/tsl6rnoqzcw3tt6lcl9ffomngvr2vs1.png",
+        "type": "涂鸦",
+        "description": "伊莎贝拉的涂鸦(约定的梦幻岛联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "艾玛",
+        "img": "./img/blfmwcnusehdfl97s6tc6h6sn9sdfbh.png",
+        "type": "涂鸦",
+        "description": "艾玛的涂鸦(约定的梦幻岛联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "诺曼",
+        "img": "./img/bg7wbvse3a1xovppwcp9c85qn3r2qmf.png",
+        "type": "涂鸦",
+        "description": "诺曼的涂鸦(约定的梦幻岛联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "雷",
+        "img": "./img/cfdouqz4veehkyzildbdjik5y6ycqz5.png",
+        "type": "涂鸦",
+        "description": "雷的涂鸦(约定的梦幻岛联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "冬",
+        "img": "./img/tm8luisc562yftwle6th19wu7x6zxbi.png",
+        "type": "涂鸦",
+        "description": "冬的涂鸦(约定的梦幻岛联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "吉尔达",
+        "img": "./img/pmmf1av9hkziwjghtushlhba43zswg6.png",
+        "type": "涂鸦",
+        "description": "吉尔达的涂鸦(约定的梦幻岛联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "Truth",
+        "img": "./img/gotx3hcjg9nu15zmp74v6q3qsaai7yk.png",
+        "type": "涂鸦",
+        "description": "密涅瓦的讯息-Truth（约定的梦幻岛联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "Harvest",
+        "img": "./img/07zjenvqwr0qr7le18x5n2hpvvgypp7.png",
+        "type": "涂鸦",
+        "description": "密涅瓦的讯息-Harvest（约定的梦幻岛联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "Run",
+        "img": "./img/b3mpt5b7j0hup6ca3su9ghls9estn99.png",
+        "type": "涂鸦",
+        "description": "密涅瓦的讯息-Run（约定的梦幻岛联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "Danger",
+        "img": "./img/fy5cmyqemzxrinu5a24lmgc1oyqt2lc.png",
+        "type": "涂鸦",
+        "description": "密涅瓦的讯息-Danger（约定的梦幻岛联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "Doubt",
+        "img": "./img/05jv90unj2d4sn7qfg5r59xhg923kd4.png",
+        "type": "涂鸦",
+        "description": "密涅瓦的讯息-Doubt（约定的梦幻岛联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "Monster",
+        "img": "./img/qagu7ruav4eh6ttwl1t8yp6xij71ma5.png",
+        "type": "涂鸦",
+        "description": "密涅瓦的讯息-Monster（约定的梦幻岛联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "Farm",
+        "img": "./img/ld1qlsga89uusc7u4a21hohtndnz52l.png",
+        "type": "涂鸦",
+        "description": "密涅瓦的讯息-Farm（约定的梦幻岛联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "Promise",
+        "img": "./img/0qlu3ywycqfuhupm8benswelzt9i3gt.png",
+        "type": "涂鸦",
+        "description": "密涅瓦的讯息-Promise（约定的梦幻岛联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "伊莎贝拉",
+        "img": "./img/k46j0bbxdakblheyq3q9wtn81b2l2ev.png",
+        "type": "头像",
+        "description": "《约定的梦幻岛》联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "艾玛",
+        "img": "./img/7oqhiuftdstqtv5jwx6bgd2gquiu44i.png",
+        "type": "头像",
+        "description": "《约定的梦幻岛》联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "诺曼",
+        "img": "./img/3w9kq656tpsq6cfr23y9xr1dltgnuuc.png",
+        "type": "头像",
+        "description": "《约定的梦幻岛》联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "雷",
+        "img": "./img/rvxeb2wvhlh1jr5aifp5ffekfqo8iv1.png",
+        "type": "头像",
+        "description": "《约定的梦幻岛》联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "冬",
+        "img": "./img/6tnwoi6uqde6d8txp64naj7x13liy1l.png",
+        "type": "头像",
+        "description": "《约定的梦幻岛》联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "吉尔达",
+        "img": "./img/kv5vpeebrcwstnek81yrlq1ebc1jwsr.png",
+        "type": "头像",
+        "description": "《约定的梦幻岛》联动头像",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

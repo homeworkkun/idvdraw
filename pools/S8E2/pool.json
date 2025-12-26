@@ -1,0 +1,263 @@
+{
+  "id": "S8E2",
+  "name": "女神异闻录5联动精华",
+  "essenceImage": "./img/0na2y8nsjjsrlyq01a0cg6qf3ix36sv.png",
+  "diff_A": 0,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 99
+  },
+  "items": {
+    "S": [
+      {
+        "name": "雨宫莲",
+        "img": "./img/khe3ui9zsvw354s4stja9zp42e4ebgr.png",
+        "type": "时装",
+        "description": "秀尽学园二年级生-雨宫莲的校服\nPersona5联动精华限定稀世时装",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "坂本龙司",
+        "img": "./img/po49jaj5x5xca1z8wud699u7hzs1dcw.png",
+        "type": "时装",
+        "description": "秀尽学园二年级生-坂本龙司的校服\nPersona5联动精华限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "高卷杏",
+        "img": "./img/rrigxpmra0h1adg7gg0pf36s7sg3sw4.png",
+        "type": "时装",
+        "description": "秀尽学园二年级生-高卷杏的校服\nPersona5联动精华限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "喜多川祐介",
+        "img": "./img/67lgreok2yb4jpfq2ssrihc14ygm7uy.png",
+        "type": "时装",
+        "description": "洸星高校美术科的二年级喜多川祐介的校服\nPersona5联动精华限定奇珍时装",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "反抗之魂",
+        "img": "./img/s78pe1y1oni0lehwqow3abtyz5j4b4f.png",
+        "type": "升级道具",
+        "description": "用于自我觉醒的灵魂碎片。",
+        "repeat": 0
+      },
+      {
+        "name": "JOKER的匕首",
+        "img": "./img/fgwkz4c4rbzlgduekmtldfa7zzd91f0.png",
+        "type": "随身物品",
+        "description": "黑色的飞刀\nPersona5联动精华限定独特随身物品",
+        "repeat": 200
+      },
+      {
+        "name": "SKULL的枪",
+        "img": "./img/g2ilu3w6dxrcfzhj87kauaidpc595ba.png",
+        "type": "随身物品",
+        "description": "火力强劲的枪械\nPersona5联动精华限定独特随身物品",
+        "repeat": 200
+      },
+      {
+        "name": "PANTHER的鞭子",
+        "img": "./img/rz3b6i3g3ksdbhi5dpfk9avd162rrru.png",
+        "type": "随身物品",
+        "description": "强韧的鞭子\nPersona5联动精华限定独特随身物品",
+        "repeat": 200
+      },
+      {
+        "name": "FOX的日本刀",
+        "img": "./img/seow13cyruzay9jw3do5jet5hwhyh3v.png",
+        "type": "随身物品",
+        "description": "锋利的日本刀\nPersona5联动精华限定独特随身物品",
+        "repeat": 200
+      },
+      {
+        "name": "舞女-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "舞女匹配大厅动作，小憩",
+        "repeat": 200
+      },
+      {
+        "name": "入殓师-起身",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "入殓师匹配大厅动作，起身",
+        "repeat": 200
+      },
+      {
+        "name": "杂技演员-思考",
+        "img": "./img/9w0hgbw9z6cavg3kt29e8rqk17zggwl.png",
+        "type": "个性动作",
+        "description": "思考，杂技演员专属动作",
+        "repeat": 200
+      },
+      {
+        "name": "前锋-放松",
+        "img": "./img/ltozj1b5a80naw8vyk9uc6m00h5zszu.png",
+        "type": "个性动作",
+        "description": "放松，前锋专属动作",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "心之怪盗-JOKER",
+        "img": "./img/a8m7ht4jmm0i6jfz4lmcdnszstajr9y.png",
+        "type": "涂鸦",
+        "description": "P5联动杂技演员专属涂鸦(女神异闻录5联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "心之怪盗-SKULL",
+        "img": "./img/1tltxu7y2uz4cc138gqlkuqc62xl8z0.png",
+        "type": "涂鸦",
+        "description": "P5联动前锋专属涂鸦(女神异闻录5联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "心之怪盗-PANTHER",
+        "img": "./img/qj56xkgdmryp0ed1cf43yoepcuq72ob.png",
+        "type": "涂鸦",
+        "description": "P5联动舞女专属涂鸦(女神异闻录5联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "心之怪盗-FOX",
+        "img": "./img/dcf9xx67mark3y92icfxlsk09ri3gdl.png",
+        "type": "涂鸦",
+        "description": "P5联动入殓师专属涂鸦(女神异闻录5联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "心之怪盗-MORGANA",
+        "img": "./img/p0c60fvwqbez23tcduorgdp0a7c7xb1.png",
+        "type": "涂鸦",
+        "description": "P5联动涂鸦(女神异闻录5联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "心之怪盗-预告信",
+        "img": "./img/586cbrxiyl9ig33lhum9v2fyaoprud9.png",
+        "type": "涂鸦",
+        "description": "P5联动涂鸦(女神异闻录5联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "TAKE YOUR HEART Ⅰ",
+        "img": "./img/gmmpqgzs7xcuey0gu9uwbm7jgjhak2x.png",
+        "type": "涂鸦",
+        "description": "P5联动涂鸦(女神异闻录5联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "TAKE YOUR HEART Ⅱ",
+        "img": "./img/lnswkp0j5dmc0jpxiufq6606qcj2kev.png",
+        "type": "涂鸦",
+        "description": "P5联动涂鸦(女神异闻录5联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "PERSONA 5",
+        "img": "./img/p7semka6hzwnpbvpsxmkgoy8uq46142.png",
+        "type": "涂鸦",
+        "description": "P5联动涂鸦(女神异闻录5联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "雨宫莲",
+        "img": "./img/p7fnm3b2e57p2g8hzeqqhv53f6wov0x.png",
+        "type": "头像",
+        "description": "私立秀尽学园二年级生",
+        "repeat": 36
+      },
+      {
+        "name": "坂本龙司",
+        "img": "./img/kclfe7ob52zr3q5uwd687icyr8wqpid.png",
+        "type": "头像",
+        "description": "私立秀尽学园二年级生",
+        "repeat": 36
+      },
+      {
+        "name": "高卷杏",
+        "img": "./img/oh3vjauo7iqob9ze11hk8bcq35mbiib.png",
+        "type": "头像",
+        "description": "私立秀尽学园二年级生",
+        "repeat": 36
+      },
+      {
+        "name": "喜多川祐介",
+        "img": "./img/sz38xqcgjn83l5im8ppaywkw82p8wzc.png",
+        "type": "头像",
+        "description": "私立秀尽学园二年级生",
+        "repeat": 36
+      },
+      {
+        "name": "摩尔加纳",
+        "img": "./img/2u5yrj0cut4t6yr0o9r4pc6opg4s0z7.png",
+        "type": "头像",
+        "description": "并不是一只普通的猫",
+        "repeat": 36
+      },
+      {
+        "name": "海报-JOKER",
+        "img": "./img/381gr6mgrxcyqrkqn2yzcr32buvvxuc.png",
+        "type": "归宿家具",
+        "description": "JOKER的海报，《PERSONA 5》联动限定",
+        "repeat": 36
+      },
+      {
+        "name": "海报-SKULL",
+        "img": "./img/93gievjbw3tp0q7w2yi34g81hyrvscv.png",
+        "type": "归宿家具",
+        "description": "SKULL的海报，《PERSONA 5》联动限定",
+        "repeat": 36
+      },
+      {
+        "name": "海报-PANTHER",
+        "img": "./img/34vx8524jozlw6bp67c89o13ih6vfbi.png",
+        "type": "归宿家具",
+        "description": "PANTHER的海报，《PERSONA 5》联动限定",
+        "repeat": 36
+      },
+      {
+        "name": "海报-FOX",
+        "img": "./img/1njx2vzztrxsaxhtr2kskygrp7c4nlg.png",
+        "type": "归宿家具",
+        "description": "FOX的海报，《PERSONA 5》联动限定",
+        "repeat": 36
+      },
+      {
+        "name": "海报-PERSONA 5",
+        "img": "./img/4dzhc8noyzsvh96sbkpit9me1h9o8en.png",
+        "type": "归宿家具",
+        "description": "PERSONA 5的海报，《PERSONA 5》联动限定",
+        "repeat": 36
+      },
+      {
+        "name": "海报-MORGANA",
+        "img": "./img/iwmkslbiabdsay9rm3m64szqkkswlr9.png",
+        "type": "归宿家具",
+        "description": "MORGANA的海报，《PERSONA 5》联动限定",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

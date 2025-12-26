@@ -1,0 +1,77 @@
+{
+  "id": "lucky_dice_25",
+  "name": "幸运之骰·第25期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "秋日思绪": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/r4sczq9sjphb88fjtrdpkormlrpwqla.png",
+      "description": "一个枫叶色彩的季节，总能给人许多灵感和启发。(通过2021年“库特的奇幻之旅”活动首次获得) ",
+      "repeat": 200
+    },
+    "镂月": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/73jfchg0nwsoy6gdsgnx6q9dxdqqi6e.png",
+      "description": "镂月残云。(通过2021年“祭月之约”活动首次获得) ",
+      "repeat": 200
+    },
+    "想要玩偶吗？": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/i4q92x9tnugyseb46eyi8uan71ed1x5.png",
+      "description": "诡异的童谣声中，是万灵的烛光夜宴。（2020年万圣节礼包购买首次获得） ",
+      "repeat": 6
+    },
+    "石中剑的选择": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/3jrupno3n5a6mo3uojhclvu2u4dgfza.png",
+      "description": "前锋石中剑的选择涂鸦，2020年永恒之森活动专属 ",
+      "repeat": 6
+    },
+    "净化的代价": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/4qihqp95mvqryqlkqr8no19s8vez5t6.png",
+      "description": "爱哭鬼净化的代价涂鸦，2020年永恒之森活动专属 ",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

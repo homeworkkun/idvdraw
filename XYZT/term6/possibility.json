@@ -1,0 +1,84 @@
+{
+  "tiers": [
+    {
+      "id": "frame",
+      "name": "头像框",
+      "probability": 0.0149,
+      "items": [
+        {
+          "name": "Line Friends",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "id": "avatar",
+      "name": "头像",
+      "probability": 0.0896,
+      "items": [
+        {
+          "name": "Cony头像",
+          "weight": 1.0
+        },
+        {
+          "name": "Leonard头像",
+          "weight": 1.0
+        },
+        {
+          "name": "Moon头像",
+          "weight": 1.0
+        },
+        {
+          "name": "Sally头像",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "id": "tuya",
+      "name": "涂鸦",
+      "probability": 0.2985,
+      "items": [
+        {
+          "name": "Brown涂鸦",
+          "weight": 1.0
+        },
+        {
+          "name": "Choco涂鸦",
+          "weight": 1.0
+        },
+        {
+          "name": "Moon涂鸦",
+          "weight": 1.0
+        },
+        {
+          "name": "Leonard涂鸦",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "id": "tiyanka",
+      "name": "体验卡",
+      "probability": 0.597,
+      "items": [
+        {
+          "name": "通用奇珍时装体验卡*1天",
+          "weight": 1.0
+        },
+        {
+          "name": "监管者角色体验卡*1天",
+          "weight": 1.0
+        },
+        {
+          "name": "求生者角色体验卡*1天",
+          "weight": 1.0
+        },
+        {
+          "name": "通用独特时装体验卡*1天",
+          "weight": 1.0
+        }
+      ]
+    }
+  ]
+}

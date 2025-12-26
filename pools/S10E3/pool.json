@@ -1,0 +1,326 @@
+{
+  "id": "S10E3",
+  "name": "深渊珍宝Ⅲ",
+  "essenceImage": "./img/ogl07j11ycqz93m6x7njvs0g8vbh9bj.png",
+  "diff_A": 0,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "异界行者",
+        "img": "./img/6ssr541jlnx991il8rnikyqnk34rv28.png",
+        "type": "时装",
+        "description": "皮克曼不过是将在异界窥见的一隅作为素材，就赢来了妄人们竞相追捧。当发现恶之花身上日渐严重的侵蚀只能转移而无法消弭时，他选择让自己成为容器。但谁又能代替他，成为皮克曼的模特呢？\n深渊珍宝Ⅲ限定稀世时装",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "人偶师",
+        "img": "./img/l9fmffxv6nrl1r8etvsik57o95huw2w.png",
+        "type": "时装",
+        "description": "她一直无法理解调查局封锁深渊之谜的行事准则，直到异界行者的存在让她真正意识到一切曝光于众的灾难。但深渊总会找到彰显存在的方式，就在她终于愿意挺身而出的时候……\n深渊珍宝Ⅲ限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "教鞭",
+        "img": "./img/93et2wfh7cxya6pz8jaa34o4a57b5h8.png",
+        "type": "时装",
+        "description": "站在彼端的出口，老手授予新人的最后一课，竟然是选择：代为承受一切独自留下，还是接受惨痛的代价而离开。无论哪种选择，都让自己与异界行者更近了一分。\n深渊珍宝Ⅲ限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "嬉命人",
+        "img": "./img/k8sol0ubnneqzr8g3r048iymt1wl3mz.png",
+        "type": "时装",
+        "description": "嬉命人尽力维系调查员的思维不受侵蚀，是为了让这些手握深渊造物的人在黑暗之路上，尚能亦步亦趋地前行。但他嬉弄人心的误传，终于还是在人偶师的身上应验了。\n深渊珍宝Ⅲ限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "观测者",
+        "img": "./img/hqlxpiurmkfln8t8rnng4gxqpirkpsp.png",
+        "type": "时装",
+        "description": "崇拜者称之为异界，反抗者称之为深渊。在观测者眼里，这就是不可名状者对人心的影响。让崇拜者得势，让反抗者畏惧。而通过艺术侵蚀思维，镌刻肉体，只是它们另一种余兴的儿戏。\n深渊珍宝Ⅲ限定奇珍时装",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "保镖",
+        "img": "./img/au27fdadrt8rhywa1p1herb5hrrf56j.png",
+        "type": "时装",
+        "description": "他从不认为自己和伙伴的粗鄙需要改变，直到他在恶之花的面前自惭形秽。但异界行者则指明一切陈腐的规则和偏见，将被打碎、重塑。而更美的升华，绝不能作为秘密被独占。\n深渊珍宝Ⅲ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "碎裂瓷人",
+        "img": "./img/atqtjpfg2ju9pcgqp283mmqjtyvp3ra.png",
+        "type": "时装",
+        "description": "远东的瓷人在失踪许久后重现在拍卖会上。上面附着的凶暴灵魂仿佛是从另一个异界而来。妄人们因此认定皮克曼的艺术已经超越了造物的维度－－那是一种打通异界的能力。\n深渊珍宝Ⅲ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "接线员",
+        "img": "./img/ofd20pllj4zyas4vdf2j5qvoexvlbx0.png",
+        "type": "时装",
+        "description": "只有深渊才能对抗深渊——当遥远雪域的争端波及而来时，她终于意识到这不过是另一个妄想。“调查员终将被手中的造物吞噬。”她为同伴们传达了无数的讯息，却始终无法指出这个终局。\n深渊珍宝Ⅲ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "拍卖师",
+        "img": "./img/g4z33izcq9hwsz88tsf6i7e57gyalgo.png",
+        "type": "时装",
+        "description": "他没想到被嘲笑为只懂模仿的皮克曼，能将自己复刻的能力在异界之物上大放异彩。作为最狂热的推崇者，拍卖师选择将异界行者的作品不断扩散，让深渊的华美与新奇绽放到整个世界。\n深渊珍宝Ⅲ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "补丁",
+        "img": "./img/j4m4hmk3cmyf3hl80k5n6b1sdyue7lx.png",
+        "type": "时装",
+        "description": "调查局对待残伤者的态度就是淘汰。深渊造成的伤口不会愈合，它只会被更加冷酷，更难以忍受的异物所替代。因侵蚀而丧失自我不是他的选择，却是很多背叛者的悲惨命途。\n深渊珍宝Ⅲ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "杂技演员-起舞",
+        "img": "./img/73nip7a7kcx0arn2v8y72o5xt153jyc.png",
+        "type": "个性动作",
+        "description": "起舞动作，杂技演员专属",
+        "repeat": 200
+      },
+      {
+        "name": "野人-起舞",
+        "img": "./img/73nip7a7kcx0arn2v8y72o5xt153jyc.png",
+        "type": "个性动作",
+        "description": "起舞动作，野人专属",
+        "repeat": 200
+      },
+      {
+        "name": "大副-起舞",
+        "img": "./img/73nip7a7kcx0arn2v8y72o5xt153jyc.png",
+        "type": "个性动作",
+        "description": "起舞动作，大副专属",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "枯草黄",
+        "img": "./img/ias300850a033hlgid6x3x3xglanb1u.png",
+        "type": "时装",
+        "description": "枯黄的草原是野火燃烧的温床。",
+        "repeat": 36
+      },
+      {
+        "name": "朱褐石",
+        "img": "./img/p7slx0b0lj7llm2qprii2y0p12eehhm.png",
+        "type": "时装",
+        "description": "产自地下矿物的颜料，有着一种独特的厚重感。",
+        "repeat": 36
+      },
+      {
+        "name": "花紫",
+        "img": "./img/7hiw8hxz4n33sj5m83axz128jdg68a0.png",
+        "type": "时装",
+        "description": "如果演出服只有一种紫色，一定会觉得非常无趣！",
+        "repeat": 36
+      },
+      {
+        "name": "帆布白",
+        "img": "./img/il8v0r2q1u28bq5idorvtp8p2sodpfz.png",
+        "type": "时装",
+        "description": "出航之初的白帆，在归来时又会变成什么颜色呢?",
+        "repeat": 36
+      },
+      {
+        "name": "大麦酒",
+        "img": "./img/n5gcwz0z7amv0lzm50bkxfu82apfjnz.png",
+        "type": "时装",
+        "description": "麦芽酿制的褐色，是健康甘醇的象征",
+        "repeat": 36
+      },
+      {
+        "name": "蓝香橙",
+        "img": "./img/8me5j4thp23bc1j3psel1n41i6d3h9f.png",
+        "type": "时装",
+        "description": "这可是一种带有纯正果味儿的利口酒！",
+        "repeat": 36
+      },
+      {
+        "name": "湖蓝漆",
+        "img": "./img/ngvvvagd8iingc2hrk5zgucik2prhyy.png",
+        "type": "时装",
+        "description": "别误会，它只是换了一个冷色涂装，并没有降低半点热情。",
+        "repeat": 36
+      },
+      {
+        "name": "紫钢",
+        "img": "./img/8wo06b7hmdqsojs13m4fjn098bow2v0.png",
+        "type": "时装",
+        "description": "邦邦升级了紫色的外饰，很高兴再次认识你!",
+        "repeat": 36
+      },
+      {
+        "name": "咒术师-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，咒术师专属",
+        "repeat": 36
+      },
+      {
+        "name": "勘探员-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，勘探员专属",
+        "repeat": 36
+      },
+      {
+        "name": "咒术师-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，咒术师专属",
+        "repeat": 36
+      },
+      {
+        "name": "勘探员-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，勘探员专属",
+        "repeat": 36
+      },
+      {
+        "name": "入殓师-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，入殓师专属",
+        "repeat": 36
+      },
+      {
+        "name": "先知-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，先知专属",
+        "repeat": 36
+      },
+      {
+        "name": "小丑-异界行者",
+        "img": "./img/stpb9v76dnucb9uibzofd7gnar2pegs.png",
+        "type": "涂鸦",
+        "description": "小丑专属涂鸦，异界行者",
+        "repeat": 36
+      },
+      {
+        "name": "机械师-人偶师",
+        "img": "./img/26ahvvptmasl44e73z9seq4pv2ckbxs.png",
+        "type": "涂鸦",
+        "description": "机械师专属涂鸦，人偶师",
+        "repeat": 36
+      },
+      {
+        "name": "牛仔-教鞭",
+        "img": "./img/ikwhi6jhpjtoj64oabowu4q9ii38pa2.png",
+        "type": "涂鸦",
+        "description": "牛仔专属涂鸦，教鞭",
+        "repeat": 36
+      },
+      {
+        "name": "入殓师-嬉命人",
+        "img": "./img/jmoaykaujyefco8z2pvkzql0rikykas.png",
+        "type": "涂鸦",
+        "description": "入殓师专属涂鸦，嬉命人",
+        "repeat": 36
+      },
+      {
+        "name": "舞女-恶之花",
+        "img": "./img/38gsxv6trf8re44bn3tcyq29rr7gbk8.png",
+        "type": "涂鸦",
+        "description": "舞女专属涂鸦，恶之花",
+        "repeat": 36
+      },
+      {
+        "name": "摄影师-拍卖师",
+        "img": "./img/glsgrw5p8yvw00j6vnlpk50pbqi44vk.png",
+        "type": "涂鸦",
+        "description": "摄影师专属涂鸦，拍卖师",
+        "repeat": 36
+      },
+      {
+        "name": "先知-观测者",
+        "img": "./img/ld6ekeeka0shoygnzzvppd9wq8yv23v.png",
+        "type": "涂鸦",
+        "description": "先知专属涂鸦，观测者",
+        "repeat": 36
+      },
+      {
+        "name": "祭司-另一面",
+        "img": "./img/jqgyk5gj4jvl5n6bc4q0bz3ido4urgw.png",
+        "type": "头像",
+        "description": "祭司的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "牛仔-另一面",
+        "img": "./img/bkv9fb7nsrfydf3u8pxlzvji3nxb4d8.png",
+        "type": "头像",
+        "description": "牛仔的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "调香师-另一面",
+        "img": "./img/m1qqlvf488ry9z64jpgmakq1p5qs1ve.png",
+        "type": "头像",
+        "description": "调香师的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "幸运儿-另一面",
+        "img": "./img/p10idg3yk2sjs9706zatl599t3qgu4n.png",
+        "type": "头像",
+        "description": "幸运儿的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "红蝶-另一面",
+        "img": "./img/4rpgka2ogvam4bhpb0irphbxn3ny6er.png",
+        "type": "头像",
+        "description": "红蝶的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "蜘蛛-另一面",
+        "img": "./img/i6s4hyrbcdo407tovbws0ogidc0bx30.png",
+        "type": "头像",
+        "description": "蜘蛛的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "宿伞之魂-另一面",
+        "img": "./img/8aghg7zysf9bp4h8nvd7rapw9jooqfb.png",
+        "type": "头像",
+        "description": "宿伞之魂的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "黄衣之主-另一面",
+        "img": "./img/i83owa0rtgdqzrnzu0eyisqs36o7xel.png",
+        "type": "头像",
+        "description": "黄衣之主的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

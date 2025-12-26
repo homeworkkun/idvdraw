@@ -1,0 +1,380 @@
+{
+  "id": "S19E2",
+  "name": "第19赛季·精华2",
+  "essenceImage": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+  "diff_A": 2,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [
+    {
+      "name": "-20%",
+      "rate": 0.8,
+      "chance": 0.03
+    },
+    {
+      "name": "-40%",
+      "rate": 0.6,
+      "chance": 0.015
+    }
+  ],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "怒火",
+        "img": "./img/bevsw4vp0y1dicrru0dbz971cza6c89.png",
+        "type": "时装",
+        "description": "他有一个巨大的柜子，里面陈列的是他熊熊烈火焚烧后，被静止的美好。\n（【限定】时装，仅能在第十九赛季精华2中获得）",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "女高音",
+        "img": "./img/1strp3hvcutepwmt4v128nrgvrcm6m9.png",
+        "type": "时装",
+        "description": "她原本不应该被放置在这里，是那一场完美的婚礼，唤醒了世俗之心对至纯美好的向往，她的灵魂难以再拥有更纯粹的时刻，所以她被停留在了这一瞬间。",
+        "repeat": 1000
+      },
+      {
+        "name": "“苏珊娜”",
+        "img": "./img/fsmwhzcsn03txlp54em6k4nlzpuxizp.png",
+        "type": "时装",
+        "description": "她是那场婚礼后被放置在最中间位置的珍品，是世间热烈且义无反顾的爱，在烈火的雕琢后，得到了永恒的圣洁。",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "第四幕",
+        "img": "./img/lcle9otwmbi75xx60hxbytj4po6kpvd.png",
+        "type": "时装",
+        "description": "是结束，也是新的开始，第四幕是永恒的篇章。",
+        "repeat": 200
+      },
+      {
+        "name": "夙愿",
+        "img": "./img/i7xiedkskcxs960f211853fr5ysgal0.png",
+        "type": "时装",
+        "description": "她一直有一个美好的愿望，直到亲眼见证，她心甘情愿永远被留在这一刻。",
+        "repeat": 200
+      },
+      {
+        "name": "欢庆之人",
+        "img": "./img/b95jkwl2g8khlxr5dgv5a5iu0gz2b64.png",
+        "type": "时装",
+        "description": "他是那场婚礼中看起来最愉悦的参与者，也被放置在人群中显眼的位置。",
+        "repeat": 200
+      },
+      {
+        "name": "嘉宾",
+        "img": "./img/4m6eta3jhgexfgp2uft6te3n5dy77bx.png",
+        "type": "时装",
+        "description": "他安静而专注的眼神，为婚礼添加了一份神圣感，是一位难得的珍藏品。",
+        "repeat": 200
+      },
+      {
+        "name": "歌曲",
+        "img": "./img/dtd416ylqsl8p6shxb0xn149xdpzvzn.png",
+        "type": "时装",
+        "description": "每当那个叫“婚礼”的展示柜被打开的时候，美妙的歌曲就会被奏响，回到那个永恒完美的瞬间。",
+        "repeat": 200
+      },
+      {
+        "name": "画家-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "画家匹配大厅等待动作，小憩",
+        "repeat": 200
+      },
+      {
+        "name": "破轮-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "破轮专属匹配大厅等待动作，小憩",
+        "repeat": 200
+      },
+      {
+        "name": "玩具商-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "玩具商匹配大厅等待动作，小憩",
+        "repeat": 200
+      },
+      {
+        "name": "雕刻家-拜访",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "雕刻家专属匹配大厅等待动作，拜访，求生者可见",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "低调黄",
+        "img": "./img/ij85yvnteia311xcfqrwmq384yfywsu.png",
+        "type": "时装",
+        "description": "做好隐藏，保持低调！",
+        "repeat": 36
+      },
+      {
+        "name": "平和黄",
+        "img": "./img/1682tf3k42gdhz2ecca1jnnjee0andj.png",
+        "type": "时装",
+        "description": "见多了生死，内心也变得波澜不惊了。",
+        "repeat": 36
+      },
+      {
+        "name": "紫曲",
+        "img": "./img/rruav0vib5nw3f2so8r8tu32x3kqton.png",
+        "type": "时装",
+        "description": "伴随舞曲悦动的紫色身影，令人迷醉。",
+        "repeat": 36
+      },
+      {
+        "name": "黄泥沙",
+        "img": "./img/ah13wmqri9ldb0cnk33non8pqsntpei.png",
+        "type": "时装",
+        "description": "这件衣服不容易脏，至少看上去如此",
+        "repeat": 36
+      },
+      {
+        "name": "蓝水母",
+        "img": "./img/tgu7it6omp7rfc7g91dvwdn465g4fzg.png",
+        "type": "时装",
+        "description": "水母看似轻盈，贸然触碰可是会受伤的哦。",
+        "repeat": 36
+      },
+      {
+        "name": "绿面包",
+        "img": "./img/a2gkedvsreg54e4e3d84brzij5xxbaq.png",
+        "type": "时装",
+        "description": "发绿的面包能吃吗?对在里面的人这不是个问题。",
+        "repeat": 36
+      },
+      {
+        "name": "红枫叶",
+        "img": "./img/fcu4842enarh72y1nejafqzzbpt69hk.png",
+        "type": "时装",
+        "description": "枫叶变红，秋意转浓",
+        "repeat": 36
+      },
+      {
+        "name": "黑桅杆",
+        "img": "./img/h4qb3kdn7sdlxkpjy8r5hjg7z24lj0u.png",
+        "type": "时装",
+        "description": "坚固笔直的桅杆，传递胜利的讯息。",
+        "repeat": 36
+      },
+      {
+        "name": "绛月红",
+        "img": "./img/gepmnsu209s5sbj4xkhoxj5ycoipo1i.png",
+        "type": "时装",
+        "description": "在红月的照射下，她完成了人生的蜕变。",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，佣兵专属",
+        "repeat": 36
+      },
+      {
+        "name": "空军-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，空军专属",
+        "repeat": 36
+      },
+      {
+        "name": "先知-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，先知专属",
+        "repeat": 36
+      },
+      {
+        "name": "舞女-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，舞女专属",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "前锋匹配大厅动作，小憩 ",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "冒险家匹配大厅动作，准备 ",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "佣兵匹配大厅动作，准备 ",
+        "repeat": 36
+      },
+      {
+        "name": "律师-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "律师匹配大厅动作，准备 ",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "前锋匹配大厅动作，等待 ",
+        "repeat": 36
+      },
+      {
+        "name": "机械师遥控器-卡通",
+        "img": "./img/a83m1leq93voqjck6lcu4m6nwyhj2pc.png",
+        "type": "涂鸦",
+        "description": "机械师专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵兜帽-卡通",
+        "img": "./img/mp9vg1ro58g8ru73gihoxf1u0skalam.png",
+        "type": "涂鸦",
+        "description": "佣兵专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "鹿头号角-卡通",
+        "img": "./img/r20b9jpd5s9dmcclmkrl6i0qi2t8t8p.png",
+        "type": "涂鸦",
+        "description": "鹿头专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "“杰克”爪子-卡通",
+        "img": "./img/5sf9hxdgp9ygb3nltjcxxxgnwrhudkl.png",
+        "type": "涂鸦",
+        "description": "“杰克”专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-慈善家",
+        "img": "./img/1gv8t1eiq4iqufptpzxthm919xyd7xi.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-牛仔",
+        "img": "./img/4a06lfkgvpguk07xvmgx9gcuvd3eigf.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-舞女",
+        "img": "./img/5oqp11g0lxcrx7s3wgj7he0knylcmkr.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "入殓师-剪影",
+        "img": "./img/cvh3icscuevpr2r5t2i3xt7j3tqqy0j.png",
+        "type": "涂鸦",
+        "description": "入殓师专属涂鸦，剪影 ",
+        "repeat": 6
+      },
+      {
+        "name": "梦之女巫-剪影",
+        "img": "./img/hv7xfpum6vmac93chwba40jyi0cppnz.png",
+        "type": "涂鸦",
+        "description": "梦之女巫专属涂鸦，剪影 ",
+        "repeat": 6
+      },
+      {
+        "name": "咒术师-灰影",
+        "img": "./img/b68jgt0eh0nj559tr9qvet3dle4wycr.png",
+        "type": "涂鸦",
+        "description": "咒术师专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "孽蜥-萌版",
+        "img": "./img/1xhce06igyhpqosoqblim0fp04qdk3m.png",
+        "type": "涂鸦",
+        "description": "孽蜥专用涂鸦，萌版",
+        "repeat": 6
+      },
+      {
+        "name": "邮差信件-卡通",
+        "img": "./img/7ixfimam6o37i9lygff02kefsxtqpoj.png",
+        "type": "涂鸦",
+        "description": "邮差专属涂鸦，卡通",
+        "repeat": 6
+      },
+      {
+        "name": "杂技演员-灰影",
+        "img": "./img/h0reo8jayg028xc9bfkvr4osgwq76lw.png",
+        "type": "涂鸦",
+        "description": "杂技演员专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "26号守卫-剪影",
+        "img": "./img/f5dd0xinxrehrf18yks7b9cjj9rvryi.png",
+        "type": "涂鸦",
+        "description": "26号守卫专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-宿伞之魂",
+        "img": "./img/mqscbmmwaia9atwoqtjvz0dufz4f255.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-盲女",
+        "img": "./img/sn6zruwhm2t5uvoczol1gueqvf2nscn.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-佣兵",
+        "img": "./img/o6dzi2cutjm7o4svmce6pe90iw3n96h.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-机械师",
+        "img": "./img/lyqjoeqnmm60eo8pg7ss8e166onakq9.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      }
+    ]
+  }
+}

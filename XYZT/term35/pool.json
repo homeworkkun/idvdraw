@@ -1,0 +1,84 @@
+{
+  "id": "lucky_dice_35",
+  "name": "幸运之骰·第35期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "“甜蜜之夜”": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/plvvzmvn7jgzxpm8x5lyz4b89btx8d0.png",
+      "description": "甜蜜的食物，嗯，是力量。（2024年“万灵的巡游”活动首次获得） ",
+      "repeat": 200
+    },
+    "“捣蛋鬼”": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/qamrlsue7yi605tlmcu8ex5ghyo2v1y.png",
+      "description": "埋伏在阴影中，然后……喵！（通过2023“子夜嘉年华”活动首次获得）",
+      "repeat": 200
+    },
+    "月夜小恶魔": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/rfwe2zbontedvuhw9kjsgrairszmgo6.png",
+      "description": "月夜之下，嘘，小心。(通过2022“暮色之宴”活动首次获得） ",
+      "repeat": 200
+    },
+    "嘘！": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/jgies4uksvws98g4utmwi5tpb72dcwu.png",
+      "description": "嘘！门外有什么正在经过……（2024年“万灵的巡游”活动首次获得） ",
+      "repeat": 6
+    },
+    "帷幕之下": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/7c9oswdd2e1amjisiq1d5c34736a3w9.png",
+      "description": "每个舞台的帷幕之下，总是有许多不会被观众发现的秘密。（通过2023“子夜嘉年华”活动首次获得) ",
+      "repeat": 6
+    },
+    "茶会邀请": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/b2cdkaz6wjxcbiyjcjvb25hx0j0u7u2.png",
+      "description": "要来参加我的茶话会么?(通过2022“暮色之宴”活动首次获得) ",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

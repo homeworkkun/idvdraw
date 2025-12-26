@@ -1,0 +1,95 @@
+{
+  "id": "jianyingxunbao12",
+  "name": "鉴影寻宝第12期",
+  "description": "火漆消耗型池子",
+  "essenceImage": "./img/3f3i38wu76650y7q771dg6z89cwew3v.png",
+  "pitySettings": {
+    "gold": 80,
+    "purple": 80,
+    "blue": 80
+  },
+  "items": {
+    "A": [
+      {
+        "name": "辉锑矿",
+        "type": "时装",
+        "img": "./img/rb9y5bquyxpaioradywwv86yh5chikd.png",
+        "description": "高贵的金属隐匿于石内，熔炉沸腾着咆哮，诘问其何时展露真正的光辉。 "
+      },
+      {
+        "name": "安宁",
+        "type": "时装",
+        "img": "./img/nsyayfc9tjkemapwwzcvvpm9hb3uzbp.png",
+        "description": "安宁的世界，往往滋养出过于喧嚣的灵魂。 "
+      },
+      {
+        "name": "白兔先生",
+        "type": "时装",
+        "img": "./img/evwl8o7ganl5mroc6yeshtqqrzn8c4u.png",
+        "description": "“迟到了！迟到了！” "
+      },
+      {
+        "name": "罗刹绯春",
+        "type": "时装",
+        "img": "./img/t5jh6upacoals8s1zuvoicbxpvlwd4t.png",
+        "description": "娇艳和甜美也能成为武器，毕竟不是所有人都记得冰原上无法绽放玫瑰 "
+      },
+      {
+        "name": "熄灭的太阳",
+        "type": "时装",
+        "img": "./img/7wu4vlbj03a2cuzts9qijyqpqi8d89k.png",
+        "description": "当世界只剩灰烬，太阳终于明白，在熄灭之前，他谁都无法拥抱。 "
+      },
+      {
+        "name": "动物女巫",
+        "type": "时装",
+        "img": "./img/jzin2ll48uvgl6gr1j5jcu9404fb8nz.png",
+        "description": "“嘘，不要再往前走！草原的尽头有个可以和动物说话的女孩，如果你打扰到了她，可爱的动物将化身成熊熊烈火会将你吞噬。” "
+      },
+      {
+        "name": "月相",
+        "type": "时装",
+        "img": "./img/6hv0qske4uu3inw1wwy6dwobt1997q4.png",
+        "description": "“晦月带来毁灭”，这是他在晓月之夜得到的启示 "
+      },
+      {
+        "name": "神圣之辉",
+        "type": "时装",
+        "img": "./img/evh3tv4uf44q8hiiv8hdq0fthdls4vb.png",
+        "description": "过度的神性，往往比恶魔还恶劣 "
+      },
+      {
+        "name": "红龙夫人",
+        "type": "时装",
+        "img": "./img/fslkkt0xwr5yk2r050et71wmwl9pd0x.png",
+        "description": "当寂静之钟响起时，她便打破塔楼里的枷锁，一一验证名为信仰的谎言。"
+      },
+      {
+        "name": "甜心蛋糕",
+        "type": "时装",
+        "img": "./img/fr1j3cnl3719y7yxpgl01ljs1k6sc5m.png",
+        "description": "比起失踪新娘和随之遗失的珠宝，宾客们更在意眼前这份婚礼蛋糕的香甜"
+      }
+    ],
+    "B": [
+      {
+        "name": "碎片*10",
+        "type": "碎片",
+        "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+        "description": "碎片"
+      }
+    ],
+    "C": [
+      {
+        "name": "线索*10",
+        "type": "线索",
+        "img": "./img/r7gqx5aabcmzam3bdquawubybgdola8.png",
+        "description": "线索"
+      }
+    ]
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png"
+  }
+}

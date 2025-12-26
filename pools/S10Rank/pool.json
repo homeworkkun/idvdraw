@@ -1,0 +1,384 @@
+{
+  "id": "S10Rank",
+  "name": "第10赛季·排位珍宝（四阶）",
+  "essenceImage": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+  "diff_A": 2,
+  "initialCurrencies": {
+    "inspiration": 1000,
+    "fragments": 0
+  },
+  "discountInfo": {
+    "chance": 0,
+    "rate": 0.75
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 12
+  },
+  "frameSettings": {
+    "enabled": false,
+    "pityThreshold": 7,
+    "item": {
+      "name": "排位头像框兑换卡",
+      "type": "头像框",
+      "rarity": "F",
+      "img": "./img/bgijcaxbmaz8gwi87bschozs2pntw4m.png",
+      "description": "可用于兑换一个排位头像框。",
+      "repeat": 100
+    }
+  },
+  "items": {
+    "S": [
+      {
+        "name": "雪莲",
+        "img": "./img/tf2yal0itwbau4b7aa2zo36qyotyj5b.png",
+        "type": "随身物品",
+        "description": "传说是雪国圣地才能生长的花，被作为礼物送给舞女后，虽离开雪国，竟也还奇迹般的绽放着。\n替换二重奏技能特效\n舞女稀世品质随身物品",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "冰晶",
+        "img": "./img/7u1qi6k7j9szjnf4ppj27ssb3hb4205.png",
+        "type": "随身物品",
+        "description": "来自雪国工匠师的作品，每时每刻都散发着浓烈的寒意。\n增加召唤信徒的特效\n梦之女巫奇珍品质随身物品",
+        "repeat": 1000
+      },
+      {
+        "name": "催眠仪",
+        "img": "./img/ohaq6gl3dzqys55c1pcluf0octlha23.png",
+        "type": "随身物品",
+        "description": "千万别盯着它看，一旦被催眠，迎接你的将是可怕的噩梦。\n替换背人动作\n小丑奇珍品质随身物品",
+        "repeat": 1000
+      },
+      {
+        "name": "许愿瓶",
+        "img": "./img/pr6eib2sih2sf8sr0qdj71hkqt59l54.png",
+        "type": "随身物品",
+        "description": "有一天，他终于发现，所有的愿望都是梦境中的气泡，会在太阳升起那一刻，支离破碎。\n替换海神怀表技能特效\n大副奇珍品质随身物品",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "兔宝宝",
+        "img": "./img/n776kujirym5aj12m6snxo3adf6aiqp.png",
+        "type": "随身物品",
+        "description": "可爱的兔宝宝玩偶给盲女带来安全感，她们互相保护着对方",
+        "repeat": 200
+      },
+      {
+        "name": "雪绒花",
+        "img": "./img/314ahn7irw0ngmt5laxybch0caaklaj.png",
+        "type": "随身物品",
+        "description": "谁来为红蝶戴上这一片雪国的饰品",
+        "repeat": 200
+      },
+      {
+        "name": "蒲公英",
+        "img": "./img/dt8g4faymi2716fabl56csv6bzfmdjk.png",
+        "type": "随身物品",
+        "description": "轻风微拂，蒲公英那象征新生的种子便随风而去",
+        "repeat": 200
+      },
+      {
+        "name": "小火炉",
+        "img": "./img/e4ku0wu0b0bthw7q2itjz7ndkb0g0q3.png",
+        "type": "随身物品",
+        "description": "勘探员在某次勘探作业中找到的古代遗物，散发着一股奇怪的气息",
+        "repeat": 200
+      },
+      {
+        "name": "入殓师-起舞",
+        "img": "./img/73nip7a7kcx0arn2v8y72o5xt153jyc.png",
+        "type": "个性动作",
+        "description": "起舞动作，入殓师专属",
+        "repeat": 200
+      },
+      {
+        "name": "先知-起舞",
+        "img": "./img/73nip7a7kcx0arn2v8y72o5xt153jyc.png",
+        "type": "个性动作",
+        "description": "起舞动作，先知专属",
+        "repeat": 200
+      },
+      {
+        "name": "红夫人-独舞",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "红夫人专属匹配大厅等待动作，独舞",
+        "repeat": 200
+      },
+      {
+        "name": "26号守卫-示威",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "26号守卫专属匹配大厅等待动作，示威",
+        "repeat": 200
+      },
+      {
+        "name": "第10赛季-猛犸",
+        "img": "./img/6gqweet8ne27fxi6e7crnrhxrbjduhy.png",
+        "type": "头像框",
+        "description": "求生者第十赛季四阶段位头像框，形象为猛犸",
+        "repeat": 200
+      },
+      {
+        "name": "第10赛季-剑齿虎",
+        "img": "./img/6cjm5m97ha678rvkt53oh5ilqfi0d8l.png",
+        "type": "头像框",
+        "description": "监管者第十赛季四阶段位头像框，形象为剑齿虎",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "樱花粉",
+        "img": "./img/0jfyreawro0on00qfbyowfd77r787k1.png",
+        "type": "时装",
+        "description": "粉色代表着轻松与欢悦",
+        "repeat": 36
+      },
+      {
+        "name": "秋叶橘",
+        "img": "./img/8vljgdcohhw1gtur139czz0sihp0qhy.png",
+        "type": "时装",
+        "description": "秋天落叶的颜色可不只有落寞的情绪",
+        "repeat": 36
+      },
+      {
+        "name": "橙领",
+        "img": "./img/jzrrw57pfafl9xgga38txm4kkfzw8m8.png",
+        "type": "时装",
+        "description": "听说以前橙色是属于督工队的代表色",
+        "repeat": 36
+      },
+      {
+        "name": "机械师-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，机械师专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "园丁-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，园丁专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，前锋专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，“慈善家”专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "园丁-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "园丁匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "佣兵匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "冒险家匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "空军-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "空军匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "“慈善家”匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "医生-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "医生匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "园丁工具箱-卡通",
+        "img": "./img/qo6iwkq9oy4kpp4qn4uhmicw395qwnb.png",
+        "type": "涂鸦",
+        "description": "园丁专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "律师地图-卡通",
+        "img": "./img/hca760ben0wsr97yvffl1ncg31xhquf.png",
+        "type": "涂鸦",
+        "description": "律师专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "空军信号枪-卡通",
+        "img": "./img/jubft9y72s7c2axxtqqoeuv0hoqrnoz.png",
+        "type": "涂鸦",
+        "description": "空军专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "职业侦探",
+        "img": "./img/9rhhglkyq9ufc54g228jawlzb88ts1l.png",
+        "type": "随身物品",
+        "description": "求生者随身物品，职业侦探",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-盲女",
+        "img": "./img/77691aggv8xai6lii6xk0tzzxuus6mg.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-佣兵",
+        "img": "./img/kvs6mbyuo41eme45pz49ssgv3gog2qy.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "厂长-灰影",
+        "img": "./img/0759hpb5pajcuaewl2kothsl4szy4m8.png",
+        "type": "涂鸦",
+        "description": "厂长专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "宿伞之魂-灰影",
+        "img": "./img/etebgey0fybqexw2nkr1dm4oxocf0sh.png",
+        "type": "涂鸦",
+        "description": "宿伞之魂专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "红蝶-灰影",
+        "img": "./img/f4y6vxmyg4gu3n5z2y713wmzz19vy46.png",
+        "type": "涂鸦",
+        "description": "红蝶专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "黄衣之主-灰影",
+        "img": "./img/41omzcuu4ml1won7kx5oreykb35yng5.png",
+        "type": "涂鸦",
+        "description": "黄衣之主专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "“杰克”-灰影",
+        "img": "./img/pvmn9lpu1ngpy424dfj20bjk3lh3n0l.png",
+        "type": "涂鸦",
+        "description": "“杰克”专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "黑化红蝶-灰影",
+        "img": "./img/rnfvzj8irceanzxkhgzpa5jyjz94x6f.png",
+        "type": "涂鸦",
+        "description": "红蝶专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "鹿头-灰影",
+        "img": "./img/brsmit6t2ih4bl9vsgjg9p3j6afyfm5.png",
+        "type": "涂鸦",
+        "description": "鹿头专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-厂长",
+        "img": "./img/3r55syvo6nflpl2sgb8l90linzop6ha.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-慈善家",
+        "img": "./img/81x7ijgf6b2lakyylp8gg48t44184r0.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-黄衣之主",
+        "img": "./img/sp7mrngcawhf3hhdoauoe6cj4vp9r9a.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-祭司",
+        "img": "./img/lsdn1m8dsmypefyese2rnlkvpyqixq8.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-杰克",
+        "img": "./img/cdtu0yif2dh439sfo5nczygxlts630x.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-调香师",
+        "img": "./img/1308mm7pnlk2a1cnbmsj8vp7ojzuglk.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-医生",
+        "img": "./img/6hd4avqeihthz286dt2l8thhiqvkdar.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "不解",
+        "img": "./img/466v6gh8gjs0fyt74xw9dbl6gnfvzdr.png",
+        "type": "个性动作",
+        "description": "表示不解的动作",
+        "repeat": 6
+      }
+    ]
+  }
+}

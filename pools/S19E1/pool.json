@@ -1,0 +1,246 @@
+{
+  "id": "S19E1",
+  "name": "约定的梦幻岛联动精华2",
+  "essenceImage": "./img/b0wlo03v3aisc0nyi9bastvqamqf35n.png",
+  "diff_A": 0,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [
+    {
+      "name": "-20%",
+      "rate": 0.8,
+      "chance": 0.03
+    },
+    {
+      "name": "-40%",
+      "rate": 0.6,
+      "chance": 0.015
+    }
+  ],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 99
+  },
+  "items": {
+    "S": [
+      {
+        "name": "穆希卡",
+        "img": "./img/d9xdxg56hpr9pqo8372fnsow4x9490p.png",
+        "type": "时装",
+        "description": "穆希卡的服装。\n时装效果：在捕虫网全部消耗完后，兜帽会被摘下。\n约定的梦幻岛联动精华2限定稀世时装",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "宋杰",
+        "img": "./img/87s8qosvy96bxq465b3xff8ijti4ped.png",
+        "type": "时装",
+        "description": "宋杰的服装。\n约定的梦幻岛联动精华2限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "皮塔拉托里",
+        "img": "./img/juu94qhnj8cslttu7lx0o7xz3tr0nca.png",
+        "type": "时装",
+        "description": "皮塔拉托里的服装。\n约定的梦幻岛联动精华2限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "查吉",
+        "img": "./img/rqsg15qa1ffnmnjj0126ci2i301f2lh.png",
+        "type": "时装",
+        "description": "查吉的服装。\n约定的梦幻岛联动精华2限定奇珍时装",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "箭袋",
+        "img": "./img/po1e28ckrjhi7ko7fukfxpwpd6vskks.png",
+        "type": "随身物品",
+        "description": "装满箭羽的箭袋。\n约定的梦幻岛联动精华2限定独特随身物品",
+        "repeat": 200
+      },
+      {
+        "name": "信物",
+        "img": "./img/00rmgtpa49jqd1hlyfh39im0qpc277l.png",
+        "type": "随身物品",
+        "description": "穆希卡给的信物。\n约定的梦幻岛联动精华2限定独特随身物品",
+        "repeat": 200
+      },
+      {
+        "name": "面具",
+        "img": "./img/sbn2j8959wd6y2peoldkt2pzhaf01hg.png",
+        "type": "随身物品",
+        "description": "鬼的面具。\n约定的梦幻岛联动精华2限定独特随身物品",
+        "repeat": 200
+      },
+      {
+        "name": "铃铛",
+        "img": "./img/hi3ho1ccthe1ze9z45bdh2f3d8q32sz.png",
+        "type": "随身物品",
+        "description": "鬼的铃铛。\n约定的梦幻岛联动精华2限定独特随身物品",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "昆虫学者-思考",
+        "img": "./img/tibfddm6ebv69o0vmk167sztzfwi8m5.png",
+        "type": "个性动作",
+        "description": "思考，昆虫学者专属动作",
+        "repeat": 36
+      },
+      {
+        "name": "摄影师-思考",
+        "img": "./img/tibfddm6ebv69o0vmk167sztzfwi8m5.png",
+        "type": "个性动作",
+        "description": "思考，摄影师专属动作",
+        "repeat": 36
+      },
+      {
+        "name": "“杰克”-思考",
+        "img": "./img/tibfddm6ebv69o0vmk167sztzfwi8m5.png",
+        "type": "个性动作",
+        "description": "思考，“杰克”专属动作",
+        "repeat": 36
+      },
+      {
+        "name": "“博士”-伤脑筋",
+        "img": "./img/pyush3wecg5qlo0bhuo6wpgn74kmpnn.png",
+        "type": "个性动作",
+        "description": "伤脑筋动作，“博士” 专属",
+        "repeat": 36
+      },
+      {
+        "name": "穆希卡",
+        "img": "./img/16uhcgogfjtegvdhjqddez0onwq5ym7.png",
+        "type": "涂鸦",
+        "description": "《约定的梦幻岛》联动限定获得",
+        "repeat": 36
+      },
+      {
+        "name": "宋杰",
+        "img": "./img/12rf8ce71m0g6n72nnkeuj27kvommf7.png",
+        "type": "涂鸦",
+        "description": "《约定的梦幻岛》联动限定获得",
+        "repeat": 36
+      },
+      {
+        "name": "皮塔拉托里",
+        "img": "./img/f39wonm90wic78f9jdm8rzujws3cpyx.png",
+        "type": "涂鸦",
+        "description": "《约定的梦幻岛》联动限定获得",
+        "repeat": 36
+      },
+      {
+        "name": "查吉",
+        "img": "./img/i8j30lem7kkkorqpnrna18abkj43smj.png",
+        "type": "涂鸦",
+        "description": "《约定的梦幻岛》联动限定获得",
+        "repeat": 36
+      },
+      {
+        "name": "鬼的食物Ⅰ",
+        "img": "./img/anunosyve3c1dnrcvupxrkj39w5qze3.png",
+        "type": "涂鸦",
+        "description": "《约定的梦幻岛》联动限定获得",
+        "repeat": 36
+      },
+      {
+        "name": "鬼的食物Ⅱ",
+        "img": "./img/pktmusewb6l1s4698qdxojjdhjgra1n.png",
+        "type": "涂鸦",
+        "description": "《约定的梦幻岛》联动限定获得",
+        "repeat": 36
+      },
+      {
+        "name": "鬼的食物Ⅲ",
+        "img": "./img/2vdsapoon453jtttp3myugulc77pos2.png",
+        "type": "涂鸦",
+        "description": "《约定的梦幻岛》联动限定获得",
+        "repeat": 36
+      },
+      {
+        "name": "鬼的食物Ⅳ",
+        "img": "./img/ru4ducxuvpiznfbznuhnxv2mc0cqkp8.png",
+        "type": "涂鸦",
+        "description": "《约定的梦幻岛》联动限定获得",
+        "repeat": 36
+      },
+      {
+        "name": "鬼的食物Ⅴ",
+        "img": "./img/hckpl19vbkcehpc7joub16vckx3mhb6.png",
+        "type": "涂鸦",
+        "description": "《约定的梦幻岛》联动限定获得",
+        "repeat": 36
+      },
+      {
+        "name": "鬼的食物Ⅵ",
+        "img": "./img/ac29jhd5hupzb62riqfmeykd6hsskag.png",
+        "type": "涂鸦",
+        "description": "《约定的梦幻岛》联动限定获得",
+        "repeat": 36
+      },
+      {
+        "name": "鬼的食物Ⅶ",
+        "img": "./img/ljqkb1w7w3ut895fjq3fmoazbl9ce40.png",
+        "type": "涂鸦",
+        "description": "《约定的梦幻岛》联动限定获得",
+        "repeat": 36
+      },
+      {
+        "name": "鬼的食物Ⅷ",
+        "img": "./img/ngbrax4jo82i6meavav609y5vhf9u2a.png",
+        "type": "涂鸦",
+        "description": "《约定的梦幻岛》联动限定获得",
+        "repeat": 36
+      },
+      {
+        "name": "鬼的食物Ⅸ",
+        "img": "./img/0wkhyx93k3s5njabehs9h866uutgxng.png",
+        "type": "涂鸦",
+        "description": "《约定的梦幻岛》联动限定获得",
+        "repeat": 36
+      },
+      {
+        "name": "穆希卡",
+        "img": "./img/7qs3irichnmr34kszvo1gqj2yyc5caz.png",
+        "type": "头像",
+        "description": "《约定的梦幻岛》联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "宋杰",
+        "img": "./img/jy8bwah9u098k6myhywwbjp0xxvl7wn.png",
+        "type": "头像",
+        "description": "《约定的梦幻岛》联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "皮塔拉托里",
+        "img": "./img/rhzu9kb7ejdsw1wnse47h42l07a8qj1.png",
+        "type": "头像",
+        "description": "《约定的梦幻岛》联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "查吉",
+        "img": "./img/2cp4zkwsl4d8td95z5dy7xuj1j8bdk4.png",
+        "type": "头像",
+        "description": "《约定的梦幻岛》联动头像",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

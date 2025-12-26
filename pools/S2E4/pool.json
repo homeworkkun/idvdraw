@@ -1,0 +1,305 @@
+{
+  "id": "S2E4",
+  "name": "深渊珍宝",
+  "essenceImage": "./img/lkarnwt8tdr6s47oruovmq3brrvqlo6.png",
+  "diff_A": 2,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "嗜金海怪",
+        "img": "./img/ghesgnkqexmhwy6tlmsyentdz64jqdf.png",
+        "type": "时装",
+        "description": "哪个海盗不是为了无穷无尽的财宝而冒险？抛弃了一切，只为镀满一身金子，填满千疮百孔的内心。\n深渊珍宝限定稀世时装",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "海怪船长",
+        "img": "./img/5s283otb4qrfshem6lst1oz5khf0vcm.png",
+        "type": "时装",
+        "description": "他倾其一生，只为挚爱找寻那独有的珍宝。\n深渊珍宝限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "海盗巫医",
+        "img": "./img/glt4u7gppze94g2y0uiez3pq3focepp.png",
+        "type": "时装",
+        "description": "满满一船海盗，却挑不出一个家伙能在她面前维持硬汉形象，即便是那位船长也不例外。\n深渊珍宝限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "海盗领航员",
+        "img": "./img/1m0vs8nv4wopp6sw3aqx4y4p645ekw5.png",
+        "type": "时装",
+        "description": "他只有一只眼睛，但他眼中的地图可藏着无数人觊觎的秘密。\n深渊珍宝限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "海盗船匠",
+        "img": "./img/qxuj8b750q00n1n0ncw4dzxfwh2m5ja.png",
+        "type": "时装",
+        "description": "这位船匠可不想落入俗套，她一直想用海藻和珊瑚来打造一艘海盗战舰！脑袋正常的船长都不敢冒这个险。\n深渊珍宝限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "海盗远望者",
+        "img": "./img/c51kw16hqpdpfvy2xzs5lvic3xu580c.png",
+        "type": "时装",
+        "description": "“远望者”这个自封的称号，让他觉得自己非常高大－－直到他遇上那个可怕的海盗船长。\n深渊珍宝限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "海盗枪手",
+        "img": "./img/kzho46ovyfradiyi8f2abc30nnmmx22.png",
+        "type": "时装",
+        "description": "这群海盗之中，独独枪手心无旁骛。她只想在波澜起伏之中，磨炼更加匪夷所思的射击技术。\n深渊珍宝限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "海盗酒壶",
+        "img": "./img/eoki159qhnm0aw9vj8nvulsor1479cb.png",
+        "type": "随身物品",
+        "description": "这个酒壶里装的可不是普通的药酒。\n特殊效果：治疗特效\n深渊珍宝限定奇珍随身物品",
+        "repeat": 1000
+      },
+      {
+        "name": "海盗罗盘",
+        "img": "./img/mjt8i6mivdvl1x6yut4gs6c12ejm1zy.png",
+        "type": "随身物品",
+        "description": "迷途的海盗都明白——罗盘有时候可以救命。\n特殊效果：翻看地图特效\n深渊珍宝限定奇珍随身物品",
+        "repeat": 1000
+      },
+      {
+        "name": "海盗旗",
+        "img": "./img/krip8epp0md4cu8azocju67zqis046n.png",
+        "type": "随身物品",
+        "description": "哈哈哈，海盗旗就应该插在占领地的制高点！\n特殊效果：拆毁狂欢之椅特效\n深渊珍宝限定奇珍随身物品",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "刺痛",
+        "img": "./img/0iqqn1mn4wb7arw73uyxew85cgdhgnb.png",
+        "type": "时装",
+        "description": "她尝试用刺痛来提醒自己不要被敌人的印记侵蚀，但这能坚持多久呢?也许深渊才是她的归宿\n深渊珍宝限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "船舶技师",
+        "img": "./img/9do1wwti9k3ohzj2fj1lc1i61yomdvl.png",
+        "type": "时装",
+        "description": "在远航时有一位可靠的船舶技师是必须的，至少，你要确保遇到海怪时动力装置能正常运行\n深渊珍宝限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "尖鼻子",
+        "img": "./img/e6kt96gbyrsquf9k8isgpq8hdg5pp1n.png",
+        "type": "随从",
+        "description": "它的鼻子时时刻刻都在嗅探着财宝的气味儿！",
+        "repeat": 200
+      },
+      {
+        "name": "圆耳朵",
+        "img": "./img/n1ow1e5wk3779kenqw1wn996tz316z6.png",
+        "type": "随从",
+        "description": "这对耳朵能听到一英里外金币落地的声音！",
+        "repeat": 200
+      },
+      {
+        "name": "机械师-起身",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "机械师匹配大厅动作，起身",
+        "repeat": 200
+      },
+      {
+        "name": "冒险家-起身",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "冒险家匹配大厅动作，起身",
+        "repeat": 200
+      },
+      {
+        "name": "空军-起身",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "空军匹配大厅动作，起身",
+        "repeat": 200
+      },
+      {
+        "name": "前锋-起身",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "前锋匹配大厅动作，起身",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "生机绿",
+        "img": "./img/90u6b1xombcg4n5mqe2o0dwauyb5bjb.png",
+        "type": "时装",
+        "description": "绿茵场的勃勃生机总让人难掩激动",
+        "repeat": 36
+      },
+      {
+        "name": "可爱粉",
+        "img": "./img/67yb6q9hzjupsmcwrmx1nfjxuwoj32l.png",
+        "type": "时装",
+        "description": "粉色诠释着机械师可爱的一面",
+        "repeat": 36
+      },
+      {
+        "name": "淡粉桃",
+        "img": "./img/3pp017wpvurtgvz9ko10m7cs27yptu4.png",
+        "type": "时装",
+        "description": "信仰褪去，露出的是真心",
+        "repeat": 36
+      },
+      {
+        "name": "黄袖",
+        "img": "./img/trkz9ujx2x5w49w37yg6jsx11571nhd.png",
+        "type": "时装",
+        "description": "黄袖，绕梁，美梦。",
+        "repeat": 36
+      },
+      {
+        "name": "机械师-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，机械师专属",
+        "repeat": 36
+      },
+      {
+        "name": "空军-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，空军专属",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，前锋专属",
+        "repeat": 36
+      },
+      {
+        "name": "盲女-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，盲女专属",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，前锋专属",
+        "repeat": 36
+      },
+      {
+        "name": "盲女-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，盲女专属",
+        "repeat": 36
+      },
+      {
+        "name": "海盗旗",
+        "img": "./img/j30ha80iafge3q7o8kn2nw879tua14f.png",
+        "type": "涂鸦",
+        "description": "园丁专属涂鸦，海盗旗",
+        "repeat": 36
+      },
+      {
+        "name": "海盗酒壶",
+        "img": "./img/0diuxhffy89c9lpedrx2823g6a1e2iv.png",
+        "type": "涂鸦",
+        "description": "医生专属涂鸦，海盗酒壶",
+        "repeat": 36
+      },
+      {
+        "name": "空军-海盗",
+        "img": "./img/5e2sno2uhbr5kvwhp3unzxgohogh5dv.png",
+        "type": "涂鸦",
+        "description": "空军专属涂鸦，海盗枪手",
+        "repeat": 36
+      },
+      {
+        "name": "律师-海盗",
+        "img": "./img/gqg9o7nxihp12gtusxi185oh6vokksa.png",
+        "type": "涂鸦",
+        "description": "律师专属涂鸦，海盗领航员",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”-海盗",
+        "img": "./img/6jrwrbhp43yi53rxjkrey04gihdxvxm.png",
+        "type": "涂鸦",
+        "description": "“慈善家”专属涂鸦，海盗远望者",
+        "repeat": 36
+      },
+      {
+        "name": "医生-海盗",
+        "img": "./img/q3qkjectohhulj924auoiyy2i7d997i.png",
+        "type": "涂鸦",
+        "description": "医生专属涂鸦，海盗巫医",
+        "repeat": 36
+      },
+      {
+        "name": "园丁-海盗",
+        "img": "./img/hcdz8p7gw869g9aqiax8a3anq5yslop.png",
+        "type": "涂鸦",
+        "description": "园丁专属涂鸦，海盗船匠",
+        "repeat": 36
+      },
+      {
+        "name": "律师-另一面",
+        "img": "./img/firr0rjdxeex88avbj29yn13zqygrwr.png",
+        "type": "头像",
+        "description": "律师的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "慈善家-另一面",
+        "img": "./img/46w02ngvtcal40dovukoui5dbljgt0t.png",
+        "type": "头像",
+        "description": "慈善家的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "园丁-另一面",
+        "img": "./img/lcn9j2x0b17i1eropmz8dqeg7nbu9pi.png",
+        "type": "头像",
+        "description": "园丁的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "医生-另一面",
+        "img": "./img/98erubnrvv7ew7972icvb6hr7nxmxna.png",
+        "type": "头像",
+        "description": "医生的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

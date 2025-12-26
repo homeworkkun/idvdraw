@@ -1,0 +1,77 @@
+{
+  "id": "lucky_dice_12",
+  "name": "幸运之骰·第12期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "缪斯剧场": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/pvbubhad6q8xyhu2xicf1aj13swisi9.png",
+      "description": "2021年演绎之星活动专属奖励头像框",
+      "repeat": 200
+    },
+    "园丁-演绎之星": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/3uqsqzdsyq6xfdkv77vzh6z6r514pd5.png",
+      "description": "园丁专属涂鸦，2018年演绎之星 ",
+      "repeat": 6
+    },
+    "空军-演绎之星": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/ibhhbflmgmuxuub31euwhqitwpm063k.png",
+      "description": "空军专属涂鸦，2018年演绎之星 ",
+      "repeat": 6
+    },
+    "“杰克”-演绎之星": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/djoi7iev0gzxnvsr5diz78xodazyk9d.png",
+      "description": "“杰克”专属涂鸦，2018年演绎之星 ",
+      "repeat": 6
+    },
+    "祭司-演绎之星": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/nms1xlw3ldcyxrou5az7qotko14cz2h.png",
+      "description": "祭司专属涂鸦，2019年演绎之星",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幸运之骰专属池子</title>
+    <script src="/resource/tailwind.min.css"></script>
+    <link rel="stylesheet" href="/resource/fontawesome/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'DFPOP1W5-GB';
+            src: url('/fonts.ttf') format('truetype');
+        }
+
+        :root { --color-gold: #e8c668; --color-purple: #b568e8; --color-blue: #689de8; --bg-dark: #0f1115; --bg-panel: rgba(20, 23, 31, 0.95); }
+        /* 调整根字体大小，确保在小屏幕上有足够的空间 */
+        html { font-size: clamp(10px, 0.8vw + 8px, 16px); } 
+        
+        body { 
+            font-family: "DFPOP1W5-GB", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            background-color: var(--bg-dark); 
+            color: #d1d5db; 
+            user-select: none; 
+            background-image: radial-gradient(circle at 50% 50%, #1f232e 0%, #0a0b0e 100%); 
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .font-gothic { font-family:"DFPOP1W5-GB", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        @keyframes breathe { 0%, 100% { transform: scale(1); filter: drop-shadow(0 0 10px rgba(232, 198, 104, 0.3)); } 50% { transform: scale(1.05); filter: drop-shadow(0 0 20px rgba(232, 198, 104, 0.6)); } }
+        @keyframes shake { 0% { transform: translate(1px, 1px) rotate(0deg); } 10% { transform: translate(-1px, -2px) rotate(-1deg); } 20% { transform: translate(-3px, 0px) rotate(1deg); } 30% { transform: translate(3px, 2px) rotate(0deg); } 40% { transform: translate(1px, -1px) rotate(1deg); } 50% { transform: translate(-1px, 2px) rotate(-1deg); } 60% { transform: translate(-3px, 1px) rotate(0deg); } 70% { transform: translate(3px, 1px) rotate(-1deg); } 80% { transform: translate(-1px, -1px) rotate(1deg); } 90% { transform: translate(1px, 2px) rotate(0deg); } 100% { transform: translate(1px, -2px) rotate(-1deg); } }
+        @keyframes explode-flash { 0%, 100% { opacity: 0; transform: scale(3); } 50% { opacity: 1; transform: scale(1); } }
+        @keyframes card-flip { from { transform: rotateY(90deg) scale(0.9); opacity: 0; } to { transform: rotateY(0deg) scale(1); opacity: 1; } }
+        @keyframes scanline { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }
+        @keyframes fade-in-backdrop { from { backdrop-filter: blur(0px); background-color: rgba(0,0,0,0); } to { backdrop-filter: blur(8px); background-color: rgba(0,0,0,0.7); } }
+        @keyframes zoom-in-modal { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        @keyframes convert-to-fragments { 0% { transform: scale(1) rotate(0deg); filter: brightness(1); } 40% { transform: scale(1.1) rotate(5deg); filter: brightness(1.5) drop-shadow(0 0 15px white); } 100% { transform: scale(0) rotate(10deg); filter: brightness(2); } }
+        .converting { animation: convert-to-fragments 0.6s ease-in-out forwards; }
+        .essence-orb { width: clamp(150px, 35vmin, 220px); height: clamp(150px, 35vmin, 220px); background: radial-gradient(circle at 30% 30%, #444, #000); border-radius: 50%; position: relative; box-shadow: inset 0 0 30px #000, 0 0 20px rgba(0,0,0,0.8); cursor: pointer; transition: all 0.3s; }
+        .essence-orb.breathing { animation: breathe 3s infinite ease-in-out; }
+        .essence-orb.shaking { animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both infinite; }
+        .idv-btn { font-size: clamp(1rem, 1.5vw + 0.5rem, 1.25rem); background: linear-gradient(180deg, #3a3a3a 0%, #1a1a1a 100%); border: 2px solid #888; color: #ccc; text-transform: uppercase; letter-spacing: 2px; transition: all 0.2s; clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%); }
+        .idv-btn:hover:not(:disabled) { border-color: var(--color-gold); color: var(--color-gold); background: linear-gradient(180deg, #4a4a4a 0%, #2a2a2a 100%); text-shadow: 0 0 5px var(--color-gold); }
+        .idv-btn:active:not(:disabled) { transform: scale(0.95); }
+        .idv-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .flash-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: white; opacity: 0; pointer-events: none; z-index: 100; }
+        .scan-line { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0; overflow: hidden; }
+        .scan-line::before { content: ''; display: block; width: 100%; height: 200%; background: linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, 0.03) 50%, transparent 100%); animation: scanline 10s linear infinite; }
+        .card.rarity-S { border-color: var(--color-gold) !important; box-shadow: 0 0 20px var(--color-gold) !important; }
+        .card.rarity-A { border-color: var(--color-purple) !important; box-shadow: 0 0 15px var(--color-purple) !important; }
+        .card.rarity-B { border-color: var(--color-blue) !important; box-shadow: 0 0 10px var(--color-blue) !important; }
+        .text-rarity-S { color: var(--color-gold); } .text-rarity-A { color: var(--color-purple); } .text-rarity-B { color: var(--color-blue); }
+        .text-rarity-C { color: #65a30d; } .text-rarity-D { color: #9ca3af; }
+        #item-detail-modal.show { animation: fade-in-backdrop 0.3s forwards; }
+        #item-detail-modal.show > div { animation: zoom-in-modal 0.3s forwards; }
+        #detail-desc { white-space: pre-wrap; }
+        ::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-track { background: #0f1115; } ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        
+        .pool-item { transition: all 0.2s ease-in-out; background-color: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.5rem; text-align: center; border: 1px solid transparent; cursor: pointer; }
+        .pool-item:hover { background-color: rgba(255, 255, 255, 0.1); transform: translateY(-2px); }
+        .pool-item.not-owned { filter: grayscale(80%); opacity: 0.6; }
+        .pool-item.owned { border-color: var(--color-gold); }
+        .pool-item .img-container { width: 100%; background-color: #111318; aspect-ratio: 1 / 1; border-radius: 0.25rem; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .pool-item img { max-width: 100%; max-height: 100%; object-fit: contain; }
+        
+        @keyframes marquee { 0%   { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .pool-item p { margin-top: 0.5rem; font-size: 0.75rem; white-space: nowrap; overflow: hidden; }
+        .marquee-wrapper { display: inline-block; animation: marquee var(--marquee-duration, 10s) linear infinite; padding-right: 2rem; will-change: transform; }
+
+        .border-rarity-S { border-color: var(--color-gold); } .border-rarity-A { border-color: var(--color-purple); } .border-rarity-B { border-color: var(--color-blue); }
+        .border-rarity-C { border-color: #65a30d; } .border-rarity-D { border-color: #9ca3af; }
+
+        /* 音乐按钮旋转动画 */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .spin-animation {
+            animation: spin 2s linear infinite;
+        }
+
+        /* 针对小屏幕优化抽卡按钮的字体大小，使其更紧凑 */
+        @media (max-width: 640px) {
+            .idv-btn {
+                font-size: clamp(0.8rem, 2.5vw, 1.1rem); /* 缩小字体 */
+                letter-spacing: 1px; /* 缩小字间距 */
+                height: 3.5rem; /* 统一并缩小按钮高度 */
+            }
+            /* 调整按钮上方的碎片消耗文字大小 */
+            .button-cost-text {
+                font-size: 0.7rem; /* 缩小碎片消耗文字 */
+            }
+        }
+        
+        /* 池子切换下拉菜单样式 */
+        .pool-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1a1c24;
+            border: 2px solid var(--color-gold);
+            border-radius: 0.5rem;
+            width: 250px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(232, 198, 104, 0.3);
+        }
+        .pool-dropdown-item {
+            padding: 1rem 1.25rem;
+            cursor: pointer;
+            border-bottom: 1px solid #333;
+            transition: all 0.2s;
+            font-weight: bold;
+        }
+        .pool-dropdown-item:hover {
+            background-color: rgba(232, 198, 104, 0.2);
+            color: var(--color-gold);
+        }
+        .pool-dropdown-item:last-child {
+            border-bottom: none;
+        }
+        .pool-dropdown-item.active {
+            background-color: rgba(232, 198, 104, 0.3);
+            color: var(--color-gold);
+        }
+        
+        /* 切换按钮样式 */
+        .pool-switch-btn {
+            background: linear-gradient(180deg, #3a3a3a 0%, #1a1a1a 100%);
+            border: 2px solid var(--color-gold);
+            color: var(--color-gold);
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 0 10px rgba(232, 198, 104, 0.3);
+        }
+        .pool-switch-btn:hover {
+            background: linear-gradient(180deg, #4a4a4a 0%, #2a2a2a 100%);
+            box-shadow: 0 0 15px rgba(232, 198, 104, 0.5);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="h-screen w-screen flex flex-col items-center justify-center relative p-2 sm:p-4">
+
+    <div class="scan-line"></div>
+    <div id="flash-layer" class="flash-overlay"></div>
+    <div id="main-screen" class="relative w-full h-full flex flex-col items-center justify-center p-4 z-10 transition-opacity duration-500">
+        <div class="absolute top-0 w-full h-24 bg-gradient-to-b from-black/50 to-transparent pointer-events-none"></div>
+        <div class="absolute top-4 left-4 flex gap-2 sm:gap-4 text-sm z-20 bg-black/50 p-2 sm:p-3 border border-gray-700 rounded-md backdrop-blur-sm">
+            <div class="flex items-center gap-2"><img src="/resource/abb5919fc5926eb8e2da46469ff98487.png" class="w-5 h-5"><span id="currency-fragments" class="font-sans font-bold text-white">-</span></div>
+        </div>
+        <div class="absolute top-20 sm:top-8 text-center px-4 w-full">
+            <div class="flex items-center justify-center gap-3">
+                <h1 id="pool-name" class="text-amber-100 tracking-widest drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" style="font-size: clamp(1.75rem, 5vw, 3rem);">加载中...</h1>
+                <button id="pool-switch-btn" class="pool-switch-btn">
+                    <i class="fa-solid fa-exchange-alt mr-1"></i>切换
+                </button>
+                <div id="pool-dropdown" class="pool-dropdown hidden"></div>
+            </div>
+            <p id="pool-desc" class="text-xs text-gray-500 tracking-[0.2em] mt-1">收集限定池</p>
+        </div>
+        <!-- 按钮组：奖池、记录、音乐 -->
+        <div class="absolute top-4 right-4 flex gap-2 sm:gap-4 z-20">
+            <button onclick="app.togglePoolPreview()" class="text-gray-400 hover:text-white transition-colors text-right"><i class="fa-solid fa-gem text-xl sm:text-2xl"></i><span class="block text-xs mt-1">奖池</span></button>
+            <button onclick="app.toggleHistory()" class="text-gray-400 hover:text-white transition-colors text-right"><i class="fa-solid fa-history text-xl sm:text-2xl"></i><span class="block text-xs mt-1">记录</span></button>
+            <!-- 音乐播放按钮 -->
+            <button id="music-toggle-btn" class="text-gray-400 hover:text-white transition-colors text-right" onclick="app.toggleMusic()">
+                <i class="fa-solid fa-music text-xl sm:text-2xl"></i>
+                <span class="block text-xs mt-1" id="music-status-text">播放</span>
+            </button>
+        </div>
+
+        <!-- 保底信息面板位置修改: bottom-40 (10rem 或 160px) 确保不遮挡碎片消耗量 -->
+        <div id="pity-panel" class="absolute left-4 bottom-40 text-sm z-20 bg-black/50 p-3 border border-gray-700 rounded-md backdrop-blur-sm">
+            <p><span class="text-yellow-500">收集进度:</span> <span id="collection-progress" class="font-bold">-</span></p>
+            <p><span class="text-blue-400">强制完成:</span> <span id="force-complete" class="font-bold">-</span></p>
+            <p class="mt-2 pt-2 border-t border-gray-600/50 text-xs text-gray-500">已抽取: <span id="total-pulls" class="text-white">0</span></p>
+        </div>
+        <!-- 保底信息面板位置修改结束 -->
+
+        <div class="flex-1 flex items-center justify-center">
+            <div class="relative group">
+                <div id="essence-orb" class="essence-orb breathing flex items-center justify-center" onclick="app.pull(1)"><img id="essence-img" src="" alt="Essence" class="w-3/5 h-3/5 object-contain relative z-20 filter drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)] transition-transform duration-200"></div>
+                <div class="absolute -inset-4 bg-amber-500/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            </div>
+        </div>
+        <div id="button-container" class="flex flex-row gap-3 w-full justify-center items-end px-4 pb-6">
+            <div class="flex flex-col items-center gap-1 flex-1 max-w-[160px]">
+                <div class="text-xs text-amber-200/70 mb-1 button-cost-text">碎片 x96</div>
+                <button id="btn-pull-1" onclick="app.pull(1)" class="idv-btn w-full h-14 font-bold flex items-center justify-center"><span>开启 1 次</span></button>
+            </div>
+            <div class="flex flex-col items-center gap-1 flex-1 max-w-[160px]">
+                <div id="pull-10-cost" class="text-xs text-amber-200/70 mb-1 button-cost-text">碎片 x960</div>
+                <button id="btn-pull-10" onclick="app.pull(10)" class="idv-btn w-full h-14 font-bold flex items-center justify-center bg-gradient-to-t from-amber-900/40 to-transparent border-amber-700/50">
+                    <span id="btn-pull-10-text" class="text-amber-100">开启 10 次</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="result-screen" class="fixed inset-0 z-40 bg-black/95 hidden flex-col items-center justify-start pt-4 sm:pt-8">
+        <div id="result-header" class="mb-4 text-center opacity-0"><h2 class="text-white tracking-widest border-b border-gray-700 pb-2 px-8 inline-block" style="font-size: clamp(1.5rem, 4vw, 2.25rem);">抽取内容</h2></div>
+        <div id="cards-container" class="flex-1 w-full max-w-6xl overflow-y-auto px-2"></div>
+        <!-- 抽取内容展示界面的按钮改为并排显示 -->
+        <div id="result-footer" class="mt-4 mb-2 opacity-0 flex flex-row gap-4 items-center justify-center"></div>
+    </div>
+    
+    <div id="item-detail-modal" class="fixed inset-0 z-[60] hidden items-center justify-center p-4" onclick="app.closeItemDetail()">
+        <div class="w-[95vw] max-w-md bg-[#1a1c24] border-2 border-gray-700 rounded-lg shadow-2xl flex flex-col text-center relative overflow-hidden" onclick="event.stopPropagation()">
+            <div id="detail-rarity-glow" class="absolute top-0 left-1/2 -translate-x-1/2 w-[200%] h-64 opacity-30 blur-3xl pointer-events-none"></div>
+            <div class="relative p-6">
+                <h3 id="detail-name" class="font-gothic text-2xl tracking-widest">物品名称</h3>
+                <p id="detail-type" class="text-sm text-gray-400 mb-4">物品类型</p>
+                <img id="detail-img" src="" class="w-48 h-48 mx-auto my-4 object-contain drop-shadow-lg" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZHN0PSIxMDAiIGZpbGw9IiMzMzMiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iIzU1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+PzwvdGV4dD48L3N2Zz4='">
+                <p id="detail-desc" class="text-gray-300 italic px-4">物品描述会显示在这里...</p>
+            </div>
+            <button onclick="app.closeItemDetail()" class="w-full mt-4 py-3 bg-black/30 text-gray-400 hover:bg-black/50 transition-colors">关闭</button>
+        </div>
+    </div>
+
+    <div id="history-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-2"><div class="bg-[#1a1c24] border border-gray-600 w-[95vw] max-w-2xl h-[90vh] md:max-h-[80vh] flex flex-col rounded-lg shadow-2xl"><div class="bg-[#111] p-4 border-b border-gray-700 flex justify-between items-center"><h3 class="text-amber-500 font-gothic text-lg md:text-xl"><i class="fas fa-history mr-2"></i>获得记录</h3><div><button onclick="app.clearData()" class="text-xs text-red-400 border border-red-900 px-2 py-1 rounded hover:bg-red-900/50 mr-2 md:mr-4">清空数据</button><button onclick="app.toggleHistory()" class="text-gray-400 text-2xl">&times;</button></div></div><div id="history-list" class="flex-1 overflow-y-auto p-4"></div></div></div>
+    
+    <div id="pool-preview-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-2">
+        <div class="bg-[#1a1c24] border border-gray-600 w-[95vw] max-w-4xl h-[90vh] md:max-h-[80vh] flex flex-col rounded-lg shadow-2xl">
+            <div class="bg-[#111] p-4 border-b border-gray-700 flex justify-between items-center">
+                <h3 class="text-amber-500 font-gothic text-lg md:text-xl"><i class="fas fa-gem mr-2"></i>幸运之骰内容一览</h3>
+                <button onclick="app.togglePoolPreview()" class="text-gray-400 text-2xl">&times;</button>
+            </div>
+            <div id="pool-preview-list" class="flex-1 overflow-y-auto p-4"></div>
+        </div>
+    </div>
+    
+    <a href="/index.html" class="fixed bottom-4 right-4 z-30 text-gray-400 hover:text-white transition-colors text-right">
+        <i class="fa-solid fa-house text-xl sm:text-2xl"></i>
+        <span class="block text-xs mt-1">首页</span>
+    </a>
+
+    <!-- 音乐播放器本体，不显示在页面上，只用于播放 -->
+    <audio id="background-music" preload="auto"></audio>
+
+    <!-- 资源管理器 -->
+    <script>
+        class ResourceManager {
+            static SHARED_KEY = 'shared_resources';
+            
+            static initialize(initialResources = {}) {
+                let resources = JSON.parse(localStorage.getItem(this.SHARED_KEY));
+                if (!resources) {
+                    resources = {...initialResources};
+                    localStorage.setItem(this.SHARED_KEY, JSON.stringify(resources));
+                }
+                return resources;
+            }
+            
+            static getResource(resourceName) {
+                const resources = JSON.parse(localStorage.getItem(this.SHARED_KEY)) || {};
+                return resources[resourceName] || 0;
+            }
+            
+            static setResource(resourceName, amount) {
+                const resources = JSON.parse(localStorage.getItem(this.SHARED_KEY)) || {};
+                resources[resourceName] = amount;
+                localStorage.setItem(this.SHARED_KEY, JSON.stringify(resources));
+            }
+            
+            static deductResource(resourceName, amount) {
+                const current = this.getResource(resourceName);
+                if (current < amount) {
+                    return false;
+                }
+                this.setResource(resourceName, current - amount);
+                return true;
+            }
+            
+            static addResource(resourceName, amount) {
+                const current = this.getResource(resourceName);
+                this.setResource(resourceName, current + amount);
+            }
+        }
+    </script>
+
+    <script>
+        class LuckyDiceApp {
+            constructor() {
+                this.poolList = null; // 存储所有池子列表
+                this.currentPoolId = null; // 当前池子ID
+                this.config = null; 
+                this.state = null; 
+                this.isAnimating = false;
+                this.tierProbabilities = null; // 存储层级概率
+                this.currentResults = []; 
+                
+                // 音乐相关属性
+                this.musicList = [];
+                this.audioElement = null;
+                this.currentMusic = null;
+                this.isMusicPlaying = false;
+                this.introPlayed = false;
+                
+                // 幸运之骰专属：全局拥有的物品存储（跨池子共享）
+                this.globalOwnedItems = this.loadGlobalOwnedItems();
+
+                // 新增：当前池子的成本
+                this.pullCost = 96;
+                // 新增：音乐列表路径
+                this.musicListPath = "/music/musiclist.json";
+            }
+            
+            async init() {
+                try {
+                    // 1. 加载 XYZT/list.json
+                    const listResponse = await fetch('/XYZT/list.json');
+                    if (!listResponse.ok) throw new Error("无法加载 XYZT/list.json");
+                    this.poolList = await listResponse.json();
+                    
+                    // 默认进入第一个池子
+                    if (this.poolList && this.poolList.length > 0) {
+                        this.currentPoolId = this.poolList[0].id;
+                        await this.loadPool(this.currentPoolId);
+                    }
+
+                    // 加载音乐列表
+                    const musicResponse = await fetch(this.musicListPath); 
+                    if (!musicResponse.ok) {
+                        console.warn(`无法加载 ${this.musicListPath}，音乐功能将不可用。`);
+                        this.musicList = []; // 确保列表为空，避免后续错误
+                    } else {
+                        this.musicList = await musicResponse.json();
+                    }
+
+                } catch (error) {
+                    console.error("加载配置文件或音乐列表时出错:", error);
+                    alert(`错误: ${error.message}！请检查文件是否存在且格式正确。`);
+                    this.isAnimating = true; // 如果加载失败，禁止抽卡操作
+                }
+                this.initUI();
+                // 初始化音乐播放器并尝试播放
+                this.initMusicPlayer();
+                
+                // 绑定池子切换按钮事件
+                document.getElementById('pool-switch-btn').addEventListener('click', () => {
+                    this.togglePoolDropdown();
+                });
+            }
+            
+            // 切换池子下拉菜单
+            togglePoolDropdown() {
+                const dropdown = document.getElementById('pool-dropdown');
+                if (!this.poolList || this.poolList.length <= 1) return;
+                
+                if (dropdown.classList.contains('hidden')) {
+                    // 显示下拉菜单
+                    dropdown.innerHTML = '';
+                    this.poolList.forEach(pool => {
+                        const item = document.createElement('div');
+                        item.className = 'pool-dropdown-item';
+                        item.textContent = pool.name;
+                        if (pool.id === this.currentPoolId) {
+                            item.classList.add('active');
+                        }
+                        item.dataset.poolId = pool.id;
+                        item.addEventListener('click', async () => {
+                            if (pool.id !== this.currentPoolId) {
+                                await this.switchPool(pool.id);
+                            }
+                            dropdown.classList.add('hidden');
+                        });
+                        dropdown.appendChild(item);
+                    });
+                    dropdown.classList.remove('hidden');
+                } else {
+                    // 隐藏下拉菜单
+                    dropdown.classList.add('hidden');
+                }
+            }
+            
+            // 切换池子
+            async switchPool(poolId) {
+                this.currentPoolId = poolId;
+                await this.loadPool(poolId);
+                this.initUI();
+                this.saveData(); // 保存当前状态
+            }
+            
+            // 加载指定池子
+            async loadPool(poolId) {
+                try {
+                    const basePath = `/XYZT/${poolId}`;
+                    const cacheBuster = `?t=${new Date().getTime()}`;
+                    
+                    // 加载池子配置
+                    const poolResponse = await fetch(`${basePath}/pool.json${cacheBuster}`);
+                    if (!poolResponse.ok) throw new Error(`无法加载 ${basePath}/pool.json (状态: ${poolResponse.status})`);
+                    this.config = await poolResponse.json();
+                    
+                    // 加载状态数据
+                    this.loadState();
+                    
+                    // 加载层级概率
+                    const probResponse = await fetch(`${basePath}/possibility.json${cacheBuster}`);
+                    if (!probResponse.ok) throw new Error(`无法加载 ${basePath}/possibility.json (状态: ${probResponse.status})`);
+                    this.tierProbabilities = await probResponse.json();
+                    
+                    // 设置当前池子成本
+                    const currentPool = this.poolList.find(p => p.id === poolId);
+                    this.pullCost = currentPool?.cost ? parseInt(currentPool.cost, 10) : 96;
+                    
+                    // 设置音乐列表路径
+                    if (currentPool?.musiclist) {
+                        this.musicListPath = `/music/${currentPool.musiclist}`;
+                    } else {
+                        this.musicListPath = "/music/musiclist.json";
+                    }
+                    
+                } catch (error) {
+                    console.error("加载池子配置时出错:", error);
+                    alert(`错误: ${error.message}！请检查文件是否存在且格式正确。`);
+                }
+            }
+            
+            // 幸运之骰专属：生成物品唯一标识符的辅助函数（全局唯一）
+            getItemKey(item) {
+                // 使用物品名称、类型、图片作为唯一标识，不包含池子ID
+                return `lucky_dice_global_${item.name}|${item.type}|${item.img || ''}`;
+            }
+            
+            // 幸运之骰专属：加载全局拥有的物品（跨池子共享）
+            loadGlobalOwnedItems() {
+                const localStorageKey = 'lucky_dice_global_owned_items';
+                const saved = localStorage.getItem(localStorageKey);
+                return saved ? JSON.parse(saved) : {};
+            }
+            
+            // 幸运之骰专属：保存全局拥有的物品
+            saveGlobalOwnedItems() {
+                const localStorageKey = 'lucky_dice_global_owned_items';
+                localStorage.setItem(localStorageKey, JSON.stringify(this.globalOwnedItems));
+            }
+            
+            loadState() {
+                const poolId = this.config?.id || 'default';
+                // 幸运之骰专属：使用不同的存储键名，避免与V1.html数据混合
+                const storageKey = `lucky_dice_data_${poolId}`;
+
+                const defaultState = {
+                    total: 0, 
+                    history: [],
+                    currencies: {}, // 不再使用本地currencies，统一从共享资源读取
+                    activeDiscountRate: 1.0, // 1.0 means no discount, less than 1.0 means active discount
+                    activeDiscountName: null, // Stores the name of the active discount, e.g., "八折"
+                };
+                const savedState = localStorage.getItem(storageKey);
+                if (savedState) { 
+                    const parsedState = JSON.parse(savedState);
+                    // 兼容旧的 discountAvailable 字段
+                    if (parsedState.discountAvailable !== undefined) {
+                        parsedState.activeDiscountRate = parsedState.discountAvailable ? (this.config.discounts[0]?.rate || 0.75) : 1.0;
+                        parsedState.activeDiscountName = parsedState.discountAvailable ? (this.config.discounts[0]?.name || "折扣") : null;
+                        delete parsedState.discountAvailable; // 移除旧字段
+                    }
+                    this.state = { ...defaultState, ...parsedState }; 
+                } 
+                else { this.state = defaultState; }
+            }
+
+            clearData() {
+                const poolId = this.config?.id || 'default';
+                const storageKey = `lucky_dice_data_${poolId}`;
+                
+                if(confirm("确定要清空吗？抽卡记录和保底进度将重置为初始状态。但货币数量和已拥有的物品不会被重置。")) {
+                    localStorage.removeItem(storageKey);
+                    this.loadState(); this.saveData();
+                    document.getElementById('history-modal').classList.add('hidden');
+                    document.getElementById('pool-preview-modal').classList.add('hidden');
+                }
+            }
+
+            saveData() { 
+                const poolId = this.config?.id || 'default';
+                const storageKey = `lucky_dice_data_${poolId}`;
+                localStorage.setItem(storageKey, JSON.stringify(this.state)); 
+                this.updateUI(); 
+            }
+            
+            initUI() {
+                if (!this.config) return;
+                document.title = this.config.name;
+                document.getElementById('pool-name').innerText = this.config.name;
+                document.getElementById('pool-desc').innerText = `收集限定池`;
+                document.getElementById('essence-img').src = this.config.essenceImage;
+                this.updateUI();
+            }
+            
+            updateUI() {
+                if (!this.config || !this.state) return;
+                
+                // 更新收集进度（当前池子的物品总数 vs 全局已拥有物品中属于当前池子的物品数）
+                const totalItems = Object.keys(this.config.items).length;
+                const collectedItems = Object.keys(this.config.items).filter(itemName => {
+                    const item = this.config.items[itemName];
+                    const itemKey = this.getItemKey({...item, name: itemName});
+                    return this.globalOwnedItems[itemKey];
+                }).length;
+                
+                document.getElementById('collection-progress').innerText = `${collectedItems} / ${totalItems}`;
+                
+                // 更新强制完成信息
+                const completeDrawLimit = this.config.completeDrawLimit || 0;
+                const remainingDraws = Math.max(0, completeDrawLimit - this.state.total);
+                document.getElementById('force-complete').innerText = completeDrawLimit > 0 ? 
+                    `${remainingDraws} 抽后必得未收集` : '无限制';
+                
+                document.getElementById('total-pulls').innerText = this.state.total;
+                document.getElementById('currency-fragments').innerText = ResourceManager.getResource('fragments');
+                
+                const pull10CostEl = document.getElementById('pull-10-cost');
+                const pull10BtnTextEl = document.getElementById('btn-pull-10-text');
+                const fullPrice = this.pullCost * 10;
+                
+                if (this.state.activeDiscountRate < 1.0 && this.state.activeDiscountName) {
+                    const discountedPrice = Math.round(fullPrice * this.state.activeDiscountRate);
+                    pull10CostEl.innerHTML = `碎片 <del class="text-red-500/50">${fullPrice}</del> <span class="text-green-400">${discountedPrice} (${this.state.activeDiscountName})</span>`;
+                    pull10BtnTextEl.classList.add('text-green-300');
+                } else {
+                    pull10CostEl.innerHTML = `碎片 x${fullPrice}`;
+                    pull10BtnTextEl.classList.remove('text-green-300');
+                }
+
+                // 更新单抽按钮的文字提示
+                document.querySelector('#button-container .flex-col:first-child .button-cost-text').textContent = `碎片 x${this.pullCost}`;
+            }
+            
+            _checkFragments(count) {
+                let cost = count === 10 ? this.pullCost * 10 : this.pullCost;
+                if (count === 10 && this.state.activeDiscountRate < 1.0) {
+                    cost = Math.round(cost * this.state.activeDiscountRate);
+                }
+                const availableFragments = ResourceManager.getResource('fragments');
+                if (availableFragments < cost) {
+                    alert(`碎片不足！${count > 1 ? `抽取 ${count} 次` : '再次抽取'}需要 ${cost}, 当前拥有 ${availableFragments}，请点击右下角前往首页获取更多。`);
+                    return false;
+                }
+                return true;
+            }
+
+            // 幸运之骰专属：基于层级概率决定物品
+            selectItemFromTiers() {
+                if (!this.tierProbabilities || !this.tierProbabilities.tiers) {
+                    console.warn("层级概率数据不存在，使用默认随机机制");
+                    return this.selectRandomItemFallback();
+                }
+                
+                // 检查是否达到强制完成限制
+                const completeDrawLimit = this.config.completeDrawLimit || 0;
+                if (completeDrawLimit > 0 && this.state.total >= completeDrawLimit) {
+                    // 检查是否还有未收集的物品（在当前池子中）
+                    const allItemNames = Object.keys(this.config.items);
+                    const uncollectedItems = allItemNames.filter(name => {
+                        const item = this.config.items[name];
+                        const itemKey = this.getItemKey({...item, name});
+                        return !this.globalOwnedItems[itemKey];
+                    });
+                    
+                    if (uncollectedItems.length > 0) {
+                        // 从未收集的物品中随机选择
+                        const selectedItemName = uncollectedItems[Math.floor(Math.random() * uncollectedItems.length)];
+                        return {...this.config.items[selectedItemName], name: selectedItemName};
+                    }
+                }
+                
+                // 正常的层级概率抽取
+                const random = Math.random();
+                let cumulative = 0;
+                
+                // 遍历层级概率数组
+                for (const tier of this.tierProbabilities.tiers) {
+                    cumulative += tier.probability || 0;
+                    if (random < cumulative) {
+                        // 在该层级内根据权重选择物品
+                        return this.selectItemFromTier(tier);
+                    }
+                }
+                
+                // 如果没有匹配的层级，使用默认的随机机制
+                return this.selectRandomItemFallback();
+            }
+            
+            // 从特定层级中根据权重选择物品
+            selectItemFromTier(tier) {
+                if (!tier.items || tier.items.length === 0) {
+                    return this.selectRandomItemFallback();
+                }
+                
+                // 计算总权重
+                const totalWeight = tier.items.reduce((sum, item) => sum + (item.weight || 1.0), 0);
+                
+                // 根据权重随机选择
+                let random = Math.random() * totalWeight;
+                let cumulativeWeight = 0;
+                
+                for (const tierItem of tier.items) {
+                    cumulativeWeight += tierItem.weight || 1.0;
+                    if (random < cumulativeWeight) {
+                        // 找到对应的实际物品
+                        const itemName = tierItem.name;
+                        if (this.config.items[itemName]) {
+                            return {...this.config.items[itemName], name: itemName};
+                        }
+                    }
+                }
+                
+                // 如果没有找到匹配的物品，返回层级中的第一个物品
+                const firstItemName = tier.items[0].name;
+                if (this.config.items[firstItemName]) {
+                    return {...this.config.items[firstItemName], name: firstItemName};
+                }
+                
+                return this.selectRandomItemFallback();
+            }
+            
+            // 后备方案：随机选择物品
+            selectRandomItemFallback() {
+                const itemNames = Object.keys(this.config.items);
+                if (itemNames.length === 0) {
+                    return { name: "未知物品", type: "未知类型", rarity: "D", repeat: 0 };
+                }
+                
+                const randomName = itemNames[Math.floor(Math.random() * itemNames.length)];
+                return {...this.config.items[randomName], name: randomName};
+            }
+
+            async pull(count, retry = false) {
+                if (!this._checkFragments(count)) { 
+                    this.isAnimating = false; 
+                    document.getElementById('btn-pull-1').disabled = false; 
+                    document.getElementById('btn-pull-10').disabled = false; 
+                    return; 
+                }
+                if (this.isAnimating) return;
+                this.isAnimating = true;
+                if(retry) { this.closeResult(false); } 
+                
+                let cost = count === 10 ? this.pullCost * 10 : this.pullCost;
+                if (count === 10 && this.state.activeDiscountRate < 1.0) {
+                    cost = Math.round(cost * this.state.activeDiscountRate);
+                    // 如果使用了折扣，则重置折扣状态
+                    this.state.activeDiscountRate = 1.0;
+                    this.state.activeDiscountName = null;
+                }
+                ResourceManager.deductResource('fragments', cost);
+                
+                document.getElementById('btn-pull-1').disabled = true; document.getElementById('btn-pull-10').disabled = true;
+                const orb = document.getElementById('essence-orb');
+                orb.classList.remove('breathing'); orb.classList.add('shaking');
+                this.currentResults = []; let maxTier = 'D'; const tierValue = { D: 0, C: 1, B: 2, A: 3, S: 4 };
+                
+                for (let i = 0; i < count; i++) {
+                    // Increment total counter for this pull
+                    this.state.total++; 
+                    
+                    // Determine final item using tier probabilities
+                    const itemTemplate = this.selectItemFromTiers();
+                    const r = itemTemplate.rarity || 'D';
+                    let finalItem = { ...itemTemplate, rarity: r };
+                    
+                    // Add to history and update owned status
+                    if (r === 'S' || r === 'A' || r === 'B') { 
+                        this.state.history.unshift({ r, name: itemTemplate.name, idx: this.state.total, time: new Date().toLocaleTimeString() });
+                    }
+                    if (tierValue[r] > tierValue[maxTier]) { maxTier = r; }
+
+                    // 幸运之骰专属：使用全局存储内的机制，跨池子共享
+                    const itemKey = this.getItemKey(finalItem);
+                    if (this.globalOwnedItems[itemKey]) { 
+                        finalItem.isRepeat = true; 
+                    } else { 
+                        this.globalOwnedItems[itemKey] = true; 
+                        this.saveGlobalOwnedItems(); // 保存全局拥有的物品
+                    }
+                    this.currentResults.push(finalItem);
+                }
+
+                this.saveData();
+                await new Promise(r => setTimeout(r, 800));
+                const flash = document.getElementById('flash-layer');
+                let flashColor = {S: '#e8c668', A: '#b568e8', B: '#689de8'}[maxTier] || '#6b7280';
+                flash.style.background = `radial-gradient(circle, #fff 10%, ${flashColor} 90%)`;
+                flash.style.animation = 'explode-flash 0.5s forwards';
+                await new Promise(r => setTimeout(r, 250));
+                document.getElementById('main-screen').classList.add('hidden');
+                flash.style.opacity = 0;
+                this.showResultScreen(this.currentResults);
+                await new Promise(r => setTimeout(r, 500));
+                orb.classList.remove('shaking'); orb.classList.add('breathing');
+                flash.style.animation = ''; this.isAnimating = false;
+                document.getElementById('btn-pull-1').disabled = false; document.getElementById('btn-pull-10').disabled = false;
+            }
+            
+            async showResultScreen(items) {
+                const container = document.getElementById('cards-container'); const screen = document.getElementById('result-screen'); const header = document.getElementById('result-header'); const footer = document.getElementById('result-footer');
+                screen.classList.remove('hidden'); screen.classList.add('flex'); container.innerHTML = ''; footer.innerHTML = '';
+                header.style.opacity = '0'; footer.style.opacity = '0';
+                
+                const cardGrid = document.createElement('div');
+                if (items.length === 1) { 
+                    cardGrid.className = 'w-full flex justify-center items-center py-4';
+                } else { 
+                    cardGrid.className = 'grid grid-cols-3 sm:grid-cols-5 gap-2 w-full max-w-6xl p-2'; 
+                }
+                container.appendChild(cardGrid);
+
+                const rarityMap = { S: "稀世", A: "奇珍", B: "独特", C: "罕见", D: "普通" };
+                items.forEach((item, index) => {
+                    const card = document.createElement('div'); card.id = `result-card-${index}`;
+                    const sizeClass = items.length === 1 ? 'w-5/6 max-w-[200px] aspect-[2/3]' : 'w-full aspect-[2/3]';
+                    const imgContent = item.img ? `<img src="${item.img}" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" onerror="this.style.display='none'">` : `<div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-800"><i class="fa-solid fa-user-secret text-4xl mb-2 text-rarity-${item.rarity}"></i></div>`;
+                    card.setAttribute('onclick', `app.showItemDetail(${index})`);
+                    if (item.isRepeat) { card.classList.add('is-repeat'); }
+                    card.className = `card ${sizeClass} rarity-${item.rarity} bg-gray-900 rounded-lg flex flex-col relative group cursor-pointer shadow-2xl border-2 border-gray-700 ${item.isRepeat ? 'is-repeat' : ''}`;
+                    card.style.animation = `card-flip 0.4s ease-out forwards ${index * 0.15 + 0.5}s`; card.style.opacity = '0';
+                    card.innerHTML = `<div class="absolute inset-0 bg-black/20 z-10"></div><div class="absolute top-0 right-0 p-2 z-20"><span class="font-bold font-gothic text-lg sm:text-xl italic text-rarity-${item.rarity} drop-shadow-md">${rarityMap[item.rarity]}</span></div><div class="card-image-container flex-1 relative overflow-hidden bg-gray-900">${imgContent}<div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-black via-black/70 to-transparent z-10"></div></div><div class="card-name-container relative z-20 p-2 text-center border-t border-white/10"><div class="text-xs sm:text-sm font-bold text-gray-200 tracking-wide truncate">${item.type || '道具'}</div></div>`;
+                    cardGrid.appendChild(card);
+                });
+                
+                const pullCount = items.length;
+                footer.innerHTML = `
+                    <button onclick="app.closeResult()" class="idv-btn w-48 py-3">确 认</button>
+                    <button onclick="app.pull(${pullCount}, true)" class="idv-btn w-48 py-3 text-amber-100 border-amber-700">再次 x${pullCount}</button>
+                `;
+
+                await new Promise(r => setTimeout(r, 200));
+                header.style.transition = 'opacity 1s'; header.style.opacity = '1';
+                const allCardsAnimationTime = items.length * 150 + 500;
+                await new Promise(r => setTimeout(r, allCardsAnimationTime));
+                footer.style.transition = 'opacity 0.5s'; footer.style.opacity = '1';
+                this.handleRepeatConversion();
+            }
+            handleRepeatConversion() {
+                setTimeout(() => {
+                    this.currentResults.forEach((item, index) => {
+                        if (item.isRepeat) {
+                            const card = document.getElementById(`result-card-${index}`);
+                            if (card) {
+                                card.classList.add('converting'); ResourceManager.addResource('fragments', item.repeat || 0);
+                                setTimeout(() => {
+                                    const imgContainer = card.querySelector('.card-image-container'); const nameContainer = card.querySelector('.card-name-container');
+                                    imgContainer.innerHTML = `<img src="${this.config.fragmentsInfo.img}" class="absolute inset-0 w-full h-full object-contain p-4 transition-opacity" onerror="this.style.display='none'">`;
+                                    nameContainer.innerHTML = `<div class="text-xs sm:text-sm font-bold text-gray-200 tracking-wide truncate">${this.config.fragmentsInfo.name} +${item.repeat}</div>`;
+                                    card.classList.remove('converting'); card.style.animation = 'card-flip 0.4s ease-out forwards';
+                                    this.saveData();
+                                }, 600);
+                            }
+                        }
+                    });
+                }, 2000);
+            }
+            closeResult(showMain = true) {
+                const screen = document.getElementById('result-screen');
+                screen.classList.add('hidden'); screen.classList.remove('flex');
+                if(showMain) document.getElementById('main-screen').classList.remove('hidden');
+            }
+            _displayDetailModal(item) {
+                if (!item) return;
+                document.getElementById('detail-name').textContent = item.name || '未知物品';
+                document.getElementById('detail-type').textContent = item.type || '未知类型';
+                document.getElementById('detail-desc').textContent = `${item.description || '暂无描述。'}`;
+                document.getElementById('detail-img').src = item.img || '';
+                const glow = document.getElementById('detail-rarity-glow');
+                const rarityColors = { S: 'gold', A: 'purple', B: 'royalblue' };
+                const rarity = item.rarity || 'D';
+                glow.style.background = rarityColors[rarity] || 'transparent';
+                const modal = document.getElementById('item-detail-modal');
+                modal.classList.remove('hidden'); modal.classList.add('flex', 'show');
+            }
+            showItemDetail(index) { this._displayDetailModal(this.currentResults[index]); }
+            showPoolItemDetail(itemName) { 
+                const item = {...this.config.items[itemName], name: itemName};
+                this._displayDetailModal(item); 
+            }
+            closeItemDetail() {
+                const modal = document.getElementById('item-detail-modal');
+                modal.classList.add('hidden'); modal.classList.remove('flex', 'show');
+            }
+            toggleHistory() {
+                const el = document.getElementById('history-modal');
+                el.classList.toggle('hidden');
+                if (!el.classList.contains('hidden')) {
+                    const list = document.getElementById('history-list');
+                    
+                    // 显示所有抽到过的物品（按时间倒序）
+                    if (this.state.history && this.state.history.length > 0) {
+                        const rarityMap = { S: "稀世", A: "奇珍", B: "独特", C: "罕见", D: "普通" };
+                        list.innerHTML = this.state.history.map(h => {
+                            let textColorClass = '';
+                            if (h.r === 'S') {
+                                textColorClass = 'text-yellow-500';
+                            } else if (h.r === 'A') {
+                                textColorClass = 'text-purple-400';
+                            } else if (h.r === 'B') {
+                                textColorClass = 'text-blue-400';
+                            } else if (h.r === 'C') {
+                                textColorClass = 'text-green-400';
+                            } else {
+                                textColorClass = 'text-gray-400';
+                            }
+                            return `<div class="flex justify-between p-2 border-b border-gray-700/50 ${textColorClass}"><span>[${rarityMap[h.r] || h.r}] ${h.name}</span> <span class="text-xs text-gray-500">第${h.idx}抽</span></div>`;
+                        }).join('');
+                    } else {
+                        list.innerHTML = '<div class="text-center text-gray-500 mt-4">暂无抽取记录</div>';
+                    }
+                }
+            }
+            togglePoolPreview() {
+                const el = document.getElementById('pool-preview-modal'); el.classList.toggle('hidden');
+                if (!el.classList.contains('hidden')) { this.renderPoolPreview(); }
+            }
+            renderPoolPreview() {
+                const listContainer = document.getElementById('pool-preview-list');
+                if (!this.config || !this.state) { listContainer.innerHTML = '<p class="text-center text-gray-500">加载数据失败...</p>'; return; }
+                let htmlContent = '';
+                const rarities = { S: "稀世", A: "奇珍", B: "独特", C: "罕见", D: "普通" };
+                const placeholderImg = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZHN0PSIxMDAiIGZpbGw9IiMzMzMiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iIzU1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+PzwvdGV4dD48L3N2Zz4=';
+                
+                // 按稀有度分组显示所有物品
+                const itemsByRarity = {};
+                Object.keys(this.config.items).forEach(itemName => {
+                    const item = this.config.items[itemName];
+                    const rarity = item.rarity || 'D';
+                    if (!itemsByRarity[rarity]) {
+                        itemsByRarity[rarity] = [];
+                    }
+                    itemsByRarity[rarity].push({...item, name: itemName});
+                });
+                
+                // 按稀有度排序显示
+                const rarityOrder = ['S', 'A', 'B', 'C', 'D'];
+                rarityOrder.forEach(rarity => {
+                    if (itemsByRarity[rarity] && itemsByRarity[rarity].length > 0) {
+                        const rarityName = rarities[rarity];
+                        htmlContent += `<div class="mb-8"><h4 class="text-rarity-${rarity} font-gothic text-xl mb-4 border-b-2 border-rarity-${rarity}/30 pb-2">${rarityName}</h4><div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">`;
+                        itemsByRarity[rarity].forEach(item => {
+                            // 幸运之骰专属：使用全局拥有的物品存储
+                            const itemKey = this.getItemKey(item);
+                            const isOwned = this.globalOwnedItems[itemKey];
+                            const ownedClass = isOwned ? 'owned' : 'not-owned';
+                            const itemImg = item.img || placeholderImg;
+                            // 注意：这里强制加上 truncate 类，防止未计算前文字换行撑开高度
+                            htmlContent += `<div class="pool-item ${ownedClass}" title="${item.name}\n${item.type}" onclick="app.showPoolItemDetail('${item.name}')"><div class="img-container"><img src="${itemImg}" alt="${item.name}" loading="lazy" onerror="this.src='${placeholderImg}'"></div><p class="text-gray-300 truncate"><span class="inline-block">${item.name}</span></p></div>`;
+                        });
+                        htmlContent += `</div></div>`;
+                    }
+                });
+                
+                listContainer.innerHTML = htmlContent;
+                
+                // 应用跑马灯效果
+                setTimeout(() => {
+                    const itemPs = listContainer.querySelectorAll('.pool-item p');
+                    itemPs.forEach(p => {
+                        const span = p.querySelector('span');
+                        // 移除 truncate 以便准确测量原始宽度，测量后再决定是否加跑马灯
+                        p.classList.remove('truncate');
+                        
+                        // 增加 1px 的容错空间
+                        if (span && span.scrollWidth > (p.clientWidth + 1)) {
+                            const originalText = span.textContent;
+                            // 构造跑马灯结构
+                            // 注意：增加了 white-space: nowrap 到 wrapper 以防止换行
+                            p.innerHTML = `<div class="marquee-wrapper" style="white-space: nowrap;"><span>${originalText}&nbsp;&nbsp;&nbsp;${originalText}</span></div>`;
+                            
+                            const wrapper = p.querySelector('.marquee-wrapper');
+                            const innerSpan = wrapper.querySelector('span');
+                            
+                            // 重新计算速度，根据文本长度动态调整
+                            const scrollSpeed = 30; // 像素/秒，数字越小越慢
+                            const totalWidth = innerSpan.scrollWidth / 2; // 单个文本的宽度
+                            const duration = totalWidth / scrollSpeed;
+                            
+                            wrapper.style.setProperty('--marquee-duration', `${duration}s`);
+                        } else {
+                            // 如果不需要滚动，加回 truncate 保持美观
+                            p.classList.add('truncate');
+                        }
+                    });
+                }, 50); // 延迟 50ms 执行
+            }
+
+            // 音乐播放器初始化
+            initMusicPlayer() {
+                this.audioElement = document.getElementById('background-music');
+                if (this.musicList.length === 0) {
+                    console.warn("音乐列表为空，音乐功能将不可用。");
+                    this._updateMusicButtonUI(); // 更新按钮为暂停状态 (静音图标)
+                    return;
+                }
+
+                // 随机选择一首音乐
+                const randomIndex = Math.floor(Math.random() * this.musicList.length);
+                this.currentMusic = this.musicList[randomIndex];
+                this.audioElement.volume = 0.3; // 可以设置一个默认音量
+
+                // 监听音乐播放结束事件
+                this.audioElement.onended = () => {
+                    if (!this.introPlayed && this.currentMusic.introFilename) {
+                        // 开头部分播放完毕，切换到循环部分
+                        this.audioElement.src = `/music/${this.currentMusic.loopFilename}`;
+                        this.audioElement.loop = true; // 循环播放
+                        this.introPlayed = true; // 标记开头已播放
+                        this.audioElement.play().catch(e => console.error("播放循环部分失败:", e));
+                    } else if (this.currentMusic.loopFilename) {
+                        // 循环部分正常结束（理论上loop=true不会发生），或重新开始循环
+                        // do nothing, loop=true handles it
+                    }
+                };
+
+                // 尝试播放音乐
+                this._loadAndPlayCurrentMusic();
+            }
+
+            // 载入并播放当前选定的音乐
+            _loadAndPlayCurrentMusic() {
+                if (!this.currentMusic) return;
+
+                if (this.currentMusic.introFilename) {
+                    // 有开头部分，先播放开头
+                    this.audioElement.src = `/music/${this.currentMusic.introFilename}`;
+                    this.audioElement.loop = false; // 开头不循环
+                    this.introPlayed = false; // 重置开头播放标记
+                } else {
+                    // 没有开头部分，直接播放循环部分
+                    this.audioElement.src = `/music/${this.currentMusic.loopFilename}`;
+                    this.audioElement.loop = true; // 循环播放
+                    this.introPlayed = true; // 标记为已跳过开头（或无开头）
+                }
+
+                this.audioElement.play()
+                    .then(() => {
+                        this.isMusicPlaying = true;
+                        this._updateMusicButtonUI();
+                    })
+                    .catch(error => {
+                        console.warn("音乐自动播放被阻止:", error);
+                        this.isMusicPlaying = false; // 确保状态正确
+                        this._updateMusicButtonUI(); // 更新按钮为暂停状态 (静音图标)
+                    });
+            }
+
+            // 播放音乐
+            playMusic() {
+                if (this.audioElement && !this.isMusicPlaying) {
+                    // 如果是重新播放，且开头未播放，则从开头开始
+                    if (!this.introPlayed && this.currentMusic && this.currentMusic.introFilename && this.audioElement.paused && this.audioElement.currentTime === 0) {
+                         this._loadAndPlayCurrentMusic(); // 重新加载并从头播放（包括intro）
+                         return;
+                    }
+                    // 否则从当前位置继续播放
+                    this.audioElement.play()
+                        .then(() => {
+                            this.isMusicPlaying = true;
+                            this._updateMusicButtonUI();
+                        })
+                        .catch(error => {
+                            console.error("播放音乐失败:", error);
+                        });
+                }
+            }
+
+            // 暂停音乐
+            pauseMusic() {
+                if (this.audioElement && this.isMusicPlaying) {
+                    this.audioElement.pause();
+                    this.isMusicPlaying = false;
+                    this._updateMusicButtonUI();
+                }
+            }
+
+            // 切换音乐播放状态
+            toggleMusic() {
+                if (this.isMusicPlaying) {
+                    this.pauseMusic();
+                } else {
+                    this.playMusic();
+                }
+            }
+
+            // 更新音乐按钮UI
+            _updateMusicButtonUI() {
+                const musicButton = document.getElementById('music-toggle-btn');
+                const musicIcon = musicButton.querySelector('i');
+                const musicStatusText = document.getElementById('music-status-text');
+
+                if (this.isMusicPlaying) {
+                    musicIcon.classList.remove('fa-volume-mute'); // 移除静音图标
+                    musicIcon.classList.add('fa-music', 'spin-animation'); // 添加音乐图标和旋转动画
+                    musicStatusText.textContent = '播放';
+                } else {
+                    musicIcon.classList.remove('fa-music', 'spin-animation'); // 移除音乐图标和旋转动画
+                    musicIcon.classList.add('fa-volume-mute'); // 添加静音图标
+                    musicStatusText.textContent = '音乐';
+                }
+            }
+        }
+        let app;
+        document.addEventListener('DOMContentLoaded', async () => {
+            app = new LuckyDiceApp();
+            await app.init();
+
+            // 屏幕尺寸检查
+            const MIN_WIDTH = 200;
+            const MIN_HEIGHT = 450;
+            const smallScreenAlertShown = sessionStorage.getItem('smallScreenAlertShown');
+
+            if ((window.innerWidth < MIN_WIDTH || window.innerHeight < MIN_HEIGHT) && !smallScreenAlertShown) {
+                alert(`您的屏幕尺寸（${window.innerWidth}x${window.innerHeight}）过小，可能会导致出现显示问题。建议使用更宽/高的屏幕。`);
+                sessionStorage.setItem('smallScreenAlertShown', 'true'); // 设置标志，避免重复弹窗
+            }
+            
+            // 点击页面其他地方隐藏池子下拉菜单
+            document.addEventListener('click', (e) => {
+                const dropdown = document.getElementById('pool-dropdown');
+                const switchBtn = document.getElementById('pool-switch-btn');
+                if (!dropdown.contains(e.target) && !switchBtn.contains(e.target)) {
+                    dropdown.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

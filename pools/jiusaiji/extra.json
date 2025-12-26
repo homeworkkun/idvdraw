@@ -1,0 +1,181 @@
+{
+  "C": [
+    {
+      "name": "寂静闹钟",
+      "img": "./img/hud9omav51twp1jos8ffikrw1u1ksyr.png",
+      "type": "随从",
+      "description": "警告：随时可能响起!",
+      "repeat": 36
+    },
+    {
+      "name": "留声机",
+      "img": "./img/c07gr5x8cq1xxszm6bm805hoj1utlrm.png",
+      "type": "随从",
+      "description": "发出的声音都会被收录下来，如果能带着它逃出去，这段录音应该会很珍贵。",
+      "repeat": 36
+    },
+    {
+      "name": "蓝蝶",
+      "img": "./img/0hf4yyew4ih9enrx9e4jjq2jyrbzq88.png",
+      "type": "随从",
+      "description": "美丽的蓝蝶，会给予求生者心灵上的慰藉",
+      "repeat": 36
+    },
+    {
+      "name": "鹿头-卡通",
+      "img": "./img/7l6ciudvtiinz6qur9a8zmdgtk4u5np.png",
+      "type": "涂鸦",
+      "description": "鹿头专属涂鸦，卡通",
+      "repeat": 36
+    },
+    {
+      "name": "“杰克”-卡通",
+      "img": "./img/p81hdrlrr8o5q5fxbcbw4kds9l8scht.png",
+      "type": "涂鸦",
+      "description": "“杰克”专属涂鸦，卡通",
+      "repeat": 36
+    },
+    {
+      "name": "小丑-卡通",
+      "img": "./img/5a6xbwrbi4ey8c7kavbv92vz4we3bj1.png",
+      "type": "涂鸦",
+      "description": "小丑专属涂鸦，卡通",
+      "repeat": 36
+    }
+  ],
+  "D": [
+    {
+      "name": "慈善家-剪影",
+      "type": "涂鸦",
+      "description": "“慈善家”专属涂鸦，剪影",
+      "img": "./img/6n8wrwfhu9her22e4q4wv1p9gzemhtu.png",
+      "repeat": 6
+    },
+    {
+      "name": "魔术师-剪影",
+      "type": "涂鸦",
+      "description": "魔术师专属涂鸦，剪影",
+      "img": "./img/33qyy967ttk8sve7m40moez2u2uxuvj.png",
+      "repeat": 6
+    },
+    {
+      "name": "园丁-剪影",
+      "type": "涂鸦",
+      "description": "园丁专属涂鸦，剪影",
+      "img": "./img/hdcbnm7xv7195qrcny1o6kz2013okbi.png",
+      "repeat": 6
+    },
+    {
+      "name": "厂长-剪影",
+      "type": "涂鸦",
+      "description": "厂长专属涂鸦，剪影",
+      "img": "./img/tevubygyz93td5paovsss73nsziot8l.png",
+      "repeat": 6
+    },
+    {
+      "name": "杰克-剪影",
+      "type": "涂鸦",
+      "description": "“杰克”专属涂鸦，剪影",
+      "img": "./img/of4cwpkun99j9sayxqm5tztn7ssz262.png",
+      "repeat": 6
+    },
+    {
+      "name": "小丑-剪影",
+      "type": "涂鸦",
+      "description": "小丑专属涂鸦，剪影",
+      "img": "./img/pjor4fpa3nl5dsqq2p4qrtreusjnajb.png",
+      "repeat": 6
+    },
+    {
+      "name": "工具箱-彩底",
+      "type": "涂鸦",
+      "description": "工具箱涂鸦，彩底",
+      "img": "./img/t8ygcqdpitghb3qtxs3gfs0aqx8t1ut.png",
+      "repeat": 6
+    },
+    {
+      "name": "前进",
+      "type": "个性动作",
+      "description": "表示前进的动作",
+      "img": "./img/rq2zv4ggq00tr73aebakvp3xr4cpf05.png",
+      "repeat": 6
+    },
+    {
+      "name": "快回来",
+      "type": "个性动作",
+      "description": "让队友快回来的动作",
+      "img": "./img/6bhm3wmfineaex5ff7oit7xkzmpsto5.png",
+      "repeat": 6
+    },
+    {
+      "name": "不解",
+      "type": "个性动作",
+      "description": "表示不解的动作",
+      "img": "./img/466v6gh8gjs0fyt74xw9dbl6gnfvzdr.png",
+      "repeat": 6
+    },
+    {
+      "name": "前锋",
+      "type": "头像",
+      "description": "前锋的基础头像",
+      "img": "./img/h0jmmd7c1u7cifkm2yr4t8w8g70ub8c.png",
+      "repeat": 6
+    },
+    {
+      "name": "机械师",
+      "type": "头像",
+      "description": "机械师的基础头像",
+      "img": "./img/6zkuttu5vx97sa8mlkqu5d0v4d2xqlt.png",
+      "repeat": 6
+    },
+    {
+      "name": "内测机械师",
+      "type": "头像",
+      "description": "内测机械师的基础头像",
+      "img": "./img/7xvs35rvn6r1s29terp2mqepy3vqcq2.png",
+      "repeat": 6
+    },
+    {
+      "name": "律师",
+      "type": "头像",
+      "description": "律师的基础头像",
+      "img": "./img/cbxei35nubp3owc3o557fmp1g4tugn1.png",
+      "repeat": 6
+    },
+    {
+      "name": "陌生人1号",
+      "type": "头像",
+      "description": "陌生人1号的基础头像",
+      "img": "./img/5zjw6puumpbiqet77acjcr3v6nwslnx.png",
+      "repeat": 6
+    },
+    {
+      "name": "园丁",
+      "type": "头像",
+      "description": "园丁的基础头像",
+      "img": "./img/k5n44gsphletfacsm14acyva1apnnt6.png",
+      "repeat": 6
+    },
+    {
+      "name": "月亮脸",
+      "type": "头像",
+      "description": "月亮脸的基础头像",
+      "img": "./img/n0ckt1ccf37vcjvzw3ftdteu7bcjvez.png",
+      "repeat": 6
+    },
+    {
+      "name": "侦探-吃惊",
+      "type": "头像",
+      "description": "侦探的萌版头像，吃惊",
+      "img": "./img/b0p6pv5tb6vm89t1fpzyo0yksmr8pga.png",
+      "repeat": 6
+    },
+    {
+      "name": "侦探-灵机一动",
+      "type": "头像",
+      "description": "侦探的萌版头像，灵机一动",
+      "img": "./img/e38wk292ums7ode23i1x5767kbjje40.png",
+      "repeat": 6
+    }
+  ]
+}

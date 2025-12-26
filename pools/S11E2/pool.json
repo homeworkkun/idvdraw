@@ -1,0 +1,397 @@
+{
+  "id": "S11E2",
+  "name": "第11赛季精华2",
+  "essenceImage": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+  "diff_A": 0,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "蝰",
+        "img": "./img/5bxfpqi2xxyj8v9xz1oxadbsl3a7uoz.png",
+        "type": "时装",
+        "description": "该结束了，无论是这趟旅程，还是缠绕我整个人生的寒冷，我的引领者不惜代价让我远离这里，但“她”却让我不得不做出抉择一-践行誓约或者拨正命运。\n（【限定】时装，仅能在第十一赛季精华2中获得）",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "羽蛇",
+        "img": "./img/c3j2ztztugwq4yxi9ut3uxmegu86xn9.png",
+        "type": "时装",
+        "description": "我的孩子，也许在你的祖辈们许下愿望的那一刻，你们就该明白，神明的青睐，容不下一丝欺瞒。",
+        "repeat": 1000
+      },
+      {
+        "name": "“向导”",
+        "img": "./img/223cueeww6sqo8v94povsxz29j8boo4.png",
+        "type": "时装",
+        "description": "如果说是那个被我视作“母亲”的人，将我推入那不该属于我的命运。那又是谁，将她的“命运”，导向这被诅咒的密林。",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "蜂鸟",
+        "img": "./img/dml19nbsnh23m7gqrr78ljy46njhljv.png",
+        "type": "时装",
+        "description": "进入密林第二天，先行探查的我，找到了队长留下的线索，这本该是一个好的开始，但我却开始不安，因为我发现从那一刻起，暗处就一直有什么东西在伺机而动，也许是伏击我们的猎手，也许是我们此行的猎物。",
+        "repeat": 200
+      },
+      {
+        "name": "花蛛",
+        "img": "./img/sofgvqmi6ahygbg3xmjcshwmsgxyfed.png",
+        "type": "时装",
+        "description": "外来者，如果你不被这密林的主人认同，那么等待你的就不会是神庙中的秘宝，而是我捕食的毒网。",
+        "repeat": 200
+      },
+      {
+        "name": "鸢尾",
+        "img": "./img/pp1c58w365mbbqeniyti3q87gg6u2o5.png",
+        "type": "时装",
+        "description": "尽管那次沙漠探险的结果并不十分成功，但至少证明了那本笔记的价值，我用更高的报酬，找来了更好的帮手，进入密林的第一天，他们向我展现了什么叫物超所值。",
+        "repeat": 200
+      },
+      {
+        "name": "攀蜥",
+        "img": "./img/5463sfp5ykz12ilh4xj7d6db7fwkuvh.png",
+        "type": "时装",
+        "description": "嘶~我很少遇见比我更适合密林的寻宝猎人，毕竟，我稍稍有些“与众不同”。不过当我在第三天见到那个耷拉着半只眼的家伙时，我不得不承认蛇是比蜥蜴更危险的动物。",
+        "repeat": 200
+      },
+      {
+        "name": "刺歌雀",
+        "img": "./img/d72qrfwtwwo4gw595712oqqrfsfx3po.png",
+        "type": "时装",
+        "description": "一望无际的密林，湿热的天气，已经让我们昏昏入睡。然而“4”，显然是我的幸运数字，我们第一次见到了这里的原住民，即便他们难以交流到让人头疼。但我原谅他们，毕竟如果队长所言非虚，那这会是我享受美妙退休生活前，最后一次寻宝之旅。",
+        "repeat": 200
+      },
+      {
+        "name": "燕尾蝶",
+        "img": "./img/dpvqths563r789mt77u4ug6pff85el4.png",
+        "type": "时装",
+        "description": "第五天，似乎总不是什么好日子，尤其对我们而言，刚踏入神庙我们就跟队长走散了。我们感受到了“她”对外来者的排斥，除了队长以外，那奇怪的神明似乎觉得，他本该属于这里，即便在此之前，他从未踏上过这片土地。",
+        "repeat": 200
+      },
+      {
+        "name": "孽蜥-拜访",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "孽蜥专属匹配大厅等待动作，拜访，求生者可见",
+        "repeat": 200
+      },
+      {
+        "name": "梦之女巫-拜访",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "梦之女巫专属匹配大厅等待动作，拜访，求生者可见",
+        "repeat": 200
+      },
+      {
+        "name": "大副-张望",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "大副匹配大厅动作，张望",
+        "repeat": 200
+      },
+      {
+        "name": "野人-张望",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "野人匹配大厅动作，张望",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "枯草黄",
+        "img": "./img/ias300850a033hlgid6x3x3xglanb1u.png",
+        "type": "时装",
+        "description": "枯黄的草原是野火燃烧的温床。",
+        "repeat": 36
+      },
+      {
+        "name": "朱褐石",
+        "img": "./img/p7slx0b0lj7llm2qprii2y0p12eehhm.png",
+        "type": "时装",
+        "description": "产自地下矿物的颜料，有着一种独特的厚重感。",
+        "repeat": 36
+      },
+      {
+        "name": "花紫",
+        "img": "./img/7hiw8hxz4n33sj5m83axz128jdg68a0.png",
+        "type": "时装",
+        "description": "如果演出服只有一种紫色，一定会觉得非常无趣！",
+        "repeat": 36
+      },
+      {
+        "name": "帆布白",
+        "img": "./img/il8v0r2q1u28bq5idorvtp8p2sodpfz.png",
+        "type": "时装",
+        "description": "出航之初的白帆，在归来时又会变成什么颜色呢?",
+        "repeat": 36
+      },
+      {
+        "name": "大麦酒",
+        "img": "./img/n5gcwz0z7amv0lzm50bkxfu82apfjnz.png",
+        "type": "时装",
+        "description": "麦芽酿制的褐色，是健康甘醇的象征",
+        "repeat": 36
+      },
+      {
+        "name": "蓝香橙",
+        "img": "./img/8me5j4thp23bc1j3psel1n41i6d3h9f.png",
+        "type": "时装",
+        "description": "这可是一种带有纯正果味儿的利口酒！",
+        "repeat": 36
+      },
+      {
+        "name": "湖蓝漆",
+        "img": "./img/ngvvvagd8iingc2hrk5zgucik2prhyy.png",
+        "type": "时装",
+        "description": "别误会，它只是换了一个冷色涂装，并没有降低半点热情。",
+        "repeat": 36
+      },
+      {
+        "name": "紫钢",
+        "img": "./img/8wo06b7hmdqsojs13m4fjn098bow2v0.png",
+        "type": "时装",
+        "description": "邦邦升级了紫色的外饰，很高兴再次认识你!",
+        "repeat": 36
+      },
+      {
+        "name": "咒术师-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，咒术师专属",
+        "repeat": 36
+      },
+      {
+        "name": "勘探员-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，勘探员专属",
+        "repeat": 36
+      },
+      {
+        "name": "咒术师-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，咒术师专属",
+        "repeat": 36
+      },
+      {
+        "name": "勘探员-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，勘探员专属",
+        "repeat": 36
+      },
+      {
+        "name": "入殓师-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，入殓师专属",
+        "repeat": 36
+      },
+      {
+        "name": "先知-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，先知专属",
+        "repeat": 36
+      },
+      {
+        "name": "小丑-异界行者",
+        "img": "./img/stpb9v76dnucb9uibzofd7gnar2pegs.png",
+        "type": "涂鸦",
+        "description": "小丑专属涂鸦，异界行者",
+        "repeat": 36
+      },
+      {
+        "name": "机械师-人偶师",
+        "img": "./img/26ahvvptmasl44e73z9seq4pv2ckbxs.png",
+        "type": "涂鸦",
+        "description": "机械师专属涂鸦，人偶师",
+        "repeat": 36
+      },
+      {
+        "name": "牛仔-教鞭",
+        "img": "./img/ikwhi6jhpjtoj64oabowu4q9ii38pa2.png",
+        "type": "涂鸦",
+        "description": "牛仔专属涂鸦，教鞭",
+        "repeat": 36
+      },
+      {
+        "name": "入殓师-嬉命人",
+        "img": "./img/jmoaykaujyefco8z2pvkzql0rikykas.png",
+        "type": "涂鸦",
+        "description": "入殓师专属涂鸦，嬉命人",
+        "repeat": 36
+      },
+      {
+        "name": "舞女-恶之花",
+        "img": "./img/38gsxv6trf8re44bn3tcyq29rr7gbk8.png",
+        "type": "涂鸦",
+        "description": "舞女专属涂鸦，恶之花",
+        "repeat": 36
+      },
+      {
+        "name": "摄影师-拍卖师",
+        "img": "./img/glsgrw5p8yvw00j6vnlpk50pbqi44vk.png",
+        "type": "涂鸦",
+        "description": "摄影师专属涂鸦，拍卖师",
+        "repeat": 36
+      },
+      {
+        "name": "先知-观测者",
+        "img": "./img/ld6ekeeka0shoygnzzvppd9wq8yv23v.png",
+        "type": "涂鸦",
+        "description": "先知专属涂鸦，观测者",
+        "repeat": 36
+      },
+      {
+        "name": "祭司-另一面",
+        "img": "./img/jqgyk5gj4jvl5n6bc4q0bz3ido4urgw.png",
+        "type": "头像",
+        "description": "祭司的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "牛仔-另一面",
+        "img": "./img/bkv9fb7nsrfydf3u8pxlzvji3nxb4d8.png",
+        "type": "头像",
+        "description": "牛仔的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "调香师-另一面",
+        "img": "./img/m1qqlvf488ry9z64jpgmakq1p5qs1ve.png",
+        "type": "头像",
+        "description": "调香师的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "幸运儿-另一面",
+        "img": "./img/p10idg3yk2sjs9706zatl599t3qgu4n.png",
+        "type": "头像",
+        "description": "幸运儿的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "红蝶-另一面",
+        "img": "./img/4rpgka2ogvam4bhpb0irphbxn3ny6er.png",
+        "type": "头像",
+        "description": "红蝶的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "蜘蛛-另一面",
+        "img": "./img/i6s4hyrbcdo407tovbws0ogidc0bx30.png",
+        "type": "头像",
+        "description": "蜘蛛的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "宿伞之魂-另一面",
+        "img": "./img/8aghg7zysf9bp4h8nvd7rapw9jooqfb.png",
+        "type": "头像",
+        "description": "宿伞之魂的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "黄衣之主-另一面",
+        "img": "./img/i83owa0rtgdqzrnzu0eyisqs36o7xel.png",
+        "type": "头像",
+        "description": "黄衣之主的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "机械师-灰影",
+        "img": "./img/kqzwkx14ftv8h05myq8x8o5jbp7il9u.png",
+        "type": "涂鸦",
+        "description": "机械师专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "空军-灰影",
+        "img": "./img/r293l248bbxfotwa3ragc5m6mdv7pp2.png",
+        "type": "涂鸦",
+        "description": "空军专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "牛仔-灰影",
+        "img": "./img/mbkgwqlehtzr28ivo61ygpf9roeg4fj.png",
+        "type": "涂鸦",
+        "description": "牛仔专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "前锋-灰影",
+        "img": "./img/m5usb83t1lpqt2r73jwnp600kllq2br.png",
+        "type": "涂鸦",
+        "description": "前锋专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "医生-灰影",
+        "img": "./img/ksmr9ia98psmlxpz6fa31ejjjdak3wr.png",
+        "type": "涂鸦",
+        "description": "医生专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "园丁-灰影",
+        "img": "./img/7wa8pq95vtsiy786427kol860vgdj9h.png",
+        "type": "涂鸦",
+        "description": "园丁专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-牛仔",
+        "img": "./img/5hoil1hfoc3lca5y4ncdk355fw91igw.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-园丁",
+        "img": "./img/9umtstct006hc9swsxwlp9z3tbkkvat.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-前锋",
+        "img": "./img/brxhwjxl3xrp0uau7pqus3xnsw9i5w7.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-魔术师",
+        "img": "./img/kf54f5igu720r62kbj4qr1dstb4152q.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
+        "repeat": 6
+      }
+    ]
+  }
+}

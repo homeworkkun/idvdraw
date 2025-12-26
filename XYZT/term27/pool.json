@@ -1,0 +1,77 @@
+{
+  "id": "lucky_dice_27",
+  "name": "幸运之骰·第27期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "压岁钱": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/mtu8znyoxij3bzzwtxsf2wa8y1ufwoy.png",
+      "description": "今年的压岁钱你收到了吗？(通过2021年春节活动获得) ",
+      "repeat": 200
+    },
+    "异界行者": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/kyevwiiy2zt5y7pfv0zzmwcpopgfd6b.png",
+      "description": "尖牙利齿，劚玉如泥，纵横捭阖阴阳之间。（深渊的呼唤Ⅲ限定获得） ",
+      "repeat": 6
+    },
+    "熔铁猎犬": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/bodd3xaxj06hqqw7kis3me0ggmjirw9.png",
+      "description": "金甲粼粼的勇士，地狱之犬早已恭候多时。（深渊的呼唤Ⅳ限定获得） ",
+      "repeat": 6
+    },
+    "深渊的呼唤Ⅲ": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/8rvyrqjc5xk5aypkuugfy8dw60qvaa0.png",
+      "description": "【深渊的呼唤Ⅲ】对战限定涂鸦",
+      "repeat": 6
+    },
+    "深渊的呼唤Ⅳ": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/c6tmcq2u3zumx1eprmirssxg7ttma1b.png",
+      "description": "【深渊的呼唤Ⅳ】对战限定涂鸦（深渊的呼唤Ⅳ限定获得） ",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "lucky_dice_14",
+  "name": "幸运之骰·第14期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "怪鸟": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/0hvm71x7hpip3uesrcf5r1wfnd25ccq.png",
+      "description": "那是一只挑食的鸟儿，她喜欢善良的甜美，恐惧的清冽，悲伤的浓郁还有绝望的回甘。 ",
+      "repeat": 200
+    },
+    "贝拉夫人": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/i87i067isti6o4ov2m8pzddde9tf2nn.png",
+      "description": "任凭珠围翠绕，也无处消愁。 ",
+      "repeat": 6
+    },
+    "惊喜箱": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/rtwm2b6ioty1qdtjsb5wnnc7p0rer6h.png",
+      "description": "从惊喜箱里，抽一个玩具，在蜡烛熄灭前，讲一个关于它的故事。",
+      "repeat": 6
+    },
+    "周年庆（求生者）": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/h7dptodiirrrsc5t019bscxr5jx7xq8.png",
+      "description": "周年庆纪念涂鸦，求生者专属",
+      "repeat": 6
+    },
+    "周年庆（监管者）": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/h9oc3exduv3fdiwb20jzysk9set47d9.png",
+      "description": "周年庆纪念涂鸦，监管者专属",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

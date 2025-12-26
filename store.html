@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幻象大厅 - 商城</title>
+    <script src="/resource/tailwind.min.css"></script>
+    <link rel="stylesheet" href="/resource/fontawesome/css/all.min.css">
+    <style>
+        /* --- 字体与基础设定 --- */
+        @import url('/resource/52527f3e45d4431e0c1a912ef34df278.css');
+        
+        @font-face {
+            font-family: 'DFPOP1W5-GB';
+            src: url('/fonts.ttf') format('truetype');
+        }
+
+        body {
+            font-family: "DFPOP1W5-GB", "Noto Serif SC", serif;
+            background-color: #0f0f0f;
+            color: #e2e2e2;
+            user-select: none;
+            overflow: hidden;
+            height: 100vh;
+            background-image: url('https://patchwiki.biligame.com/images/dwrg/e/e6/4q8j82...jpg'); /* 可替换为您的背景图 */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* --- 遮罩层：模拟游戏内的暗角效果 --- */
+        .overlay-vignette {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 90%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* --- 左侧导航栏 (撕纸效果) --- */
+        .sidebar-tab {
+            position: relative;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #8a7a6b;
+            background: #2b2522; /* 未选中背景 */
+            margin-bottom: 8px;
+            cursor: pointer;
+            clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+            transition: all 0.2s;
+            border-left: 4px solid transparent;
+            text-shadow: 1px 1px 2px black;
+        }
+        
+        .sidebar-tab.active {
+            background: #d6c4a5; /* 选中背景：米色纸质 */
+            color: #3e2b22;
+            font-weight: bold;
+            padding-left: 10px;
+            clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
+            box-shadow: -5px 0 10px rgba(0,0,0,0.5);
+            text-shadow: none;
+            border-left: 4px solid #8b0000; /* 红色高亮边 */
+        }
+
+        .sidebar-tab:hover:not(.active) {
+            background: #3e3530;
+            color: #b5a595;
+        }
+
+        /* --- 商品卡片 --- */
+        .goods-card {
+            background: url('https://patchwiki.biligame.com/images/dwrg/c/c2/bg_paper_texture.png'), linear-gradient(to bottom, #e6dacc, #cbbba9); 
+            /* 如果没有纹理图，回退颜色 */
+            background-blend-mode: multiply;
+            background-color: #dcdcdc;
+            
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+            transition: transform 0.2s, filter 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .goods-card:hover {
+            transform: translateY(-3px);
+            filter: brightness(1.05);
+        }
+        
+        /* 卡片邮票边框效果 */
+        .stamp-border {
+            position: absolute;
+            top: 10px; left: 10px; right: 10px; bottom: 40px;
+            border: 2px dashed rgba(100, 80, 70, 0.3);
+            pointer-events: none;
+        }
+
+        /* 价格栏 */
+        .price-bar {
+            background: rgba(0,0,0,0.7);
+            height: 36px;
+            margin-top: auto; /* 推到底部 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: white;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* 标签样式 */
+        .tag-hot {
+            position: absolute;
+            top: 0; right: 0;
+            background: #b91c1c;
+            color: #fff;
+            padding: 2px 6px;
+            font-size: 0.7rem;
+            border-bottom-right-radius: 8px;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            z-index: 10;
+        }
+        
+        .tag-discount {
+            position: absolute;
+            bottom: 40px; right: 5px;
+            background: #ea580c; /* Orange */
+            color: white;
+            padding: 2px 8px;
+            transform: rotate(-5deg);
+            font-weight: bold;
+            font-size: 0.9rem;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            border: 1px solid #fff;
+        }
+
+        /* 滚动条样式 */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1a1a1a; }
+        ::-webkit-scrollbar-thumb { background: #555; border-radius: 4px; }
+
+        /* 资源栏图标 */
+        .res-icon {
+            width: 24px; height: 24px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 2px rgba(0,0,0,0.8));
+        }
+
+        /* 返回按钮 */
+        .back-btn {
+            position: absolute;
+            top: 20px; left: 20px;
+            width: 50px; height: 50px;
+            background: url('https://patchwiki.biligame.com/images/dwrg/0/05/ui_icon_back.png') no-repeat center/contain; /* 模拟 */
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 50%;
+            border: 2px solid #6b5a4a;
+            cursor: pointer;
+            z-index: 50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d6c4a5;
+            font-size: 1.5rem;
+            transition: transform 0.2s;
+        }
+        .back-btn:hover { transform: scale(1.1); color: white; background-color: #b91c1c; }
+
+        /* 购买弹窗 */
+        .modal-bg {
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(4px);
+        }
+        .purchase-modal {
+            background: #2b2522;
+            border: 2px solid #8b7568;
+            box-shadow: 0 0 20px rgba(0,0,0,0.8);
+            color: #d6c4a5;
+        }
+        
+        /* 底部按钮样式 */
+        .bottom-nav-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #2b2522;
+            border: 1px solid #5c4b3e;
+            border-radius: 4px;
+            color: #d6c4a5;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .bottom-nav-btn:hover {
+            background: #3e3530;
+            border-color: #d4af37;
+            transform: translateY(-2px);
+        }
+        
+        .bottom-nav-btn img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+        
+        /* 图标加载失败时的默认样式 */
+        .btn-icon {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        /* 响应式商品图标优化 */
+        .goods-image {
+            max-width: 80%;
+            max-height: 60%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* 手机端适配 */
+        @media (max-width: 768px) {
+            .sidebar-tab {
+                height: 50px;
+                font-size: 1rem;
+            }
+            
+            .goods-image {
+                max-width: 70%;
+                max-height: 50%;
+            }
+            
+            .goods-card {
+                aspect-ratio: 3/4;
+            }
+            
+            .price-bar {
+                height: 32px;
+                font-size: 0.8rem;
+            }
+            
+            .tag-hot {
+                font-size: 0.6rem;
+                padding: 1px 4px;
+            }
+            
+            .tag-discount {
+                font-size: 0.8rem;
+                padding: 1px 6px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sidebar-tab {
+                height: 45px;
+                font-size: 0.9rem;
+            }
+            
+            .goods-image {
+                max-width: 65%;
+                max-height: 45%;
+            }
+            
+            .price-bar {
+                height: 30px;
+                font-size: 0.75rem;
+            }
+            
+            .tag-hot {
+                font-size: 0.5rem;
+            }
+            
+            .tag-discount {
+                font-size: 0.7rem;
+            }
+        }
+
+        /* 平板横屏优化 */
+        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+            .goods-image {
+                max-width: 75%;
+                max-height: 55%;
+            }
+        }
+
+        /* 竖屏手机端特殊适配 */
+        @media (max-width: 768px) and (orientation: portrait) {
+            /* 顶部标签栏 */
+            .top-tabs {
+                display: flex;
+                overflow-x: auto;
+                padding: 10px 0;
+                margin-bottom: 10px;
+                gap: 8px;
+                scrollbar-width: none;
+            }
+            
+            .top-tabs::-webkit-scrollbar {
+                display: none;
+            }
+            
+            .tab-item {
+                flex: 0 0 auto;
+                min-width: 80px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.9rem;
+                color: #8a7a6b;
+                background: #2b2522;
+                cursor: pointer;
+                clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+                transition: all 0.2s;
+                border-left: 3px solid transparent;
+                text-shadow: 1px 1px 2px black;
+                white-space: nowrap;
+            }
+            
+            .tab-item.active {
+                background: #d6c4a5;
+                color: #3e2b22;
+                font-weight: bold;
+                clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
+                box-shadow: -3px 0 8px rgba(0,0,0,0.5);
+                text-shadow: none;
+                border-left: 3px solid #8b0000;
+            }
+            
+            /* 隐藏左侧侧边栏 */
+            .left-sidebar {
+                display: none !important;
+            }
+            
+            /* 显示顶部标签栏 */
+            .top-tabs {
+                display: flex !important;
+            }
+            
+            /* 商品网格调整为每行2个 */
+            .goods-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 12px !important;
+            }
+            
+            /* 调整返回按钮位置 */
+            .back-btn {
+                top: 15px;
+                left: 15px;
+                width: 40px;
+                height: 40px;
+            }
+            
+            /* 调整顶部资源栏 */
+            .top-resource-bar {
+                height: 60px !important;
+                padding: 0 10px !important;
+            }
+            
+            .resources-container {
+                flex-wrap: wrap !important;
+                gap: 2px 10px !important;
+                max-width: 70% !important;
+            }
+            
+            .resource-item {
+                gap: 4px !important;
+            }
+            
+            .res-icon-mobile {
+                width: 18px !important;
+                height: 18px !important;
+            }
+            
+            .resource-amount {
+                font-size: 0.8rem !important;
+            }
+            
+            /* 调整主内容区域 */
+            .main-content {
+                padding: 10px !important;
+            }
+            
+            /* 底部按钮加大 */
+            .bottom-nav-btn {
+                padding: 0.75rem 1.25rem !important;
+                font-size: 1rem !important;
+            }
+            
+            .bottom-nav-btn img {
+                width: 28px !important;
+                height: 28px !important;
+            }
+            
+            .btn-text {
+                font-size: 1rem !important;
+            }
+        }
+        
+        /* 横屏或大屏幕显示左侧导航 */
+        @media (min-width: 769px), (max-width: 768px) and (orientation: landscape) {
+            .left-sidebar {
+                display: flex !important;
+            }
+            .top-tabs {
+                display: none !important;
+            }
+        }
+        
+        /* 大屏底部按钮 */
+        @media (min-width: 769px) {
+            .bottom-nav-btn {
+                padding: 0.75rem 1.5rem;
+                font-size: 1.1rem;
+            }
+            
+            .bottom-nav-btn img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        
+        /* 加号按钮强制使用默认字体 */
+        .plus-btn {
+            font-family: Arial, sans-serif !important;
+            font-weight: bold !important;
+            font-size: 24px !important;
+        }
+        
+        /* 资源容器两行显示 */
+        .resources-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 15px;
+            max-width: 60%;
+        }
+        
+        .resource-row {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+    </style>
+</head>
+<body class="flex flex-col">
+
+    <!-- 背景遮罩 -->
+    <div class="overlay-vignette"></div>
+
+    <!-- 顶部栏 (资源) -->
+    <div class="relative z-10 h-16 bg-gradient-to-b from-black/80 to-transparent flex items-center justify-end px-8 gap-6 top-resource-bar">
+        <!-- 资源列表将通过 JS 动态填充 -->
+        <div id="header-resources" class="resources-container">
+            <!-- 示例结构: 
+            <div class="resource-row">
+                <div class="flex items-center gap-1 resource-item">
+                    <img src="..." class="res-icon res-icon-mobile">
+                    <span class="resource-amount">1000</span>
+                </div>
+            </div>
+            -->
+            <span class="text-gray-400 text-sm">加载资源中...</span>
+        </div>
+        <!-- 加号按钮 -->
+        <div class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center border border-gray-500 cursor-pointer hover:bg-gray-600 plus-btn" onclick="openBonusModal()">+</div>
+    </div>
+
+    <!-- 返回按钮 -->
+    <button class="back-btn" onclick="window.location.href='/index.html'">
+        <i class="fas fa-door-open"></i>
+    </button>
+
+    <!-- 竖屏手机端顶部标签栏 -->
+    <div class="relative z-10 top-tabs" style="display: none;">
+        <div class="tab-item active" onclick="switchTabMobile(this, 'all')">全部</div>
+        <div class="tab-item" onclick="switchTabMobile(this, 'recommend')">推荐</div>
+        <div class="tab-item" onclick="switchTabMobile(this, 'new')">特惠</div>
+        <div class="tab-item" onclick="switchTabMobile(this, 'package')">礼包</div>
+        <div class="tab-item" onclick="switchTabMobile(this, 'skin')">时装</div>
+        <div class="tab-item" onclick="switchTabMobile(this, 'item')">杂货</div>
+        <div class="tab-item" onclick="switchTabMobile(this, 'room')">归宿</div>
+    </div>
+
+    <!-- 主体内容区域 -->
+    <div class="relative z-10 flex flex-1 overflow-hidden pt-4 pb-8 pl-4 pr-8 main-content">
+        
+        <!-- 左侧侧边栏 (桌面端) -->
+        <div class="w-32 flex flex-col pt-8 mr-4 shrink-0 left-sidebar">
+            <div class="sidebar-tab active" onclick="switchTab(this, 'all')">全部</div>
+            <div class="sidebar-tab" onclick="switchTab(this, 'recommend')">推荐</div>
+            <div class="sidebar-tab" onclick="switchTab(this, 'new')">特惠</div>
+            <div class="sidebar-tab" onclick="switchTab(this, 'package')">礼包</div>
+            <div class="sidebar-tab" onclick="switchTab(this, 'skin')">时装</div>
+            <div class="sidebar-tab" onclick="switchTab(this, 'item')">杂货</div>
+            <div class="sidebar-tab" onclick="switchTab(this, 'room')">归宿</div>
+        </div>
+
+        <!-- 右侧商品展示区 -->
+        <div class="flex-1 bg-[#1c1917]/80 border border-[#5c4b3e] rounded-xl p-6 overflow-y-auto shadow-inner custom-scrollbar relative">
+            <!-- 装饰性边框角落 -->
+            <div class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-[#8b7568]"></div>
+            <div class="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-[#8b7568]"></div>
+            <div class="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-[#8b7568]"></div>
+            <div class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-[#8b7568]"></div>
+
+            <!-- 商品网格 -->
+            <div id="goods-container" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 goods-grid">
+                <div class="col-span-full text-center text-gray-400 py-20">正在从 goods.json 加载商品...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部栏 (三个按钮并排，写死在HTML中) -->
+    <div class="relative z-10 h-16 bg-[#151210] border-t border-[#3e3530] flex items-center justify-around px-4">
+        <button class="bottom-nav-btn" onclick="window.location.href='/huanxiangmitu.html'">
+            <img class="btn-icon" src="/resource/68edc186b996376d420bc02f5b948407.png" alt="幻象迷途" onerror="this.src='https://patchwiki.biligame.com/images/dwrg/thumb/4/41/h7j1qqr29rcsubf0nxfm8w9uduna7nt.png/120px-%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%B8%80%E8%B5%9B%E5%AD%A3%C2%B7%E7%B2%BE%E5%8D%8E1.png'">
+            <span class="btn-text">幻象迷途</span>
+        </button>
+        
+        <button class="bottom-nav-btn" onclick="window.location.href='/jianyingxunbao.html'">
+            <img class="btn-icon" src="/resource/f446bcf698a56f61d326864643ec03d0.png" alt="鉴影寻宝" onerror="this.src='https://patchwiki.biligame.com/images/dwrg/thumb/f/f5/k49021111111111111111111111111.png/120px-%E9%89%B4%E5%BD%B1%E5%AF%BB%E5%AE%9D.png'">
+            <span class="btn-text">鉴影寻宝</span>
+        </button>
+        
+        <button class="bottom-nav-btn" onclick="window.location.href='/xingyunzhitou.html'">
+            <img class="btn-icon" src="/resource/bea8d406e5e9c735a2b8b96216f07635.png" alt="幸运之骰" onerror="this.src='https://patchwiki.biligame.com/images/dwrg/thumb/d/d5/666666666666666666666666666666.png/120px-%E5%B9%B8%E8%BF%90%E4%B9%8B%E9%AA%B0.png'">
+            <span class="btn-text">幸运之骰</span>
+        </button>
+    </div>
+
+    <!-- 购买确认弹窗 -->
+    <div id="purchase-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center modal-bg">
+        <div class="purchase-modal w-[400px] rounded-lg p-6 relative">
+            <button onclick="closeModal()" class="absolute top-2 right-3 text-gray-500 hover:text-white text-xl">×</button>
+            
+            <h3 class="text-xl font-bold text-center text-[#d6c4a5] mb-4 border-b border-[#5c4b3e] pb-2">确认购买</h3>
+            
+            <div class="flex gap-4 mb-6">
+                <img id="modal-img" src="" class="w-24 h-32 object-cover border border-gray-600 rounded bg-black/50">
+                <div>
+                    <p id="modal-name" class="text-lg font-bold text-white mb-1"></p>
+                    <p id="modal-type" class="text-sm text-gray-400 mb-2"></p>
+                    <p class="text-xs text-gray-500">购买后将直接放入背包</p>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <p class="text-sm text-center mb-2 text-gray-300">请选择支付方式：</p>
+                <div id="modal-prices" class="space-y-2">
+                    <!-- 价格按钮动态生成 -->
+                </div>
+            </div>
+            
+            <p id="modal-msg" class="text-center text-red-400 text-sm h-5"></p>
+        </div>
+    </div>
+
+    <!-- Bonus 弹窗 -->
+    <div id="bonus-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center modal-bg">
+        <div class="purchase-modal w-[90vw] max-w-3xl h-[80vh] rounded-lg p-0 relative overflow-hidden">
+            <button onclick="closeBonusModal()" class="absolute top-2 right-3 text-gray-500 hover:text-white text-xl">×</button>
+            <iframe src="" id="bonus-frame" class="w-full h-full rounded-b-lg border-0"></iframe>
+        </div>
+    </div>
+
+    <script>
+        // ==================== 数据管理器 (复用逻辑) ====================
+        class ResourceManager {
+            static SHARED_KEY = 'shared_resources';
+            static getResource(name) {
+                const r = JSON.parse(localStorage.getItem(this.SHARED_KEY)) || {};
+                return r[name] || 0;
+            }
+            static setResource(name, val) {
+                const r = JSON.parse(localStorage.getItem(this.SHARED_KEY)) || {};
+                r[name] = val;
+                localStorage.setItem(this.SHARED_KEY, JSON.stringify(r));
+                updateHeader(); // 更新UI
+            }
+            static deduct(name, amount) {
+                const current = this.getResource(name);
+                if (current < amount) return false;
+                this.setResource(name, current - amount);
+                return true;
+            }
+        }
+
+        // ==================== 格式化数字函数 ====================
+        function formatNumber(num) {
+            if (num >= 10000) {
+                return (num / 10000).toFixed(1) + '万';
+            }
+            return num.toString();
+        }
+
+        // ==================== 限购功能相关函数 ====================
+        // 获取用户的购买记录
+        function getUserPurchaseRecords() {
+            const records = localStorage.getItem('user_purchase_records');
+            return records ? JSON.parse(records) : {};
+        }
+
+        // 保存用户的购买记录
+        function saveUserPurchaseRecords(records) {
+            localStorage.setItem('user_purchase_records', JSON.stringify(records));
+        }
+
+        // 检查某个商品是否还能购买
+        function canPurchaseItem(item) {
+            if (!item.limit) return true; // 如果没有设置限制，则可以无限购买
+            
+            const records = getUserPurchaseRecords();
+            const purchasedCount = records[item.id] || 0;
+            return purchasedCount < item.limit;
+        }
+
+        // 更新购买记录
+        function updatePurchaseRecord(itemId) {
+            const records = getUserPurchaseRecords();
+            records[itemId] = (records[itemId] || 0) + 1;
+            saveUserPurchaseRecords(records);
+        }
+
+        // ==================== 初始化 ====================
+        let allGoods = [];
+        let resourceTypes = [];
+        let selectedGood = null;
+
+        // 默认图片（防挂）
+        const DEFAULT_IMG = 'https://patchwiki.biligame.com/images/dwrg/thumb/4/41/h7j1qqr29rcsubf0nxfm8w9uduna7nt.png/120px-%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%B8%80%E8%B5%9B%E5%AD%A3%C2%B7%E7%B2%BE%E5%8D%8E1.png';
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            // 1. 加载资源类型
+            try {
+                const res = await fetch('/resource_types.json');
+                if (res.ok) resourceTypes = await res.json();
+            } catch (e) { console.error('资源类型加载失败', e); }
+
+            // 2. 更新头部资源栏
+            updateHeader();
+
+            // 3. 加载商品列表
+            try {
+                const res = await fetch('/store/goods.json');
+                if (res.ok) {
+                    allGoods = await res.json();
+                    renderGoods(allGoods);
+                } else {
+                    document.getElementById('goods-container').innerHTML = 
+                        '<div class="col-span-full text-center text-red-400">无法加载 goods.json，请检查文件是否存在。</div>';
+                }
+            } catch (e) {
+                console.error('商品加载失败', e);
+                document.getElementById('goods-container').innerHTML = 
+                        `<div class="col-span-full text-center text-red-400">加载出错: ${e.message}</div>`;
+            }
+        });
+
+        // ==================== 核心逻辑 ====================
+
+        function updateHeader() {
+            const container = document.getElementById('header-resources');
+            if (!container) return;
+            container.innerHTML = '';
+
+            // 优先显示：灵感(inspiration)、碎片(fragments)、回声(echoes/huoqi?)
+            // 根据截图，我们需要显示特定的几种。这里遍历 resource_types 并显示拥有的。
+            const priorityList = ['inspiration', 'fragments', 'clue', 'huoqi']; 
+            
+            // 分成两行显示
+            const row1 = document.createElement('div');
+            row1.className = 'resource-row';
+            const row2 = document.createElement('div');
+            row2.className = 'resource-row';
+            
+            priorityList.forEach((key, index) => {
+                const typeDef = resourceTypes.find(t => t.name === key) || { icon: '', displayName: key };
+                const amount = ResourceManager.getResource(key);
+                const formattedAmount = formatNumber(amount); // 格式化数字
+                
+                const el = document.createElement('div');
+                el.className = 'flex items-center gap-1 resource-item';
+                el.innerHTML = `
+                    <img src="${typeDef.icon || ''}" class="res-icon res-icon-mobile" onerror="this.style.display='none'">
+                    <span class="text-shadow-md resource-amount">${formattedAmount}</span>
+                `;
+                
+                // 第一行放前两个，第二行放后两个
+                if (index < 2) {
+                    row1.appendChild(el);
+                } else {
+                    row2.appendChild(el);
+                }
+            });
+            
+            container.appendChild(row1);
+            container.appendChild(row2);
+        }
+
+        function renderGoods(goods) {
+            const container = document.getElementById('goods-container');
+            container.innerHTML = '';
+
+            if (goods.length === 0) {
+                container.innerHTML = '<div class="col-span-full text-center text-gray-500">暂无商品</div>';
+                return;
+            }
+
+            const purchaseRecords = getUserPurchaseRecords();
+
+            goods.forEach(item => {
+                const isLimited = item.limit > 0;
+                const purchasedCount = purchaseRecords[item.id] || 0;
+                const canPurchase = !isLimited || purchasedCount < item.limit;
+
+                const card = document.createElement('div');
+                card.className = `goods-card cursor-pointer group ${canPurchase ? '' : 'opacity-60'}`;
+                if (canPurchase) {
+                    card.onclick = () => openPurchaseModal(item);
+                }
+
+                // 价格显示逻辑...
+                let priceHtml = '';
+                if (item.prices && item.prices.length > 0) {
+                    item.prices.forEach(p => {
+                        const rType = resourceTypes.find(t => t.name === p.currency);
+                        const icon = rType ? rType.icon : '';
+                        priceHtml += `
+                            <div class="flex items-center gap-1">
+                                <img src="${icon}" class="w-4 h-4 object-contain">
+                                <span>${p.amount}</span>
+                            </div>
+                        `;
+                    });
+                } else {
+                    priceHtml = '<span>免费</span>';
+                }
+
+                card.innerHTML = `
+                    <!-- 标签 -->
+                    ${item.tag ? `<div class="tag-hot">${item.tag}</div>` : ''}
+                    
+                    <!-- 图片区域 -->
+                    <div class="flex-1 flex items-center justify-center p-4 z-10 relative">
+                        <img src="${item.img || DEFAULT_IMG}" 
+                             class="goods-image drop-shadow-lg transition group-hover:scale-105" 
+                             onerror="this.src='${DEFAULT_IMG}'">
+                        ${item.discount ? `<div class="tag-discount">${item.discount}</div>` : ''}
+                    </div>
+                    
+                    <!-- 倒计时/描述 (悬浮于图片下方) -->
+                    ${item.timeLeft ? `
+                    <div class="absolute top-10 right-2 text-[10px] text-[#5c4b3e] font-bold bg-white/80 px-1 rounded">
+                        ${item.timeLeft}
+                    </div>` : ''}
+
+                    <!-- 装饰框 -->
+                    <div class="stamp-border"></div>
+
+                    <!-- 名字 -->
+                    <div class="absolute bottom-10 w-full text-center pb-1 z-10">
+                         <span class="text-[#3e2b22] font-bold text-sm bg-white/50 px-2 rounded shadow-sm">${item.name}</span>
+                    </div>
+
+                    <!-- 限购信息 -->
+                    ${isLimited ? `<div class="absolute top-2 left-2 text-[10px] text-red-600 font-bold bg-white/80 px-1 rounded">
+                        限购: ${purchasedCount}/${item.limit}
+                    </div>` : ''}
+
+                    <!-- 价格栏 -->
+                    <div class="price-bar">
+                        ${priceHtml}
+                    </div>
+                    
+                    <!-- 无法购买提示 -->
+                    ${!canPurchase ? `<div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                        <span class="text-white font-bold">已达上限</span>
+                    </div>` : ''}
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // ==================== 购买流程 ====================
+
+        function openPurchaseModal(item) {
+            if (!canPurchaseItem(item)) {
+                alert("您已达到该商品的购买上限！");
+                return;
+            }
+            
+            selectedGood = item;
+            const modal = document.getElementById('purchase-modal');
+            document.getElementById('modal-img').src = item.img || DEFAULT_IMG;
+            document.getElementById('modal-name').textContent = item.name;
+            document.getElementById('modal-type').textContent = `${item.rarity ? item.rarity + '级 ' : ''}${item.type}`;
+            document.getElementById('modal-msg').textContent = '';
+
+            const pricesContainer = document.getElementById('modal-prices');
+            pricesContainer.innerHTML = '';
+
+            if (item.prices) {
+                item.prices.forEach((price, idx) => {
+                    const rType = resourceTypes.find(t => t.name === price.currency);
+                    const rName = rType ? rType.displayName : price.currency;
+                    const rIcon = rType ? rType.icon : '';
+                    const myBalance = ResourceManager.getResource(price.currency);
+                    const canAfford = myBalance >= price.amount;
+
+                    const btn = document.createElement('button');
+                    btn.className = `w-full flex items-center justify-between px-4 py-3 rounded border transition ${
+                        canAfford 
+                        ? 'bg-[#3e3530] border-[#5c4b3e] hover:bg-[#5c4b3e] hover:border-[#d4af37]' 
+                        : 'bg-gray-800 border-red-900 opacity-70 cursor-not-allowed'
+                    }`;
+                    btn.disabled = !canAfford;
+                    btn.innerHTML = `
+                        <div class="flex items-center gap-2 text-white">
+                            <img src="${rIcon}" class="w-6 h-6">
+                            <span>${price.amount}</span>
+                        </div>
+                        <div class="text-xs ${canAfford ? 'text-green-400' : 'text-red-400'}">
+                            (拥有: ${formatNumber(myBalance)})
+                        </div>
+                    `;
+                    btn.onclick = () => doPurchase(price);
+                    pricesContainer.appendChild(btn);
+                });
+            }
+
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('purchase-modal').classList.add('hidden');
+            selectedGood = null;
+        }
+
+        function doPurchase(priceObj) {
+            if (!selectedGood) return;
+
+            // 再次检查是否还能购买
+            if (!canPurchaseItem(selectedGood)) {
+                document.getElementById('modal-msg').textContent = "您已达到该商品的购买上限！";
+                return;
+            }
+
+            // 1. 扣费
+            const success = ResourceManager.deduct(priceObj.currency, priceObj.amount);
+            if (!success) {
+                document.getElementById('modal-msg').textContent = "余额不足！";
+                return;
+            }
+
+            // 2. 添加到全局背包 (使用 V1 格式: name|type|img)
+            // 注意：这是关键改动 - 使用 V1 兼容格式而不是 V2 格式
+            const globalKey = `${selectedGood.name}|${selectedGood.type}|${selectedGood.img || ''}`;
+            
+            const globalOwned = JSON.parse(localStorage.getItem('global_owned_items')) || {};
+            globalOwned[globalKey] = true;
+            localStorage.setItem('global_owned_items', JSON.stringify(globalOwned));
+
+            // 3. 更新购买记录
+            updatePurchaseRecord(selectedGood.id);
+
+            // 4. 提示与关闭
+            alert(`购买成功！获得：${selectedGood.name}`);
+            closeModal();
+            updateHeader(); // 刷新余额显示
+            renderGoods(allGoods); // 重新渲染商品列表以更新限购状态
+        }
+
+        // ==================== 侧边栏切换 (桌面端) ====================
+        function switchTab(el, filterType) {
+            // UI 切换
+            document.querySelectorAll('.sidebar-tab').forEach(t => t.classList.remove('active'));
+            el.classList.add('active');
+
+            // 筛选逻辑
+            if (filterType === 'all' || filterType === 'recommend' || filterType === 'new') {
+                renderGoods(allGoods); // 暂时全部显示，实际可根据 item.tag 筛选
+            } else {
+                // 根据 type 简单筛选
+                // 映射： skin -> 时装, package -> 礼包, item -> 杂货, room -> 归宿
+                const typeMap = {
+                    'skin': '时装',
+                    'package': '礼包',
+                    'item': '杂货',
+                    'room': '归宿'
+                };
+                const targetType = typeMap[filterType];
+                if (targetType) {
+                    const filtered = allGoods.filter(g => g.type.includes(targetType));
+                    renderGoods(filtered);
+                } else {
+                    renderGoods(allGoods);
+                }
+            }
+        }
+
+        // ==================== 顶部标签切换 (移动端) ====================
+        function switchTabMobile(el, filterType) {
+            // UI 切换
+            document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
+            el.classList.add('active');
+
+            // 筛选逻辑 (与桌面端相同)
+            if (filterType === 'all' || filterType === 'recommend' || filterType === 'new') {
+                renderGoods(allGoods);
+            } else {
+                const typeMap = {
+                    'skin': '时装',
+                    'package': '礼包',
+                    'item': '杂货',
+                    'room': '归宿'
+                };
+                const targetType = typeMap[filterType];
+                if (targetType) {
+                    const filtered = allGoods.filter(g => g.type.includes(targetType));
+                    renderGoods(filtered);
+                } else {
+                    renderGoods(allGoods);
+                }
+            }
+        }
+
+        // ==================== Bonus 弹窗功能 ====================
+        // 打开 Bonus 弹窗并加载页面
+        function openBonusModal() {
+            const modal = document.getElementById('bonus-modal');
+            const iframe = document.getElementById('bonus-frame');
+            iframe.src = 'bonus.html'; // 设置要加载的内容
+            modal.classList.remove('hidden');
+        }
+
+        // 关闭 Bonus 弹窗
+        function closeBonusModal() {
+            const modal = document.getElementById('bonus-modal');
+            const iframe = document.getElementById('bonus-frame');
+            modal.classList.add('hidden');
+            iframe.src = ''; // 清空 iframe 防止继续运行
+        }
+    </script>
+</body>
+</html>

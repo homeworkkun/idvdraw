@@ -1,0 +1,330 @@
+{
+  "id": "S31E1",
+  "name": "深渊珍宝Ⅶ",
+  "essenceImage": "./img/cb1x8vndjl9baylt8m5tayla0xfvv5c.png",
+  "diff_A": 0,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [
+    {
+      "name": "-20%",
+      "rate": 0.8,
+      "chance": 0.03
+    },
+    {
+      "name": "-40%",
+      "rate": 0.6,
+      "chance": 0.015
+    }
+  ],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "灾厄之主",
+        "img": "./img/q090lem69xkohci504ivvesfxllh2ls.png",
+        "type": "时装",
+        "description": "沉睡于深渊之中的巨物，渺小的生命们视它为灾厄的源头或启示的开端。但最终，人们只能在它身上看到自己，对于人类，它也只能成为一面丈量欲望的镜子。 \n深渊珍宝Ⅶ限定稀世时装 ",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "稀缺病案",
+        "img": "./img/5tyjflclbbnz47wsv06cc0lazhit2yk.png",
+        "type": "时装",
+        "description": "被菌丝日渐侵蚀的男人，终于在废墟中等来了自己的爱人。当木头逐渐被替换，这艘船还会是之前的船吗？他破碎的语句和被作为武器的寄生菌丝们，兴许能给出答案。 \n深渊珍宝Ⅶ限定奇珍时装 ",
+        "repeat": 1000
+      },
+      {
+        "name": "末世搜救",
+        "img": "./img/fia801f8fpnc1i3xe259lsujxhab2ft.png",
+        "type": "时装",
+        "description": "避难所禁止任何感染者进入——前搜救队长曾严格遵循着这条规则。但与爱人重逢后，她发现了一些新的可能性。而更多的答案，需要在前往深渊的途中找寻。 \n深渊珍宝Ⅶ限定奇珍时装 ",
+        "repeat": 1000
+      },
+      {
+        "name": "先驱探索",
+        "img": "./img/dx1v21600tzp8mlhug2n9edi11mni0v.png",
+        "type": "时装",
+        "description": "比起一成不变的生活腐烂锈蚀，他更愿在避难所外冒险。小队已经集结，他们能否捕捉到那些幻境中一闪而过的灵感？ \n深渊珍宝Ⅶ限定奇珍时装 ",
+        "repeat": 1000
+      },
+      {
+        "name": "菌丝研究",
+        "img": "./img/9vferh6zft9nctjki3oszh9w5xqj07g.png",
+        "type": "时装",
+        "description": "她研究如何驾驭菌丝，试图让它们成为为人类所用的材料或能源。但这些被她培育的小东西，总打着和她相似的主意。 \n深渊珍宝Ⅶ限定奇珍时装 ",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "机构齿轮",
+        "img": "./img/dlu95bw0ewilsqrb3jgagm0mabmxo65.png",
+        "type": "时装",
+        "description": "和绝大多数人一样平凡的家伙，在危机四伏的时代，如齿轮般规律地运转才能维持更稳定的生活。 \n深渊珍宝Ⅶ限定独特时装 ",
+        "repeat": 200
+      },
+      {
+        "name": "末世信仰",
+        "img": "./img/auia9myyh9dvzhqpp0vo44ftsvje6hv.png",
+        "type": "时装",
+        "description": "她已无从分辨光怪陆离的梦境是启示还是蛊惑，但在绝望之际，人人都需要一个来支撑理智的谎言。 \n深渊珍宝Ⅶ限定独特时装 ",
+        "repeat": 200
+      },
+      {
+        "name": "菌丝专著",
+        "img": "./img/ojn4sevnmgtkbk12kdmx0dmp3fnmauw.png",
+        "type": "时装",
+        "description": "她仍坚信能用人类所了解的知识来诠释它，直到它终究被人类征服，或征服所有人类。即使，越来越多的研究者开始对自己所熟知的一切产生动摇、怀疑。 \n深渊珍宝Ⅶ限定独特时装 ",
+        "repeat": 200
+      },
+      {
+        "name": "失败的探索",
+        "img": "./img/kncbuhnws42otvo49pultyl6o9mewfp.png",
+        "type": "时装",
+        "description": "人们总是在寻找他们认知中的图像，某个星球，某种文明……然而当苦苦寻觅的重点超越认知时，他们宁愿相信那是荒谬的想象。 \n深渊珍宝Ⅶ限定独特时装 ",
+        "repeat": 200
+      },
+      {
+        "name": "官方报道",
+        "img": "./img/f234dmx6sql30s1xmn6lmx68k6r9fee.png",
+        "type": "时装",
+        "description": "末世中的理想主义者，在避难所里，她擅长用笔下积极乐观的消息鼓舞人心。但作为媒体记者，这真的是一件好事吗？ \n深渊珍宝Ⅶ限定独特时装 ",
+        "repeat": 200
+      },
+      {
+        "name": "“噩梦”-大笑",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "“噩梦”专属匹配大厅等待动作，大笑 ",
+        "repeat": 200
+      },
+      {
+        "name": "“记录员”-拜访",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "“记录员”专属匹配大厅等待动作，拜访，求生者可见 ",
+        "repeat": 200
+      },
+      {
+        "name": "教授-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "教授匹配大厅等待动作，小憩 ",
+        "repeat": 200
+      },
+      {
+        "name": "古董商-起身",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "古董商匹配大厅等待动作，起身 ",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "高傲黄",
+        "img": "./img/5fltvnk9enf4dyolidjzosmmhx1trsp.png",
+        "type": "时装",
+        "description": "才华是最宝贵的财富。 ",
+        "repeat": 36
+      },
+      {
+        "name": "风铃蓝",
+        "img": "./img/s4e0rp5xqm7nti25psz65xvuc1y8ahd.png",
+        "type": "时装",
+        "description": "风铃草轻轻摇动……这平静于她实属珍贵。 ",
+        "repeat": 36
+      },
+      {
+        "name": "怯懦白",
+        "img": "./img/mnw7is6j6feayglo2u7u2fpv1at7wrb.png",
+        "type": "时装",
+        "description": "这些……是努力的回报吗？ ",
+        "repeat": 36
+      },
+      {
+        "name": "自信红",
+        "img": "./img/60vn8mxzk9ch1doy64h5nn2tinbp2jv.png",
+        "type": "时装",
+        "description": "要相信能从挫折和失败中学习和成长。",
+        "repeat": 36
+      },
+      {
+        "name": "丛林绿",
+        "img": "./img/st68xberpzooiqinva5wwhm0k82bxzm.png",
+        "type": "时装",
+        "description": "在丛林中迷路是一件危险的事情。",
+        "repeat": 36
+      },
+      {
+        "name": "悲观青",
+        "img": "./img/5hutbvsotccakpnloypor2p4wd9huj9.png",
+        "type": "时装",
+        "description": "无力自证之时，一切解释只是徒劳。 ",
+        "repeat": 36
+      },
+      {
+        "name": "魅惑红",
+        "img": "./img/esidz5ln1lattq7dfni0clgzt6ci6st.png",
+        "type": "时装",
+        "description": "酒红色丝绒，是这一切命运的开始。 ",
+        "repeat": 36
+      },
+      {
+        "name": "活力黄",
+        "img": "./img/2nf27f8n4fyvw9j6w14yj41dwi7aan5.png",
+        "type": "时装",
+        "description": "运动对于保持健康至关重要。 ",
+        "repeat": 36
+      },
+      {
+        "name": "病患-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，病患专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "古董商-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，古董商专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "哭泣小丑-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，哭泣小丑专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "昆虫学者-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，昆虫学者专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "画家-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，画家专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "小说家-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，小说家专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "教授-紧急运输",
+        "img": "./img/eeewxek59vieu2s3qv3l1i3przhzq5v.png",
+        "type": "涂鸦",
+        "description": "教授专属涂鸦，紧急运输 ",
+        "repeat": 36
+      },
+      {
+        "name": "古董商-菌丝研究",
+        "img": "./img/l4jfsllml1329oa4ogcsu5p9u4uotan.png",
+        "type": "涂鸦",
+        "description": "古董商专属涂鸦，菌丝研究 ",
+        "repeat": 36
+      },
+      {
+        "name": "病患-稀缺病案",
+        "img": "./img/1rhvhuqa3sc0p3itknkdpovxql42lqm.png",
+        "type": "涂鸦",
+        "description": "病患专属涂鸦，稀缺病案 ",
+        "repeat": 36
+      },
+      {
+        "name": "“心理学家”-末世搜救",
+        "img": "./img/twbe87e1a5xbmx6jkmxyzlpun23vl62.png",
+        "type": "涂鸦",
+        "description": "“心理学家”专属涂鸦，末世搜救 ",
+        "repeat": 36
+      },
+      {
+        "name": "作曲家-先驱探索",
+        "img": "./img/olu97wh9dun55b72q1wyt6xrmtrtpch.png",
+        "type": "涂鸦",
+        "description": "作曲家专属涂鸦，先驱探索 ",
+        "repeat": 36
+      },
+      {
+        "name": "彩色回忆-记者",
+        "img": "./img/53frf4s5xu4rdfxyerbrjpq50js9zm1.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留于心底”",
+        "repeat": 36
+      },
+      {
+        "name": "哭泣小丑-另一面",
+        "img": "./img/9wzftjkkldytplwcgsjrw005c47k98y.png",
+        "type": "头像",
+        "description": "哭泣小丑的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "作曲家-另一面",
+        "img": "./img/ni1j65s4jm1h4lgvdxwmfmwvytkb41l.png",
+        "type": "头像",
+        "description": "作曲家的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "教授-另一面",
+        "img": "./img/jh73r2xnd31pjbzni3xwc6zlx8qnqlk.png",
+        "type": "头像",
+        "description": "教授的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "古董商-另一面",
+        "img": "./img/b75x9jh5kqlwweqa8bffzxjuxielve3.png",
+        "type": "头像",
+        "description": "古董商的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "记者-另一面",
+        "img": "./img/jl9njmeor1wteimhuuql0ydszdua7wr.png",
+        "type": "头像",
+        "description": "记者的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "“记录员”-另一面",
+        "img": "./img/8p6iweuc292x9xeuof53f6a3mvqpjlc.png",
+        "type": "头像",
+        "description": "“记录员”的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "隐士-另一面",
+        "img": "./img/9ti46ml9vb4nfffzt7bcrtvvarppxl9.png",
+        "type": "头像",
+        "description": "隐士的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

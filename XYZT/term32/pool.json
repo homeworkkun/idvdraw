@@ -1,0 +1,77 @@
+{
+  "id": "lucky_dice_32",
+  "name": "幸运之骰·第32期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "竹林躲猫猫": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/bdpljmuqmhj4liy3832rza98hk3y6dc.png",
+      "description": "这是大熊猫还是小熊猫呢？（“熊猫的守护者”2024复刻活动首次获得）",
+      "repeat": 200
+    },
+    "彩色合影": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/stqrj033i7q40lhb4rau99uem7zuslv.png",
+      "description": "“啊......阿嚏！”（熊猫的守护者活动首次获得） ",
+      "repeat": 6
+    },
+    "五五两岁啦！": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/6kemtutoea7csd5ziyqq0vbat6485kb.png",
+      "description": "祝五五两周岁生日快乐！（“熊猫的守护者”2023复刻活动首次获得） ",
+      "repeat": 6
+    },
+    "五五三岁啦！": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/j77s7qzmy19kfavowqevfpsydyihy1k.png",
+      "description": "祝五五3周岁生日快乐！（“熊猫的守护者”2024复刻活动首次获得） ",
+      "repeat": 6
+    },
+    "细嚼慢咽": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/fyrfhbsfbb91ti00pcttqu4flb8hxk7.png",
+      "description": "“有事吗？咔嚓咔嚓，吧唧吧唧......”（熊猫的守护者活动首次获得） ",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

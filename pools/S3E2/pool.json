@@ -1,0 +1,376 @@
+{
+  "id": "S3E2",
+  "name": "第3赛季·精华2",
+  "essenceImage": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+  "diff_A": 2,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "神眷",
+        "img": "./img/r7d64fl5achg9nnnr8l1dty45hxrjuj.png",
+        "type": "时装",
+        "description": "在急难中求告吧，自虚无中的应答将为你带来喜乐。\n（【限定】时装，仅能在第三赛季精华2中获得）",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "亚瑟王",
+        "img": "./img/fzmk8jtjzynjfg4bak0t81ydznib0xq.png",
+        "type": "时装",
+        "description": "不管在什么地方，他都是王者。",
+        "repeat": 1000
+      },
+      {
+        "name": "梅林",
+        "img": "./img/hfy781vfb9b67uihs33mv1dxyt3g59d.png",
+        "type": "时装",
+        "description": "魔术和魔法可是有着本质区别的，千万不要混淆。",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "宝剑侍从",
+        "img": "./img/01kzrxmsyoks6o0b323jy9jiq3zwkdm.png",
+        "type": "时装",
+        "description": "守护宝剑即是守护荣誉。",
+        "repeat": 200
+      },
+      {
+        "name": "圣杯侍女",
+        "img": "./img/hpt0foufdw8kuacomabhzbef68pyvqo.png",
+        "type": "时装",
+        "description": "期待着不思议的冒险，更追寻着圣杯所代表的真理。",
+        "repeat": 200
+      },
+      {
+        "name": "工匠",
+        "img": "./img/bo4vmmimyc747lfqf6k4pbkbb0qdtwt.png",
+        "type": "时装",
+        "description": "工具、零件，分解、组装，创造是她的快乐之源。",
+        "repeat": 200
+      },
+      {
+        "name": "骑士",
+        "img": "./img/5hdt7uub5tpoqzcpzwpftkv3ncic1aa.png",
+        "type": "时装",
+        "description": "为了荣耀，冲锋！",
+        "repeat": 200
+      },
+      {
+        "name": "赝品圣杯",
+        "img": "./img/qef4mlvn62hzs9ub687ijytrmnngaec.png",
+        "type": "随身物品",
+        "description": "在寻找圣杯的旅途中，队伍发现了许多仿制品，圣杯侍女对其中一个珍爱有加",
+        "repeat": 200
+      },
+      {
+        "name": "遗物断剑",
+        "img": "./img/mkn04yftxjf3ptppfj9pnsk7ng5yz19.png",
+        "type": "随身物品",
+        "description": "随着冒险的深入，队伍发现了许多宝物，宝剑侍从收集到的就是这柄遗失已久的圣剑，可惜已经被折断了",
+        "repeat": 200
+      },
+      {
+        "name": "律师-行礼",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "律师匹配大厅动作，行礼",
+        "repeat": 200
+      },
+      {
+        "name": "“慈善家”-行礼",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "“慈善家”匹配大厅动作，行礼",
+        "repeat": 200
+      },
+      {
+        "name": "盲女-行礼",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "盲女匹配大厅动作，行礼",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "医生-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，医生专属",
+        "repeat": 36
+      },
+      {
+        "name": "园丁-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，园丁专属",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，佣兵专属",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，“慈善家”专属",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，冒险家专属",
+        "repeat": 36
+      },
+      {
+        "name": "青缝布",
+        "img": "./img/41g79msjzj23dzon14gme332oc7mt6x.png",
+        "type": "时装",
+        "description": "咔擦咔擦，青丝缝出碎布",
+        "repeat": 36
+      },
+      {
+        "name": "深空黑",
+        "img": "./img/msik79hqa6cueimidpxjbybxjxh0a9d.png",
+        "type": "时装",
+        "description": "黑色代表着稳重与专业",
+        "repeat": 36
+      },
+      {
+        "name": "紫领",
+        "img": "./img/oeyin53fwzc66omebdhky3wsuolhiuo.png",
+        "type": "时装",
+        "description": "没见过有人穿成这样来工厂干活的……应该没有吧",
+        "repeat": 36
+      },
+      {
+        "name": "咖啡爵",
+        "img": "./img/l6m1iybonwmi8drymxfcahbozu47ody.png",
+        "type": "时装",
+        "description": "绅士都懂得品味咖啡的醇香",
+        "repeat": 36
+      },
+      {
+        "name": "迷彩衣",
+        "img": "./img/swkiqpwqcdg7lkyekqa5vln3mdpcr8i.png",
+        "type": "时装",
+        "description": "啪嗒啪嗒，在绿衣上点出迷彩",
+        "repeat": 36
+      },
+      {
+        "name": "青葱绿",
+        "img": "./img/sfj39n1dqijrkrqn4a8e8syylt1s7vf.png",
+        "type": "时装",
+        "description": "这是最亲近大自然的绿色",
+        "repeat": 36
+      },
+      {
+        "name": "天青石",
+        "img": "./img/4tywgzskdmbnmbnq9baagdjavwpva00.png",
+        "type": "时装",
+        "description": "天青石是从东方流入的矿石，虽不贵重，但也能换不少钱",
+        "repeat": 36
+      },
+      {
+        "name": "红妆绸",
+        "img": "./img/72fwu3ue46ggnozwd51ux7njp7povw7.png",
+        "type": "时装",
+        "description": "咝咝嗦嗦，再美的绸缎都是细丝织成",
+        "repeat": 36
+      },
+      {
+        "name": "蓝领",
+        "img": "./img/aoi0pv0cyl9w1gxe3ey85m06ykzs60p.png",
+        "type": "时装",
+        "description": "蓝领阶级力量大，人心齐",
+        "repeat": 34
+      },
+      {
+        "name": "橄榄枝",
+        "img": "./img/dl62mqcc7m9qfts5ydus6q4nrjt346h.png",
+        "type": "时装",
+        "description": "请不要让这橄榄枝从我手中掉落",
+        "repeat": 36
+      },
+      {
+        "name": "酒红深",
+        "img": "./img/c2q1pn8wg2s8pfkgjos352tb6sljndl.png",
+        "type": "时装",
+        "description": "红酒配黑纱，古典的风韵",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "前锋匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "冒险家匹配大厅动作，准备",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "佣兵匹配大厅动作，准备",
+        "repeat": 36
+      },
+      {
+        "name": "律师-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "律师匹配大厅动作，准备",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "前锋匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "蜘蛛-卡通",
+        "img": "./img/a7qmcv1iykxgegwydjwxe4ac2eo00jh.png",
+        "type": "涂鸦",
+        "description": "蜘蛛专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "律师-卡通",
+        "img": "./img/hprs7ziawl0jexx1ucumcd91b5by6d6.png",
+        "type": "涂鸦",
+        "description": "律师专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-卡通",
+        "img": "./img/8t2e85z5iaqasm96m0giiayrcqef3jt.png",
+        "type": "涂鸦",
+        "description": "前锋专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "萌版鹿头",
+        "img": "./img/847moo7t9afvitlslv7rwt06v3sr1s1.png",
+        "type": "头像",
+        "description": "鹿头的萌版头像",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "镰刀-彩底",
+        "img": "./img/0iol1vgbfkdum97ztqm84izsb1eu7lw.png",
+        "type": "涂鸦",
+        "description": "镰刀涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "白纹大触-剪影",
+        "img": "./img/mwrl5r2mmfrtytkc441iv0c1v3r9ebx.png",
+        "type": "涂鸦",
+        "description": "“杰克”专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "弹簧手-剪影",
+        "img": "./img/ns0bjhax2s0dpe07lrveob7a4x17hsl.png",
+        "type": "涂鸦",
+        "description": "佣兵专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "鹿头金匠-卡通",
+        "img": "./img/7mwpvqdr4kb0l4v84ga98dujkhvefye.png",
+        "type": "涂鸦",
+        "description": "鹿头专属涂鸦，卡通",
+        "repeat": 6
+      },
+      {
+        "name": "红蝶般若-剪影",
+        "img": "./img/moc9p246gdh2bx1m3as2lf8ndpem5ak.png",
+        "type": "涂鸦",
+        "description": "红蝶专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "黄衣之主-卡通",
+        "img": "./img/6ei3rvfk2kiqn7v1qny3m5u6ummq604.png",
+        "type": "涂鸦",
+        "description": "黄衣之主专属涂鸦，卡通",
+        "repeat": 6
+      },
+      {
+        "name": "红蝶般若-萌版",
+        "img": "./img/rvqkhj0ke8buf1yqnafooyybj5a9e8p.png",
+        "type": "涂鸦",
+        "description": "红蝶专用涂鸦，萌版",
+        "repeat": 6
+      },
+      {
+        "name": "阿拉丁-卡通",
+        "img": "./img/40qiyt0rxn1rlq3pqy85bwo4pvx42il.png",
+        "type": "涂鸦",
+        "description": "魔术师专属涂鸦，卡通",
+        "repeat": 6
+      },
+      {
+        "name": "鹿头-萌版",
+        "img": "./img/53b69j8rswzyc5c6pdg9xvnt8nc8o1r.png",
+        "type": "涂鸦",
+        "description": "鹿头专用涂鸦，萌版",
+        "repeat": 6
+      },
+      {
+        "name": "遥控器-彩底",
+        "img": "./img/hyn79rms9aioiozo89xmzz0x38pud0k.png",
+        "type": "涂鸦",
+        "description": "遥控器涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "阿拉丁-萌版",
+        "img": "./img/fna5j0krqneg8ez5w9ijbgxczfhb9k1.png",
+        "type": "涂鸦",
+        "description": "魔术师专用涂鸦，萌版",
+        "repeat": 6
+      },
+      {
+        "name": "空军",
+        "img": "./img/i36jwfr2bukde3am8tuah2r711hfi4j.png",
+        "type": "头像",
+        "description": "空军的基础头像",
+        "repeat": 6
+      }
+    ]
+  }
+}

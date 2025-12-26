@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鉴影寻宝</title>
+    <script src="/resource/tailwind.min.css"></script>
+    <link rel="stylesheet" href="/resource/fontawesome/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'DFPOP1W5-GB';
+            src: url('/fonts.ttf') format('truetype');
+        }
+
+        :root { 
+            --color-gold: #e8c668; 
+            --color-purple: #b568e8; 
+            --color-blue: #689de8; 
+            --bg-dark: #0f1115; 
+            --bg-panel: rgba(20, 23, 31, 0.95); 
+        }
+        
+        body { 
+            font-family: "DFPOP1W5-GB", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            background-color: var(--bg-dark); 
+            color: #d1d5db; 
+            user-select: none; 
+            background-image: radial-gradient(circle at 50% 50%, #1f232e 0%, #0a0b0e 100%); 
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .font-gothic { 
+            font-family:"DFPOP1W5-GB", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+        }
+        
+        @keyframes breathe { 
+            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 10px rgba(232, 198, 104, 0.3)); } 
+            50% { transform: scale(1.05); filter: drop-shadow(0 0 20px rgba(232, 198, 104, 0.6)); } 
+        }
+        
+        @keyframes shake { 
+            0% { transform: translate(1px, 1px) rotate(0deg); } 
+            10% { transform: translate(-1px, -2px) rotate(-1deg); } 
+            20% { transform: translate(-3px, 0px) rotate(1deg); } 
+            30% { transform: translate(3px, 2px) rotate(0deg); } 
+            40% { transform: translate(1px, -1px) rotate(1deg); } 
+            50% { transform: translate(-1px, 2px) rotate(-1deg); } 
+            60% { transform: translate(-3px, 1px) rotate(0deg); } 
+            70% { transform: translate(3px, 1px) rotate(-1deg); } 
+            80% { transform: translate(-1px, -1px) rotate(1deg); } 
+            90% { transform: translate(1px, 2px) rotate(0deg); } 
+            100% { transform: translate(1px, -2px) rotate(-1deg); } 
+        }
+        
+        @keyframes explode-flash { 
+            0%, 100% { opacity: 0; transform: scale(3); } 
+            50% { opacity: 1; transform: scale(1); } 
+        }
+        
+        @keyframes card-flip { 
+            from { transform: rotateY(90deg) scale(0.9); opacity: 0; } 
+            to { transform: rotateY(0deg) scale(1); opacity: 1; } 
+        }
+        
+        @keyframes scanline { 
+            0% { transform: translateY(-100%); } 
+            100% { transform: translateY(100%); } 
+        }
+        
+        @keyframes fade-in-backdrop { 
+            from { backdrop-filter: blur(0px); background-color: rgba(0,0,0,0); } 
+            to { backdrop-filter: blur(8px); background-color: rgba(0,0,0,0.7); } 
+        }
+        
+        @keyframes zoom-in-modal { 
+            from { opacity: 0; transform: scale(0.9); } 
+            to { opacity: 1; transform: scale(1); } 
+        }
+        
+        @keyframes convert-to-fragments { 
+            0% { transform: scale(1) rotate(0deg); filter: brightness(1); } 
+            40% { transform: scale(1.1) rotate(5deg); filter: brightness(1.5) drop-shadow(0 0 15px white); } 
+            100% { transform: scale(0) rotate(10deg); filter: brightness(2); } 
+        }
+        
+        .converting { 
+            animation: convert-to-fragments 0.6s ease-in-out forwards; 
+        }
+        
+        /* 鉴影寻宝风格卡包 */
+        .card-pack {
+            background-color: #8a7568;
+            border: 2px solid #5e4b42;
+            border-radius: 4px;
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            user-select: none;
+            aspect-ratio: 70 / 120; /* 保持宽高比 */
+        }
+
+        .card-pack::before {
+            content: "鉴影";
+            color: #2d221f;
+            font-size: 10px;
+            font-weight: bold;
+            opacity: 0.6;
+            margin-top: 5px;
+        }
+
+        .emblem {
+            width: 30px;
+            height: 30px;
+            background-color: rgba(45, 34, 31, 0.3);
+            border-radius: 50%;
+            border: 1px dashed rgba(45, 34, 31, 0.5);
+        }
+
+        .card-no {
+            font-size: 9px;
+            color: #2d221f;
+            font-weight: bold;
+            opacity: 0.7;
+            border-top: 1px solid rgba(45, 34, 31, 0.3);
+            width: 80%;
+            text-align: center;
+            padding-top: 2px;
+        }
+
+        .card-pack:hover:not(.opened):not(.disabled) {
+            transform: translateY(-8px);
+            background-color: #9e8679;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.4);
+        }
+
+        .card-pack.opened {
+            background-color: #d3ae36;
+            border-color: #f0c040;
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 0 20px rgba(211, 174, 54, 0.6);
+            z-index: 10;
+        }
+
+        .card-pack.opened .emblem {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-style: solid;
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .card-pack.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            filter: grayscale(0.5);
+        }
+
+        /* 结果弹窗 */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            backdrop-filter: blur(3px);
+        }
+
+        .modal {
+            background: #edecec;
+            padding: 25px 40px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(211, 174, 54, 0.4);
+            border: 4px solid #d3ae36;
+            animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            max-width: 90vw;
+        }
+
+        @keyframes popIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .result-text {
+            font-size: 20px;
+            color: #2d221f;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .result-rank {
+            font-size: 40px;
+            margin: 0;
+        }
+        .rank-R { color: #5e4b42; }
+        .rank-SR { color: #d3ae36; }
+        .rank-SSR { 
+            background: linear-gradient(45deg, #d3ae36, #ff4d4d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 10px rgba(255,0,0,0.2);
+        }
+
+        .retry-btn {
+            margin-top: 20px;
+            padding: 8px 20px;
+            background: #2d221f;
+            color: #edecec;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+        .retry-btn:hover {
+            background: #4a3b36;
+        }
+
+        .idv-btn { 
+            font-size: clamp(1rem, 1.5vw + 0.5rem, 1.25rem); 
+            background: linear-gradient(180deg, #3a3a3a 0%, #1a1a1a 100%); 
+            border: 2px solid #888; 
+            color: #ccc; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            transition: all 0.2s; 
+            clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%); 
+        }
+        
+        .idv-btn:hover:not(:disabled) { 
+            border-color: var(--color-gold); 
+            color: var(--color-gold); 
+            background: linear-gradient(180deg, #4a4a4a 0%, #2a2a2a 100%); 
+            text-shadow: 0 0 5px var(--color-gold); 
+        }
+        
+        .idv-btn:active:not(:disabled) { 
+            transform: scale(0.95); 
+        }
+        
+        .idv-btn:disabled { 
+            opacity: 0.5; 
+            cursor: not-allowed; 
+        }
+        
+        .flash-overlay { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            bottom: 0; 
+            background: white; 
+            opacity: 0; 
+            pointer-events: none; 
+            z-index: 100; 
+        }
+        
+        .scan-line { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            bottom: 0; 
+            z-index: 0; 
+            overflow: hidden; 
+        }
+        
+        .scan-line::before { 
+            content: ''; 
+            display: block; 
+            width: 100%; 
+            height: 200%; 
+            background: linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, 0.03) 50%, transparent 100%); 
+            animation: scanline 10s linear infinite; 
+        }
+        
+        .card.rarity-A { 
+            border-color: var(--color-gold) !important; 
+            box-shadow: 0 0 20px var(--color-gold) !important; 
+        }
+        
+        .card.rarity-B { 
+            border-color: var(--color-purple) !important; 
+            box-shadow: 0 0 15px var(--color-purple) !important; 
+        }
+        
+        .card.rarity-C { 
+            border-color: var(--color-blue) !important; 
+            box-shadow: 0 0 10px var(--color-blue) !important; 
+        }
+        
+        .text-rarity-A { 
+            color: var(--color-gold); 
+        } 
+        
+        .text-rarity-B { 
+            color: var(--color-purple); 
+        } 
+        
+        .text-rarity-C { 
+            color: var(--color-blue); 
+        }
+        
+        #item-detail-modal.show { 
+            animation: fade-in-backdrop 0.3s forwards; 
+        }
+        
+        #item-detail-modal.show > div { 
+            animation: zoom-in-modal 0.3s forwards; 
+        }
+        
+        #detail-desc { 
+            white-space: pre-wrap; 
+        }
+        
+        ::-webkit-scrollbar { 
+            width: 8px; 
+        } 
+        
+        ::-webkit-scrollbar-track { 
+            background: #0f1115; 
+        } 
+        
+        ::-webkit-scrollbar-thumb { 
+            background: #333; 
+            border-radius: 4px; 
+        }
+        
+        .pool-item { 
+            transition: all 0.2s ease-in-out; 
+            background-color: rgba(255, 255, 255, 0.05); 
+            border-radius: 0.5rem; 
+            padding: 0.5rem; 
+            text-align: center; 
+            border: 1px solid transparent; 
+            cursor: pointer; 
+        }
+        
+        .pool-item:hover { 
+            background-color: rgba(255, 255, 255, 0.1); 
+            transform: translateY(-2px); 
+        }
+        
+        .pool-item.not-owned { 
+            filter: grayscale(80%); 
+            opacity: 0.6; 
+        }
+        
+        .pool-item.owned { 
+            border-color: var(--color-gold); 
+        }
+        
+        .pool-item .img-container { 
+            width: 100%; 
+            background-color: #111318; 
+            aspect-ratio: 1 / 1; 
+            border-radius: 0.25rem; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            overflow: hidden; 
+        }
+        
+        .pool-item img { 
+            max-width: 100%; 
+            max-height: 100%; 
+            object-fit: contain; 
+        }
+        
+        @keyframes marquee { 
+            0%   { transform: translateX(0); } 
+            100% { transform: translateX(-50%); } 
+        }
+        
+        .pool-item p { 
+            margin-top: 0.5rem; 
+            font-size: 0.75rem; 
+            white-space: nowrap; 
+            overflow: hidden; 
+        }
+        
+        .marquee-wrapper { 
+            display: inline-block; 
+            animation: marquee var(--marquee-duration, 10s) linear infinite; 
+            padding-right: 2rem; 
+            will-change: transform; 
+        }
+
+        .border-rarity-A { 
+            border-color: var(--color-gold); 
+        } 
+        
+        .border-rarity-B { 
+            border-color: var(--color-purple); 
+        } 
+        
+        .border-rarity-C { 
+            border-color: var(--color-blue); 
+        }
+
+        /* 音乐按钮旋转动画 */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .spin-animation {
+            animation: spin 2s linear infinite;
+        }
+
+        /* 针对小屏幕优化抽卡按钮的字体大小，使其更紧凑 */
+        @media (max-width: 640px) {
+            .idv-btn {
+                font-size: clamp(0.8rem, 2.5vw, 1.1rem); /* 缩小字体 */
+                letter-spacing: 1px; /* 缩小字间距 */
+                height: 3.5rem; /* 统一并缩小按钮高度 */
+            }
+            /* 调整按钮上方的灵感消耗文字大小 */
+            .button-cost-text {
+                font-size: 0.7rem; /* 缩小灵感消耗文字 */
+            }
+            
+            /* 移动端适配鉴影寻宝风格 */
+            .shelf {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 12px;
+                padding: 15px;
+                width: 90vw;
+                max-width: 400px;
+            }
+
+            .card-pack {
+                width: 100%;
+                height: calc((90vw - 48px) / 5 * 1.6);
+                max-height: 130px;
+                min-height: 100px;
+                padding: 10px 0;
+                box-sizing: border-box;
+            }
+
+            .card-pack::before {
+                font-size: 12px;
+            }
+
+            .emblem {
+                width: 35px;
+                height: 35px;
+            }
+
+            .card-no {
+                font-size: 10px;
+                padding-top: 3px;
+            }
+
+            .modal {
+                padding: 20px 30px;
+            }
+
+            .result-text {
+                font-size: 18px;
+            }
+
+            .result-rank {
+                font-size: 36px;
+            }
+        }
+        
+        /* PC端10个卡包一行 */
+        @media (min-width: 769px) {
+            .shelf {
+                display: flex;
+                gap: 15px;
+                padding: 20px;
+                perspective: 1000px;
+                justify-content: center;
+                flex-wrap: wrap;
+                max-width: 900px;
+                width: fit-content;
+                margin: 0 auto;
+            }
+        }
+        
+        /* 十选一界面样式 */
+        .selection-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .selection-item {
+            background: #1a1c24;
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .selection-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--color-gold);
+            box-shadow: 0 5px 15px rgba(232, 198, 104, 0.3);
+        }
+        
+        .selection-item.selected {
+            border-color: var(--color-gold);
+            background: rgba(232, 198, 104, 0.1);
+            box-shadow: 0 0 15px rgba(232, 198, 104, 0.5);
+        }
+        
+        .selection-item img {
+            width: 100%;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        
+        .selection-item .name {
+            font-size: 12px;
+            color: #ddd;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* 针对900*500横屏优化 - 减小卡包区域占用空间 */
+        @media (min-width: 800px) and (max-width: 1000px) and (max-height: 550px) {
+            /* 卡包容器缩小 */
+            .shelf {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 8px;
+                padding: 10px;
+                width: 80%;
+                max-width: 600px;
+                height: 180px; /* 固定较小高度 */
+                margin: 20px auto;
+            }
+            
+            .card-pack {
+                width: 100%;
+                height: 100%;
+                min-height: 60px;
+                padding: 4px 0;
+            }
+            
+            .card-pack::before {
+                font-size: 8px;
+                margin-top: 2px;
+            }
+            
+            .emblem {
+                width: 20px;
+                height: 20px;
+            }
+            
+            .card-no {
+                font-size: 7px;
+                padding-top: 1px;
+            }
+            
+            /* 调整整体布局间距 */
+            #main-screen {
+                padding: 10px;
+            }
+            
+            .absolute.top-20.sm\:top-8 {
+                top: 50px;
+            }
+            
+            #ten-pull-container {
+                margin-bottom: 10px;
+            }
+            
+            #btn-pull-10 {
+                width: 140px;
+                padding: 8px 0;
+                font-size: 0.9rem;
+            }
+            
+            #pull-10-cost {
+                font-size: 0.7rem;
+            }
+            
+            #pity-panel {
+                bottom: 100px;
+                font-size: 0.7rem;
+            }
+        }
+
+        /* 极小高度屏幕适配 */
+        @media (max-height: 500px) {
+            body {
+                font-size: 12px;
+            }
+            
+            .shelf {
+                height: 160px; /* 进一步减小高度 */
+                gap: 6px;
+                padding: 8px;
+            }
+            
+            .card-pack {
+                min-height: 50px;
+            }
+            
+            .card-pack::before {
+                font-size: 7px;
+            }
+            
+            .emblem {
+                width: 18px;
+                height: 18px;
+            }
+            
+            .card-no {
+                font-size: 6px;
+            }
+        }
+    </style>
+</head>
+<body class="h-screen w-screen flex flex-col items-center justify-center relative p-2 sm:p-4">
+
+    <div class="scan-line"></div>
+    <div id="flash-layer" class="flash-overlay"></div>
+    
+    <!-- 主界面 -->
+    <div id="main-screen" class="relative w-full h-full flex flex-col items-center justify-center p-4 z-10 transition-opacity duration-500">
+        <div class="absolute top-0 w-full h-24 bg-gradient-to-b from-black/50 to-transparent pointer-events-none"></div>
+        <div class="absolute top-4 left-4 flex gap-2 sm:gap-4 text-sm z-20 bg-black/50 p-2 sm:p-3 border border-gray-700 rounded-md backdrop-blur-sm">
+            <div class="flex items-center gap-2"><img src="/resource/abb5919fc5926eb8e2da46469ff98487.png" class="w-5 h-5"><span id="currency-fragments" class="font-sans font-bold text-white">-</span></div>
+            <div class="flex items-center gap-2"><img src="/resource/e65671ae69fd5263be962bd64de3cfe8.png" class="w-5 h-5"><span id="currency-inspiration" class="font-sans font-bold text-white">-</span></div>
+            <div class="flex items-center gap-2"><img src="/resource/60fcc83fe18f0da9501005e21e264c70.png" class="w-5 h-5"><span id="currency-huoqi" class="font-sans font-bold text-white">-</span></div>
+            <div class="flex items-center gap-2"><img src="/resource/fc5a55c488fae00f1e606f5b9e33f349.png" class="w-5 h-5"><span id="currency-clue" class="font-sans font-bold text-white">-</span></div>
+        </div>
+        <div class="absolute top-20 sm:top-8 text-center px-4 w-full flex flex-col items-center">
+            <div class="flex items-center justify-center gap-4 mb-2">
+                <h1 id="pool-name" class="text-amber-100 tracking-widest drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" style="font-size: clamp(1.75rem, 5vw, 3rem);">鉴影寻宝</h1>
+                <button id="pool-switch-btn" class="idv-btn py-1 px-3 text-xs text-amber-100 border-amber-700 whitespace-nowrap">
+                    <i class="fas fa-exchange-alt mr-1"></i>切换
+                </button>
+            </div>
+            <p id="pool-desc" class="text-xs text-gray-500 tracking-[0.2em] mt-1">火漆 x10 消耗</p>
+        </div>
+        <!-- 按钮组：音乐 -->
+        <div class="absolute top-4 right-4 flex gap-2 sm:gap-4 z-20">
+            <!-- 音乐播放按钮 -->
+            <button id="music-toggle-btn" class="text-gray-400 hover:text-white transition-colors text-right" onclick="app.toggleMusic()">
+                <i class="fa-solid fa-music text-xl sm:text-2xl"></i>
+                <span class="block text-xs mt-1" id="music-status-text">播放</span>
+            </button>
+        </div>
+
+        <!-- 保底信息面板 -->
+        <div id="pity-panel" class="absolute left-4 bottom-40 text-sm z-20 bg-black/50 p-3 border border-gray-700 rounded-md backdrop-blur-sm">
+            <p><span class="text-yellow-500">A级保底:</span> <span id="pity-a" class="font-bold">-</span></p>
+            <p class="mt-2 pt-2 border-t border-gray-600/50 text-xs text-gray-500">已抽取: <span id="total-pulls" class="text-white">0</span></p>
+        </div>
+
+        <!-- 鉴影寻宝风格卡包区域 -->
+        <div class="flex items-center justify-center my-4">
+            <div class="shelf" id="shelf">
+                <!-- 卡包将通过JS动态生成 -->
+            </div>
+        </div>
+        
+        <!-- 十连抽按钮 -->
+        <div id="ten-pull-container" class="mb-8">
+            <button id="btn-pull-10" onclick="app.pull(10)" class="idv-btn w-48 py-3 text-amber-100 border-amber-700">
+                <span id="btn-pull-10-text">十连抽</span>
+            </button>
+            <div id="pull-10-cost" class="text-center text-xs text-amber-200/70 mt-1">火漆 x100</div>
+        </div>
+    </div>
+    
+    <!-- 结果展示界面 -->
+    <div id="result-screen" class="fixed inset-0 z-40 bg-black/95 hidden flex-col items-center justify-start pt-4 sm:pt-8">
+        <div id="result-header" class="mb-4 text-center opacity-0"><h2 class="text-white tracking-widest border-b border-gray-700 pb-2 px-8 inline-block" style="font-size: clamp(1.5rem, 4vw, 2.25rem);">抽取内容</h2></div>
+        <div id="cards-container" class="flex-1 w-full max-w-6xl overflow-y-auto px-2"></div>
+        <div id="result-footer" class="mt-4 mb-2 opacity-0 flex flex-row gap-4 items-center justify-center"></div>
+    </div>
+    
+    <!-- 十选一界面 -->
+    <div id="selection-screen" class="fixed inset-0 z-50 bg-black/95 hidden flex-col items-center justify-center p-4">
+        <h2 class="text-2xl text-amber-300 mb-6">请选择一件奇珍时装</h2>
+        <div class="selection-grid" id="selection-grid"></div>
+        <button id="confirm-selection" class="idv-btn mt-8 py-3 px-8 text-amber-100 border-amber-700" disabled>确认选择</button>
+    </div>
+    
+    <!-- 物品详情弹窗 -->
+    <div id="item-detail-modal" class="fixed inset-0 z-[60] hidden items-center justify-center p-4" onclick="app.closeItemDetail()">
+        <div class="w-[95vw] max-w-md bg-[#1a1c24] border-2 border-gray-700 rounded-lg shadow-2xl flex flex-col text-center relative overflow-hidden" onclick="event.stopPropagation()">
+            <div id="detail-rarity-glow" class="absolute top-0 left-1/2 -translate-x-1/2 w-[200%] h-64 opacity-30 blur-3xl pointer-events-none"></div>
+            <div class="relative p-6">
+                <h3 id="detail-name" class="font-gothic text-2xl tracking-widest">物品名称</h3>
+                <p id="detail-type" class="text-sm text-gray-400 mb-4">物品类型</p>
+                <img id="detail-img" src="" class="w-48 h-48 mx-auto my-4 object-contain drop-shadow-lg" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiMzMzMiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iIzU1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+PzwvdGV4dD48L3N2Zz4='">
+                <p id="detail-desc" class="text-gray-300 italic px-4">物品描述会显示在这里...</p>
+            </div>
+            <button onclick="app.closeItemDetail()" class="w-full mt-4 py-3 bg-black/30 text-gray-400 hover:bg-black/50 transition-colors">关闭</button>
+        </div>
+    </div>
+
+    <!-- 池子选择弹窗 -->
+    <div id="pool-selector-modal" class="fixed inset-0 z-[70] hidden items-center justify-center p-4" onclick="app.closePoolSelector()">
+        <div class="w-[95vw] max-w-md bg-[#1a1c24] border-2 border-gray-700 rounded-lg shadow-2xl flex flex-col relative overflow-hidden" onclick="event.stopPropagation()">
+            <div class="relative p-6">
+                <h3 class="font-gothic text-2xl tracking-widest mb-4 text-amber-200">选择池子</h3>
+                <div id="pool-list-container" class="max-h-96 overflow-y-auto space-y-3">
+                    <!-- 池子列表将通过JS动态生成 -->
+                </div>
+            </div>
+            <button onclick="app.closePoolSelector()" class="w-full mt-4 py-3 bg-black/30 text-gray-400 hover:bg-black/50 transition-colors">取消</button>
+        </div>
+    </div>
+
+    <!-- 返回首页按钮 -->
+    <a href="/index.html" class="fixed bottom-4 right-4 z-30 text-gray-400 hover:text-white transition-colors text-right">
+        <i class="fa-solid fa-house text-xl sm:text-2xl"></i>
+        <span class="block text-xs mt-1">首页</span>
+    </a>
+
+    <!-- 音乐播放器 -->
+    <audio id="background-music" preload="auto"></audio>
+
+    <script>
+        class ResourceManager {
+            static SHARED_KEY = 'shared_resources';
+            
+            static initialize(initialResources = {}) {
+                let resources = JSON.parse(localStorage.getItem(this.SHARED_KEY));
+                if (!resources) {
+                    resources = {...initialResources};
+                    localStorage.setItem(this.SHARED_KEY, JSON.stringify(resources));
+                }
+                return resources;
+            }
+            
+            static getResource(resourceName) {
+                const resources = JSON.parse(localStorage.getItem(this.SHARED_KEY)) || {};
+                return resources[resourceName] || 0;
+            }
+            
+            static setResource(resourceName, amount) {
+                const resources = JSON.parse(localStorage.getItem(this.SHARED_KEY)) || {};
+                resources[resourceName] = amount;
+                localStorage.setItem(this.SHARED_KEY, JSON.stringify(resources));
+            }
+            
+            static deductResource(resourceName, amount) {
+                const current = this.getResource(resourceName);
+                if (current < amount) {
+                    return false;
+                }
+                this.setResource(resourceName, current - amount);
+                return true;
+            }
+            
+            static addResource(resourceName, amount) {
+                const current = this.getResource(resourceName);
+                this.setResource(resourceName, current + amount);
+            }
+        }
+
+        class EssenceApp {
+            constructor() {
+                this.config = null; 
+                this.state = null; 
+                this.isAnimating = false;
+                this.currentResults = []; 
+                this.musicList = [];
+                this.audioElement = null;
+                this.currentMusic = null;
+                this.isMusicPlaying = false;
+                this.introPlayed = false;
+                this.globalOwnedItems = this.loadGlobalOwnedItems();
+                this.listData = null;
+                this.pullCost = 10; // 默认消耗10火漆
+                this.musicListPath = "/music/musiclist.json";
+                this.selectedPack = null;
+                this.isTenPull = false;
+                this.aItems = []; // A级物品池
+                this.selectedAItem = null; // 选中的A级物品
+                // 鉴影寻宝专用的抽取计数（不与index.html共享）
+                this.jianyingTotalPulls = 0;
+                this.jianyingPityA = 0;
+                this.currentPoolId = null; // 当前选中的池子ID
+                this.poolList = []; // 所有可用池子列表
+            }
+            
+            async init() {
+                try {
+                    // 加载池子列表
+                    const listResponse = await fetch('/JYXB/list.json');
+                    if (!listResponse.ok) throw new Error("无法加载 /JYXB/list.json");
+                    this.poolList = await listResponse.json();
+                    
+                    // 确定当前使用的池子（优先从URL参数获取，否则使用第一个）
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const poolParam = urlParams.get('pool');
+                    
+                    let currentPool;
+                    if (poolParam) {
+                        currentPool = this.poolList.find(pool => pool.id === poolParam);
+                        this.currentPoolId = poolParam;
+                    }
+                    
+                    if (!currentPool && this.poolList.length > 0) {
+                        currentPool = this.poolList[0];
+                        this.currentPoolId = currentPool.id;
+                    }
+                    
+                    if (!currentPool) {
+                        throw new Error("没有可用的池子配置");
+                    }
+                    
+                    // 设置当前池子的成本和音乐列表
+                    this.pullCost = currentPool.cost ? parseInt(currentPool.cost, 10) : 10;
+                    if (currentPool.musiclist) {
+                        this.musicListPath = `/music/${currentPool.musiclist}`;
+                    }
+                    
+                    // 加载当前池子的详细配置
+                    const cacheBuster = `?t=${new Date().getTime()}`;
+                    const poolResponse = await fetch(`/JYXB/${currentPool.id}/pool.json${cacheBuster}`);
+                    if (!poolResponse.ok) throw new Error(`无法加载池子配置: ${currentPool.id}`);
+                    this.config = await poolResponse.json();
+                    
+                    // 初始化A级物品池
+                    this.aItems = this.config.items.A || [];
+                    
+                    this.loadState(); 
+                    
+                    // 加载音乐列表
+                    const musicResponse = await fetch(this.musicListPath); 
+                    if (!musicResponse.ok) {
+                        console.warn(`无法加载 ${this.musicListPath}，音乐功能将不可用。`);
+                        this.musicList = [];
+                    } else {
+                        this.musicList = await musicResponse.json();
+                    }
+
+                } catch (error) {
+                    console.error("加载配置文件或音乐列表时出错:", error);
+                    alert(`错误: ${error.message}！请检查文件是否存在且格式正确。`);
+                    this.isAnimating = true;
+                }
+                this.initUI();
+                this.initMusicPlayer();
+                this.initShelf();
+            }
+            
+            // 生成V1兼容格式的物品Key: name|type|img
+            getItemKey(item) {
+                return `${item.name}|${item.type}|${item.img || ''}`;
+            }
+            
+            loadGlobalOwnedItems() {
+                const globalStorageKey = 'global_owned_items';
+                const saved = localStorage.getItem(globalStorageKey);
+                return saved ? JSON.parse(saved) : {};
+            }
+            
+            saveGlobalOwnedItems() {
+                const globalStorageKey = 'global_owned_items';
+                localStorage.setItem(globalStorageKey, JSON.stringify(this.globalOwnedItems));
+            }
+            
+            loadState() {
+                const storageKey = `data_${this.currentPoolId}`;
+                
+                const defaultState = {
+                    // 鉴影寻宝专用计数器（不与index.html共享）
+                    jianyingTotalPulls: 0,
+                    jianyingPityA: 0,
+                    // 固定概率保底计数
+                    guaranteed20: false,
+                    guaranteed40: false,
+                    guaranteed60: false,
+                    guaranteed80: false,
+                    // A级物品历史记录（用于十选一）
+                    aItemHistory: []
+                };
+                
+                const savedState = localStorage.getItem(storageKey);
+                if (savedState) { 
+                    this.state = { ...defaultState, ...JSON.parse(savedState) }; 
+                } else { 
+                    this.state = defaultState; 
+                }
+                
+                // 初始化本地计数器
+                this.jianyingTotalPulls = this.state.jianyingTotalPulls || 0;
+                this.jianyingPityA = this.state.jianyingPityA || 0;
+            }
+
+            clearData() {
+                const storageKey = `data_${this.currentPoolId}`;
+                
+                if(confirm("确定要清空吗？抽卡记录和保底进度将重置为初始状态。但货币数量和已拥有的物品不会被重置。")) {
+                    localStorage.removeItem(storageKey);
+                    this.loadState(); this.saveData();
+                }
+            }
+
+            saveData() { 
+                const storageKey = `data_${this.currentPoolId}`;
+                
+                // 保存本地计数器到状态中
+                this.state.jianyingTotalPulls = this.jianyingTotalPulls;
+                this.state.jianyingPityA = this.jianyingPityA;
+                
+                localStorage.setItem(storageKey, JSON.stringify(this.state)); 
+                this.updateUI(); 
+            }
+            
+            initUI() {
+                // 更新页面标题和显示标题
+                if (this.config && this.config.name) {
+                    document.title = this.config.name;
+                    document.getElementById('pool-name').innerText = this.config.name;
+                } else {
+                    document.title = "鉴影寻宝";
+                    document.getElementById('pool-name').innerText = "鉴影寻宝";
+                }
+                
+                // 更新描述
+                document.getElementById('pool-desc').innerText = `火漆 x${this.pullCost} 消耗`;
+                this.updateUI();
+            }
+            
+            updateUI() {
+                // 更新保底信息（只保留A级保底）
+                document.getElementById('pity-a').innerText = `${80 - this.jianyingPityA} / 80`;
+                document.getElementById('total-pulls').innerText = this.jianyingTotalPulls;
+                
+                // 更新资源显示
+                document.getElementById('currency-fragments').innerText = ResourceManager.getResource('fragments');
+                document.getElementById('currency-inspiration').innerText = ResourceManager.getResource('inspiration');
+                document.getElementById('currency-huoqi').innerText = ResourceManager.getResource('huoqi');
+                document.getElementById('currency-clue').innerText = ResourceManager.getResource('clue');
+                
+                // 更新十连抽消耗显示
+                const pull10CostEl = document.getElementById('pull-10-cost');
+                const fullPrice = this.pullCost * 10;
+                pull10CostEl.innerHTML = `火漆 x${fullPrice}`;
+            }
+            
+            _checkHuoqi(count) {
+                const cost = count === 10 ? this.pullCost * 10 : this.pullCost;
+                const availableHuoqi = ResourceManager.getResource('huoqi');
+                if (availableHuoqi < cost) {
+                    alert(`火漆不足！${count > 1 ? `抽取 ${count} 次` : '再次抽取'}需要 ${cost}, 当前拥有 ${availableHuoqi}，请点击右下角前往首页获取更多。`);
+                    return false;
+                }
+                return true;
+            }
+
+            // 确定抽取的物品等级
+            determineRarity() {
+                // 80抽必得A级
+                if (this.jianyingPityA >= 80 || this.state.guaranteed80) {
+                    this.state.guaranteed80 = false;
+                    return 'A';
+                }
+                
+                // 固定概率抽取
+                const rand = Math.random();
+                if (rand < 0.05) return 'A'; // 5% A级
+                if (rand < 0.25) return 'B'; // 20% B级（碎片）
+                return 'C'; // 75% C级（线索）
+            }
+
+            // 从对应等级池中随机选择物品
+            selectItemByRarity(rarity) {
+                const pool = this.config.items[rarity] || [];
+                if (pool.length === 0) {
+                    // 如果没有对应物品池，返回默认奖励
+                    if (rarity === 'B') {
+                        return { 
+                            name: "独特随身物品碎片", 
+                            type: "碎片", 
+                            rarity: rarity,
+                            img: "/resource/af581720fcad1f9f442f91bdb881afd2.png"
+                        };
+                    } else if (rarity === 'C') {
+                        return { 
+                            name: "线索", 
+                            type: "线索", 
+                            rarity: rarity,
+                            img: "/resource/9ddf0a2874e1846ba901224e98197ae3.png"
+                        };
+                    }
+                    return { name: `未知${rarity}级物品`, type: `未知类型`, rarity: rarity };
+                }
+                return pool[Math.floor(Math.random() * pool.length)];
+            }
+
+            async pull(count, retry = false) {
+                if (!this._checkHuoqi(count)) { 
+                    this.isAnimating = false; 
+                    return; 
+                }
+                if (this.isAnimating) return;
+                this.isAnimating = true;
+                if(retry) { this.closeResult(false); } 
+                
+                const cost = count === 10 ? this.pullCost * 10 : this.pullCost;
+                ResourceManager.deductResource('huoqi', cost);
+                
+                // 禁用卡包和按钮
+                if (count === 1) {
+                    const allPacks = document.querySelectorAll('.card-pack');
+                    allPacks.forEach(p => {
+                        if (!p.classList.contains('opened')) {
+                            p.classList.add('disabled');
+                        }
+                    });
+                } else if (count === 10) {
+                    const allPacks = document.querySelectorAll('.card-pack');
+                    allPacks.forEach(p => p.classList.add('disabled'));
+                    document.getElementById('btn-pull-10').disabled = true;
+                    this.isTenPull = true;
+                }
+
+                this.currentResults = []; 
+                
+                // 抽取物品
+                for (let i = 0; i < count; i++) {
+                    // 使用鉴影寻宝专用计数器
+                    this.jianyingTotalPulls++; 
+                    this.jianyingPityA++;
+                    
+                    const rarity = this.determineRarity();
+                    let item = this.selectItemByRarity(rarity);
+                    
+                    // 重置A级保底计数
+                    if (rarity === 'A') {
+                        this.jianyingPityA = 0;
+                        this.state.guaranteed20 = false;
+                        this.state.guaranteed40 = false;
+                        this.state.guaranteed60 = false;
+                        this.state.guaranteed80 = false;
+                    }
+                    
+                    // 记录保底触发
+                    if (this.jianyingTotalPulls === 20) this.state.guaranteed20 = true;
+                    if (this.jianyingTotalPulls === 40) this.state.guaranteed40 = true;
+                    if (this.jianyingTotalPulls === 60) this.state.guaranteed60 = true;
+                    if (this.jianyingTotalPulls === 80) this.state.guaranteed80 = true;
+                    
+                    // 处理B级和C级奖励
+                    if (rarity === 'B') {
+                        // B级奖励：增加10碎片
+                        ResourceManager.addResource('fragments', 10);
+                    } else if (rarity === 'C') {
+                        // C级奖励：增加10线索
+                        ResourceManager.addResource('clue', 10);
+                    }
+                    
+                    const finalItem = { ...item, rarity: rarity };
+                    this.currentResults.push(finalItem);
+                }
+
+                this.saveData();
+                await new Promise(r => setTimeout(r, 800));
+                
+                // 检查是否有A级物品需要十选一
+                const hasAItem = this.currentResults.some(item => item.rarity === 'A');
+                if (hasAItem) {
+                    this.showSelectionScreen();
+                } else {
+                    this.showResultScreen(this.currentResults);
+                }
+                
+                this.isAnimating = false;
+            }
+            
+            // 显示十选一界面
+            showSelectionScreen() {
+                const selectionScreen = document.getElementById('selection-screen');
+                const selectionGrid = document.getElementById('selection-grid');
+                const confirmBtn = document.getElementById('confirm-selection');
+                
+                selectionGrid.innerHTML = '';
+                
+                // 使用pool.json中A级物品列表的所有物品（最多显示10个）
+                const availableAItems = this.aItems.slice(0, 10); // 限制最多显示10个
+                
+                availableAItems.forEach((item, index) => {
+                    const itemElement = document.createElement('div');
+                    itemElement.className = 'selection-item';
+                    itemElement.innerHTML = `
+                        <img src="${item.img || ''}" alt="${item.name}" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiMzMzMiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iIzU1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+PzwvdGV4dD48L3N2Zz4='">
+                        <div class="name">${item.name}</div>
+                    `;
+                    itemElement.addEventListener('click', () => {
+                        // 取消其他选中状态
+                        document.querySelectorAll('.selection-item').forEach(el => {
+                            el.classList.remove('selected');
+                        });
+                        // 选中当前项
+                        itemElement.classList.add('selected');
+                        this.selectedAItem = item;
+                        confirmBtn.disabled = false;
+                    });
+                    selectionGrid.appendChild(itemElement);
+                });
+                
+                confirmBtn.onclick = () => {
+                    if (this.selectedAItem) {
+                        // 替换结果中的A级物品为选中的物品，并保存到全局拥有状态（兼容V1）
+                        this.currentResults = this.currentResults.map(item => {
+                            if (item.rarity === 'A') {
+                                const selectedItem = this.selectedAItem;
+
+                                // 生成 V1 兼容格式的 Key: name|type|img
+                                const itemKey = this.getItemKey(selectedItem);
+
+                                // 若未拥有，则标记为已拥有
+                                if (!this.globalOwnedItems[itemKey]) {
+                                    this.globalOwnedItems[itemKey] = true;
+                                    this.saveGlobalOwnedItems();
+
+                                    // 同时记录进 aItemHistory（供 index.html 显示）
+                                    this.state.aItemHistory = this.state.aItemHistory || [];
+                                    this.state.aItemHistory.unshift({
+                                        name: selectedItem.name,
+                                        type: selectedItem.type,
+                                        img: selectedItem.img,
+                                        rarity: 'A',
+                                        time: new Date().toLocaleTimeString()
+                                    });
+
+                                    this.saveData(); // 保存 aItemHistory 到本地存储
+                                }
+
+                                // 返回带 rarity 的完整物品对象用于展示
+                                return { ...selectedItem, rarity: 'A' };
+                            }
+                            return item;
+                        });
+                        
+                        selectionScreen.classList.add('hidden');
+                        this.showResultScreen(this.currentResults);
+                    }
+                };
+                
+                selectionScreen.classList.remove('hidden');
+                selectionScreen.classList.add('flex');
+            }
+            
+            async showResultScreen(items) {
+                const container = document.getElementById('cards-container'); 
+                const screen = document.getElementById('result-screen'); 
+                const header = document.getElementById('result-header'); 
+                const footer = document.getElementById('result-footer');
+                
+                screen.classList.remove('hidden'); 
+                screen.classList.add('flex'); 
+                container.innerHTML = ''; 
+                footer.innerHTML = '';
+                header.style.opacity = '0'; 
+                footer.style.opacity = '0';
+                
+                const cardGrid = document.createElement('div');
+                if (items.length === 1) { 
+                    cardGrid.className = 'w-full flex justify-center items-center py-4';
+                } else { 
+                    cardGrid.className = 'grid grid-cols-3 sm:grid-cols-5 gap-2 w-full max-w-6xl p-2'; 
+                }
+                container.appendChild(cardGrid);
+
+                const rarityMap = { A: "奇珍", B: "碎片", C: "线索" };
+                items.forEach((item, index) => {
+                    const card = document.createElement('div'); 
+                    card.id = `result-card-${index}`;
+                    const sizeClass = items.length === 1 ? 'w-5/6 max-w-[200px] aspect-[2/3]' : 'w-full aspect-[2/3]';
+                    const imgContent = item.img ? `<img src="${item.img}" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" onerror="this.style.display='none'">` : `<div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-800"><i class="fa-solid fa-user-secret text-4xl mb-2 text-rarity-${item.rarity}"></i></div>`;
+                    card.setAttribute('onclick', `app.showItemDetail(${index})`);
+                    card.className = `card ${sizeClass} rarity-${item.rarity} bg-gray-900 rounded-lg flex flex-col relative group cursor-pointer shadow-2xl border-2 border-gray-700`;
+                    card.style.animation = `card-flip 0.4s ease-out forwards ${index * 0.15 + 0.5}s`; 
+                    card.style.opacity = '0';
+                    card.innerHTML = `<div class="absolute inset-0 bg-black/20 z-10"></div><div class="absolute top-0 right-0 p-2 z-20"><span class="font-bold font-gothic text-lg sm:text-xl italic text-rarity-${item.rarity} drop-shadow-md">${rarityMap[item.rarity]}</span></div><div class="card-image-container flex-1 relative overflow-hidden bg-gray-900">${imgContent}<div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-black via-black/70 to-transparent z-10"></div></div><div class="card-name-container relative z-20 p-2 text-center border-t border-white/10"><div class="text-xs sm:text-sm font-bold text-gray-200 tracking-wide truncate">${item.type || '道具'}</div></div>`;
+                    cardGrid.appendChild(card);
+                });
+                
+                const pullCount = items.length;
+                footer.innerHTML = `
+                    <button onclick="app.closeResult()" class="idv-btn w-48 py-3">确 认</button>
+                    <button onclick="app.pull(${pullCount}, true)" class="idv-btn w-48 py-3 text-amber-100 border-amber-700">再次 x${pullCount}</button>
+                `;
+
+                await new Promise(r => setTimeout(r, 200));
+                header.style.transition = 'opacity 1s'; 
+                header.style.opacity = '1';
+                const allCardsAnimationTime = items.length * 150 + 500;
+                await new Promise(r => setTimeout(r, allCardsAnimationTime));
+                footer.style.transition = 'opacity 0.5s'; 
+                footer.style.opacity = '1';
+            }
+            
+            closeResult(showMain = true) {
+                const screen = document.getElementById('result-screen');
+                screen.classList.add('hidden'); 
+                screen.classList.remove('flex');
+                if(showMain) {
+                    document.getElementById('main-screen').classList.remove('hidden');
+                    this.initShelf();
+                    document.getElementById('btn-pull-10').disabled = false;
+                    this.isTenPull = false;
+                }
+            }
+            
+            _displayDetailModal(item) {
+                if (!item) return;
+                document.getElementById('detail-name').textContent = item.name || '未知物品';
+                document.getElementById('detail-type').textContent = item.type || '未知类型';
+                document.getElementById('detail-desc').textContent = `${item.description || '暂无描述。'}`;
+                document.getElementById('detail-img').src = item.img || '';
+                const glow = document.getElementById('detail-rarity-glow');
+                const rarityColors = { A: 'gold', B: 'purple', C: 'royalblue' };
+                const rarity = item.rarity || '';
+                glow.style.background = rarityColors[rarity] || 'transparent';
+                const modal = document.getElementById('item-detail-modal');
+                modal.classList.remove('hidden'); 
+                modal.classList.add('flex', 'show');
+            }
+            
+            showItemDetail(index) { 
+                this._displayDetailModal(this.currentResults[index]); 
+            }
+            
+            closeItemDetail() {
+                const modal = document.getElementById('item-detail-modal');
+                modal.classList.add('hidden'); 
+                modal.classList.remove('flex', 'show');
+            }
+            
+            initMusicPlayer() {
+                this.audioElement = document.getElementById('background-music');
+                if (this.musicList.length === 0) {
+                    console.warn("音乐列表为空，音乐功能将不可用。");
+                    this._updateMusicButtonUI();
+                    return;
+                }
+
+                const randomIndex = Math.floor(Math.random() * this.musicList.length);
+                this.currentMusic = this.musicList[randomIndex];
+                this.audioElement.volume = 0.3;
+
+                this.audioElement.onended = () => {
+                    if (!this.introPlayed && this.currentMusic.introFilename) {
+                        this.audioElement.src = `/music/${this.currentMusic.loopFilename}`;
+                        this.audioElement.loop = true;
+                        this.introPlayed = true;
+                        this.audioElement.play().catch(e => console.error("播放循环部分失败:", e));
+                    }
+                };
+
+                this._loadAndPlayCurrentMusic();
+            }
+
+            _loadAndPlayCurrentMusic() {
+                if (!this.currentMusic) return;
+
+                if (this.currentMusic.introFilename) {
+                    this.audioElement.src = `/music/${this.currentMusic.introFilename}`;
+                    this.audioElement.loop = false;
+                    this.introPlayed = false;
+                } else {
+                    this.audioElement.src = `/music/${this.currentMusic.loopFilename}`;
+                    this.audioElement.loop = true;
+                    this.introPlayed = true;
+                }
+
+                this.audioElement.play()
+                    .then(() => {
+                        this.isMusicPlaying = true;
+                        this._updateMusicButtonUI();
+                    })
+                    .catch(error => {
+                        console.warn("音乐自动播放被阻止:", error);
+                        this.isMusicPlaying = false;
+                        this._updateMusicButtonUI();
+                    });
+            }
+
+            playMusic() {
+                if (this.audioElement && !this.isMusicPlaying) {
+                    if (!this.introPlayed && this.currentMusic && this.currentMusic.introFilename && this.audioElement.paused && this.audioElement.currentTime === 0) {
+                         this._loadAndPlayCurrentMusic();
+                         return;
+                    }
+                    this.audioElement.play()
+                        .then(() => {
+                            this.isMusicPlaying = true;
+                            this._updateMusicButtonUI();
+                        })
+                        .catch(error => {
+                            console.error("播放音乐失败:", error);
+                        });
+                }
+            }
+
+            pauseMusic() {
+                if (this.audioElement && this.isMusicPlaying) {
+                    this.audioElement.pause();
+                    this.isMusicPlaying = false;
+                    this._updateMusicButtonUI();
+                }
+            }
+
+            toggleMusic() {
+                if (this.isMusicPlaying) {
+                    this.pauseMusic();
+                } else {
+                    this.playMusic();
+                }
+            }
+
+            _updateMusicButtonUI() {
+                const musicButton = document.getElementById('music-toggle-btn');
+                const musicIcon = musicButton.querySelector('i');
+                const musicStatusText = document.getElementById('music-status-text');
+
+                if (this.isMusicPlaying) {
+                    musicIcon.classList.remove('fa-volume-mute');
+                    musicIcon.classList.add('fa-music', 'spin-animation');
+                    musicStatusText.textContent = '播放';
+                } else {
+                    musicIcon.classList.remove('fa-music', 'spin-animation');
+                    musicIcon.classList.add('fa-volume-mute');
+                    musicStatusText.textContent = '音乐';
+                }
+            }
+
+            initShelf() {
+                const shelf = document.getElementById('shelf');
+                shelf.innerHTML = '';
+                for (let i = 1; i <= 10; i++) {
+                    const pack = document.createElement('div');
+                    pack.className = 'card-pack';
+                    pack.innerHTML = `
+                        <div class="emblem"></div>
+                        <div class="card-no">NO.${i}</div>
+                    `;
+                    pack.onclick = () => this.openPack(pack, i);
+                    shelf.appendChild(pack);
+                }
+            }
+
+            async openPack(selectedPack, index) {
+                if (this.isAnimating || this.isTenPull) return;
+                if (selectedPack.classList.contains('disabled') || selectedPack.classList.contains('opened')) return;
+                if (document.querySelector('.opened')) return;
+
+                const allPacks = document.querySelectorAll('.card-pack');
+                allPacks.forEach(p => {
+                    if (p === selectedPack) {
+                        p.classList.add('opened');
+                    } else {
+                        p.classList.add('disabled');
+                    }
+                });
+
+                this.selectedPack = selectedPack;
+                await this.pull(1);
+            }
+            
+            // 显示池子选择器
+            showPoolSelector() {
+                const modal = document.getElementById('pool-selector-modal');
+                const container = document.getElementById('pool-list-container');
+                
+                container.innerHTML = '';
+                
+                this.poolList.forEach(pool => {
+                    const poolElement = document.createElement('div');
+                    poolElement.className = `pool-item p-4 rounded-lg cursor-pointer transition-all border-2 ${
+                        pool.id === this.currentPoolId 
+                            ? 'border-amber-500 bg-amber-500/10' 
+                            : 'border-gray-600 hover:border-amber-400 hover:bg-amber-400/10'
+                    }`;
+                    
+                    poolElement.innerHTML = `
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="font-bold text-lg ${pool.id === this.currentPoolId ? 'text-amber-300' : 'text-gray-200'}">
+                                    ${pool.name || pool.id}
+                                </h4>
+                                ${pool.desc ? `<p class="text-sm text-gray-400 mt-1">${pool.desc}</p>` : ''}
+                            </div>
+                            ${pool.id === this.currentPoolId ? 
+                                '<i class="fas fa-check text-amber-500 text-xl"></i>' : 
+                                ''
+                            }
+                        </div>
+                    `;
+                    
+                    poolElement.onclick = () => this.switchPool(pool.id);
+                    container.appendChild(poolElement);
+                });
+                
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
+            
+            // 关闭池子选择器
+            closePoolSelector() {
+                const modal = document.getElementById('pool-selector-modal');
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+            
+            // 切换池子
+            async switchPool(newPoolId) {
+                if (newPoolId === this.currentPoolId) {
+                    this.closePoolSelector();
+                    return;
+                }
+                
+                // 显示加载状态
+                const switchBtn = document.getElementById('pool-switch-btn');
+                const originalText = switchBtn.innerHTML;
+                switchBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-1"></i>切换中...';
+                switchBtn.disabled = true;
+                
+                try {
+                    // 保存当前池子的数据
+                    this.saveData();
+                    
+                    // 更新当前池子ID
+                    this.currentPoolId = newPoolId;
+                    const newPool = this.poolList.find(pool => pool.id === newPoolId);
+                    
+                    // 更新成本和音乐设置
+                    this.pullCost = newPool.cost ? parseInt(newPool.cost, 10) : 10;
+                    if (newPool.musiclist) {
+                        this.musicListPath = `/music/${newPool.musiclist}`;
+                    }
+                    
+                    // 加载新的池子配置
+                    const cacheBuster = `?t=${new Date().getTime()}`;
+                    const poolResponse = await fetch(`/JYXB/${newPoolId}/pool.json${cacheBuster}`);
+                    if (!poolResponse.ok) throw new Error(`无法加载池子配置: ${newPoolId}`);
+                    this.config = await poolResponse.json();
+                    
+                    // 重新初始化A级物品池
+                    this.aItems = this.config.items.A || [];
+                    
+                    // 重新加载状态（新池子的状态）
+                    this.loadState();
+                    
+                    // 重新初始化UI
+                    this.initUI();
+                    this.initShelf();
+                    
+                    // 更新URL参数但不刷新页面
+                    const url = new URL(window.location);
+                    url.searchParams.set('pool', newPoolId);
+                    window.history.replaceState({}, '', url);
+                    
+                    // 重新初始化音乐播放器
+                    await this.initMusicPlayer();
+                    
+                    this.closePoolSelector();
+                    
+                } catch (error) {
+                    console.error("切换池子时出错:", error);
+                    alert(`切换池子失败: ${error.message}`);
+                } finally {
+                    // 恢复按钮状态
+                    switchBtn.innerHTML = originalText;
+                    switchBtn.disabled = false;
+                }
+            }
+        }
+        
+        let app;
+        document.addEventListener('DOMContentLoaded', async () => {
+            app = new EssenceApp();
+            await app.init();
+
+            const MIN_WIDTH = 200;
+            const MIN_HEIGHT = 450;
+            const smallScreenAlertShown = sessionStorage.getItem('smallScreenAlertShown');
+
+            if ((window.innerWidth < MIN_WIDTH || window.innerHeight < MIN_HEIGHT) && !smallScreenAlertShown) {
+                alert(`您的屏幕尺寸（${window.innerWidth}x${window.innerHeight}）过小，可能会导致出现显示问题。建议使用更宽/高的屏幕。`);
+                sessionStorage.setItem('smallScreenAlertShown', 'true');
+            }
+            
+            // 添加切换按钮事件监听
+            document.getElementById('pool-switch-btn').addEventListener('click', () => {
+                if (app && app.poolList && app.poolList.length > 1) {
+                    app.showPoolSelector();
+                } else {
+                    alert('当前只有一个池子可用');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

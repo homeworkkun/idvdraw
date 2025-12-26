@@ -1,0 +1,3083 @@
+[
+  {
+    "id": "jiyizhenbao",
+    "name": "记忆珍宝",
+    "description": "记忆珍宝",
+    "image": "./img/ecnny7rta5r9ikhga20wlmiso4lv7fi.png",
+    "version": "V1.html",
+    "cost": "488",
+    "cost_type": "clue",
+    "characters": [
+      "“杰克”"
+    ]
+  },
+  {
+    "id": "jiusaiji",
+    "name": "记忆珍宝·旧赛季",
+    "description": "记忆珍宝·旧赛季",
+    "image": "./img/ecnny7rta5r9ikhga20wlmiso4lv7fi.png",
+    "version": "V1.html",
+    "cost": "488",
+    "cost_type": "clue"
+  },
+  {
+    "id": "S1Rank",
+    "name": "第1赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "厂长",
+      "“杰克”",
+      "空军"
+    ]
+  },
+  {
+    "id": "S1E1",
+    "name": "第1赛季·精华1",
+    "description": "寻找记忆中的精华",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "鹿头",
+      "佣兵"
+    ]
+  },
+  {
+    "id": "S1E2",
+    "name": "第1赛季·精华2",
+    "description": "寻找记忆中的精华",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "蜘蛛",
+      "魔术师"
+    ]
+  },
+  {
+    "id": "S1E3",
+    "name": "第1赛季·精华3",
+    "description": "寻找记忆中的精华",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "盲女",
+      "小丑"
+    ]
+  },
+  {
+    "id": "S2Rank",
+    "name": "第2赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "机械师",
+      "“慈善家”",
+      "盲女"
+    ]
+  },
+  {
+    "id": "S2E1",
+    "name": "第2赛季·精华1",
+    "description": "在记忆深处寻找新的闪光",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "祭司",
+      "红蝶"
+    ]
+  },
+  {
+    "id": "S2E2",
+    "name": "第2赛季·精华2",
+    "description": "准备迎接深渊的呼唤",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "黄衣之主",
+      "佣兵"
+    ]
+  },
+  {
+    "id": "S2E3",
+    "name": "第2赛季·精华3",
+    "description": "在记忆深处寻找新的闪光",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "调香师",
+      "医生"
+    ]
+  },
+  {
+    "id": "S2E4",
+    "name": "深渊珍宝",
+    "description": "深渊珍宝",
+    "image": "./img/lkarnwt8tdr6s47oruovmq3brrvqlo6.png",
+    "version": "V1.html",
+    "characters": [
+      "厂长",
+      "医生",
+      "律师",
+      "园丁",
+      "“慈善家”",
+      "空军"
+    ]
+  },
+  {
+    "id": "S3Rank",
+    "name": "第3赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "蜘蛛",
+      "小丑",
+      "园丁"
+    ]
+  },
+  {
+    "id": "S3E1",
+    "name": "第3赛季·精华1",
+    "description": "探索不思议之境的真实面貌",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "牛仔",
+      "前锋",
+      "冒险家"
+    ]
+  },
+  {
+    "id": "S3E2",
+    "name": "第3赛季·精华2",
+    "description": "踏上追寻圣杯的奇妙之旅",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "宿伞之魂",
+      "厂长",
+      "魔术师"
+    ]
+  },
+  {
+    "id": "S3E3",
+    "name": "第3赛季·精华3",
+    "description": "奏响盛宴狂欢的乐章",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "舞女",
+      "佣兵",
+      "空军"
+    ]
+  },
+  {
+    "id": "S4Rank",
+    "name": "第4赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "红蝶",
+      "医生",
+      "先知"
+    ]
+  },
+  {
+    "id": "S4E1",
+    "name": "第4赛季·精华1",
+    "description": "未知的危险向你逼近",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "先知",
+      "医生",
+      "鹿头"
+    ]
+  },
+  {
+    "id": "S4E2",
+    "name": "第4赛季·精华2",
+    "description": "在烈焰中审视王权的真相",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "疯眼",
+      "园丁",
+      "盲女"
+    ]
+  },
+  {
+    "id": "S4E3",
+    "name": "第4赛季·精华3",
+    "description": "面向光明时不要忘却背后的黑暗",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "入殓师",
+      "祭司",
+      "摄影师"
+    ]
+  },
+  {
+    "id": "S5Rank",
+    "name": "第5赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "空军",
+      "调香师",
+      "黄衣之主"
+    ]
+  },
+  {
+    "id": "S5E1",
+    "name": "深渊珍宝Ⅱ",
+    "description": "深渊珍宝Ⅱ",
+    "image": "./img/n2ks9ffqcuwlpip9zqecwwci8fzrh36.png",
+    "version": "V1.html",
+    "characters": [
+      "“杰克”",
+      "佣兵",
+      "调香师",
+      "魔术师",
+      "盲女"
+    ]
+  },
+  {
+    "id": "S5E2",
+    "name": "第5赛季精华",
+    "description": "揭开古代文明埋藏的秘密",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "梦之女巫",
+      "冒险家",
+      "鹿头"
+    ]
+  },
+  {
+    "id": "S6Rank",
+    "name": "第6赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "宿伞之魂",
+      "前锋",
+      "幸运儿"
+    ]
+  },
+  {
+    "id": "S6E1",
+    "name": "第6赛季·精华1",
+    "description": "魔法学院欢迎您的到来",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "勘探员",
+      "魔术师",
+      "蜘蛛"
+    ]
+  },
+  {
+    "id": "S6E2",
+    "name": "第6赛季·精华2",
+    "description": "流浪者之歌",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "咒术师",
+      "祭司",
+      "厂长"
+    ]
+  },
+  {
+    "id": "S6E3",
+    "name": "第6赛季·精华3",
+    "description": "人们有时很难界定天真与邪恶",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "爱哭鬼",
+      "佣兵",
+      "空军"
+    ]
+  },
+  {
+    "id": "S7Rank",
+    "name": "第7赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "先知",
+      "佣兵",
+      "冒险家",
+      "机械师"
+    ]
+  },
+  {
+    "id": "S7E1",
+    "name": "第7赛季·精华1",
+    "description": "众神的玩具盒悄然开启",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "野人",
+      "摄影师",
+      "冒险家"
+    ]
+  },
+  {
+    "id": "S7E2",
+    "name": "第7赛季·精华2",
+    "description": "疯狂，是一种天赋",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "孽蜥",
+      "机械师",
+      "疯眼"
+    ]
+  },
+  {
+    "id": "S7E3",
+    "name": "第7赛季·精华3",
+    "description": "欢迎来到“颤音之弦”",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "杂技演员",
+      "蜘蛛",
+      "勘探员"
+    ]
+  },
+  {
+    "id": "S8Rank",
+    "name": "第8赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "入殓师",
+      "孽蜥",
+      "勘探员",
+      "杂技演员"
+    ]
+  },
+  {
+    "id": "S8E1",
+    "name": "第8赛季·精华1",
+    "description": "下一站, 永无岛, 准备起航！",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "大副",
+      "爱哭鬼",
+      "盲女"
+    ]
+  },
+  {
+    "id": "S8E2",
+    "name": "女神异闻录5联动精华",
+    "description": "Take Your Heart",
+    "image": "./img/0na2y8nsjjsrlyq01a0cg6qf3ix36sv.png",
+    "version": "V1.html",
+    "characters": [
+      "杂技演员",
+      "前锋",
+      "舞女",
+      "入殓师"
+    ]
+  },
+  {
+    "id": "S8E3",
+    "name": "第8赛季·精华2",
+    "description": "在月晦到来前选择你的命运",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "红夫人",
+      "野人",
+      "杂技演员"
+    ]
+  },
+  {
+    "id": "S9Rank",
+    "name": "第9赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "咒术师",
+      "野人",
+      "蜘蛛",
+      "鹿头"
+    ]
+  },
+  {
+    "id": "S9E1",
+    "name": "第9赛季·精华1",
+    "description": "最终，谁会饮下仇恨的毒酒",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "调酒师",
+      "红蝶",
+      "宿伞之魂"
+    ]
+  },
+  {
+    "id": "S9E2",
+    "name": "第9赛季·精华2",
+    "description": "睡鼠在哪里？",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "26号守卫",
+      "律师",
+      "冒险家"
+    ]
+  },
+  {
+    "id": "S9E3",
+    "name": "女神异闻录5联动精华2",
+    "description": "Take Your Heart",
+    "image": "./img/0na2y8nsjjsrlyq01a0cg6qf3ix36sv.png",
+    "version": "V1.html",
+    "characters": [
+      "大副",
+      "机械师",
+      "空军",
+      "园丁"
+    ]
+  },
+  {
+    "id": "S10Rank",
+    "name": "第10赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "舞女",
+      "梦之女巫",
+      "小丑",
+      "大副"
+    ]
+  },
+  {
+    "id": "S10E1",
+    "name": "第10赛季·精华1",
+    "description": "谁有资格书写掌握命运的文字？",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "邮差",
+      "摄影师",
+      "牛仔"
+    ]
+  },
+  {
+    "id": "S10E2",
+    "name": "第10赛季·精华2",
+    "description": "你想品尝死亡的辛辣，还是生存的甘甜",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "“使徒”",
+      "杂技演员",
+      "大副"
+    ]
+  },
+  {
+    "id": "S10E3",
+    "name": "深渊珍宝Ⅲ",
+    "description": "深渊珍宝Ⅲ",
+    "image": "./img/ogl07j11ycqz93m6x7njvs0g8vbh9bj.png",
+    "version": "V1.html",
+    "characters": [
+      "小丑",
+      "机械师",
+      "牛仔",
+      "入殓师",
+      "先知"
+    ]
+  },
+  {
+    "id": "S11Rank",
+    "name": "第11赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "26号守卫",
+      "爱哭鬼",
+      "调酒师",
+      "机械师"
+    ]
+  },
+  {
+    "id": "S11E1",
+    "name": "第11赛季·精华1",
+    "description": "黄金之下 埋藏的除了金矿，还有尘封的秘密",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "守墓人",
+      "26号守卫",
+      "调酒师"
+    ]
+  },
+  {
+    "id": "S11E2",
+    "name": "第11赛季·精华2",
+    "description": "密林之中 神明的怒意比你的血液更加冰凉",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "“囚徒”",
+      "梦之女巫",
+      "咒术师"
+    ]
+  },
+  {
+    "id": "S11E3",
+    "name": "第11赛季·精华3",
+    "description": "面具之下 隐藏着可以吞噬血肉的暗涌",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "红蝶",
+      "宿伞之魂",
+      "勘探员"
+    ]
+  },
+  {
+    "id": "S12Rank",
+    "name": "第12赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "邮差",
+      "律师",
+      "野人",
+      "厂长"
+    ]
+  },
+  {
+    "id": "S12E1",
+    "name": "第12赛季·精华1",
+    "description": "灼灭庸俗世间的谄媚之音",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "小提琴家",
+      "邮差",
+      "孽蜥"
+    ]
+  },
+  {
+    "id": "S12E2",
+    "name": "枪弹辩驳联动精华",
+    "description": "不断前行的希望",
+    "image": "./img/jjrpjub9m88xq2p1tntshjnl82k4y48.png",
+    "version": "V1.html",
+    "characters": [
+      "26号守卫",
+      "调酒师",
+      "空军",
+      "幸运儿"
+    ]
+  },
+  {
+    "id": "S12E3",
+    "name": "第12赛季·精华3",
+    "description": "那远去的寒风，是谁的挽歌？",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "昆虫学者",
+      "守墓人",
+      "爱哭鬼"
+    ]
+  },
+  {
+    "id": "S13Rank",
+    "name": "第13赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "祭司",
+      "盲女",
+      "疯眼",
+      "“囚徒”"
+    ]
+  },
+  {
+    "id": "S13E1",
+    "name": "名侦探柯南联动精华",
+    "description": "第五个幸存者（前篇）",
+    "image": "./img/0ycpi04ev0il1xogj9fj5whm9gxwrq8.png",
+    "version": "V1.html",
+    "cost": "86",
+    "characters": [
+      "律师",
+      "空军",
+      "调香师",
+      "前锋"
+    ]
+  },
+  {
+    "id": "S13E2",
+    "name": "第13赛季·精华2",
+    "description": "王车易位 可否再获新生",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "雕刻家",
+      "机械师",
+      "摄影师"
+    ]
+  },
+  {
+    "id": "S13E3",
+    "name": "名侦探柯南联动精华2",
+    "description": "第五个幸存者（后篇）",
+    "image": "./img/m6hma47ht55w6lbpq97jj2v0hyfdkr6.png",
+    "version": "V1.html",
+    "characters": [
+      "先知",
+      "入殓师",
+      "佣兵",
+      "调酒师"
+    ]
+  },
+  {
+    "id": "S14Rank",
+    "name": "第14赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "摄影师",
+      "空军",
+      "小提琴家"
+    ]
+  },
+  {
+    "id": "S14E1",
+    "name": "第14赛季·精华1",
+    "description": "炼金的艺术，愚者的狂欢",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "画家",
+      "“囚徒”",
+      "小提琴家"
+    ]
+  },
+  {
+    "id": "S14E2",
+    "name": "第14赛季·精华2",
+    "description": "肃静，现在开始宣判！",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "摄影师",
+      "“慈善家”",
+      "盲女"
+    ]
+  },
+  {
+    "id": "S14E3",
+    "name": "第14赛季·精华3",
+    "description": "这里不是仙踪，也没有童话",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "咒术师",
+      "“使徒”",
+      "昆虫学者"
+    ]
+  },
+  {
+    "id": "S15Rank",
+    "name": "第15赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "雕刻家",
+      "守墓人",
+      "红蝶"
+    ]
+  },
+  {
+    "id": "S15E1",
+    "name": "枪弹辩驳联动精华2",
+    "description": "面向希望微笑",
+    "image": "./img/0qy5il8a8s5bouvqdhd5rxjgldfii3y.png",
+    "version": "V1.html",
+    "characters": [
+      "勘探员",
+      "医生",
+      "机械师",
+      "佣兵"
+    ]
+  },
+  {
+    "id": "S15E2",
+    "name": "第15赛季·精华2",
+    "description": "甜蜜陷阱，扭曲贪婪无望的人类",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "击球手",
+      "守墓人",
+      "小丑"
+    ]
+  },
+  {
+    "id": "S15E3",
+    "name": "深渊珍宝Ⅳ",
+    "description": "深渊珍宝Ⅳ",
+    "image": "./img/a918dtbml8nbhb39splxd9qjec5ibrb.png",
+    "version": "V1.html",
+    "characters": [
+      "鹿头",
+      "调酒师",
+      "祭司",
+      "杂技演员",
+      "勘探员"
+    ]
+  },
+  {
+    "id": "S16Rank",
+    "name": "第16赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "调香师",
+      "“慈善家”",
+      "孽蜥"
+    ]
+  },
+  {
+    "id": "S16E1",
+    "name": "约定的梦幻岛联动精华",
+    "description": "大家一起逃走吧",
+    "image": "./img/7e94mkqkxvg26m6ska5k786z2xmmvo6.png",
+    "version": "V1.html",
+    "characters": [
+      "红夫人",
+      "入殓师",
+      "“囚徒”",
+      "园丁"
+    ]
+  },
+  {
+    "id": "S16E2",
+    "name": "第16赛季·精华2",
+    "description": "沉入刑罚的无尽轮回，奉行名为绝望的残破教义",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "破轮",
+      "雕刻家",
+      "牛仔"
+    ]
+  },
+  {
+    "id": "S16E3",
+    "name": "第16赛季·精华3",
+    "description": "时光的画布上，谁在为记忆着色",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "画家",
+      "魔术师",
+      "“使徒”"
+    ],
+    "award": {
+      "奖励1": [
+        "“使徒”-校监夫人",
+        "./img/dupgalnkymlgfecmxzuw2ryne3qekwl.png",
+        "静默，有时才是最忠诚的守护。\n(来自“精华的馈赠”系列-第十六赛季·精华3的馈赠)"
+      ],
+      "奖励2": [
+        "魔术师-文学教授",
+        "./img/9oy4ei1d04btrtfaev3vsqdoo6f20vz.png",
+        "如果命运可以任意书写，你会写下不幸的“喜剧”还是“幸福”的悲剧?\n(来自“精华的馈赠”系列-第十六赛季·精华3的馈赠)"
+      ],
+      "奖励3": [
+        "画家-纳西瑟斯",
+        "./img/bthzrmb9zdqlb3tf8xfmglr4i2j2ayz.png",
+        "在谎言之河的另一端，谁才是触不可及的水中倒影。\n(来自“精华的馈赠”系列-第十六赛季·精华3的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S17Rank",
+    "name": "第17赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "画家",
+      "昆虫学者",
+      "黄衣之主"
+    ]
+  },
+  {
+    "id": "S17E1",
+    "name": "第17赛季·精华1",
+    "description": "神鹰，囿于大漠夜色之下",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "玩具商",
+      "咒术师",
+      "厂长"
+    ],
+    "award": {
+      "奖励1": [
+        "咒术师-噩之牙",
+        "./img/2il1hk4r343ie21d811vje12d7z0pj7.png",
+        "只有公主知道珍宝的秘密,而为了获得那些……做些小小的伪装也未尝不可。（来自“精华的馈赠”系列-第十七赛季·精华1的馈赠）"
+      ],
+      "奖励2": [
+        "厂长-不死护卫",
+        "./img/hls7galuik2v0caoqc9f4dnemb4901c.png",
+        "他只听从号令者的吩咐，一个不为自己存在的灵魂，早已无力判断现实的是非。（来自“精华的馈赠”系列-第十七赛季·精华1的馈赠）"
+      ],
+      "奖励3": [
+        "玩具商-晖之羽",
+        "./img/tf19vtpngbww46je1npvhh1ec4ci5v6.png",
+        "不要因黑夜感到恐惧和悲伤。大漠的旅者请牢记:神鹰赐予的荣耀，仅降临在有勇气去伸手、去接住它光芒的人的身上。（来自“精华的馈赠”系列-第十七赛季·精华1的馈赠）"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S17E2",
+    "name": "第17赛季·精华2",
+    "description": "选好你的位置，在聚光灯亮起之前",
+    "image": "./img/47kwad4b06ai2tms87sm6ik1ulsntsq.png",
+    "version": "V1.html",
+    "characters": [
+      "舞女",
+      "勘探员",
+      "疯眼"
+    ],
+    "award": {
+      "奖励1": [
+        "勘探员-罗纳德",
+        "./img/8yhk1cmthct79nayz1p2x4u7iscgaot.png",
+        "“是你，纺织命运的丝线”——让它成为束缚所有人的罗网。（来自“精华的馈赠”系列-第十七赛季·精华2的馈赠）"
+      ],
+      "奖励2": [
+        "疯眼-“守财奴”",
+        "./img/5het91pwffcivopjdq3qv5tmrosuy43.png",
+        "当命运的绳索重重缠绕，谁会成为我们的阿特洛波斯呢?（来自“精华的馈赠”系列-第十七赛季·精华2的馈赠）"
+      ],
+      "奖励3": [
+        "舞女-克罗托",
+        "./img/e4cnfvmxf1ybb2c0aq1l07bz5irv3bz.png",
+        "峭壁上的花，总是比荒原上的野草枯萎更早。（来自“精华的馈赠”系列-第十七赛季·精华2的馈赠）"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S17E3",
+    "name": "第17赛季·精华3",
+    "description": "滔天巨浪下，谁在呼唤那危险的猎食者？",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "渔女",
+      "祭司",
+      "冒险家"
+    ],
+    "award": {
+      "奖励1": [
+        "祭司-“朝圣者”",
+        "./img/d8jtjt634yj398y7zha1gxprjqor0qz.png",
+        "人们口口相传那个关于海妖的传说——为她献上最纯正的恶，她将会赐予你等同于她的力量。（来自“精华的馈赠”系列-第十七赛季·精华3的馈赠）"
+      ],
+      "奖励2": [
+        "冒险家-宝藏猎人",
+        "./img/eyri6c1a7hp8szkicrbcjzgrzm9th6p.png",
+        "虚构的传说仅用来恐吓胆小鬼，勇敢的寻宝人能接受深海中的每个挑战……也能悄无声息地战胜同一片海域的竞争者。（来自“精华的馈赠”系列-第十七赛季·精华3的馈赠）"
+      ],
+      "奖励3": [
+        "渔女-静默之戟",
+        "./img/a8pn63mho6z08e95tn9ueu0rbxgt5jc.png",
+        "她对海面上的一切并无兴趣。毕竟并非所有生物都如人类一般愚蠢，妄想探寻不属于自己的世界。（来自“精华的馈赠”系列-第十七赛季·精华3的馈赠）"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S18Rank",
+    "name": "第18赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "“使徒”",
+      "魔术师",
+      "玩具商"
+    ]
+  },
+  {
+    "id": "S18E1",
+    "name": "第18赛季·精华1",
+    "description": "下一个故事，轮到谁了？",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "雕刻家",
+      "邮差",
+      "红蝶"
+    ],
+    "award": {
+      "奖励1": [
+        "邮差-“王子”",
+        "./img/rzbj78foda3aa7bu8924nwkbtgyttmf.png",
+        "你见过那个王子么?他的眼睛，像最美丽的蓝宝石，温柔又清澈；他的头脑，像最精密的仪器，聪明又伶俐；他的心，像不含一丝杂质的金子，璀璨又冷硬。（来自“精华的馈赠”系列-第十八赛季·精华1的馈赠）"
+      ],
+      "奖励2": [
+        "红蝶-祈雨之女",
+        "./img/35axbqlg4976g1v6noqaknghz9lwvzl.png",
+        "当神女在熊熊燃烧的大殿里，孑然一人，跳起最后的祈雨之舞时，她的心中，是爱更多，还是恨更多？（来自“精华的馈赠”系列-第十八赛季·精华1的馈赠）"
+      ],
+      "奖励3": [
+        "雕刻家-“夜魔”",
+        "./img/25a9xacgqbrzfluv1e4futxei7t9nec.png",
+        "父亲把那个娃娃交给那个女孩后，跟我说:“你并不需要两个玩具，贪婪是让人堕落的罪恶”。他说的没错，不过，这个庸碌之人，并无法知悉，我更想要哪一个。（来自“精华的馈赠”系列-第十八赛季·精华1的馈赠）"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S18E2",
+    "name": "第18赛季·精华2",
+    "description": "欢迎来到神与勇士的盛筵",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "“心理学家”",
+      "黄衣之主",
+      "击球手"
+    ],
+    "award": {
+      "奖励1": [
+        "击球手-反骨之缚",
+        "./img/cgopdvbpqpl9bozyv4l7clrhhxal568.png",
+        "永无止尽的决斗该结束了!虚伪的头衔并不能让战士重获荣光，任何时候，都不该成为被束缚的玩物。（来自“精华的馈赠”系列-第十八赛季·精华2的馈赠）"
+      ],
+      "奖励2": [
+        "黄衣之主-寄生之面",
+        "./img/rea4sa6yjgkvbqwq5opy3icipvjrv5j.png",
+        "人们用表象判别真伪，用情绪掩盖善恶。于是他实行了自己的法则——作为游戏的旁观者。（来自“精华的馈赠”系列-第十八赛季·精华2的馈赠）"
+      ],
+      "奖励3": [
+        "“心理学家”-苍鹭之翼",
+        "./img/gopyx6qzgfkoupw6n2q4qz37n908dxs.png",
+        "她为前来的勇士们预留了充足的座席，无论是出于仁慈的惩罚，还是出于恶意的玩笑。（来自“精华的馈赠”系列-第十八赛季·精华2的馈赠）"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S18E3",
+    "name": "第18赛季·精华3",
+    "description": "沉湎于幻想，还是接受现实的苦难",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "佣兵",
+      "画家",
+      "蜘蛛"
+    ],
+    "award": {
+      "奖励1": [
+        "蜘蛛-窥伺之心",
+        "./img/rqkaurkvv0072ltpfxhuegy5p1mqg8k.png",
+        "上天给予的美貌与宠爱并不是肥沃的土壤，不足以拯救日益枯萎的花。（来自“精华的馈赠”系列-第十八赛季·精华3的馈赠）"
+      ],
+      "奖励2": [
+        "画家-逃亡者",
+        "./img/b1qgx11nz8o4z6w5iwfuley64cadd35.png",
+        "无法理解恐惧的绝望，才勇于伸手抓住命运之绳。（来自“精华的馈赠”系列-第十八赛季·精华3的馈赠）"
+      ],
+      "奖励3": [
+        "佣兵-红衣人",
+        "./img/kfz86d6p73tokvc1qyh5e3kqwnb80z8.png",
+        "你的恐惧，“他”的血肉，一场最后的狂欢。（来自“精华的馈赠”系列-第十八赛季·精华3的馈赠）"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S17E4",
+    "name": "死亡笔记联动精华",
+    "description": "死亡笔记联动精华",
+    "image": "./img/0qg3mxtm2tiaixrliwjz17qfd2xa6d3.png",
+    "version": "V1.html",
+    "characters": [
+      "孽蜥",
+      "机械师",
+      "“囚徒”",
+      "律师"
+    ]
+  },
+  {
+    "id": "S19Rank",
+    "name": "第19赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "爱哭鬼",
+      "杂技演员",
+      "勘探员"
+    ]
+  },
+  {
+    "id": "S19E1",
+    "name": "约定的梦幻岛联动精华2",
+    "description": "奔向光芒照耀的未来",
+    "image": "./img/b0wlo03v3aisc0nyi9bastvqamqf35n.png",
+    "version": "V1.html",
+    "characters": [
+      "昆虫学者",
+      "“杰克”",
+      "摄影师",
+      "“博士”"
+    ]
+  },
+  {
+    "id": "S19E2",
+    "name": "第19赛季·精华2",
+    "description": "那些至纯至美的事务，必须长存",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "蜡像师",
+      "调酒师",
+      "空军"
+    ],
+    "award": {
+      "奖励1": [
+        "调酒师-女高音",
+        "./img/d79drpozr408zbxmtf8zsfoxmpqs94z.png",
+        "她原本不应该被放置在这里，是那一场完美的婚礼，唤醒了世俗之心对至纯美好的向往，她的灵魂难以再拥有更纯粹的时刻，所以她被停留在了这一瞬间。（来自“精华的馈赠”系列-第十九赛季·精华2的馈赠）"
+      ],
+      "奖励2": [
+        "空军-“苏珊娜”",
+        "./img/gzaeqji3tl86dpuj7ui2lxpyyjp3re0.png",
+        "她是那场婚礼后被放置在最中间位置的珍品，是世间热烈且义无反顾的爱，在烈火的雕琢后，得到了永恒的圣洁。（来自“精华的馈赠”系列-第十九赛季·精华2的馈赠）"
+      ],
+      "奖励3": [
+        "蜡像师-怒火",
+        "./img/fzab67bonjbfaa8h3qds6v137vzg9nu.png",
+        "他有一个巨大的柜子，里面陈列的是他熊熊烈火焚烧后，被静止的美好。（来自“精华的馈赠”系列-第十九赛季·精华2的馈赠）"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S19E3",
+    "name": "第19赛季·精华3",
+    "description": "虚妄之宴（上）-归之殊途",
+    "image": "./img/6i6zer2bo0wqpf10vhr9vhsgpncny8c.png",
+    "version": "V1.html",
+    "characters": [
+      "“小女孩”",
+      "孽蜥",
+      "玩具商"
+    ],
+    "award": {
+      "奖励1": [
+        "孽蜥-狰",
+        "./img/a994y9bysiy68yjq14r2d16dhqq5ea5.png",
+        "倘若真理所存在的世界疯狂、没人性，那我会选择舍弃掉仅剩的理智。（来自“精华的馈赠”系列-第十九赛季·精华3的馈赠）"
+      ],
+      "奖励2": [
+        "玩具商-藏",
+        "./img/87rb5rg9p25tgffmn2lxgdne4izvqpa.png",
+        "藏匿自己喜欢的人和物有什么错呢，美丽的缎蓝亭鸟也会想要独占心爱的“玩具”。（来自“精华的馈赠”系列-第十九赛季·精华3的馈赠）"
+      ],
+      "奖励3": [
+        "“小女孩”-恶之源",
+        "./img/rykt7wprxso93m08vo8208tghm5ty9z.png",
+        "也许纯洁的羔羊只是表象，溯源至深，是众罪之始、恶念之源。（来自“精华的馈赠”系列-第十九赛季·精华3的馈赠）"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S20Rank",
+    "name": "第20赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "前锋",
+      "击球手",
+      "破轮"
+    ]
+  },
+  {
+    "id": "S20E1",
+    "name": "第20赛季·精华1",
+    "description": "虚妄之宴（下）-旧垒成碑",
+    "image": "./img/rqow6pnz62xgyzzi4vi0kxjdh1e2dzo.png",
+    "version": "V1.html",
+    "characters": [
+      "小说家",
+      "杂技演员",
+      "先知"
+    ],
+    "award": {
+      "奖励1": [
+        "杂技演员-狡",
+        "./img/6dd3pt1q4g4e7p6lvcl2qyrqrxcynei.png",
+        "这个世界缺少英雄．他想。但不择手段的复仇，终究只是自诩正义。（来自“精华的馈赠”系列-第二十赛季·精华1的馈赠）"
+      ],
+      "奖励2": [
+        "先知-鸩",
+        "./img/n9o1d7yboji3ckby839ayu5l5j39d1a.png",
+        "没有谁的动机经得起彻底解剖。看似无害的绒羽，也可能携带着致命的鸩毒。（来自“精华的馈赠”系列-第二十赛季·精华1的馈赠）"
+      ],
+      "奖励3": [
+        "小说家-空",
+        "./img/5hsyelhkpl7p3u7fvlaenhbnqrruhc6.png",
+        "童话般洁白无瑕的灵魂，是脆弱的善良，被击倒于黑夜来临前。（来自“精华的馈赠”系列-第二十赛季·精华1的馈赠）"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S20E2",
+    "name": "深渊珍宝Ⅴ",
+    "description": "深渊珍宝Ⅴ",
+    "image": "./img/rip9jqh7v4rjao87yupwia9ouchzgom.png",
+    "version": "V1.html",
+    "characters": [
+      "红蝶",
+      "前锋",
+      "咒术师",
+      "大副",
+      "“囚徒”"
+    ]
+  },
+  {
+    "id": "S20E3",
+    "name": "第20赛季·精华3",
+    "description": "唯一的生还者说 神明不绝人愿",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "哭泣小丑",
+      "“小女孩”",
+      "梦之女巫"
+    ],
+    "award": {
+      "奖励1": [
+        "梦之女巫-纸皇后",
+        "./img/0cpq4s5cly1ubjz071cut0o31rsx8ay.png",
+        "一切美好的愿望，都有有效期，如同这些纸愿，一时穿风破雨，最终都是尘封入海。（来自“精华的馈赠”系列-第二十赛季·精华3的馈赠）"
+      ],
+      "奖励2": [
+        "“小女孩”-年岁",
+        "./img/4bc3d2mesx3fvfe4b6r0ndn2bfolgiv.png",
+        "想变成风，变成云，变成海燕，去穿过海浪，穿过暴雨，去告诉爸爸妈妈，我在他们看不见的时候悄悄长大。（来自“精华的馈赠”系列-第二十赛季·精华3的馈赠）"
+      ],
+      "奖励3": [
+        "哭泣小丑-欺惑之燕",
+        "./img/dmar8azevxapct9xrbf861889qi98mw.png",
+        "偏偏是惑乱人心的恶魔在虔诚宣告：神明不绝人愿，穿过风雨就能得见故人。（来自“精华的馈赠”系列-第二十赛季·精华3的馈赠）"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S21Rank",
+    "name": "第21赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "昆虫学者",
+      "雕刻家",
+      "咒术师"
+    ]
+  },
+  {
+    "id": "S21E1",
+    "name": "第21赛季·精华1",
+    "description": "冰雪之约，如期而至",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "前锋",
+      "破轮",
+      "调香师"
+    ],
+    "award": {
+      "奖励1": [
+        "破轮-球球",
+        "./img/jola3379y2d6q2891jx370be3bj25cz.png",
+        "两个小冰人，蓝铃花前赏春意；花香浓郁难呼吸，两个只剩一。（来自“精华的馈赠”系列-第二十一赛季·精华1的馈赠）"
+      ],
+      "奖励2": [
+        "调香师-冰上舞蹈",
+        "./img/mbn8roecp4m86bf1m08ysmt4ma4csl1.png",
+        "三个小冰人，湖面旋舞危机藏；初春冰面裂如网，三个只剩两。（来自“精华的馈赠”系列-第二十一赛季·精华1的馈赠）"
+      ],
+      "奖励3": [
+        "前锋-速滑种子",
+        "./img/mwtizwtom1tztsnpj5joy94d9bf2x5n.png",
+        "一个小冰人，形单影只无人伴；烈日化雪一场空，一个也不剩。\n(来自“精华的馈赠”系列-第二十一赛季·精华1的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S21E2",
+    "name": "第21赛季·精华2",
+    "description": "共同探寻水晶宫的“幽灵”",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "机械师",
+      "红夫人",
+      "哭泣小丑"
+    ],
+    "award": {
+      "奖励1": [
+        "哭泣小丑-烟花盖伊",
+        "./img/d477u2by5ipm0vwvy133m46mzgnqplm.png",
+        "绚烂烟花将绽放穹顶之上。\n(来自“精华的馈赠”系列-第二十一赛季·精华2的馈赠)"
+      ],
+      "奖励2": [
+        "红夫人-宝钻女爵",
+        "./img/tfgujoubpty4tbpu39grhoqieknvgv3.png",
+        "蒙尘宝钻将重现光辉之彩。\n(来自“精华的馈赠”系列-第二十一赛季·精华2的馈赠)"
+      ],
+      "奖励3": [
+        "机械师-心锁",
+        "./img/cdr2l8ippltxys1snf2mfmqtralz4xs.png",
+        "古灵精怪的心思在寻觅何物?\n(来自“精华的馈赠”系列-第二十一赛季·精华2的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S22Rank",
+    "name": "第22赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "梦之女巫",
+      "渔女",
+      "画家"
+    ]
+  },
+  {
+    "id": "S22E1",
+    "name": "第22赛季·精华1",
+    "description": "温泉煮酒，我们崇拜，我们沉醉",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "教授",
+      "舞女",
+      "蜡像师"
+    ],
+    "award": {
+      "奖励1": [
+        "蜡像师-淋浴",
+        "./img/hy9q84l29bjfdsbaydfyz4uttlz2hrh.png",
+        "沐浴在温热中，融为一体吧。（来自“精华的馈赠”系列-第二十二赛季·精华1的馈赠）"
+      ],
+      "奖励2": [
+        "舞女-香薰桑拿",
+        "./img/n6sn6w6g1afo6i4rx7b7o63dd148d48.png",
+        "香薰氤氲缭绕，精神回归懵懂。（来自“精华的馈赠”系列-第二十二赛季·精华1的馈赠）"
+      ],
+      "奖励3": [
+        "教授-温泉煮酒",
+        "./img/ficv0j2skxqdauihaluvenmioqh6d2j.png",
+        "温泉煮酒，我们沉醉，我们崇拜。（来自“精华的馈赠”系列-第二十二赛季·精华1的馈赠）"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S22E2",
+    "name": "第22赛季·精华2",
+    "description": "游戏时间到！",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "医生",
+      "小说家",
+      "“噩梦”"
+    ],
+    "award": {
+      "奖励1": [
+        "“噩梦”-随机数",
+        "./img/gfop7bdf3g755ciu84n83z4etoehl6o.png",
+        "最后会落在哪个数字呢？他最期待未知的结局。（来自“精华的馈赠”系列-第二十二赛季·精华2的馈赠）"
+      ],
+      "奖励2": [
+        "小说家-大师牌",
+        "./img/iix5j7t6ba71mw703hsz2pb2odppqbi.png",
+        "擅长游戏者，最易沉沦于游戏。（来自“精华的馈赠”系列-第二十二赛季·精华2的馈赠）"
+      ],
+      "奖励3": [
+        "医生-试运者",
+        "./img/mv1pc2qh9w29d3kaoktrm3jx2nwg8yu.png",
+        "生命并不公平，但游戏面前人人平等：一点或是六点，得失总是随机。（来自“精华的馈赠”系列-第二十二赛季·精华2的馈赠）"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S23Rank",
+    "name": "第23赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "守墓人",
+      "“噩梦”",
+      "小说家"
+    ]
+  },
+  {
+    "id": "S23E1",
+    "name": "第23赛季·精华1",
+    "description": "贝尔斯泰因，梦境之屿",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "空军",
+      "渔女",
+      "昆虫学者"
+    ],
+    "award": {
+      "奖励1": [
+        "渔女-迷迭香",
+        "./img/3iuv4k4s20jh0nqxmkimm9wwmvsfkzz.png",
+        "迷迭香——她是这鲜花王国的缔造者，迷迭香有枯萎之时，而贝尔斯泰因在回忆里永远芬芳。（来自“精华的馈赠”系列-第二十三赛季·精华1的馈赠）"
+      ],
+      "奖励2": [
+        "昆虫学者-曼陀罗",
+        "./img/nbe26bx3zi1b2jxq5hw66raqjlx52kn.png",
+        "曼陀罗——她被赐予的花名叫曼陀罗，一个沉睡在黑暗中的边缘人物。或许一点鲜血的灌溉，花中的精灵才能被唤醒……（来自“精华的馈赠”系列-第二十三赛季·精华1的馈赠）"
+      ],
+      "奖励3": [
+        "空军-菖蒲",
+        "./img/bm1nurhgams69eua9sa6jpwpau2np67.png",
+        "菖蒲——她所选择的花名叫菖蒲，如它的花语，阳光会照亮贝尔斯泰因的每一片土地。（来自“精华的馈赠”系列-第二十三赛季·精华1的馈赠）"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S23E2",
+    "name": "第23赛季·精华2",
+    "description": "胜不足喜，败亦无悲；此身无羁，此行无惧。",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "古董商",
+      "画家",
+      "宿伞之魂"
+    ],
+    "award": {
+      "奖励1": [
+        "画家-长生",
+        "./img/35azenvieub2glspmuaflp0jalib0vs.png",
+        "敬神信仰已慢慢凝固，再无一人提起博山，只有长生自己还铭记造物主的遗志，描摹海外仙山的距离。\n(来自“精华的馈赠”系列-第二十三赛季·精华2的馈赠)"
+      ],
+      "奖励2": [
+        "宿伞之魂-阴阳司公",
+        "./img/bib6i6i7xecdo01rkyhn14w453iy5gl.png",
+        ""
+      ],
+      "奖励3": [
+        "古董商-白泽",
+        "./img/clox7yxogk7aktn4jntuos35uw2ybgr.png",
+        "山雨穿林打叶，我仍逆往而行，只愿此身筠心不改，死亦无憾。\n(来自“精华的馈赠”系列-第二十三赛季·精华2的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S23E3",
+    "name": "第23赛季·精华3",
+    "description": "“若你真能看清那虚幻的光芒，便知自己也不过是被灰烬欺骗的飞蛾。”",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "隐士",
+      "“囚徒”",
+      "祭司"
+    ],
+    "award": {
+      "奖励1": [
+        "“囚徒”-冬蝉",
+        "./img/o3kxspu5id4qaebhee2m3qe2nwx65lm.png",
+        "为执着的真理高歌，还是在权威下保持谦卑无声？若这孱弱的膜翅不足以驱散风雪，那便让我成为燃料，融化坚冰。\n(来自“精华的馈赠”系列-第二十三赛季·精华3的馈赠)"
+      ],
+      "奖励2": [
+        "祭司-冰中蝶",
+        "./img/qxifu7abrceyukw6ch34x0pqc9t1ce6.png",
+        "我喜欢被雪花包裹的感觉，纯洁，温暖，如同在茧房中安眠。可无视一切嘈杂与大厦倾塌时的震荡。\n(来自“精华的馈赠”系列-第二十三赛季·精华3的馈赠)"
+      ],
+      "奖励3": [
+        "隐士-典狱长",
+        "./img/8o9unxzg7epls4wbu8etrnab16n4cun.png",
+        "秩序？道德？足够污浊的空气下，那只会成为比枷锁更有利的工具。\n(来自“精华的馈赠”系列-第二十三赛季·精华3的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S24Rank",
+    "name": "第24赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "幸运儿",
+      "红夫人",
+      "“心理学家”"
+    ]
+  },
+  {
+    "id": "S24E1",
+    "name": "第24赛季·精华1",
+    "description": "你，获得的恩赐是什么？",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "园丁",
+      "雕刻家",
+      "“使徒”"
+    ],
+    "award": {
+      "奖励1": [
+        "“使徒”-荒野女巫",
+        "./img/lp9kov9wlbxwsav6ajhohiluat6zb7x.png",
+        "“你且仔细听,风吹过树叶好似猫咪的惨叫。一定是她，那个可以和植物对话的女孩正在倾诉她的遭遇！如果你打扰到了她，森林之火会将你吞噬。”\n(来自“精华的馈赠”系列-第二十四赛季·精华1的馈赠)"
+      ],
+      "奖励2": [
+        "雕刻家-动物女巫",
+        "./img/hn5obq63fm50u2uqcwnmqcnnbijdjzy.png",
+        "“嘘,不要再往前走!草原的尽头有个可以和动物说话的女孩,如果你打扰到了她,可爱的动物将化身成熊熊烈火将你吞噬。”\n(来自“精华的馈赠”系列-第二十四赛季·精华1的馈赠)"
+      ],
+      "奖励3": [
+        "园丁-宇宙女巫",
+        "./img/t3lhy1lhldz92ukjnx2m6eahkuxp9dj.png",
+        "“月满星空,所有的火光将化作流星,厄运终结。”\n(来自“精华的馈赠”系列-第二十四赛季·精华1的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S25Rank",
+    "name": "第25赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "宿伞之魂",
+      "入殓师",
+      "“小女孩”"
+    ]
+  },
+  {
+    "id": "S25E1",
+    "name": "第25赛季·精华1",
+    "description": "感受血液中的力量！",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "作曲家",
+      "梦之女巫",
+      "入殓师"
+    ],
+    "award": {
+      "奖励1": [
+        "入殓师-守钟人",
+        "./img/d5phbinojp0g6ohqm6jjivjfovfwzul.png",
+        "以正义粉饰暴行的人，从不在意自己是否也流淌着罪恶的血液。\n(来自“精华的馈赠”系列-第二十五赛季·精华1的馈赠)"
+      ],
+      "奖励2": [
+        "梦之女巫-红龙夫人",
+        "./img/ra0hto6434pp0orhn3hcsshpn269o4c.png",
+        "当寂静之钟响起时，她便打破塔楼里的枷锁，一一验证名为信仰的谎言。\n(来自“精华的馈赠”系列-第二十五赛季·精华1的馈赠)"
+      ],
+      "奖励3": [
+        "作曲家-猎龙者",
+        "./img/0xc86yrozh68oguyuno4jpfb4igy3r2.png",
+        "那些邪恶的生物并不仅存于史诗与传说，感受到血液中的力量了吗——你我皆是屠龙故事里的一员。\n(来自“精华的馈赠”系列-第二十五赛季·精华1的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S25E2",
+    "name": "深渊珍宝Ⅵ",
+    "description": "深渊珍宝Ⅵ",
+    "image": "./img/0xwehh79epcrbwsz3i06jo8ry70ol0d.png",
+    "version": "V1.html",
+    "characters": [
+      "宿伞之魂",
+      "昆虫学者",
+      "哭泣小丑",
+      "玩具商",
+      "守墓人"
+    ]
+  },
+  {
+    "id": "S26Rank",
+    "name": "第26赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "牛仔",
+      "蜘蛛",
+      "哭泣小丑"
+    ]
+  },
+  {
+    "id": "S26E1",
+    "name": "文豪野犬联动精华2",
+    "description": "暗夜中的庄园调查",
+    "image": "./img/1ymkqr8m6nmek6slq26bworo9t9w3bs.png",
+    "version": "V1.html",
+    "characters": [
+      "先知",
+      "魔术师",
+      "空军",
+      "杂技演员"
+    ]
+  },
+  {
+    "id": "S26E2",
+    "name": "第26赛季·精华2",
+    "description": "高塔毁于日蚀之刻，野望埋在乌有之乡",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "守夜人",
+      "机械师",
+      "哭泣小丑"
+    ],
+    "award": {
+      "奖励1": [
+        "哭泣小丑-蚕食者",
+        "./img/lymr4pc2k1t3r78n6wuu5nq7shv5ww5.png",
+        "他们吹嘘我被他们从奴隶主的屠宰场中救下，这为什么要我感恩戴德，明明主人们为光辉所庇佑，蚀日的军团才是恶魔的爪牙。\n(来自“精华的馈赠”系列-第二十六赛季·精华2的馈赠)"
+      ],
+      "奖励2": [
+        "机械师-归来者",
+        "./img/gmzok35c0nn27x56aawu2wufbhfcd6e.png",
+        "怪物吞噬了当空的太阳，我们追随他踩在高塔尸骸之上。可笑的是其他追随者不会知道，太阳从未死亡，他已被怪物永久豢养。\n(来自“精华的馈赠”系列-第二十六赛季·精华2的馈赠)"
+      ],
+      "奖励3": [
+        "守夜人-蚀日者",
+        "./img/hqohvenywm8y8fqy89mpi5wxnobq3nv.png",
+        "高塔之上，空有伪神，乌有之乡，实为假象。不信的话低头看看，亲爱的兄长，看你脚下的蝼蚁如何挣脱镣铐、推倒太阳。\n(来自“精华的馈赠”系列-第二十六赛季·精华2的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S26E3",
+    "name": "第26赛季·精华3",
+    "description": "这是噩梦的出口，还是美梦的尽头",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "梦之女巫",
+      "勘探员",
+      "昆虫学者"
+    ],
+    "award": {
+      "奖励1": [
+        "昆虫学者-动植物学教授",
+        "./img/sxumghdost8nyxz0s8kyq9rfa8vws63.png",
+        "飞蛾和人类一样，总会在感受到疼痛后，远离危险。\n(来自“精华的馈赠”系列-第二十六赛季·精华3的馈赠)"
+      ],
+      "奖励2": [
+        "勘探员-矿业董事",
+        "./img/gsge71ryl2cvfj9lmm3wll9xah2tkmp.png",
+        "幸运又成功的主角背后，总少不了更多愚蠢又失败的配角。\n(来自“精华的馈赠”系列-第二十六赛季·精华3的馈赠)"
+      ],
+      "奖励3": [
+        "梦之女巫-信使",
+        "./img/pebz1miq12gmkbug7o0j4ej3jxq79z7.png",
+        "无光的交界再次来临，我的朋友们，做出你的选择，看看谁将美梦终醒。\n(来自“精华的馈赠”系列-第二十六赛季·精华3的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S27Rank",
+    "name": "第27赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "蜡像师",
+      "教授",
+      "野人"
+    ]
+  },
+  {
+    "id": "S27E1",
+    "name": "第27赛季·精华1",
+    "description": "罪孽的冤狱中，是谁燃起救赎的幽焰",
+    "image": "./img/aj22r4d43ujw9mmohr53iuflign11bw.png",
+    "version": "V1.html",
+    "characters": [
+      "记者",
+      "摄影师",
+      "“噩梦”"
+    ],
+    "award": {
+      "奖励1": [
+        "“噩梦”-圣洁",
+        "./img/ra090onkfbn5t6p8y39r5hvx85hupnz.png",
+        "虚假的希望，是恶毒的疫病，它伪装成圣洁的曙光，却最终摧毁所有祈求治愈的躯壳。\n(来自“精华的馈赠”系列-第二十七赛季·精华1的馈赠)"
+      ],
+      "奖励2": [
+        "摄影师-安宁",
+        "./img/c42wlxarj6b1tysdakiun4jk1p1clwl.png",
+        "安宁的世界，往往滋养出过于喧嚣的灵魂。\n(来自“精华的馈赠”系列-第二十七赛季·精华1的馈赠)"
+      ],
+      "奖励3": [
+        "记者-永恒",
+        "./img/tg37yxhqxawq4jz9pp5m4f98aynsoue.png",
+        "救赎与坠落都不是结果，它们只是另一个轮回的开端。\n(来自“精华的馈赠”系列-第二十七赛季·精华1的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S27E2",
+    "name": "第27赛季·精华2",
+    "description": "小心，别碰坏鸟儿的羽毛",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "魔术师",
+      "隐士",
+      "古董商"
+    ],
+    "award": {
+      "奖励1": [
+        "隐士-游隼",
+        "./img/itkfx9doxxw7hm3ancy8l4vcetkxmkt.png",
+        "他是在大漠中游荡的猎人，除了黄沙和狂风，无人知道他的来处。\n(来自“精华的馈赠”系列-第二十七赛季·精华2的馈赠)"
+      ],
+      "奖励2": [
+        "古董商-黑鸦",
+        "./img/ljhuy9pkein4kmgd7dwsk4oad43u8vm.png",
+        "他掠杀的工具，王国的棋子……她被冠以太多名号，早已无法遵循自己内心的善意。\n(来自“精华的馈赠”系列-第二十七赛季·精华2的馈赠)"
+      ],
+      "奖励3": [
+        "魔术师-岩鸽",
+        "./img/1tqpj3u2jydplh9v8usikw4b7fh3jy6.png",
+        "物竞天择是大漠的生存法则，而我只是个擅长故事和戏法的小小游商罢了。\n(来自“精华的馈赠”系列-第二十七赛季·精华2的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S27E3",
+    "name": "杀戮天使联动精华",
+    "description": "天使的庄园逃出计划",
+    "image": "./img/h2yea3xiy4ue8iphdp254mdo2dba6t3.png",
+    "version": "V1.html",
+    "characters": [
+      "空军",
+      "爱哭鬼",
+      "“小女孩”",
+      "教授"
+    ],
+    "cost": "86",
+    "cost_type": "inspiration"
+  },
+  {
+    "id": "S28Rank",
+    "name": "第28赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "玩具商",
+      "邮差",
+      "红蝶"
+    ]
+  },
+  {
+    "id": "S28E1",
+    "name": "第28赛季·精华1",
+    "description": "何必信奉荣耀？荣耀因我而生",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "歌剧演员",
+      "前锋",
+      "“记录员”"
+    ],
+    "award": {
+      "奖励1": [
+        "前锋-阿瓦尔的战车",
+        "./img/tttzhy9ptki07kofpq71twwp8pa7viv.png",
+        "他高呼着代表胜利的“尼卡”，停行的战车将再次拜倒在复活的王权之下。\n(来自“精华的馈赠”系列-第二十八赛季·精华1的馈赠)"
+      ],
+      "奖励2": [
+        "“记录员”-执政官",
+        "./img/gm9uoxqb08p0gvuc23zyjmskgguyctg.png",
+        "她将又一次臣服于巴萨丽莎，以执政官的名义，惩罚车轮上的狂妄叛军。\n(来自“精华的馈赠”系列-第二十八赛季·精华1的馈赠)"
+      ],
+      "奖励3": [
+        "歌剧演员-巴萨丽莎",
+        "./img/p1ym1209x32xv9ouiiyzje0mbpovmtn.png",
+        "沉睡的石像在此苏醒，贪婪的子民将被献祭，复活的巴萨丽莎将托举皇冠，再次加冕。\n(来自“精华的馈赠”系列-第二十八赛季·精华1的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S28E2",
+    "name": "第28赛季·精华2",
+    "description": "与邪恶搏斗的勇士，是否也会堕入邪恶",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "摄影师",
+      "“心理学家”",
+      "病患"
+    ],
+    "award": {
+      "奖励1": [
+        "病患-天使向导",
+        "./img/ishqb8zwmb51zh9nughg0isd4rhc2ig.png",
+        "当他与阿斯莫断开连接，迷失的他沦为亡灵的猎物，他伺机待发直至新的主人出现。\n(来自“精华的馈赠”系列-第二十八赛季·精华2的馈赠)"
+      ],
+      "奖励2": [
+        "“心理学家”-神圣阿斯莫",
+        "./img/il1ka9dg6mmr5elzk1zktm69r82i2qg.png",
+        "她默默地守护着她的小镇，等待着那位从影堡来的年轻人，将她的“守护”送到神殿。\n(来自“精华的馈赠”系列-第二十八赛季·精华2的馈赠)"
+      ],
+      "奖励3": [
+        "摄影师-亡灵之主",
+        "./img/hfeqxxc1tptvjl7ctf03kpfnprn9yof.png",
+        "当那位年轻人踏入神殿，他也同样期待着神谕的显现。在那神秘的预示中，邪神之子的面容终于浮现。\n(来自“精华的馈赠”系列-第二十八赛季·精华2的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S28E3",
+    "name": "新枪弹辩驳V3联动精华",
+    "description": "新枪弹辩驳V3联动精华",
+    "image": "./img/746xcjnbs7tyb23qty3fudmww57tjvf.png",
+    "version": "V1.html",
+    "characters": [
+      "记者",
+      "小说家",
+      "杂技演员",
+      "玩具商"
+    ]
+  },
+  {
+    "id": "S29Rank",
+    "name": "第29赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "渔女",
+      "作曲家",
+      "舞女"
+    ]
+  },
+  {
+    "id": "S29E1",
+    "name": "第29赛季·精华1",
+    "description": "奔向星光",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "拉拉队员",
+      "击球手",
+      "26号守卫"
+    ],
+    "award": {
+      "奖励1": [
+        "26号守卫-霰",
+        "./img/c8puofasl4qa0vsti2s0a9grvcq2wjh.png",
+        "这世界上，有许多声响比言语更震耳欲聋。\n(来自“精华的馈赠”系列-第二十九赛季·精华1的馈赠)"
+      ],
+      "奖励2": [
+        "击球手-钨",
+        "./img/s6bbnitfgvar4q2k2w5p20r8mki5my3.png",
+        "那些传说中高悬的星辰并不是我的希望，击碎黑暗的磷光才是。\n(来自“精华的馈赠”系列-第二十九赛季·精华1的馈赠)"
+      ],
+      "奖励3": [
+        "拉拉队员-荧",
+        "./img/m08qc3u8lobf19lfruhg0l1iikesmn2.png",
+        "无论这“牢笼”以外是深渊还是乐园，我都要亲眼去看看。\n(来自“精华的馈赠”系列-第二十九赛季·精华1的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S29E2",
+    "name": "第29赛季·精华2",
+    "description": "大漠出塞路，秋风寄弦音",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "昆虫学者",
+      "调酒师",
+      "鹿头"
+    ],
+    "award": {
+      "奖励1": [
+        "鹿头-镏金铜鹿",
+        "./img/o8ykgh3l19o5h6z2r7b80c829hq68jb.png",
+        "那只镏金铜鹿，立在角落注视着、沉默着，等待着属于它的时代的来临。\n(来自“精华的馈赠”系列-第二十九赛季·精华2的馈赠)"
+      ],
+      "奖励2": [
+        "调酒师-夜光杯",
+        "./img/tbiznr1ad8q29zjvxlvkhlg0diwonpi.png",
+        "当盛装美酒的玉盏，也能在月下熠熠生辉，它就实现了远超器物本身的价值，更象征着兄长手艺和意志的赓续。\n(来自“精华的馈赠”系列-第二十九赛季·精华2的馈赠)"
+      ],
+      "奖励3": [
+        "昆虫学者-箜篌",
+        "./img/088dy7vskaackhujr3m812jc1ethip0.png",
+        "手工艺品总比那些有生命的小家伙更容易控制——一些源于血泪的改良，或许能带来一场更为精彩的演出。\n(来自“精华的馈赠”系列-第二十九赛季·精华2的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S30Rank",
+    "name": "第30赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "调酒师",
+      "“博士”",
+      "园丁"
+    ]
+  },
+  {
+    "id": "S30E1",
+    "name": "第30赛季·精华1",
+    "description": "乱石之下，熔岩的脉搏即将复苏",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "舞女",
+      "渔女",
+      "“愚人金”"
+    ],
+    "award": {
+      "奖励1": [
+        "舞女-诡焰",
+        "./img/0e6y98vpg5k475nnfwzvs87o0icy14n.png",
+        "她诞生自一片完好地继承着魔力的翎羽，继而用言语诱使那些羔羊误入不归的旅途。\n(来自“精华的馈赠”系列-第三十赛季·精华1的馈赠)"
+      ],
+      "奖励2": [
+        "渔女-破魔之刃",
+        "./img/fm7mtaxti3jldmf4q83d9zy8qyjv3p4.png",
+        "从炽热的熔岩、从那些迸裂的乱石间爆发的力量不可抵挡……但只要还有目睹真相的生还者，就仍可谈论“希望”。\n(来自“精华的馈赠”系列-第三十赛季·精华1的馈赠)"
+      ],
+      "奖励3": [
+        "“愚人金”-罪恶熔火",
+        "./img/6tzhk4os1oox5pxrm6lhmm99d30o67x.png",
+        "祂在意识的底层发出有力的震鸣——召唤着那块平静的卵石，回归熔火般燃烧着的罪恶本源。\n(来自“精华的馈赠”系列-第三十赛季·精华1的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S30E2",
+    "name": "xxxHOLiC联动精华",
+    "description": "xxxHOLiC联动精华",
+    "image": "./img/la9wd78jfyriajlwhkg3lru4uuremph.png",
+    "version": "V1.html",
+    "characters": [
+      "红蝶",
+      "“小女孩”",
+      "先知",
+      "佣兵"
+    ]
+  },
+  {
+    "id": "S30E3",
+    "name": "第30赛季·精华3",
+    "description": "雪夜里，是谁送来最后一封信件？",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "邮差",
+      "画家",
+      "黄衣之主"
+    ],
+    "award": {
+      "奖励1": [
+        "黄衣之主-克朗普斯",
+        "./img/c1ib0lgaer1c72iw7aeny9eiwi5l36j.png",
+        "与圣诞老人不同，祂的礼物将会赠予那些“坏孩子”。\n(来自“精华的馈赠”系列-第三十赛季·精华3的馈赠)"
+      ],
+      "奖励2": [
+        "画家-温暖的平安夜",
+        "./img/ew8no8lnylo84z40bgpnhixh6yo1w3j.png",
+        "该如何调配这份温暖的色调，才能将眼前生动的景象留印于画布之上？\n(来自“精华的馈赠”系列-第三十赛季·精华3的馈赠)"
+      ],
+      "奖励3": [
+        "邮差-圣诞信使",
+        "./img/7v8dh7wzce9oa5xlaqo68j2p54hahlr.png",
+        "热心的信使将在节日的铃声中，敲响每一位收信人的房门，递上属于圣诞的祝福。\n(来自“精华的馈赠”系列-第三十赛季·精华3的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S31Rank",
+    "name": "第31赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "小提琴家",
+      "小说家",
+      "拉拉队员"
+    ]
+  },
+  {
+    "id": "S31E1",
+    "name": "深渊珍宝Ⅶ",
+    "description": "深渊珍宝Ⅶ",
+    "image": "./img/cb1x8vndjl9baylt8m5tayla0xfvv5c.png",
+    "version": "V1.html",
+    "characters": [
+      "黄衣之主",
+      "病患",
+      "“心理学家”",
+      "作曲家",
+      "古董商"
+    ]
+  },
+  {
+    "id": "S31E2",
+    "name": "第31赛季·精华2",
+    "description": "胜利之前，谁都有成为弃子的可能。",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "木偶师",
+      "守夜人",
+      "拉拉队员"
+    ],
+    "award": {
+      "奖励1": [
+        "拉拉队员-BISHOP-f1",
+        "./img/5s2o6sz4fl198sbkl61elkz6r48s8j3.png",
+        "无法到达的乐土，早该成为命运车轮下的齑粉。\n(来自“精华的馈赠”系列-第三十一赛季·精华2的馈赠)"
+      ],
+      "奖励2": [
+        "守夜人-KNIGHT-c3",
+        "./img/ikcq1584amc2le13az6ep7xbol1lfex.png",
+        "那些侥幸越过的危难，总会在你最脆弱时复返。\n(来自“精华的馈赠”系列-第三十一赛季·精华2的馈赠)"
+      ],
+      "奖励3": [
+        "木偶师-KING-h1",
+        "./img/rpymf3cfq4k0y5f57ueqoktaeai0svw.png",
+        "装点胜利的王冠，是弃子最好的归处。\n(来自“精华的馈赠”系列-第三十一赛季·精华2的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S31E3",
+    "name": "第31赛季·精华3",
+    "description": "第七扇门，是困住猎人的陷阱。",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "调香师",
+      "野人",
+      "歌剧演员"
+    ],
+    "award": {
+      "奖励1": [
+        "歌剧演员-幕外之音",
+        "./img/3gq59gjknznm77y7084gnbsv8be3iqh.png",
+        "被篡改的幕前词暗示着真相——这里究竟是华美的舞台，还是冰冷的囚笼？\n(来自“精华的馈赠”系列-第三十一赛季·精华3的馈赠)"
+      ],
+      "奖励2": [
+        "野人-青须的公爵",
+        "./img/3g2w40uyhtiw4jxd3zvkycwqp6bm0e3.png",
+        "“公爵”在舞台上造起越来越厚的城墙，这些布景封存着不断膨胀，又苍白脆弱的野心。\n(来自“精华的馈赠”系列-第三十一赛季·精华3的馈赠)"
+      ],
+      "奖励3": [
+        "调香师-鸽子般的尤迪特",
+        "./img/4nxt2l60u68tx0alwmpdlyylm6dj4fj.png",
+        "那些溢美之词只不过是裹着蜜糖的枷锁，在她的剧本中，自始至终无需一位英勇的火枪手。\n(来自“精华的馈赠”系列-第三十一赛季·精华3的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S32Rank",
+    "name": "第32赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "盲女",
+      "前锋",
+      "26号守卫"
+    ]
+  },
+  {
+    "id": "S32E1",
+    "name": "第32赛季·精华1",
+    "description": "梦境的至深处，亦是起点。",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "时空之影",
+      "入殓师",
+      "飞行家"
+    ],
+    "award": {
+      "奖励1": [
+        "入殓师-记忆之骑",
+        "./img/nnssjbqcawhqfucf1ajn64u4y5wyf3a.png",
+        "他掌控颅内的小小开关，使猎物栽进无意识的深洋：无法组织自身关于空间的经验，并卸去负担，忘却一切。\n(来自“精华的馈赠”系列-第三十二赛季·精华1的馈赠)"
+      ],
+      "奖励2": [
+        "飞行家-异相睡眠",
+        "./img/bu1lad0qxryesu0kgk83ikkkzxwfs0v.png",
+        "“弥诺陶洛斯”从迷宫的窄门中脱身而出，他从当初睡去的沙发上惊醒了，一个更真实的世界…真的是这样吗？\n(来自“精华的馈赠”系列-第三十二赛季·精华1的馈赠)"
+      ],
+      "奖励3": [
+        "时空之影-墨菲斯的门廊",
+        "./img/ivbhrc41f6834rm9tff5npyt4p264sg.png",
+        "这迷宫是她的沙盘，用以探求人类共通的心理结构…她侧耳聆听人们的梦呓，并邀约他们踏入象牙色的门廊。\n(来自“精华的馈赠”系列-第三十二赛季·精华1的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S32E2",
+    "name": "第32赛季·精华2",
+    "description": "风暴与传言的真相，即将揭晓",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "佣兵",
+      "医生",
+      "蜘蛛"
+    ],
+    "award": {
+      "奖励1": [
+        "蜘蛛-墨卡托投影",
+        "./img/dn8aisyknabdbqoxj0t64o5tz1n857q.png",
+        "海是渴望者的倒影，唯有关于死亡，关于恐惧，关于数十浔深处的那些传说才能唤起她的热情。\n(来自“精华的馈赠”系列-第三十二赛季·精华2的馈赠)"
+      ],
+      "奖励2": [
+        "医生-永生花",
+        "./img/r00r1vbi25sbjtrddf0ib01aibhfsbj.png",
+        "海是深邃而危险的书典，对“俄刻阿诺斯”来说，一位理性的博学者与把玩细沙的孩童并无不同。\n(来自“精华的馈赠”系列-第三十二赛季·精华2的馈赠)"
+      ],
+      "奖励3": [
+        "佣兵-珍奇柜",
+        "./img/rbd425aqudo8mixjg55dkoraqvmxcuj.png",
+        "海是最忠实的证人，那些涛声、礁石、掠过浪花的飞鸟无需宣誓，它们永不欺瞒。\n(来自“精华的馈赠”系列-第三十二赛季·精华2的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S32E3",
+    "name": "第32赛季·精华3",
+    "description": "我们都不过是追逐欲望的狂徒",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "火灾调查员",
+      "“记录员”",
+      "空军"
+    ],
+    "award": {
+      "奖励1": [
+        "“记录员”-删除符",
+        "./img/ou4kckbvcoaei2fs4n54kpi4a01n50t.png",
+        "她相信自己寻到了一种对世界的全新解读，只有蒙昧无知者才将其视之为邪恶。\n(来自“精华的馈赠”系列-第三十二赛季·精华3的馈赠)"
+      ],
+      "奖励2": [
+        "空军-万能钥匙",
+        "./img/9xqs07aicseqvosufykzm1911jsqvwt.png",
+        "她只做自己认为正确的事，打开自己认为正确的大门，直至今日，她还不曾见过无法开启的门扉。\n(来自“精华的馈赠”系列-第三十二赛季·精华3的馈赠)"
+      ],
+      "奖励3": [
+        "火灾调查员-灵狐",
+        "./img/baa9mr5jkv5g10v1gv1gfufb2luitbg.png",
+        "他从不标榜自己所行的即是正义，但总有人对他抱有额外的期望。\n(来自“精华的馈赠”系列-第三十二赛季·精华3的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S33Rank",
+    "name": "第33赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "孽蜥",
+      "牛仔",
+      "冒险家"
+    ]
+  },
+  {
+    "id": "S33E1",
+    "name": "第33赛季·精华1",
+    "description": "虚伪的丝线，牵引月下的剧目",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "律师",
+      "红蝶",
+      "先知"
+    ],
+    "award": {
+      "奖励1": [
+        "红蝶-硫火",
+        "./img/cy74pa99ekshnmk6ktnfjk5ro55k5l0.png",
+        "现在那簇火越烧越旺了，她感到心脏在收紧，砰砰直跳——跃动的火舌几乎吞没了这个复仇的夜晚。\n(来自“精华的馈赠”系列-第三十三赛季·精华1的馈赠)"
+      ],
+      "奖励2": [
+        "先知-纯白之盐",
+        "./img/sii7ffqghhv9vdrta43obbgpu3bnzv3.png",
+        "一位盲目者，一种在谎言中被精心培育的“善”的载体……他是如此平静、温和——被欺瞒、被折损，却情愿施与他人。\n(来自“精华的馈赠”系列-第三十三赛季·精华1的馈赠)"
+      ],
+      "奖励3": [
+        "律师-倒逆之汞",
+        "./img/tpfjr808s4xaot7irr5svt8ur9s5qfc.png",
+        "他的双手沾染着太多受欺者的苦难，所求之物来得过于轻易，以至于他无法背离他的傲慢，也无法拥有“真实”。\n(来自“精华的馈赠”系列-第三十三赛季·精华1的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S33E2",
+    "name": "第33赛季·精华2",
+    "description": "不要窥伺午夜的盛宴",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "“法罗女士”",
+      "渔女",
+      "哭泣小丑"
+    ],
+    "award": {
+      "奖励1": [
+        "渔女-鬼脸天蛾",
+        "./img/rlczjwbdmslhm024u6935h75dyb7628.png",
+        "她追猎所有灼灼的憧憬，用以滋养她枯朽的梦境\n(来自“精华的馈赠”系列-第三十三赛季·精华2的馈赠)"
+      ],
+      "奖励2": [
+        "哭泣小丑-灵蛇",
+        "./img/qw1u50z8vxg3pnd1y57uc5or2faelk4.png",
+        "最机巧的“演员”，擅长将恶意佯装为热忱。\n(来自“精华的馈赠”系列-第三十三赛季·精华2的馈赠)"
+      ],
+      "奖励3": [
+        "“法罗女士”-猎物的印记",
+        "./img/83676ss5hnrfzkhfc7etsirzq4x3j6a.png",
+        "对于怀抱幻梦的人来说，一袭翡绿的霓裳便足以中和掉砧板的猩红。\n(来自“精华的馈赠”系列-第三十三赛季·精华2的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S33E3",
+    "name": "第33赛季·精华3",
+    "description": "伟大工作的最初，仅始于一簇火种。",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "守夜人",
+      "“愚人金”",
+      "木偶师"
+    ],
+    "award": {
+      "奖励1": [
+        "“愚人金”-辉锑矿",
+        "./img/c355df4vwgtrvx5wiy4rca8nh37mgj1.png",
+        "高贵的金属隐匿于石内，熔炉沸腾着咆哮，诘问其何时展露真正的光辉。\n(来自“精华的馈赠”系列-第三十三赛季·精华3的馈赠)"
+      ],
+      "奖励2": [
+        "木偶师-斐乐蒙的圣坛",
+        "./img/fup74zwro9s0nk4d9h9kg9ng3d0ycp5.png",
+        "纯净的生命诞生自瓶中，我们可以向其寻求一切有关“伟大工作”的答案，只要它睁开眼睛。\n(来自“精华的馈赠”系列-第三十三赛季·精华3的馈赠)"
+      ],
+      "奖励3": [
+        "守夜人-哲人石",
+        "./img/gcfc65s0obcfh8vau1jrn27ucexzmxe.png",
+        "永恒的灵魂栖存于世界的伤口之中，流淌出的液体将结晶嬗变为绯红。手持此物，即可洞悉万物之理。\n(来自“精华的馈赠”系列-第三十三赛季·精华3的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S34Rank",
+    "name": "第34赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "律师",
+      "飞行家",
+      "歌剧演员"
+    ]
+  },
+  {
+    "id": "S34E1",
+    "name": "第34赛季·精华1",
+    "description": "传承运动的圣火",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "祭司",
+      "破轮",
+      "前锋"
+    ],
+    "award": {
+      "奖励1": [
+        "破轮-沙滩漂移",
+        "./img/sym82upi3cna0derfaajd2cekpvlkf9.png",
+        "城市街道行驶，请遵守交通规则。\n(来自“精华的馈赠”系列-第三十四赛季·精华1的馈赠)"
+      ],
+      "奖励2": [
+        "前锋-水球救生",
+        "./img/4b8q1kept18qrgu24pjljkh111mis59.png",
+        "体验水球项目前，请务必确认安全设备佩戴完毕。\n(来自“精华的馈赠”系列-第三十四赛季·精华1的馈赠)"
+      ],
+      "奖励3": [
+        "祭司-名誉首席",
+        "./img/7x2dqdyiotlwaiqhhz1k8361wipa2h6.png",
+        "在圣火中洞悉到传承、命运、未来，以及……蜕变的自己。\n(来自“精华的馈赠”系列-第三十四赛季·精华1的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S34E2",
+    "name": "第34赛季·精华2",
+    "description": "过于漫长的雨季，每一滴雨都被拉长成一段叹息。",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "“跛脚羊”",
+      "玩具商",
+      "魔术师"
+    ],
+    "award": {
+      "奖励1": [
+        "玩具商-清洁翼",
+        "./img/3u0nh86tozgf07x7fx1htnrm7r1tya2.png",
+        "拂过面颊的微风不曾吹动云雾，她将希望寄托在手中透明的薄翼上，期望它能够带她穿过这片灰沉的天际。\n(来自“精华的馈赠”系列-第三十四赛季·精华2的馈赠)"
+      ],
+      "奖励2": [
+        "魔术师-动力芯",
+        "./img/6wptz3oqhoebodqec6goar1uw3xckq1.png",
+        "源源不断的燃料供养起永不停歇的机芯，每一条指令都化作流水线中的轰鸣，淹没所有杂音。\n(来自“精华的馈赠”系列-第三十四赛季·精华2的馈赠)"
+      ],
+      "奖励3": [
+        "“跛脚羊”-灰云",
+        "./img/ncvferywwd4il2vvv1gugv527wl79fp.png",
+        "敲击而出的火星引燃了轰鸣的机器，新的光芒替代太阳点亮大地。人们相信，天空上那格外厚重的云层，盖住的不过是旧时代的余晖。\n(来自“精华的馈赠”系列-第三十四赛季·精华2的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S35Rank",
+    "name": "第35赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "黄衣之主",
+      "“心理学家”",
+      "病患"
+    ]
+  },
+  {
+    "id": "S35E1",
+    "name": "第35赛季·精华1",
+    "description": "小镇丰收节如期而至",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "入殓师",
+      "时空之影",
+      "火灾调查员"
+    ],
+    "award": {
+      "奖励1": [
+        "时空之影-“有机磷”",
+        "./img/cyytxp0flw2v65zkdzp45w26sfxqytw.png",
+        "适当的化肥和农药可以帮助蔬菜茁壮成长，或许……这一准则对其它生物也同样适用。\n(来自“精华的馈赠”系列-第三十五赛季·精华1的馈赠)"
+      ],
+      "奖励2": [
+        "火灾调查员-“膨化”",
+        "./img/15j0n5qy1yrb8nvxcmj211fn5ffvug9.png",
+        "颗粒饱满的爆米花，均匀地裹满焦糖。这样的美味源于膨化，和火炉深处热闹的噼啪声。\n(来自“精华的馈赠”系列-第三十五赛季·精华1的馈赠)"
+      ],
+      "奖励3": [
+        "入殓师-“温室”",
+        "./img/bpvcw6cm15e2bnlio1vqs2o9w4w4o3a.png",
+        "温室中的花朵，在玻璃房的保护下热烈地绽放。直到它暴露于未经过滤的空气，污染、窒息，一触即发。\n(来自“精华的馈赠”系列-第三十五赛季·精华1的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S35E2",
+    "name": "第35赛季·精华2",
+    "description": "盛宴落幕，战火重燃",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "“骑士”",
+      "“心理学家”",
+      "病患"
+    ],
+    "award": {
+      "奖励1": [
+        "“心理学家”-银骑士",
+        "./img/d4jhbiqaolt41n0kbggcjpnznhe5b2p.png",
+        "自大地诞生以来，即使战乱与和平，兴盛与衰败从未彻底地扳倒过另一方，她从未忘记剑鞘和那片湖水所承载的意义。\n(来自“精华的馈赠”系列-第三十五赛季·精华2的馈赠)"
+      ],
+      "奖励2": [
+        "病患-湖中影",
+        "./img/3gi6luzwveyzn75gv8zkc1zt79ooy9w.png",
+        "当阿瓦隆的生灵被新的战争吞噬时，湖畔传来急切的哨音，他从不怀疑，来者映在湖面的那双眼眸，依旧会保持澄澈和清明。\n(来自“精华的馈赠”系列-第三十五赛季·精华2的馈赠)"
+      ],
+      "奖励3": [
+        "“骑士”-红骑士",
+        "./img/kp16r1hl7tegrvoxyn3dtyqg37tak1v.png",
+        "永续和平的宣言往往导向朽坏和贫瘠，持剑者愈发确信，英雄的价值往往诞生自另一个生动的舞台，唯有混沌与战争是通往它的阶梯。\n(来自“精华的馈赠”系列-第三十五赛季·精华2的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S35E3",
+    "name": "第35赛季·精华3",
+    "description": "忘记一切，享受盛宴",
+    "image": "./img/clai7pqly1ztrbkdqeed6ulci2fphav.png",
+    "version": "V1.html",
+    "characters": [
+      "“喧嚣”",
+      "舞女",
+      "哭泣小丑"
+    ],
+    "award": {
+      "奖励1": [
+        "舞女-流离的月光",
+        "./img/bkpfelwur1y8wzc0hqxvojav72psuu5.png",
+        "“单纯”的精灵徘徊在名为谎言的湖上，想要掬一捧名为“爱”的月光。\n(来自“精华的馈赠”系列-第三十五赛季·精华3的馈赠)"
+      ],
+      "奖励2": [
+        "哭泣小丑-熄灭的太阳",
+        "./img/l4xcx4b2i44bmaqw7xgmhrkxch9iekq.png",
+        "当世界只剩灰烬，太阳终于明白，在熄灭之前，他谁都无法拥抱。\n(来自“精华的馈赠”系列-第三十五赛季·精华3的馈赠)"
+      ],
+      "奖励3": [
+        "“喧嚣”-星之王",
+        "./img/9x6q28noux80w8dx7aefqoby1mlnxki.png",
+        "天真的王子，醉心于赞颂星光的词句，然后，天亮了。\n(来自“精华的馈赠”系列-第三十五赛季·精华3的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S36Rank",
+    "name": "第36赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "大副",
+      "木偶师",
+      "“记录员”"
+    ]
+  },
+  {
+    "id": "S36E1",
+    "name": "第36赛季·精华1",
+    "description": "蛛丝的使命 是网缚一切黑暗与罪恶",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "冒险家",
+      "调酒师",
+      "“博士”"
+    ],
+    "award": {
+      "奖励1": [
+        "调酒师-校对人",
+        "./img/hagyz2td9pom8j90egfjwr7bugwbxeq.png",
+        "她手中校对的从来都不只是文字，那些泛着油墨香的纸张上，一字一句都包含着正义的分量。\n(来自“精华的馈赠”系列-第三十六赛季·精华1的馈赠)"
+      ],
+      "奖励2": [
+        "“博士”-裁纸机",
+        "./img/2l0t0929ccv5oe9yixpgnakcjb4w9rh.png",
+        "不论过去还是将来，在黑暗中搜寻情报就是他永恒不变的使命。\n(来自“精华的馈赠”系列-第三十六赛季·精华1的馈赠)"
+      ],
+      "奖励3": [
+        "冒险家-报社主编",
+        "./img/ghbngshi70r5377o47ma8om633qgzc3.png",
+        "阳光无法照射到城市的每一处，但当丑陋的罪恶在地下滋生时，暗影中的蛛丝便会苏醒。\n(来自“精华的馈赠”系列-第三十六赛季·精华1的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S36E2",
+    "name": "深渊珍宝Ⅷ",
+    "description": "深渊珍宝Ⅷ",
+    "image": "./img/oh2krdogr0wzdrq4ujs8xsema0spp2y.png",
+    "version": "V1.html",
+    "characters": [
+      "蜘蛛",
+      "“小女孩”",
+      "飞行家",
+      "拉拉队员",
+      "木偶师"
+    ]
+  },
+  {
+    "id": "S36E3",
+    "name": "第36赛季·精华3",
+    "description": "飓风深处，是创意驱动的浮空岛",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "气象学家",
+      "园丁",
+      "26号守卫"
+    ],
+    "award": {
+      "奖励1": [
+        "26号守卫-蓝釉先生",
+        "./img/34bu1szu1fini7j91pnhvfb3k1i5ylx.png",
+        "最完美的作品往往来源于内心深处的美好回忆，比如家乡的风车，和再也回不去的童年。\n(来自“精华的馈赠”系列-第三十六赛季·精华3的馈赠)"
+      ],
+      "奖励2": [
+        "园丁-郁金香之梦",
+        "./img/8y1o0rb2seihwijgp4v6f0h99qh50tb.png",
+        "返航的愿望在花粉的媒介下萌生，却又最终化为泡沫，在阳光下消散殆尽。\n(来自“精华的馈赠”系列-第三十六赛季·精华3的馈赠)"
+      ],
+      "奖励3": [
+        "气象学家-采风的仙灵",
+        "./img/qjxiudyv6nz0ms30drm54owhfjirg4t.png",
+        "灵感在风的滋养下永不腐坏，它们被精心保藏在瓶子里，激发出创意的火花。\n(来自“精华的馈赠”系列-第三十六赛季·精华3的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S37Rank",
+    "name": "第37赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "破轮",
+      "空军",
+      "时空之影"
+    ]
+  },
+  {
+    "id": "S37E1",
+    "name": "福尔摩斯联动精华",
+    "description": "刻耳柏洛斯之怒",
+    "image": "./img/nmtc2b8461xgrpkhvy0p9stodhfx3dz.png",
+    "version": "V1.html",
+    "characters": [
+      "小说家",
+      "大副",
+      "邮差"
+    ]
+  },
+  {
+    "id": "S37E2",
+    "name": "第37赛季·精华2",
+    "description": "瞧！这个人！ ——心存混沌的醉意，方能诞生起舞的星辰。",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "弓箭手",
+      "作曲家",
+      "爱哭鬼"
+    ],
+    "award": {
+      "奖励1": [
+        "作曲家-澄明的理性",
+        "./img/qh0elbvw047n0hu5ua8cz355nql2nvz.png",
+        "理性不是照进存在的光，而是存在本身在澄明处的回响。\n(来自“精华的馈赠”系列-第三十七赛季·精华2的馈赠)"
+      ],
+      "奖励2": [
+        "爱哭鬼-善恶的本性",
+        "./img/p4wbv83hr0wnwhgywydoo65ms01tgo7.png",
+        "人之本性从来复杂，卑鄙与伟大、恶毒与善良、背叛与忠诚都可以互不排斥地并存在同一颗心里。\n(来自“精华的馈赠”系列-第三十七赛季·精华2的馈赠)"
+      ],
+      "奖励3": [
+        "弓箭手-不合时宜的危鲁弗",
+        "./img/tr2rqspckampazkx4ti2jmfqlq5ugi8.png",
+        "那场黄昏后，她逐渐分不清现实与梦魇的边界，躯壳躺在风中，意识随夜空浮沉，恍惚间听闻云端捎来启航的嗡鸣，她想那是大家的船队在催她出海了。\n(来自“精华的馈赠”系列-第三十七赛季·精华2的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S37E3",
+    "name": "第37赛季·精华3",
+    "description": "群星之下的启迪——高塔之下 命运与罪孽一同汇聚",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "“心理学家”",
+      "教授",
+      "歌剧演员"
+    ],
+    "award": {
+      "奖励1": [
+        "教授-吟游诗人",
+        "./img/nfxj0hzk1emqmvnqveuarnii56fzlwq.png",
+        "空寂而漆黑的星空中，那颗无人问津的星辰却吟唱出了孤独动人的诗歌。\n(来自“精华的馈赠”系列-第三十七赛季·精华3的馈赠)"
+      ],
+      "奖励2": [
+        "歌剧演员-拂晓女士",
+        "./img/ckqiu2og20sc1mg9rsceeilhx8e4wjd.png",
+        "她在拂晓之时悄然现身，又倏然隐匿于金色的迷雾中。\n(来自“精华的馈赠”系列-第三十七赛季·精华3的馈赠)"
+      ],
+      "奖励3": [
+        "“心理学家”-恒梦",
+        "./img/ccedgzsgbeo1apzjnpmm53w14pexq81.png",
+        "爱是一场恒久隽永的美梦，不愿苏醒的不止一人。\n(来自“精华的馈赠”系列-第三十七赛季·精华3的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S38Rank",
+    "name": "第38赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "冒险家",
+      "梦之女巫",
+      "“法罗女士”"
+    ]
+  },
+  {
+    "id": "S38E1",
+    "name": "第38赛季·精华1",
+    "description": "甜美的故园，埋藏挽留的心愿",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "“小女孩”",
+      "气象学家",
+      "黄衣之主"
+    ],
+    "award": {
+      "奖励1": [
+        "气象学家-茶歇小姐",
+        "./img/5c948u4l7bt03czt7h9dc9u7xqofnf6.png",
+        "“茶杯中绽开的水仙象征着一种引诱，或温柔的挽留：既然这永恒中没有明天，不妨选择一无所知，不妨选择满不在乎。”\n(来自“精华的馈赠”系列-第三十八赛季·精华1的馈赠)"
+      ],
+      "奖励2": [
+        "黄衣之主-衣帽架先生",
+        "./img/bj2mllkxdwe31609qwbwq9b4gh66rns.png",
+        "“一枚漂亮的纽扣，足以让这位透明的绅士为你引路。如果是两枚？或许他不介意让你摸摸那个毛茸茸的小家伙。”\n(来自“精华的馈赠”系列-第三十八赛季·精华1的馈赠)"
+      ],
+      "奖励3": [
+        "“小女孩”-石榴碟小姐",
+        "./img/p9ianisbpsvxfqtekxsv14b3npa3vl3.png",
+        "“你决心继续向前，欢腾与泪水都未能使你因留恋驻足：此处的光怪陆离皆是消陨前的回响，明知其虚假，仍深觉甘美。”\n(来自“精华的馈赠”系列-第三十八赛季·精华1的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S38E2",
+    "name": "第38赛季·精华2",
+    "description": "越过死生之界",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "“逃脱大师”",
+      "渔女",
+      "咒术师"
+    ],
+    "award": {
+      "奖励1": [
+        "咒术师-噬恶之渊",
+        "./img/aigh9ghdsw7bwvqd9qdurvin0ay34na.png",
+        "“那片黑雾中弥漫着鲜血混着河沙的腥臭，我不敢停步，不敢回头，只能向着唯一的光源艰难跋涉，我以为那就是这片黑雾的出口，直到靠近了才发现，那是一双比身后窥伺的野兽，更令人恐惧的眼睛。”\n(来自“精华的馈赠”系列-第三十八赛季·精华2的馈赠)"
+      ],
+      "奖励2": [
+        "渔女-审判之翎",
+        "./img/pga3s5gt4dlejl3c4skw9p3bhnnbwtj.png",
+        "“……我已疲惫不堪，然而当那片羽毛在我眼前浮现时，我突然感到自己变得非常轻，那不像是疲惫褪去的轻松，而更像是灵魂不再被束缚的超脱。”\n(来自“精华的馈赠”系列-第三十八赛季·精华2的馈赠)"
+      ],
+      "奖励3": [
+        "“逃脱大师”-死生之谕",
+        "./img/t4i2jtjaf59j5oubvs180nytzatysod.png",
+        "“太阳从我身后升起，我终于看到了黄沙的尽头，古老而悲怆的低喃从芦苇原深处传来，既像在与我道别，又像在呼唤我归来。”\n(来自“精华的馈赠”系列-第三十八赛季·精华2的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S38E3",
+    "name": "第38赛季·精华3",
+    "description": "一场现实与幻想交织的醉魇迷途",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "调酒师",
+      "“慈善家”",
+      "红蝶"
+    ],
+    "award": {
+      "奖励1": [
+        "“慈善家”-鎏金的表演大师",
+        "./img/e47z0yaroohmq6q9a7sstonyq0nfc78.png",
+        "华美的舞台遮挡了阴影下的贫窘落魄，他恍然不知那些出口成章的美妙台词，只不过是镀了金的谎言。\n(来自“精华的馈赠”系列-第三十八赛季·精华3的馈赠)"
+      ],
+      "奖励2": [
+        "红蝶-融化的泪琥珀",
+        "./img/gaxu1fk5eqwwhts76ky7g6jrmylzamz.png",
+        "那场火改变了一切，树脂滴落成了美丽的琥珀，眼泪化作了纷飞的亡念。\n(来自“精华的馈赠”系列-第三十八赛季·精华3的馈赠)"
+      ],
+      "奖励3": [
+        "调酒师-破碎的芙拉吉尔",
+        "./img/sa6v094il65l0nirsozjhburoguz97z.png",
+        "破碎的水晶盏化作脚下沉重的锁链，唯有伊里斯之泪中闪耀的彩虹之光，才能照亮一隅的彩色幻梦。\n(来自“精华的馈赠”系列-第三十八赛季·精华3的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S39Rank",
+    "name": "第39赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "隐士",
+      "“跛脚羊”",
+      "魔术师"
+    ]
+  },
+  {
+    "id": "S39E1",
+    "name": "第39赛季·精华1",
+    "description": "幽遂中的“密约” ——追索谎言的起点",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "隐士",
+      "守墓人",
+      "医生"
+    ],
+    "award": {
+      "奖励1": [
+        "医生-银锑",
+        "./img/ee0qis1kjpkyxih1hesn2r5131sftqi.png",
+        "美丽而洁净的色泽总会给人带来一种安然的错觉，让他们忽略潜藏其中的真正危险。\n(来自“精华的馈赠”系列-第三十九赛季·精华1的馈赠)"
+      ],
+      "奖励2": [
+        "守墓人-冥契",
+        "./img/4gbqby84jh34hfmm47407m5jcoc88qe.png",
+        "过往的罪成为刻入灵魂的伤痕，他将自我放逐，于最黑暗处背负起新的枷锁。\n(来自“精华的馈赠”系列-第三十九赛季·精华1的馈赠)"
+      ],
+      "奖励3": [
+        "隐士-薄金",
+        "./img/9z2zmevkqhnk5prfqvnifab62lsoq9i.png",
+        "人们将太多野心与欲望投向这冰冷的惰性金属，让它足以颠倒对错，模糊善恶；亦能熔铸荣耀，重构秩序的新章。\n(来自“精华的馈赠”系列-第三十九赛季·精华1的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S39E2",
+    "name": "葬送的芙莉莲联动精华",
+    "description": "葬送的庄园巡演",
+    "image": "./img/5c8da6kyfk4sz81ua2eb9643j9wtr22.png",
+    "version": "V1.html",
+    "characters": [
+      "气象学家",
+      "“心理学家”",
+      "病患"
+    ]
+  },
+  {
+    "id": "S39E3",
+    "name": "第39赛季·精华3",
+    "description": "成败就在此一刻，出奇制胜！",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "“台球手”",
+      "弓箭手",
+      "击球手"
+    ],
+    "award": {
+      "奖励1": [
+        "弓箭手-“发散谱”R",
+        "./img/0698ch636otzdkome3wnxr0ryp561t5.png",
+        "“拉曼”拨动弓弦，光箭四散而去——像星火，似希望，却难以攻破坚固的牢笼。\n(来自“精华的馈赠”系列-第三十九赛季·精华3的馈赠)"
+      ],
+      "奖励2": [
+        "击球手-“无用功”G",
+        "./img/a8em4bq1h2jp3gvnw0mct2g2g5macb2.png",
+        "“吉布斯”高喊着自由、拯救，亲眼见证周身的泡沫失去张力，蜷缩成令人窒息的液晶。\n(来自“精华的馈赠”系列-第三十九赛季·精华3的馈赠)"
+      ],
+      "奖励3": [
+        "“台球手”-“自由领袖”D",
+        "./img/jz4wc3vgktgnv1y4d9lxtb59uuh2l52.png",
+        "只要解救“德鲁德”，就能逃出这不见天日的牢笼，重获自由新生——所有人都这样认为。\n(来自“精华的馈赠”系列-第三十九赛季·精华3的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S40Rank",
+    "name": "第40赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "疯眼",
+      "“喧嚣”",
+      "杂技演员"
+    ]
+  },
+  {
+    "id": "S40E1",
+    "name": "第40赛季·精华1",
+    "description": "为黎明赋格",
+    "image": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+    "version": "V1.html",
+    "characters": [
+      "“囚徒”",
+      "“法罗女士”",
+      "小提琴家"
+    ],
+    "award": {
+      "奖励1": [
+        "“法罗女士”-向深处求告",
+        "./img/8ea81umn82mkl869vwkiylzsvxs68ji.png",
+        "在深渊中祈愿，在缄默中求告——听，那是内心的呼喊，正在死寂中回响。\n(来自“精华的馈赠”系列-第四十赛季·精华1的馈赠)"
+      ],
+      "奖励2": [
+        "小提琴家-人造天堂",
+        "./img/b91eeek4fuvodi6pfcs5j1a6x6ljsf2.png",
+        "在荒野中铸造避世的天堂，是为圆满荒芜的幻梦，还是悼念人类灵魂深处的回声？\n(来自“精华的馈赠”系列-第四十赛季·精华1的馈赠)"
+      ],
+      "奖励3": [
+        "“囚徒”-黎明赋格",
+        "./img/p9m9sbtly70grsbbo3jt0hk14krvq3s.png",
+        "误入腐朽之地的旅人，在意志消弭之际，是沉默着走向灭亡，还是迎接黎明，用理性踏入自我搏杀的战场？\n(来自“精华的馈赠”系列-第四十赛季·精华1的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S40E2",
+    "name": "第40赛季·精华2",
+    "description": "青鸟的羽翼，能否为幸福增辉",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "幻灯师",
+      "木偶师",
+      "“喧嚣”"
+    ],
+    "award": {
+      "奖励1": [
+        "“喧嚣”-隐于夜色中",
+        "./img/ligcfr9boztzr9azy2u24udobc9ikwq.png",
+        "“子夜”的月光浅而温柔，每一座被打开的坟墓里，都会绽开一丛绚烂的花朵：从来没有真正的死亡，生命只是在转换中不断延续。\n(来自“精华的馈赠”系列-第四十赛季·精华2的馈赠)"
+      ],
+      "奖励2": [
+        "木偶师-行于界限间",
+        "./img/24kqr8rlqvqpysnfhvi4a9il2wb7lcf.png",
+        "他并非忠诚欢快的家犬，那双在黑暗中闪闪发亮的眼睛会告诉你，他有多擅长分辨万事万物的界限，并自由地、游戏般地穿梭其间。\n(来自“精华的馈赠”系列-第四十赛季·精华2的馈赠)"
+      ],
+      "奖励3": [
+        "幻灯师-于此岸赴宴",
+        "./img/9aeuk4lgdq1p35i970l1gcyjg4aelek.png",
+        "她不信幸福栖于缥缈的彼岸，只紧紧地抓住一切“实在”与“仅有”。无人能阻止她享受这趟旅途：像年轻的暴君，也像巡猎的野兽。\n(来自“精华的馈赠”系列-第四十赛季·精华2的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S40E3",
+    "name": "第40赛季·精华3",
+    "description": "对宇宙的探索，不止于星云深处",
+    "image": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+    "version": "V1.html",
+    "characters": [
+      "“愚人金”",
+      "盲女",
+      "“逃脱大师”"
+    ],
+    "award": {
+      "奖励1": [
+        "“逃脱大师”-囚星",
+        "./img/p3o4ga9g22u9k7giube7jur2cuko8at.png",
+        "寻觅友人的意志终究易碎，在目睹真相的时刻瞬间瓦解。\n(来自“精华的馈赠”系列-第四十赛季·精华3的馈赠)"
+      ],
+      "奖励2": [
+        "盲女-赎星",
+        "./img/j5nwufqocv716yf21le1y2nj1llbnqc.png",
+        "救赎者高举权杖，即使在黑暗的侵蚀下沦陷翘曲也义无反顾。\n(来自“精华的馈赠”系列-第四十赛季·精华3的馈赠)"
+      ],
+      "奖励3": [
+        "“愚人金”-陨星",
+        "./img/1psg421jr6y7dfpz29ly9v86wkjef89.png",
+        "探索内核的决心不可阻挡，纵使坠入黑暗亦无惧色，向死而生、终将吞噬一切。\n(来自“精华的馈赠”系列-第四十赛季·精华3的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S41Rank",
+    "name": "第41赛季·排位珍宝（四阶）",
+    "description": "以四阶概率进行模拟的排位珍宝",
+    "image": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+    "version": "V2.html",
+    "characters": [
+      "“慈善家”",
+      "厂长",
+      "“心理学家”"
+    ]
+  },
+  {
+    "id": "S41E1",
+    "name": "第41赛季·精华1",
+    "description": "遗憾与悔恨的瘠土下，昨日的幽灵从未离去。",
+    "image": "./img/h7j1qqr29rcsubf0nxfm8w9uduna7nt.png",
+    "version": "V1.html",
+    "characters": [
+      "“女王蜂”",
+      "小说家",
+      "勘探员"
+    ],
+    "cost": "96",
+    "cost_type": "inspiration",
+    "award": {
+      "奖励1": [
+        "小说家-无归的昨日",
+        "./img/rpgn0kyhb75iynuw8dx2aeb3kwatezy.png",
+        "对于已经结束的故事而言，所有的遗憾、不甘与希冀，都只是书页外悼念的闲笔。\n(来自“精华的馈赠”系列-第四十一赛季·精华1的馈赠) "
+      ],
+      "奖励2": [
+        "勘探员-妄念的陈伤",
+        "./img/3lo13es9antnbibsghzbsvaeasf6hmf.png",
+        "愿望的花园里，那些未能圆满的小小遗憾，也许会像朝露，片刻消散，也许会像幽灵，徘徊不去。\n(来自“精华的馈赠”系列-第四十一赛季·精华1的馈赠) "
+      ],
+      "奖励3": [
+        "“女王蜂”-记忆的沉疴",
+        "./img/cr1e8ql6ro2xex8c8j5y3hw8tap2cx9.png",
+        "躯壳的伤口可以痊愈，但记忆的疤痕却时时刻刻提醒着我们，曾经离深渊多么近。\n(来自“精华的馈赠”系列-第四十一赛季·精华1的馈赠) "
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "S41E2",
+    "name": "第41赛季·精华2",
+    "description": "蜉蝣一旅，人生一程",
+    "image": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+    "version": "V1.html",
+    "characters": [
+      "大副",
+      "疯眼",
+      "“跛脚羊”"
+    ],
+    "award": {
+      "奖励1": [
+        "疯眼-无芯",
+        "./img/9cne991kl67khysgtzhmrmin4k78386.png",
+        "无人相信一个没有心的机械猎手在决策过程中产生了价值冲突，他们将这种类人情感视作机器故障。\n(来自“精华的馈赠”系列-第四十一赛季·精华2的馈赠)"
+      ],
+      "奖励2": [
+        "“跛脚羊”-此地禁行",
+        "./img/jhxara1en17yxl5jag16kylv8yeuz4b.png",
+        "他曾经精密无暇，立于路口，模仿人类，指挥交通。他如今破破烂烂，挡在猎手前，最后一次模仿人类——效仿他们的牺牲。\n(来自“精华的馈赠”系列-第四十一赛季·精华2的馈赠)"
+      ],
+      "奖励3": [
+        "大副-蜉蝣一晌",
+        "./img/mgo5wifrggto7oteizij5qjdb04pydj.png",
+        "道阻且长，何须畏惧，朝生暮死，何须忧虑。存在即是意义，感受即是收获，谁不是用一生完成一次旅行。\n(来自“精华的馈赠”系列-第四十一赛季·精华2的馈赠)"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  }
+]

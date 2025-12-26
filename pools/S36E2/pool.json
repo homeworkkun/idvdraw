@@ -1,0 +1,330 @@
+{
+  "id": "S36E2",
+  "name": "深渊珍宝Ⅷ",
+  "essenceImage": "./img/oh2krdogr0wzdrq4ujs8xsema0spp2y.png",
+  "diff_A": 0,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [
+    {
+      "name": "-20%",
+      "rate": 0.8,
+      "chance": 0.03
+    },
+    {
+      "name": "-40%",
+      "rate": 0.6,
+      "chance": 0.015
+    }
+  ],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "不息载械",
+        "img": "./img/kzf82rw58sgkldqbv5owreo8nqpbujg.png",
+        "type": "时装",
+        "description": "唯有在扭曲中走向难测的变化，才是此处永恒不变的定则。她并不比荒原上的任何事物更加强韧，但这并不意味着落入被摧毁和耗竭的境地：能使自身延续于环境的一切策略，都有其存在的意义。 \n深渊珍宝Ⅷ限定稀世时装 ",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "异动指针 ",
+        "img": "./img/hlil40j1g8y6b8sy817qkagm11o3e4g.png",
+        "type": "时装",
+        "description": "“人”与“物”的边界在这片荒原逐渐被抹除，而“向导”在缄默中指引着这支队伍行进。无论如何，她在一次次致命的危境中带来奇迹般的转机，从而被信赖——即使她对荒原认知的来源，仍是值得探究的谜团。 \n深渊珍宝Ⅷ限定稀世时装 ",
+        "repeat": 1000
+      },
+      {
+        "name": "警戒哨台",
+        "img": "./img/ke1sqkstzl3q5tr2hfd9654enuxasqt.png",
+        "type": "时装",
+        "description": "胆小的“哨兵”踏上了这趟充满危机的旅途，好在小队成为了他新的伙伴，能使他在生命的残骸中重新燃起营火。他为所有人排除一切可能的威胁——无论是能以常理被揣度的，亦或是远超想象之外的。 \n深渊珍宝Ⅷ限定稀世时装 ",
+        "repeat": 1000
+      },
+      {
+        "name": "采集速巡",
+        "img": "./img/l4cf2qzlkt2u4iw0egym3pfl7drkgdf.png",
+        "type": "时装",
+        "description": "没有人比“采集人”更了解，死亡与美丽是如何在这片无界之地并存的。被侵蚀的身躯正穿梭于此地，风和水流穿过她躯体的缝隙：她感到自己轻得不可思议，而在真正的自由面前，没有什么代价是不值得的。  \n深渊珍宝Ⅷ限定稀世时装 ",
+        "repeat": 1000
+      },
+      {
+        "name": "义体再构",
+        "img": "./img/bwi9hdf9j91wp8bmzrgkoxfgxxa03vi.png",
+        "type": "时装",
+        "description": "“义体师”曾为修复脆弱的生命而步入禁忌，彼时的他未曾料到，自己还将无数次把诅咒般的机关并入更多的躯体。而最残酷的，莫过于他已面目全非，却仍受制于人类的极限，无法往前再迈进一步。 \n深渊珍宝Ⅷ限定稀世时装 ",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "木卫兵领队",
+        "img": "./img/3iw4bv8xfwy93cjqnnk1cw58jzie0x9.png",
+        "type": "时装",
+        "description": "它所带领的这支队伍以巨细靡遗的工艺、栩栩如生的外观闻名，由“特洛伊木马”的工匠制造而成。这些“木质的卫兵”正因不知道自己过去是谁，所以从不停止脚步。\n深渊珍宝Ⅷ限定稀世时装  ",
+        "repeat": 200
+      },
+      {
+        "name": "异体同生",
+        "img": "./img/scvwp332o3gcxvw2v6ohdbv40melr0h.png",
+        "type": "时装",
+        "description": "他们由木质的血肉相连，两个灵魂共享一具身躯，或许有一天，“侵蚀”还是会使仅剩的一颗心脏变得如朽木般枯硬，继而停止跳动。但在那之前，他们仍有时间共同呼吸。\n深渊珍宝Ⅷ限定稀世时装 ",
+        "repeat": 200
+      },
+      {
+        "name": "塔顶人",
+        "img": "./img/0tr7895l69ygkxz25rxf5rr74vtr42u.png",
+        "type": "时装",
+        "description": "只有为数不多的人知道，荒原上定居点的“形式”固有其背后的意义——“高塔”使它永远被抑制在文明的童年岁月，由此延伸出另一种截然不同的道路，以防再度惊动沉睡于地底的灾厄。 \n深渊珍宝Ⅷ限定稀世时装 ",
+        "repeat": 200
+      },
+      {
+        "name": "未燃书页",
+        "img": "./img/2x90l8g0w3hsburqnpzyesgh6wnx4aq.png",
+        "type": "时装",
+        "description": "他曾经因优良的纪律性，秘密承担着一份销毁违禁品的工作，然而自从好奇心驱使着他翻开那些“秘密”之后，就一发不可收拾。他第一次对自己置身的这个“世界”，开始产生隐约的疑虑。 \n深渊珍宝Ⅷ限定稀世时装 ",
+        "repeat": 200
+      },
+      {
+        "name": "被抹除者",
+        "img": "./img/5ncblhlcu66hdfuod1rl6swamrwv933.png",
+        "type": "时装",
+        "description": "许多人还记得这位大人物因意外故去的消息。然而在许久之后，有目击者声称见到这位已故之人出现在了荒原的角落——但早已破衣烂衫，身体也大改模样。 \n深渊珍宝Ⅷ限定稀世时装 ",
+        "repeat": 200
+      },
+      {
+        "name": "“博士”-大笑",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "“博士”专属匹配大厅等待动作，大笑",
+        "repeat": 200
+      },
+      {
+        "name": "隐士-拜访",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "隐士专属匹配大厅等待动作，拜访",
+        "repeat": 200
+      },
+      {
+        "name": "教授-张望",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "教授专属匹配大厅等待动作，张望",
+        "repeat": 200
+      },
+      {
+        "name": "古董商-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "古董商专属匹配大厅等待动作，小憩",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "运动蓝",
+        "img": "./img/hx3sb66k3b7hmpuu76toi9ti8lew31y.png",
+        "type": "时装",
+        "description": "比赛就要开始啦，你们都准备好了吗！ ",
+        "repeat": 36
+      },
+      {
+        "name": "缄默棕",
+        "img": "./img/ac5qjr28zzzd8gpdpow03mtgosfia9r.png",
+        "type": "时装",
+        "description": "远离人群之后，他才能感受到些许生命的喘息。 ",
+        "repeat": 36
+      },
+      {
+        "name": "优雅蓝",
+        "img": "./img/8utyl4vqwhl88p7pqhq90usyangtcog.png",
+        "type": "时装",
+        "description": "午夜时分，最后一曲。 ",
+        "repeat": 36
+      },
+      {
+        "name": "石化白",
+        "img": "./img/m3grrszqhhh1ldwg6wvn30ire4r2zy9.png",
+        "type": "时装",
+        "description": "好运无法修补这些细密的伤口。 ",
+        "repeat": 36
+      },
+      {
+        "name": "枯木黄",
+        "img": "./img/8o8968aunvdgu31jkhcohkwm7jkl5e6.png",
+        "type": "时装",
+        "description": "枯木经过雕刻与操纵，也能成就非凡的艺术。 ",
+        "repeat": 36
+      },
+      {
+        "name": "远古绿",
+        "img": "./img/emtgaph0u8vu7oid0daiuf4fxtzcs7z.png",
+        "type": "时装",
+        "description": "记忆会跨越远古的时空，与万物交融。 ",
+        "repeat": 36
+      },
+      {
+        "name": "火焰橙",
+        "img": "./img/kxal2g5enr4ze3pefum5j43t98nanio.png",
+        "type": "时装",
+        "description": "火焰是个外热内冷的家伙，而橙黄色的外焰才是最危险的存在。 ",
+        "repeat": 36
+      },
+      {
+        "name": "优雅灰",
+        "img": "./img/im4u4adqb0c4wvfevpuw1sjdr5kroeo.png",
+        "type": "时装",
+        "description": "优雅又低调的灰，是适合隐匿于人群里的最好颜色。",
+        "repeat": 36
+      },
+      {
+        "name": "小说家-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，小说家专属",
+        "repeat": 36
+      },
+      {
+        "name": "“小女孩”-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，“小女孩”专属",
+        "repeat": 36
+      },
+      {
+        "name": "飞行家-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，飞行家专属",
+        "repeat": 36
+      },
+      {
+        "name": "木偶师-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，木偶师专属",
+        "repeat": 36
+      },
+      {
+        "name": "拉拉队员-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，拉拉队员专属",
+        "repeat": 36
+      },
+      {
+        "name": "记者-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，记者专属",
+        "repeat": 36
+      },
+      {
+        "name": "飞行家-警戒哨台",
+        "img": "./img/er5h4npwvabrnuo5w22wgpyvbfwewhe.png",
+        "type": "涂鸦",
+        "description": "飞行家专属涂鸦，警戒哨台 ",
+        "repeat": 36
+      },
+      {
+        "name": "拉拉队员-采集速巡",
+        "img": "./img/5cs9wqbqs9sxaj4i8yztfmvdgf373bn.png",
+        "type": "涂鸦",
+        "description": "拉拉队员专属涂鸦，采集速巡 ",
+        "repeat": 36
+      },
+      {
+        "name": "木偶师-义体再构",
+        "img": "./img/fsl882vc1k5m4dnoaphovjso5eqc3rh.png",
+        "type": "涂鸦",
+        "description": "木偶师专属涂鸦，义体再构",
+        "repeat": 36
+      },
+      {
+        "name": "“小女孩”-异动指针",
+        "img": "./img/c42oby6cpxkk0h35vifv1pfhuotw60t.png",
+        "type": "涂鸦",
+        "description": "“小女孩”专属涂鸦，异动指针",
+        "repeat": 36
+      },
+      {
+        "name": "小说家-“伊始新篇”",
+        "img": "./img/hvceolvyg7zvti1wcberu85jhmtx9ot.png",
+        "type": "涂鸦",
+        "description": "小说家专属涂鸦，“伊始新篇” ",
+        "repeat": 36
+      },
+      {
+        "name": "病患-另一面",
+        "img": "./img/j0zx8lcvd8i3d63b16zi83wsjsi3w8t.png",
+        "type": "头像",
+        "description": "病患的黑化头像，预示着他的另一面",
+        "repeat": 36
+      },
+      {
+        "name": "“心理学家”-另一面",
+        "img": "./img/8dbxst1bic3z01i8stmz058a9uy2msy.png",
+        "type": "头像",
+        "description": "“心理学家”的黑化头像，预示着他的另一面",
+        "repeat": 36
+      },
+      {
+        "name": "蜡像师-另一面",
+        "img": "./img/aekm3vd3fkmpcb5x6wk50smn16uc2ki.png",
+        "type": "头像",
+        "description": "蜡像师的黑化头像，预示着他的另一面",
+        "repeat": 36
+      },
+      {
+        "name": "玩具商-另一面",
+        "img": "./img/d78ayia3zpqr2new1jwxuk353bckqo9.png",
+        "type": "头像",
+        "description": "玩具商的黑化头像，预示着他的另一面",
+        "repeat": 36
+      },
+      {
+        "name": "画家-另一面",
+        "img": "./img/i891zu13sb43eunpw5xa65ngy90ov7n.png",
+        "type": "头像",
+        "description": "画家的黑化头像，预示着他的另一面",
+        "repeat": 36
+      },
+      {
+        "name": "击球手-另一面",
+        "img": "./img/2ajc6dsxw9b0rci3zjxivnn9nu74v5n.png",
+        "type": "头像",
+        "description": "击球手的黑化头像，预示着他的另一面",
+        "repeat": 36
+      },
+      {
+        "name": "雕刻家-另一面",
+        "img": "./img/ri17g1xt2aqkm7olrzuwquxi5s5irpq.png",
+        "type": "头像",
+        "description": "雕刻家的黑化头像，预示着他的另一面",
+        "repeat": 36
+      },
+      {
+        "name": "歌剧演员-另一面",
+        "img": "./img/i73a99kag8gfhn8dum4uni645dzli2u.png",
+        "type": "头像",
+        "description": "歌剧演员的黑化头像，预示着他的另一面",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "id": "S5Rank",
+  "name": "第5赛季·排位珍宝（四阶）",
+  "essenceImage": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png",
+  "diff_A": 2,
+  "initialCurrencies": {
+    "inspiration": 1000,
+    "fragments": 0
+  },
+  "discountInfo": {
+    "chance": 0,
+    "rate": 0.75
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 12
+  },
+  "frameSettings": {
+    "enabled": false,
+    "pityThreshold": 7,
+    "item": {
+      "name": "排位头像框兑换卡",
+      "type": "头像框",
+      "rarity": "F",
+      "img": "./img/bgijcaxbmaz8gwi87bschozs2pntw4m.png",
+      "description": "可用于兑换一个排位头像框。",
+      "repeat": 100
+    }
+  },
+  "items": {
+    "S": [
+      {
+        "name": "雷电生成器",
+        "img": "./img/4hmny8kdom7lz2w0g4ioh7n30prb8l6.png",
+        "type": "随身物品",
+        "description": "这个小装置蕴含大量的电能，看起来像是把一个球状闪电束缚在磁场中。\n特殊效果：信号枪特效\n空军稀世品质随身物品",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "凝聚之水",
+        "img": "./img/olvgnbaf7c080bdld5h1i49gn04sqjn.png",
+        "type": "随身物品",
+        "description": "瓶中的水不停流动，形成了漩涡，仿佛具有生命一般。\n替换调香师技能虛影\n调香师奇珍品质随身物品",
+        "repeat": 1000
+      },
+      {
+        "name": "黯岩护符",
+        "img": "./img/rfgdgtb3evajev3x91d0g5yfnxcm74b.png",
+        "type": "随身物品",
+        "description": "黑色的岩石，蕴含着难以言喻的邪恶。\n攻击时附带特效\n黄衣之主奇珍品质随身物品",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "稻草人偶",
+        "img": "./img/ig4was5z5bntnst2f1j8i7nc2dyz4c1.png",
+        "type": "随身物品",
+        "description": "燃烧过的稻草人偶",
+        "repeat": 200
+      },
+      {
+        "name": "金质玫瑰",
+        "img": "./img/qlwd8rhf7m6zq0cm6vj9x7dwq93bo2a.png",
+        "type": "随身物品",
+        "description": "很难相信如此精致的手工艺品出自远古人类之手",
+        "repeat": 200
+      },
+      {
+        "name": "黏土皇冠",
+        "img": "./img/rdvboz941u2guxdcxxe9kwsgajyw32n.png",
+        "type": "随身物品",
+        "description": "费了这么大劲，居然只得到一坨黏土，真不值。",
+        "repeat": 200
+      },
+      {
+        "name": "静滞旋风",
+        "img": "./img/b481p8giyotzofvg0daclejoxq2zxce.png",
+        "type": "随身物品",
+        "description": "一股旋风，停留在了它形成的那一刻",
+        "repeat": 200
+      },
+      {
+        "name": "医生-起舞",
+        "img": "./img/73nip7a7kcx0arn2v8y72o5xt153jyc.png",
+        "type": "个性动作",
+        "description": "起舞动作，医生专属",
+        "repeat": 200
+      },
+      {
+        "name": "魔术师-起舞",
+        "img": "./img/73nip7a7kcx0arn2v8y72o5xt153jyc.png",
+        "type": "个性动作",
+        "description": "起舞动作，魔术师专属",
+        "repeat": 200
+      },
+      {
+        "name": "调香师-起舞",
+        "img": "./img/73nip7a7kcx0arn2v8y72o5xt153jyc.png",
+        "type": "个性动作",
+        "description": "起舞动作，调香师专属",
+        "repeat": 200
+      },
+      {
+        "name": "冒险家-起舞",
+        "img": "./img/73nip7a7kcx0arn2v8y72o5xt153jyc.png",
+        "type": "个性动作",
+        "description": "起舞动作，冒险家专属",
+        "repeat": 200
+      },
+      {
+        "name": "第5赛季-剑齿虎",
+        "img": "./img/lvdoctnpbqlr5b1uzuu7xqjcqtph8io.png",
+        "type": "头像框",
+        "description": "监管者第五赛季四阶段位头像框，形象为剑齿虎",
+        "repeat": 200
+      },
+      {
+        "name": "第5赛季-猛犸",
+        "img": "./img/11h6ce7gn3nrs8iupw5ej6fm65gvsjk.png",
+        "type": "头像框",
+        "description": "求生者第五赛季四阶段位头像框，形象为猛犸",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "机械师-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，机械师专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "园丁-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，园丁专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，前锋专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，“慈善家”专属 ",
+        "repeat": 36
+      },
+      {
+        "name": "园丁工具箱-卡通",
+        "img": "./img/qo6iwkq9oy4kpp4qn4uhmicw395qwnb.png",
+        "type": "涂鸦",
+        "description": "园丁专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "律师地图-卡通",
+        "img": "./img/hca760ben0wsr97yvffl1ncg31xhquf.png",
+        "type": "涂鸦",
+        "description": "律师专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "空军信号枪-卡通",
+        "img": "./img/jubft9y72s7c2axxtqqoeuv0hoqrnoz.png",
+        "type": "涂鸦",
+        "description": "空军专属涂鸦，卡通 ",
+        "repeat": 36
+      },
+      {
+        "name": "职业侦探",
+        "img": "./img/9rhhglkyq9ufc54g228jawlzb88ts1l.png",
+        "type": "随身物品",
+        "description": "求生者随身物品，职业侦探",
+        "repeat": 36
+      },
+      {
+        "name": "反面侦探",
+        "img": "./img/81gbo3v8sdro3d2zs09ywzh7avd92ai.png",
+        "type": "随身物品",
+        "description": "监管者随身物品，反面侦探",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-盲女",
+        "img": "./img/77691aggv8xai6lii6xk0tzzxuus6mg.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-佣兵",
+        "img": "./img/kvs6mbyuo41eme45pz49ssgv3gog2qy.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "厂长-灰影",
+        "img": "./img/0759hpb5pajcuaewl2kothsl4szy4m8.png",
+        "type": "涂鸦",
+        "description": "厂长专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "宿伞之魂-灰影",
+        "img": "./img/etebgey0fybqexw2nkr1dm4oxocf0sh.png",
+        "type": "涂鸦",
+        "description": "宿伞之魂专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "红蝶-灰影",
+        "img": "./img/f4y6vxmyg4gu3n5z2y713wmzz19vy46.png",
+        "type": "涂鸦",
+        "description": "红蝶专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "黄衣之主-灰影",
+        "img": "./img/41omzcuu4ml1won7kx5oreykb35yng5.png",
+        "type": "涂鸦",
+        "description": "黄衣之主专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "“杰克”-灰影",
+        "img": "./img/pvmn9lpu1ngpy424dfj20bjk3lh3n0l.png",
+        "type": "涂鸦",
+        "description": "“杰克”专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "黑化红蝶-灰影",
+        "img": "./img/rnfvzj8irceanzxkhgzpa5jyjz94x6f.png",
+        "type": "涂鸦",
+        "description": "红蝶专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "鹿头-灰影",
+        "img": "./img/brsmit6t2ih4bl9vsgjg9p3j6afyfm5.png",
+        "type": "涂鸦",
+        "description": "鹿头专属涂鸦，灰影系列",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-厂长",
+        "img": "./img/3r55syvo6nflpl2sgb8l90linzop6ha.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-慈善家",
+        "img": "./img/81x7ijgf6b2lakyylp8gg48t44184r0.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-黄衣之主",
+        "img": "./img/sp7mrngcawhf3hhdoauoe6cj4vp9r9a.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-祭司",
+        "img": "./img/lsdn1m8dsmypefyese2rnlkvpyqixq8.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-杰克",
+        "img": "./img/cdtu0yif2dh439sfo5nczygxlts630x.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-调香师",
+        "img": "./img/1308mm7pnlk2a1cnbmsj8vp7ojzuglk.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-医生",
+        "img": "./img/6hd4avqeihthz286dt2l8thhiqvkdar.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      }
+    ]
+  }
+}

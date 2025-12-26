@@ -1,0 +1,376 @@
+{
+  "id": "S2E3",
+  "name": "第2赛季·精华3",
+  "essenceImage": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+  "diff_A": 2,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "珊瑚夫人",
+        "img": "./img/2rcjk0gc364jtjo7cns6213ijrx9ai3.png",
+        "type": "时装",
+        "description": "她从海底火山旁的囚笼中苏醒，发现身体已经与珊瑚和礁石相融。沸水灼身，心坠寒渊。\n（【限定】时装，仅能在第二赛季精华3中获得）",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "笼中之蝶",
+        "img": "./img/kk9nu6pqdhduxtcm3wrel7dpoey4c1a.png",
+        "type": "时装",
+        "description": "她很喜欢《蝴蝶夫人》中那位纯真的东方女性，以为自己会寻到比之更为真挚的爱情，但未料自己的命运更是惨淡——汪洋吞噬了她的水手，也吞噬了她的一切。",
+        "repeat": 1000
+      },
+      {
+        "name": "炽天使",
+        "img": "./img/nqw73jhl221y5lzcn00p79s1ss4w8sv.png",
+        "type": "时装",
+        "description": "如果翱翔天际，她所留下的绚烂一定能超越海平面的晚霞。",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "冷面大副",
+        "img": "./img/75ya4bumfp319jlv0q6vducxbzp71ft.png",
+        "type": "时装",
+        "description": "他不会甘于屈居在任何一人之下，尤其是一个陷于无聊情爱的船长。",
+        "repeat": 200
+      },
+      {
+        "name": "鬼蓝舵手",
+        "img": "./img/the3uaod95vhz508sbl969d1vruo5o8.png",
+        "type": "时装",
+        "description": "舵手与船舵融为了一体，船员们对它的惧意，甚至压过了船长。",
+        "repeat": 200
+      },
+      {
+        "name": "暗鲨勇士",
+        "img": "./img/ct9u8aqa50wdjdjcfbnr4d01z9dtwcy.png",
+        "type": "时装",
+        "description": "这满身的疤痕都是在与那位可怖的船长搏斗中留下的，他们彼此都视对方为一生劲敌。",
+        "repeat": 200
+      },
+      {
+        "name": "海葵鱼",
+        "img": "./img/srrypltfchw9p50vqx9o9r1ey9v02m5.png",
+        "type": "时装",
+        "description": "与蔚蓝的海葵共生而得名。当海葵遇险时，她就会挺身而出。",
+        "repeat": 200
+      },
+      {
+        "name": "深海玳瑁",
+        "img": "./img/4ldafp223o7mjr6a7kcdvndxx9mpw7q.png",
+        "type": "时装",
+        "description": "在其漫长的一生中，未曾听过有什么的珍宝，更未曾见过有如此美丽的夫人在深海之中踽踽独行。",
+        "repeat": 200
+      },
+      {
+        "name": "海螺",
+        "img": "./img/ih82kptivrsnf8wrs7uksv102co8nad.png",
+        "type": "随身物品",
+        "description": "传说中有只海螺能起死回生，永驻容颜，是无数人渴求的珍宝，而这只连普通的光泽都失去了。",
+        "repeat": 200
+      },
+      {
+        "name": "望远镜",
+        "img": "./img/4st8j89hjxy6ygw4iulg0wve54bu6oz.png",
+        "type": "随身物品",
+        "description": "寻获珍宝之前，船长用它遥望过无数次心之所在方向，却从未向之踏过一步。",
+        "repeat": 200
+      },
+      {
+        "name": "律师-起身",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "律师匹配大厅动作，起身",
+        "repeat": 200
+      },
+      {
+        "name": "医生-起身",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "医生匹配大厅动作，起身",
+        "repeat": 200
+      },
+      {
+        "name": "“杰克”-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "“杰克”专属匹配大厅等待动作，小憩",
+        "repeat": 200
+      },
+      {
+        "name": "小丑-小憩",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "小丑专属匹配大厅等待动作，小憩",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "律师-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，律师专属",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，冒险家专属",
+        "repeat": 36
+      },
+      {
+        "name": "园丁-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，园丁专属",
+        "repeat": 36
+      },
+      {
+        "name": "机械师-呼喊",
+        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "type": "个性动作",
+        "description": "呼喊动作，机械师专属",
+        "repeat": 36
+      },
+      {
+        "name": "蓝怪",
+        "img": "./img/qbxvjej4qjt91gzie2p3ikhsflyrzer.png",
+        "type": "时装",
+        "description": "你见过蓝衣的小丑吗?没有吧?没有吧?哈哈哈哈~~",
+        "repeat": 36
+      },
+      {
+        "name": "深海蓝",
+        "img": "./img/1t78q0jzs4whbb05ua90ee2vhu8rtkc.png",
+        "type": "时装",
+        "description": "深蓝的一身军服，稳重中带着翩翩风度",
+        "repeat": 36
+      },
+      {
+        "name": "绿翡翠",
+        "img": "./img/nuj2zctmain8w1r6agfgu11778a7xqs.png",
+        "type": "时装",
+        "description": "翡翠可是好东西，纯绿的更是值钱",
+        "repeat": 36
+      },
+      {
+        "name": "祖母绿",
+        "img": "./img/5l5s59uxd5k1od27yvaw7ewswzyo9uh.png",
+        "type": "时装",
+        "description": "青绿的一身军服，与高贵宝石同款的色泽",
+        "repeat": 36
+      },
+      {
+        "name": "灵动黄",
+        "img": "./img/cefybesxxbfnida4htf0gkx4qc2lea0.png",
+        "type": "时装",
+        "description": "一点点的灵动在机械构造中也很重要!",
+        "repeat": 36
+      },
+      {
+        "name": "高雅灰",
+        "img": "./img/ekguxrupy3yahlm8npk8foscqzfxhvb.png",
+        "type": "时装",
+        "description": "深灰的一身军服，高雅与时尚结合的典范",
+        "repeat": 36
+      },
+      {
+        "name": "忧郁蓝",
+        "img": "./img/orosw0zspi51e9fx6eq62jw7vr4ynyc.png",
+        "type": "时装",
+        "description": "忧郁的气质可不是与生俱来的",
+        "repeat": 36
+      },
+      {
+        "name": "松石青",
+        "img": "./img/8le6ur1gnc6aznhe3zvok3cfhci7nm0.png",
+        "type": "时装",
+        "description": "青石一样的坚韧，巍峨",
+        "repeat": 36
+      },
+      {
+        "name": "紫茄",
+        "img": "./img/62ba0kh5hbozuffn5iugsfqoc2p6u02.png",
+        "type": "时装",
+        "description": "跟小丑一起念——“茄子~！”",
+        "repeat": 36
+      },
+      {
+        "name": "盲女-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "盲女匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "机械师-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "机械师匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "机械师-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "机械师匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "冒险家匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "盲女-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "盲女匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "盲女-卡通",
+        "img": "./img/1nfpqixxjfet0vfl802lowunynezet4.png",
+        "type": "涂鸦",
+        "description": "盲女专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "机械师-卡通",
+        "img": "./img/oo8hmdl9c9xcnse62hpj0qatcccqy8j.png",
+        "type": "涂鸦",
+        "description": "机械师专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "空军-卡通",
+        "img": "./img/07wsqgwq7960tane429rq2ucim4lkj6.png",
+        "type": "涂鸦",
+        "description": "空军专属涂鸦，卡通",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "黄金号角-彩底",
+        "img": "./img/qqfhyjpe4q0xdpc0mz877tahy5g8s6a.png",
+        "type": "涂鸦",
+        "description": "黄金号角涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "魔棒-彩底",
+        "img": "./img/i4e1by6g4zocarq1t2tyv53x8ywkv1k.png",
+        "type": "涂鸦",
+        "description": "魔棒涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "手爪-彩底",
+        "img": "./img/h20imdgagx3cfzcn7cmy35a4z4ag7sn.png",
+        "type": "涂鸦",
+        "description": "手爪涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "盲杖-彩底",
+        "img": "./img/chn1q4cljtyz2bs2wx6xwakyfntp5qy.png",
+        "type": "涂鸦",
+        "description": "盲杖涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "盲女-剪影",
+        "img": "./img/bh6x9r99ki3ujp9zg1f0p95sdash3ge.png",
+        "type": "涂鸦",
+        "description": "盲女专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "机械师-剪影",
+        "img": "./img/g2xi8fjflnl0ef9iwd3rvjf399zx2b4.png",
+        "type": "涂鸦",
+        "description": "机械师专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "盲杖-灰化",
+        "img": "./img/9urnspwsggp9btgsu9jky96taozsr6k.png",
+        "type": "涂鸦",
+        "description": "盲杖涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "橄榄球-灰化",
+        "img": "./img/c9uh9xt4lep28e33municsinhzi53f0.png",
+        "type": "涂鸦",
+        "description": "橄榄球涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "鬼脸披肩-灰化",
+        "img": "./img/pkve9snamt5ev3d4kq6vj4frh9do98o.png",
+        "type": "涂鸦",
+        "description": "鬼脸披肩涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "钩链-灰化",
+        "img": "./img/iu7li5l8djolf3cf6oyv0rxvczb8vad.png",
+        "type": "涂鸦",
+        "description": "钩链涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "蛛腿-灰化",
+        "img": "./img/jpqexyozhr7c3zfkmlh1e154mu17w8s.png",
+        "type": "涂鸦",
+        "description": "蛛腿涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "遥控器-灰化",
+        "img": "./img/54xdbq6tvqzuxakpu8edrnhe6asq5rz.png",
+        "type": "涂鸦",
+        "description": "遥控器涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "夜莺-灰化",
+        "img": "./img/4zl9j4j43pyj0oezngzxmka24p4821p.png",
+        "type": "涂鸦",
+        "description": "夜莺涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "镇静剂-灰化",
+        "img": "./img/s4k2rpzz81k83ulsk3dlf7l9mngb0l6.png",
+        "type": "涂鸦",
+        "description": "镇静剂涂鸦，灰化",
+        "repeat": 6
+      }
+    ]
+  }
+}

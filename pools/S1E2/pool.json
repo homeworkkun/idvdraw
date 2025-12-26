@@ -1,0 +1,418 @@
+{
+  "id": "S1E2",
+  "name": "第1赛季·精华2",
+  "essenceImage": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+  "diff_A": 2,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "黄金烛台",
+        "img": "./img/fohzn63kh1y22imp4rm9syet3v8tk6s.png",
+        "type": "时装",
+        "description": "金碧辉煌的烛台照亮了最后一隅自卑的角落\n（【限定】时装，仅能在第一赛季精华2中获得）",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "水晶烛台",
+        "img": "./img/is8x12t16ah0zeod6dhi47a5bubkzpt.png",
+        "type": "时装",
+        "description": "红教堂的天花板上，有一件闪闪发光的水晶造物点着摇曳的烛光，目睹了整场无疾而终的闹剧，宾客未至，佳人已逝",
+        "repeat": 1000
+      },
+      {
+        "name": "蓝调阿拉丁",
+        "img": "./img/qp15u8otiyufz093hfo2ded99j8bonm.png",
+        "type": "时装",
+        "description": "《一千零一夜》的故事可是许多奇怪把戏的灵感之源，这次蓝调的异国风情会带来好运么?",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "庖厨大师",
+        "img": "./img/4jj1aglvu4d5wjizz8sdpf59zg2p1yz.png",
+        "type": "时装",
+        "description": "庖厨之中禁止出现多余的毛发!",
+        "repeat": 200
+      },
+      {
+        "name": "星空预言者",
+        "img": "./img/ia54746h1vqfm0t17p6n1og6d8p0rq8.png",
+        "type": "时装",
+        "description": "浩瀚的星空与无边的未来噢~瓦尔莱塔以卑微的残躯向你们祈祷，能否回应我渺小的期盼?",
+        "repeat": 200
+      },
+      {
+        "name": "皇家骑兵",
+        "img": "./img/g6hm7u961x737i4f3eb9nnjx5duct80.png",
+        "type": "时装",
+        "description": "皇家骑兵的礼服从来不只是一套华丽的着装，更是勇气、责任、实力的标志",
+        "repeat": 200
+      },
+      {
+        "name": "消防员",
+        "img": "./img/bxsw8mh2psd268pq8r76ietwwxr5hvp.png",
+        "type": "时装",
+        "description": "从来没见过那么横冲直撞……哦，抱歉……来去如风的消防员",
+        "repeat": 200
+      },
+      {
+        "name": "囚徒",
+        "img": "./img/h5hxx0d5g0r073af6o8z2363r3wkmyu.png",
+        "type": "时装",
+        "description": "即便在牢笼之中也要保持笑容，因为欢乐是不会被束缚的!",
+        "repeat": 200
+      },
+      {
+        "name": "银白科技",
+        "img": "./img/ftgkqclf5xnlkcsrpil3gntveqldaon.png",
+        "type": "时装",
+        "description": "这次轮回巡演的主题就是：银闪的奇迹！",
+        "repeat": 200
+      },
+      {
+        "name": "厂长-拜访",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "厂长专属匹配大厅等待动作，拜访，求生者可见",
+        "repeat": 200
+      },
+      {
+        "name": "“杰克”-拜访",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "“杰克”专属匹配大厅等待动作，拜访，求生者可见",
+        "repeat": 200
+      },
+      {
+        "name": "蜘蛛-拜访",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "蜘蛛专属匹配大厅等待动作，拜访，求生者可见",
+        "repeat": 200
+      },
+      {
+        "name": "小丑-拜访",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "小丑专属匹配大厅等待动作，拜访，求生者可见",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "医生-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，医生专属",
+        "repeat": 36
+      },
+      {
+        "name": "园丁-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，园丁专属",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，佣兵专属",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，“慈善家”专属",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-躺地",
+        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "type": "个性动作",
+        "description": "躺地动作，冒险家专属",
+        "repeat": 36
+      },
+      {
+        "name": "青缝布",
+        "img": "./img/41g79msjzj23dzon14gme332oc7mt6x.png",
+        "type": "时装",
+        "description": "咔擦咔擦，青丝缝出碎布",
+        "repeat": 36
+      },
+      {
+        "name": "深空黑",
+        "img": "./img/msik79hqa6cueimidpxjbybxjxh0a9d.png",
+        "type": "时装",
+        "description": "黑色代表着稳重与专业",
+        "repeat": 36
+      },
+      {
+        "name": "紫领",
+        "img": "./img/oeyin53fwzc66omebdhky3wsuolhiuo.png",
+        "type": "时装",
+        "description": "没见过有人穿成这样来工厂干活的……应该没有吧",
+        "repeat": 36
+      },
+      {
+        "name": "咖啡爵",
+        "img": "./img/l6m1iybonwmi8drymxfcahbozu47ody.png",
+        "type": "时装",
+        "description": "绅士都懂得品味咖啡的醇香",
+        "repeat": 36
+      },
+      {
+        "name": "迷彩衣",
+        "img": "./img/swkiqpwqcdg7lkyekqa5vln3mdpcr8i.png",
+        "type": "时装",
+        "description": "啪嗒啪嗒，在绿衣上点出迷彩",
+        "repeat": 36
+      },
+      {
+        "name": "珊瑚红",
+        "img": "./img/3etgdwrpifk7vdsxl4nhkx3uhex2ygg.png",
+        "type": "时装",
+        "description": "红色代表着热情与执着",
+        "repeat": 36
+      },
+      {
+        "name": "天青石",
+        "img": "./img/4tywgzskdmbnmbnq9baagdjavwpva00.png",
+        "type": "时装",
+        "description": "天青石是从东方流入的矿石，虽不贵重，但也能换不少钱",
+        "repeat": 36
+      },
+      {
+        "name": "红妆绸",
+        "img": "./img/72fwu3ue46ggnozwd51ux7njp7povw7.png",
+        "type": "时装",
+        "description": "咝咝嗦嗦，再美的绸缎都是细丝织成",
+        "repeat": 36
+      },
+      {
+        "name": "蓝领",
+        "img": "./img/aoi0pv0cyl9w1gxe3ey85m06ykzs60p.png",
+        "type": "时装",
+        "description": "蓝领阶级力量大，人心齐",
+        "repeat": 34
+      },
+      {
+        "name": "金红帛",
+        "img": "./img/kdorn3cvj4qir956xvnpidprtxi5tq7.png",
+        "type": "时装",
+        "description": "嚓嚓嗦嗦，金色的绸帛这么剪开会不会太浪费了?",
+        "repeat": 36
+      },
+      {
+        "name": "酒红深",
+        "img": "./img/c2q1pn8wg2s8pfkgjos352tb6sljndl.png",
+        "type": "时装",
+        "description": "红酒配黑纱，古典的风韵",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "前锋匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "冒险家匹配大厅动作，准备",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "佣兵匹配大厅动作，准备",
+        "repeat": 36
+      },
+      {
+        "name": "律师-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "律师匹配大厅动作，准备",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "前锋匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "蜘蛛-卡通",
+        "img": "./img/a7qmcv1iykxgegwydjwxe4ac2eo00jh.png",
+        "type": "涂鸦",
+        "description": "蜘蛛专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "律师-卡通",
+        "img": "./img/hprs7ziawl0jexx1ucumcd91b5by6d6.png",
+        "type": "涂鸦",
+        "description": "律师专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "前锋-卡通",
+        "img": "./img/8t2e85z5iaqasm96m0giiayrcqef3jt.png",
+        "type": "涂鸦",
+        "description": "前锋专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "中级执着印记",
+        "img": "./img/3j1nejmwzvdpbvyp8xkrb336t6qmue8.png",
+        "type": "印记",
+        "description": "中级执着印记",
+        "repeat": 36
+      },
+      {
+        "name": "中级友善印记",
+        "img": "./img/hkhxybnmg3qcsm7b239giofpoo87lof.png",
+        "type": "印记",
+        "description": "中级友善印记",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "蜘蛛-剪影",
+        "img": "./img/19tb9xk8flju4e7ydhab2su8v5615av.png",
+        "type": "涂鸦",
+        "description": "蜘蛛-剪影",
+        "repeat": 6
+      },
+      {
+        "name": "手电筒-彩底",
+        "img": "./img/lndqxkpqwgl3td2p44vr6lo2h1aodry.png",
+        "type": "涂鸦",
+        "description": "手电筒涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "信号枪-彩底",
+        "img": "./img/6bnxgf8skdlctuab0j6x955bdqtpf0z.png",
+        "type": "涂鸦",
+        "description": "信号枪涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "蛛腿-彩底",
+        "img": "./img/f5ohpzexx97mo3lpx09v2eny5pyl680.png",
+        "type": "涂鸦",
+        "description": "蛛腿涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "电锯-彩底",
+        "img": "./img/7495b2pdjk4jikyypszomktzvb3viv2.png",
+        "type": "涂鸦",
+        "description": "电锯涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "镇静剂-彩底",
+        "img": "./img/846ae08w2i6vson98pup2ac6d8htb9d.png",
+        "type": "涂鸦",
+        "description": "镇静剂涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "钩链-彩底",
+        "img": "./img/dvszvwj1poome5c8bb788whl8y3m5gs.png",
+        "type": "涂鸦",
+        "description": "钩链涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "窥视者-灰化",
+        "img": "./img/cfgcy6nz9k8yejs625cfwghzbciyyik.png",
+        "type": "涂鸦",
+        "description": "窥视者涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "橄榄球-彩底",
+        "img": "./img/rzswccq6rfqg02wysc880q2se963zyt.png",
+        "type": "涂鸦",
+        "description": "橄榄球涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "魔棒-灰化",
+        "img": "./img/qjy3eswtxcmbzmpl99953s261hbwj1s.png",
+        "type": "涂鸦",
+        "description": "魔棒涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "观察者-灰化",
+        "img": "./img/0zabqym0tctqwn3cnvadu4zh1o4l098.png",
+        "type": "涂鸦",
+        "description": "观察者涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "独轮车-灰化",
+        "img": "./img/5kamqw2jht7397fc7dnxh2w7rq9jafj.png",
+        "type": "涂鸦",
+        "description": "独轮车涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "黄金号角-灰化",
+        "img": "./img/n4i75m6l2tl2u5rnc7fn2uftoubeef4.png",
+        "type": "涂鸦",
+        "description": "黄金号角涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "蝙蝠-灰化",
+        "img": "./img/nlr1j8z93sb6qgm7szhkmszvjf1u2b6.png",
+        "type": "涂鸦",
+        "description": "蝙蝠涂鸦，灰化",
+        "repeat": 6
+      },
+      {
+        "name": "低级执着印记",
+        "img": "./img/3j1nejmwzvdpbvyp8xkrb336t6qmue8.png",
+        "type": "印记",
+        "description": "低级执着印记",
+        "repeat": 6
+      },
+      {
+        "name": "低级友善印记",
+        "img": "./img/hkhxybnmg3qcsm7b239giofpoo87lof.png",
+        "type": "印记",
+        "description": "低级友善印记",
+        "repeat": 6
+      }
+    ]
+  }
+}

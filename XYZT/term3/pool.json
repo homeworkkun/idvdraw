@@ -1,0 +1,77 @@
+{
+  "id": "lucky_dice_3",
+  "name": "幸运之骰·第3期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 9999,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "迷迭花": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/6jt81ycsvtrjveiyvwmz2bmmcdnf7s2.png",
+      "description": "交叉在一起的花瓣围绕而成的头像框 ",
+      "repeat": 200
+    },
+    "宫灯花下吃元宵": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/5nj07p4oaja0347a2904jtdxhua00lo.png",
+      "description": "“众里寻他千百度，蓦然回首，那人却在灯火阑珊处。”（2019年元宵节活动首次获得） ",
+      "repeat": 200
+    },
+    "弗雷齐": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/ae1dggf4ozhdifo1s55plw6tdu6a9np.png",
+      "description": "弗雷齐头像",
+      "repeat": 6
+    },
+    "吉利": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/rlex8ug629j7hfofveu0zw19m9y09dr.png",
+      "description": "吉利头像",
+      "repeat": 6
+    },
+    "万圣节小鬼": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/hyp6gd4jn5w32trgaaq4vhmqmw7uq3y.png",
+      "description": "万圣节活动头像，万圣节小鬼 ",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

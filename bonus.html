@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>幻象大厅</title>
+  <script src="/resource/tailwind.min.css"></script>
+  <link rel="stylesheet" href="/resource/fontawesome/css/all.min.css">
+  <style>
+    @import url('/resource/29ea7425af6c4890a35116efa392a58a.css');
+    
+    @font-face {
+        font-family: 'DFPOP1W5-GB';
+        src: url('/fonts.ttf') format('truetype');
+    }
+
+    /* 第五人格风格定义 */
+    :root {
+      --iv-gold: #d4b876;
+      --iv-dark: #0f1115;
+      --iv-panel: #1a1c24;
+      --iv-red: #8a2a2a;
+      --color-gold: #e8c668;
+      --color-purple: #b568e8;
+      --color-blue: #689de8;
+    }
+
+    body {
+      background-color: var(--iv-dark);
+      background-image: 
+        radial-gradient(circle at 50% 50%, #1f232e 0%, #0f1115 100%),
+        repeating-linear-gradient(45deg, rgba(0,0,0,0.05) 0px, rgba(0,0,0,0.05) 2px, transparent 2px, transparent 10px);
+      color: #e0e0e0;
+      font-family: "DFPOP1W5-GB", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      user-select: none;
+    }
+
+    /* 哥特字体标题 */
+    .gothic-title {
+      font-family: "DFPOP1W5-GB", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+      letter-spacing: 2px;
+    }
+
+    /* 商品卡片 */
+    .item-card {
+      background: linear-gradient(180deg, rgba(30,35,45,0.9) 0%, rgba(20,22,28,0.95) 100%);
+      border: 1px solid #4a4a4a;
+      position: relative;
+      transition: all 0.3s ease;
+      clip-path: polygon(
+        0 0, 
+        100% 0, 
+        100% calc(100% - 15px), 
+        calc(100% - 15px) 100%, 
+        0 100%
+      );
+    }
+    
+    .item-card::before {
+      content: '';
+      position: absolute;
+      top: 2px; left: 2px; right: 2px; bottom: 2px;
+      border: 1px solid rgba(212, 184, 118, 0.2);
+      pointer-events: none;
+      clip-path: polygon(
+        0 0, 
+        100% 0, 
+        100% calc(100% - 15px), 
+        calc(100% - 15px) 100%, 
+        0 100%
+      );
+    }
+
+    .item-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--iv-gold);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5), 0 0 15px rgba(212, 184, 118, 0.2);
+    }
+
+    /* 购买按钮 */
+    .buy-btn {
+      background: linear-gradient(to bottom, #d4b876, #a68b4f);
+      color: #1a1c24;
+      font-weight: bold;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+      clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+      transition: filter 0.2s;
+      font-family: "DFPOP1W5-GB", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .buy-btn:hover {
+      filter: brightness(1.1);
+    }
+    .buy-btn:active {
+      filter: brightness(0.9);
+      transform: translateY(1px);
+    }
+
+    /* 弹窗样式 */
+    .modal-overlay {
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(4px);
+    }
+    
+    .modal-content {
+      background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjMWExYzI0Ii8+CjwvU3ZnPg==');
+      border: 2px solid var(--iv-gold);
+      box-shadow: 0 0 30px rgba(212, 184, 118, 0.3), inset 0 0 50px rgba(0,0,0,0.8);
+      position: relative;
+      max-height: 90vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE 10+ */
+    }
+
+    .modal-content::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+      background: transparent; /* Chrome/Safari/Webkit */
+    }
+
+    .modal-corner {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--iv-gold);
+      transition: all 0.3s;
+    }
+    .mc-tl { top: -2px; left: -2px; border-right: none; border-bottom: none; }
+    .mc-tr { top: -2px; right: -2px; border-left: none; border-bottom: none; }
+    .mc-bl { bottom: -2px; left: -2px; border-right: none; border-top: none; }
+    .mc-br { bottom: -2px; right: -2px; border-left: none; border-top: none; }
+
+    /* 资源图标模拟 */
+    .icon-glow {
+      filter: drop-shadow(0 0 8px rgba(255,255,255,0.4));
+    }
+
+    /* 响应式调整 */
+    @media (max-width: 768px) {
+      .item-card {
+        clip-path: polygon(
+          0 0, 
+          100% 0, 
+          100% calc(100% - 10px), 
+          calc(100% - 10px) 100%, 
+          0 100%
+        );
+      }
+      
+      .item-card::before {
+        clip-path: polygon(
+          0 0, 
+          100% 0, 
+          100% calc(100% - 10px), 
+          calc(100% - 10px) 100%, 
+          0 100%
+        );
+      }
+      
+      .buy-btn {
+        clip-path: polygon(6px 0, 100% 0, 100% 100%, 0 100%, 0 6px);
+      }
+    }
+
+    /* 横屏适配 */
+    @media (min-width: 1024px) and (orientation: landscape) {
+      .item-card {
+        max-width: 220px;
+      }
+      
+      .modal-content {
+        max-width: 90vw;
+        max-height: 80vh;
+      }
+    }
+
+    /* 超宽屏幕适配 */
+    @media (min-width: 1280px) {
+      .max-w-5xl {
+        max-width: 1400px;
+      }
+      
+      .grid-cols-4 {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+    }
+
+    /* 动画效果 */
+    @keyframes slideIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .slide-in {
+      animation: slideIn 0.5s ease-out forwards;
+    }
+
+    .fade-in {
+      animation: fadeIn 0.3s ease-out;
+    }
+
+    /* 选项按钮样式 */
+    .option-btn {
+      background: rgba(30, 35, 45, 0.9);
+      border: 1px solid #4a4a4a;
+      color: #e0e0e0;
+      padding: 12px;
+      margin: 8px 0;
+      width: 100%;
+      text-align: left;
+      transition: all 0.2s;
+      border-radius: 4px;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+
+    .option-btn:hover {
+      border-color: var(--iv-gold);
+      background: rgba(212, 184, 118, 0.1);
+    }
+
+    .option-btn.selected {
+      border-color: var(--iv-gold);
+      background: rgba(212, 184, 118, 0.2);
+    }
+
+    .option-btn.correct {
+      border-color: #4CAF50;
+      background: rgba(76, 175, 80, 0.1);
+    }
+
+    .option-btn.incorrect {
+      border-color: #f44336;
+      background: rgba(244, 67, 54, 0.1);
+    }
+
+    .result-message {
+      padding: 12px;
+      margin: 16px 0;
+      border-radius: 4px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .result-correct {
+      background: rgba(76, 175, 80, 0.2);
+      border: 1px solid #4CAF50;
+      color: #4CAF50;
+    }
+
+    .result-incorrect {
+      background: rgba(244, 67, 54, 0.2);
+      border: 1px solid #f44336;
+      color: #f44336;
+    }
+  </style>
+</head>
+<body class="p-4 sm:p-8">
+
+  <!-- 顶部导航栏模拟 -->
+  <div class="w-full max-w-5xl flex flex-col sm:flex-row justify-between items-center mb-6 sm:mb-8 border-b border-gray-700 pb-4 gap-4">
+    <div class="flex flex-col items-center sm:items-start">
+      <div class="text-2xl sm:text-3xl text-[#d4b876] gothic-title font-bold text-center sm:text-left">ILLUSION HALL</div>
+      <div class="text-gray-400 text-xs sm:text-sm tracking-widest mt-1">幻象大厅</div>
+    </div>
+  </div>
+
+  <!-- 提示语 -->
+  <div class="text-center mb-6 sm:mb-8 px-4">
+    <h2 class="text-xl sm:text-2xl text-[#d4b876] font-bold mb-2">兑换</h2>
+  </div>
+
+  <!-- 商品网格 -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 w-full max-w-5xl px-2">
+
+    <!-- 商品 1: 灵感 -->
+    <div class="item-card p-4 sm:p-6 flex flex-col items-center text-center">
+      <div class="w-16 h-16 sm:w-24 sm:h-24 mb-3 sm:mb-4 bg-gradient-to-b from-yellow-900/30 to-transparent rounded-full flex items-center justify-center border border-yellow-700/30">
+        <img src="/resource/e65671ae69fd5263be962bd64de3cfe8.png" alt="灵感" class="w-12 h-12 sm:w-16 sm:h-16 icon-glow">
+      </div>
+      <h3 class="text-lg sm:text-xl text-[#d4b876] font-bold mb-1">灵感礼包</h3>
+      <p class="text-gray-400 text-xs mb-4 sm:mb-6 px-2">包含大量灵感，用于抽取精华。</p>
+      
+      <div class="mt-auto w-full">
+        <div class="text-xl sm:text-2xl font-bold text-white mb-2">x 100000</div>
+        <button onclick="openVerifyModal('inspiration', 100000, '灵感')" class="buy-btn w-full py-2 px-4 text-sm tracking-wider">
+          获取
+        </button>
+      </div>
+    </div>
+
+    <!-- 商品 2: 排位珍宝 -->
+    <div class="item-card p-4 sm:p-6 flex flex-col items-center text-center">
+      <div class="w-16 h-16 sm:w-24 sm:h-24 mb-3 sm:mb-4 bg-gradient-to-b from-blue-900/30 to-transparent rounded-full flex items-center justify-center border border-blue-700/30">
+        <img src="/resource/72bb95f8b126d3f86e41af05eb20d930.png" alt="排位珍宝" class="w-12 h-12 sm:w-16 sm:h-16 icon-glow">
+      </div>
+      <h3 class="text-lg sm:text-xl text-[#d4b876] font-bold mb-1">排位珍宝</h3>
+      <p class="text-gray-400 text-xs mb-4 sm:mb-6 px-2">稀世珍宝，有机会获得稀有随身物品。</p>
+      
+      <div class="mt-auto w-full">
+        <div class="text-xl sm:text-2xl font-bold text-white mb-2">x 1000</div>
+        <button onclick="openVerifyModal('rank_treasure', 1000, '排位珍宝')" class="buy-btn w-full py-2 px-4 text-sm tracking-wider">
+          获取
+        </button>
+      </div>
+    </div>
+
+    <!-- 商品 3: 火漆 -->
+    <div class="item-card p-4 sm:p-6 flex flex-col items-center text-center">
+      <div class="w-16 h-16 sm:w-24 sm:h-24 mb-3 sm:mb-4 bg-gradient-to-b from-purple-900/30 to-transparent rounded-full flex items-center justify-center border border-purple-700/30">
+        <img src="/resource/60fcc83fe18f0da9501005e21e264c70.png" alt="火漆" class="w-12 h-12 sm:w-16 sm:h-16 icon-glow">
+      </div>
+      <h3 class="text-lg sm:text-xl text-[#d4b876] font-bold mb-1">火漆</h3>
+      <p class="text-gray-400 text-xs mb-4 sm:mb-6 px-2">用于抽取幸运之骰、鉴影寻宝或幻象迷途。</p>
+      
+      <div class="mt-auto w-full">
+        <div class="text-xl sm:text-2xl font-bold text-white mb-2">x 5000</div>
+        <button onclick="openVerifyModal('huoqi', 5000, '火漆')" class="buy-btn w-full py-2 px-4 text-sm tracking-wider">
+          获取
+        </button>
+      </div>
+    </div>
+
+    <!-- 商品 4: 线索 (新增) -->
+    <div class="item-card p-4 sm:p-6 flex flex-col items-center text-center">
+      <div class="w-16 h-16 sm:w-24 sm:h-24 mb-3 sm:mb-4 bg-gradient-to-b from-green-900/30 to-transparent rounded-full flex items-center justify-center border border-green-700/30">
+        <img src="/resource/fc5a55c488fae00f1e606f5b9e33f349.png" alt="线索" class="w-12 h-12 sm:w-16 sm:h-16 icon-glow">
+      </div>
+      <h3 class="text-lg sm:text-xl text-[#d4b876] font-bold mb-1">线索</h3>
+      <p class="text-gray-400 text-xs mb-4 sm:mb-6 px-2">用于抽取记忆珍宝。</p>
+      
+      <div class="mt-auto w-full">
+        <div class="text-xl sm:text-2xl font-bold text-white mb-2">x 1000000</div>
+        <button onclick="openVerifyModal('clue', 1000000, '线索')" class="buy-btn w-full py-2 px-4 text-sm tracking-wider">
+          获取
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 验证弹窗 (隐藏) -->
+  <div id="verify-modal" class="modal-overlay fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+    <div class="modal-content w-full max-w-md p-6 sm:p-8 text-center animate-[fadeIn_0.3s_ease-out]">
+      <!-- 装饰角 -->
+      <div class="modal-corner mc-tl"></div>
+      <div class="modal-corner mc-tr"></div>
+      <div class="modal-corner mc-bl"></div>
+      <div class="modal-corner mc-br"></div>
+
+      <h3 class="text-[#d4b876] text-lg sm:text-xl font-bold mb-4 sm:mb-6 tracking-widest border-b border-gray-700 pb-2">二级密码</h3>
+      
+      <p class="text-gray-300 text-sm sm:text-base mb-4 sm:mb-6">你是小明，你不小心打翻了墨水，想不起来二级密码了，请你回答密保问题重置二级密码</p>
+      
+      <div id="question-container" class="bg-black/50 p-3 sm:p-4 rounded border border-gray-600 mb-4 sm:mb-6">
+        <span id="math-question" class="text-2xl sm:text-3xl font-mono text-white tracking-widest">12 + 5 = ?</span>
+        <div id="quiz-question" class="hidden">
+          <div id="quiz-text" class="text-lg sm:text-xl text-white mb-4 text-left"></div>
+          <div id="quiz-options" class="text-left"></div>
+        </div>
+      </div>
+
+      <input type="number" id="math-answer" placeholder="输入答案" 
+             class="w-full bg-[#0f1115] border border-[#4a4a4a] text-[#d4b876] text-center text-lg sm:text-xl p-2 sm:p-3 mb-4 sm:mb-6 focus:outline-none focus:border-[#d4b876] transition-colors"
+             onkeydown="if(event.key === 'Enter') checkAnswer()">
+
+      <div id="result-container" class="hidden mb-4">
+        <div id="result-message" class="result-message"></div>
+        <button id="confirm-btn" class="buy-btn w-full py-2 px-4 text-sm tracking-wider mt-2 hidden" onclick="confirmAnswer()">
+          确认答案
+        </button>
+      </div>
+
+      <div class="flex gap-3 sm:gap-4">
+        <button onclick="closeModal()" class="flex-1 border border-gray-600 text-gray-400 py-2 text-sm sm:text-base hover:bg-white/5 transition-colors">
+          放弃
+        </button>
+        <button onclick="checkAnswer()" class="flex-1 bg-[#d4b876] text-black font-bold py-2 text-sm sm:text-base hover:brightness-110 transition-all">
+          验证
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 成功提示 (Toast) -->
+  <div id="toast" class="fixed top-10 left-1/2 transform -translate-x-1/2 bg-[#d4b876] text-black px-6 py-2 sm:px-8 sm:py-3 rounded shadow-lg opacity-0 pointer-events-none transition-opacity duration-500 font-bold z-50 text-sm sm:text-base">
+    <span id="toast-message">获取成功！</span>
+  </div>
+
+  <script>
+    let currentTask = null;
+    let isQuizMode = false;
+    let selectedOption = null;
+    let correctAnswerIndex = null;
+    let isCorrect = false;
+    let currentQuiz = null;
+
+    // 测试题题库
+    const quizQuestions = [
+      {
+        question: "请问第五人格BWIKI现任站长是：",
+        options: ["@摸鱼达人作业君", "@小猪小天", "@网易第五人格官方", "bilibili"],
+        answer: 0
+      },
+      {
+        question: "请问本模拟器的开发者是：",
+        options: ["@摸鱼达人作业君", "@小猪小天", "@网易第五人格官方", "bilibili"],
+        answer: 0
+      },
+      {
+        question: "本模拟器是：",
+        options: ["免费的", "付费的"],
+        answer: 0
+      },
+      {
+        question: "WIKI是由谁维护的：",
+        options: ["玩家", "官方", "官方雇佣的人员"],
+        answer: 0
+      }
+    ];
+
+    // 初始化：更新顶部显示的资源（如果有）
+    function updateDisplay() {
+      try {
+        const resources = JSON.parse(localStorage.getItem('shared_resources')) || {};
+        document.getElementById('display-inspiration').innerText = resources['inspiration'] || 0;
+        document.getElementById('display-fragments').innerText = resources['fragments'] || 0;
+      } catch (e) {
+        console.log("No shared resources found");
+      }
+    }
+    updateDisplay();
+
+    // 打开验证弹窗
+    function openVerifyModal(resourceKey, amount, resourceName) {
+      // 随机选择数学题或测试题 (1:1概率)
+      const isMathQuestion = Math.random() < 0.5;
+      
+      if (isMathQuestion) {
+        // 数学题模式
+        const num1 = Math.floor(Math.random() * 20) + 1; // 1-20
+        const num2 = Math.floor(Math.random() * 20) + 1; // 1-20
+        const isPlus = Math.random() > 0.5;
+        
+        const question = isPlus ? `${num1} + ${num2}` : `${Math.max(num1, num2)} - ${Math.min(num1, num2)}`;
+        const answer = isPlus ? num1 + num2 : Math.max(num1, num2) - Math.min(num1, num2);
+
+        currentTask = {
+          resourceKey,
+          amount,
+          resourceName,
+          answer,
+          isMath: true
+        };
+
+        // 显示数学题元素
+        document.getElementById('math-question').classList.remove('hidden');
+        document.getElementById('math-answer').classList.remove('hidden');
+        document.getElementById('math-answer').value = '';
+        document.getElementById('quiz-question').classList.add('hidden');
+        document.getElementById('result-container').classList.add('hidden');
+        document.getElementById('confirm-btn').classList.add('hidden');
+        
+        // 设置数学题问题
+        document.getElementById('math-question').innerText = `${question} = ?`;
+        
+        isQuizMode = false;
+        currentQuiz = null;
+      } else {
+        // 测试题模式
+        const randomIndex = Math.floor(Math.random() * quizQuestions.length);
+        const quiz = quizQuestions[randomIndex];
+        
+        currentTask = {
+          resourceKey,
+          amount,
+          resourceName,
+          isMath: false
+        };
+        
+        currentQuiz = quiz;
+
+        // 设置测试题内容
+        document.getElementById('quiz-text').innerText = quiz.question;
+        const optionsContainer = document.getElementById('quiz-options');
+        optionsContainer.innerHTML = '';
+        
+        quiz.options.forEach((option, index) => {
+          const button = document.createElement('button');
+          button.className = 'option-btn';
+          button.innerText = `${String.fromCharCode(65 + index)}. ${option}`;
+          button.onclick = () => selectOption(button, index, quiz.answer);
+          optionsContainer.appendChild(button);
+        });
+        
+        correctAnswerIndex = quiz.answer;
+        selectedOption = null;
+        isCorrect = false;
+        
+        // 显示测试题元素
+        document.getElementById('math-question').classList.add('hidden');
+        document.getElementById('math-answer').classList.add('hidden');
+        document.getElementById('quiz-question').classList.remove('hidden');
+        document.getElementById('result-container').classList.add('hidden');
+        document.getElementById('confirm-btn').classList.add('hidden');
+        
+        isQuizMode = true;
+      }
+
+      document.getElementById('verify-modal').classList.remove('hidden');
+      if (!isQuizMode) {
+        document.getElementById('math-answer').focus();
+      }
+      
+      // 调整弹窗尺寸
+      setTimeout(adjustModalSize, 100);
+    }
+
+    // 调整弹窗尺寸
+    function adjustModalSize() {
+      const modalContent = document.querySelector('.modal-content');
+      
+      // 横屏适配
+      if (window.matchMedia("(orientation: landscape)").matches) {
+        modalContent.style.maxWidth = '90vw';
+        modalContent.style.maxHeight = '80vh';
+      } else {
+        modalContent.style.maxWidth = 'calc(100vw - 32px)';
+        modalContent.style.maxHeight = '90vh';
+      }
+    }
+
+    // 选择选项
+    function selectOption(button, selectedIndex, correctIndex) {
+      // 清除之前的选择
+      document.querySelectorAll('.option-btn').forEach(btn => {
+        btn.classList.remove('selected', 'correct', 'incorrect');
+      });
+      
+      // 标记当前选择
+      button.classList.add('selected');
+      selectedOption = selectedIndex;
+    }
+
+    // 关闭弹窗
+    function closeModal() {
+      document.getElementById('verify-modal').classList.add('hidden');
+      currentTask = null;
+      isQuizMode = false;
+      selectedOption = null;
+      currentQuiz = null;
+    }
+
+    // 确认答案（用于测试题答错后）
+    function confirmAnswer() {
+      if (isQuizMode && selectedOption !== null) {
+        const rewardMultiplier = isCorrect ? 3 : 1;
+        addResource(
+          currentTask.resourceKey, 
+          currentTask.amount * rewardMultiplier, 
+          currentTask.resourceName,
+          rewardMultiplier
+        );
+        closeModal();
+      }
+    }
+
+    // 检查答案
+    function checkAnswer() {
+      if (isQuizMode) {
+        // 测试题模式
+        if (selectedOption === null) {
+          // 没有选择选项
+          document.getElementById('result-message').innerText = '请选择一个答案';
+          document.getElementById('result-message').className = 'result-message result-incorrect';
+          document.getElementById('result-container').classList.remove('hidden');
+          return;
+        }
+        
+        // 显示结果
+        const optionButtons = document.querySelectorAll('.option-btn');
+        optionButtons.forEach((btn, index) => {
+          btn.classList.remove('selected');
+        });
+        
+        if (selectedOption === correctAnswerIndex) {
+          // 答对了
+          optionButtons[selectedOption].classList.add('correct');
+          isCorrect = true;
+          document.getElementById('result-message').innerText = '回答正确！获得3倍奖励！';
+          document.getElementById('result-message').className = 'result-message result-correct';
+        } else {
+          // 答错了
+          optionButtons[selectedOption].classList.add('incorrect');
+          optionButtons[correctAnswerIndex].classList.add('correct');
+          isCorrect = false;
+          document.getElementById('result-message').innerHTML = `回答错误！<br>正确答案是：<strong>${String.fromCharCode(65 + correctAnswerIndex)}. ${currentQuiz.options[correctAnswerIndex]}</strong>`;
+          document.getElementById('result-message').className = 'result-message result-incorrect';
+        }
+        
+        document.getElementById('result-container').classList.remove('hidden');
+        document.getElementById('confirm-btn').classList.remove('hidden');
+        document.getElementById('confirm-btn').innerText = isCorrect ? '领取奖励' : '确认并获得奖励';
+      } else {
+        // 数学题模式
+        const input = document.getElementById('math-answer').value;
+        if (!currentTask) return;
+
+        if (parseInt(input) === currentTask.answer) {
+          // 答对了
+          addResource(currentTask.resourceKey, currentTask.amount, currentTask.resourceName);
+          closeModal();
+        } else {
+          // 答错了
+          const inputElem = document.getElementById('math-answer');
+          inputElem.classList.add('border-red-500', 'text-red-500');
+          inputElem.value = '';
+          inputElem.placeholder = '错误，请重试';
+          setTimeout(() => {
+            inputElem.classList.remove('border-red-500', 'text-red-500');
+            inputElem.placeholder = '输入答案';
+          }, 1000);
+        }
+      }
+    }
+
+    // 添加资源逻辑
+    function addResource(key, amount, name, multiplier = 1) {
+      try {
+        let resources = JSON.parse(localStorage.getItem('shared_resources')) || {};
+        resources[key] = (resources[key] || 0) + amount;
+        localStorage.setItem('shared_resources', JSON.stringify(resources));
+        
+        updateDisplay();
+        const message = multiplier === 3 
+          ? `充值成功：获得 ${amount} ${name} (3倍奖励)` 
+          : `充值成功：获得 ${amount} ${name}`;
+        showToast(message);
+        
+        // 可选：通知父窗口
+        if (window.parent && window.parent !== window) {
+           // window.parent.location.reload(); // 如果需要立即刷新父窗口
+        }
+      } catch (e) {
+        alert("保存失败，请检查浏览器设置。");
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-message').innerText = msg;
+      toast.classList.remove('opacity-0');
+      toast.style.top = '15%'; // Slide down effect
+      setTimeout(() => {
+        toast.classList.add('opacity-0');
+        toast.style.top = '10%';
+      }, 2000);
+    }
+
+    // 监听屏幕方向变化
+    window.addEventListener('orientationchange', function() {
+      setTimeout(function() {
+        // 重新计算布局
+        document.body.style.width = window.innerWidth + 'px';
+        document.body.style.height = window.innerHeight + 'px';
+        
+        // 如果弹窗打开，重新调整弹窗
+        if (!document.getElementById('verify-modal').classList.contains('hidden')) {
+          adjustModalSize();
+        }
+      }, 300); // 延迟执行以确保方向变化完成
+    });
+
+    // 监听窗口大小变化
+    window.addEventListener('resize', function() {
+      document.body.style.width = window.innerWidth + 'px';
+      document.body.style.height = window.innerHeight + 'px';
+      
+      // 如果弹窗打开，重新调整弹窗
+      if (!document.getElementById('verify-modal').classList.contains('hidden')) {
+        adjustModalSize();
+      }
+    });
+  </script>
+</body>
+</html>

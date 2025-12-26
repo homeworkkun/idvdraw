@@ -1,0 +1,404 @@
+{
+  "id": "S2E1",
+  "name": "第2赛季·精华1",
+  "essenceImage": "./img/4xn1b7eewict5u1aqwviy4c6n7gpc74.png",
+  "diff_A": 2,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "明日之辉",
+        "img": "./img/7xj7lpwnzlk6gc6gun0zl2di9cljuol.png",
+        "type": "时装",
+        "description": "希望，是对明日光耀的预期",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "神圣之辉",
+        "img": "./img/evh3tv4uf44q8hiiv8hdq0fthdls4vb.png",
+        "type": "时装",
+        "description": "过度的神性，往往比恶魔还恶劣",
+        "repeat": 1000
+      },
+      {
+        "name": "紫孔雀",
+        "img": "./img/bw357h5ej270wyl48vuc0k16rqotykp.png",
+        "type": "时装",
+        "description": "孔雀东南飞，五里一徘徊。",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "烈酒师",
+        "img": "./img/hz05ht66hjtpx27vi1p2uypt9hwfsqc.png",
+        "type": "时装",
+        "description": "他的作品绝不接受“索然无味”这种评价!",
+        "repeat": 200
+      },
+      {
+        "name": "庆典司仪",
+        "img": "./img/2bw2tdn6wg7vrld604kh6z5znrgm298.png",
+        "type": "时装",
+        "description": "庆典之上，司仪永远活力四射",
+        "repeat": 200
+      },
+      {
+        "name": "花匠",
+        "img": "./img/k890m4gbac1o04ux7gzqs766uagvcmp.png",
+        "type": "时装",
+        "description": "她所呵护的花卉从不标价，有缘者得之。",
+        "repeat": 200
+      },
+      {
+        "name": "白鲤",
+        "img": "./img/3dpccgw3ddo7r49pts2qbza9scfwv16.png",
+        "type": "时装",
+        "description": "锦鲤吉运的福佑，是否会随着服饰的光泽渐渐褪去？",
+        "repeat": 200
+      },
+      {
+        "name": "信物",
+        "img": "./img/ly1uoccw8oovss242xvu1bmk0qt7oj7.png",
+        "type": "随身物品",
+        "description": "古怪的填充物从中满溢而出，将其当做信物的人，其信仰一定异于常人",
+        "repeat": 200
+      },
+      {
+        "name": "彼岸花",
+        "img": "./img/h0mpx1w4eqrrkh1wz5bcwjzvzzksgn7.png",
+        "type": "随身物品",
+        "description": "花开无叶，叶生无花，花叶永不相见。 情不为因果，缘注定生死，一生彼岸，一盏忘川。",
+        "repeat": 200
+      },
+      {
+        "name": "蜘蛛-玩物",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "蜘蛛专属匹配大厅等待动作，玩物",
+        "repeat": 200
+      },
+      {
+        "name": "红蝶-捉迷藏",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "红蝶专属匹配大厅等待动作，捉迷藏",
+        "repeat": 200
+      },
+      {
+        "name": "红蝶-笑颜",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "红蝶专属匹配大厅等待动作，笑颜",
+        "repeat": 200
+      },
+      {
+        "name": "红蝶-拜访",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "红蝶专属匹配大厅等待动作，拜访，求生者可见",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "萌版小丑",
+        "img": "./img/defzyo5li7hamu9dcu08ic83wlyij3w.png",
+        "type": "头像",
+        "description": "小丑的萌版头像",
+        "repeat": 36
+      },
+      {
+        "name": "萌版鹿头",
+        "img": "./img/847moo7t9afvitlslv7rwt06v3sr1s1.png",
+        "type": "头像",
+        "description": "鹿头的萌版头像",
+        "repeat": 36
+      },
+      {
+        "name": "萌版杰克",
+        "img": "./img/8flx7397xanbztvsyz815mx6mh6249v.png",
+        "type": "头像",
+        "description": "杰克的萌版头像",
+        "repeat": 36
+      },
+      {
+        "name": "律师-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，律师专属",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，冒险家专属",
+        "repeat": 36
+      },
+      {
+        "name": "医生-挑衅",
+        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "type": "个性动作",
+        "description": "挑衅动作，医生专属",
+        "repeat": 36
+      },
+      {
+        "name": "绿帽",
+        "img": "./img/j1mci311j99qwaig9jweu3lnbmwn22i.png",
+        "type": "时装",
+        "description": "只要没人叫他“花椰菜”，小丑还是很乐意以绿帽造型来活跃气氛的",
+        "repeat": 36
+      },
+      {
+        "name": "白蜡",
+        "img": "./img/2qo52u05v038q2qflz46eyl2wlwa53k.png",
+        "type": "时装",
+        "description": "失去执念的绝望，失去挚爱的苍白",
+        "repeat": 36
+      },
+      {
+        "name": "珊瑚红",
+        "img": "./img/3etgdwrpifk7vdsxl4nhkx3uhex2ygg.png",
+        "type": "时装",
+        "description": "红色代表着热情与执着",
+        "repeat": 36
+      },
+      {
+        "name": "匿踪绿",
+        "img": "./img/m5esvmj2xv235ub7zkrcieexent781j.png",
+        "type": "时装",
+        "description": "活跃的绿色也有静谧的一面",
+        "repeat": 36
+      },
+      {
+        "name": "黑领",
+        "img": "./img/ra99xhcyvpef9pqopxhbq8mtrkrmgbl.png",
+        "type": "时装",
+        "description": "就这身衣服，干什么活染上什么污渍都不必担心",
+        "repeat": 36
+      },
+      {
+        "name": "秋意绿",
+        "img": "./img/rgknl22gyth6m8femixwruufqi8e35v.png",
+        "type": "时装",
+        "description": "有人会问，对于盲女而言，服饰的配色有任何意义吗？－－至少她会成为别人眼中的风景线",
+        "repeat": 36
+      },
+      {
+        "name": "浅叶爵",
+        "img": "./img/rhhklmy8mruoq8lbcpwlfi2iptxh2i7.png",
+        "type": "时装",
+        "description": "有时候拿叶子切片练练手，也是不错的消遣",
+        "repeat": 36
+      },
+      {
+        "name": "金红帛",
+        "img": "./img/kdorn3cvj4qir956xvnpidprtxi5tq7.png",
+        "type": "时装",
+        "description": "嚓嚓嗦嗦，金色的绸帛这么剪开会不会太浪费了?",
+        "repeat": 36
+      },
+      {
+        "name": "抹茶绿",
+        "img": "./img/7h8y2233w7u13fuzqlkjflzjpntr4q3.png",
+        "type": "时装",
+        "description": "绿色代表着活力与机智",
+        "repeat": 36
+      },
+      {
+        "name": "创意紫",
+        "img": "./img/jra4rkpv9wosozp8eq2n5q7zmfoiqq4.png",
+        "type": "时装",
+        "description": "悦目的颜色也能激发创意！",
+        "repeat": 36
+      },
+      {
+        "name": "玫瑰爵",
+        "img": "./img/o8is5p6n8mxe72sv7svtyljwyq5k228.png",
+        "type": "时装",
+        "description": "千万别误会，这身玫瑰色不过是为与红酒相配，与其他液体毫无关系",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "魔术师匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”-准备",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "“慈善家”匹配大厅动作，准备",
+        "repeat": 36
+      },
+      {
+        "name": "空军-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "空军匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "律师-小憩",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "律师匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-等待",
+        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "type": "等待动作",
+        "description": "魔术师匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”-卡通",
+        "img": "./img/halx2lkbq0mvpyvl4pyc97yoj7fi6h5.png",
+        "type": "涂鸦",
+        "description": "“慈善家”专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-卡通",
+        "img": "./img/5657wos2qj8gq9yz35vdpwq6s5o26qo.png",
+        "type": "涂鸦",
+        "description": "佣兵专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "医生-卡通",
+        "img": "./img/mbp0mzg9gk1m7rk1esvhatnly5wrhne.png",
+        "type": "涂鸦",
+        "description": "医生专属涂鸦，卡通",
+        "repeat": 36
+      },
+      {
+        "name": "律师-抢白",
+        "img": "./img/ka3a6mfrsisf6zcskzuhdwoyg9yyiz7.png",
+        "type": "涂鸦",
+        "description": "律师专属涂鸦，抢白",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "冒险家-剪影",
+        "img": "./img/b8hmra5rl5frq77dkblp5pm38j7elmg.png",
+        "type": "涂鸦",
+        "description": "冒险家专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "鹿头-剪影",
+        "img": "./img/bef5temncav3t0j2xkmyz28op9w8xxf.png",
+        "type": "涂鸦",
+        "description": "鹿头专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "佣兵-剪影",
+        "img": "./img/0sndfonvxtjlzh8tlxylsftd93n4cxf.png",
+        "type": "涂鸦",
+        "description": "佣兵专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "律师-剪影",
+        "img": "./img/i0otux5fuqzh5y9m7djaqyfk5ijnmx9.png",
+        "type": "涂鸦",
+        "description": "律师专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "医生-剪影",
+        "img": "./img/ewj0ttpbltnyhlht9l34k4j2o7t5e0g.png",
+        "type": "涂鸦",
+        "description": "医生专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "空军-剪影",
+        "img": "./img/7b1dwrxkdu0d5smfxawas14eg5mnlp6.png",
+        "type": "涂鸦",
+        "description": "空军专属涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "镰刀-彩底",
+        "img": "./img/0iol1vgbfkdum97ztqm84izsb1eu7lw.png",
+        "type": "涂鸦",
+        "description": "镰刀涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "前进",
+        "img": "./img/rq2zv4ggq00tr73aebakvp3xr4cpf05.png",
+        "type": "个性动作",
+        "description": "表示前进的动作",
+        "repeat": 6
+      },
+      {
+        "name": "地狱感知",
+        "img": "./img/dx0hthwll4khpo16r0aaxp1objjfhk8.png",
+        "type": "头像",
+        "description": "地狱感知的基础头像",
+        "repeat": 6
+      },
+      {
+        "name": "鹿头",
+        "img": "./img/ng6sffy8ize4hk20qrw1pu8xkl2s3zi.png",
+        "type": "头像",
+        "description": "鹿头的基础头像",
+        "repeat": 6
+      },
+      {
+        "name": "木偶比利",
+        "img": "./img/jc06lr4jalfxrcxe51xdutdz4jvq3qg.png",
+        "type": "头像",
+        "description": "木偶比利的基础头像",
+        "repeat": 6
+      },
+      {
+        "name": "医生",
+        "img": "./img/4qh02y6iwi9p41pwk2makupxml12ey5.png",
+        "type": "头像",
+        "description": "医生的基础头像",
+        "repeat": 6
+      },
+      {
+        "name": "空军",
+        "img": "./img/i36jwfr2bukde3am8tuah2r711hfi4j.png",
+        "type": "头像",
+        "description": "空军的基础头像",
+        "repeat": 6
+      },
+      {
+        "name": "杰克",
+        "img": "./img/fq370hehq8iuiv3hfrnoa4t7i1z1uk5.png",
+        "type": "头像",
+        "description": "杰克的基础头像",
+        "repeat": 6
+      }
+    ]
+  }
+}

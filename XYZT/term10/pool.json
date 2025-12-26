@@ -1,0 +1,77 @@
+{
+  "id": "lucky_dice_10",
+  "name": "幸运之骰·第10期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "武装侦探社": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/oktmpndcz7519kq4jxalvczihc13xq3.png",
+      "description": "文豪野犬联动头像框(文豪野犬联动限定获得) ",
+      "repeat": 200
+    },
+    "中岛敦": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/103jiim7bs0r4rwhpsfswru0dz0hnd6.png",
+      "description": "文豪野犬联动活动头像（文豪野犬联动限定获得） ",
+      "repeat": 6
+    },
+    "中岛敦Ⅰ": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/a43y7gqykavmz6e8ohwr87lcsgdoqur.png",
+      "description": "文豪野犬联动涂鸦（文豪野犬联动限定获得) ",
+      "repeat": 6
+    },
+    "中岛敦Ⅱ": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/45qcthvlh2w9hx8x6ot9carj2c01inf.png",
+      "description": "文豪野犬联动涂鸦（文豪野犬联动限定获得) ",
+      "repeat": 6
+    },
+    "《文豪野犬》": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/1vr2fyoo1azpw6pol0i2qh4he73ca5h.png",
+      "description": "文豪野犬联动涂鸦（文豪野犬联动限定获得) ",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

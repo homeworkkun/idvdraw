@@ -1,0 +1,277 @@
+{
+  "id": "S12E2",
+  "name": "枪弹辩驳联动精华",
+  "essenceImage": "./img/jjrpjub9m88xq2p1tntshjnl82k4y48.png",
+  "diff_A": 0,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 99
+  },
+  "items": {
+    "S": [
+      {
+        "name": "黑白熊",
+        "img": "./img/26serhdgj6n86a6uhdofm5yrn9kjdsa.png",
+        "type": "时装",
+        "description": "希望峰校长，才不是什么布偶呢\n枪弹辩驳联动精华限定稀世时装",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "江之岛盾子",
+        "img": "./img/ddtjj9e7i5paspouzhwp73r6xj9uzy0.png",
+        "type": "时装",
+        "description": "希望峰学园第78期学生，“超高中级的平面模特”。其实真实身份是……\n枪弹辩驳联动精华限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "雾切响子",
+        "img": "./img/bniwc38u6sfve31a3n7xwbcmfpo4glq.png",
+        "type": "时装",
+        "description": "希望峰学园第78期学生，“超高中级的侦探”。充满神秘感。\n枪弹辩驳联动精华限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "苗木诚",
+        "img": "./img/kzjqrso7kow30enkmicpiod672thp6g.png",
+        "type": "时装",
+        "description": "希望峰学园第78期学生，“超高中级的幸运”。是个平凡人。\n枪弹辩驳联动精华限定奇珍时装",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "26号守卫-超高中级的“起舞”",
+        "img": "./img/ses7a7zcej5ohyejiuk0m3rfcx8bduk.png",
+        "type": "个性动作",
+        "description": "起舞动作，26号守卫专属。枪弹辩驳联动",
+        "repeat": 200
+      },
+      {
+        "name": "26号守卫-超高中级的“行礼”",
+        "img": "./img/9quaglo3avzm4oje98c95i6kdwm7boh.png",
+        "type": "个性动作",
+        "description": "行礼动作，26号守卫专属。枪弹辩驳联动",
+        "repeat": 200
+      },
+      {
+        "name": "空军-超高中级的“躺地”",
+        "img": "./img/ei843ex86369mevypmiokl6rwa003nz.png",
+        "type": "个性动作",
+        "description": "躺地动作，空军专属。枪弹辩驳联动",
+        "repeat": 200
+      },
+      {
+        "name": "调酒师-超高中级的“颠球”",
+        "img": "./img/9dpiq1jfijo4mlmsuznep5jm85a614o.png",
+        "type": "个性动作",
+        "description": "颠球动作，调酒师专属。枪弹辩驳联动",
+        "repeat": 200
+      },
+      {
+        "name": "幸运儿-超高中级的“前进”",
+        "img": "./img/3m60pdyetcxhgptokxcpg2d5hd6ti9w.png",
+        "type": "个性动作",
+        "description": "前进动作，幸运儿专属。枪弹辩驳联动",
+        "repeat": 200
+      },
+      {
+        "name": "调酒师-打招呼",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "调酒师匹配大厅动作，打招呼（枪弹辩驳联动限定获得）",
+        "repeat": 200
+      },
+      {
+        "name": "幸运儿-打招呼",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "幸运儿匹配大厅动作，打招呼（枪弹辩驳联动限定获得）",
+        "repeat": 200
+      },
+      {
+        "name": "空军-思索",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "空军匹配大厅动作，思索（枪弹辩驳联动限定获得）",
+        "repeat": 200
+      },
+      {
+        "name": "26号守卫-醒酒",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "26号守卫匹配大厅动作，醒酒（枪弹辩驳联动限定获得）",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "希望峰校徽",
+        "img": "./img/f7ur1u2fwyw0kutqt364hpdt6zxd5my.png",
+        "type": "涂鸦",
+        "description": "希望峰学园校徽的涂鸦(枪弹辩驳联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "黑白熊",
+        "img": "./img/3oigko59im8k59d61ovw5em8t31umei.png",
+        "type": "涂鸦",
+        "description": "黑白熊涂鸦，26号守卫专属（枪弹辩驳联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "超高中级的分析力",
+        "img": "./img/h2jf1db1f61x4i81fdf24mm4gps88oy.png",
+        "type": "涂鸦",
+        "description": "超高中级的分析力，调酒师专属（枪弹辩驳联动限定获得)",
+        "repeat": 36
+      },
+      {
+        "name": "幸运儿-补习课题",
+        "img": "./img/j7k5g7j8hha8k2egf5jaoaklsxkvmje.png",
+        "type": "涂鸦",
+        "description": "补习课题涂鸦，幸运儿专属（枪弹辩驳联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "空军-补习课题",
+        "img": "./img/8eyn3ag9y7xa7847ifkxrwtqj8h649j.png",
+        "type": "涂鸦",
+        "description": "补习课题涂鸦，空军专属（枪弹辩驳联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "黄油盒子",
+        "img": "./img/mrem498157tur424pugqo6mckltqvsl.png",
+        "type": "涂鸦",
+        "description": "黄油盒子涂鸦，26号守卫专属（枪弹辩驳联动限定获得）",
+        "repeat": 36
+      },
+      {
+        "name": "苗木诚",
+        "img": "./img/hv1zu6iousk7jdx9lqke9uga91p4icm.png",
+        "type": "头像",
+        "description": "超高中级的幸运，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "雾切响子",
+        "img": "./img/ps6gjiitrhsoj1w3a8ui1fmko8bgh5y.png",
+        "type": "头像",
+        "description": "超高中级的侦探，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "舞园沙耶香",
+        "img": "./img/7ks2tew45xxroqg1ewns7qj20l8h5o8.png",
+        "type": "头像",
+        "description": "超高中级的偶像，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "桑田怜恩",
+        "img": "./img/6fb4mssznztycd98py5qv4hmzlq8ts6.png",
+        "type": "头像",
+        "description": "超高中级的棒球选手，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "大和田纹土",
+        "img": "./img/h45755a8ls1wy7qlaomfg5ed2e68gne.png",
+        "type": "头像",
+        "description": "超高中级的飙车族，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "瑟雷丝蒂亚·卢登堡",
+        "img": "./img/bcc10rpc8n4n06z9pw9iw493tu24qk8.png",
+        "type": "头像",
+        "description": "超高中级的赌徒，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "腐川冬子",
+        "img": "./img/g5l4q66z7ru2zyres1o49wg2asr9ht9.png",
+        "type": "头像",
+        "description": "超高中级的文学少女，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "朝日奈葵",
+        "img": "./img/ee0pj4ue5sgvstjjn9c0lgz6176kxj1.png",
+        "type": "头像",
+        "description": "超高中级的游泳选手，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "十神白夜",
+        "img": "./img/bdktf4btliaqjuysubi6h093rb3aao0.png",
+        "type": "头像",
+        "description": "超高中级的名门公子，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "山田一二三",
+        "img": "./img/pi8839hi11bsfiaptydkprkvljahjko.png",
+        "type": "头像",
+        "description": "超高中级的同人作家，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "江之岛盾子",
+        "img": "./img/0i1y0wkty0rbmiy8kbhnwhi2nv9muq6.png",
+        "type": "头像",
+        "description": "超高中级的平面模特，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "叶隐康比吕",
+        "img": "./img/pwc4uxpa5y93bs3och7som6ji0zxolp.png",
+        "type": "头像",
+        "description": "超高中级的占卜师，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "不二咲千寻",
+        "img": "./img/4hxxnle3f8lz5apd2gyb3vaoksgu69n.png",
+        "type": "头像",
+        "description": "超高中级的程序员，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "大神樱",
+        "img": "./img/5o41h88txpmdbdqvj3au985y6ilhqsb.png",
+        "type": "头像",
+        "description": "超高中级的格斗家，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "石丸清多夏",
+        "img": "./img/7c57p30468ei7mjpiog5svyhlzkjsy7.png",
+        "type": "头像",
+        "description": "超高中级的风纪委员，枪弹辩驳联动头像",
+        "repeat": 36
+      },
+      {
+        "name": "战刃骸",
+        "img": "./img/fel37tv0u2y6tsar7hx9imqomre571r.png",
+        "type": "头像",
+        "description": "超高中级的军人，枪弹辩驳联动头像",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

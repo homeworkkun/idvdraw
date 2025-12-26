@@ -1,0 +1,41 @@
+[
+  {
+    "id": "item_001",
+    "name": "B.Duck",
+    "type": "时装",
+    "rarity": "S",
+    "img": "./img/9u9yqpb90t9bmpo5drh46pw73hh243k.png",
+    "description": "B.Duck的礼物。 ",
+    "prices": [
+      {
+        "currency": "inspiration",
+        "amount": 2888
+      },
+      {
+        "currency": "fragments",
+        "amount": 12888
+      }
+    ],
+    "tag": "热",
+    "discount": "8折",
+    "timeLeft": "剩36天",
+    "limit": 1
+  },
+  {
+    "id": "item_002",
+    "name": "碎片大礼包",
+    "type": "礼包",
+    "rarity": "B",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "description": "包含大量碎片的礼包。",
+    "prices": [
+      {
+        "currency": "inspiration",
+        "amount": 540
+      }
+    ],
+    "tag": "热",
+    "discount": "特惠",
+    "limit": 1
+  }
+]

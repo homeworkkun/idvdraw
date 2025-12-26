@@ -1,0 +1,77 @@
+{
+  "id": "lucky_dice_9",
+  "name": "幸运之骰·第9期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "冰封的圣诞": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/ocltibfwnnklw577y07iu9fvi6st8mf.png",
+      "description": "冰天雪地中，万物封冻。（2019年圣诞节活动首次获得）",
+      "repeat": 200
+    },
+    "冬季的暖意": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/7e1hqt9fmhh7rspafpwo5iw1rgqgfjm.png",
+      "description": "2022年第九期幸运之骰活动获得。暖光下，圣诞铃仍在叮当吟唱~（2019年圣诞活动首次获得）",
+      "repeat": 200
+    },
+    "漫天飘雪庆圣诞": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "./img/44xd0xtsgp1h5k99ubbfnbhvun9svay.png",
+      "description": "彩灯亮起，雪花飘落，岁岁平安~(2020年圣诞夜曲活动首次获得) ",
+      "repeat": 6
+    },
+    "童年嬉戏": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/88dmhdfm3xawapsx0ifq6sycy3gwyqw.png",
+      "description": "儿童节活动涂鸦，梦之女巫、爱哭鬼专属 ",
+      "repeat": 6
+    },
+    "童年探险": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/svyzpe3zeo2goipj9gmw6brptzwnmzx.png",
+      "description": "儿童节活动涂鸦，先知、入殓师、勘探员专属 ",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

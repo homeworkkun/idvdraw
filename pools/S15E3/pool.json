@@ -1,0 +1,312 @@
+{
+  "id": "S15E3",
+  "name": "深渊珍宝Ⅳ",
+  "essenceImage": "./img/a918dtbml8nbhb39splxd9qjec5ibrb.png",
+  "diff_A": 0,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "熔铁猎犬",
+        "img": "./img/hxyeh1y0df2exrfzdlpho2djup0d7l9.png",
+        "type": "时装",
+        "description": "它本应是最佳的容器，却反而吞噬了首届获胜的奖品。在本能的驱使下，它在每轮赛道上都掠尽了各自为战的车手。\n深渊珍宝IV限定稀世时装",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "助燃剂",
+        "img": "./img/sb4gvw06mmjhdtrwk3fgy9sdlfhltjv.png",
+        "type": "时装",
+        "description": "隶属能源企业，却是医疗企业的秘密实验员。她明白发动机可用助燃剂，身体可用强化剂，但合格的精神只能通过惨烈的比赛来筛选。\n深渊珍宝Ⅳ限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "反光镜",
+        "img": "./img/7mbw7j9si3imd5pnd5egjh94w7po27i.png",
+        "type": "时装",
+        "description": "隶属医疗企业。她依靠镜面反射在花苑长廊中找寻隐藏捷径。但她早就察觉到，自己也不过是企业试探失控怪物的一块踏板而已。\n深渊珍宝Ⅳ限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "气胎",
+        "img": "./img/nhcym8wron1fznjwrqzkaeglsrg4lyc.png",
+        "type": "时装",
+        "description": "隶属运输企业。他为冻港赛道做足了准备：无论付出什么代价，他都想揭开这条赛道尽头所隐藏的秘密，结束这个阴谋角力的试验场。\n深渊珍宝Ⅳ限定奇珍时装",
+        "repeat": 1000
+      },
+      {
+        "name": "公路骑士",
+        "img": "./img/bfc2lrjduyrbherackvrxg93z92pokn.png",
+        "type": "时装",
+        "description": "曾隶属运输企业。在赛道上，他执着地扮演着时代里最后的骑士，想以车手最纯粹的方式完成比赛——即便经受了无数痛楚和失败。\n深渊珍宝Ⅳ限定奇珍时装",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "轮椅车手",
+        "img": "./img/lv1ojxmhkv7ew76sxvgryuy00d9n9zg.png",
+        "type": "时装",
+        "description": "作为医疗企业创始人之一，她亲历赛场只是为了亲眼见证：这场伟大的巡礼能否再度迎来新的降生。\n深渊珍宝Ⅳ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "赛车机师",
+        "img": "./img/rvajiury95zbogl4fhyrarh4qxg8gq4.png",
+        "type": "时装",
+        "description": "从雪域遗迹中攫取了资源的能源企业，几乎渗透了每一个后勤部门，但他是少有的例外。\n深渊珍宝Ⅳ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "报童",
+        "img": "./img/8i3alnog0eucb36rtpz0mptz66xj2zu.png",
+        "type": "时装",
+        "description": "运输、能源、医疗三大巨头企业的小道消息，都在这个赛场报童手里——包括他们各自与三条赛道有何渊源。\n深渊珍宝Ⅳ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "狂热观众",
+        "img": "./img/f4lm2ptrcf5ph8msyyw03ms06uj002i.png",
+        "type": "时装",
+        "description": "狂热的观众发现：无论赛场多么惨烈，没有放弃的车手总有重新挑战的机会。但其中的代价在离开赛道之后才会真正凸显。\n深渊珍宝Ⅳ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "拆卸工",
+        "img": "./img/th3vf0b5e2323j8mpwmki8v18b0galh.png",
+        "type": "时装",
+        "description": "废车可以用来改进三大企业的技术。但在不停拆卸的忙碌中，他也开始怀念起以前为运输企业打捞沉船的活计。\n深渊珍宝Ⅳ限定独特时装",
+        "repeat": 200
+      },
+      {
+        "name": "小提琴家-拜访",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "小提琴家专属匹配大厅等待动作，拜访",
+        "repeat": 200
+      },
+      {
+        "name": "守墓人-准备",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "守墓人专属匹配大厅等待动作，准备",
+        "repeat": 200
+      },
+      {
+        "name": "画家-起身",
+        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "type": "等待动作",
+        "description": "画家匹配大厅等待动作，起身",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "红沙土",
+        "img": "./img/23vaw0u4960qe7auh3wqengzfi00dai.png",
+        "type": "时装",
+        "description": "这是沙土本来的颜色，并不是额外染上去的。",
+        "repeat": 36
+      },
+      {
+        "name": "黄土墙",
+        "img": "./img/2bqngwx9q497wlydu8x9086bap444fo.png",
+        "type": "时装",
+        "description": "在里面的日子，就是日复一日地盯着墙",
+        "repeat": 36
+      },
+      {
+        "name": "蓝金调",
+        "img": "./img/gewqdupj0rjgm1mzns0wl51oyhiaxdi.png",
+        "type": "时装",
+        "description": "蓝色和金色的搭配，能彰显高贵的腔调。",
+        "repeat": 36
+      },
+      {
+        "name": "灰蝶",
+        "img": "./img/j4bqhc229enmk8rc22dilokwnvejd8n.png",
+        "type": "时装",
+        "description": "共生的缱绻，会在暗影退开之时荡然无存。",
+        "repeat": 36
+      },
+      {
+        "name": "枯叶蝶",
+        "img": "./img/231h2lxbzv1cgdlmkfcdo12nbag3dwy.png",
+        "type": "时装",
+        "description": "囚于破败的躯壳太久，就会忘记灵魂曾经光鲜",
+        "repeat": 36
+      },
+      {
+        "name": "绀",
+        "img": "./img/s2olsmqkkltvjgp2vwshofz901y4cdw.png",
+        "type": "时装",
+        "description": "我不喜欢冬日晴空的颜色，温暖地太不真实。",
+        "repeat": 36
+      },
+      {
+        "name": "绘蓝",
+        "img": "./img/79pnb78d1t6bznb6jpxvcugnmysauph.png",
+        "type": "时装",
+        "description": "以蓝色绘制的图案，有着特殊的层次感。",
+        "repeat": 36
+      },
+      {
+        "name": "涂绿",
+        "img": "./img/m1cz70cyibgqhqb5p2gv2qtms1s1wa2.png",
+        "type": "时装",
+        "description": "用绿色肆意涂抹吧！它是自然和谐的选择。",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，魔术师专属",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，冒险家专属",
+        "repeat": 36
+      },
+      {
+        "name": "律师-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，律师专属",
+        "repeat": 36
+      },
+      {
+        "name": "医生-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，医生专属",
+        "repeat": 36
+      },
+      {
+        "name": "牛仔-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，牛仔专属",
+        "repeat": 36
+      },
+      {
+        "name": "盲女-羞愧",
+        "img": "./img/sstkx9lobsm1t8zq20uazxdydc2fxuh.png",
+        "type": "个性动作",
+        "description": "羞愧动作，盲女专属",
+        "repeat": 36
+      },
+      {
+        "name": "鹿头-熔铁猎犬",
+        "img": "./img/9uu8dz0gxdu391olcpzgttgvavemthv.png",
+        "type": "涂鸦",
+        "description": "鹿头专属涂鸦，熔铁猎犬",
+        "repeat": 36
+      },
+      {
+        "name": "调酒师-助燃剂",
+        "img": "./img/tfeqex5byzt1zpbi78ohwg0pgqq5i9i.png",
+        "type": "涂鸦",
+        "description": "调酒师专属涂鸦，助燃剂",
+        "repeat": 36
+      },
+      {
+        "name": "祭司-反光镜",
+        "img": "./img/ijzd5n5kf21buavmv8wtlcly8zwi1gh.png",
+        "type": "涂鸦",
+        "description": "祭司专属涂鸦，反光镜",
+        "repeat": 36
+      },
+      {
+        "name": "杂技演员-气胎",
+        "img": "./img/p7uvse4zn5rexo00sct6kp9ttw42yt5.png",
+        "type": "涂鸦",
+        "description": "杂技演员专属涂鸦，气胎",
+        "repeat": 36
+      },
+      {
+        "name": "勘探员-公路骑士",
+        "img": "./img/4bqneei8tqg87t6vzu0morqaciaiq1p.png",
+        "type": "涂鸦",
+        "description": "勘探员专属涂鸦，公路骑士",
+        "repeat": 36
+      },
+      {
+        "name": "舞女-另一面",
+        "img": "./img/6z2d3tq9pnzd34xrupvlbebhgs2zoel.png",
+        "type": "头像",
+        "description": "舞女的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "先知-另一面",
+        "img": "./img/ig8bk0rdrn2uqmne4l6dk2m7dklhvmc.png",
+        "type": "头像",
+        "description": "先知的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "入殓师-另一面",
+        "img": "./img/7ilxshn0ghja62fvidxaj1wipeu1q9a.png",
+        "type": "头像",
+        "description": "入殓师的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "勘探员-另一面",
+        "img": "./img/dw4ez3wtcncaw36rdzsgv8kzkig0s05.png",
+        "type": "头像",
+        "description": "勘探员的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "摄影师-另一面",
+        "img": "./img/t3j5k8ocontx5itxv12cyrhskw4c14o.png",
+        "type": "头像",
+        "description": "摄影师的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "疯眼-另一面",
+        "img": "./img/a6r9v4gxupitc0xme6tn2hahl6sck0e.png",
+        "type": "头像",
+        "description": "疯眼的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "梦之女巫-另一面",
+        "img": "./img/oylg0ljksjtk6gge9ro53gdjvdvzq8t.png",
+        "type": "头像",
+        "description": "梦之女巫的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      },
+      {
+        "name": "爱哭鬼-另一面",
+        "img": "./img/dolgh86sudr7a77kobdu16py4slcx6s.png",
+        "type": "头像",
+        "description": "爱哭鬼的黑化头像，预示着他的另一面 ",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

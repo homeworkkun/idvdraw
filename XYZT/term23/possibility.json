@@ -1,0 +1,68 @@
+{
+  "tiers": [
+    {
+      "id": "frame",
+      "name": "头像框",
+      "probability": 0.0215,
+      "items": [
+        {
+          "name": "博山雾影",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "id": "avatar",
+      "name": "头像",
+      "probability": 0.0645,
+      "items": [
+        {
+          "name": "夏夜惊梦",
+          "weight": 1.0
+        },
+        {
+          "name": "夏日特饮",
+          "weight": 1.0
+        },
+        {
+          "name": "幸运儿-萤火",
+          "weight": 1.0
+        },
+        {
+          "name": "赛龙舟",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "id": "qizhentiyaka",
+      "name": "奇珍时装体验卡",
+      "probability": 0.1075,
+      "items": [
+        {
+          "name": "通用奇珍时装体验卡*1天",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "id": "tiyanka",
+      "name": "体验卡",
+      "probability": 0.8065,
+      "items": [
+        {
+          "name": "监管者角色体验卡*1天",
+          "weight": 1.0
+        },
+        {
+          "name": "求生者角色体验卡*1天",
+          "weight": 1.0
+        },
+        {
+          "name": "通用独特时装体验卡*1天",
+          "weight": 1.0
+        }
+      ]
+    }
+  ]
+}

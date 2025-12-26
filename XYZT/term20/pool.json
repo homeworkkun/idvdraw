@@ -1,0 +1,77 @@
+{
+  "id": "lucky_dice_20",
+  "name": "幸运之骰·第20期",
+  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "宁芙奖台": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "./img/8rladjligz3z2vwiesso99kk4ugz9mf.png",
+      "description": "站在最璀璨耀眼的聚光灯下，轻吻独属于你的最高荣誉。（2022年演绎之星活动首次获得） ",
+      "repeat": 200
+    },
+    "医生-演绎之星": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/aq6dmes1vni84abdi7x2vw8rpjyq4ni.png",
+      "description": "医生专属涂鸦，2019年演绎之星 ",
+      "repeat": 6
+    },
+    "先知-演绎之星": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/623635l1g7a06h4v0c2g4bh08l6rern.png",
+      "description": "先知专属涂鸦，2019年演绎之星 ",
+      "repeat": 6
+    },
+    "红蝶-演绎之星": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/qylmkxrsyw5ybvtz9i90jac4rilmzcc.png",
+      "description": "红蝶专属涂鸦，2019年演绎之星 ",
+      "repeat": 6
+    },
+    "红蝶般若-演绎之星": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "./img/kxu420f4hdgv2xm7s0dx2yy9kllmfph.png",
+      "description": "红蝶专属涂鸦，2019年演绎之星 ",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}
