@@ -5,7 +5,8 @@
 精华池完整复刻于2025年12月26日<br>
 如果你对本模拟器有任何意见、建议，或是发现BUG，请向我反馈<br>[>>>>>>>>>>点此反馈<<<<<<<<<<](https://web.homeworkkun.top/WIKI/反馈#jinghuamoniqi)<br>
 反馈时请说明<font color="red"><b>具体问题</b></font>、涉及<font color="red"><b>哪些精华</b></font><br>
-客户端下载：[网盘](https://pan.quark.cn/s/a6bc33e2f371)
+客户端下载：[网盘](https://pan.quark.cn/s/a6bc33e2f371)<br>
+本项目源代码已公开：[Github](https://github.com/homeworkkun/idvddraw)
 
 # 精华机制说明
 1. 第18赛季起才有灵感折扣，6折或8折<br>
