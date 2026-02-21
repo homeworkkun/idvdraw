@@ -1,0 +1,98 @@
+{
+  "id": "lucky_dice_41-1",
+  "name": "幸运之骰·第41期-系列1",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 9999,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "桃源宴影": {
+      "type": "头像框",
+      "rarity": "C",
+      "img": "/resource/a1c73fbc3f0c2cc9da32b2398f561de6.png",
+      "description": "桃园记时与外界有异，然黄发垂髫，觥筹交错，宴饮者、奏乐者，实则异曲同工。（通过2025年“窑火除岁 彩梦贺新”活动首次获得）",
+      "repeat": 200
+    },
+    "福来运转": {
+      "type": "头像框",
+      "rarity": "C",
+      "img": "/resource/3e39876d9b75bbc056de6d6722586168.png",
+      "description": "福来运转，安康如意（通过2022年“灯影遂愿”春节活动首次获得）",
+      "repeat": 200
+    },
+    "司药": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "/resource/29ff19b928550212b61320555c877def.png",
+      "description": "司药者，游历云间，尝遍百草，推己及人，殚精竭虑。（通过2025年“窑火除岁 彩梦贺新”活动首次获得）",
+      "repeat": 6
+    },
+    "虎年行运": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "/resource/9e7a78ef043de36a477066aba5a0f9a7.png",
+      "description": "虎年行大运！（通过2022年“灯影遂愿”春节活动首次获得）",
+      "repeat": 6
+    },
+    "医生-司药": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/150f8335763a0fd598aceb34023d4b58.png",
+      "description": "医生专属涂鸦，通过2025年“窑火除岁 彩梦贺新”活动首次获得",
+      "repeat": 6
+    },
+    "牛仔-谪仙": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/1904907c913e2eb33c15eab91258c828.png",
+      "description": "牛仔专属涂鸦，通过2025年“窑火除岁 彩梦贺新”活动首次获得",
+      "repeat": 6
+    },
+    "渔女-瑶彩": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/b961863c39e209acb16e95a2f5dafd9a.png",
+      "description": "渔女专属涂鸦，通过2025年“窑火除岁 彩梦贺新”活动首次获得",
+      "repeat": 6
+    },
+    "祭司-惊鸿": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/b65670d05e263f804d984d20ab3e434b.png",
+      "description": "祭司专属涂鸦，神女奏琵琶",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

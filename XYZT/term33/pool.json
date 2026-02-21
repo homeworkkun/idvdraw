@@ -1,89 +1,89 @@
 {
   "id": "lucky_dice_33",
   "name": "幸运之骰·第33期",
-  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
   "description": "幸运之骰",
   "completeDrawLimit": 200,
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "conversionRate": 50
   },
   "items": {
     "满分答卷": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/6remwgce6f86crxd0vqshfa9qdro16t.png",
+      "img": "/resource/5038ffa4d226a615d79fbcbb2c7d665f.png",
       "description": "由于侦探对庄园逃生理论知识的熟络，特颁此殊荣。(通过2021年“轮到你了”活动首次获得) ",
       "repeat": 6
     },
     "再见面的校园": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/0lo9anpjbxl565qee2wcrorgxzvilpq.png",
+      "img": "/resource/9d1b5eed454b3b2441df3ad1631d1ad5.png",
       "description": "返校的周末，心中满是不安的憧憬。（2019年返校周末活动首次获得） ",
       "repeat": 6
     },
     "佣兵-体育课": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/55pbg4lmcznytd3uytryhzvutk0sqnv.png",
+      "img": "/resource/8955fcaa496aaaeb97e8094b6d586539.png",
       "description": "开学季活动奖励涂鸦 ",
       "repeat": 6
     },
     "园丁-手工课": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/qsjn2clr138sa7lvsiqe6xj31bq0ow0.png",
+      "img": "/resource/f69d53a523463bdc0a5201026f948d8b.png",
       "description": "开学季活动奖励涂鸦 ",
       "repeat": 6
     },
     "机械师-密码机课": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/00e6413zkjzwweigm9alcm8gxozvhva.png",
+      "img": "/resource/d98b5b0f09983b1d24d7e3312ec349aa.png",
       "description": "开学季活动奖励涂鸦",
       "repeat": 6
     },
     "如何急救": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/dmlwlxwkh6dxq07msrlmhcdard5dr81.png",
+      "img": "/resource/dffe80a816572550a47532d58b1b8e9a.png",
       "description": "2019返校周末活动涂鸦，医生专属 ",
       "repeat": 6
     },
     "绑椅指南": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/9opznyr5see4f35fva3e9xxelk884ok.png",
+      "img": "/resource/036f54fbe15c149384abb4b1c6177934.png",
       "description": "2019返校周末活动涂鸦，厂长专属 ",
       "repeat": 6
     },
     "通用奇珍时装体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
       "description": "限时体验",
       "repeat": 27
     },
     "监管者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
       "description": "限时体验",
       "repeat": 10
     },
     "求生者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
       "description": "限时体验",
       "repeat": 10
     },
     "通用独特时装体验卡*1天": {
       "type": "临时装扮",
       "rarity": "D",
-      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
       "description": "限时体验",
       "repeat": 10
     }

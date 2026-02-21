@@ -1,75 +1,75 @@
 {
   "id": "lucky_dice_32",
   "name": "幸运之骰·第32期",
-  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
   "description": "幸运之骰",
   "completeDrawLimit": 200,
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "conversionRate": 50
   },
   "items": {
     "竹林躲猫猫": {
       "type": "头像框",
       "rarity": "B",
-      "img": "./img/bdpljmuqmhj4liy3832rza98hk3y6dc.png",
+      "img": "/resource/56006b1d3e126ed8b0358671353365f2.png",
       "description": "这是大熊猫还是小熊猫呢？（“熊猫的守护者”2024复刻活动首次获得）",
       "repeat": 200
     },
     "彩色合影": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/stqrj033i7q40lhb4rau99uem7zuslv.png",
+      "img": "/resource/22d41156d25f9ad0db24237727886fe0.png",
       "description": "“啊......阿嚏！”（熊猫的守护者活动首次获得） ",
       "repeat": 6
     },
     "五五两岁啦！": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/6kemtutoea7csd5ziyqq0vbat6485kb.png",
+      "img": "/resource/94b01a4d7acb59b04fca87dae5e3ac58.png",
       "description": "祝五五两周岁生日快乐！（“熊猫的守护者”2023复刻活动首次获得） ",
       "repeat": 6
     },
     "五五三岁啦！": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/j77s7qzmy19kfavowqevfpsydyihy1k.png",
+      "img": "/resource/f8577e7352b8c361398d76553c860224.png",
       "description": "祝五五3周岁生日快乐！（“熊猫的守护者”2024复刻活动首次获得） ",
       "repeat": 6
     },
     "细嚼慢咽": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/fyrfhbsfbb91ti00pcttqu4flb8hxk7.png",
+      "img": "/resource/46e72cb8b6235681b3dd7465b31271c2.png",
       "description": "“有事吗？咔嚓咔嚓，吧唧吧唧......”（熊猫的守护者活动首次获得） ",
       "repeat": 6
     },
     "通用奇珍时装体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
       "description": "限时体验",
       "repeat": 27
     },
     "监管者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
       "description": "限时体验",
       "repeat": 10
     },
     "求生者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
       "description": "限时体验",
       "repeat": 10
     },
     "通用独特时装体验卡*1天": {
       "type": "临时装扮",
       "rarity": "D",
-      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
       "description": "限时体验",
       "repeat": 10
     }

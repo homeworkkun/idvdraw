@@ -1,0 +1,109 @@
+{
+  "id": "JYXB10",
+  "name": "鉴影寻宝第10期",
+  "description": "火漆消耗型池子（旧机制）",
+  "essenceImage": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+  "pitySettings": {
+    "gold": 80,
+    "purple": 80,
+    "blue": 80
+  },
+  "items": {
+    "A": [
+      {
+        "name": "随机数",
+        "type": "时装",
+        "img": "/resource/202867bb6cbc7e69e94abacdc4ff42b4.png",
+        "description": "最后会落在哪个数字呢？他最期待未知的结局。"
+      },
+      {
+        "name": "守钟人",
+        "type": "时装",
+        "img": "/resource/df54353c3dc4dae5395af8a904306ba3.png",
+        "description": "以正义粉饰暴行的人，从不在意自己是否也流淌着罪恶的血液。"
+      },
+      {
+        "name": "年岁",
+        "type": "时装",
+        "img": "/resource/a662f0e863dd1aa52e35a24c2f348472.png",
+        "description": "想变成风，变成云，变成海燕，去穿过海浪，穿过暴雨，去告诉爸爸妈妈，我在他们看不见的时候悄悄长大。"
+      },
+      {
+        "name": "梅林",
+        "type": "时装",
+        "img": "/resource/9f13842f519bb72ff3585d2ef7f58082.png",
+        "description": "魔术和魔法可是有着本质区别的，千万不要混淆。"
+      }
+    ],
+    "B": [
+      {
+        "name": "幸运星",
+        "type": "时装",
+        "img": "/resource/dfac548e42969d2eb8ce3539c9b38604.png",
+        "description": "有句话说，运气是守恒的。"
+      },
+      {
+        "name": "“夜魔”的仆从",
+        "type": "时装",
+        "img": "/resource/2db8d10da1dbf48b0828e074f6faba8e.png",
+        "description": "我为什么会愿意跟随一个小姑娘?因为，我们第一次见面时，那位身陷囹圄的小姐告诉我，自由不是代价，只是筹码。"
+      },
+      {
+        "name": "试炼者",
+        "type": "时装",
+        "img": "/resource/dfd8f38edbfe3acafe095361609b85b1.png",
+        "description": "她和其他贵族不一样，求你们别伤害她……"
+      },
+      {
+        "name": "甄选者",
+        "type": "时装",
+        "img": "/resource/59bc4d61de893a48261949861b847ad3.png",
+        "description": "我已经为你们打开了高塔的大门，记得你允诺我的东西——废除贵族与奴隶的通婚限制。"
+      },
+      {
+        "name": "残缺锡兵",
+        "type": "随身物品",
+        "img": "/resource/1dd2f96baa2867f9e37ce6077bf8fc0a.png",
+        "description": "因为残缺而无法出售的次品，不过玩具商本人倒是很喜欢。"
+      },
+      {
+        "name": "稻草人偶",
+        "type": "随身物品",
+        "img": "/resource/a391b79b8a9c392dffce7f2b4f6526a3.png",
+        "description": "燃烧过的稻草人偶"
+      },
+      {
+        "name": "海神的祝福",
+        "type": "随身物品",
+        "img": "/resource/9bc66c66ac0d5569d5c14287988456a3.png",
+        "description": "他们说，当你的船边出现海豚，这趟旅程就会一帆风顺。"
+      },
+      {
+        "name": "纸飞机",
+        "type": "随身物品",
+        "img": "/resource/d5dc22e3f0ed5a2697d78c0d838b8abb.png",
+        "description": "哪怕能像纸飞机一样在空中短暂飘行，也好过在地表上终日仰望"
+      }
+    ],
+    "C": [
+      {
+        "name": "碎片*88",
+        "type": "碎片",
+        "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+        "description": "碎片"
+      }
+    ],
+    "D": [
+      {
+        "name": "线索*88",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "线索"
+      }
+    ]
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png"
+  }
+}

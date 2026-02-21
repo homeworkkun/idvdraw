@@ -1,0 +1,88 @@
+{
+  "tiers": [
+    {
+      "id": "tuya",
+      "name": "涂鸦",
+      "probability": 0.0537,
+      "items": [
+        {
+          "name": "深渊的呼唤Ⅳ",
+          "weight": 1.0
+        },
+        {
+          "name": "深渊的呼唤Ⅶ",
+          "weight": 1.0
+        },
+        {
+          "name": "深渊的呼唤Ⅷ",
+          "weight": 1.0
+        },
+        {
+          "name": "黄衣之主-灾厄之主（一）",
+          "weight": 1.0
+        },
+        {
+          "name": "黄衣之主-灾厄之主（二）",
+          "weight": 1.0
+        },
+        {
+          "name": "蜘蛛-不息载械（一）",
+          "weight": 1.0
+        },
+        {
+          "name": "蜘蛛-不息载械（二）",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "id": "avatar",
+      "name": "头像",
+      "probability": 0.0323,
+      "items": [
+        {
+          "name": "熔铁猎犬",
+          "weight": 1.0
+        },
+        {
+          "name": "灾厄之主",
+          "weight": 1.0
+        },
+        {
+          "name": "不息载械",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "id": "qizhentiyaka",
+      "name": "奇珍时装体验卡",
+      "probability": 0.1075,
+      "items": [
+        {
+          "name": "通用奇珍时装体验卡*1天",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "id": "tiyanka",
+      "name": "体验卡",
+      "probability": 0.8065,
+      "items": [
+        {
+          "name": "监管者角色体验卡*1天",
+          "weight": 1.0
+        },
+        {
+          "name": "求生者角色体验卡*1天",
+          "weight": 1.0
+        },
+        {
+          "name": "通用独特时装体验卡*1天",
+          "weight": 1.0
+        }
+      ]
+    }
+  ]
+}

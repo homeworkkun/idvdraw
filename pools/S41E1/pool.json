@@ -1,7 +1,7 @@
 {
   "id": "S41E1",
   "name": "第41赛季·精华1",
-  "essenceImage": "./img/h7j1qqr29rcsubf0nxfm8w9uduna7nt.png",
+  "essenceImage": "/resource/e27f1ad591e6ce15f9da436f03ab4640.png",
   "diff_A": 1,
   "initialCurrencies": {
     "inspiration": 100000,
@@ -21,7 +21,7 @@
   ],
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "type": "通用货币"
   },
   "pitySettings": {
@@ -33,7 +33,7 @@
     "S": [
       {
         "name": "记忆的沉疴",
-        "img": "./img/fgj4oee0dtt104jqv85iwb80q3jns1p.png",
+        "img": "/resource/ac8e5ab2cc43508d2760e378b7449686.png",
         "type": "时装",
         "description": "躯壳的伤口可以痊愈，但记忆的疤痕却时时刻刻提醒着我们，曾经离深渊多么近。\n（【限定】时装，仅能在第四十一赛季精华1中获得） ",
         "repeat": 2000
@@ -42,14 +42,14 @@
     "A": [
       {
         "name": "无归的昨日",
-        "img": "./img/7hcbah90jugt2ngq6npux4f4hhkwlvz.png",
+        "img": "/resource/e9484dd7612a492a8f3375accada3974.png",
         "type": "时装",
         "description": "对于已经结束的故事而言，所有的遗憾、不甘与希冀，都只是书页外悼念的闲笔。 ",
         "repeat": 1000
       },
       {
         "name": "妄念的陈伤",
-        "img": "./img/tp9ivzx0g6kq0a4gryia0izypsx22dl.png",
+        "img": "/resource/46187f6228d0c912491d8fae414ef360.png",
         "type": "时装",
         "description": "愿望的花园里，那些未能圆满的小小遗憾，也许会像朝露，片刻消散，也许会像幽灵，徘徊不去。 ",
         "repeat": 1000
@@ -58,56 +58,56 @@
     "B": [
       {
         "name": "浸染的恶意",
-        "img": "./img/3w35ypdmua5a2ies7ahvh2z9oigpila.png",
+        "img": "/resource/2835dfbf3a71e5c7e36c4d4678277453.png",
         "type": "时装",
         "description": "缪斯以嫉恨与狂热为她注满名为灵感的银瓶。 ",
         "repeat": 200
       },
       {
         "name": "腐坏的生机",
-        "img": "./img/hus49ecvnch1u8ihf81qwqmcaoilhg3.png",
+        "img": "/resource/af8fd83037386064719b3f96e49678ed.png",
         "type": "时装",
         "description": "如果麻木灵魂可以换来一线生机，那么她不介意让真实的自我永远酣眠。 ",
         "repeat": 200
       },
       {
         "name": "失序的信标",
-        "img": "./img/m4jkf8gcdl31vwr192r4hxendwpglh9.png",
+        "img": "/resource/032617b8cc27136560ee17e3dc37ee01.png",
         "type": "时装",
         "description": "时间投下的暗礁隐没于昨日的海潮之下，等待着自明日归航的浪子。 ",
         "repeat": 200
       },
       {
         "name": "伪谬的天真",
-        "img": "./img/obewjy6abjl6zk2if4ij2zdf6suihiq.png",
+        "img": "/resource/25948048cf40d1ddb55262a3a2fbdfd2.png",
         "type": "时装",
         "description": "现实在教会了她如何用伤害辨识虚假的美好后，又教会了她如何用谎言将它们妆点得更加真实。 ",
         "repeat": 200
       },
       {
         "name": "入殓师-起舞",
-        "img": "./img/73nip7a7kcx0arn2v8y72o5xt153jyc.png",
+        "img": "/resource/af0f4d5d18ae4db4bf493a32b236f998.png",
         "type": "个性动作",
         "description": "起舞动作，入殓师专属",
         "repeat": 200
       },
       {
         "name": "守夜人-行礼",
-        "img": "./img/jvroaff1gx4rz5tt2ke934hrhhs2z5i.png",
+        "img": "/resource/0783640dafdebe861c759158a611b786.png",
         "type": "个性动作",
         "description": "行礼动作，守夜人专属",
         "repeat": 200
       },
       {
         "name": "“使徒”-示威",
-        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
         "type": "等待动作",
         "description": "“使徒”专属匹配大厅等待动作，示威",
         "repeat": 200
       },
       {
         "name": "红夫人-笑颜",
-        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
         "type": "等待动作",
         "description": "红夫人专属匹配大厅等待动作，笑颜",
         "repeat": 200
@@ -116,189 +116,189 @@
     "C": [
       {
         "name": "黑男爵",
-        "img": "./img/ber8uob9bqy4xmxy96jfz5gcav6jnn5.png",
+        "img": "/resource/13edb88f713c187510ef84c5e3dc9581.png",
         "type": "时装",
         "description": "黑色是为了肃穆，不是为了惊吓",
         "repeat": 36
       },
       {
         "name": "肃静蓝",
-        "img": "./img/eg6erhmscjhsttd6486vycoccz1svk4.png",
+        "img": "/resource/285cdd7452d567da1b612c189ea25097.png",
         "type": "时装",
         "description": "即使面对死亡，这颜色也能让人平静",
         "repeat": 36
       },
       {
         "name": "葡萄酒",
-        "img": "./img/q9w5wetz4cetavzu9w9nrur40kke1q0.png",
+        "img": "/resource/bce321558219bb49a0027482fe4f40d2.png",
         "type": "时装",
         "description": "表演前的一杯酒有助于保持手部稳定",
         "repeat": 36
       },
       {
         "name": "墨黑",
-        "img": "./img/oyenkrfu4ncnp13wc0ekqeup3tx2vmh.png",
+        "img": "/resource/e4a63dd08fe772d66167455ac404981b.png",
         "type": "时装",
         "description": "深沉的思维会如墨色般浓重。",
         "repeat": 36
       },
       {
         "name": "青苔",
-        "img": "./img/a6miq035eikt8absz7dmtzn9vo1m5t9.png",
+        "img": "/resource/29d7f8e1a7a130fc5e098d605ca200d3.png",
         "type": "时装",
         "description": "在荒芜之地蔓延，直至生机取代死气。 ",
         "repeat": 36
       },
       {
         "name": "休闲黄",
-        "img": "./img/kqtcfxcitxn8402gw219neihyif6g85.png",
+        "img": "/resource/18525bfacfcf35c7d22dc17d660a50df.png",
         "type": "时装",
         "description": "偶尔离开工作岗位，也不可放松对自己的要求",
         "repeat": 36
       },
       {
         "name": "白糖",
-        "img": "./img/4p022ygil1a8t3duxxocdw3xqc33w99.png",
+        "img": "/resource/3615c4f5f240e87f569d1d819f32ecf2.png",
         "type": "时装",
         "description": "他曾经很喜欢糖的甜味，但现在已经没法喜欢了。",
         "repeat": 36
       },
       {
         "name": "落日黄",
-        "img": "./img/qfmjrxkh2r04po2goh7q4t71rg9tix5.png",
+        "img": "/resource/13b738f67442aa93098a48e7858293e7.png",
         "type": "时装",
         "description": "太阳会落下，我不会。",
         "repeat": 36
       },
       {
         "name": "紫乌头",
-        "img": "./img/gzyr0uylfhti95h0ay008s4rk0p2ulc.png",
+        "img": "/resource/8230584c59cd33f784dde70a8c8ff09f.png",
         "type": "时装",
         "description": "遇见它而呼吸急促，不是因为它的美丽，而是因为它的毒性。",
         "repeat": 36
       },
       {
         "name": "绯红",
-        "img": "./img/bdtx7r5ltdni4ecjxoyg32g0nttp185.png",
+        "img": "/resource/add6c48e92485624b7b68222310ac214.png",
         "type": "时装",
         "description": "最鲜艳的色彩，才能吸引最多的目光",
         "repeat": 36
       },
       {
         "name": "风度粉",
-        "img": "./img/92f9xpwh7jf0l9m9ejlezlyb42ubzus.png",
+        "img": "/resource/965fbd2ee77344d600453b9079b5605b.png",
         "type": "时装",
         "description": "上门送信时，一个微笑能带给人好心情! ",
         "repeat": 36
       },
       {
         "name": "古董商-躺地",
-        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "img": "/resource/873ca798d986ffc8dc43cbe5c115f127.png",
         "type": "个性动作",
         "description": "躺地动作，古董商专属",
         "repeat": 36
       },
       {
         "name": "入殓师-挑衅",
-        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "img": "/resource/44169a1e5f519d33ad5fc13115b43773.png",
         "type": "个性动作",
         "description": "挑衅动作，入殓师专属",
         "repeat": 36
       },
       {
         "name": "杂技演员-呼喊",
-        "img": "./img/koz8jayn25azdeems2r6ec6hlnszu1z.png",
+        "img": "/resource/5d53d7deef61eabd78c43e481bc2d79c.png",
         "type": "个性动作",
         "description": "呼喊动作，杂技演员专属",
         "repeat": 36
       },
       {
         "name": "杂技演员-躺地",
-        "img": "./img/hznh7ry6eif5in4ivv7xu1onw7vim1k.png",
+        "img": "/resource/873ca798d986ffc8dc43cbe5c115f127.png",
         "type": "个性动作",
         "description": "躺地动作，杂技演员专属",
         "repeat": 36
       },
       {
         "name": "魔术师-小憩",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "魔术师匹配大厅动作，小憩",
         "repeat": 36
       },
       {
         "name": "“慈善家”-准备",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "“慈善家”匹配大厅动作，小憩",
         "repeat": 36
       },
       {
         "name": "空军-小憩",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "空军匹配大厅动作，小憩",
         "repeat": 36
       },
       {
         "name": "律师-小憩",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "律师匹配大厅动作，小憩",
         "repeat": 36
       },
       {
         "name": "魔术师-等待",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "魔术师匹配大厅动作，等待",
         "repeat": 36
       },
       {
         "name": "摄影师-个性",
-        "img": "./img/5yu4cooh4623zf2qyekj035nv2mtrid.png",
+        "img": "/resource/b8484cc8b26d42fafe4292830942aee0.png",
         "type": "涂鸦",
         "description": "摄影师专用涂鸦，默默地展示着他的个性宣言 ",
         "repeat": 36
       },
       {
         "name": "调酒师-个性",
-        "img": "./img/oqzl28puc78re4jay8nfmp9k1gx3oxp.png",
+        "img": "/resource/1d09ebe19a403a60c886dee2bdb8478e.png",
         "type": "涂鸦",
         "description": "调酒师专用涂鸦，默默地展示着她的个性宣言 ",
         "repeat": 36
       },
       {
         "name": "舞女-个性",
-        "img": "./img/a4lll1j4byy2g8mep8nu13gruulddf2.png",
+        "img": "/resource/ff93193fc0d761d01a277e0aa78a738d.png",
         "type": "涂鸦",
         "description": "舞女专用涂鸦，默默地展示着她的个性宣言 ",
         "repeat": 36
       },
       {
         "name": "宿伞之魂-个性",
-        "img": "./img/kcemljf56pmvl7t811qwtdv3ylq1h2k.png",
+        "img": "/resource/5120e8af9ffc698500b9fb899558760b.png",
         "type": "涂鸦",
         "description": "宿伞之魂专用涂鸦，默默地展示着他的个性宣言 ",
         "repeat": 36
       },
       {
         "name": "黑白回忆-作曲家",
-        "img": "./img/araqsrdh3vm0o0s9jkqthn0fonixoul.png",
+        "img": "/resource/1aace18f31b3cc66ce2691977e649baf.png",
         "type": "头像",
         "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
         "repeat": 36
       },
       {
         "name": "黑白回忆-记者",
-        "img": "./img/mo56p6191t5tje7rxal810a1px2vwr3.png",
+        "img": "/resource/e6bc179794e47379886a827df754f9b9.png",
         "type": "头像",
         "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
         "repeat": 36
       },
       {
         "name": "黑白回忆-小说家",
-        "img": "./img/0s2n9o713m6im7k72e144o8mu8g2kut.png",
+        "img": "/resource/aff203898cf1da2f0ba35058ed273e27.png",
         "type": "头像",
         "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
         "repeat": 36
@@ -307,77 +307,77 @@
     "D": [
       {
         "name": "“噩梦”-彩底",
-        "img": "./img/6ojfao69s7all9jenjduu50qlbasn7l.png",
+        "img": "/resource/160792c17ca401417782f090911535fe.png",
         "type": "涂鸦",
         "description": "“噩梦”涂鸦，彩底",
         "repeat": 6
       },
       {
         "name": "“小女孩”-彩底",
-        "img": "./img/ohxbvk99s1a1k6y52eb03gmy30hq11u.png",
+        "img": "/resource/8c061ade8a7ba9bb7190353ad16aef63.png",
         "type": "涂鸦",
         "description": "“小女孩”涂鸦，彩底",
         "repeat": 6
       },
       {
         "name": "病患-彩底",
-        "img": "./img/q268v8m7epo388c70x712n2f9xen6sf.png",
+        "img": "/resource/bdf0e2dba37b4c22d19edeba84d64c35.png",
         "type": "涂鸦",
         "description": "病患涂鸦，彩底",
         "repeat": 6
       },
       {
         "name": "击球手-彩底",
-        "img": "./img/nnfu7jjwh1l586y402htzmy8tbydfhk.png",
+        "img": "/resource/0e9093d2399c42f9be29384e85a8293b.png",
         "type": "涂鸦",
         "description": "击球手涂鸦，彩底",
         "repeat": 6
       },
       {
         "name": "哭泣小丑-彩底",
-        "img": "./img/goq43anxwt16z5l3ro1qje6j94eyr38.png",
+        "img": "/resource/1132a6c38445e462d358ff247adfb518.png",
         "type": "涂鸦",
         "description": "哭泣小丑涂鸦，彩底",
         "repeat": 6
       },
       {
         "name": "蜡像师-彩底",
-        "img": "./img/gmdna63sxolutd5vnosx98r8mgcpysp.png",
+        "img": "/resource/caf05079bb73b4521e8324a04f7a1080.png",
         "type": "涂鸦",
         "description": "蜡像师涂鸦，彩底",
         "repeat": 6
       },
       {
         "name": "“心理学家”-彩底",
-        "img": "./img/fti1k0bgdkx21d8emphuhbao00chaok.png",
+        "img": "/resource/27f3f5938af0bc4a45a40d34a35df04d.png",
         "type": "涂鸦",
         "description": "“心理学家”涂鸦，彩底",
         "repeat": 6
       },
       {
         "name": "彩色回忆-勘探员",
-        "img": "./img/g2uii0jfy634bw0oo5aquj5udqs381o.png",
+        "img": "/resource/458c4bc18775feb2cafcb0899be19012.png",
         "type": "头像",
         "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
         "repeat": 6
       },
       {
         "name": "彩色回忆-咒术师",
-        "img": "./img/fdaczg4zwg1rm9tvz20ts75twtumx04.png",
+        "img": "/resource/7733c48b54ce6a73a5d364ab621fc21f.png",
         "type": "头像",
         "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
         "repeat": 6
       },
       {
         "name": "彩色回忆-26号守卫",
-        "img": "./img/gzlth0i10fmrfvsgwwgdy5yb9nwwkm4.png",
+        "img": "/resource/d19c27804c398379a6d7b9a3d9d32d9a.png",
         "type": "头像",
         "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
         "repeat": 6
       },
       {
         "name": "彩色回忆-红夫人",
-        "img": "./img/a3d5d7gfcl2bzfufe4q2d3ki7v5gnku.png",
+        "img": "/resource/74a2c0ab87d709f4ab78d69378565f8e.png",
         "type": "头像",
         "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底”",
         "repeat": 6

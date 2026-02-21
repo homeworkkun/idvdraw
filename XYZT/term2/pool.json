@@ -1,75 +1,75 @@
 {
   "id": "lucky_dice_2",
   "name": "幸运之骰·第2期",
-  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
   "description": "幸运之骰",
   "completeDrawLimit": 9999,
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "conversionRate": 50
   },
   "items": {
     "颠茄花": {
       "type": "头像框",
       "rarity": "B",
-      "img": "./img/s13aa8xk4yk3fjcp4d5iuul34whjyno.png",
+      "img": "/resource/5ff18d8f86a9b31181446b5c49ed2930.png",
       "description": "颠茄绕上窗扉，静静等待春天。【2周年主题活动金蔷薇剧院调查中首次获得】 ",
       "repeat": 200
     },
     "二周年-喜庆": {
       "type": "头像框",
       "rarity": "B",
-      "img": "./img/nr7668cbi2a92etxjk1n6nkagegsyy0.png",
+      "img": "/resource/8c2b3adecf626a6305dabcae6b275246.png",
       "description": "锦衣玉扇，周年吉祥~（2020年二周年活动首次获得） ",
       "repeat": 200
     },
     "再见面的校园": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/0lo9anpjbxl565qee2wcrorgxzvilpq.png",
+      "img": "/resource/9d1b5eed454b3b2441df3ad1631d1ad5.png",
       "description": "返校的周末，心中满是不安的憧憬。（2019年返校周末活动首次获得） ",
       "repeat": 6
     },
     "一个吃货": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/mn72n42qz9fuye0dkcxcrpylcns3ua1.png",
+      "img": "/resource/10666818591d3ce957b6c9863667e3f2.png",
       "description": "吃货主题头像",
       "repeat": 6
     },
     "朱丽叶": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/nqrjlh6ps1j9qer11zqzorsh3cn0wlr.png",
+      "img": "/resource/449cf254e51046029660047d0e9f3326.png",
       "description": "七夕寄语活动专属头像——朱丽叶",
       "repeat": 6
     },
     "通用奇珍时装体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
       "description": "限时体验",
       "repeat": 27
     },
     "监管者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
       "description": "限时体验",
       "repeat": 10
     },
     "求生者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
       "description": "限时体验",
       "repeat": 10
     },
     "通用独特时装体验卡*1天": {
       "type": "临时装扮",
       "rarity": "D",
-      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
       "description": "限时体验",
       "repeat": 10
     }

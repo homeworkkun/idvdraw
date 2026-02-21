@@ -1,7 +1,7 @@
 {
   "id": "S17E4",
   "name": "死亡笔记联动精华",
-  "essenceImage": "./img/0qg3mxtm2tiaixrliwjz17qfd2xa6d3.png",
+  "essenceImage": "/resource/c34fe4a5874de5d28c47700938796122.png",
   "diff_A": 0,
   "initialCurrencies": {
     "inspiration": 100000,
@@ -21,7 +21,7 @@
   ],
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "type": "通用货币"
   },
   "pitySettings": {
@@ -33,7 +33,7 @@
     "S": [
       {
         "name": "流愚",
-        "img": "./img/27e3sibk1bcqeriowdqxmu3toxmfywa.png",
+        "img": "/resource/d1d5072f816d4777c9291cbf2690a764.png",
         "type": "时装",
         "description": "流愚的服装\n死亡笔记联动精华限定稀世时装",
         "repeat": 2000
@@ -42,21 +42,21 @@
     "A": [
       {
         "name": "弥海砂",
-        "img": "./img/jewvjdqup1byy9gy76unnt1n6grawb0.png",
+        "img": "/resource/86353b1414c396d1b5e76396c4733108.png",
         "type": "时装",
         "description": "弥海砂的服装\n死亡笔记联动精华限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "L",
-        "img": "./img/pt3q9ry7fm3twdghinaq1yyft57k61i.png",
+        "img": "/resource/a74b206d5a935e8a1b53e179fcce089e.png",
         "type": "时装",
         "description": "L的服装\n死亡笔记联动精华限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "夜神月",
-        "img": "./img/6pyf36igzdvyjmsgknvpfksckfmh5ok.png",
+        "img": "/resource/6d481870b9c56d7c8999b38e840c7d60.png",
         "type": "时装",
         "description": "夜神月的服装\n死亡笔记联动精华限定奇珍时装",
         "repeat": 1000
@@ -65,35 +65,35 @@
     "B": [
       {
         "name": "手铐",
-        "img": "./img/2euebwd2flvzpkuos00fjzi11x2hk4o.png",
+        "img": "/resource/ae4830990392d98c520ee1718be50486.png",
         "type": "随身物品",
         "description": "连接Light Yagami和L的手铐。\n死亡笔记联动精华限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "苹果",
-        "img": "./img/3hdvcer0xj3vpdk3w6zh3t3dfm0s7ak.png",
+        "img": "/resource/e174ce73d0d1d78432b0532cc3d684dc.png",
         "type": "随身物品",
         "description": "流愚最喜欢的苹果\n死亡笔记联动精华限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "L的麦克风",
-        "img": "./img/71d03sksksduodoxzc2ctqvdhd9tjzk.png",
+        "img": "/resource/e2ec0caa63dfd3a01297723e67b88967.png",
         "type": "随身物品",
         "description": "L向基拉宣战时使用的麦克风。\n死亡笔记联动精华限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "夜神月的笔",
-        "img": "./img/msc6r5ngvco3l9fopokgwq0dpbxe56t.png",
+        "img": "/resource/70ad939d584dc3e86e75f7fe35431dd5.png",
         "type": "随身物品",
         "description": "Light Yagami使用的笔。\n死亡笔记联动精华限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "死亡笔记",
-        "img": "./img/bfi1tt4hxkyi9403gg07fi7tna6ffx8.png",
+        "img": "/resource/59c7fafaa415967ad23160ebaf6cfe24.png",
         "type": "随身物品",
         "description": "给弥海砂的死亡笔记\n死亡笔记联动精华限定独特随身物品",
         "repeat": 200
@@ -102,70 +102,70 @@
     "C": [
       {
         "name": "《死亡笔记》Ⅰ",
-        "img": "./img/q1dtzy4xy412bnm5z675j9egc151m1a.png",
+        "img": "/resource/bb84143e4554c4b35fe55746c591bfa9.png",
         "type": "涂鸦",
         "description": "死亡笔记本的规则-Ⅰ",
         "repeat": 36
       },
       {
         "name": "《死亡笔记》Ⅱ",
-        "img": "./img/c475l8skjfcja2ppqkiavrc92snmnta.png",
+        "img": "/resource/fef876bc0f3ca403d96366a66092c640.png",
         "type": "涂鸦",
         "description": "死亡笔记本的规则-Ⅱ",
         "repeat": 36
       },
       {
         "name": "《死亡笔记》Ⅲ",
-        "img": "./img/5tincslb4cwwpm4zf1s4jzhximmk8et.png",
+        "img": "/resource/f5320dab003f0db86b050d59a573b977.png",
         "type": "涂鸦",
         "description": "死亡笔记本的规则-Ⅲ",
         "repeat": 36
       },
       {
         "name": "《死亡笔记》Ⅳ",
-        "img": "./img/hayj37vmauzn3pj5m2dxn0536mv3gqm.png",
+        "img": "/resource/e2ebf68ddc12cd580e641f9eafd3139c.png",
         "type": "涂鸦",
         "description": "死亡笔记本的规则-Ⅳ",
         "repeat": 36
       },
       {
         "name": "《死亡笔记》Ⅴ",
-        "img": "./img/msgvd4b63nmwa9qdhnyfv6yahe9tm92.png",
+        "img": "/resource/2770daf0134cad4c585e18c0e2386090.png",
         "type": "涂鸦",
         "description": "死亡笔记本的规则-Ⅴ",
         "repeat": 36
       },
       {
         "name": "《死亡笔记》Ⅵ",
-        "img": "./img/ii50hxy130zwqgxtadinjjfyilbw9zg.png",
+        "img": "/resource/7d7ee7d49ebf6de520ef8f43618f99f1.png",
         "type": "涂鸦",
         "description": "死亡笔记本的规则-Ⅵ",
         "repeat": 36
       },
       {
         "name": "夜神月",
-        "img": "./img/id3qgyyhrs41c65tiycswlmsisns1c7.png",
+        "img": "/resource/dc97e4badd4d6ba45b08f3703f9e149a.png",
         "type": "头像",
         "description": "《死亡笔记》联动头像-夜神月",
         "repeat": 36
       },
       {
         "name": "L",
-        "img": "./img/5kcj20rcrh1iexsurkur2fswrqzpi8v.png",
+        "img": "/resource/2153dd8c24860e542e3e7338c191f7b6.png",
         "type": "头像",
         "description": "《死亡笔记》联动头像-L",
         "repeat": 36
       },
       {
         "name": "流愚",
-        "img": "./img/ktnhqrtlwkzb9qorao1qozmexe5bzc3.png",
+        "img": "/resource/af746ec35e0c23cef52bb03b55d559aa.png",
         "type": "头像",
         "description": "《死亡笔记》联动头像-流愚",
         "repeat": 36
       },
       {
         "name": "弥海砂",
-        "img": "./img/g48f6a5tci6k22asxlpda6d0wy2d8wi.png",
+        "img": "/resource/d27b0018751e19cf39ab386b79931776.png",
         "type": "头像",
         "description": "《死亡笔记》联动头像-弥海砂",
         "repeat": 36

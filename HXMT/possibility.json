@@ -1,0 +1,14 @@
+{
+  "comment": "幻象迷途概率配置",
+  "probabilities": {
+    "discount": 0.006,
+    "basic": 0.909,
+    "junior": 0.055,
+    "intermediate": 0.0175,
+    "senior": 0.0125
+  },
+  "repeatChance": {
+    "senior": 1.0,
+    "intermediate": 1.0
+  }
+}

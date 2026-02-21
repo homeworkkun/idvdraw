@@ -1,0 +1,109 @@
+{
+  "id": "JYXB5",
+  "name": "鉴影寻宝第5期",
+  "description": "火漆消耗型池子（旧机制）",
+  "essenceImage": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+  "pitySettings": {
+    "gold": 80,
+    "purple": 80,
+    "blue": 80
+  },
+  "items": {
+    "A": [
+      {
+        "name": "守钟人",
+        "type": "时装",
+        "img": "/resource/df54353c3dc4dae5395af8a904306ba3.png",
+        "description": "以正义粉饰暴行的人，从不在意自己是否也流淌着罪恶的血液。"
+      },
+      {
+        "name": "动物女巫",
+        "type": "时装",
+        "img": "/resource/652973387e146afaa9780304eab7b604.png",
+        "description": "“嘘，不要再往前走！草原的尽头有个可以和动物说话的女孩，如果你打扰到了她，可爱的动物将化身成熊熊烈火会将你吞噬。”"
+      },
+      {
+        "name": "炽天使",
+        "type": "时装",
+        "img": "/resource/46b40e2da49c58ee930ef5f327930ccc.png",
+        "description": "如果翱翔天际，她所留下的绚烂一定能超越海平面的晚霞。"
+      },
+      {
+        "name": "鼹鼠先生",
+        "type": "时装",
+        "img": "/resource/0ccf2c511f4ec661b0c59d52e0264477.png",
+        "description": "这种生物拥有绝佳的嗅觉，能闻到很多东西，比如黄金与珠宝"
+      }
+    ],
+    "B": [
+      {
+        "name": "制裁者",
+        "type": "时装",
+        "img": "/resource/ab1b44d9069320de19f03d920067f0ec.png",
+        "description": "再次回到村庄得到的却是亲人的噩耗,他不相信纯真的村民会做出如此残忍的事情,他坚信是“恶魔”的操控。"
+      },
+      {
+        "name": "战争后遗症",
+        "type": "时装",
+        "img": "/resource/8de468960e9a0e051de89c2db17d519e.png",
+        "description": "孤独、恐惧、紧张感、信念的落差，如影随形。"
+      },
+      {
+        "name": "信使",
+        "type": "时装",
+        "img": "/resource/21896cd73fd8266870cf4745fa98e449.png",
+        "description": "八个小冰人，为了比赛如约至；女王恩赐口相传，八个只剩七。"
+      },
+      {
+        "name": "焦点效应",
+        "type": "时装",
+        "img": "/resource/3f73103bd8893fb7b54e9278c44b4d3a.png",
+        "description": "再也不用执着于表面虚张声势的华丽。"
+      },
+      {
+        "name": "断齿木梳",
+        "type": "随身物品",
+        "img": "/resource/50efbba55b6e99c45cdbec64d5e048e0.png",
+        "description": "碧琼梳拥青螺髻。"
+      },
+      {
+        "name": "睡毯披肩",
+        "type": "随身物品",
+        "img": "/resource/e559684d48b634452b95812ef20b3cfc.png",
+        "description": "整理好着装，进入猎场，不要嘲笑我的睡毯，它会在你长眠时派上用场。"
+      },
+      {
+        "name": "里拉琴",
+        "type": "随身物品",
+        "img": "/resource/4044661128e46fc5789e0341f7ab8f6d.png",
+        "description": "将这飘向遥远星空的琴音献给你。"
+      },
+      {
+        "name": "猎枪",
+        "type": "随身物品",
+        "img": "/resource/ac793eb9ebbf5e34c32cf9bc3c3c797c.png",
+        "description": "赏金猎人们喜欢的武器，填入银质子弹就能干掉很多黑暗生物"
+      }
+    ],
+    "C": [
+      {
+        "name": "碎片*88",
+        "type": "碎片",
+        "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+        "description": "碎片"
+      }
+    ],
+    "D": [
+      {
+        "name": "线索*88",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "线索"
+      }
+    ]
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png"
+  }
+}

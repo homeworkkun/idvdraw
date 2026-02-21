@@ -302,5 +302,45 @@
     "musiclist": [
       "musiclist.json"
     ]
+  },
+  {
+    "id": "term39-1",
+    "name": "幸运之骰第39期-系列1",
+    "cost": "35",
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "term39-2",
+    "name": "幸运之骰第39期-系列2",
+    "cost": "35",
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "term40",
+    "name": "幸运之骰第40期",
+    "cost": "35",
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "term41-1",
+    "name": "幸运之骰第41期-系列1",
+    "cost": "35",
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "term41-2",
+    "name": "幸运之骰第41期-系列2",
+    "cost": "35",
+    "musiclist": [
+      "musiclist.json"
+    ]
   }
 ]

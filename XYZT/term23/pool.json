@@ -1,75 +1,75 @@
 {
   "id": "lucky_dice_23",
   "name": "幸运之骰·第23期",
-  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
   "description": "幸运之骰",
   "completeDrawLimit": 200,
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "conversionRate": 50
   },
   "items": {
     "博山雾影": {
       "type": "头像框",
       "rarity": "B",
-      "img": "./img/ktgqt7kcqxe4by3f1q59e0ow92qzz5k.png",
+      "img": "/resource/6ea7f96f589fcf863a91965c5b981955.png",
       "description": "峰峦间升起烟岚，不是仙山，却显祥瑞。(通过2022年“暑月雾山行”活动首次获得) ",
       "repeat": 200
     },
     "夏夜惊梦": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/ttmpw8xew5rd63j29941vmbbinlu9rq.png",
+      "img": "/resource/0c853a47e45e708ebedb1420b2408320.png",
       "description": "梦中传来似有似无的箫声，梦醒后旋律还萦绕在耳边。（通过2022年“暑月雾山行”活动首次获得) ",
       "repeat": 6
     },
     "夏日特饮": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/3tiksaef44iaquufzdy0dggeflq0evq.png",
+      "img": "/resource/fa8911a84672e82c58c988a410a8ccde.png",
       "description": "沁人心脾的椰子水，带着淡淡的清甜和微妙的海风气息，让人感受到海伊拉度假岛的天然美味。（通过2023年“海岛夏日记”活动首次获得） ",
       "repeat": 6
     },
     "幸运儿-萤火": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/7beecqfh65mzkxtyhkgpu3uf9aamj9t.png",
+      "img": "/resource/8390dee0e0b579364b8470c4f0767817.png",
       "description": "幸运儿专属涂鸦，萤火",
       "repeat": 6
     },
     "赛龙舟": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/44jm5iw92mgzabi41um9kxxmevw0p4v.png",
+      "img": "/resource/67d385b26bbfd8528f700fce9a74ab89.png",
       "description": "齐心协力才能划动龙舟。(通过2021端午节活动获得) ",
       "repeat": 6
     },
     "通用奇珍时装体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
       "description": "限时体验",
       "repeat": 27
     },
     "监管者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
       "description": "限时体验",
       "repeat": 10
     },
     "求生者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
       "description": "限时体验",
       "repeat": 10
     },
     "通用独特时装体验卡*1天": {
       "type": "临时装扮",
       "rarity": "D",
-      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
       "description": "限时体验",
       "repeat": 10
     }

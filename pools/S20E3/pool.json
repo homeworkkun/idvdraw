@@ -1,7 +1,7 @@
 {
   "id": "S20E3",
   "name": "第20赛季·精华3",
-  "essenceImage": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+  "essenceImage": "/resource/f5ffc5807557723e2165f27468ab7bd8.png",
   "diff_A": 2,
   "initialCurrencies": {
     "inspiration": 100000,
@@ -21,7 +21,7 @@
   ],
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "type": "通用货币"
   },
   "pitySettings": {
@@ -33,7 +33,7 @@
     "S": [
       {
         "name": "欺惑之燕",
-        "img": "./img/e8a5le0vp9r3cbqenulylf6zdfrpib3.png",
+        "img": "/resource/5439392d6e9e1dad270a3e8e4f1cf44c.png",
         "type": "时装",
         "description": "偏偏是惑乱人心的恶魔在虔诚宣告：神明不绝人愿，穿过风雨就能得见故人。（【限定】时装，仅能在第二十赛季精华3中获得）",
         "repeat": 2000
@@ -42,14 +42,14 @@
     "A": [
       {
         "name": "纸皇后",
-        "img": "./img/tnh1kiveyqmso0ynbjzwmmrmhr47mr0.png",
+        "img": "/resource/192eb8939767c8ccf77c3d0808f3890f.png",
         "type": "时装",
         "description": "一切美好的愿望，都有有效期，如同这些纸愿，一时穿风破雨，最终都是尘封入海。",
         "repeat": 1000
       },
       {
         "name": "年岁",
-        "img": "./img/9vgpko6j3vy2vahhnpf6k1qcm3uz8vy.png",
+        "img": "/resource/a662f0e863dd1aa52e35a24c2f348472.png",
         "type": "时装",
         "description": "想变成风，变成云，变成海燕，去穿过海浪，穿过暴雨，去告诉爸爸妈妈，我在他们看不见的时候悄悄长大。",
         "repeat": 1000
@@ -58,63 +58,63 @@
     "B": [
       {
         "name": "留候",
-        "img": "./img/onyy1v26gvm3slmruq87l864p4s2iu3.png",
+        "img": "/resource/ed312173596bef9c62983fffdb649397.png",
         "type": "时装",
         "description": "年年岁岁花相似，岁岁年年人不同。",
         "repeat": 200
       },
       {
         "name": "乡愁",
-        "img": "./img/3lupfjcst9yx5i24i0mruwn3l91phqy.png",
+        "img": "/resource/cbbbb2914a4efea8cfc7ce37dcd2e0f5.png",
         "type": "时装",
         "description": "醒来已至深夜，前方即将到站，又是一个新城市，入目是万家灯火爆竹声声。他说那是最孤独的时刻。",
         "repeat": 200
       },
       {
         "name": "归期",
-        "img": "./img/9qwca2b6ilmi1jlck1f9848edlueodw.png",
+        "img": "/resource/af7e8174bc3d4d86576628f0af936e74.png",
         "type": "时装",
         "description": "最令她害怕的是归期将尽后的空欢喜。",
         "repeat": 200
       },
       {
         "name": "睹物思人",
-        "img": "./img/bwyyn5bzo45jj2www417skiv7p3gu6e.png",
+        "img": "/resource/2d522494da359f350d5dff7799c1dc43.png",
         "type": "时装",
         "description": "他们相信纸偶能传情，纸燕能引路，唯独不相信物是人非心易变。",
         "repeat": 200
       },
       {
         "name": "纸愿",
-        "img": "./img/tj7lz9f2wjy244bx0vsaa69k7c15lq8.png",
+        "img": "/resource/f289867cc137faae841c3e97045520e4.png",
         "type": "时装",
         "description": "他们喜欢把心事扔进海里，觉得它们能漂流过海，带离人回家。",
         "repeat": 200
       },
       {
         "name": "“囚徒”-起舞",
-        "img": "./img/73nip7a7kcx0arn2v8y72o5xt153jyc.png",
+        "img": "/resource/af0f4d5d18ae4db4bf493a32b236f998.png",
         "type": "个性动作",
         "description": "起舞动作，“囚徒”专属",
         "repeat": 200
       },
       {
         "name": "小提琴家-行礼",
-        "img": "./img/jvroaff1gx4rz5tt2ke934hrhhs2z5i.png",
+        "img": "/resource/0783640dafdebe861c759158a611b786.png",
         "type": "个性动作",
         "description": "行礼动作，小提琴家专属",
         "repeat": 200
       },
       {
         "name": "祭司-准备",
-        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
         "type": "等待动作",
         "description": "祭司匹配大厅动作，准备",
         "repeat": 200
       },
       {
         "name": "调酒师-张望",
-        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
         "type": "等待动作",
         "description": "调酒师匹配大厅动作，张望",
         "repeat": 200
@@ -123,189 +123,189 @@
     "C": [
       {
         "name": "平凡灰",
-        "img": "./img/47bgew6utc67g339kgmng0efe496hw6.png",
+        "img": "/resource/fc3dd1028883d12ca1087f3b90927186.png",
         "type": "时装",
         "description": "平平淡淡的人生有什么不好！",
         "repeat": 36
       },
       {
         "name": "紫罗兰",
-        "img": "./img/kpiflpo1sfdc1hi3uwoqu6ocv72tq72.png",
+        "img": "/resource/4221cdad462043fa113799250025b5dd.png",
         "type": "时装",
         "description": "紫罗兰，风信子，薰衣草~~",
         "repeat": 36
       },
       {
         "name": "专注白",
-        "img": "./img/fabvxpyjyshj3jm3mwbrhmbhbkyr7id.png",
+        "img": "/resource/5412a517cc62dc26a27972e2c139c50d.png",
         "type": "时装",
         "description": "没有专注，就没有精品!",
         "repeat": 36
       },
       {
         "name": "幽静蓝",
-        "img": "./img/chpyas2owwi7brjdkogxg6robjfxhej.png",
+        "img": "/resource/de59b7285af3007d07837296a40bd7b6.png",
         "type": "时装",
         "description": "即使在独处之时，也不能放松对自己的要求。",
         "repeat": 36
       },
       {
         "name": "天空蓝",
-        "img": "./img/pqak28if48xz62d87oxfejl8jcgnmgf.png",
+        "img": "/resource/78666f0a30c921cba11e32d03da682cd.png",
         "type": "时装",
         "description": "草垛上空的天空曾是他美好的回忆。",
         "repeat": 36
       },
       {
         "name": "骄阳",
-        "img": "./img/sprkds8914i3qrlgb1n5mskv7uuuxra.png",
+        "img": "/resource/9a93555b6cc169a29a09e52180c2346e.png",
         "type": "时装",
         "description": "骄阳之下，谁还会回想起关于凛冬的往昔。",
         "repeat": 36
       },
       {
         "name": "夜宴灰",
-        "img": "./img/ih6dwh3r5s4jjmw6umpajgp16nad9uz.png",
+        "img": "/resource/566398ed6e9b258bfa63fab520a68c38.png",
         "type": "时装",
         "description": "即使是接待男爵，也要优雅从容",
         "repeat": 36
       },
       {
         "name": "红藻",
-        "img": "./img/bcn6uley7b4d30f2dj6h0jqffgiy81i.png",
+        "img": "/resource/b40577bc42a5a6a6204aaf99a13eb1ab.png",
         "type": "时装",
         "description": "旺盛的生机之下，湖泊已是一汪毒水。",
         "repeat": 36
       },
       {
         "name": "青苹果",
-        "img": "./img/ig7dp4zyatgzb1tlo88enyqz7zzgaum.png",
+        "img": "/resource/9139f627f91b1b916974615d313d1d3b.png",
         "type": "时装",
         "description": "青苹果虽然酸涩，但等它成熟就已被别人摘走了",
         "repeat": 36
       },
       {
         "name": "严肃蓝",
-        "img": "./img/s7smh0clepavpl6q4ocfzkq258t4dap.png",
+        "img": "/resource/caf7815a848ac9ae693d4435244c174b.png",
         "type": "时装",
         "description": "每一封信都会按时到达正确的地方!",
         "repeat": 36
       },
       {
         "name": "荒野白",
-        "img": "./img/bjfwqv89aw0i6mxac18eia9pnt1uo57.png",
+        "img": "/resource/f1bd766ba1bec563208016c479f59f96.png",
         "type": "时装",
         "description": "在荒野上，没人听得到你的祈祷。",
         "repeat": 36
       },
       {
         "name": "祭司-欢呼",
-        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "img": "/resource/190feae2e4427e910a46ac14e731ad4b.png",
         "type": "个性动作",
         "description": "欢呼动作，祭司专属",
         "repeat": 36
       },
       {
         "name": "空军-欢呼",
-        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "img": "/resource/190feae2e4427e910a46ac14e731ad4b.png",
         "type": "个性动作",
         "description": "欢呼动作，空军专属",
         "repeat": 36
       },
       {
         "name": "盲女-欢呼",
-        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "img": "/resource/190feae2e4427e910a46ac14e731ad4b.png",
         "type": "个性动作",
         "description": "欢呼动作，盲女专属",
         "repeat": 36
       },
       {
         "name": "前锋-欢呼",
-        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "img": "/resource/190feae2e4427e910a46ac14e731ad4b.png",
         "type": "个性动作",
         "description": "欢呼动作，前锋专属",
         "repeat": 36
       },
       {
         "name": "盲女-等待",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "盲女匹配大厅动作，等待",
         "repeat": 36
       },
       {
         "name": "机械师-等待",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "机械师匹配大厅动作，等待",
         "repeat": 36
       },
       {
         "name": "盲女-小憩",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "盲女匹配大厅动作，小憩",
         "repeat": 36
       },
       {
         "name": "机械师-小憩",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "机械师匹配大厅动作，小憩",
         "repeat": 36
       },
       {
         "name": "冒险家-小憩",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "冒险家匹配大厅动作，小憩",
         "repeat": 36
       },
       {
         "name": "爱哭鬼-个性",
-        "img": "./img/1jfk1ycoajupwy0ipzzqh11x475uqso.png",
+        "img": "/resource/e85310870443f0c03b78ef4310cc2dca.png",
         "type": "涂鸦",
         "description": "爱哭鬼专用涂鸦，默默地展示着他的个性宣言 ",
         "repeat": 36
       },
       {
         "name": "“博士”-个性",
-        "img": "./img/9wb4qrfwuy7mnmhea52s77bhjwf6tpq.png",
+        "img": "/resource/af80188f3c5b4a0b60661076906cadcb.png",
         "type": "涂鸦",
         "description": "“博士”专用涂鸦，默默地展示着他的个性宣言",
         "repeat": 36
       },
       {
         "name": "守墓人-个性",
-        "img": "./img/ht3dkkmov7g3fhbcgbftzrbu4nsk7pr.png",
+        "img": "/resource/bf28d3b01080e4e6be3573eae82db9d2.png",
         "type": "涂鸦",
         "description": "守墓人专用涂鸦，默默地展示着他的个性宣言",
         "repeat": 36
       },
       {
         "name": "大副-个性",
-        "img": "./img/bgfmuyxrf3ctnfm4uiy4cnrfy9wuuc3.png",
+        "img": "/resource/8b6e6a62a9836e7e1023b8294625fbbf.png",
         "type": "涂鸦",
         "description": "大副专用涂鸦，默默地展示着他的个性宣言",
         "repeat": 36
       },
       {
         "name": "黑白回忆-野人",
-        "img": "./img/k87s7415nyrt94147r748m1zqqlyzyp.png",
+        "img": "/resource/e00b2f856ecb45e054c1dcde20ed4bb9.png",
         "type": "头像",
         "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
         "repeat": 36
       },
       {
         "name": "黑白回忆-杂技演员",
-        "img": "./img/ec0p3tabwoeesg9v1r4y1lkacqjt7ew.png",
+        "img": "/resource/fde300fb4e553f7b767a61e0e6ef543d.png",
         "type": "头像",
         "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
         "repeat": 36
       },
       {
         "name": "黑白回忆-昆虫学者",
-        "img": "./img/jjtinj6uv6rh2aznu4njka99cwop3x3.png",
+        "img": "/resource/0ff0bfd012d796cd24c871b9f95a8c28.png",
         "type": "头像",
         "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
         "repeat": 36
@@ -314,77 +314,77 @@
     "D": [
       {
         "name": "小提琴家-彩底",
-        "img": "./img/ej49er4zn8kp8axpid3xke0mp9lflpm.png",
+        "img": "/resource/7ab23c42f2db27ea5e4921c206850d65.png",
         "type": "涂鸦",
         "description": "小提琴家涂鸦，彩底",
         "repeat": 6
       },
       {
         "name": "雕刻家-彩底",
-        "img": "./img/4q99q9vpdr71p9gkxythpbepomd6hdb.png",
+        "img": "/resource/90f85dbf504c7f46361d07050279c50d.png",
         "type": "涂鸦",
         "description": "雕刻家涂鸦，彩底",
         "repeat": 6
       },
       {
         "name": "昆虫学者-彩底",
-        "img": "./img/r97q18qplk2cu71xx9mqs7h0nqfesbn.png",
+        "img": "/resource/18e8e495d774b84e27532c0bb4fd4efa.png",
         "type": "涂鸦",
         "description": "昆虫学者涂鸦，彩底",
         "repeat": 6
       },
       {
         "name": "画家-彩底",
-        "img": "./img/n7tswqi1i1v51xbwakfmq1onc6gnkak.png",
+        "img": "/resource/298953db6569cde1e2db9f05f99b2980.png",
         "type": "涂鸦",
         "description": "画家涂鸦，彩底",
         "repeat": 6
       },
       {
         "name": "“使徒”-彩底",
-        "img": "./img/qegdcrlxwnseoga3hvznrzw9fpnk59r.png",
+        "img": "/resource/2c48a69f1e43bcbc1028f61015d406fe.png",
         "type": "涂鸦",
         "description": "“使徒”涂鸦，彩底",
         "repeat": 6
       },
       {
         "name": "守墓人-彩底",
-        "img": "./img/8wt42p302d1jelsc7ts3p2t1hb6wa1v.png",
+        "img": "/resource/8d0bc0cd22bf5b7d887012410dfba93e.png",
         "type": "涂鸦",
         "description": "守墓人涂鸦，彩底",
         "repeat": 6
       },
       {
         "name": "玩具商-彩底",
-        "img": "./img/ga7yj15t6hymxfjreej5k1p063l843i.png",
+        "img": "/resource/4fcfe186760fdd2d2a281520be98f9a6.png",
         "type": "涂鸦",
         "description": "玩具商涂鸦，彩底",
         "repeat": 6
       },
       {
         "name": "彩色回忆-雕刻家",
-        "img": "./img/qhvg51nvg7l8usq7kagvfljqz93eqs3.png",
+        "img": "/resource/daf701d9cce12e1e25863e5332e5b824.png",
         "type": "头像",
         "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
         "repeat": 6
       },
       {
         "name": "彩色回忆-小提琴家",
-        "img": "./img/nr1y5iygysyj9yyn77zv0v2lmh7koul.png",
+        "img": "/resource/7243ee9eb9e8bdef8e555d245858be6e.png",
         "type": "头像",
         "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
         "repeat": 6
       },
       {
         "name": "彩色回忆-“博士”",
-        "img": "./img/nj0gki19jz1fw196go7fpw6mz006n49.png",
+        "img": "/resource/f95f75578518e1398430366c1ff46c28.png",
         "type": "头像",
         "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
         "repeat": 6
       },
       {
         "name": "彩色回忆-击球手",
-        "img": "./img/nfzgtub88sddskl9nbb4jggkidlegun.png",
+        "img": "/resource/b1fc607fe4638a98c2a60a71d7b874c7.png",
         "type": "头像",
         "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
         "repeat": 6

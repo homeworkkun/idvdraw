@@ -2,42 +2,42 @@
   "C": [
     {
       "name": "寂静闹钟",
-      "img": "./img/hud9omav51twp1jos8ffikrw1u1ksyr.png",
+      "img": "/resource/6e6198026b70797c4b66ebef1c7067e2.png",
       "type": "随从",
       "description": "警告：随时可能响起!",
       "repeat": 36
     },
     {
       "name": "留声机",
-      "img": "./img/c07gr5x8cq1xxszm6bm805hoj1utlrm.png",
+      "img": "/resource/061fd7d322eff764688074f0482e833a.png",
       "type": "随从",
       "description": "发出的声音都会被收录下来，如果能带着它逃出去，这段录音应该会很珍贵。",
       "repeat": 36
     },
     {
       "name": "蓝蝶",
-      "img": "./img/0hf4yyew4ih9enrx9e4jjq2jyrbzq88.png",
+      "img": "/resource/28ffd0b9466a2a3f05a8c5c6553bae8f.png",
       "type": "随从",
       "description": "美丽的蓝蝶，会给予求生者心灵上的慰藉",
       "repeat": 36
     },
     {
       "name": "鹿头-卡通",
-      "img": "./img/7l6ciudvtiinz6qur9a8zmdgtk4u5np.png",
+      "img": "/resource/2e4ca1ccf73ff173c818d97ef0fd6205.png",
       "type": "涂鸦",
       "description": "鹿头专属涂鸦，卡通",
       "repeat": 36
     },
     {
       "name": "“杰克”-卡通",
-      "img": "./img/p81hdrlrr8o5q5fxbcbw4kds9l8scht.png",
+      "img": "/resource/781375dcfb82ae5b7dff2e5665b2f200.png",
       "type": "涂鸦",
       "description": "“杰克”专属涂鸦，卡通",
       "repeat": 36
     },
     {
       "name": "小丑-卡通",
-      "img": "./img/5a6xbwrbi4ey8c7kavbv92vz4we3bj1.png",
+      "img": "/resource/eac12bdf2f01183bbfd5843c10894a59.png",
       "type": "涂鸦",
       "description": "小丑专属涂鸦，卡通",
       "repeat": 36
@@ -48,133 +48,133 @@
       "name": "慈善家-剪影",
       "type": "涂鸦",
       "description": "“慈善家”专属涂鸦，剪影",
-      "img": "./img/6n8wrwfhu9her22e4q4wv1p9gzemhtu.png",
+      "img": "/resource/f211fbd12d72d839893a8878433d362a.png",
       "repeat": 6
     },
     {
       "name": "魔术师-剪影",
       "type": "涂鸦",
       "description": "魔术师专属涂鸦，剪影",
-      "img": "./img/33qyy967ttk8sve7m40moez2u2uxuvj.png",
+      "img": "/resource/cd5f0f703fc3b9d701e9ba365a30c085.png",
       "repeat": 6
     },
     {
       "name": "园丁-剪影",
       "type": "涂鸦",
       "description": "园丁专属涂鸦，剪影",
-      "img": "./img/hdcbnm7xv7195qrcny1o6kz2013okbi.png",
+      "img": "/resource/a1182727bd67de0e6f00f80f9ab4fb2c.png",
       "repeat": 6
     },
     {
       "name": "厂长-剪影",
       "type": "涂鸦",
       "description": "厂长专属涂鸦，剪影",
-      "img": "./img/tevubygyz93td5paovsss73nsziot8l.png",
+      "img": "/resource/4a806d5b343e67100744ea0d37eeb752.png",
       "repeat": 6
     },
     {
       "name": "杰克-剪影",
       "type": "涂鸦",
       "description": "“杰克”专属涂鸦，剪影",
-      "img": "./img/of4cwpkun99j9sayxqm5tztn7ssz262.png",
+      "img": "/resource/c67045e2e08448cd89793c4535621942.png",
       "repeat": 6
     },
     {
       "name": "小丑-剪影",
       "type": "涂鸦",
       "description": "小丑专属涂鸦，剪影",
-      "img": "./img/pjor4fpa3nl5dsqq2p4qrtreusjnajb.png",
+      "img": "/resource/8b8db0aabfdbf705c8ddac1207ed6470.png",
       "repeat": 6
     },
     {
       "name": "工具箱-彩底",
       "type": "涂鸦",
       "description": "工具箱涂鸦，彩底",
-      "img": "./img/t8ygcqdpitghb3qtxs3gfs0aqx8t1ut.png",
+      "img": "/resource/147908d5d2604d23834fe9cd2fe71bc4.png",
       "repeat": 6
     },
     {
       "name": "前进",
       "type": "个性动作",
       "description": "表示前进的动作",
-      "img": "./img/rq2zv4ggq00tr73aebakvp3xr4cpf05.png",
+      "img": "/resource/90218334f77bb0621596813599cfefbb.png",
       "repeat": 6
     },
     {
       "name": "快回来",
       "type": "个性动作",
       "description": "让队友快回来的动作",
-      "img": "./img/6bhm3wmfineaex5ff7oit7xkzmpsto5.png",
+      "img": "/resource/132315d3d3ff09f1855cb4689d1390d6.png",
       "repeat": 6
     },
     {
       "name": "不解",
       "type": "个性动作",
       "description": "表示不解的动作",
-      "img": "./img/466v6gh8gjs0fyt74xw9dbl6gnfvzdr.png",
+      "img": "/resource/1a19de24202cb1e8a2f69a2bc122020a.png",
       "repeat": 6
     },
     {
       "name": "前锋",
       "type": "头像",
       "description": "前锋的基础头像",
-      "img": "./img/h0jmmd7c1u7cifkm2yr4t8w8g70ub8c.png",
+      "img": "/resource/2d5ca71902ce2f08a7de74b5362c333f.png",
       "repeat": 6
     },
     {
       "name": "机械师",
       "type": "头像",
       "description": "机械师的基础头像",
-      "img": "./img/6zkuttu5vx97sa8mlkqu5d0v4d2xqlt.png",
+      "img": "/resource/19a3a87515188fee47de26b343fc024a.png",
       "repeat": 6
     },
     {
       "name": "内测机械师",
       "type": "头像",
       "description": "内测机械师的基础头像",
-      "img": "./img/7xvs35rvn6r1s29terp2mqepy3vqcq2.png",
+      "img": "/resource/ecb588ff25a76aaf4fc8b1295e18bb7a.png",
       "repeat": 6
     },
     {
       "name": "律师",
       "type": "头像",
       "description": "律师的基础头像",
-      "img": "./img/cbxei35nubp3owc3o557fmp1g4tugn1.png",
+      "img": "/resource/ad48a87c3cacc7a21b27e719f43bae8a.png",
       "repeat": 6
     },
     {
       "name": "陌生人1号",
       "type": "头像",
       "description": "陌生人1号的基础头像",
-      "img": "./img/5zjw6puumpbiqet77acjcr3v6nwslnx.png",
+      "img": "/resource/67ecbbe41ff5271eb736a766957bc1d1.png",
       "repeat": 6
     },
     {
       "name": "园丁",
       "type": "头像",
       "description": "园丁的基础头像",
-      "img": "./img/k5n44gsphletfacsm14acyva1apnnt6.png",
+      "img": "/resource/2c6b3ff0f3e66d6cba5429e9618d36fb.png",
       "repeat": 6
     },
     {
       "name": "月亮脸",
       "type": "头像",
       "description": "月亮脸的基础头像",
-      "img": "./img/n0ckt1ccf37vcjvzw3ftdteu7bcjvez.png",
+      "img": "/resource/309daee99c85c1a188c8401260e27675.png",
       "repeat": 6
     },
     {
       "name": "侦探-吃惊",
       "type": "头像",
       "description": "侦探的萌版头像，吃惊",
-      "img": "./img/b0p6pv5tb6vm89t1fpzyo0yksmr8pga.png",
+      "img": "/resource/6b3486921db438da2427c0fae7469696.png",
       "repeat": 6
     },
     {
       "name": "侦探-灵机一动",
       "type": "头像",
       "description": "侦探的萌版头像，灵机一动",
-      "img": "./img/e38wk292ums7ode23i1x5767kbjje40.png",
+      "img": "/resource/0d2288a129660df9fd29ce330b0478da.png",
       "repeat": 6
     }
   ]

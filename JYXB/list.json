@@ -1,26 +1,256 @@
 [
   {
+    "id": "JYXB1",
+    "name": "鉴影寻宝第1期",
+    "description": "鉴影寻宝第1期",
+    "image": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+    "version": "jianyingxunbao.html",
+    "cost": "10",
+    "cost_type": "huoqi",
+    "old": true,
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "JYXB2",
+    "name": "鉴影寻宝第2期",
+    "description": "鉴影寻宝第2期",
+    "image": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+    "version": "jianyingxunbao.html",
+    "cost": "10",
+    "cost_type": "huoqi",
+    "old": true,
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "JYXB3",
+    "name": "鉴影寻宝第3期",
+    "description": "鉴影寻宝第3期",
+    "image": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+    "version": "jianyingxunbao.html",
+    "cost": "10",
+    "cost_type": "huoqi",
+    "old": true,
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "JYXB4",
+    "name": "鉴影寻宝第4期",
+    "description": "鉴影寻宝第4期",
+    "image": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+    "version": "jianyingxunbao.html",
+    "cost": "10",
+    "cost_type": "huoqi",
+    "old": true,
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "JYXB5",
+    "name": "鉴影寻宝第5期",
+    "description": "鉴影寻宝第5期",
+    "image": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+    "version": "jianyingxunbao.html",
+    "cost": "10",
+    "cost_type": "huoqi",
+    "old": true,
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "JYXB6",
+    "name": "鉴影寻宝第6期",
+    "description": "鉴影寻宝第6期",
+    "image": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+    "version": "jianyingxunbao.html",
+    "cost": "10",
+    "cost_type": "huoqi",
+    "old": true,
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "JYXB7",
+    "name": "鉴影寻宝第7期",
+    "description": "鉴影寻宝第7期",
+    "image": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+    "version": "jianyingxunbao.html",
+    "cost": "10",
+    "cost_type": "huoqi",
+    "old": true,
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "JYXB8",
+    "name": "鉴影寻宝第8期",
+    "description": "鉴影寻宝第8期",
+    "image": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+    "version": "jianyingxunbao.html",
+    "cost": "10",
+    "cost_type": "huoqi",
+    "old": true,
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "JYXB9",
+    "name": "鉴影寻宝第9期",
+    "description": "鉴影寻宝第9期",
+    "image": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+    "version": "jianyingxunbao.html",
+    "cost": "10",
+    "cost_type": "huoqi",
+    "old": true,
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "JYXB10",
+    "name": "鉴影寻宝第10期",
+    "description": "鉴影寻宝第10期",
+    "image": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+    "version": "jianyingxunbao.html",
+    "cost": "10",
+    "cost_type": "huoqi",
+    "old": true,
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "JYXB11",
+    "name": "鉴影寻宝第11期",
+    "description": "鉴影寻宝第11期",
+    "image": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+    "version": "jianyingxunbao.html",
+    "cost": "10",
+    "cost_type": "huoqi",
+    "old": true,
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
     "id": "JYXB12",
     "name": "鉴影寻宝第12期",
     "description": "鉴影寻宝第12期",
-    "image": "./img/3f3i38wu76650y7q771dg6z89cwew3v.png",
+    "image": "/resource/f446bcf698a56f61d326864643ec03d0.png",
     "version": "jianyingxunbao.html",
     "cost": "10",
     "cost_type": "huoqi",
     "award": {
       "奖励1": [
         "个性动作解锁卡",
-        "./img/aw2hxd73b2098jetua6bhh9chwz7cyb.png",
+        "/resource/9ddf0a2874e1846ba901224e98197ae3.png",
         "解锁卡"
       ],
       "奖励2": [
         "独特随身物品解锁卡",
-        "./img/h3dwtomsr643nwe2daq5lp30qytglmt.png",
+        "/resource/af581720fcad1f9f442f91bdb881afd2.png",
         "解锁卡"
       ],
       "奖励3": [
         "独特时装解锁卡",
-        "./img/2gw00yk3tp9voqjdaa5nt1gz87xmv08.png",
+        "/resource/f0d539fe1378db6b92bc77792a1af4be.png",
+        "解锁卡"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "JYXB13",
+    "name": "鉴影寻宝第13期",
+    "description": "鉴影寻宝第13期",
+    "image": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+    "version": "jianyingxunbao.html",
+    "cost": "10",
+    "cost_type": "huoqi",
+    "award": {
+      "奖励1": [
+        "个性动作解锁卡",
+        "/resource/9ddf0a2874e1846ba901224e98197ae3.png",
+        "解锁卡"
+      ],
+      "奖励2": [
+        "独特随身物品解锁卡",
+        "/resource/af581720fcad1f9f442f91bdb881afd2.png",
+        "解锁卡"
+      ],
+      "奖励3": [
+        "独特时装解锁卡",
+        "/resource/f0d539fe1378db6b92bc77792a1af4be.png",
+        "解锁卡"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "JYXB14",
+    "name": "鉴影寻宝第14期",
+    "description": "鉴影寻宝第14期",
+    "image": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+    "version": "jianyingxunbao.html",
+    "cost": "10",
+    "cost_type": "huoqi",
+    "award": {
+      "奖励1": [
+        "个性动作解锁卡",
+        "/resource/9ddf0a2874e1846ba901224e98197ae3.png",
+        "解锁卡"
+      ],
+      "奖励2": [
+        "独特随身物品解锁卡",
+        "/resource/af581720fcad1f9f442f91bdb881afd2.png",
+        "解锁卡"
+      ],
+      "奖励3": [
+        "独特时装解锁卡",
+        "/resource/f0d539fe1378db6b92bc77792a1af4be.png",
+        "解锁卡"
+      ]
+    },
+    "musiclist": [
+      "musiclist.json"
+    ]
+  },
+  {
+    "id": "JYXB15",
+    "name": "鉴影寻宝第15期",
+    "description": "鉴影寻宝第15期",
+    "image": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+    "version": "jianyingxunbao.html",
+    "cost": "10",
+    "cost_type": "huoqi",
+    "award": {
+      "奖励1": [
+        "个性动作解锁卡",
+        "/resource/9ddf0a2874e1846ba901224e98197ae3.png",
+        "解锁卡"
+      ],
+      "奖励2": [
+        "独特随身物品解锁卡",
+        "/resource/af581720fcad1f9f442f91bdb881afd2.png",
+        "解锁卡"
+      ],
+      "奖励3": [
+        "独特时装解锁卡",
+        "/resource/f0d539fe1378db6b92bc77792a1af4be.png",
         "解锁卡"
       ]
     },

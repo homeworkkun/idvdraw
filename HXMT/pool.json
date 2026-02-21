@@ -1,0 +1,140 @@
+{
+  "id": "HXMT",
+  "name": "幻象迷途",
+  "essenceImage": "/resource/68edc186b996376d420bc02f5b948407.png",
+  "cost": 0,
+  "costType": "nightingale",
+  "pullReward": 20,
+  "currencyInfo": {
+    "name": "夜莺祝福",
+    "img": "/resource/2a0d5b2b1c71883f6dcf987fe1c4f9e9.png"
+  },
+  "milestoneRewards": [
+    {
+      "pulls": 10,
+      "reward": 10
+    },
+    {
+      "pulls": 15,
+      "reward": 10
+    },
+    {
+      "pulls": 25,
+      "reward": 5
+    },
+    {
+      "pulls": 40,
+      "reward": 5
+    },
+    {
+      "pulls": 55,
+      "reward": 5
+    }
+  ],
+  "repeatRewards": {
+    "senior": 150,
+    "intermediate": 75,
+    "junior": 75,
+    "basic": 0,
+    "discount": 0
+  },
+  "initialCurrencies": {
+    "nightingale": 0
+  },
+  "discounts": [],
+  "pitySettings": {
+    "gold": 0,
+    "purple": 0,
+    "blue": 0
+  },
+  "items": {
+    "discount": [
+      {
+        "name": "随机折扣",
+        "type": "折扣",
+        "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+        "description": "随机获得折扣券，可在商店使用"
+      }
+    ],
+    "basic": [
+      {
+        "name": "30 线索",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "30线索"
+      },
+      {
+        "name": "40 线索",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "40线索"
+      },
+      {
+        "name": "50 线索",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "50线索"
+      },
+      {
+        "name": "15 碎片",
+        "type": "碎片",
+        "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+        "description": "15碎片"
+      }
+    ],
+    "junior": [
+      {
+        "name": "求生者-智慧的鲑鱼",
+        "type": "菜品",
+        "img": "/resource/03b6606ab2938c8eafc8f79009449c6f.png",
+        "description": "世间所有的智慧，将赠与第一个吃到鲑鱼的人。"
+      },
+      {
+        "name": "求生者-塞奎娜之泉",
+        "type": "菜品",
+        "img": "/resource/2c6fd13795b5232c0ee1f845a9ee53e4.png",
+        "description": "如果看到祈愿者的真诚，泉水会满足愿望。"
+      },
+      {
+        "name": "浴袍妖",
+        "type": "时装",
+        "img": "/resource/5d0d4f5318d2c534723075f003c306f0.png",
+        "description": "作为首批被化石温泉的影响的客人，其鬼魅的身形成为了浴场中鬼怪传说的来源。"
+      },
+      {
+        "name": "花店店长",
+        "type": "时装",
+        "img": "/resource/cadb5fc5e2bf0ae686bebde860b065d0.png",
+        "description": "改写命运？那需要丰富的想象力。"
+      }
+    ],
+    "intermediate": [
+      {
+        "name": "潜行",
+        "type": "随从",
+        "img": "/resource/0d1d80e8be174acb34fb9359875708cc.png",
+        "description": "易形者会化作世间万物，遵从旧神的指引，完成潜行的使命。"
+      },
+      {
+        "name": "冰中蝶",
+        "type": "时装",
+        "img": "/resource/da02d9010d04d64d3dd94e2b4efc7cf1.png",
+        "description": "我喜欢被雪花包裹的感觉，纯洁，温暖，如同在茧房中安眠。可无视一切嘈杂与大厦倾塌时的震荡。"
+      }
+    ],
+    "senior": [
+      {
+        "name": "禁忌的预言",
+        "type": "随身物品",
+        "img": "/resource/eb0da81322d5b20b0645c4ae27799d70.png",
+        "description": "双手触碰禁忌的瞬间，神明将预言之力悉数收回，只剩下凝滞的空气和无法逆转的时间。"
+      },
+      {
+        "name": "冥想",
+        "type": "家具",
+        "img": "/resource/7f7d53c9935cf797fad3e4d167f6aa65.png",
+        "description": "过去与未来在冥想中逐一展开，伴随愈合的伤疤和迫近的悲鸣。（通过幻象迷途获得）"
+      }
+    ]
+  }
+}

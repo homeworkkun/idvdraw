@@ -185,17 +185,20 @@
         /* 底部按钮样式 */
         .bottom-nav-btn {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
+            gap: 0.25rem;
+            padding: 0.5rem 0.75rem;
             background: #2b2522;
             border: 1px solid #5c4b3e;
             border-radius: 4px;
             color: #d6c4a5;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             cursor: pointer;
             transition: all 0.2s;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            flex: 0 1 auto;
+            min-width: 80px;
         }
         
         .bottom-nav-btn:hover {
@@ -208,6 +211,11 @@
             width: 24px;
             height: 24px;
             object-fit: contain;
+        }
+        
+        .btn-text {
+            white-space: nowrap;
+            font-size: 0.8rem;
         }
         
         /* 图标加载失败时的默认样式 */
@@ -389,19 +397,21 @@
                 padding: 10px !important;
             }
             
-            /* 底部按钮加大 */
+            /* 底部按钮调整 */
             .bottom-nav-btn {
-                padding: 0.75rem 1.25rem !important;
-                font-size: 1rem !important;
+                padding: 0.25rem 0.5rem !important;
+                font-size: 0.75rem !important;
+                min-width: 60px !important;
+                gap: 0.15rem !important;
             }
             
             .bottom-nav-btn img {
-                width: 28px !important;
-                height: 28px !important;
+                width: 20px !important;
+                height: 20px !important;
             }
             
             .btn-text {
-                font-size: 1rem !important;
+                font-size: 0.7rem !important;
             }
         }
         
@@ -418,13 +428,21 @@
         /* 大屏底部按钮 */
         @media (min-width: 769px) {
             .bottom-nav-btn {
+                flex-direction: row;
                 padding: 0.75rem 1.5rem;
                 font-size: 1.1rem;
+                gap: 0.5rem;
+                min-width: auto;
             }
             
             .bottom-nav-btn img {
                 width: 30px;
                 height: 30px;
+            }
+            
+            .btn-text {
+                font-size: 1rem;
+                white-space: nowrap;
             }
         }
         
@@ -482,11 +500,11 @@
     <div class="relative z-10 top-tabs" style="display: none;">
         <div class="tab-item active" onclick="switchTabMobile(this, 'all')">全部</div>
         <div class="tab-item" onclick="switchTabMobile(this, 'recommend')">推荐</div>
-        <div class="tab-item" onclick="switchTabMobile(this, 'new')">特惠</div>
         <div class="tab-item" onclick="switchTabMobile(this, 'package')">礼包</div>
         <div class="tab-item" onclick="switchTabMobile(this, 'skin')">时装</div>
         <div class="tab-item" onclick="switchTabMobile(this, 'item')">杂货</div>
         <div class="tab-item" onclick="switchTabMobile(this, 'room')">归宿</div>
+        <div class="tab-item" onclick="switchTabMobile(this, 'other')">其他</div>
     </div>
 
     <!-- 主体内容区域 -->
@@ -496,11 +514,11 @@
         <div class="w-32 flex flex-col pt-8 mr-4 shrink-0 left-sidebar">
             <div class="sidebar-tab active" onclick="switchTab(this, 'all')">全部</div>
             <div class="sidebar-tab" onclick="switchTab(this, 'recommend')">推荐</div>
-            <div class="sidebar-tab" onclick="switchTab(this, 'new')">特惠</div>
             <div class="sidebar-tab" onclick="switchTab(this, 'package')">礼包</div>
             <div class="sidebar-tab" onclick="switchTab(this, 'skin')">时装</div>
             <div class="sidebar-tab" onclick="switchTab(this, 'item')">杂货</div>
             <div class="sidebar-tab" onclick="switchTab(this, 'room')">归宿</div>
+            <div class="sidebar-tab" onclick="switchTab(this, 'other')">其他</div>
         </div>
 
         <!-- 右侧商品展示区 -->
@@ -511,15 +529,22 @@
             <div class="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-[#8b7568]"></div>
             <div class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-[#8b7568]"></div>
 
+            <!-- 搜索框 -->
+            <div id="search-container" class="mb-4">
+                <input type="text" id="search-input" placeholder="搜索物品名称..." 
+                       class="w-full px-4 py-2 bg-[#2b2522] border border-[#5c4b3e] rounded text-[#d6c4a5] placeholder-gray-500 focus:outline-none focus:border-[#d4af37]"
+                       oninput="handleSearch(this.value)">
+            </div>
+
             <!-- 商品网格 -->
             <div id="goods-container" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 goods-grid">
-                <div class="col-span-full text-center text-gray-400 py-20">正在从 goods.json 加载商品...</div>
+                <div class="col-span-full text-center text-gray-400 py-20">正在加载商品...</div>
             </div>
         </div>
     </div>
 
     <!-- 底部栏 (三个按钮并排，写死在HTML中) -->
-    <div class="relative z-10 h-16 bg-[#151210] border-t border-[#3e3530] flex items-center justify-around px-4">
+    <div class="relative z-10 h-16 bg-[#151210] border-t border-[#3e3530] flex items-center justify-center gap-4 px-4">
         <button class="bottom-nav-btn" onclick="window.location.href='/huanxiangmitu.html'">
             <img class="btn-icon" src="/resource/68edc186b996376d420bc02f5b948407.png" alt="幻象迷途" onerror="this.src='https://patchwiki.biligame.com/images/dwrg/thumb/4/41/h7j1qqr29rcsubf0nxfm8w9uduna7nt.png/120px-%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%B8%80%E8%B5%9B%E5%AD%A3%C2%B7%E7%B2%BE%E5%8D%8E1.png'">
             <span class="btn-text">幻象迷途</span>
@@ -631,8 +656,12 @@
 
         // ==================== 初始化 ====================
         let allGoods = [];
+        let goodsData = [];
+        let wikiData = [];
         let resourceTypes = [];
         let selectedGood = null;
+        let currentFilterType = 'all';
+        let currentSearchQuery = '';
 
         // 默认图片（防挂）
         const DEFAULT_IMG = 'https://patchwiki.biligame.com/images/dwrg/thumb/4/41/h7j1qqr29rcsubf0nxfm8w9uduna7nt.png/120px-%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%B8%80%E8%B5%9B%E5%AD%A3%C2%B7%E7%B2%BE%E5%8D%8E1.png';
@@ -647,22 +676,80 @@
             // 2. 更新头部资源栏
             updateHeader();
 
-            // 3. 加载商品列表
+            // 3. 加载商品列表 - 同时加载 goods.json 和 wikiauto.json
             try {
-                const res = await fetch('/store/goods.json');
-                if (res.ok) {
-                    allGoods = await res.json();
-                    renderGoods(allGoods);
+                const [goodsRes, wikiRes] = await Promise.all([
+                    fetch('/store/goods.json'),
+                    fetch('/store/wikiauto.json')
+                ]);
+
+                goodsData = goodsRes.ok ? await goodsRes.json() : [];
+                wikiData = wikiRes.ok ? await wikiRes.json() : [];
+
+                // 合并两个商品列表
+                allGoods = [...goodsData, ...wikiData];
+
+                if (allGoods.length === 0) {
+                    document.getElementById('goods-container').innerHTML =
+                        '<div class="col-span-full text-center text-red-400">无法加载商品数据，请检查 goods.json 和 wikiauto.json 是否存在。</div>';
                 } else {
-                    document.getElementById('goods-container').innerHTML = 
-                        '<div class="col-span-full text-center text-red-400">无法加载 goods.json，请检查文件是否存在。</div>';
+                    renderGoods(allGoods);
                 }
             } catch (e) {
                 console.error('商品加载失败', e);
-                document.getElementById('goods-container').innerHTML = 
+                document.getElementById('goods-container').innerHTML =
                         `<div class="col-span-full text-center text-red-400">加载出错: ${e.message}</div>`;
             }
         });
+
+        // 搜索处理
+        function handleSearch(query) {
+            currentSearchQuery = query.toLowerCase().trim();
+            applyFilter();
+        }
+
+        // 应用当前筛选
+        function applyFilter() {
+            let filtered = [];
+
+            // 根据当前标签筛选
+            switch (currentFilterType) {
+                case 'all':
+                    filtered = allGoods;
+                    break;
+                case 'recommend':
+                    filtered = []; // 推荐tab不展示内容
+                    break;
+                case 'package':
+                    filtered = goodsData; // 礼包tab展示goods.json的内容
+                    break;
+                case 'skin':
+                    filtered = allGoods.filter(g => g.type.includes('时装'));
+                    break;
+                case 'item':
+                    filtered = allGoods.filter(g => g.type.includes('随身物品'));
+                    break;
+                case 'room':
+                    filtered = allGoods.filter(g => g.type.includes('户型') || g.type.includes('家具'));
+                    break;
+                case 'other':
+                    filtered = allGoods.filter(g => 
+                        g.type.includes('个性动作') || 
+                        g.type.includes('等待动作') || 
+                        g.type.includes('随从')
+                    );
+                    break;
+                default:
+                    filtered = allGoods;
+            }
+
+            // 搜索筛选
+            if (currentSearchQuery) {
+                filtered = filtered.filter(g => g.name.toLowerCase().includes(currentSearchQuery));
+            }
+
+            renderGoods(filtered);
+        }
 
         // ==================== 核心逻辑 ====================
 
@@ -860,13 +947,19 @@
                 return;
             }
 
-            // 2. 添加到全局背包 (使用 V1 格式: name|type|img)
-            // 注意：这是关键改动 - 使用 V1 兼容格式而不是 V2 格式
-            const globalKey = `${selectedGood.name}|${selectedGood.type}|${selectedGood.img || ''}`;
-            
-            const globalOwned = JSON.parse(localStorage.getItem('global_owned_items')) || {};
-            globalOwned[globalKey] = true;
-            localStorage.setItem('global_owned_items', JSON.stringify(globalOwned));
+            // 2. 检查是否为货币兑换商品
+            if (selectedGood.reward && selectedGood.reward.type === 'currency') {
+                // 货币兑换：增加用户货币数量
+                const currentAmount = ResourceManager.getResource(selectedGood.reward.currency);
+                ResourceManager.setResource(selectedGood.reward.currency, currentAmount + selectedGood.reward.amount);
+            } else {
+                // 普通商品：添加到全局背包 (使用 V1 格式: name|type|img)
+                const globalKey = `${selectedGood.name}|${selectedGood.type}|${selectedGood.img || ''}`;
+                
+                const globalOwned = JSON.parse(localStorage.getItem('global_owned_items')) || {};
+                globalOwned[globalKey] = true;
+                localStorage.setItem('global_owned_items', JSON.stringify(globalOwned));
+            }
 
             // 3. 更新购买记录
             updatePurchaseRecord(selectedGood.id);
@@ -884,26 +977,11 @@
             document.querySelectorAll('.sidebar-tab').forEach(t => t.classList.remove('active'));
             el.classList.add('active');
 
-            // 筛选逻辑
-            if (filterType === 'all' || filterType === 'recommend' || filterType === 'new') {
-                renderGoods(allGoods); // 暂时全部显示，实际可根据 item.tag 筛选
-            } else {
-                // 根据 type 简单筛选
-                // 映射： skin -> 时装, package -> 礼包, item -> 杂货, room -> 归宿
-                const typeMap = {
-                    'skin': '时装',
-                    'package': '礼包',
-                    'item': '杂货',
-                    'room': '归宿'
-                };
-                const targetType = typeMap[filterType];
-                if (targetType) {
-                    const filtered = allGoods.filter(g => g.type.includes(targetType));
-                    renderGoods(filtered);
-                } else {
-                    renderGoods(allGoods);
-                }
-            }
+            // 更新当前筛选类型
+            currentFilterType = filterType;
+
+            // 应用筛选
+            applyFilter();
         }
 
         // ==================== 顶部标签切换 (移动端) ====================
@@ -912,24 +990,11 @@
             document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
             el.classList.add('active');
 
-            // 筛选逻辑 (与桌面端相同)
-            if (filterType === 'all' || filterType === 'recommend' || filterType === 'new') {
-                renderGoods(allGoods);
-            } else {
-                const typeMap = {
-                    'skin': '时装',
-                    'package': '礼包',
-                    'item': '杂货',
-                    'room': '归宿'
-                };
-                const targetType = typeMap[filterType];
-                if (targetType) {
-                    const filtered = allGoods.filter(g => g.type.includes(targetType));
-                    renderGoods(filtered);
-                } else {
-                    renderGoods(allGoods);
-                }
-            }
+            // 更新当前筛选类型
+            currentFilterType = filterType;
+
+            // 应用筛选
+            applyFilter();
         }
 
         // ==================== Bonus 弹窗功能 ====================

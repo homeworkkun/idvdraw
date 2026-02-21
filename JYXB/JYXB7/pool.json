@@ -1,0 +1,109 @@
+{
+  "id": "JYXB7",
+  "name": "鉴影寻宝第7期",
+  "description": "火漆消耗型池子（旧机制）",
+  "essenceImage": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+  "pitySettings": {
+    "gold": 80,
+    "purple": 80,
+    "blue": 80
+  },
+  "items": {
+    "A": [
+      {
+        "name": "宝钻女爵",
+        "type": "时装",
+        "img": "/resource/97eb5ccbe866d57bd64422eb258f5fa6.png",
+        "description": "【公主之选】的女爵阁下素来以貌取人，并毫不掩饰她的喜恶，连所有亲族都对她忌惮不已，只有一人例外。"
+      },
+      {
+        "name": "曼陀罗",
+        "type": "时装",
+        "img": "/resource/05e700c2b32f3df814fd48b90f7b8bea.png",
+        "description": "曼陀罗——她被赐予的花名叫曼陀罗，一个沉睡在黑暗中的边缘人物。或许一点鲜血的灌溉，花中的精灵才能被唤醒……"
+      },
+      {
+        "name": "逆刃之鞭",
+        "type": "时装",
+        "img": "/resource/bedea1b8d5db2447943e89f76cc23a6d.png",
+        "description": "曾在血族中遭到背叛并被驱逐的异类。他以摧毁血族盟约的压迫为信念，相信必要付出代价才能获得救赎。"
+      },
+      {
+        "name": "鸩",
+        "type": "时装",
+        "img": "/resource/e88eecfdeff9c2f2b91705944b904f96.png",
+        "description": "没有谁的动机经得起彻底解剖。看似无害的绒羽，也可能携带着致命的鸩毒。"
+      }
+    ],
+    "B": [
+      {
+        "name": "浴袍情侣",
+        "type": "时装",
+        "img": "/resource/e7766724162fa2c74f9ba7852aa1747a.png",
+        "description": "温泉浴场能清洁污垢，放松心情，净化心灵一—情侣为此慕名而来。"
+      },
+      {
+        "name": "浴袍情侣",
+        "type": "时装",
+        "img": "/resource/a9bee76cdd50a5c7fe5e14df1a11ef82.png",
+        "description": "入驻的情侣尚未加入酒神的狂欢，还沉浸在自己的爱情中，对温泉度假充满期待。"
+      },
+      {
+        "name": "渊博之人",
+        "type": "时装",
+        "img": "/resource/1ae608cefc923e2e0c809285236e5a9d.png",
+        "description": "你在探寻什么？知识还是命运？"
+      },
+      {
+        "name": "浴袍妖",
+        "type": "时装",
+        "img": "/resource/5d0d4f5318d2c534723075f003c306f0.png",
+        "description": "作为首批被化石温泉的影响的客人，其鬼魅的身形成为了浴场中鬼怪传说的来源。"
+      },
+      {
+        "name": "彼岸花",
+        "type": "随身物品",
+        "img": "/resource/9ed6049564ada6d142216f8e7b42e785.png",
+        "description": "花开无叶，叶生无花，花叶永不相见。 情不为因果，缘注定生死，一生彼岸，一盏忘川。"
+      },
+      {
+        "name": "海螺",
+        "type": "随身物品",
+        "img": "/resource/dc8a2d5c3804bd26edde35087d6096b5.png",
+        "description": "传说中有只海螺能起死回生，永驻容颜，是无数人渴求的珍宝，而这只连普通的光泽都失去了。"
+      },
+      {
+        "name": "曼陀罗折纸",
+        "type": "随身物品",
+        "img": "/resource/24a77d4bdb5bd0fa4799e3fed0f767ed.png",
+        "description": "每送走一名逝者，卡尔便折一朵曼陀罗，希望这逝去之花平安将亡魂带向彼岸。"
+      },
+      {
+        "name": "第五枚爱箭",
+        "type": "随身物品",
+        "img": "/resource/92fb912c83508a6a8f1db2b95c3b83e1.png",
+        "description": "爱是最自私的开端，引发所有浪荡流连的余生。"
+      }
+    ],
+    "C": [
+      {
+        "name": "碎片*88",
+        "type": "碎片",
+        "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+        "description": "碎片"
+      }
+    ],
+    "D": [
+      {
+        "name": "线索*88",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "线索"
+      }
+    ]
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png"
+  }
+}

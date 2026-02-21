@@ -1,0 +1,105 @@
+{
+  "id": "lucky_dice_41-2",
+  "name": "幸运之骰·第41期-系列2",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 9999,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "贺龙年": {
+      "type": "头像框",
+      "rarity": "C",
+      "img": "/resource/71fc7087b098623ec929f681ba067193.png",
+      "description": "烟花火龙闹春节，吉祥如意贺新年。",
+      "repeat": 200
+    },
+    "年夜饭": {
+      "type": "头像框",
+      "rarity": "C",
+      "img": "/resource/ff785f7d9f970f0e4689036033e12f4a.png",
+      "description": "守岁接长筵（通过2023年“戏乐辞旧 粉墨绘新”活动首次获得）",
+      "repeat": 200
+    },
+    "绘龙": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "/resource/329ee469ac6f9b071c1b1260988f1b75.png",
+      "description": "当卷轴上的舞龙在除夕夜被画上双眼，那条龙仿佛从纸上跃起一般，带给所有人祝福和好运。",
+      "repeat": 6
+    },
+    "川剧变脸": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "/resource/5410b755da909b866b3899643d76e432.png",
+      "description": "变脸齐贺岁，飞焱照新禧（通过2023年“戏乐辞旧 粉墨绘新”活动首次获得）",
+      "repeat": 6
+    },
+    "闻雷爪": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/fc0cda7c583e05bf12f1eeca30c2bcd0.png",
+      "description": "鹿头专属涂鸦，闻雷爪",
+      "repeat": 6
+    },
+    "招风旗": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/836171dd3a9555d52e8a138ae096af57.png",
+      "description": "古董商专属涂鸦，招风旗",
+      "repeat": 6
+    },
+    "祈雨珠": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/d36adb73decdbbdfe33679c7a28f7c1e.png",
+      "description": "杂技演员专属涂鸦，祈雨珠",
+      "repeat": 6
+    },
+    "小丑-变脸": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/ea821386a901344385bd232cb8eeb753.png",
+      "description": "小丑专用涂鸦，变脸",
+      "repeat": 6
+    },
+    "26号守卫-喷火": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/1d7090e631266d7efc02a714fcbc026b.png",
+      "description": "26号守卫专用涂鸦，喷火",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

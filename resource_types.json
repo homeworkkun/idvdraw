@@ -2,26 +2,26 @@
   {
     "name": "inspiration",
     "displayName": "灵感",
-    "icon": "./img/oynmw4mcbawheghwkyi64zyr0onbfow.png"
+    "icon": "/resource/e65671ae69fd5263be962bd64de3cfe8.png"
   },
   {
     "name": "rank_treasure",
     "displayName": "排位珍宝",
-    "icon": "./img/ih8qj9ibt7fy95b1oifg24p8pcsa4y2.png"
+    "icon": "/resource/72bb95f8b126d3f86e41af05eb20d930.png"
   },
   {
     "name": "fragments",
     "displayName": "碎片",
-    "icon": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png"
+    "icon": "/resource/abb5919fc5926eb8e2da46469ff98487.png"
   },
   {
     "name": "clue",
     "displayName": "线索",
-    "icon": "./img/r7gqx5aabcmzam3bdquawubybgdola8.png"
+    "icon": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png"
   },
   {
     "name": "huoqi",
     "displayName": "火漆",
-    "icon": "./img/npprmncqqxexxj97vrgggwcehn7saqu.png"
+    "icon": "/resource/60fcc83fe18f0da9501005e21e264c70.png"
   }
 ]

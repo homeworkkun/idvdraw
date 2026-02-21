@@ -1,7 +1,7 @@
 {
   "id": "S10E2",
   "name": "第10赛季·精华2",
-  "essenceImage": "./img/am3ae38uaq4h073sdvhz8s9qmqthl40.png",
+  "essenceImage": "/resource/56add148917156c8b29a312bb4c9634f.png",
   "diff_A": 2,
   "initialCurrencies": {
     "inspiration": 100000,
@@ -10,7 +10,7 @@
   "discounts": [],
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "type": "通用货币"
   },
   "pitySettings": {
@@ -22,7 +22,7 @@
     "S": [
       {
         "name": "白松露",
-        "img": "./img/s9yty2l6tw8kzr64jq08rhe7smsefkn.png",
+        "img": "/resource/f6ec695c77b3372ff3719b65fb1d983b.png",
         "type": "时装",
         "description": "你们应该保持虔诚，无论是对味蕾，还是灵魂。\n（【限定】时装，仅可在第十赛季精华2中获得）",
         "repeat": 2000
@@ -31,14 +31,14 @@
     "A": [
       {
         "name": "可可豆",
-        "img": "./img/8gteh89wu313mp2zkzg5lba19w9erzi.png",
+        "img": "/resource/25280276ee8e02e5de07186ba8ddcb7a.png",
         "type": "时装",
         "description": "食物是否美味取决于能否让吃它的人感到开心，而不是取决于它来自街头小店，还是顶级餐厅。",
         "repeat": 1000
       },
       {
         "name": "罗勒",
-        "img": "./img/8n2nsu1kv9ui2utok8bbpy8ca3udtgi.png",
+        "img": "/resource/0050d531e75648a53a35a706ed32b462.png",
         "type": "时装",
         "description": "少女们最美味的梦想，也许不仅仅在主厨先生的案台上",
         "repeat": 1000
@@ -47,70 +47,70 @@
     "B": [
       {
         "name": "三分熟",
-        "img": "./img/c9qwpp3hp314xut8hlqzleuhfq4xyot.png",
+        "img": "/resource/efd5fbb168ab55c324905b46766b991d.png",
         "type": "时装",
         "description": "离我的砧板远一点，除非你想永远呆在上面。",
         "repeat": 200
       },
       {
         "name": "沙司",
-        "img": "./img/svcxzo496a5q68qb0xgz8tgpyknv7vd.png",
+        "img": "/resource/a1914bae516e81468fd01fe7fe11abca.png",
         "type": "时装",
         "description": "如何在这个厨房里变得不可或缺，是一个复杂的问题，毕竟我们不供应垃圾食品。",
         "repeat": 200
       },
       {
         "name": "大吉岭",
-        "img": "./img/7i76myzknfffaf2n2zg230huk3wfchf.png",
+        "img": "/resource/e3ae2b7ccd1e783e760f8e6b5e00d935.png",
         "type": "时装",
         "description": "有时候，我们需要为这温和的名字，加一些辛辣的注解。",
         "repeat": 200
       },
       {
         "name": "茗荷",
-        "img": "./img/rsbsaa9lxqkv6akqhi7a2sh5av80t3n.png",
+        "img": "/resource/4801af59f49937cfd8d3b2d6e93c221d.png",
         "type": "时装",
         "description": "浅尝之甜，回味之苦－－就像我的人生一般。",
         "repeat": 200
       },
       {
         "name": "莳萝",
-        "img": "./img/e5j9hvw1nztghsygjd40im9fwoex8ag.png",
+        "img": "/resource/04ff40bc771a6284e634dd5cebc5e9c2.png",
         "type": "时装",
         "description": "厨师之于餐厅，就像香料之于佳肴，都是最特别的标签。而我的主厨大人，您的标签是……",
         "repeat": 200
       },
       {
         "name": "召唤铃",
-        "img": "./img/0byvep853c3iugunlly0w8drgonzws7.png",
+        "img": "/resource/d3d105be45b8348412ab42b5392ff19e.png",
         "type": "时装",
         "description": "请问有什么需要为您做的，我的客人？",
         "repeat": 200
       },
       {
         "name": "红夫人-笑颜",
-        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
         "type": "等待动作",
         "description": "红夫人专属匹配大厅等待动作，笑颜",
         "repeat": 200
       },
       {
         "name": "摄影师-拜访",
-        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
         "type": "等待动作",
         "description": "摄影师专属匹配大厅等待动作，拜访，求生者可见",
         "repeat": 200
       },
       {
         "name": "野人-起身",
-        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
         "type": "等待动作",
         "description": "野人匹配大厅动作，起身",
         "repeat": 200
       },
       {
         "name": "大副-起身",
-        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
         "type": "等待动作",
         "description": "大副匹配大厅动作，起身",
         "repeat": 200
@@ -119,189 +119,189 @@
     "C": [
       {
         "name": "绿帽",
-        "img": "./img/j1mci311j99qwaig9jweu3lnbmwn22i.png",
+        "img": "/resource/8de166367524ba13cbda6ec4058cf86a.png",
         "type": "时装",
         "description": "只要没人叫他“花椰菜”，小丑还是很乐意以绿帽造型来活跃气氛的",
         "repeat": 36
       },
       {
         "name": "白蜡",
-        "img": "./img/2qo52u05v038q2qflz46eyl2wlwa53k.png",
+        "img": "/resource/3a291c0625169cf4773c700d728f76bb.png",
         "type": "时装",
         "description": "失去执念的绝望，失去挚爱的苍白",
         "repeat": 36
       },
       {
         "name": "珊瑚红",
-        "img": "./img/3etgdwrpifk7vdsxl4nhkx3uhex2ygg.png",
+        "img": "/resource/bf367c95d25f795ae035b5fa5ef7481f.png",
         "type": "时装",
         "description": "红色代表着热情与执着",
         "repeat": 36
       },
       {
         "name": "匿踪绿",
-        "img": "./img/m5esvmj2xv235ub7zkrcieexent781j.png",
+        "img": "/resource/09d016e6c0e1d3b6819c7696e69dd282.png",
         "type": "时装",
         "description": "活跃的绿色也有静谧的一面",
         "repeat": 36
       },
       {
         "name": "黑领",
-        "img": "./img/ra99xhcyvpef9pqopxhbq8mtrkrmgbl.png",
+        "img": "/resource/70ed789a56d732efff2c04c26c3c592f.png",
         "type": "时装",
         "description": "就这身衣服，干什么活染上什么污渍都不必担心",
         "repeat": 36
       },
       {
         "name": "秋意绿",
-        "img": "./img/rgknl22gyth6m8femixwruufqi8e35v.png",
+        "img": "/resource/3c17391b88d5b12fa33752c07b9d0639.png",
         "type": "时装",
         "description": "有人会问，对于盲女而言，服饰的配色有任何意义吗？－－至少她会成为别人眼中的风景线",
         "repeat": 36
       },
       {
         "name": "浅叶爵",
-        "img": "./img/rhhklmy8mruoq8lbcpwlfi2iptxh2i7.png",
+        "img": "/resource/42b9ca34d38ae0d7244b4136179cc51f.png",
         "type": "时装",
         "description": "有时候拿叶子切片练练手，也是不错的消遣",
         "repeat": 36
       },
       {
         "name": "金红帛",
-        "img": "./img/kdorn3cvj4qir956xvnpidprtxi5tq7.png",
+        "img": "/resource/e2f1e6b9a7b8645574df00a57cf06eb7.png",
         "type": "时装",
         "description": "嚓嚓嗦嗦，金色的绸帛这么剪开会不会太浪费了?",
         "repeat": 36
       },
       {
         "name": "抹茶绿",
-        "img": "./img/7h8y2233w7u13fuzqlkjflzjpntr4q3.png",
+        "img": "/resource/b7efd87bba127d8e14efed16691e6491.png",
         "type": "时装",
         "description": "绿色代表着活力与机智",
         "repeat": 36
       },
       {
         "name": "创意紫",
-        "img": "./img/jra4rkpv9wosozp8eq2n5q7zmfoiqq4.png",
+        "img": "/resource/f1dd17b12eb78d95b77c83d457856d60.png",
         "type": "时装",
         "description": "悦目的颜色也能激发创意！",
         "repeat": 36
       },
       {
         "name": "玫瑰爵",
-        "img": "./img/o8is5p6n8mxe72sv7svtyljwyq5k228.png",
+        "img": "/resource/211fd7ed866fa50e6e70e32d52ccdb8f.png",
         "type": "时装",
         "description": "千万别误会，这身玫瑰色不过是为与红酒相配，与其他液体毫无关系",
         "repeat": 36
       },
       {
         "name": "祭司-欢呼",
-        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "img": "/resource/190feae2e4427e910a46ac14e731ad4b.png",
         "type": "个性动作",
         "description": "欢呼动作，祭司专属",
         "repeat": 36
       },
       {
         "name": "空军-欢呼",
-        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "img": "/resource/190feae2e4427e910a46ac14e731ad4b.png",
         "type": "个性动作",
         "description": "欢呼动作，空军专属",
         "repeat": 36
       },
       {
         "name": "盲女-欢呼",
-        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "img": "/resource/190feae2e4427e910a46ac14e731ad4b.png",
         "type": "个性动作",
         "description": "欢呼动作，盲女专属",
         "repeat": 36
       },
       {
         "name": "前锋-欢呼",
-        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "img": "/resource/190feae2e4427e910a46ac14e731ad4b.png",
         "type": "个性动作",
         "description": "欢呼动作，前锋专属",
         "repeat": 36
       },
       {
         "name": "魔术师-小憩",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "魔术师匹配大厅动作，小憩",
         "repeat": 36
       },
       {
         "name": "“慈善家”-准备",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "“慈善家”匹配大厅动作，小憩",
         "repeat": 36
       },
       {
         "name": "空军-小憩",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "空军匹配大厅动作，小憩",
         "repeat": 36
       },
       {
         "name": "律师-小憩",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "律师匹配大厅动作，小憩",
         "repeat": 36
       },
       {
         "name": "魔术师-等待",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "魔术师匹配大厅动作，等待",
         "repeat": 36
       },
       {
         "name": "祭司门之钥-卡通",
-        "img": "./img/krauh5269d64rbklyzonf03u5w0bvuc.png",
+        "img": "/resource/73ef10819605ca8919cb59599ad3a37e.png",
         "type": "涂鸦",
         "description": "祭司专属涂鸦，卡通",
         "repeat": 36
       },
       {
         "name": "宿伞之魂铃铛-卡通",
-        "img": "./img/mcfg8nei4ckjobkwwfeoeahmg2ugmik.png",
+        "img": "/resource/2c3d232cf768567299720f7684986302.png",
         "type": "涂鸦",
         "description": "宿伞之魂专属涂鸦，卡通",
         "repeat": 36
       },
       {
         "name": "小丑火箭-卡通",
-        "img": "./img/ctyi53v7sgzi5row3emt455clvebczj.png",
+        "img": "/resource/d5ea80be9f116fc8e214e7222ab0568e.png",
         "type": "涂鸦",
         "description": "小丑专属涂鸦，卡通",
         "repeat": 36
       },
       {
         "name": "红蝶扇子-卡通",
-        "img": "./img/7ke8xf5yktje1zov5nuja63ihb2wr6v.png",
+        "img": "/resource/620ec81a7b2a3e1667462067d54b7f08.png",
         "type": "涂鸦",
         "description": "红蝶专属涂鸦，卡通",
         "repeat": 36
       },
       {
         "name": "黑白回忆-祭司",
-        "img": "./img/ddqy8i335bt615giq65r092g1eaw2q5.png",
+        "img": "/resource/3e19ef384afdcfcb3b5e1333727ede0b.png",
         "type": "头像",
         "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
         "repeat": 36
       },
       {
         "name": "黑白回忆-空军",
-        "img": "./img/5tq7yr6392y47wc1nidgt9burztgvj7.png",
+        "img": "/resource/6d28150c08e219fd309251f15c5e13e1.png",
         "type": "头像",
         "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
         "repeat": 36
       },
       {
         "name": "黑白回忆-幸运儿",
-        "img": "./img/i0w8huotts66dxtuosds3gfnw119xix.png",
+        "img": "/resource/6162e9b5a26b46b3620e1f1a4007b772.png",
         "type": "头像",
         "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
         "repeat": 36
@@ -310,70 +310,70 @@
     "D": [
       {
         "name": "机械师-灰影",
-        "img": "./img/kqzwkx14ftv8h05myq8x8o5jbp7il9u.png",
+        "img": "/resource/f640e8d16ba7efa3805a90898f549159.png",
         "type": "涂鸦",
         "description": "机械师专属涂鸦，灰影系列",
         "repeat": 6
       },
       {
         "name": "空军-灰影",
-        "img": "./img/r293l248bbxfotwa3ragc5m6mdv7pp2.png",
+        "img": "/resource/b46b7451aad472b784e2f482b93dec4c.png",
         "type": "涂鸦",
         "description": "空军专属涂鸦，灰影系列",
         "repeat": 6
       },
       {
         "name": "牛仔-灰影",
-        "img": "./img/mbkgwqlehtzr28ivo61ygpf9roeg4fj.png",
+        "img": "/resource/50a4d7a3fc96f804672b8f8282b8b0e3.png",
         "type": "涂鸦",
         "description": "牛仔专属涂鸦，灰影系列",
         "repeat": 6
       },
       {
         "name": "前锋-灰影",
-        "img": "./img/m5usb83t1lpqt2r73jwnp600kllq2br.png",
+        "img": "/resource/7626e5bfc4aa3b8dc142e4434c7945a0.png",
         "type": "涂鸦",
         "description": "前锋专属涂鸦，灰影系列",
         "repeat": 6
       },
       {
         "name": "医生-灰影",
-        "img": "./img/ksmr9ia98psmlxpz6fa31ejjjdak3wr.png",
+        "img": "/resource/b2f11d301f82c9676f0809363da64aed.png",
         "type": "涂鸦",
         "description": "医生专属涂鸦，灰影系列",
         "repeat": 6
       },
       {
         "name": "园丁-灰影",
-        "img": "./img/7wa8pq95vtsiy786427kol860vgdj9h.png",
+        "img": "/resource/36d910451c939b51dbcc9bd576c0eac2.png",
         "type": "涂鸦",
         "description": "园丁专属涂鸦，灰影系列",
         "repeat": 6
       },
       {
         "name": "彩色回忆-魔术师",
-        "img": "./img/kf54f5igu720r62kbj4qr1dstb4152q.png",
+        "img": "/resource/1d3a66e5994686e8baf3a11bdacbebe2.png",
         "type": "头像",
         "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
         "repeat": 6
       },
       {
         "name": "彩色回忆-牛仔",
-        "img": "./img/5hoil1hfoc3lca5y4ncdk355fw91igw.png",
+        "img": "/resource/46d3e21c4724d8b319f970fa773bf58b.png",
         "type": "头像",
         "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
         "repeat": 6
       },
       {
         "name": "彩色回忆-园丁",
-        "img": "./img/9umtstct006hc9swsxwlp9z3tbkkvat.png",
+        "img": "/resource/7a68139f29940d39bfcad887c294e999.png",
         "type": "头像",
         "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
         "repeat": 6
       },
       {
         "name": "彩色回忆-前锋",
-        "img": "./img/brxhwjxl3xrp0uau7pqus3xnsw9i5w7.png",
+        "img": "/resource/1bf4b3f3af663775a672abd103e71014.png",
         "type": "头像",
         "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
         "repeat": 6

@@ -7,6 +7,7 @@
     <script src="/resource/tailwind.min.css"></script>
     <link rel="stylesheet" href="/resource/fontawesome/css/all.min.css">
     <style>
+        @import url('/resource/999170bab05411645e8bba91bdd8f551.css');
         @font-face {
             font-family: 'DFPOP1W5-GB';
             src: url('/fonts.ttf') format('truetype');
@@ -700,6 +701,13 @@
         <button id="confirm-selection" class="idv-btn mt-8 py-3 px-8 text-amber-100 border-amber-700" disabled>确认选择</button>
     </div>
     
+    <!-- B级物品选择界面（旧机制） -->
+    <div id="b-selection-screen" class="fixed inset-0 z-50 bg-black/95 hidden flex-col items-center justify-center p-4">
+        <h2 class="text-2xl text-purple-300 mb-6">请选择一件独特品质物品</h2>
+        <div class="selection-grid" id="b-selection-grid"></div>
+        <button id="confirm-b-selection" class="idv-btn mt-8 py-3 px-8 text-purple-100 border-purple-700" disabled>确认选择</button>
+    </div>
+    
     <!-- 物品详情弹窗 -->
     <div id="item-detail-modal" class="fixed inset-0 z-[60] hidden items-center justify-center p-4" onclick="app.closeItemDetail()">
         <div class="w-[95vw] max-w-md bg-[#1a1c24] border-2 border-gray-700 rounded-lg shadow-2xl flex flex-col text-center relative overflow-hidden" onclick="event.stopPropagation()">
@@ -799,6 +807,9 @@
                 this.jianyingPityA = 0;
                 this.currentPoolId = null; // 当前选中的池子ID
                 this.poolList = []; // 所有可用池子列表
+                this.isOldMechanism = false; // 是否使用旧机制（1~11期）
+                this.bItems = []; // B级物品池（旧机制）
+                this.selectedBItem = null; // 选中的B级物品（旧机制）
             }
             
             async init() {
@@ -839,8 +850,16 @@
                     if (!poolResponse.ok) throw new Error(`无法加载池子配置: ${currentPool.id}`);
                     this.config = await poolResponse.json();
                     
+                    // 检测是否使用旧机制（1~11期）
+                    this.isOldMechanism = currentPool.old === true;
+                    
                     // 初始化A级物品池
                     this.aItems = this.config.items.A || [];
+                    
+                    // 初始化B级物品池（仅旧机制需要）
+                    if (this.isOldMechanism) {
+                        this.bItems = this.config.items.B || [];
+                    }
                     
                     this.loadState(); 
                     
@@ -919,6 +938,19 @@
             saveData() { 
                 const storageKey = `data_${this.currentPoolId}`;
                 
+                // 确保this.state存在
+                if (!this.state) {
+                    this.state = {
+                        jianyingTotalPulls: 0,
+                        jianyingPityA: 0,
+                        guaranteed20: false,
+                        guaranteed40: false,
+                        guaranteed60: false,
+                        guaranteed80: false,
+                        aItemHistory: []
+                    };
+                }
+                
                 // 保存本地计数器到状态中
                 this.state.jianyingTotalPulls = this.jianyingTotalPulls;
                 this.state.jianyingPityA = this.jianyingPityA;
@@ -977,11 +1009,21 @@
                     return 'A';
                 }
                 
-                // 固定概率抽取
-                const rand = Math.random();
-                if (rand < 0.05) return 'A'; // 5% A级
-                if (rand < 0.25) return 'B'; // 20% B级（碎片）
-                return 'C'; // 75% C级（线索）
+                // 根据机制类型使用不同的概率
+                if (this.isOldMechanism) {
+                    // 旧机制（1~11期）：四级奖励
+                    const rand = Math.random();
+                    if (rand < 0.01) return 'A'; // 1% A级
+                    if (rand < 0.06) return 'B'; // 5% B级
+                    if (rand < 0.36) return 'C'; // 30% C级（碎片）
+                    return 'D'; // 64% D级（线索）
+                } else {
+                    // 新机制（12期及以后）：三级奖励
+                    const rand = Math.random();
+                    if (rand < 0.05) return 'A'; // 5% A级
+                    if (rand < 0.25) return 'B'; // 20% B级（碎片）
+                    return 'C'; // 75% C级（线索）
+                }
             }
 
             // 从对应等级池中随机选择物品
@@ -991,7 +1033,7 @@
                     // 如果没有对应物品池，返回默认奖励
                     if (rarity === 'B') {
                         return { 
-                            name: "独特随身物品碎片", 
+                            name: "碎片", 
                             type: "碎片", 
                             rarity: rarity,
                             img: "/resource/af581720fcad1f9f442f91bdb881afd2.png"
@@ -1002,6 +1044,13 @@
                             type: "线索", 
                             rarity: rarity,
                             img: "/resource/9ddf0a2874e1846ba901224e98197ae3.png"
+                        };
+                    } else if (rarity === 'D') {
+                        return { 
+                            name: "线索", 
+                            type: "线索", 
+                            rarity: rarity,
+                            img: "/resource/fc5a55c488fae00f1e606f5b9e33f349.png"
                         };
                     }
                     return { name: `未知${rarity}级物品`, type: `未知类型`, rarity: rarity };
@@ -1062,12 +1111,25 @@
                     if (this.jianyingTotalPulls === 60) this.state.guaranteed60 = true;
                     if (this.jianyingTotalPulls === 80) this.state.guaranteed80 = true;
                     
-                    // 处理B级和C级奖励
+                    // 处理奖励
                     if (rarity === 'B') {
-                        // B级奖励：增加10碎片
-                        ResourceManager.addResource('fragments', 10);
+                        if (this.isOldMechanism) {
+                            // 旧机制：B级是独特随身物品，需要自选
+                            // 在这里不做处理，稍后在showSelectionScreen中处理
+                        } else {
+                            // 新机制：B级奖励：增加10碎片
+                            ResourceManager.addResource('fragments', 10);
+                        }
                     } else if (rarity === 'C') {
-                        // C级奖励：增加10线索
+                        if (this.isOldMechanism) {
+                            // 旧机制：C级奖励：增加10碎片
+                            ResourceManager.addResource('fragments', 10);
+                        } else {
+                            // 新机制：C级奖励：增加10线索
+                            ResourceManager.addResource('clue', 10);
+                        }
+                    } else if (rarity === 'D') {
+                        // 旧机制：D级奖励：增加10线索
                         ResourceManager.addResource('clue', 10);
                     }
                     
@@ -1078,10 +1140,14 @@
                 this.saveData();
                 await new Promise(r => setTimeout(r, 800));
                 
-                // 检查是否有A级物品需要十选一
+                // 检查是否有物品需要自选
                 const hasAItem = this.currentResults.some(item => item.rarity === 'A');
+                const hasBItem = this.isOldMechanism && this.currentResults.some(item => item.rarity === 'B');
+                
                 if (hasAItem) {
                     this.showSelectionScreen();
+                } else if (hasBItem) {
+                    this.showBSelectionScreen();
                 } else {
                     this.showResultScreen(this.currentResults);
                 }
@@ -1163,6 +1229,80 @@
                 selectionScreen.classList.add('flex');
             }
             
+            // 显示B级物品选择界面（旧机制）
+            showBSelectionScreen() {
+                const selectionScreen = document.getElementById('b-selection-screen');
+                const selectionGrid = document.getElementById('b-selection-grid');
+                const confirmBtn = document.getElementById('confirm-b-selection');
+                
+                selectionGrid.innerHTML = '';
+                
+                // 使用pool.json中B级物品列表的所有物品（最多显示10个）
+                const availableBItems = this.bItems.slice(0, 10); // 限制最多显示10个
+                
+                availableBItems.forEach((item, index) => {
+                    const itemElement = document.createElement('div');
+                    itemElement.className = 'selection-item';
+                    itemElement.innerHTML = `
+                        <img src="${item.img || ''}" alt="${item.name}" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiMzMzMiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iIzU1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+PzwvdGV4dD48L3N2Zz4='">
+                        <div class="name">${item.name}</div>
+                    `;
+                    itemElement.addEventListener('click', () => {
+                        // 取消其他选中状态
+                        document.querySelectorAll('#b-selection-grid .selection-item').forEach(el => {
+                            el.classList.remove('selected');
+                        });
+                        // 选中当前项
+                        itemElement.classList.add('selected');
+                        this.selectedBItem = item;
+                        confirmBtn.disabled = false;
+                    });
+                    selectionGrid.appendChild(itemElement);
+                });
+                
+                confirmBtn.onclick = () => {
+                    if (this.selectedBItem) {
+                        // 替换结果中的B级物品为选中的物品，并保存到全局拥有状态（兼容V1）
+                        this.currentResults = this.currentResults.map(item => {
+                            if (item.rarity === 'B') {
+                                const selectedItem = this.selectedBItem;
+
+                                // 生成 V1 兼容格式的 Key: name|type|img
+                                const itemKey = this.getItemKey(selectedItem);
+
+                                // 若未拥有，则标记为已拥有
+                                if (!this.globalOwnedItems[itemKey]) {
+                                    this.globalOwnedItems[itemKey] = true;
+                                    this.saveGlobalOwnedItems();
+
+                                    // 同时记录进 aItemHistory（供 index.html 显示）
+                                    this.state.aItemHistory = this.state.aItemHistory || [];
+                                    this.state.aItemHistory.unshift({
+                                        name: selectedItem.name,
+                                        type: selectedItem.type,
+                                        img: selectedItem.img,
+                                        rarity: 'B',
+                                        time: new Date().toLocaleTimeString()
+                                    });
+
+                                    this.saveData(); // 保存 aItemHistory 到本地存储
+                                }
+
+                                // 返回带 rarity 的完整物品对象用于展示
+                                return { ...selectedItem, rarity: 'B' };
+                            }
+                            return item;
+                        });
+                        
+                        selectionScreen.classList.add('hidden');
+                        this.showResultScreen(this.currentResults);
+                    }
+                };
+                
+                selectionScreen.classList.remove('hidden');
+                selectionScreen.classList.add('flex');
+            }
+            
             async showResultScreen(items) {
                 const container = document.getElementById('cards-container'); 
                 const screen = document.getElementById('result-screen'); 
@@ -1184,7 +1324,7 @@
                 }
                 container.appendChild(cardGrid);
 
-                const rarityMap = { A: "奇珍", B: "碎片", C: "线索" };
+                const rarityMap = { A: "奇珍", B: "一级", C: "二级", D: "三级" };
                 items.forEach((item, index) => {
                     const card = document.createElement('div'); 
                     card.id = `result-card-${index}`;
@@ -1459,8 +1599,18 @@
                     if (!poolResponse.ok) throw new Error(`无法加载池子配置: ${newPoolId}`);
                     this.config = await poolResponse.json();
                     
+                    // 检测是否使用旧机制（1~11期）
+                    this.isOldMechanism = newPool.old === true;
+                    
                     // 重新初始化A级物品池
                     this.aItems = this.config.items.A || [];
+                    
+                    // 重新初始化B级物品池（仅旧机制需要）
+                    if (this.isOldMechanism) {
+                        this.bItems = this.config.items.B || [];
+                    } else {
+                        this.bItems = [];
+                    }
                     
                     // 重新加载状态（新池子的状态）
                     this.loadState();

@@ -1,0 +1,109 @@
+{
+  "id": "JYXB6",
+  "name": "鉴影寻宝第6期",
+  "description": "火漆消耗型池子（旧机制）",
+  "essenceImage": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+  "pitySettings": {
+    "gold": 80,
+    "purple": 80,
+    "blue": 80
+  },
+  "items": {
+    "A": [
+      {
+        "name": "彼岸",
+        "type": "时装",
+        "img": "/resource/e55fc1627b9566e020f4a74aed10a57f.png",
+        "description": "是什么释放了那愤怒的灵魂，是干涸的爱意?还是破碎的容颜?"
+      },
+      {
+        "name": "香薰桑拿",
+        "type": "时装",
+        "img": "/resource/9f5349eb1e13e9a223201ac2cdc7d894.png",
+        "description": "配上她的催眠香薰，无知的人们会沉醉在蕴热的桑拿蒸汽中，回归原始懵懂的精神状态。"
+      },
+      {
+        "name": "狡",
+        "type": "时装",
+        "img": "/resource/0b34970f4136b2a1c51bc372cb0f120b.png",
+        "description": "这个世界缺少英雄．他想。但不择手段的复仇，终究只是自诩正义。"
+      },
+      {
+        "name": "长生",
+        "type": "时装",
+        "img": "/resource/7f5a0b8a03efed669fe473763b0b3887.png",
+        "description": "敬神信仰已慢慢凝固，再没有人提起博山，只有长生自己还铭记造物主的遗志，描摹海外仙山的距离。"
+      }
+    ],
+    "B": [
+      {
+        "name": "慢滑种子",
+        "type": "时装",
+        "img": "/resource/2ced8f7f511eef3ea5cf08bbfdb74b21.png",
+        "description": "五个小冰人，哄闹一团相猜忌；言辞犀利招嫌疑，五个只剩四。"
+      },
+      {
+        "name": "雏鹰",
+        "type": "时装",
+        "img": "/resource/fd211edf6ad4ee1e43f47bc90eb0358a.png",
+        "description": "那场劫难后，公主向盟国求助，希望履行多年前平分财宝的约定。但这次她足够谨慎······谁知道这是不是下一个陷阱呢？"
+      },
+      {
+        "name": "废寝者",
+        "type": "时装",
+        "img": "/resource/8599c40674d1dc87fda36a72a0ed4451.png",
+        "description": "塔上的贵族并不都是不学无术之徒。"
+      },
+      {
+        "name": "享乐女巫",
+        "type": "时装",
+        "img": "/resource/78418b033139eed46d2fafaa6665d999.png",
+        "description": "她研究出一种新的饮料,可使人得到短暂的快乐。可是贪心的人想要快乐越来越持久,于是她就成为了大家口中的“恶魔”。"
+      },
+      {
+        "name": "空境",
+        "type": "随身物品",
+        "img": "/resource/92b8300899ccbc7e5463d6735b1da65a.png",
+        "description": "破镜难圆人人皆知，但即便是无法换回的错误，也可以是一种新生。"
+      },
+      {
+        "name": "静滞旋风",
+        "type": "随身物品",
+        "img": "/resource/113b8ac057bf20f36d9d79385957d0f7.png",
+        "description": "一股旋风，停留在了它形成的那一刻"
+      },
+      {
+        "name": "听诊器",
+        "type": "随身物品",
+        "img": "/resource/203dd30529c4c4ff18e150ea8214ce00.png",
+        "description": "为了让孩子们对体检不那么害怕，医生带上了她可爱的听诊器"
+      },
+      {
+        "name": "曼陀林",
+        "type": "随身物品",
+        "img": "/resource/71e589b78f713c79414b9d05ebf44738.png",
+        "description": "每个牛仔都该给自己备上一把"
+      }
+    ],
+    "C": [
+      {
+        "name": "碎片*88",
+        "type": "碎片",
+        "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+        "description": "碎片"
+      }
+    ],
+    "D": [
+      {
+        "name": "线索*88",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "线索"
+      }
+    ]
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png"
+  }
+}

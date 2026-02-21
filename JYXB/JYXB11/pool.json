@@ -1,0 +1,109 @@
+{
+  "id": "JYXB11",
+  "name": "鉴影寻宝第11期",
+  "description": "火漆消耗型池子（旧机制）",
+  "essenceImage": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+  "pitySettings": {
+    "gold": 80,
+    "purple": 80,
+    "blue": 80
+  },
+  "items": {
+    "A": [
+      {
+        "name": "阴阳司公",
+        "type": "时装",
+        "img": "/resource/e3497e5ad81961e1903550b8adf533ad.png",
+        "description": "所有人都说他与白氏嫡系仇深似海，要取而代之。但他真正想做的，是从卷轴里找到死而复生的可能。"
+      },
+      {
+        "name": "夜光杯",
+        "type": "时装",
+        "img": "/resource/e1952c91020c9e0306f7d0d1cb3b932b.png",
+        "description": "当盛装美酒的玉盏，也能在月下熠熠生辉，它就实现了远超器物本身的价值，更象征着兄长手艺和意志的赓续。"
+      },
+      {
+        "name": "BISHOP-f1",
+        "type": "时装",
+        "img": "/resource/9061e7233011dfb618147375fb968192.png",
+        "description": "无法到达的乐土，早该成为命运车轮下的齑粉。"
+      },
+      {
+        "name": "斐乐蒙的圣坛",
+        "type": "时装",
+        "img": "/resource/bc38a245ed143e52c940c0aed6e1855a.png",
+        "description": "纯净的生命诞生自瓶中，我们可以向其寻求一切有关“伟大工作”的答案，只要它睁开眼睛。"
+      }
+    ],
+    "B": [
+      {
+        "name": "PAWN-h2",
+        "type": "时装",
+        "img": "/resource/92c582f32ea4194679d2f8e7aafde6dc.png",
+        "description": "停步之前，你是否已经忘记，身后早无侥幸的生路，只有绝命的断崖。"
+      },
+      {
+        "name": "绿蛙之梦",
+        "type": "时装",
+        "img": "/resource/184794ce9900ea922df245b0c17fc0d1.png",
+        "description": "他不喜欢这个浮夸的乐园，常梦到自己端坐井底，静静地听着欢声笑语沦为悲苦的哀嚎。没想到，梦成真了。"
+      },
+      {
+        "name": "图书馆管家",
+        "type": "时装",
+        "img": "/resource/81399ec476a010a8cc1805ddda704f70.png",
+        "description": "为什么要去追求那些遥远的神秘？她服务于现实，现实也不曾吝啬对她的回馈。"
+      },
+      {
+        "name": "废寝者",
+        "type": "时装",
+        "img": "/resource/8599c40674d1dc87fda36a72a0ed4451.png",
+        "description": "塔上的贵族并不都是不学无术之徒。"
+      },
+      {
+        "name": "乐谱笔",
+        "type": "随身物品",
+        "img": "/resource/a5a4116089e7dce96fd84939fb8e6088.png",
+        "description": "一挥而就。"
+      },
+      {
+        "name": "襁褓",
+        "type": "随身物品",
+        "img": "/resource/adf15c8b5c3a48c11f6e3fdb45441c8d.png",
+        "description": "为什么只有我在问为什么？"
+      },
+      {
+        "name": "园艺手册",
+        "type": "随身物品",
+        "img": "/resource/f996f6d40e1b896872f0d47923149c85.png",
+        "description": "园丁将自己的手艺心得都写进了书里，除此之外还藏着许多她自己的秘密。"
+      },
+      {
+        "name": "星石",
+        "type": "随身物品",
+        "img": "/resource/116af31e7ef868ad352d7761fa115ccb.png",
+        "description": "卡尔曾经听说星石是逝去的星星化成的，虽然很难相信是真的，但他仍然格外喜欢这种寓意。"
+      }
+    ],
+    "C": [
+      {
+        "name": "碎片*88",
+        "type": "碎片",
+        "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+        "description": "碎片"
+      }
+    ],
+    "D": [
+      {
+        "name": "线索*88",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "线索"
+      }
+    ]
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png"
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "id": "S42Rank",
+  "name": "第42赛季·排位珍宝（四阶）",
+  "essenceImage": "/resource/72bb95f8b126d3f86e41af05eb20d930.png",
+  "diff_A": 2,
+  "initialCurrencies": {
+    "inspiration": 1000,
+    "fragments": 0
+  },
+  "discountInfo": {
+    "chance": 0,
+    "rate": 0.75
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 12
+  },
+  "frameSettings": {
+    "enabled": true,
+    "pityThreshold": 7,
+    "item": {
+      "name": "排位头像框兑换卡",
+      "type": "头像框",
+      "rarity": "F",
+      "img": "/resource/45f0619866a0db9dfa84704eab98246c.png",
+      "description": "可用于兑换一个排位头像框。",
+      "repeat": 100
+    }
+  },
+  "items": {
+    "S": [
+      {
+        "name": "龙之歌",
+        "img": "/resource/4035fe27c08d8516146ad88cef27e313.png",
+        "type": "随身物品",
+        "description": "琴弦震颤的余音中，仍蛰伏着属于龙的歌谣。\n特殊效果：替换技能效果\n作曲家稀世品质随身物品",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "暮野低语",
+        "img": "/resource/49c0670a17239c9963ed4450800fbc56.png",
+        "type": "随身物品",
+        "description": "暮色低垂，晚风轻拂，送来自然的低语。\n特殊效果：替换技能效果\n“使徒”奇珍品质随身物品",
+        "repeat": 1000
+      },
+      {
+        "name": "鲸落",
+        "img": "/resource/9bffad770665b1d80e87981982846b7d.png",
+        "type": "随身物品",
+        "description": "坠入深渊，再重获新生。或许这也只是生命的又一场轮回。\n特殊效果：替换技能效果 \n“逃脱大师”奇珍品质随身物品",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "木雕小鹿",
+        "img": "/resource/3b601cdbcfe684278dfba764b7779118.png",
+        "type": "随身物品",
+        "description": "被摩挲得逐渐温润的表面，已不再残留过去松枝的气息。",
+        "repeat": 200
+      },
+      {
+        "name": "量杯",
+        "img": "/resource/2d4403aa2e01aa3452e901b055874c60.png",
+        "type": "随身物品",
+        "description": "精确的测量在任何时刻都至关重要。",
+        "repeat": 200
+      },
+      {
+        "name": "地质锤",
+        "img": "/resource/db6cece7d9f4e709304b4d67d04a90fe.png",
+        "type": "随身物品",
+        "description": "有时候，工具比人的感官更加可靠。",
+        "repeat": 200
+      },
+      {
+        "name": "睡眠伙伴",
+        "img": "/resource/89d94fad679ad96c8f24b982db05f9b2.png",
+        "type": "随身物品",
+        "description": "在许多个夜晚，它陪伴着她一同入梦。",
+        "repeat": 200
+      },
+      {
+        "name": "红夫人-拜访",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
+        "type": "等待动作",
+        "description": "红夫人专属匹配大厅等待动作，拜访，求生者可见",
+        "repeat": 200
+      },
+      {
+        "name": "26号守卫-拜访",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
+        "type": "等待动作",
+        "description": "26号守卫专属匹配大厅等待动作，拜访，求生者可见",
+        "repeat": 200
+      },
+      {
+        "name": "大副-小憩",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
+        "type": "等待动作",
+        "description": "大副匹配大厅等待动作，小憩",
+        "repeat": 200
+      },
+      {
+        "name": "野人-小憩",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
+        "type": "等待动作",
+        "description": "野人匹配大厅等待动作，小憩",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "烟火蓝",
+        "img": "/resource/c8b59c4fc9d1f79b6f2a13d6f52da6ab.png",
+        "type": "时装",
+        "description": "即便是尘土一样的人生，也该享受一次飞上高空的璀璨。",
+        "repeat": 36
+      },
+      {
+        "name": "古典绿",
+        "img": "/resource/cd7f3691890ce02cb7408f364896cf60.png",
+        "type": "时装",
+        "description": "谎言如春日里疯长的一抹古典的绿意，覆盖了荒芜的真相。",
+        "repeat": 36
+      },
+      {
+        "name": "喧嚣红",
+        "img": "/resource/e4361252b3e5212ce09c16d0045cf9da.png",
+        "type": "时装",
+        "description": "喧嚣是热烈的红色，是永不落幕的华美演出。",
+        "repeat": 36
+      },
+      {
+        "name": "教授-躺地",
+        "img": "/resource/873ca798d986ffc8dc43cbe5c115f127.png",
+        "type": "个性动作",
+        "description": "躺地动作，教授专属",
+        "repeat": 36
+      },
+      {
+        "name": "火灾调查员-躺地",
+        "img": "/resource/873ca798d986ffc8dc43cbe5c115f127.png",
+        "type": "个性动作",
+        "description": "躺地动作，火灾调查员专属",
+        "repeat": 36
+      },
+      {
+        "name": "画家-躺地",
+        "img": "/resource/873ca798d986ffc8dc43cbe5c115f127.png",
+        "type": "个性动作",
+        "description": "躺地动作，画家专属",
+        "repeat": 36
+      },
+      {
+        "name": "“法罗女士”-躺地",
+        "img": "/resource/873ca798d986ffc8dc43cbe5c115f127.png",
+        "type": "个性动作",
+        "description": "躺地动作，“法罗女士”专属",
+        "repeat": 36
+      },
+      {
+        "name": "园丁-等待",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
+        "type": "等待动作",
+        "description": "园丁匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "佣兵-等待",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
+        "type": "等待动作",
+        "description": "佣兵匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "冒险家-等待",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
+        "type": "等待动作",
+        "description": "冒险家匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "空军-等待",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
+        "type": "等待动作",
+        "description": "空军匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”-等待",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
+        "type": "等待动作",
+        "description": "“慈善家”匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "医生-等待",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
+        "type": "等待动作",
+        "description": "医生匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "职业侦探",
+        "img": "/resource/c83a0c786f92d623e578fe51b7df5d04.png",
+        "type": "随身物品",
+        "description": "求生者随身物品，职业侦探",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-调香师",
+        "img": "/resource/d7579aef2eab4de0ba93580bd9d0d2ea.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-前锋",
+        "img": "/resource/48235eb6aeafab7c858950e97cde83c9.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "古董商-剪影",
+        "img": "/resource/ce4ff9dacf0dcf7c8c580e2f6320883b.png",
+        "type": "涂鸦",
+        "description": "古董商专用涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "隐士-剪影",
+        "img": "/resource/4d86549700347e23f127ff5ad1f3469f.png",
+        "type": "涂鸦",
+        "description": "隐士专用涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "记者-剪影",
+        "img": "/resource/004b60ae70f554b8cec19a08580d18f6.png",
+        "type": "涂鸦",
+        "description": "记者专用涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "守夜人-剪影",
+        "img": "/resource/12e2dcbe24c13aeb94b3399faba308e5.png",
+        "type": "涂鸦",
+        "description": "守夜人专用涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "玩具商-剪影",
+        "img": "/resource/4098470dccc6c352f3c4f6f327bb98b2.png",
+        "type": "涂鸦",
+        "description": "玩具商专用涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "病患-剪影",
+        "img": "/resource/ba4669603c37fd6ce3047c24fc17bb61.png",
+        "type": "涂鸦",
+        "description": "病患专用涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "哭泣小丑-剪影",
+        "img": "/resource/331426e7d6ecef0d9ee91532d5342b0e.png",
+        "type": "涂鸦",
+        "description": "哭泣小丑专用涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "“心理学家”-剪影",
+        "img": "/resource/0c21ebb54ef7c3d30e05cf6ee0ea0c37.png",
+        "type": "涂鸦",
+        "description": "“心理学家”专用涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "作曲家-剪影",
+        "img": "/resource/52a2f8d08baba361d82a7662d9087eed.png",
+        "type": "涂鸦",
+        "description": "作曲家专用涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "小说家-剪影",
+        "img": "/resource/f96fb7f854f6b0aac738d8ed2f02de1b.png",
+        "type": "涂鸦",
+        "description": "小说家专用涂鸦，剪影",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-大副",
+        "img": "/resource/c472ec7ae4b1a0eca428fda078bc9b4d.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-梦之女巫",
+        "img": "/resource/cba06c83f58a2666a19ab80045b49e89.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-孽蜥",
+        "img": "/resource/2b575e71fa3e9c66332a125d4c9fe7ca.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-入殓师",
+        "img": "/resource/da2a599f9a945fa915e56f071ee8aeee.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-宿伞之魂（二）",
+        "img": "/resource/94630bdd01359958ca0096a235278b5c.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-红蝶（二）",
+        "img": "/resource/c7e0dee427e910cb1e237a2aeff6dddb.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-杂技演员",
+        "img": "/resource/102bab3bb296fb9039e90c62a5b245e4.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "不解",
+        "img": "/resource/1a19de24202cb1e8a2f69a2bc122020a.png",
+        "type": "个性动作",
+        "description": "表示不解的动作",
+        "repeat": 6
+      }
+    ]
+  }
+}

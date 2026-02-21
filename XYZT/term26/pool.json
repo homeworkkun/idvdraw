@@ -1,75 +1,75 @@
 {
   "id": "lucky_dice_26",
   "name": "幸运之骰·第26期",
-  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
   "description": "幸运之骰",
   "completeDrawLimit": 200,
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "conversionRate": 50
   },
   "items": {
     "庆典": {
       "type": "头像框",
       "rarity": "B",
-      "img": "./img/m48qmllar02wjigyasm7vau2shbzxlj.png",
+      "img": "/resource/adc375af9bffbbf5539f3a32807b3460.png",
       "description": "欢愉时刻，风雨欲来。（通过2021“感恩庆典”活动首次获得） ",
       "repeat": 200
     },
     "盘中餐": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/plmpy4minlqeakez4y7aynbe9s7dj44.png",
+      "img": "/resource/84778c1b2efcc907d058263a77885127.png",
       "description": "秋夜盛宴，埋藏在欢愉下的暗涌。（通过2021“感恩庆典”活动首次获得） ",
       "repeat": 6
     },
     "冰封雪人": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/6etbaf7vpb4bnynukzxc0govfgqogtb.png",
+      "img": "/resource/522830e7c13012d00700f000cb6a60d3.png",
       "description": "冰天雪地中，翘首等待温暖的拥抱。（2021年冰雪节活动首次获得） ",
       "repeat": 6
     },
     "我想吃火鸡": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/hjvy15kd1nuymlfn10aifxo3489k2yp.png",
+      "img": "/resource/192904f98ac19c4b4406bae2dfbc5402.png",
       "description": "2020年感恩节专属涂鸦（仅限监管者使用） ",
       "repeat": 6
     },
     "我想吃蛋糕": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/i9ml7t9oyz5hfhn43p377a299v1zbxa.png",
+      "img": "/resource/dcf6b27b3e6fd6892f3d8f2e7fa9ce44.png",
       "description": "2020年感恩节专属涂鸦（仅限求生者使用） ",
       "repeat": 6
     },
     "通用奇珍时装体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
       "description": "限时体验",
       "repeat": 27
     },
     "监管者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
       "description": "限时体验",
       "repeat": 10
     },
     "求生者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
       "description": "限时体验",
       "repeat": 10
     },
     "通用独特时装体验卡*1天": {
       "type": "临时装扮",
       "rarity": "D",
-      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
       "description": "限时体验",
       "repeat": 10
     }

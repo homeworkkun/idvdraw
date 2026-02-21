@@ -1,0 +1,109 @@
+{
+  "id": "JYXB8",
+  "name": "鉴影寻宝第8期",
+  "description": "火漆消耗型池子（旧机制）",
+  "essenceImage": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+  "pitySettings": {
+    "gold": 80,
+    "purple": 80,
+    "blue": 80
+  },
+  "items": {
+    "A": [
+      {
+        "name": "迷迭香",
+        "type": "时装",
+        "img": "/resource/4d19ccbf1d98e0da73d3594cecb80bd9.png",
+        "description": "迷迭香——她是这鲜花王国的缔造者，迷迭香有枯萎之时，而贝尔斯泰因在回忆里永远芬芳。"
+      },
+      {
+        "name": "归来者",
+        "type": "时装",
+        "img": "/resource/0432fa645589922e0919442eebda2772.png",
+        "description": "怪物吞噬了当空的太阳，我们追随他踩在高塔尸骸之上。可笑的是其他追随者不会知道，太阳从未死亡，他已被怪物永久豢养。"
+      },
+      {
+        "name": "“朝圣者”",
+        "type": "时装",
+        "img": "/resource/751783b5bb6ed72778ea8a0cdefd8b10.png",
+        "description": "人们口口相传那个关于海妖的传说——为她献上最纯正的恶，她将会赐予你等同于她的力量。"
+      },
+      {
+        "name": "采药人",
+        "type": "时装",
+        "img": "/resource/5a17d1fb24f9132f2f4ee51ce911bf35.png",
+        "description": "不是每个访客都像她一样，清楚地知道自己需要什么"
+      }
+    ],
+    "B": [
+      {
+        "name": "花店店长",
+        "type": "时装",
+        "img": "/resource/cadb5fc5e2bf0ae686bebde860b065d0.png",
+        "description": "改写命运？那需要丰富的想象力。"
+      },
+      {
+        "name": "毒蝎",
+        "type": "时装",
+        "img": "/resource/9de4ea1a6b0073285be2cd7d4919fcaf.png",
+        "description": "对镜自审时，我总在思考是否要对他人宽容一点。"
+      },
+      {
+        "name": "白鸦公爵",
+        "type": "时装",
+        "img": "/resource/4e2cd873c4eb2c8763201d38827f201e.png",
+        "description": "在遭到上层贵族的排挤后，他发誓要在这群庸庸碌碌的乌鸦中，做最醒目、最与众不同的那一只。"
+      },
+      {
+        "name": "马鞭草花",
+        "type": "时装",
+        "img": "/resource/8bbef222662fa888e6bbb34e47417552.png",
+        "description": "马鞭草花——他在沉默中等待夕阳落下，哭泣的贝尔斯泰因令人垂怜。"
+      },
+      {
+        "name": "迷途女孩",
+        "type": "随身物品",
+        "img": "/resource/42f7de335599c0363603636f533cd2f7.png",
+        "description": "监管者随身物品，迷途女孩"
+      },
+      {
+        "name": "自信侦探",
+        "type": "随身物品",
+        "img": "/resource/ed498399410cf3f90cda900a47343365.png",
+        "description": "求生者随身物品，自信侦探"
+      },
+      {
+        "name": "封情",
+        "type": "随身物品",
+        "img": "/resource/b135acbc1a4bfbc736a926a8fe5964c7.png",
+        "description": "斯人已逝，丹青留影"
+      },
+      {
+        "name": "圣躯",
+        "type": "随身物品",
+        "img": "/resource/ef2aacc72c146cdb1b9c4723baa90698.png",
+        "description": "这是受难者们最后的归宿，痛苦将磨砺他们的心智"
+      }
+    ],
+    "C": [
+      {
+        "name": "碎片*88",
+        "type": "碎片",
+        "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+        "description": "碎片"
+      }
+    ],
+    "D": [
+      {
+        "name": "线索*88",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "线索"
+      }
+    ]
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png"
+  }
+}

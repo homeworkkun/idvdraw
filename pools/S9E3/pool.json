@@ -1,7 +1,7 @@
 {
   "id": "S9E3",
   "name": "女神异闻录5联动精华2",
-  "essenceImage": "./img/0na2y8nsjjsrlyq01a0cg6qf3ix36sv.png",
+  "essenceImage": "/resource/71ddd87048a038f26db0fd5218c8c07d.png",
   "diff_A": 0,
   "initialCurrencies": {
     "inspiration": 100000,
@@ -10,7 +10,7 @@
   "discounts": [],
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "type": "通用货币"
   },
   "pitySettings": {
@@ -22,7 +22,7 @@
     "S": [
       {
         "name": "明智吾郎",
-        "img": "./img/ev9t96c92upxpvpkg5da9cbtcpdhcty.png",
+        "img": "/resource/c41199380e7a414d71050a241ab08eec.png",
         "type": "时装",
         "description": "高中生侦探-明智吾郎的校服\nPersona5联动精华2限定稀世时装",
         "repeat": 2000
@@ -31,21 +31,21 @@
     "A": [
       {
         "name": "佐仓双叶",
-        "img": "./img/64dv58mrdxlvs78fgrl6c56tzh754dm.png",
+        "img": "/resource/b8cf1fed0202152985baf7da960c8d75.png",
         "type": "时装",
         "description": "天才黑客-佐仓双叶的校服\nPersona5联动精华2限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "新岛真",
-        "img": "./img/i8nt7msc2msy8313jr3oi8ibe6nausa.png",
+        "img": "/resource/44e2b7da108e6366c9789e055dfc1966.png",
         "type": "时装",
         "description": "秀尽学园三年级生-新岛真的校服\nPersona5联动精华2限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "奥村春",
-        "img": "./img/0b6vel0avcub96i2d3d73cykfe3c0aa.png",
+        "img": "/resource/e09c2ad343688186f069eb4739469cb1.png",
         "type": "时装",
         "description": "秀尽学园三年级生-奥村春的私服\nPersona5联动精华2限定奇珍时装",
         "repeat": 1000
@@ -54,56 +54,56 @@
     "B": [
       {
         "name": "CROW的长剑",
-        "img": "./img/fkyu4pycy65al6a7sxdlqdgfkrd8w9n.png",
+        "img": "/resource/a4e40aeaafcd215c545ac0ca64497c04.png",
         "type": "随身物品",
         "description": "散发着淡蓝色光晕的长剑\nPersona5联动精华2限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "QUEEN的拳刃",
-        "img": "./img/6i2pvzb2dsfj890mryi2wyu0vqqmslg.png",
+        "img": "/resource/51b7a21d7d6a9b8ebfb02e78baa4baa8.png",
         "type": "随身物品",
         "description": "带有尖刺的拳刃\nPersona5联动精华2限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "NAVI的炸弹",
-        "img": "./img/hwxwbp6ipd8h53my4zt3l4yylpk2q32.png",
+        "img": "/resource/c8e0e24c49f0d31861b886e968c27d91.png",
         "type": "随身物品",
         "description": "不知道里面装了什么……\nPersona5联动精华2限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "NOIR的斧子",
-        "img": "./img/d6fls90t7e45aex4w8i5wecbkvyg5oq.png",
+        "img": "/resource/b2040490110c783bcb02e9ddedc5768c.png",
         "type": "随身物品",
         "description": "装裱华丽的斧头\nPersona5联动精华2限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "大副-思考",
-        "img": "./img/9w0hgbw9z6cavg3kt29e8rqk17zggwl.png",
+        "img": "/resource/ea8685d8f772d6aab67d678a3114f9de.png",
         "type": "个性动作",
         "description": "思考，大副专属动作",
         "repeat": 200
       },
       {
         "name": "空军-思考",
-        "img": "./img/9w0hgbw9z6cavg3kt29e8rqk17zggwl.png",
+        "img": "/resource/ea8685d8f772d6aab67d678a3114f9de.png",
         "type": "个性动作",
         "description": "思考，空军专属动作",
         "repeat": 200
       },
       {
         "name": "机械师-思考",
-        "img": "./img/9w0hgbw9z6cavg3kt29e8rqk17zggwl.png",
+        "img": "/resource/ea8685d8f772d6aab67d678a3114f9de.png",
         "type": "个性动作",
         "description": "思考，机械师专属动作",
         "repeat": 200
       },
       {
         "name": "园丁-思考",
-        "img": "./img/9w0hgbw9z6cavg3kt29e8rqk17zggwl.png",
+        "img": "/resource/ea8685d8f772d6aab67d678a3114f9de.png",
         "type": "个性动作",
         "description": "思考，园丁专属动作",
         "repeat": 200
@@ -112,140 +112,140 @@
     "C": [
       {
         "name": "心之怪盗-CROW",
-        "img": "./img/cr93y5kniuqac4qg31lspf7v5liiu1o.png",
+        "img": "/resource/8ba2b40e008f207d20a761657cf4c323.png",
         "type": "涂鸦",
         "description": "P5联动大副专属涂鸦(女神异闻录5联动限定获得)",
         "repeat": 36
       },
       {
         "name": "心之怪盗-QUEEN",
-        "img": "./img/feoteepbjka0u7i5d7fmiplyvlz50x4.png",
+        "img": "/resource/387f66119e85137a9bb2a57850bff4fa.png",
         "type": "涂鸦",
         "description": "P5联动空军专属涂鸦(女神异闻录5联动限定获得)",
         "repeat": 36
       },
       {
         "name": "心之怪盗-NAVI",
-        "img": "./img/bw849nmqw35ziv6fybgzige3832qaud.png",
+        "img": "/resource/fd2d8960f00a5c52adf3236aeeb1dd3d.png",
         "type": "涂鸦",
         "description": "P5联动机械师专属涂鸦(女神异闻录5联动限定获得)",
         "repeat": 36
       },
       {
         "name": "心之怪盗-NOIR",
-        "img": "./img/tsva85y4r2aic4axnappimwnp5leegd.png",
+        "img": "/resource/8b8c03fe2020a4df39f46ddc374f77ed.png",
         "type": "涂鸦",
         "description": "P5联动园丁专属涂鸦(女神异闻录5联动限定获得)",
         "repeat": 36
       },
       {
         "name": "心之怪盗-CROW",
-        "img": "./img/2ukz86av69avirjeqejpkkdv9yrqysq.png",
+        "img": "/resource/8110fb5c6dab4611d4fc2d1d0d05216b.png",
         "type": "头像",
         "description": "CROW的头像，Persona5联动",
         "repeat": 36
       },
       {
         "name": "心之怪盗-QUEEN",
-        "img": "./img/prqifjt4mnn1buiaw8s48cdrqpw2f6j.png",
+        "img": "/resource/de524af1c000f98563c005487d2c17e0.png",
         "type": "头像",
         "description": "QUEEN的头像，Persona5联动",
         "repeat": 36
       },
       {
         "name": "心之怪盗-NAVI",
-        "img": "./img/dlecs7ldc1n3q0kg2w70ksbg1po4y9o.png",
+        "img": "/resource/acb9fb314ecc0aef27dc7fcf74e39217.png",
         "type": "头像",
         "description": "NAVI的头像，Persona5联动",
         "repeat": 36
       },
       {
         "name": "心之怪盗-NOIR",
-        "img": "./img/5i95q3e2wfhhxb26wh5isimyehwvf1a.png",
+        "img": "/resource/bff6c918322f640ca499664521f209ae.png",
         "type": "头像",
         "description": "NOIR的头像，Persona5联动",
         "repeat": 36
       },
       {
         "name": "明智吾郎",
-        "img": "./img/q3n9hqnfagy03esinmteq28kyafq730.png",
+        "img": "/resource/b1d0e6fb2beb76adc33a101e29c4de4d.png",
         "type": "头像",
         "description": "明智吾郎的头像，Persona5联动",
         "repeat": 36
       },
       {
         "name": "新岛真",
-        "img": "./img/a4clmkmn5alptgz8fj80pd4l5br32w4.png",
+        "img": "/resource/a69ef848b5a0ac3b3a29f813a04857b3.png",
         "type": "头像",
         "description": "新岛真的头像，Persona5联动",
         "repeat": 36
       },
       {
         "name": "佐仓双叶",
-        "img": "./img/6j6tymg1q526ue6x9fwhhm07g1go3ya.png",
+        "img": "/resource/7437541c30e218c927fda0f131560e63.png",
         "type": "头像",
         "description": "佐仓双叶的头像，Persona5联动",
         "repeat": 36
       },
       {
         "name": "奥村春",
-        "img": "./img/6hj9ab4mvpaaz57ilsjmr11iozcqqht.png",
+        "img": "/resource/9af4ebe3ac903c997c1c25bb011f542f.png",
         "type": "头像",
         "description": "奥村春的头像，Persona5联动",
         "repeat": 36
       },
       {
         "name": "海报-QUEEN",
-        "img": "./img/3l8l7l23qemdz7ku9j4pd5es6qpv1no.png",
+        "img": "/resource/3d09acd9239382a88ba5aeb585a19f7a.png",
         "type": "归宿家具",
         "description": "QUEEN的海报，《PERSONA 5》联动限定",
         "repeat": 36
       },
       {
         "name": "海报-怪盗团的挑战",
-        "img": "./img/qshfi712k6s5a7fp2lzrer9667bg9t3.png",
+        "img": "/resource/c5a8c6c2dc9380c1300fb529665d9aa9.png",
         "type": "归宿家具",
         "description": "联动纪念海报-怪盗团的挑战，《PERSONA 5》联动限定",
         "repeat": 36
       },
       {
         "name": "海报-NOIR",
-        "img": "./img/jfxl85fzfowy4n0wvtfa3fiw5hpa9as.png",
+        "img": "/resource/5659da9b43c899e53231434ffe6d91dd.png",
         "type": "归宿家具",
         "description": "NOIR的海报，《PERSONA 5》联动限定",
         "repeat": 36
       },
       {
         "name": "海报-NAVI",
-        "img": "./img/kkgj351ru6qna9dq6ribaghi2trpo50.png",
+        "img": "/resource/8b664e6181d5f0621e530e2c0d4b1756.png",
         "type": "归宿家具",
         "description": "NAVI的海报，《PERSONA 5》联动限定",
         "repeat": 36
       },
       {
         "name": "联动纪念海报-怪盗团的安可演出",
-        "img": "./img/faiovmvdnq3uw3jaivxkjqg4ksepv2g.png",
+        "img": "/resource/646ea7deb361af487d7fdfc46a987944.png",
         "type": "归宿家具",
         "description": "联动纪念海报-怪盗团的安可演出，《PERSONA 5》联动限定",
         "repeat": 36
       },
       {
         "name": "海报-CROW",
-        "img": "./img/sx0ltwbu8a8obxoq26aay0ozenvnjuf.png",
+        "img": "/resource/85156437e828d31efbdfd17e0451d83a.png",
         "type": "归宿家具",
         "description": "CROW的海报，《PERSONA 5》联动限定",
         "repeat": 36
       },
       {
         "name": "海报-心之怪盗团",
-        "img": "./img/hm1ofd4kum7txfvvdo18yfthfx3p0uo.png",
+        "img": "/resource/d5c2fec26f92d5aac4a31a0ba2ea3b5a.png",
         "type": "归宿家具",
         "description": "心之怪盗团的海报，《PERSONA 5》联动限定",
         "repeat": 36
       },
       {
         "name": "海报-Take your heart",
-        "img": "./img/1lkommr81zlexkf9ontjqf2tb6fd6a2.png",
+        "img": "/resource/1128371834542033c7834b16cfcc17e7.png",
         "type": "归宿家具",
         "description": "Take your heart的海报，《PERSONA 5》联动限定",
         "repeat": 36

@@ -1,7 +1,7 @@
 {
   "id": "S30E2",
   "name": "xxxHOLiC联动精华",
-  "essenceImage": "./img/la9wd78jfyriajlwhkg3lru4uuremph.png",
+  "essenceImage": "/resource/0bc5150085555ebbd2fc047f18730249.png",
   "diff_A": 0,
   "initialCurrencies": {
     "inspiration": 100000,
@@ -21,7 +21,7 @@
   ],
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "type": "通用货币"
   },
   "pitySettings": {
@@ -33,7 +33,7 @@
     "S": [
       {
         "name": "壹原侑子",
-        "img": "./img/j9l4qu4k61yu4zqdw904dcfntvwqes9.png",
+        "img": "/resource/5ebfb8d29d13644e9d22fee61e0697c7.png",
         "type": "时装",
         "description": "壹原侑子的时装。\nxxxHOLiC联动精华限定稀世时装",
         "repeat": 2000
@@ -42,21 +42,21 @@
     "A": [
       {
         "name": "百目鬼静",
-        "img": "./img/0lqikbmmjmevms1r98557dj115vxf8v.png",
+        "img": "/resource/312767eb127935b7ba3625af729960b4.png",
         "type": "时装",
         "description": "百目鬼静的时装。\nxxxHOLiC联动精华限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "四月一日君寻",
-        "img": "./img/1t7kktxxhc3v2q5nyhj9mqtn0xhyxq1.png",
+        "img": "/resource/d9a577702cfd218d634a334fcd1874fc.png",
         "type": "时装",
         "description": "四月一日君寻的时装。\nxxxHOLiC联动精华限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "五月七日小羽",
-        "img": "./img/boz4o2kfuiol5iubrgc32v9q76rcsfv.png",
+        "img": "/resource/ce76db570a7a3642691985920e2854b6.png",
         "type": "时装",
         "description": "五月七日小羽的时装。\nxxxHOLiC联动精华限定奇珍时装",
         "repeat": 1000
@@ -65,49 +65,49 @@
     "B": [
       {
         "name": "电子耳",
-        "img": "./img/tp7sucyi3bwycjdjaz0zz6n0co4h09p.png",
+        "img": "/resource/0d657b41ea679f4763133c14fe975696.png",
         "type": "随身物品",
         "description": "虽然造型有点特殊，但仍然是一副耳机。",
         "repeat": 200
       },
       {
         "name": "百目鬼静的弓",
-        "img": "./img/ssaojkyov8w6lv2v1jyazhi6oxjx9mp.png",
+        "img": "/resource/24355f9089cd404dbac33413e42ef558.png",
         "type": "随身物品",
         "description": "百目鬼静常用的弓。",
         "repeat": 200
       },
       {
         "name": "愿望气球",
-        "img": "./img/66zpsiqn0f5ki2psqv9evcg6nc4l44x.png",
+        "img": "/resource/65351819ce5d2aab734e35988be785be.png",
         "type": "随身物品",
         "description": "存有美好梦境的气球，同样寄托着小小的愿望。",
         "repeat": 200
       },
       {
         "name": "红蝶-驻足",
-        "img": "./img/fdx0pt7u6kopto0y4cp4jv5k9ke492h.png",
+        "img": "/resource/21f3518f37db381e7bb0aac20c88d58a.png",
         "type": "个性动作",
         "description": "驻足动作，红蝶专属",
         "repeat": 200
       },
       {
         "name": "佣兵-牵引",
-        "img": "./img/kzibxc186dpsce05k06vekbeu3hzmhn.png",
+        "img": "/resource/22d0aa6f71cc864e43a014a0316b95fa.png",
         "type": "个性动作",
         "description": "牵引动作，佣兵专属",
         "repeat": 200
       },
       {
         "name": "先知-争吵",
-        "img": "./img/k4sagda6hjlykcfkr3o0u45zm9yhaft.png",
+        "img": "/resource/b58113a58c7cbb0fd76219e7f5f3442b.png",
         "type": "个性动作",
         "description": "争吵动作，先知专属",
         "repeat": 200
       },
       {
         "name": "“小女孩”-慰藉",
-        "img": "./img/imd5efonnujhqbqc2ei1onqdc4wqs46.png",
+        "img": "/resource/7e062b530abaab88c299322222eacede.png",
         "type": "个性动作",
         "description": "慰藉动作，“小女孩”专属",
         "repeat": 200
@@ -116,70 +116,70 @@
     "C": [
       {
         "name": "壹原侑子Ⅱ",
-        "img": "./img/7yi3wsxo1rz0e5rhy8f5np6qkn05vyf.png",
+        "img": "/resource/56f9a6e3e5749cb4adced7c416139141.png",
         "type": "涂鸦",
         "description": "《TV动画版xxxHOLiC》联动涂鸦（TV动画版xxxHOLiC联动限定获得）。",
         "repeat": 36
       },
       {
         "name": "百目鬼静",
-        "img": "./img/dscflbna74tfm3lgmrcb0ncskmnjff4.png",
+        "img": "/resource/08926da5b69627b7bb9f5abbd2522737.png",
         "type": "涂鸦",
         "description": "《TV动画版xxxHOLiC》联动涂鸦（TV动画版xxxHOLiC联动限定获得）。",
         "repeat": 36
       },
       {
         "name": "五月七日小羽",
-        "img": "./img/l349co0vcndpcouk8h2bkjj77elvza0.png",
+        "img": "/resource/d3f91cbb2ddc1b8c8e18f21237609266.png",
         "type": "涂鸦",
         "description": "《TV动画版xxxHOLiC》联动涂鸦（TV动画版xxxHOLiC联动限定获得）。",
         "repeat": 36
       },
       {
         "name": "四月一日君寻",
-        "img": "./img/sbybmj1yuw2cmxitwsb5yknkeozde1w.png",
+        "img": "/resource/6adcabe6164eff37255d48ab08649823.png",
         "type": "涂鸦",
         "description": "《TV动画版xxxHOLiC》联动涂鸦（TV动画版xxxHOLiC联动限定获得）。",
         "repeat": 36
       },
       {
         "name": "小全&小多",
-        "img": "./img/2ksm4mtkvtpzour1diq6i6txviz8j8g.png",
+        "img": "/resource/af477824d74a7fca2ad94075104124c5.png",
         "type": "涂鸦",
         "description": "《TV动画版xxxHOLiC》联动涂鸦（TV动画版xxxHOLiC联动限定获得）。",
         "repeat": 36
       },
       {
         "name": "壹原侑子",
-        "img": "./img/tr40h7q5vvrdgz7tme3pw9ck4gshn93.png",
+        "img": "/resource/050720e264f2354e549bd9bdb113dbf3.png",
         "type": "涂鸦",
         "description": "《TV动画版xxxHOLiC》联动涂鸦（TV动画版xxxHOLiC联动限定获得）。",
         "repeat": 36
       },
       {
         "name": "百目鬼静",
-        "img": "./img/9kkocpgagztchwicn20vpq75yqdfowi.png",
+        "img": "/resource/7fe8d943f7bd5b65b9de901d093c060d.png",
         "type": "头像",
         "description": "《TV动画版xxxHOLiC》联动头像",
         "repeat": 36
       },
       {
         "name": "摩可拿",
-        "img": "./img/kd13ohnlvs49k4jc4gycbm7sqoiqqdb.png",
+        "img": "/resource/8943ccb3555c6a538069a3da1f6e7d6a.png",
         "type": "头像",
         "description": "《TV动画版xxxHOLiC》联动头像",
         "repeat": 36
       },
       {
         "name": "五月七日小羽",
-        "img": "./img/d1qq56xn8a0x7ga5omdfghw6gmomav6.png",
+        "img": "/resource/05ece61e3729d216acce8be28fd65945.png",
         "type": "头像",
         "description": "《TV动画版xxxHOLiC》联动头像",
         "repeat": 36
       },
       {
         "name": "壹原侑子",
-        "img": "./img/ps00uii5bjhllk7vdsz6bsnpiwneyrv.png",
+        "img": "/resource/d92741ef0b68e3c70c3d4f9a48f8369f.png",
         "type": "头像",
         "description": "《TV动画版xxxHOLiC》联动头像",
         "repeat": 36

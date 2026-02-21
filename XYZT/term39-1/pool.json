@@ -1,0 +1,112 @@
+{
+  "id": "lucky_dice_39-1",
+  "name": "幸运之骰·第39期-系列1",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "异界行者": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "/resource/e492299c2ec4db7e00738e215e631a9b.png",
+      "description": "尖牙利齿，劚玉如泥，纵横捭阖阴阳之间。（深渊的呼唤Ⅲ限定获得）",
+      "repeat": 6
+    },
+    "永夜极光": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "/resource/4e3710b1ef68ac2b2646092bc6174203.png",
+      "description": "红蝶-永夜极光。(深渊的呼唤V限定获得)",
+      "repeat": 6
+    },
+    "亘古双星": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "/resource/96ec930dfd86507c401a2aec174c279d.png",
+      "description": "宿伞之魂-亘古双星。（深渊的呼唤Ⅵ限定获得）",
+      "repeat": 6
+    },
+    "深渊的呼唤Ⅲ": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/c6fb41847bfb0607a91764390fcc0460.png",
+      "description": "【深渊的呼唤Ⅲ】对战限定涂鸦",
+      "repeat": 6
+    },
+    "深渊的呼唤Ⅴ": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/5d85d2fe3b23ab0f4027a7481d9de2ff.png",
+      "description": "【深渊的呼唤Ⅴ】对战限定涂鸦（深渊的呼唤Ⅴ限定获得）",
+      "repeat": 6
+    },
+    "深渊的呼唤Ⅵ": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/b4a2224c95f37af2583ddb98b54b892a.png",
+      "description": "【深渊的呼唤Ⅵ】对战限定涂鸦（深渊的呼唤Ⅵ限定获得）",
+      "repeat": 6
+    },
+    "红蝶-永夜极光（一）": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/f61a822071c57d873d59304ae22c6d17.png",
+      "description": "红蝶专属涂鸦，永夜极光",
+      "repeat": 6
+    },
+    "红蝶-永夜极光（二）": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/ba7511bfd8703801ea711ba40ae8c0f0.png",
+      "description": "红蝶专属涂鸦，永夜极光",
+      "repeat": 6
+    },
+    "宿伞之魂-亘古双星（一）": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/6357288a294eb6ad1ae77c1b89d01ca4.png",
+      "description": "宿伞之魂专属涂鸦，亘古双星（一）",
+      "repeat": 6
+    },
+    "宿伞之魂-亘古双星（二）": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/c96b6396b24994e03da711becdd4b308.png",
+      "description": "宿伞之魂专属涂鸦，亘古双星（二）",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

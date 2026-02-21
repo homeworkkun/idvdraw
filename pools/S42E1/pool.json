@@ -1,0 +1,376 @@
+{
+  "id": "S42E1",
+  "name": "第42赛季·精华1",
+  "essenceImage": "/resource/421e030887c0869d04438f2c472b9598.png",
+  "diff_A": 1,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 200,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "此在无栖",
+        "img": "/resource/a512e7991621c294aca8dca30e48b41e.png",
+        "type": "时装",
+        "description": "循着光与暗的裂隙前行，加冕之日便是诀别之时。王冠从不赐予有归途的勇者，辉煌的诗篇只歌颂永无栖处的旅程。\n（【限定】时装，仅能在第四十二赛季精华1中获得）",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "白焰初照",
+        "img": "/resource/d8ca9a1039d182c630488d90f353d68d.png",
+        "type": "时装",
+        "description": "神明从不会感伤哭泣，只会因悲悯而落泪。\n自始，灵魂被分离，左眼追寻着永不熄灭的生长与光明，永昼可以消灭黑暗与凝滞。\n白焰初照诞生于此地。",
+        "repeat": 1000
+      },
+      {
+        "name": "幽夜终章",
+        "img": "/resource/93edb7f81d2501519b0a13a79b93e572.png",
+        "type": "时装",
+        "description": "神明从不会感伤哭泣，只会因悲悯而落泪。\n自始，灵魂被分离，右眼崇尚着亘古不变的平静与安宁，永夜可以平息欲望与喧嚣。\n幽夜终章诞生于此地。",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "永夜之劫",
+        "img": "/resource/e5767820649eb0abe48d43f820516329.png",
+        "type": "时装",
+        "description": "迷途之人总会被他的好故事所吸引：荒径中燃起一盏又一盏小灯，无声的悲喜剧夜夜开演。",
+        "repeat": 200
+      },
+      {
+        "name": "大地行记",
+        "img": "/resource/4afbf5b71a1c900b60aa2500eda22e1d.png",
+        "type": "时装",
+        "description": "足迹踏过古老的泥土，森林的脉络已熟记于心。前方的道路充满未知的福祸，这一次，他需要铭记的，是那值得歌颂的传奇。",
+        "repeat": 200
+      },
+      {
+        "name": "白云歌谣",
+        "img": "/resource/2a8aeee87c02bd5bd781a95992eab271.png",
+        "type": "时装",
+        "description": "今夜请好睡，你的悲，你的喜，你的堕落与伟大的事迹，你的广阔而璀璨的梦想，都会编织成一阙又一阙令人热烈盈眶的长诗。",
+        "repeat": 200
+      },
+      {
+        "name": "永昼之陨",
+        "img": "/resource/0508327f1e7101fa350d935dda24a13c.png",
+        "type": "时装",
+        "description": "蜜般香甜的气息拉开盛大冒险的序幕，总有人天真地以为，英雄的诗篇该如童话般温柔。",
+        "repeat": 200
+      },
+      {
+        "name": "幸运儿-准备",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
+        "type": "等待动作",
+        "description": "幸运儿专属匹配大厅等待动作，准备",
+        "repeat": 72
+      },
+      {
+        "name": "拉拉队员-小憩",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
+        "type": "等待动作",
+        "description": "拉拉队员专属匹配大厅等待动作，小憩",
+        "repeat": 72
+      },
+      {
+        "name": "歌剧演员-行礼",
+        "img": "/resource/0783640dafdebe861c759158a611b786.png",
+        "type": "个性动作",
+        "description": "行礼动作，歌剧演员专属",
+        "repeat": 72
+      },
+      {
+        "name": "“愚人金”-威胁",
+        "img": "/resource/cbd16a87c7499d02f22652b28cdd24f5.png",
+        "type": "个性动作",
+        "description": "威胁动作，“愚人金”专属",
+        "repeat": 72
+      }
+    ],
+    "C": [
+      {
+        "name": "黑男爵",
+        "img": "/resource/13edb88f713c187510ef84c5e3dc9581.png",
+        "type": "时装",
+        "description": "黑色是为了肃穆，不是为了惊吓",
+        "repeat": 36
+      },
+      {
+        "name": "肃静蓝",
+        "img": "/resource/285cdd7452d567da1b612c189ea25097.png",
+        "type": "时装",
+        "description": "即使面对死亡，这颜色也能让人平静",
+        "repeat": 36
+      },
+      {
+        "name": "葡萄酒",
+        "img": "/resource/bce321558219bb49a0027482fe4f40d2.png",
+        "type": "时装",
+        "description": "表演前的一杯酒有助于保持手部稳定",
+        "repeat": 36
+      },
+      {
+        "name": "墨黑",
+        "img": "/resource/e4a63dd08fe772d66167455ac404981b.png",
+        "type": "时装",
+        "description": "深沉的思维会如墨色般浓重。",
+        "repeat": 36
+      },
+      {
+        "name": "晴日绿",
+        "img": "/resource/a8e40fb70fa5f956ec074c0c3c38e263.png",
+        "type": "时装",
+        "description": "她预报过无数次暴雨，却终未等来一次晴日。",
+        "repeat": 36
+      },
+      {
+        "name": "离弦绯",
+        "img": "/resource/0feee804be301310c743f7a10a0150a0.png",
+        "type": "时装",
+        "description": "每一次离弦都是命运的战书，来吧，像真正的危鲁弗一样战斗！",
+        "repeat": 36
+      },
+      {
+        "name": "月桂黄",
+        "img": "/resource/e2205d48df4dcd460ecc6f6628374e62.png",
+        "type": "时装",
+        "description": "月桂的香气会带来新的机遇吗？",
+        "repeat": 36
+      },
+      {
+        "name": "迷烟青",
+        "img": "/resource/d8ca336b7e612dbdccc1145b709a360d.png",
+        "type": "时装",
+        "description": "打开记忆的枷锁，还是深陷迷雾的窠臼？",
+        "repeat": 36
+      },
+      {
+        "name": "退杆绿",
+        "img": "/resource/b635e5c0f601828902679466ce35d82a.png",
+        "type": "时装",
+        "description": "失去了利用价值，天才也会就此陨落。",
+        "repeat": 36
+      },
+      {
+        "name": "天窗蓝",
+        "img": "/resource/9dc94da23209009bb87d4f4196341a22.png",
+        "type": "时装",
+        "description": "在她破碎的时间里，这是观察外界唯一的窗口。",
+        "repeat": 36
+      },
+      {
+        "name": "蜂毒",
+        "img": "https://patchwiki.biligame.com/images/dwrg/8/8e/e5ou1vzqtbxnms30e2gv1yyjw68ftrl.png",
+        "type": "时装",
+        "description": "她将淬毒的恨意酿入尾针，因为那些残忍的背叛。",
+        "repeat": 36
+      },
+      {
+        "name": "记者-欢呼",
+        "img": "/resource/190feae2e4427e910a46ac14e731ad4b.png",
+        "type": "个性动作",
+        "description": "欢呼动作，记者专属",
+        "repeat": 36
+      },
+      {
+        "name": "“骑士”-羞愧",
+        "img": "/resource/74389bc7c428cda2edc3e8114ae5bfe2.png",
+        "type": "个性动作",
+        "description": "羞愧动作，“骑士”专属",
+        "repeat": 36
+      },
+      {
+        "name": "气象学家-挑衅",
+        "img": "/resource/44169a1e5f519d33ad5fc13115b43773.png",
+        "type": "个性动作",
+        "description": "挑衅动作，气象学家专属",
+        "repeat": 36
+      },
+      {
+        "name": "“逃脱大师”-躺地",
+        "img": "/resource/873ca798d986ffc8dc43cbe5c115f127.png",
+        "type": "个性动作",
+        "description": "躺地动作，“逃脱大师”专属",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-小憩",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
+        "type": "等待动作",
+        "description": "魔术师匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "“慈善家”-准备",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
+        "type": "等待动作",
+        "description": "“慈善家”匹配大厅动作，准备",
+        "repeat": 36
+      },
+      {
+        "name": "空军-小憩",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
+        "type": "等待动作",
+        "description": "空军匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "律师-小憩",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
+        "type": "等待动作",
+        "description": "律师匹配大厅动作，小憩",
+        "repeat": 36
+      },
+      {
+        "name": "魔术师-等待",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
+        "type": "等待动作",
+        "description": "魔术师匹配大厅动作，等待",
+        "repeat": 36
+      },
+      {
+        "name": "蜡像师-个性",
+        "img": "/resource/d1b95d633dd545f60a4ec96327fdbe3d.png",
+        "type": "涂鸦",
+        "description": "蜡像师专用涂鸦，个性",
+        "repeat": 36
+      },
+      {
+        "name": "作曲家-个性",
+        "img": "/resource/4aa45c48d2c40a7e5d8ddddd644f6251.png",
+        "type": "涂鸦",
+        "description": "作曲家专用涂鸦，个性",
+        "repeat": 36
+      },
+      {
+        "name": "古董商-个性",
+        "img": "/resource/9e199ea8c3ef0ed5bc0ffc10e686faa9.png",
+        "type": "涂鸦",
+        "description": "古董商专用涂鸦，个性",
+        "repeat": 36
+      },
+      {
+        "name": "歌剧演员-个性",
+        "img": "/resource/94e66acab180d0b550337965b8401991.png",
+        "type": "涂鸦",
+        "description": "歌剧演员专用涂鸦，个性",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-小说家",
+        "img": "/resource/aff203898cf1da2f0ba35058ed273e27.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-记者",
+        "img": "/resource/e6bc179794e47379886a827df754f9b9.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      },
+      {
+        "name": "黑白回忆-作曲家",
+        "img": "/resource/1aace18f31b3cc66ce2691977e649baf.png",
+        "type": "头像",
+        "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
+        "repeat": 36
+      }
+    ],
+    "D": [
+      {
+        "name": "幸运儿-彩底",
+        "img": "/resource/4eb3144fe9f3e7db1ebc6af0c7585904.png",
+        "type": "涂鸦",
+        "description": "幸运儿专用涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "记者-彩底",
+        "img": "/resource/fecb8bb7adf7379f9424af5dd9b27945.png",
+        "type": "涂鸦",
+        "description": "记者专用涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "隐士-彩底",
+        "img": "/resource/4426c23e17266bf740d7c295ee7bb2a7.png",
+        "type": "涂鸦",
+        "description": "隐士专用涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "古董商-彩底",
+        "img": "/resource/b99b08c158269fd97aeada2e3e378a86.png",
+        "type": "涂鸦",
+        "description": "古董商专用涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "“记录员”-彩底",
+        "img": "/resource/1adc575f978f7420a34d8122d6c1e51d.png",
+        "type": "涂鸦",
+        "description": "“记录员”专用涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "教授-彩底",
+        "img": "/resource/0bbb2b11971934fd097962e4cd81fdf5.png",
+        "type": "涂鸦",
+        "description": "教授专用涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "作曲家-彩底",
+        "img": "/resource/9db289e41e26699e0c172e354c892511.png",
+        "type": "涂鸦",
+        "description": "作曲家专用涂鸦，彩底",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-“跛脚羊”",
+        "img": "/resource/0b5631df0a976fa9aa2dce1691bbac46.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-“愚人金”",
+        "img": "/resource/65691c5456ae01c41bcbfcd87a50f2c6.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-“法罗女士”",
+        "img": "/resource/fceea8f65b48c4387967517031b1d09d.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      },
+      {
+        "name": "彩色回忆-火灾调查员",
+        "img": "/resource/442efcf6910d9e9d06b453670ec5e400.png",
+        "type": "头像",
+        "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
+        "repeat": 6
+      }
+    ]
+  }
+}

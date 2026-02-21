@@ -1,75 +1,75 @@
 {
   "id": "lucky_dice_14",
   "name": "幸运之骰·第14期",
-  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
   "description": "幸运之骰",
   "completeDrawLimit": 200,
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "conversionRate": 50
   },
   "items": {
     "怪鸟": {
       "type": "头像框",
       "rarity": "B",
-      "img": "./img/0hvm71x7hpip3uesrcf5r1wfnd25ccq.png",
+      "img": "/resource/98d711df05a0f9008719951e42ed6258.png",
       "description": "那是一只挑食的鸟儿，她喜欢善良的甜美，恐惧的清冽，悲伤的浓郁还有绝望的回甘。 ",
       "repeat": 200
     },
     "贝拉夫人": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/i87i067isti6o4ov2m8pzddde9tf2nn.png",
+      "img": "/resource/bfb21c1329b7df42a5c356dca212169d.png",
       "description": "任凭珠围翠绕，也无处消愁。 ",
       "repeat": 6
     },
     "惊喜箱": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/rtwm2b6ioty1qdtjsb5wnnc7p0rer6h.png",
+      "img": "/resource/6b1256f862a598fb07e7080db80e7495.png",
       "description": "从惊喜箱里，抽一个玩具，在蜡烛熄灭前，讲一个关于它的故事。",
       "repeat": 6
     },
     "周年庆（求生者）": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/h7dptodiirrrsc5t019bscxr5jx7xq8.png",
+      "img": "/resource/84ea1b3a34e6e7899b9d67ae8f675143.png",
       "description": "周年庆纪念涂鸦，求生者专属",
       "repeat": 6
     },
     "周年庆（监管者）": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/h9oc3exduv3fdiwb20jzysk9set47d9.png",
+      "img": "/resource/86ec5553450cb5c944a9eda08a8a9b1a.png",
       "description": "周年庆纪念涂鸦，监管者专属",
       "repeat": 6
     },
     "通用奇珍时装体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
       "description": "限时体验",
       "repeat": 27
     },
     "监管者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
       "description": "限时体验",
       "repeat": 10
     },
     "求生者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
       "description": "限时体验",
       "repeat": 10
     },
     "通用独特时装体验卡*1天": {
       "type": "临时装扮",
       "rarity": "D",
-      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
       "description": "限时体验",
       "repeat": 10
     }

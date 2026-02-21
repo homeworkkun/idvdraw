@@ -1,12 +1,12 @@
 # 关于
-本精华模拟器由[作业君](https://web.homeworkkun.top/aboutme)制作<br>
-代码主要由Gemini 3 Pro与Qwen 3 Coder编写（Vibe Coding为主了属于是）<br>
+本精华模拟器由[作业君](/aboutme)制作<br>
+代码主要由Gemini3 Pro、Qwen3 Coder、GLM-4.7编写（Vibe Coding为主了属于是）<br>
 第一版制作于2025年11月24日<br>
 精华池完整复刻于2025年12月26日<br>
-如果你对本模拟器有任何意见、建议，或是发现BUG，请向我反馈<br>[>>>>>>>>>>点此反馈<<<<<<<<<<](https://web.homeworkkun.top/WIKI/反馈#jinghuamoniqi)<br>
+如果你对本模拟器有任何意见、建议，或是发现BUG，请向我反馈<br>[>>>>>>>>>>点此反馈<<<<<<<<<<](/WIKI/反馈#精华模拟器)<br>
 反馈时请说明<font color="red"><b>具体问题</b></font>、涉及<font color="red"><b>哪些精华</b></font><br>
-客户端下载：[网盘](https://pan.quark.cn/s/a6bc33e2f371)<br>
-本项目源代码已公开：[Github](https://github.com/homeworkkun/idvdraw)
+客户端下载：[网盘](/resource/42115f75cddc585077aef0656b069e18.html)<br>
+本项目源代码已公开：[Github](/resource/42b1d3775a60b092d0fd94e13ab0b87e.html)
 
 # 精华机制说明
 1. 第18赛季起才有灵感折扣，6折或8折<br>

@@ -1,0 +1,95 @@
+{
+  "id": "JYXB14",
+  "name": "鉴影寻宝第14期",
+  "description": "火漆消耗型池子",
+  "essenceImage": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+  "pitySettings": {
+    "gold": 80,
+    "purple": 80,
+    "blue": 80
+  },
+  "items": {
+    "A": [
+      {
+        "name": "钨",
+        "type": "时装",
+        "img": "/resource/d0f77a0fe106ba869374388124bd2892.png",
+        "description": "那些传说中高悬的星辰并不是我的希望，击碎黑暗的磷光才是。"
+      },
+      {
+        "name": "黑鸦",
+        "type": "时装",
+        "img": "/resource/d54e9533d6c0bf42ebf06c64a40dff3f.png",
+        "description": "掠杀的工具，王国的棋子……她被冠以太多名号，早已无法遵循自己内心的善意。"
+      },
+      {
+        "name": "吟游诗人",
+        "type": "时装",
+        "img": "/resource/69097c22258eabf171cbed9c1643cc22.png",
+        "description": "空寂而漆黑的星空中，那颗无人问津的星辰却吟唱出了孤独动人的诗歌。"
+      },
+      {
+        "name": "硫火",
+        "type": "时装",
+        "img": "/resource/c5c3b86ee172c8714b8758d013e6ad2e.png",
+        "description": "现在那簇火越烧越旺了，她感到心脏在收紧，砰砰直跳——跃动的火舌几乎吞没了这个复仇的夜晚。"
+      },
+      {
+        "name": "“膨化”",
+        "type": "时装",
+        "img": "/resource/36209812bdd0cad3b064e9740aa6e6a0.png",
+        "description": "颗粒饱满的爆米花，均匀地裹满焦糖。这样的美味源于膨化，和火炉深处热闹的噼啪声。"
+      },
+      {
+        "name": "矿业董事",
+        "type": "时装",
+        "img": "/resource/fc59002f7403f013d0a416160ec76f8a.png",
+        "description": "幸运又成功的主角背后，总少不了更多愚蠢又失败的配角。"
+      },
+      {
+        "name": "圣洁",
+        "type": "时装",
+        "img": "/resource/15ae5a2a3cce52cca0c4bef53240cdda.png",
+        "description": "虚假的希望，是恶毒的疫病，它伪装成圣洁的曙光，却最终摧毁所有祈求治愈的躯壳。"
+      },
+      {
+        "name": "黑玫瑰",
+        "type": "时装",
+        "img": "/resource/2d4d24d70c3c0b97dd5c6582d0f6e8f2.png",
+        "description": "在西部的酒馆中，充斥着形形色色的人，做着暴富美梦的淘金者、衣衫褴褛的落魄牛仔，当然还有像她这样的赏金猎人。对于黑玫瑰夫人来说，在西部，每个人头早已被明码标价。"
+      },
+      {
+        "name": "幕外之音",
+        "type": "时装",
+        "img": "/resource/99b13bf689eaa9fd4f37d636f0423f2d.png",
+        "description": "被篡改的幕前词暗示着真相——这里究竟是华美的舞台，还是冰冷的囚笼？"
+      },
+      {
+        "name": "“有机磷”",
+        "type": "时装",
+        "img": "/resource/25d59442a4838519265072a13ca5e8de.png",
+        "description": "适当的化肥和农药可以帮助蔬菜茁壮成长，或许……这一准则对其它生物也同样适用。"
+      }
+    ],
+    "B": [
+      {
+        "name": "碎片*10",
+        "type": "碎片",
+        "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+        "description": "碎片"
+      }
+    ],
+    "C": [
+      {
+        "name": "线索*10",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "线索"
+      }
+    ]
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png"
+  }
+}

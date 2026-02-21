@@ -1,7 +1,7 @@
 {
   "id": "S17E3",
   "name": "第17赛季·精华3",
-  "essenceImage": "./img/q5ep7mlrajvlnrrl12333g3oa1c7okp.png",
+  "essenceImage": "/resource/f5ffc5807557723e2165f27468ab7bd8.png",
   "diff_A": 2,
   "initialCurrencies": {
     "inspiration": 100000,
@@ -10,7 +10,7 @@
   "discounts": [],
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "type": "通用货币"
   },
   "pitySettings": {
@@ -22,7 +22,7 @@
     "S": [
       {
         "name": "静默之戟",
-        "img": "./img/bovftomp11gvxec78h2gx1np3yjds6w.png",
+        "img": "/resource/5211e3c2071b2df5f743446e101cd3a2.png",
         "type": "时装",
         "description": "她对海面上的一切并无兴趣。毕竟并非所有生物都如人类一般愚蠢，妄想探寻不属于自己的世界。\n（【限定】时装，仅能在第十七赛季精华3中获得）",
         "repeat": 2000
@@ -31,14 +31,14 @@
     "A": [
       {
         "name": "“朝圣者”",
-        "img": "./img/nuck7cxfoxgtx3sao9n4dj69iao1pl8.png",
+        "img": "/resource/751783b5bb6ed72778ea8a0cdefd8b10.png",
         "type": "时装",
         "description": "人们口口相传那个关于海妖的传说——为她献上最纯正的恶，她将会赐予你等同于她的力量。",
         "repeat": 1000
       },
       {
         "name": "宝藏猎人",
-        "img": "./img/rb1wgsftj626h6w4nbpqndagup00jnz.png",
+        "img": "/resource/cc3fbddf97b30f985346836bb3102101.png",
         "type": "时装",
         "description": "虚构的传说仅用来恐吓胆小鬼，勇敢的寻宝人能接受深海中的每个挑战……也能悄无声息地战胜同一片海域的竞争者。",
         "repeat": 1000
@@ -47,70 +47,70 @@
     "B": [
       {
         "name": "金斑蝶",
-        "img": "./img/kcehvg8obu88uvk731v9cz6fd1e6wt4.png",
+        "img": "/resource/83bfb8943ce49e81eefa0d7e3de56830.png",
         "type": "时装",
         "description": "她善于利用每一个被人欣赏的机会，毕竟他们只会赞叹她夺目的美丽，很少会注意到那些金粉的毒性。",
         "repeat": 200
       },
       {
         "name": "大丽花",
-        "img": "./img/cyiji6flinnwc8m2v084x7vdnjaof6d.png",
+        "img": "/resource/c0dbb0deb4a4401b8dc34dcdd8c5a2e5.png",
         "type": "时装",
         "description": "那个投机主义者不明白，优雅的色彩永远比虚浮的艳俗更高贵动人，但肤浅的人们总是情不自禁地被她吸引。",
         "repeat": 200
       },
       {
         "name": "香槟桶",
-        "img": "./img/paau1scn6g6c9j4jkxpl0m662rufcwg.png",
+        "img": "/resource/30e5a26a65e16da9eae582fc9fd2c47b.png",
         "type": "时装",
         "description": "他只是一件礼物，一个酒桶，一个寻欢作乐的工具。那些冰块里封存的，绝不是属于他自己的欲念。",
         "repeat": 200
       },
       {
         "name": "沉默船夫",
-        "img": "./img/bpo91hmz780d1ehblz7lbm9qmfdsurb.png",
+        "img": "/resource/dabbf15963bb7f6eff96c6ecbe5f7bff.png",
         "type": "时装",
         "description": "他早已厌倦无边的大海和风浪，只要能离开这里……良知不值一提，他宁愿载着那些人驶入危险的洋流。",
         "repeat": 200
       },
       {
         "name": "银蚶",
-        "img": "./img/7c1u6pyiugwq1b3x971ex54u90ecn9w.png",
+        "img": "/resource/518ad2f49425598132ca5dedc72852c3.png",
         "type": "时装",
         "description": "银光闪闪的小型贝类生活在浅海的砂砾下，如若不撬开紧闭的外壳，没人能看见里面鲜红的血肉。",
         "repeat": 200
       },
       {
         "name": "咸沙",
-        "img": "./img/ppqvflehiykfg8gtyrwkm58sw4ftd8c.png",
+        "img": "/resource/724fa7c3202ad567a270dbed403d546c.png",
         "type": "时装",
         "description": "拙劣的作品不应当玷污神圣的艺术殿堂，于是她毁了它们，阻止了这场灾难的发生。",
         "repeat": 200
       },
       {
         "name": "机械师-张望",
-        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
         "type": "等待动作",
         "description": "机械师匹配大厅动作，张望",
         "repeat": 200
       },
       {
         "name": "律师-张望",
-        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
         "type": "等待动作",
         "description": "律师匹配大厅动作，张望",
         "repeat": 200
       },
       {
         "name": "园丁-张望",
-        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
         "type": "等待动作",
         "description": "园丁匹配大厅动作，张望",
         "repeat": 200
       },
       {
         "name": "医生-张望",
-        "img": "./img/0w1n2jkyzmbjhi6oml4j01c4ou56zku.png",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
         "type": "等待动作",
         "description": "医生匹配大厅动作，张望",
         "repeat": 200
@@ -119,189 +119,189 @@
     "C": [
       {
         "name": "平凡灰",
-        "img": "./img/47bgew6utc67g339kgmng0efe496hw6.png",
+        "img": "/resource/fc3dd1028883d12ca1087f3b90927186.png",
         "type": "时装",
         "description": "平平淡淡的人生有什么不好！",
         "repeat": 36
       },
       {
         "name": "紫罗兰",
-        "img": "./img/kpiflpo1sfdc1hi3uwoqu6ocv72tq72.png",
+        "img": "/resource/4221cdad462043fa113799250025b5dd.png",
         "type": "时装",
         "description": "紫罗兰，风信子，薰衣草~~",
         "repeat": 36
       },
       {
         "name": "专注白",
-        "img": "./img/fabvxpyjyshj3jm3mwbrhmbhbkyr7id.png",
+        "img": "/resource/5412a517cc62dc26a27972e2c139c50d.png",
         "type": "时装",
         "description": "没有专注，就没有精品!",
         "repeat": 36
       },
       {
         "name": "幽静蓝",
-        "img": "./img/chpyas2owwi7brjdkogxg6robjfxhej.png",
+        "img": "/resource/de59b7285af3007d07837296a40bd7b6.png",
         "type": "时装",
         "description": "即使在独处之时，也不能放松对自己的要求。",
         "repeat": 36
       },
       {
         "name": "天空蓝",
-        "img": "./img/pqak28if48xz62d87oxfejl8jcgnmgf.png",
+        "img": "/resource/78666f0a30c921cba11e32d03da682cd.png",
         "type": "时装",
         "description": "草垛上空的天空曾是他美好的回忆。",
         "repeat": 36
       },
       {
         "name": "骄阳",
-        "img": "./img/sprkds8914i3qrlgb1n5mskv7uuuxra.png",
+        "img": "/resource/9a93555b6cc169a29a09e52180c2346e.png",
         "type": "时装",
         "description": "骄阳之下，谁还会回想起关于凛冬的往昔。",
         "repeat": 36
       },
       {
         "name": "夜宴灰",
-        "img": "./img/ih6dwh3r5s4jjmw6umpajgp16nad9uz.png",
+        "img": "/resource/566398ed6e9b258bfa63fab520a68c38.png",
         "type": "时装",
         "description": "即使是接待男爵，也要优雅从容",
         "repeat": 36
       },
       {
         "name": "红藻",
-        "img": "./img/bcn6uley7b4d30f2dj6h0jqffgiy81i.png",
+        "img": "/resource/b40577bc42a5a6a6204aaf99a13eb1ab.png",
         "type": "时装",
         "description": "旺盛的生机之下，湖泊已是一汪毒水。",
         "repeat": 36
       },
       {
         "name": "青苹果",
-        "img": "./img/ig7dp4zyatgzb1tlo88enyqz7zzgaum.png",
+        "img": "/resource/9139f627f91b1b916974615d313d1d3b.png",
         "type": "时装",
         "description": "青苹果虽然酸涩，但等它成熟就已被别人摘走了",
         "repeat": 36
       },
       {
         "name": "严肃蓝",
-        "img": "./img/s7smh0clepavpl6q4ocfzkq258t4dap.png",
+        "img": "/resource/caf7815a848ac9ae693d4435244c174b.png",
         "type": "时装",
         "description": "每一封信都会按时到达正确的地方!",
         "repeat": 36
       },
       {
         "name": "荒野白",
-        "img": "./img/bjfwqv89aw0i6mxac18eia9pnt1uo57.png",
+        "img": "/resource/f1bd766ba1bec563208016c479f59f96.png",
         "type": "时装",
         "description": "在荒野上，没人听得到你的祈祷。",
         "repeat": 36
       },
       {
         "name": "祭司-欢呼",
-        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "img": "/resource/190feae2e4427e910a46ac14e731ad4b.png",
         "type": "个性动作",
         "description": "欢呼动作，祭司专属",
         "repeat": 36
       },
       {
         "name": "空军-欢呼",
-        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "img": "/resource/190feae2e4427e910a46ac14e731ad4b.png",
         "type": "个性动作",
         "description": "欢呼动作，空军专属",
         "repeat": 36
       },
       {
         "name": "盲女-欢呼",
-        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "img": "/resource/190feae2e4427e910a46ac14e731ad4b.png",
         "type": "个性动作",
         "description": "欢呼动作，盲女专属",
         "repeat": 36
       },
       {
         "name": "前锋-欢呼",
-        "img": "./img/ch2gqfof6gfxxiyw1j0dn8u5gp8fz44.png",
+        "img": "/resource/190feae2e4427e910a46ac14e731ad4b.png",
         "type": "个性动作",
         "description": "欢呼动作，前锋专属",
         "repeat": 36
       },
       {
         "name": "盲女-等待",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "盲女匹配大厅动作，等待",
         "repeat": 36
       },
       {
         "name": "机械师-等待",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "机械师匹配大厅动作，等待",
         "repeat": 36
       },
       {
         "name": "盲女-小憩",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "盲女匹配大厅动作，小憩",
         "repeat": 36
       },
       {
         "name": "机械师-小憩",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "机械师匹配大厅动作，小憩",
         "repeat": 36
       },
       {
         "name": "冒险家-小憩",
-        "img": "./img/41a1wrtsip5iit54z0zhertp8lr5wsd.png",
+        "img": "/resource/81c376691ed8e0ce77fa14161417a716.png",
         "type": "等待动作",
         "description": "冒险家匹配大厅动作，小憩",
         "repeat": 36
       },
       {
         "name": "祭司门之钥-卡通",
-        "img": "./img/krauh5269d64rbklyzonf03u5w0bvuc.png",
+        "img": "/resource/73ef10819605ca8919cb59599ad3a37e.png",
         "type": "涂鸦",
         "description": "祭司专属涂鸦，卡通",
         "repeat": 36
       },
       {
         "name": "宿伞之魂铃铛-卡通",
-        "img": "./img/mcfg8nei4ckjobkwwfeoeahmg2ugmik.png",
+        "img": "/resource/2c3d232cf768567299720f7684986302.png",
         "type": "涂鸦",
         "description": "宿伞之魂专属涂鸦，卡通",
         "repeat": 36
       },
       {
         "name": "小丑火箭-卡通",
-        "img": "./img/ctyi53v7sgzi5row3emt455clvebczj.png",
+        "img": "/resource/d5ea80be9f116fc8e214e7222ab0568e.png",
         "type": "涂鸦",
         "description": "小丑专属涂鸦，卡通",
         "repeat": 36
       },
       {
         "name": "红蝶扇子-卡通",
-        "img": "./img/7ke8xf5yktje1zov5nuja63ihb2wr6v.png",
+        "img": "/resource/620ec81a7b2a3e1667462067d54b7f08.png",
         "type": "涂鸦",
         "description": "红蝶专属涂鸦，卡通",
         "repeat": 36
       },
       {
         "name": "黑白回忆-入殓师",
-        "img": "./img/09iso6u8ztg3xqgt8rww8hpnw3oyp1e.png",
+        "img": "/resource/4f5e4fb02b1c84cddcdca173dd06a470.png",
         "type": "头像",
         "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
         "repeat": 36
       },
       {
         "name": "黑白回忆-调酒师",
-        "img": "./img/i1cuuy877fhwoitnx67vz1k635t9xqo.png",
+        "img": "/resource/7ca21a6ddcf37cd43253605fc8eee4aa.png",
         "type": "头像",
         "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
         "repeat": 36
       },
       {
         "name": "黑白回忆-先知",
-        "img": "./img/51y9u8ndticfsd0h525e3jixbx23apz.png",
+        "img": "/resource/e8c9a17b40f04393d93d6d1c82eabaf9.png",
         "type": "头像",
         "description": "黑白回忆系列头像\n“然而时光终成旧照，旧照褪为回忆，回忆消散于风中。”",
         "repeat": 36
@@ -310,77 +310,77 @@
     "D": [
       {
         "name": "入殓师-灰影",
-        "img": "./img/ikeoginoat4rp10nnpipru6fkkawr0d.png",
+        "img": "/resource/f82ebf87abcf46c0d0d657fc134e0515.png",
         "type": "涂鸦",
         "description": "入殓师专属涂鸦，灰影系列",
         "repeat": 6
       },
       {
         "name": "先知-灰影",
-        "img": "./img/gp41z1dig59g1dgq0gp8b3is6skan7l.png",
+        "img": "/resource/74769b607f43589b738f78febab5cfa5.png",
         "type": "涂鸦",
         "description": "先知专属涂鸦，灰影系列",
         "repeat": 6
       },
       {
         "name": "咒术师-萌版",
-        "img": "./img/jy3yfg2p0a6yp0z24kta983jun6x8iy.png",
+        "img": "/resource/9d01829ae02dc98fc0e5c868328495a9.png",
         "type": "涂鸦",
         "description": "咒术师专用涂鸦，萌版",
         "repeat": 6
       },
       {
         "name": "孽蜥剥皮刀-卡通",
-        "img": "./img/8g7mqf8qj36cyzm32b5gezf7h0i7ikd.png",
+        "img": "/resource/3b682fb3348799b76877fb12b8eb34e2.png",
         "type": "涂鸦",
         "description": "孽蜥专属涂鸦，卡通",
         "repeat": 6
       },
       {
         "name": "邮差-灰影",
-        "img": "./img/ar9sf71a3mhg53hims3dqy3f1q3g71e.png",
+        "img": "/resource/a6812d188c93bd566cd1972913548c73.png",
         "type": "涂鸦",
         "description": "邮差专属涂鸦，灰影系列",
         "repeat": 6
       },
       {
         "name": "红夫人-萌版",
-        "img": "./img/fha4ygsncv3zl35n776x59mvieuknay.png",
+        "img": "/resource/965462be9a472b9c4fe38c3be006168a.png",
         "type": "涂鸦",
         "description": "红夫人专用涂鸦，萌版",
         "repeat": 6
       },
       {
         "name": "疯眼锤子-卡通",
-        "img": "./img/11n7wb22xsw2wjd8ctculyg5zal1c8c.png",
+        "img": "/resource/c81b966375344d1ca9167a0554bb4c0f.png",
         "type": "涂鸦",
         "description": "疯眼专属涂鸦，卡通",
         "repeat": 6
       },
       {
         "name": "彩色回忆-画家",
-        "img": "./img/59y47n6achyelcqplhzi99vknaigvrt.png",
+        "img": "/resource/17905b3b3f2889dcae93c58b7f3c8f03.png",
         "type": "头像",
         "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
         "repeat": 6
       },
       {
         "name": "彩色回忆-昆虫学者",
-        "img": "./img/l2j3px7uldmjng8u0ifpvru50hc7wde.png",
+        "img": "/resource/642ec933496c380a56d66b9dd240dd4e.png",
         "type": "头像",
         "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
         "repeat": 6
       },
       {
         "name": "彩色回忆-使徒",
-        "img": "./img/jjho1uxmve2veppyxcvb8gurkr0kvr6.png",
+        "img": "/resource/9f11b5c424ac84104ca07acc4ab3d446.png",
         "type": "头像",
         "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
         "repeat": 6
       },
       {
         "name": "彩色回忆-摄影师",
-        "img": "./img/dyzh5d6d623mnqisb0e3nh1ind56u06.png",
+        "img": "/resource/b154e54bc3377389c5147f37ac2ebbab.png",
         "type": "头像",
         "description": "彩色回忆系列头像\n“记住这一瞬间的心情，并让这段时光永留在心底” ",
         "repeat": 6

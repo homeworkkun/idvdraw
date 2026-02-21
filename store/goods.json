@@ -1,41 +1,71 @@
 [
   {
-    "id": "item_001",
-    "name": "B.Duck",
-    "type": "时装",
-    "rarity": "S",
-    "img": "./img/9u9yqpb90t9bmpo5drh46pw73hh243k.png",
-    "description": "B.Duck的礼物。 ",
+    "id": "currency_fragments_18888",
+    "name": "碎片超级礼包",
+    "type": "货币",
+    "rarity": "B",
+    "img": "/resource/fb9cdd98b80f096c5efbb09ae6c5fcca.png",
+    "description": "购买 18888 碎片",
     "prices": [
       {
         "currency": "inspiration",
-        "amount": 2888
-      },
-      {
-        "currency": "fragments",
-        "amount": 12888
+        "amount": 3980
       }
     ],
+    "reward": {
+      "type": "currency",
+      "currency": "fragments",
+      "amount": 18888
+    },
     "tag": "热",
-    "discount": "8折",
-    "timeLeft": "剩36天",
-    "limit": 1
+    "discount": "",
+    "timeLeft": "",
+    "limit": 9999
   },
   {
-    "id": "item_002",
-    "name": "碎片大礼包",
-    "type": "礼包",
+    "id": "currency_clue_10000",
+    "name": "线索超级礼包",
+    "type": "货币",
     "rarity": "B",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
-    "description": "包含大量碎片的礼包。",
+    "img": "/resource/3dd38f248aaae3b567024c474a9c72c6.png",
+    "description": "购买 10000 线索",
     "prices": [
       {
         "currency": "inspiration",
-        "amount": 540
+        "amount": 988
       }
     ],
+    "reward": {
+      "type": "currency",
+      "currency": "clue",
+      "amount": 10000
+    },
     "tag": "热",
-    "discount": "特惠",
-    "limit": 1
+    "discount": "",
+    "timeLeft": "",
+    "limit": 9999
+  },
+  {
+    "id": "currency_huoqi_10000",
+    "name": "火漆大礼包",
+    "type": "货币",
+    "rarity": "B",
+    "img": "/resource/c4a72a3313234e130dead0430f721201.png",
+    "description": "购买 10000 火漆",
+    "prices": [
+      {
+        "currency": "inspiration",
+        "amount": 10000
+      }
+    ],
+    "reward": {
+      "type": "currency",
+      "currency": "huoqi",
+      "amount": 10000
+    },
+    "tag": "热",
+    "discount": "",
+    "timeLeft": "",
+    "limit": 9999
   }
 ]

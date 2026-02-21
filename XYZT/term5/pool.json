@@ -1,75 +1,75 @@
 {
   "id": "lucky_dice_5",
   "name": "幸运之骰·第5期",
-  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
   "description": "幸运之骰",
   "completeDrawLimit": 9999,
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "conversionRate": 50
   },
   "items": {
     "情诗": {
       "type": "头像框",
       "rarity": "B",
-      "img": "./img/k7x9p03ytlzujmi0irpbekipmf4asa3.png",
+      "img": "/resource/e2ffc09798e0e83a1799723bd9453c04.png",
       "description": "精致绸缎下，是小鹿乱撞的心。(2020年情人节活动首次获得) ",
       "repeat": 200
     },
     "木屋雪融": {
       "type": "头像框",
       "rarity": "B",
-      "img": "./img/rlf03f1x17pwvnlxtndaq5su07jcfu1.png",
+      "img": "/resource/01c6575de8faacbf777f6694e7b8a972.png",
       "description": "冰雪节活动头像框 ",
       "repeat": 200
     },
     "新春快乐": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/73a3j2snrt3ske5oruph5g6zq2fu906.png",
+      "img": "/resource/6606fb9add7933a18a775df95a35b408.png",
       "description": "爆竹声声辞旧岁，新装狮帽，龙蟠凤舞~ ",
       "repeat": 6
     },
     "百花之冠": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/ax5ygfngohbsns3fg2ypfpw5jh4xn1l.png",
+      "img": "/resource/b8af97a870341c677ebdf4140b3fac98.png",
       "description": "森林的花朵喜欢像自己一样纯净无暇的女孩 ",
       "repeat": 6
     },
     "粽子宝宝": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/rb6ba2weke9dm8sznvswwtl1afzqvkp.png",
+      "img": "/resource/b20ccd3c98364d90da69164f747e572f.png",
       "description": "“彩线轻缠红玉臂，小符斜挂绿云鬟。”(2019年端午节活动首次获得) ",
       "repeat": 6
     },
     "通用奇珍时装体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
       "description": "限时体验",
       "repeat": 27
     },
     "监管者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
       "description": "限时体验",
       "repeat": 10
     },
     "求生者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
       "description": "限时体验",
       "repeat": 10
     },
     "通用独特时装体验卡*1天": {
       "type": "临时装扮",
       "rarity": "D",
-      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
       "description": "限时体验",
       "repeat": 10
     }

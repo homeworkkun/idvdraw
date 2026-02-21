@@ -1,0 +1,287 @@
+[
+  {
+    "id": "hxmt_ss_1",
+    "name": "摩涅莫绪涅之梦",
+    "type": "时装",
+    "rarity": "SS",
+    "img": "/resource/02e7ad28a5cd2f9201d4a04548e3ae6f.png",
+    "description": "记忆，是痛苦的霓裳。",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 7000
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_ss_2",
+    "name": "犹格·索托斯之使",
+    "type": "时装",
+    "rarity": "SS",
+    "img": "/resource/7e177d0dc266bfc51b3d0afb49bb6809.png",
+    "description": "唯有手握银钥之人，才能通过猜想和睡梦窥见真理之门。",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 7000
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_ss_3",
+    "name": "希望的残像",
+    "type": "时装",
+    "rarity": "SS",
+    "img": "/resource/917c536de5fcfb9ed160b3633daeca23.png",
+    "description": "回望过往，散落的天真烂漫与美好愿景，都已成镜中残像，清晰可见，遥不可及。",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 7000
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_ss_4",
+    "name": "昔日的预言者",
+    "type": "时装",
+    "rarity": "SS",
+    "img": "/resource/5396aba077a762d7d7a9ba364a032638.png",
+    "description": "在信仰者的呼唤声中，预言者迷失了方向，忘记了誓约。直至役鸟的鲜血浸润双眼，终于再次看到了“未来”。",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 7000
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_senior_1",
+    "name": "小人国",
+    "type": "时装",
+    "rarity": "S",
+    "img": "/resource/71c721ed4c22f76a645a8e067d1955c5.png",
+    "description": "是世界变小了？不，是我变大了！",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 600
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_senior_2",
+    "name": "宇宙之境",
+    "type": "家具",
+    "rarity": "S",
+    "img": "/resource/11b7f76ddb8e39f47982a11a465963a6.png",
+    "description": "为虚无的宇宙，披上真理的秘色。(通过幻象迷途获得)",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 600
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_senior_3",
+    "name": "最后一曲",
+    "type": "家具",
+    "rarity": "S",
+    "img": "/resource/10e7d454a12046bcbaebf92486deb224.png",
+    "description": "为易碎的美丽，奏响终章。(通过幻象迷途获得)",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 600
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_senior_4",
+    "name": "星云瓶",
+    "type": "随身物品",
+    "rarity": "S",
+    "img": "/resource/3f877da7abb2cbff92d74b072b08a595.png",
+    "description": "梦境之瓶中，装载着来自远古寰宇的馈赠。",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 400
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_senior_5",
+    "name": "荣光的残像",
+    "type": "随身物品",
+    "rarity": "S",
+    "img": "/resource/bfe57ebe77831a8d6aa218321553c88b.png",
+    "description": "腐叶滋长的荣光，总是危险又易碎。",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 400
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_senior_6",
+    "name": "遗忘之花",
+    "type": "随身物品",
+    "rarity": "S",
+    "img": "/resource/a0d0c5c79031beb2186ba3d64d036a3d.png",
+    "description": "摧折的结局并不会让人忘却盛放的瞬间。",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 400
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_senior_7",
+    "name": "谎言之躯",
+    "type": "家具",
+    "rarity": "S",
+    "img": "/resource/02257f38b6fb2688f8942a01cbde0c2d.png",
+    "description": "谎言构筑的幻景里，是否容得下一丝真实的怀念。",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 600
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_intermediate_1",
+    "name": "“碰触”",
+    "type": "随从",
+    "rarity": "A",
+    "img": "/resource/0b0f48c38782eac526907701aa4586a8.png",
+    "description": "每一个虚无的光点，都希望碰触真理的彼岸。",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 260
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_intermediate_2",
+    "name": "小特里亚农的秘宝",
+    "type": "随从",
+    "rarity": "A",
+    "img": "/resource/af8b1a6cd6507b8f7b53ebc6970aa504.png",
+    "description": "在一切被欲望与恶意的吞噬前，那只带来厄运的宝匣中，或者只藏着最单纯的愿望。",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 260
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_intermediate_3",
+    "name": "小人偶",
+    "type": "随身物品",
+    "rarity": "A",
+    "img": "/resource/d47027ccaabc243f6d744b373d695ed3.png",
+    "description": "这个人偶，总觉得在哪里见过？",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 240
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_intermediate_4",
+    "name": "晨与暮",
+    "type": "随从",
+    "rarity": "A",
+    "img": "/resource/431ac3cafb06482a739e61a0e94809b6.png",
+    "description": "今日的追悔，无法拯救昨日的灵魂。",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 260
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_B_1",
+    "name": "求生者-伯爵红茶",
+    "type": "菜品",
+    "rarity": "B",
+    "img": "/resource/20d1f1dd9f9c6ebe3e4beba8934de9fd.png",
+    "description": "茶壶上的神秘涂鸦，或许是开启时空之门的钥匙。",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 80
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_B_2",
+    "name": "监管者-萨尔斯堡蛋霜糕",
+    "type": "菜品",
+    "rarity": "B",
+    "img": "/resource/3d02b94d25b35c67c7e544fba70d0dba.png",
+    "description": "没有面包的话，为什么不吃蛋糕呢？",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 80
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_B_3",
+    "name": "监管者-米朗琪咖啡",
+    "type": "菜品",
+    "rarity": "B",
+    "img": "/resource/0bc32d904b6b685172fa3a26b7a90f30.png",
+    "description": "下棋与咖啡，都是消磨下午时光的绝佳选择。",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 80
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hxmt_C_1",
+    "name": "通用-曲奇",
+    "type": "菜品",
+    "rarity": "C",
+    "img": "/resource/94cd0414c98cd35fe93d7cdc42ddfb1e.png",
+    "description": "香酥的甜品，与下午茶搭配食用更佳。",
+    "prices": [
+      {
+        "currency": "nightingale",
+        "amount": 50
+      }
+    ],
+    "limit": 1
+  }
+]

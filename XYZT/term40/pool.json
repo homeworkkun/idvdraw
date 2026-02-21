@@ -1,0 +1,77 @@
+{
+  "id": "lucky_dice_40",
+  "name": "幸运之骰·第40期",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 9999,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "B.Duck": {
+      "type": "头像框",
+      "rarity": "B",
+      "img": "/resource/af79bf3f6249d439197a6e21a9bfc4cc.png",
+      "description": "B.Duck联动头像框（B.Duck联动限定获得） ",
+      "repeat": 200
+    },
+    "Buffy头像": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "/resource/5555a71f41f7f172925489d2f76c0e84.png",
+      "description": "B.Duck联动头像（B.Duck联动限定获得） ",
+      "repeat": 6
+    },
+    "Jack头像": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "/resource/c178944573fa25ae2565aad8674323d1.png",
+      "description": "B.Duck联动头像（B.Duck联动限定获得） ",
+      "repeat": 6
+    },
+    "Buffy涂鸦": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/f58d9329ac11ea7aa125aa3d7813d702.png",
+      "description": "B.Duck联动涂鸦（B.Duck联动限定获得） ",
+      "repeat": 6
+    },
+    "Jack涂鸦": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/ae3935e87d291e7fd42da580a2aecddb.png",
+      "description": "B.Duck联动涂鸦（B.Duck联动限定获得）",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

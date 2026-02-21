@@ -1,7 +1,7 @@
 {
   "id": "S26E1",
   "name": "文豪野犬联动精华2",
-  "essenceImage": "./img/1ymkqr8m6nmek6slq26bworo9t9w3bs.png",
+  "essenceImage": "/resource/1e9838f86f3f0fee673cbf20860512a8.png",
   "diff_A": 0,
   "initialCurrencies": {
     "inspiration": 100000,
@@ -21,7 +21,7 @@
   ],
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "type": "通用货币"
   },
   "pitySettings": {
@@ -33,7 +33,7 @@
     "S": [
       {
         "name": "芥川龙之介",
-        "img": "./img/ffbwma0snso6v7xtwt19x03nvygo9g2.png",
+        "img": "/resource/b0261ed71ed1e5a87bef1e703670dd69.png",
         "type": "时装",
         "description": "港口黑手党成员-芥川龙之介的服装。\n文豪野犬联动精华2限定稀世时装",
         "repeat": 2000
@@ -42,21 +42,21 @@
     "A": [
       {
         "name": "广津柳浪",
-        "img": "./img/1n9qsfeiup4yc2qvai5ufi8hd33hoej.png",
+        "img": "/resource/f0196f4e18e1dff23ac2feedc21f0e8d.png",
         "type": "时装",
         "description": "港口黑手党成员-广津柳浪的服装。\n文豪野犬联动精华2限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "樋口一叶",
-        "img": "./img/08flznoujn40g5r8kromo22f7ogrm1e.png",
+        "img": "/resource/4fc331c5fdbb3feb43de486da3d7a1fc.png",
         "type": "时装",
         "description": "港口黑手党成员-樋口一叶的服装。\n文豪野犬联动精华2限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "梶井基次郎",
-        "img": "./img/2886205o9hwwyllhyrlvd5z7qw6klgb.png",
+        "img": "/resource/6196106c8b85d317adadb8025661f51e.png",
         "type": "时装",
         "description": "港口黑手党成员-梶井基次郎的服装。\n文豪野犬联动精华2限定奇珍时装",
         "repeat": 1000
@@ -65,28 +65,28 @@
     "B": [
       {
         "name": "打火机",
-        "img": "./img/pvl45sd2zwgb3dczj5le9i6lvef3q6o.png",
+        "img": "/resource/e397335974dd3383b79bc0e3d7dfd096.png",
         "type": "随身物品",
         "description": "广津柳浪的打火机。\n文豪野犬联动限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "芥川龙之介玩偶",
-        "img": "./img/d26neqp7ykqt0lxf7nvue5z2m6zc955.png",
+        "img": "/resource/9d11aec1db0283ec11dbc8cd0a7d77b9.png",
         "type": "随身物品",
         "description": "芥川龙之介模样的布偶。\n文豪野犬联动限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "柠檬炸弹",
-        "img": "./img/h7zowyf4zf51rbp8hyuh1332tm4gp8i.png",
+        "img": "/resource/538dec62b790a6f964eb8d6027ee82f4.png",
         "type": "随身物品",
         "description": "梶井基次郎的柠檬炸弹。\n文豪野犬联动限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "文豪野犬第二弹",
-        "img": "./img/futnpxyx6oszettas84zbepgwlaou08.png",
+        "img": "/resource/d1f1466d7b6168e61b353c9d900ccbb9.png",
         "type": "头像框",
         "description": "文豪野犬联动头像框(文豪野犬联动限定获得)",
         "repeat": 200
@@ -95,56 +95,56 @@
     "C": [
       {
         "name": "芥川龙之介Ⅱ",
-        "img": "./img/4qo5n19lkfh3trbxjylh4zylt74636h.png",
+        "img": "/resource/6b6cf68e6d90bde7a95da25b9ccf6a8b.png",
         "type": "涂鸦",
         "description": "文豪野犬联动涂鸦（文豪野犬联动限定获得)",
         "repeat": 36
       },
       {
         "name": "樋口一叶Ⅱ",
-        "img": "./img/3vocl3npbk52qja0ecoxeakb2i45y3q.png",
+        "img": "/resource/bd9119fc39234fa59fb40e0297964ed3.png",
         "type": "涂鸦",
         "description": "文豪野犬联动涂鸦（文豪野犬联动限定获得)",
         "repeat": 36
       },
       {
         "name": "梶井基次郎Ⅱ",
-        "img": "./img/09159k0omeapl9abw0yvb88f891pud5.png",
+        "img": "/resource/0764d6f1cdf7cd729e1ebe05e6b500ec.png",
         "type": "涂鸦",
         "description": "文豪野犬联动涂鸦（文豪野犬联动限定获得)",
         "repeat": 36
       },
       {
         "name": "广津柳浪Ⅱ",
-        "img": "./img/dzfyiqlue3415pzq0vramdzwala2nde.png",
+        "img": "/resource/2aec5b5c4e8078de1699cccb7deaef04.png",
         "type": "涂鸦",
         "description": "文豪野犬联动涂鸦（文豪野犬联动限定获得)",
         "repeat": 36
       },
       {
         "name": "芥川龙之介",
-        "img": "./img/e8tn6v9xlwjimkd1kiig8a2qomzg54r.png",
+        "img": "/resource/bbe6602f9f5feb03d519dac331b38c28.png",
         "type": "头像",
         "description": "文豪野犬联动头像（文豪野犬联动限定获得)",
         "repeat": 36
       },
       {
         "name": "樋口一叶",
-        "img": "./img/10xyfhzgo5pbxpv84yv7k2itvlyzkam.png",
+        "img": "/resource/b2e0824ac67266474d614453afda070f.png",
         "type": "头像",
         "description": "文豪野犬联动头像（文豪野犬联动限定获得)",
         "repeat": 36
       },
       {
         "name": "梶井基次郎",
-        "img": "./img/kl3j0b71bn9ej3fbc5wr1zz3xwtjchj.png",
+        "img": "/resource/1013fb86c999eee4faf3c5ab1b8f90fc.png",
         "type": "头像",
         "description": "文豪野犬联动头像（文豪野犬联动限定获得)",
         "repeat": 36
       },
       {
         "name": "广津柳浪",
-        "img": "./img/jr6n6df1cc4akxnyezsq3v9l8mds70y.png",
+        "img": "/resource/f8b15669cc55ab691dbe6031d15612b7.png",
         "type": "头像",
         "description": "文豪野犬联动头像（文豪野犬联动限定获得)",
         "repeat": 36

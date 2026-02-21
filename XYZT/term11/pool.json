@@ -1,75 +1,75 @@
 {
   "id": "lucky_dice_11",
   "name": "幸运之骰·第11期",
-  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
   "description": "幸运之骰",
   "completeDrawLimit": 200,
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "conversionRate": 50
   },
   "items": {
     "自然之庇佑": {
       "type": "头像框",
       "rarity": "B",
-      "img": "./img/tveora1shkqygab9wedw08yft9qfouj.png",
+      "img": "/resource/fdbc66f1aa18421af49b9ff5539d7ccf.png",
       "description": "2020永恒之森活动头像框 ",
       "repeat": 200
     },
     "温暖的家": {
       "type": "头像框",
       "rarity": "B",
-      "img": "./img/2uir4rmepfuyhgu6fpcpulj4xat0h1z.png",
+      "img": "/resource/c15a93ae156645989fa121e45033e30c.png",
       "description": "孕育着生命的巨木之森才是他们的家(通过2021“重建森林”活动获得) ",
       "repeat": 200
     },
     "萤灯": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/59k1b2penwg4j4u98myjxnk8n10zo86.png",
+      "img": "/resource/18026b51265acfc43d505e33ddd60066.png",
       "description": "与萤火虫一起享受这美丽、寂静的夜(通过2021“重建森林”活动获得) ",
       "repeat": 6
     },
     "机械师-练习": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/n7tcx0mnxuziqnnei1hhlm5u46s3aoy.png",
+      "img": "/resource/2b97d3fce2e370b6851b8adadc4ae0b9.png",
       "description": "机械师专属涂鸦-练习，参与2021年520游戏热爱日活动获得 ",
       "repeat": 6
     },
     "红蝶-吃货": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/2r6pxm3ac2anagwshgckegtzw6vgnlm.png",
+      "img": "/resource/4dd678178d039ab6cecd5cea83a284f3.png",
       "description": "吃货主题涂鸦，红蝶专属",
       "repeat": 6
     },
     "通用奇珍时装体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
       "description": "限时体验",
       "repeat": 27
     },
     "监管者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
       "description": "限时体验",
       "repeat": 10
     },
     "求生者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
       "description": "限时体验",
       "repeat": 10
     },
     "通用独特时装体验卡*1天": {
       "type": "临时装扮",
       "rarity": "D",
-      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
       "description": "限时体验",
       "repeat": 10
     }

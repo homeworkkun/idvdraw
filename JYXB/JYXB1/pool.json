@@ -1,0 +1,109 @@
+{
+  "id": "JYXB1",
+  "name": "鉴影寻宝第1期",
+  "description": "火漆消耗型池子（旧机制）",
+  "essenceImage": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+  "pitySettings": {
+    "gold": 80,
+    "purple": 80,
+    "blue": 80
+  },
+  "items": {
+    "A": [
+      {
+        "name": "梦之使者",
+        "type": "时装",
+        "img": "/resource/14e4d39098cae37b43a50bb2952aea02.png",
+        "description": "人只有在醒来后才能区分梦境与现实，而她的职责，是让人长睡不醒"
+      },
+      {
+        "name": "白鹰之舞",
+        "type": "时装",
+        "img": "/resource/0046f5ebdef797d17f879451ba37ad86.png",
+        "description": "这场异装游行的演出中，白鹰自由飘逸的身影吸引了无数人的目光。"
+      },
+      {
+        "name": "波塞冬",
+        "type": "时装",
+        "img": "/resource/4a8c0a46b93409264ad15df8c81384c9.png",
+        "description": "他是海洋和湖泊的掌控者，当他感到愤怒时，深渊中会升起众多怪物，摧毁一切"
+      },
+      {
+        "name": "诡笑症",
+        "type": "时装",
+        "img": "/resource/f8c63dd068f4ad7e79093a1119c28431.png",
+        "description": "症状：表情失控\n记录：因电椅治疗而受创导致表情管理失控，表现为受刺激时露出抽搐诡笑，可视作其“反抗”意识的表达一一可贵，却无用。"
+      }
+    ],
+    "B": [
+      {
+        "name": "辛劳的侍女",
+        "type": "时装",
+        "img": "/resource/b0370d94356dc01c537ba7fdbe28437c.png",
+        "description": "停下你的幻想，去装满所有的酒杯和盘子。"
+      },
+      {
+        "name": "无色之黥",
+        "type": "时装",
+        "img": "/resource/10a12bcb10ccd7ce9a290fbd7dc0d454.png",
+        "description": "卑贱蝼蚁的身躯连刺青都不愿留下痕迹"
+      },
+      {
+        "name": "伪装",
+        "type": "时装",
+        "img": "/resource/f970dbe0be966a8658d11de0b53c019c.png",
+        "description": "危险无处不在，把自己藏好"
+      },
+      {
+        "name": "“微笑”",
+        "type": "时装",
+        "img": "/resource/c2e94ed7f14aaa378fba56a0bd145248.png",
+        "description": "我不喜欢你笑得太开心。"
+      },
+      {
+        "name": "急救包",
+        "type": "随身物品",
+        "img": "/resource/db1a79056a14ea1bf04fc8486ded5a97.png",
+        "description": "作为一个冒险家，有了急救包，就可以应付各种情况"
+      },
+      {
+        "name": "金铃",
+        "type": "随身物品",
+        "img": "/resource/afeaae34ae7ef53903d5a7b18e0a5e06.png",
+        "description": "舞者们喜欢的饰物"
+      },
+      {
+        "name": "银质梳子",
+        "type": "随身物品",
+        "img": "/resource/8d7ddb7f1de361409ab3f9cfaeec7aa6.png",
+        "description": "被细心保存的银质梳子，找不到一丝一毫的瑕疵"
+      },
+      {
+        "name": "雪绒花",
+        "type": "随身物品",
+        "img": "/resource/efe2cf61cc28e47bb0a340a3b8fefe42.png",
+        "description": "谁来为红蝶戴上这一片雪国的饰品"
+      }
+    ],
+    "C": [
+      {
+        "name": "碎片*88",
+        "type": "碎片",
+        "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+        "description": "碎片"
+      }
+    ],
+    "D": [
+      {
+        "name": "线索*88",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "线索"
+      }
+    ]
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png"
+  }
+}

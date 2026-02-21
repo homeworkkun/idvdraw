@@ -1,7 +1,7 @@
 {
   "id": "S19E1",
   "name": "约定的梦幻岛联动精华2",
-  "essenceImage": "./img/b0wlo03v3aisc0nyi9bastvqamqf35n.png",
+  "essenceImage": "/resource/bee6ba8728ccde7fde96d539c9137022.png",
   "diff_A": 0,
   "initialCurrencies": {
     "inspiration": 100000,
@@ -21,7 +21,7 @@
   ],
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "type": "通用货币"
   },
   "pitySettings": {
@@ -33,7 +33,7 @@
     "S": [
       {
         "name": "穆希卡",
-        "img": "./img/d9xdxg56hpr9pqo8372fnsow4x9490p.png",
+        "img": "/resource/ae0d0c74033c0479487dd6193d639c00.png",
         "type": "时装",
         "description": "穆希卡的服装。\n时装效果：在捕虫网全部消耗完后，兜帽会被摘下。\n约定的梦幻岛联动精华2限定稀世时装",
         "repeat": 2000
@@ -42,21 +42,21 @@
     "A": [
       {
         "name": "宋杰",
-        "img": "./img/87s8qosvy96bxq465b3xff8ijti4ped.png",
+        "img": "/resource/d06f2b649a1700e41d61d5853118cba8.png",
         "type": "时装",
         "description": "宋杰的服装。\n约定的梦幻岛联动精华2限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "皮塔拉托里",
-        "img": "./img/juu94qhnj8cslttu7lx0o7xz3tr0nca.png",
+        "img": "/resource/e23fa999e3d076a6c2f6cc92bdb5f1df.png",
         "type": "时装",
         "description": "皮塔拉托里的服装。\n约定的梦幻岛联动精华2限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "查吉",
-        "img": "./img/rqsg15qa1ffnmnjj0126ci2i301f2lh.png",
+        "img": "/resource/45a5a220db5e18ea55f64e3404c9c30f.png",
         "type": "时装",
         "description": "查吉的服装。\n约定的梦幻岛联动精华2限定奇珍时装",
         "repeat": 1000
@@ -65,28 +65,28 @@
     "B": [
       {
         "name": "箭袋",
-        "img": "./img/po1e28ckrjhi7ko7fukfxpwpd6vskks.png",
+        "img": "/resource/b09a82b9c8e4aa2d27c5901cf4798294.png",
         "type": "随身物品",
         "description": "装满箭羽的箭袋。\n约定的梦幻岛联动精华2限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "信物",
-        "img": "./img/00rmgtpa49jqd1hlyfh39im0qpc277l.png",
+        "img": "/resource/7d04b63e280880f903fa9f8a8b1b57b5.png",
         "type": "随身物品",
         "description": "穆希卡给的信物。\n约定的梦幻岛联动精华2限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "面具",
-        "img": "./img/sbn2j8959wd6y2peoldkt2pzhaf01hg.png",
+        "img": "/resource/cb71babed6c3a4060d109426e6e41ca1.png",
         "type": "随身物品",
         "description": "鬼的面具。\n约定的梦幻岛联动精华2限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "铃铛",
-        "img": "./img/hi3ho1ccthe1ze9z45bdh2f3d8q32sz.png",
+        "img": "/resource/da9ff23890c8f98d1c8b1b89a7d12dcc.png",
         "type": "随身物品",
         "description": "鬼的铃铛。\n约定的梦幻岛联动精华2限定独特随身物品",
         "repeat": 200
@@ -95,147 +95,147 @@
     "C": [
       {
         "name": "昆虫学者-思考",
-        "img": "./img/tibfddm6ebv69o0vmk167sztzfwi8m5.png",
+        "img": "/resource/22136d274ccca114f00c8456514c1f0b.png",
         "type": "个性动作",
         "description": "思考，昆虫学者专属动作",
         "repeat": 36
       },
       {
         "name": "摄影师-思考",
-        "img": "./img/tibfddm6ebv69o0vmk167sztzfwi8m5.png",
+        "img": "/resource/22136d274ccca114f00c8456514c1f0b.png",
         "type": "个性动作",
         "description": "思考，摄影师专属动作",
         "repeat": 36
       },
       {
         "name": "“杰克”-思考",
-        "img": "./img/tibfddm6ebv69o0vmk167sztzfwi8m5.png",
+        "img": "/resource/22136d274ccca114f00c8456514c1f0b.png",
         "type": "个性动作",
         "description": "思考，“杰克”专属动作",
         "repeat": 36
       },
       {
         "name": "“博士”-伤脑筋",
-        "img": "./img/pyush3wecg5qlo0bhuo6wpgn74kmpnn.png",
+        "img": "/resource/bb6fef5b8e5fe1ec81cef06cc846132c.png",
         "type": "个性动作",
         "description": "伤脑筋动作，“博士” 专属",
         "repeat": 36
       },
       {
         "name": "穆希卡",
-        "img": "./img/16uhcgogfjtegvdhjqddez0onwq5ym7.png",
+        "img": "/resource/f02bf0610aa33d1f9dee7fa1bb6b376c.png",
         "type": "涂鸦",
         "description": "《约定的梦幻岛》联动限定获得",
         "repeat": 36
       },
       {
         "name": "宋杰",
-        "img": "./img/12rf8ce71m0g6n72nnkeuj27kvommf7.png",
+        "img": "/resource/dc114101ed1345d1cdcb1bf23deb67cf.png",
         "type": "涂鸦",
         "description": "《约定的梦幻岛》联动限定获得",
         "repeat": 36
       },
       {
         "name": "皮塔拉托里",
-        "img": "./img/f39wonm90wic78f9jdm8rzujws3cpyx.png",
+        "img": "/resource/11b4564925a8f03dd568dfe73177ccad.png",
         "type": "涂鸦",
         "description": "《约定的梦幻岛》联动限定获得",
         "repeat": 36
       },
       {
         "name": "查吉",
-        "img": "./img/i8j30lem7kkkorqpnrna18abkj43smj.png",
+        "img": "/resource/35ea83cceef86c71b99809c4c7d9f856.png",
         "type": "涂鸦",
         "description": "《约定的梦幻岛》联动限定获得",
         "repeat": 36
       },
       {
         "name": "鬼的食物Ⅰ",
-        "img": "./img/anunosyve3c1dnrcvupxrkj39w5qze3.png",
+        "img": "/resource/3db193242b3a5ef8a2babe70c47f107b.png",
         "type": "涂鸦",
         "description": "《约定的梦幻岛》联动限定获得",
         "repeat": 36
       },
       {
         "name": "鬼的食物Ⅱ",
-        "img": "./img/pktmusewb6l1s4698qdxojjdhjgra1n.png",
+        "img": "/resource/7158b15bd8f620591d2ef68cd0388d21.png",
         "type": "涂鸦",
         "description": "《约定的梦幻岛》联动限定获得",
         "repeat": 36
       },
       {
         "name": "鬼的食物Ⅲ",
-        "img": "./img/2vdsapoon453jtttp3myugulc77pos2.png",
+        "img": "/resource/d5dd57915c48206cd05cc4721e2141a2.png",
         "type": "涂鸦",
         "description": "《约定的梦幻岛》联动限定获得",
         "repeat": 36
       },
       {
         "name": "鬼的食物Ⅳ",
-        "img": "./img/ru4ducxuvpiznfbznuhnxv2mc0cqkp8.png",
+        "img": "/resource/57402e7b98741c5f29c88ef512d75923.png",
         "type": "涂鸦",
         "description": "《约定的梦幻岛》联动限定获得",
         "repeat": 36
       },
       {
         "name": "鬼的食物Ⅴ",
-        "img": "./img/hckpl19vbkcehpc7joub16vckx3mhb6.png",
+        "img": "/resource/2a6b5282c6eca69eefb66532b384dbcb.png",
         "type": "涂鸦",
         "description": "《约定的梦幻岛》联动限定获得",
         "repeat": 36
       },
       {
         "name": "鬼的食物Ⅵ",
-        "img": "./img/ac29jhd5hupzb62riqfmeykd6hsskag.png",
+        "img": "/resource/c79ea457b91236e811b8d40eb3d3e90e.png",
         "type": "涂鸦",
         "description": "《约定的梦幻岛》联动限定获得",
         "repeat": 36
       },
       {
         "name": "鬼的食物Ⅶ",
-        "img": "./img/ljqkb1w7w3ut895fjq3fmoazbl9ce40.png",
+        "img": "/resource/d32dee09775bb0afae4092a860fc4722.png",
         "type": "涂鸦",
         "description": "《约定的梦幻岛》联动限定获得",
         "repeat": 36
       },
       {
         "name": "鬼的食物Ⅷ",
-        "img": "./img/ngbrax4jo82i6meavav609y5vhf9u2a.png",
+        "img": "/resource/c038e08c7022fbcb574348bae52ca6cc.png",
         "type": "涂鸦",
         "description": "《约定的梦幻岛》联动限定获得",
         "repeat": 36
       },
       {
         "name": "鬼的食物Ⅸ",
-        "img": "./img/0wkhyx93k3s5njabehs9h866uutgxng.png",
+        "img": "/resource/2545bac088f93782d02de23d3f83c851.png",
         "type": "涂鸦",
         "description": "《约定的梦幻岛》联动限定获得",
         "repeat": 36
       },
       {
         "name": "穆希卡",
-        "img": "./img/7qs3irichnmr34kszvo1gqj2yyc5caz.png",
+        "img": "/resource/80379259ac3332f911e7049c6dc510e9.png",
         "type": "头像",
         "description": "《约定的梦幻岛》联动头像",
         "repeat": 36
       },
       {
         "name": "宋杰",
-        "img": "./img/jy8bwah9u098k6myhywwbjp0xxvl7wn.png",
+        "img": "/resource/3a37c574707df0c9eba876d1d92c3533.png",
         "type": "头像",
         "description": "《约定的梦幻岛》联动头像",
         "repeat": 36
       },
       {
         "name": "皮塔拉托里",
-        "img": "./img/rhzu9kb7ejdsw1wnse47h42l07a8qj1.png",
+        "img": "/resource/ac28aeec990ed253571408ab4f0929ea.png",
         "type": "头像",
         "description": "《约定的梦幻岛》联动头像",
         "repeat": 36
       },
       {
         "name": "查吉",
-        "img": "./img/2cp4zkwsl4d8td95z5dy7xuj1j8bdk4.png",
+        "img": "/resource/0e9fcacd054b7caca30fb86a5fdea358.png",
         "type": "头像",
         "description": "《约定的梦幻岛》联动头像",
         "repeat": 36

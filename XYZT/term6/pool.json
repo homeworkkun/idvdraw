@@ -1,103 +1,103 @@
 {
   "id": "lucky_dice_6",
   "name": "幸运之骰·第6期",
-  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
   "description": "幸运之骰",
   "completeDrawLimit": 9999,
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "conversionRate": 50
   },
   "items": {
     "Line Friends": {
       "type": "头像框",
       "rarity": "B",
-      "img": "./img/997osabn5c4ifl55c05ubqy0lmijpoh.png",
+      "img": "/resource/b2bb1677a2d8f7a576ca72074d787364.png",
       "description": "Line Friends联动头像框（Line Friends联动限定获得） ",
       "repeat": 200
     },
     "Cony头像": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/pgjolipd1bdnl708peam2w97wasiwuh.png",
+      "img": "/resource/8d193e8378523d86401ab9a97a82b530.png",
       "description": "Line Friends联动头像（Line Friends联动限定获得） ",
       "repeat": 6
     },
     "Leonard头像": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/9fph9urrmnejsaqg6muk4u4c8rxsgc4.png",
+      "img": "/resource/882b9f2ca611b203a622bd80a026fb77.png",
       "description": "Line Friends联动头像（Line Friends联动限定获得） ",
       "repeat": 6
     },
     "Moon头像": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/tathh0put09zdwlnuq5sstpvnqay2km.png",
+      "img": "/resource/52cc53651c8803e3eb88f978d78559ed.png",
       "description": "Line Friends联动头像（Line Friends联动限定获得） ",
       "repeat": 6
     },
     "Sally头像": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/2rvlwezkjrv9mqhfhchan6txc3hp35k.png",
+      "img": "/resource/ea2d76f993cc9f06e451064e6121dc30.png",
       "description": "Line Friends联动头像（Line Friends联动限定获得） ",
       "repeat": 6
     },
     "Brown涂鸦": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/qld2ex9reiqq09qa2j9y1he92447fag.png",
+      "img": "/resource/f8ad1c84135805b757159c5564562335.png",
       "description": "Line Friends联动涂鸦（Line Friends联动限定获得） ",
       "repeat": 6
     },
     "Choco涂鸦": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/8wsagx4c88e25k1uhdavthjzmsvh6ra.png",
+      "img": "/resource/93d9dcf0e138cd7b6e2fd1cd19473ec0.png",
       "description": "Line Friends联动涂鸦（Line Friends联动限定获得） ",
       "repeat": 6
     },
     "Moon涂鸦": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/8gto3sav51dwv65gr1st9i8oe45mi5f.png",
+      "img": "/resource/f5cc1c24bb1e4f6cd58865f6f15abf7b.png",
       "description": "Line Friends联动涂鸦（Line Friends联动限定获得） ",
       "repeat": 6
     },
     "Leonard涂鸦": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/36uitzedzsrhzbx6lp8ovvnbsfcfbyp.png",
+      "img": "/resource/1fdbc872c9769f94b71795c32161e1a0.png",
       "description": "Line Friends联动涂鸦（Line Friends联动限定获得） ",
       "repeat": 6
     },
     "通用奇珍时装体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
       "description": "限时体验",
       "repeat": 27
     },
     "监管者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
       "description": "限时体验",
       "repeat": 10
     },
     "求生者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
       "description": "限时体验",
       "repeat": 10
     },
     "通用独特时装体验卡*1天": {
       "type": "临时装扮",
       "rarity": "D",
-      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
       "description": "限时体验",
       "repeat": 10
     }

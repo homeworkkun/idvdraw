@@ -1,7 +1,7 @@
 {
   "id": "S13E3",
   "name": "名侦探柯南联动精华2",
-  "essenceImage": "./img/m6hma47ht55w6lbpq97jj2v0hyfdkr6.png",
+  "essenceImage": "/resource/681de7ea09a7fa6a12c59030d02b99c9.png",
   "diff_A": 0,
   "initialCurrencies": {
     "inspiration": 100000,
@@ -10,7 +10,7 @@
   "discounts": [],
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "type": "通用货币"
   },
   "pitySettings": {
@@ -22,7 +22,7 @@
     "S": [
       {
         "name": "怪盗基德",
-        "img": "./img/1zsegl67579sf05zisufnehs2jab3xs.png",
+        "img": "/resource/29b4ad0a911672a28e81a43bb24468da.png",
         "type": "时装",
         "description": "怪盗基德的服装。\n名侦探柯南联动精华2限定稀世时装",
         "repeat": 2000
@@ -31,21 +31,21 @@
     "A": [
       {
         "name": "安室透",
-        "img": "./img/mr8zutojykxnbt40m70x3utsfudsplz.png",
+        "img": "/resource/064e7e7184ea91d6a0656346188d062d.png",
         "type": "时装",
         "description": "安室透的服装。\n名侦探柯南联动精华2限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "赤井秀一",
-        "img": "./img/7kbpvjy0h2iyxs26ywzq7qgjhykzetd.png",
+        "img": "/resource/35e3d2f6b6ee9b21c9b670b25f3468d1.png",
         "type": "时装",
         "description": "赤井秀一的服装。\n名侦探柯南联动精华2限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "贝尔摩德",
-        "img": "./img/7745bh4whwzt83guuz0jbvzvwatuck6.png",
+        "img": "/resource/9a4f00493b615503137f67d97ade5d33.png",
         "type": "时装",
         "description": "贝尔摩德的西服。\n名侦探柯南联动精华2限定奇珍时装",
         "repeat": 1000
@@ -54,56 +54,56 @@
     "B": [
       {
         "name": "先知-致敬",
-        "img": "./img/ismty3o6cj7xgpe6y6yjxfysawqnajb.png",
+        "img": "/resource/490b28a94019de36191381bc1d745c24.png",
         "type": "个性动作",
         "description": "致敬动作，先知专属",
         "repeat": 200
       },
       {
         "name": "入殓师-推理",
-        "img": "./img/qeqqqumw095lm5fvucopqi6wzx8ippr.png",
+        "img": "/resource/c1daa66a21edbbe1f7b41de97219682a.png",
         "type": "个性动作",
         "description": "推理动作，入殓师专属",
         "repeat": 200
       },
       {
         "name": "佣兵-休憩",
-        "img": "./img/9xk5gwznld7dz6dflhe2bk9uoj9g9tn.png",
+        "img": "/resource/873823b5f05c76e11fc970af9cf5277f.png",
         "type": "个性动作",
         "description": "休憩动作，佣兵专属",
         "repeat": 200
       },
       {
         "name": "卡片枪",
-        "img": "./img/6nkdvugdc7f01bcu12u57tuvgghxwqq.png",
+        "img": "/resource/9a1517c3536a2a16052ed88d5df34fc8.png",
         "type": "随身物品",
         "description": "怪盗基德的卡片枪\n名侦探柯南联动精华2限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "狙击枪",
-        "img": "./img/1gb3thbtrih21aq8nllfo6kikc5yie8.png",
+        "img": "/resource/a4d03c60f941803c854124118bd8d2d2.png",
         "type": "随身物品",
         "description": "赤井秀一的狙击枪\n名侦探柯南联动精华2限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "墨镜",
-        "img": "./img/hme3yi48bfd7ns49p1pwlzc2taw6hqu.png",
+        "img": "/resource/190fde97e129adfc73ac4d1385c1f3be.png",
         "type": "随身物品",
         "description": "贝尔摩德的墨镜\n名侦探柯南联动精华2限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "P7M8",
-        "img": "./img/ton2yl1aiygwa284b2xng24uplp1o9y.png",
+        "img": "/resource/f06df362408dd34af06eea34849cc433.png",
         "type": "随身物品",
         "description": "安室透的P7M8\n名侦探柯南联动精华2限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "名侦探的礼物",
-        "img": "./img/t1lr2059wrjisttt54xz53rlk420ifs.png",
+        "img": "/resource/3978c6b7011ff83a422a5d1dddb65b2e.png",
         "type": "归宿家具",
         "description": "《名侦探柯南》联动限定",
         "repeat": 200
@@ -112,147 +112,147 @@
     "C": [
       {
         "name": "调酒师-挑衅",
-        "img": "./img/qqgae4q9c94e56izofxjzsenkg6nbu4.png",
+        "img": "/resource/44169a1e5f519d33ad5fc13115b43773.png",
         "type": "个性动作",
         "description": "挑衅动作，调酒师专属",
         "repeat": 36
       },
       {
         "name": "名侦探柯南 Ⅰ",
-        "img": "./img/9tpjnoa6a352q7l4xjpy1fq8u79q8dx.png",
+        "img": "/resource/7f9138e1f5afd8700085185b1c70e830.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "名侦探柯南 Ⅱ",
-        "img": "./img/6r3fs78zuy3226geytna0t2r9g1nycn.png",
+        "img": "/resource/368bf534a0b79acc375a47aa8fa5aa59.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "第五个幸存者（后篇）",
-        "img": "./img/gdttxfoopc9fmaw1w2coxeby2qiogup.png",
+        "img": "/resource/0084826e141ba41f5f7eb5eb07fa0703.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "怪盗基德 Ⅰ",
-        "img": "./img/gmrgcyylolkjd8hksvjocouq1cejbmg.png",
+        "img": "/resource/3349524039f94803b6967bc914ad21b9.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "怪盗基德 Ⅱ",
-        "img": "./img/mgl4zg87bh6qltf9emyc38vaqwnreg9.png",
+        "img": "/resource/57ff5984cb1d5b4f66deca9f7bd0bdd4.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "怪盗基德的单片眼镜",
-        "img": "./img/f9376z3h9qpjhugfqyb6un2n43pobno.png",
+        "img": "/resource/91788ec7120ac2d3015ec54c6682bcd1.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "怪盗基德的卡片枪",
-        "img": "./img/kw6jas9oizd37vw3sembfdyigfqr3nv.png",
+        "img": "/resource/04ce5cf4bbea8d227066ea337b360a9e.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "怪盗基德的礼帽",
-        "img": "./img/jg8zg9n7iav9wt3rblk660d5n9ptz8x.png",
+        "img": "/resource/9b18e0f6aa4486cb355d1fb3bbb69407.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "安室透 Ⅰ",
-        "img": "./img/3a55ttasl77xyfo6bpdxdt9pbcnda7o.png",
+        "img": "/resource/8a247419c0719dab936b6a16cf88cf99.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "安室透 Ⅱ",
-        "img": "./img/1i1p92mi1iwcpz246pqg1527hgl8egg.png",
+        "img": "/resource/4e1507fb451b0bf17fdf256b8cc59bf9.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "波洛咖啡",
-        "img": "./img/08bmxu7vau3pa3xhbsvfew0bryzlntq.png",
+        "img": "/resource/f6859cec5e8b3c86492d7d1de183fc01.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "贝尔摩德 Ⅰ",
-        "img": "./img/im7ecmyw73q3cz933oqedairfcv00bp.png",
+        "img": "/resource/fbb2f9011e3ba7a8d461ec7c233eb2e6.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "贝尔摩德 Ⅱ",
-        "img": "./img/lhcurfkdjtll4clsa7sj7c20ekez0o3.png",
+        "img": "/resource/a9e44c53bfbf6cfe23284a7e0aa5bb34.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "赤井秀一 Ⅰ",
-        "img": "./img/osc1pp4fhywvovpa2zcdmv7vbw1fhud.png",
+        "img": "/resource/c4944dfef8127e7b33df9023840c87b6.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "赤井秀一 Ⅱ",
-        "img": "./img/o9b4nd8r8w1c0vlzywhtsj0wuptx30x.png",
+        "img": "/resource/4042ae798add9f2b4f43932e8e021087.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "APTX4869",
-        "img": "./img/slq9ynxyz0xlduqymmovbyn0tdbr21a.png",
+        "img": "/resource/f9cab261a40cd845716f8112961feb0a.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "怪盗基德",
-        "img": "./img/j60kafg40hfpb6g6358ej4ux9svphya.png",
+        "img": "/resource/d85bb3c9c7439c30dabe739e6bc1ac8e.png",
         "type": "头像",
         "description": "名侦探柯南联动头像（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "贝尔摩德",
-        "img": "./img/in0gleksgtwxmhvylq7x9rpgyvqqcb6.png",
+        "img": "/resource/7395a64e9db809c920602c8edf7cc0c9.png",
         "type": "头像",
         "description": "名侦探柯南联动头像（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "赤井秀一",
-        "img": "./img/hy50ay28ae6idjiqfhw8hnx81hearmb.png",
+        "img": "/resource/9b3b0f771ab7f040a9044f3ff63a21d0.png",
         "type": "头像",
         "description": "名侦探柯南联动头像（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "安室透",
-        "img": "./img/dkfwkctuy7rcka7ld80z02u65p56r6d.png",
+        "img": "/resource/097738d26f0cb1badaad6ee6d0b23a5d.png",
         "type": "头像",
         "description": "名侦探柯南联动头像（名侦探柯南联动限定获得）",
         "repeat": 36

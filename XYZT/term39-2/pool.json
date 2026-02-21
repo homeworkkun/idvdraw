@@ -1,0 +1,112 @@
+{
+  "id": "lucky_dice_39-2",
+  "name": "幸运之骰·第39期-系列2",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
+  "description": "幸运之骰",
+  "completeDrawLimit": 200,
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+    "conversionRate": 50
+  },
+  "items": {
+    "熔铁猎犬": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "/resource/05453695934773107a5ec41cb92ef121.png",
+      "description": "金甲粼粼的勇士，地狱之犬早已恭候多时。（深渊的呼唤Ⅳ限定获得）",
+      "repeat": 6
+    },
+    "灾厄之主": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "/resource/674da98f666c756bb38b17b46eef3aa3.png",
+      "description": "黄衣之主-灾厄之主。（深渊的呼唤Ⅶ限定获得）",
+      "repeat": 6
+    },
+    "不息载械": {
+      "type": "头像",
+      "rarity": "C",
+      "img": "/resource/8fdd4f0b93ab1f1f708ad144ac4133df.png",
+      "description": "蜘蛛-不息载械。（深渊的呼唤Ⅷ限定获得）",
+      "repeat": 6
+    },
+    "深渊的呼唤Ⅳ": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/184d2b3cadb2e9f5b4415a23ab88351a.png",
+      "description": "【深渊的呼唤Ⅳ】对战限定涂鸦（深渊的呼唤Ⅳ限定获得）",
+      "repeat": 6
+    },
+    "深渊的呼唤Ⅶ": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/9ebabb15322511b513b01b43ea093069.png",
+      "description": "【深渊的呼唤Ⅶ】对战限定涂鸦（深渊的呼唤Ⅶ限定获得）",
+      "repeat": 6
+    },
+    "深渊的呼唤Ⅷ": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/a1107f518d953228ace212edf802d4c5.png",
+      "description": "【深渊的呼唤Ⅷ】对战限定涂鸦（深渊的呼唤Ⅷ限定获得）",
+      "repeat": 6
+    },
+    "黄衣之主-灾厄之主（一）": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/0eea30f1270bfada11d2c64b1c798f93.png",
+      "description": "黄衣之主专属涂鸦，灾厄之主（一）",
+      "repeat": 6
+    },
+    "黄衣之主-灾厄之主（二）": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/60aff39510dac8512cf8e52aa579a978.png",
+      "description": "黄衣之主专属涂鸦，灾厄之主（二）",
+      "repeat": 6
+    },
+    "蜘蛛-不息载械（一）": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/6da80a9f9003a28c08a71b31ba64cb8f.png",
+      "description": "蜘蛛专属涂鸦，不息载械（一）",
+      "repeat": 6
+    },
+    "蜘蛛-不息载械（二）": {
+      "type": "涂鸦",
+      "rarity": "C",
+      "img": "/resource/32211dfa3ca44e085b0ce04408f95cc2.png",
+      "description": "蜘蛛专属涂鸦，不息载械（二）",
+      "repeat": 6
+    },
+    "通用奇珍时装体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
+      "description": "限时体验",
+      "repeat": 27
+    },
+    "监管者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "求生者角色体验卡*1天": {
+      "type": "体验卡",
+      "rarity": "D",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
+      "description": "限时体验",
+      "repeat": 10
+    },
+    "通用独特时装体验卡*1天": {
+      "type": "临时装扮",
+      "rarity": "D",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
+      "description": "限时体验",
+      "repeat": 10
+    }
+  }
+}

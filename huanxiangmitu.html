@@ -1,5 +1,3 @@
-
-<!-- store.html -->
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -9,75 +7,903 @@
     <script src="/resource/tailwind.min.css"></script>
     <link rel="stylesheet" href="/resource/fontawesome/css/all.min.css">
     <style>
-        body {
-            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
+        @import url('/resource/999170bab05411645e8bba91bdd8f551.css');
+        @font-face {
+            font-family: 'DFPOP1W5-GB';
+            src: url('/fonts.ttf') format('truetype');
         }
-        .construction-container {
-            background: rgba(0, 0, 0, 0.8);
-            border-radius: 15px;
-            padding: 3rem;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            border: 2px solid #ffcc00;
-            max-width: 500px;
-            width: 90%;
+
+        :root { 
+            --color-gold: #e8c668; 
+            --color-purple: #b568e8; 
+            --color-blue: #689de8; 
+            --color-green: #65a30d;
+            --color-silver: #9ca3af;
+            --bg-dark: #0f1115; 
+            --bg-panel: rgba(20, 23, 31, 0.95); 
         }
-        .construction-icon {
-            font-size: 5rem;
-            color: #ffcc00;
-            margin-bottom: 1.5rem;
-            animation: bounce 2s infinite;
+        
+        html { font-size: clamp(10px, 0.8vw + 8px, 16px); }
+        
+        body { 
+            font-family: "DFPOP1W5-GB", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            background-color: var(--bg-dark); 
+            color: #d1d5db; 
+            user-select: none; 
+            background-image: radial-gradient(circle at 50% 50%, #1f232e 0%, #0a0b0e 100%); 
+            overflow: hidden;
+            height: 100vh;
         }
-        .construction-text {
-            color: #fff;
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+
+        .font-gothic { font-family:"DFPOP1W5-GB", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        
+        @keyframes breathe { 0%, 100% { transform: scale(1); filter: drop-shadow(0 0 10px rgba(232, 198, 104, 0.3)); } 50% { transform: scale(1.05); filter: drop-shadow(0 0 20px rgba(232, 198, 104, 0.6)); } }
+        @keyframes shake { 0% { transform: translate(1px, 1px) rotate(0deg); } 10% { transform: translate(-1px, -2px) rotate(-1deg); } 20% { transform: translate(-3px, 0px) rotate(1deg); } 30% { transform: translate(3px, 2px) rotate(0deg); } 40% { transform: translate(1px, -1px) rotate(1deg); } 50% { transform: translate(-1px, 2px) rotate(-1deg); } 60% { transform: translate(-3px, 1px) rotate(0deg); } 70% { transform: translate(3px, 1px) rotate(-1deg); } 80% { transform: translate(-1px, -1px) rotate(1deg); } 90% { transform: translate(1px, 2px) rotate(0deg); } 100% { transform: translate(1px, -2px) rotate(-1deg); } }
+        @keyframes explode-flash { 0%, 100% { opacity: 0; transform: scale(3); } 50% { opacity: 1; transform: scale(1); } }
+        @keyframes card-flip { from { transform: rotateY(90deg) scale(0.9); opacity: 0; } to { transform: rotateY(0deg) scale(1); opacity: 1; } }
+        @keyframes scanline { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }
+        @keyframes fade-in-backdrop { from { backdrop-filter: blur(0px); background-color: rgba(0,0,0,0); } to { backdrop-filter: blur(8px); background-color: rgba(0,0,0,0.7); } }
+        @keyframes zoom-in-modal { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        @keyframes convert-to-fragments { 0% { transform: scale(1) rotate(0deg); filter: brightness(1); } 40% { transform: scale(1.1) rotate(5deg); filter: brightness(1.5) drop-shadow(0 0 15px white); } 100% { transform: scale(0) rotate(10deg); filter: brightness(2); } }
+        @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 10px rgba(232, 198, 104, 0.5); } 50% { box-shadow: 0 0 25px rgba(232, 198, 104, 0.8); } }
+        @keyframes float-up { 0% { opacity: 1; transform: translateY(0); } 100% { opacity: 0; transform: translateY(-30px); } }
+        
+        .converting { animation: convert-to-fragments 0.6s ease-in-out forwards; }
+        .essence-orb { width: clamp(150px, 35vmin, 220px); height: clamp(150px, 35vmin, 220px); background: radial-gradient(circle at 30% 30%, #444, #000); border-radius: 50%; position: relative; box-shadow: inset 0 0 30px #000, 0 0 20px rgba(0,0,0,0.8); cursor: pointer; transition: all 0.3s; }
+        .essence-orb.breathing { animation: breathe 3s infinite ease-in-out; }
+        .essence-orb.shaking { animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both infinite; }
+        .idv-btn { font-size: clamp(1rem, 1.5vw + 0.5rem, 1.25rem); background: linear-gradient(180deg, #3a3a3a 0%, #1a1a1a 100%); border: 2px solid #888; color: #ccc; text-transform: uppercase; letter-spacing: 2px; transition: all 0.2s; clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%); }
+        .idv-btn:hover:not(:disabled) { border-color: var(--color-gold); color: var(--color-gold); background: linear-gradient(180deg, #4a4a4a 0%, #2a2a2a 100%); text-shadow: 0 0 5px var(--color-gold); }
+        .idv-btn:active:not(:disabled) { transform: scale(0.95); }
+        .idv-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .flash-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: white; opacity: 0; pointer-events: none; z-index: 100; }
+        .scan-line { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0; overflow: hidden; }
+        .scan-line::before { content: ''; display: block; width: 100%; height: 200%; background: linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, 0.03) 50%, transparent 100%); animation: scanline 10s linear infinite; }
+        
+        .card.rarity-discount { border-color: #f59e0b !important; box-shadow: 0 0 20px #f59e0b !important; }
+        .card.rarity-basic { border-color: #6b7280 !important; box-shadow: 0 0 15px #6b7280 !important; }
+        .card.rarity-junior { border-color: #10b981 !important; box-shadow: 0 0 15px #10b981 !important; }
+        .card.rarity-intermediate { border-color: #3b82f6 !important; box-shadow: 0 0 15px #3b82f6 !important; }
+        .card.rarity-senior { border-color: var(--color-gold) !important; box-shadow: 0 0 25px var(--color-gold) !important; animation: pulse-glow 2s infinite; }
+        .card.rarity-senior.is-repeat { animation: pulse-glow 2s infinite, convert-to-fragments 0.6s ease-in-out 2s forwards; }
+        
+        .text-rarity-discount { color: #f59e0b; }
+        .text-rarity-basic { color: #6b7280; }
+        .text-rarity-junior { color: #10b981; }
+        .text-rarity-intermediate { color: #3b82f6; }
+        .text-rarity-senior { color: var(--color-gold); }
+        .text-rarity-repeat { color: #ef4444; }
+        
+        #item-detail-modal.show { animation: fade-in-backdrop 0.3s forwards; }
+        #item-detail-modal.show > div { animation: zoom-in-modal 0.3s forwards; }
+        #detail-desc { white-space: pre-wrap; }
+        ::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-track { background: #0f1115; } ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        
+        .pool-item { transition: all 0.2s ease-in-out; background-color: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.5rem; text-align: center; border: 1px solid transparent; cursor: pointer; }
+        .pool-item:hover { background-color: rgba(255, 255, 255, 0.1); transform: translateY(-2px); }
+        .pool-item.not-owned { filter: grayscale(80%); opacity: 0.6; }
+        .pool-item.owned { border-color: var(--color-gold); }
+        .pool-item .img-container { width: 100%; background-color: #111318; aspect-ratio: 1 / 1; border-radius: 0.25rem; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .pool-item img { max-width: 100%; max-height: 100%; object-fit: contain; }
+        
+        @keyframes marquee { 0%   { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .pool-item p { margin-top: 0.5rem; font-size: 0.75rem; white-space: nowrap; overflow: hidden; }
+        .marquee-wrapper { display: inline-block; animation: marquee var(--marquee-duration, 10s) linear infinite; padding-right: 2rem; will-change: transform; }
+
+        .border-rarity-discount { border-color: #f59e0b; }
+        .border-rarity-basic { border-color: #6b7280; }
+        .border-rarity-junior { border-color: #10b981; }
+        .border-rarity-intermediate { border-color: #3b82f6; }
+        .border-rarity-senior { border-color: var(--color-gold); }
+
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .spin-animation { animation: spin 2s linear infinite; }
+
+        @media (max-width: 640px) {
+            .idv-btn { font-size: clamp(0.8rem, 2.5vw, 1.1rem); letter-spacing: 1px; height: 3.5rem; }
+            .button-cost-text { font-size: 0.7rem; }
         }
-        .construction-subtext {
-            color: #ccc;
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
+
+        @media (orientation: landscape) and (max-height: 550px) {
+            #result-screen { padding-top: 1rem; }
+            #cards-container { max-height: calc(100vh - 120px); overflow-y: auto; }
+            #cards-container .grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 0.5rem; }
+            .card { aspect-ratio: 2/3; min-height: 120px; }
+            .card .text-sm { font-size: 0.7rem; }
+            #result-footer { flex-direction: row; gap: 1rem; }
+            #result-footer .idv-btn { width: auto; min-width: 120px; padding: 0.5rem 1rem; }
         }
-        .back-button {
-            background: linear-gradient(to right, #ffcc00, #ff9900);
-            color: #000;
-            border: none;
-            padding: 0.8rem 2rem;
-            font-size: 1.1rem;
-            border-radius: 30px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4);
-        }
-        .back-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(255, 204, 0, 0.6);
-        }
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
+
+        #probability-toggle { color: #9ca3af; transition: all 0.2s; }
+        #probability-toggle:hover { color: #ffffff; }
+        #probability-toggle.active { color: var(--color-gold); }
+        
+        .probability-item { display: flex; justify-content: space-between; margin-bottom: 0.25rem; font-size: 0.875rem; }
+        .probability-item:last-child { margin-bottom: 0; }
+
+        .floating-text { position: absolute; font-weight: bold; color: var(--color-gold); pointer-events: none; z-index: 50; animation: float-up 1s ease-out forwards; }
     </style>
 </head>
-<body>
-    <div class="construction-container">
-        <div class="construction-icon">
-            <i class="fas fa-tools"></i>
+<body class="h-screen w-screen flex flex-col items-center justify-center relative p-2 sm:p-4">
+    <div class="scan-line"></div>
+    <div id="flash-layer" class="flash-overlay"></div>
+    
+    <div id="main-screen" class="relative w-full h-full flex flex-col items-center justify-center p-4 z-10 transition-opacity duration-500">
+        <div class="absolute top-0 w-full h-24 bg-gradient-to-b from-black/50 to-transparent pointer-events-none"></div>
+        
+        <div class="absolute top-4 left-4 flex gap-4 text-sm z-20 bg-black/50 p-2 sm:p-3 border border-gray-700 rounded-md backdrop-blur-sm">
+            <div class="flex items-center gap-2">
+                <img src="/resource/2a0d5b2b1c71883f6dcf987fe1c4f9e9.png" class="w-5 h-5">
+                <span id="currency-nightingale" class="font-sans font-bold text-white">-</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="/resource/60fcc83fe18f0da9501005e21e264c70.png" class="w-5 h-5">
+                <span id="currency-huoqi" class="font-sans font-bold text-white">-</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="/resource/fc5a55c488fae00f1e606f5b9e33f349.png" class="w-5 h-5">
+                <span id="currency-clue" class="font-sans font-bold text-white">-</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="/resource/abb5919fc5926eb8e2da46469ff98487.png" class="w-5 h-5">
+                <span id="currency-fragments" class="font-sans font-bold text-white">-</span>
+            </div>
         </div>
-        <div class="construction-text">搭建中</div>
-        <div class="construction-subtext">功能正在开发中，请稍后再来</div>
-        <!-- 修改按钮行为：返回到 /抽卡 路径 -->
-        <button class="back-button" onclick="window.location.href='/store'">
-            <i class="fas fa-arrow-left mr-2"></i>返回主页
-        </button>
+        
+        <div class="absolute top-20 sm:top-8 text-center px-4 w-full">
+            <h1 id="pool-name" class="text-amber-100 tracking-widest drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" style="font-size: clamp(1.75rem, 5vw, 3rem);">加载中...</h1>
+            <p id="pool-desc" class="text-xs text-gray-500 tracking-[0.2em] mt-1">加载中...</p>
+        </div>
+        
+        <div class="absolute top-4 right-4 flex gap-2 sm:gap-4 z-20">
+            <button onclick="window.location.href='/HXMT/store.html'" class="text-yellow-400 hover:text-yellow-300 transition-colors text-right">
+                <i class="fa-solid fa-shop text-xl sm:text-2xl"></i>
+                <span class="block text-xs mt-1">商店</span>
+            </button>
+            <button id="probability-toggle" class="text-gray-400 hover:text-white transition-colors text-right" onclick="app.toggleProbabilityMode()">
+                <i class="fa-solid fa-eye text-xl sm:text-2xl"></i>
+                <span class="block text-xs mt-1">概率</span>
+            </button>
+            <button onclick="app.togglePoolPreview()" class="text-gray-400 hover:text-white transition-colors text-right">
+                <i class="fa-solid fa-gem text-xl sm:text-2xl"></i>
+                <span class="block text-xs mt-1">奖池</span>
+            </button>
+            <button onclick="app.toggleHistory()" class="text-gray-400 hover:text-white transition-colors text-right">
+                <i class="fa-solid fa-history text-xl sm:text-2xl"></i>
+                <span class="block text-xs mt-1">记录</span>
+            </button>
+        </div>
+
+        <div id="pity-panel" class="absolute left-4 bottom-40 text-sm z-20 bg-black/50 p-3 border border-gray-700 rounded-md backdrop-blur-sm">
+            <p class="text-yellow-500 mb-2">📊 统计信息</p>
+            <p>已抽取: <span id="total-pulls" class="font-bold text-white">0</span> 次</p>
+            <p>稀有奖励: <span id="rare-count" class="font-bold text-white">0</span> 次</p>
+            <p class="mt-2 pt-2 border-t border-gray-600/50 text-xs text-gray-500">高级奖励: <span id="senior-count" class="text-yellow-500">0</span></p>
+        </div>
+        
+        <div id="probability-panel" class="absolute left-4 bottom-40 text-sm z-20 bg-black/50 p-3 border border-gray-700 rounded-md backdrop-blur-sm hidden">
+            <p class="text-yellow-500 mb-2">📈 概率分布</p>
+            <div class="probability-item">
+                <span class="text-rarity-senior">高级奖励:</span>
+                <span id="prob-senior" class="font-bold">5%</span>
+            </div>
+            <div class="probability-item">
+                <span class="text-rarity-intermediate">中级奖励:</span>
+                <span id="prob-intermediate" class="font-bold">20%</span>
+            </div>
+            <div class="probability-item">
+                <span class="text-rarity-junior">初级奖励:</span>
+                <span id="prob-junior" class="font-bold">30%</span>
+            </div>
+            <div class="probability-item">
+                <span class="text-rarity-basic">基础奖励:</span>
+                <span id="prob-basic" class="font-bold">35%</span>
+            </div>
+            <div class="probability-item">
+                <span class="text-rarity-discount">随机折扣:</span>
+                <span id="prob-discount" class="font-bold">10%</span>
+            </div>
+        </div>
+
+        <div class="flex-1 flex items-center justify-center">
+            <div class="relative group">
+                <div id="essence-orb" class="essence-orb breathing flex items-center justify-center" onclick="app.pull(1)">
+                    <img id="essence-img" src="" alt="Essence" class="w-3/5 h-3/5 object-contain relative z-20 filter drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)] transition-transform duration-200">
+                </div>
+                <div class="absolute -inset-4 bg-amber-500/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            </div>
+        </div>
+        
+        <div id="button-container" class="flex flex-row gap-3 w-full justify-center items-end px-4 pb-6">
+            <div class="flex flex-col items-center gap-1 flex-1 max-w-[200px]">
+                <div class="text-xs text-amber-200/70 mb-1" id="pull-reward-info">消耗100火漆，获得20夜莺祝福</div>
+                <button id="btn-pull-1" onclick="app.pull(1)" class="idv-btn w-full h-14 font-bold flex items-center justify-center">
+                    <span>抽取 1 次</span>
+                </button>
+            </div>
+            <div class="flex flex-col items-center gap-1 flex-1 max-w-[200px]">
+                <div class="text-xs text-amber-200/70 mb-1" id="pull-10-reward-info">10连消耗1000火漆，获得200夜莺祝福</div>
+                <button id="btn-pull-10" onclick="app.pull(10)" class="idv-btn w-full h-14 font-bold flex items-center justify-center bg-gradient-to-t from-amber-900/40 to-transparent border-amber-700/50">
+                    <span class="text-amber-100">抽取 10 次</span>
+                </button>
+            </div>
+        </div>
     </div>
+    
+    <div id="result-screen" class="fixed inset-0 z-40 bg-black/95 hidden flex-col items-center justify-start pt-4 sm:pt-8">
+        <div id="result-header" class="mb-4 text-center opacity-0">
+            <h2 class="text-white tracking-widest border-b border-gray-700 pb-2 px-8 inline-block" style="font-size: clamp(1.5rem, 4vw, 2.25rem);">抽取结果</h2>
+        </div>
+        <div id="cards-container" class="flex-1 w-full max-w-6xl overflow-y-auto px-2"></div>
+        <div id="result-footer" class="mt-4 mb-2 opacity-0 flex flex-col sm:flex-row gap-4 items-center justify-center"></div>
+    </div>
+    
+    <div id="item-detail-modal" class="fixed inset-0 z-[60] hidden items-center justify-center p-4" onclick="app.closeItemDetail()">
+        <div class="w-[95vw] max-w-md bg-[#1a1c24] border-2 border-gray-700 rounded-lg shadow-2xl flex flex-col text-center relative overflow-hidden" onclick="event.stopPropagation()">
+            <div id="detail-rarity-glow" class="absolute top-0 left-1/2 -translate-x-1/2 w-[200%] h-64 opacity-30 blur-3xl pointer-events-none"></div>
+            <div class="relative p-6">
+                <h3 id="detail-name" class="font-gothic text-2xl tracking-widest">物品名称</h3>
+                <p id="detail-type" class="text-sm text-gray-400 mb-4">物品类型</p>
+                <img id="detail-img" src="" class="w-48 h-48 mx-auto my-4 object-contain drop-shadow-lg" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZHN0PSIxMDAiIGZpbGw9IiMzMzMiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iIzU1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+PzwvdGV4dD48L3N2Zz4='">
+                <p id="detail-desc" class="text-gray-300 italic px-4">物品描述会显示在这里...</p>
+                <div id="repeat-bonus-info" class="hidden mt-4 p-3 bg-yellow-900/30 border border-yellow-600 rounded-lg">
+                    <p class="text-yellow-400 font-bold">重复奖励!</p>
+                    <p class="text-sm text-gray-300">获得额外 <span id="repeat-bonus-amount" class="text-yellow-400">0</span> 夜莺祝福</p>
+                </div>
+            </div>
+            <button onclick="app.closeItemDetail()" class="w-full mt-4 py-3 bg-black/30 text-gray-400 hover:bg-black/50 transition-colors">关闭</button>
+        </div>
+    </div>
+
+    <div id="history-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-2">
+        <div class="bg-[#1a1c24] border border-gray-600 w-[95vw] max-w-2xl h-[90vh] md:max-h-[80vh] flex flex-col rounded-lg shadow-2xl">
+            <div class="bg-[#111] p-4 border-b border-gray-700 flex justify-between items-center">
+                <h3 class="text-amber-500 font-gothic text-lg md:text-xl"><i class="fas fa-history mr-2"></i>获得记录</h3>
+                <div>
+                    <button onclick="app.clearData()" class="text-xs text-red-400 border border-red-900 px-2 py-1 rounded hover:bg-red-900/50 mr-2 md:mr-4">清空数据</button>
+                    <button onclick="app.toggleHistory()" class="text-gray-400 text-2xl">&times;</button>
+                </div>
+            </div>
+            <div id="history-list" class="flex-1 overflow-y-auto p-4"></div>
+        </div>
+    </div>
+    
+    <div id="pool-preview-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-2">
+        <div class="bg-[#1a1c24] border border-gray-600 w-[95vw] max-w-4xl h-[90vh] md:max-h-[80vh] flex flex-col rounded-lg shadow-2xl">
+            <div class="bg-[#111] p-4 border-b border-gray-700 flex justify-between items-center">
+                <h3 class="text-amber-500 font-gothic text-lg md:text-xl"><i class="fas fa-gem mr-2"></i>奖池内容一览</h3>
+                <button onclick="app.togglePoolPreview()" class="text-gray-400 text-2xl">&times;</button>
+            </div>
+            <div id="pool-preview-list" class="flex-1 overflow-y-auto p-4"></div>
+        </div>
+    </div>
+    
+    <a href="/index.html" class="fixed bottom-4 right-4 z-30 text-gray-400 hover:text-white transition-colors text-right">
+        <i class="fa-solid fa-house text-xl sm:text-2xl"></i>
+        <span class="block text-xs mt-1">首页</span>
+    </a>
+
+    <script>
+        // 统一资源管理器
+        class ResourceManager {
+            static SHARED_KEY = 'shared_resources';
+            
+            static getResource(resourceName) {
+                const resources = JSON.parse(localStorage.getItem(this.SHARED_KEY)) || {};
+                return resources[resourceName] || 0;
+            }
+            
+            static setResource(resourceName, amount) {
+                const resources = JSON.parse(localStorage.getItem(this.SHARED_KEY)) || {};
+                resources[resourceName] = amount;
+                localStorage.setItem(this.SHARED_KEY, JSON.stringify(resources));
+            }
+            
+            static deductResource(resourceName, amount) {
+                const current = this.getResource(resourceName);
+                if (current < amount) return false;
+                this.setResource(resourceName, current - amount);
+                return true;
+            }
+            
+            static addResource(resourceName, amount) {
+                this.setResource(resourceName, this.getResource(resourceName) + amount);
+            }
+        }
+        
+        // 夜莺祝福管理器（使用统一资源存储）
+        class NightingaleManager {
+            static updateUI() {
+                const amount = ResourceManager.getResource('nightingale');
+                const el = document.getElementById('currency-nightingale');
+                if (el) el.innerText = amount;
+            }
+        }
+        
+        // 火漆管理器（使用统一资源存储）
+        class HuoqiManager {
+            static updateUI() {
+                const huoqiAmount = ResourceManager.getResource('huoqi');
+                const clueAmount = ResourceManager.getResource('clue');
+                const fragmentsAmount = ResourceManager.getResource('fragments');
+                const elHuoqi = document.getElementById('currency-huoqi');
+                const elClue = document.getElementById('currency-clue');
+                const elFragments = document.getElementById('currency-fragments');
+                if (elHuoqi) elHuoqi.innerText = huoqiAmount;
+                if (elClue) elClue.innerText = clueAmount;
+                if (elFragments) elFragments.innerText = fragmentsAmount;
+            }
+        }
+
+        class HXMTApp {
+            constructor() {
+                this.config = null;
+                this.state = null;
+                this.isAnimating = false;
+                this.currentResults = [];
+                this.probabilities = null;
+                this.isProbabilityMode = false;
+                this.globalOwnedItems = this.loadGlobalOwnedItems();
+                this.listData = null;
+            }
+            
+            getItemKey(item) {
+                return `${item.name}|${item.type}|${item.rarity}|${item.img || ''}`;
+            }
+            
+            loadGlobalOwnedItems() {
+                const globalStorageKey = 'global_owned_items_hxmt';
+                const saved = localStorage.getItem(globalStorageKey);
+                return saved ? JSON.parse(saved) : {};
+            }
+            
+            saveGlobalOwnedItems() {
+                const globalStorageKey = 'global_owned_items_hxmt';
+                localStorage.setItem(globalStorageKey, JSON.stringify(this.globalOwnedItems));
+            }
+            
+            async init() {
+                try {
+                    const basePath = '/HXMT';
+                    const cacheBuster = `?t=${new Date().getTime()}`;
+                    
+                    const poolResponse = await fetch(`${basePath}/pool.json${cacheBuster}`);
+                    if (!poolResponse.ok) throw new Error(`无法加载 ${basePath}/pool.json (状态: ${poolResponse.status})`);
+                    this.config = await poolResponse.json();
+                    this.loadState();
+                    
+                    const probResponse = await fetch(`${basePath}/possibility.json${cacheBuster}`);
+                    if (!probResponse.ok) throw new Error(`无法加载 ${basePath}/possibility.json`);
+                    this.probabilities = await probResponse.json();
+
+                } catch (error) {
+                    console.error("加载配置文件时出错:", error);
+                    alert(`错误: ${error.message}！请检查文件是否存在且格式正确。`);
+                    this.isAnimating = true;
+                }
+                this.initUI();
+            }
+            
+            loadState() {
+                const poolId = this.config?.id || 'HXMT';
+                const storageKey = `data_${poolId}`;
+                const defaultState = {
+                    total: 0,
+                    history: [],
+                    currencies: { nightingale: this.config?.initialCurrencies?.nightingale || 1000 },
+                    ownedItems: {},
+                    seniorCount: 0,
+                    rareItemCount: 0,
+                    lastMilestone: 0
+                };
+                const savedState = localStorage.getItem(storageKey);
+                if (savedState) {
+                    this.state = { ...defaultState, ...JSON.parse(savedState) };
+                } else {
+                    this.state = defaultState;
+                    this.saveData();
+                }
+            }
+            
+            saveData() {
+                const poolId = this.config?.id || 'HXMT';
+                const storageKey = `data_${poolId}`;
+                localStorage.setItem(storageKey, JSON.stringify(this.state));
+                this.updateUI();
+            }
+            
+            clearData() {
+                const poolId = this.config?.id || 'HXMT';
+                const storageKey = `data_${poolId}`;
+                if (confirm("确定要清空吗？抽卡记录将重置，但夜莺祝福和已拥有的物品不会被重置。")) {
+                    localStorage.removeItem(storageKey);
+                    this.loadState();
+                    document.getElementById('history-modal').classList.add('hidden');
+                    document.getElementById('pool-preview-modal').classList.add('hidden');
+                }
+            }
+            
+            initUI() {
+                if (!this.config) return;
+                document.title = this.config.name;
+                document.getElementById('pool-name').innerText = this.config.name;
+                document.getElementById('pool-desc').innerText = "每次抽取消耗100火漆，获得20夜莺祝福";
+                document.getElementById('essence-img').src = this.config.essenceImage;
+                this.updateUI();
+            }
+            
+            updateUI() {
+                if (!this.config || !this.state) return;
+                
+                const nightingaleAmount = ResourceManager.getResource('nightingale');
+                document.getElementById('currency-nightingale').innerText = nightingaleAmount;
+                document.getElementById('total-pulls').innerText = this.state.total;
+                document.getElementById('senior-count').innerText = this.state.seniorCount;
+                document.getElementById('rare-count').innerText = this.state.rareItemCount;
+                
+                if (this.isProbabilityMode) {
+                    this.updateProbabilityDisplay();
+                } else {
+                    document.getElementById('pity-panel').classList.remove('hidden');
+                    document.getElementById('probability-panel').classList.add('hidden');
+                }
+            }
+            
+            updateProbabilityDisplay() {
+                const p = this.probabilities.probabilities;
+                document.getElementById('prob-senior').innerText = `${(p.senior * 100).toFixed(1)}%`;
+                document.getElementById('prob-intermediate').innerText = `${(p.intermediate * 100).toFixed(1)}%`;
+                document.getElementById('prob-junior').innerText = `${(p.junior * 100).toFixed(1)}%`;
+                document.getElementById('prob-basic').innerText = `${(p.basic * 100).toFixed(1)}%`;
+                document.getElementById('prob-discount').innerText = `${(p.discount * 100).toFixed(1)}%`;
+                
+                document.getElementById('pity-panel').classList.add('hidden');
+                document.getElementById('probability-panel').classList.remove('hidden');
+            }
+            
+            toggleProbabilityMode() {
+                this.isProbabilityMode = !this.isProbabilityMode;
+                const button = document.getElementById('probability-toggle');
+                if (this.isProbabilityMode) {
+                    button.classList.add('active');
+                } else {
+                    button.classList.remove('active');
+                }
+                this.updateUI();
+            }
+            
+            determineRarity() {
+                const p = this.probabilities.probabilities;
+                const rand = Math.random();
+                let cumulative = 0;
+                
+                if (rand < (cumulative += p.senior)) return 'senior';
+                if (rand < (cumulative += p.intermediate)) return 'intermediate';
+                if (rand < (cumulative += p.junior)) return 'junior';
+                if (rand < (cumulative += p.basic)) return 'basic';
+                return 'discount';
+            }
+            
+            selectItem(rarity) {
+                const pool = this.config.items[rarity] || [];
+                if (pool.length === 0) {
+                    return { name: `未知${rarity}奖励`, type: '奖励', rarity: rarity };
+                }
+                return pool[Math.floor(Math.random() * pool.length)];
+            }
+            
+            async pull(count) {
+                if (this.isAnimating) return;
+                
+                const costPerPull = 100;
+                const totalCost = count * costPerPull;
+                const currentHuoqi = ResourceManager.getResource('huoqi');
+                
+                if (currentHuoqi < totalCost) {
+                    alert(`火漆不足！需要 ${totalCost} 火漆，当前拥有 ${currentHuoqi} 火漆`);
+                    return;
+                }
+                
+                this.isAnimating = true;
+                
+                // 扣除火漆
+                ResourceManager.deductResource('huoqi', totalCost);
+                HuoqiManager.updateUI(); // 更新火漆显示
+                
+                document.getElementById('btn-pull-1').disabled = true;
+                document.getElementById('btn-pull-10').disabled = true;
+                
+                const orb = document.getElementById('essence-orb');
+                orb.classList.remove('breathing');
+                orb.classList.add('shaking');
+                
+                this.currentResults = [];
+                let maxTier = 'discount';
+                const tierValue = { discount: 0, basic: 1, junior: 2, intermediate: 3, senior: 4 };
+                
+                const pullReward = this.config.pullReward || 20;
+                const milestoneRewards = this.config.milestoneRewards || [];
+                
+                for (let i = 0; i < count; i++) {
+                    this.state.total++;
+                    
+                    const rarity = this.determineRarity();
+                    const itemTemplate = this.selectItem(rarity);
+                    
+                    let finalItem = { 
+                        ...itemTemplate, 
+                        rarity: rarity,
+                        pullIndex: this.state.total
+                    };
+                    
+                    if (tierValue[rarity] > tierValue[maxTier]) {
+                        maxTier = rarity;
+                    }
+                    
+                    const itemKey = this.getItemKey(finalItem);
+                    if (this.globalOwnedItems[itemKey]) {
+                        finalItem.isRepeat = true;
+                        const repeatReward = this.config.repeatRewards[rarity] || 0;
+                        finalItem.repeatBonus = repeatReward;
+                    } else {
+                        this.globalOwnedItems[itemKey] = true;
+                        this.saveGlobalOwnedItems();
+                        finalItem.isRepeat = false;
+                        finalItem.repeatBonus = 0;
+                    }
+                    
+                    if (rarity === 'senior') {
+                        this.state.seniorCount++;
+                        this.state.rareItemCount++;
+                    } else if (rarity === 'intermediate') {
+                        this.state.rareItemCount++;
+                    }
+                    
+                    // 如果抽到线索或碎片，直接加入资源
+                    if (itemTemplate.type === '线索') {
+                        const match = itemTemplate.name.match(/(\d+)/);
+                        if (match) {
+                            ResourceManager.addResource('clue', parseInt(match[1]));
+                        }
+                    } else if (itemTemplate.type === '碎片') {
+                        const match = itemTemplate.name.match(/(\d+)/);
+                        if (match) {
+                            ResourceManager.addResource('fragments', parseInt(match[1]));
+                        }
+                    }
+                    
+                    this.state.history.unshift({
+                        rarity: rarity,
+                        name: itemTemplate.name,
+                        idx: this.state.total,
+                        time: new Date().toLocaleTimeString(),
+                        isRepeat: finalItem.isRepeat
+                    });
+                    
+                    this.currentResults.push(finalItem);
+                }
+                
+                const totalPullReward = count * pullReward;
+                ResourceManager.addResource('nightingale', totalPullReward);
+                
+                let milestoneBonus = 0;
+                for (const milestone of milestoneRewards) {
+                    if (this.state.total >= milestone.pulls && this.state.lastMilestone < milestone.pulls) {
+                        milestoneBonus += milestone.reward;
+                    }
+                }
+                this.state.lastMilestone = milestoneRewards
+                    .filter(m => this.state.total >= m.pulls)
+                    .reduce((max, m) => Math.max(max, m.pulls), this.state.lastMilestone);
+                
+                if (milestoneBonus > 0) {
+                    ResourceManager.addResource('nightingale', milestoneBonus);
+                }
+                
+                this.saveData();
+                
+                await new Promise(r => setTimeout(r, 800));
+                const flash = document.getElementById('flash-layer');
+                const flashColor = {
+                    senior: '#e8c668',
+                    intermediate: '#689de8',
+                    junior: '#10b981',
+                    basic: '#6b7280',
+                    discount: '#f59e0b'
+                }[maxTier] || '#f59e0b';
+                
+                flash.style.background = `radial-gradient(circle, #fff 10%, ${flashColor} 90%)`;
+                flash.style.animation = 'explode-flash 0.5s forwards';
+                
+                await new Promise(r => setTimeout(r, 250));
+                document.getElementById('main-screen').classList.add('hidden');
+                flash.style.opacity = 0;
+                
+                this.showResultScreen(this.currentResults, totalPullReward, milestoneBonus);
+                
+                await new Promise(r => setTimeout(r, 500));
+                orb.classList.remove('shaking');
+                orb.classList.add('breathing');
+                flash.style.animation = '';
+                this.isAnimating = false;
+                document.getElementById('btn-pull-1').disabled = false;
+                document.getElementById('btn-pull-10').disabled = false;
+            }
+            
+            async showResultScreen(items, pullReward, milestoneBonus) {
+                const container = document.getElementById('cards-container');
+                const screen = document.getElementById('result-screen');
+                const header = document.getElementById('result-header');
+                const footer = document.getElementById('result-footer');
+                
+                screen.classList.remove('hidden');
+                screen.classList.add('flex');
+                container.innerHTML = '';
+                footer.innerHTML = '';
+                header.style.opacity = '0';
+                footer.style.opacity = '0';
+                
+                const cardGrid = document.createElement('div');
+                if (items.length === 1) {
+                    cardGrid.className = 'w-full flex justify-center items-center py-4';
+                } else {
+                    cardGrid.className = 'grid grid-cols-3 sm:grid-cols-5 gap-2 w-full max-w-6xl p-2';
+                }
+                container.appendChild(cardGrid);
+                
+                const rarityNames = {
+                    discount: '随机折扣',
+                    basic: '基础奖励',
+                    junior: '初级奖励',
+                    intermediate: '中级奖励',
+                    senior: '高级奖励'
+                };
+                
+                let totalRepeatBonus = 0;
+                
+                items.forEach((item, index) => {
+                    const card = document.createElement('div');
+                    card.id = `result-card-${index}`;
+                    const sizeClass = items.length === 1 ? 'w-5/6 max-w-[200px] aspect-[2/3]' : 'w-full aspect-[2/3]';
+                    const imgContent = item.img ? 
+                        `<img src="${item.img}" class="absolute inset-0 w-full h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZHN0PSIxMDAiIGZpbGw9IiMzMzMiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iIzU1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+PzwvdGV4dD48L3N2Zz4='">` : 
+                        `<div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-900"><i class="fa-solid fa-gift text-4xl mb-2 text-rarity-${item.rarity}"></i></div>`;
+                    
+                    card.setAttribute('onclick', `app.showItemDetail(${index})`);
+                    card.className = `card ${sizeClass} rarity-${item.rarity} bg-gray-900 rounded-lg flex flex-col relative group cursor-pointer shadow-2xl border-2 border-gray-700 ${item.isRepeat ? 'is-repeat' : ''}`;
+                    card.style.animation = `card-flip 0.4s ease-out forwards ${index * 0.15 + 0.5}s`;
+                    card.style.opacity = '0';
+                    
+                    const repeatBadge = item.isRepeat ? 
+                        `<div class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full z-20 font-bold">重复 +${item.repeatBonus || 0}</div>` : '';
+                    
+                    card.innerHTML = `
+                        ${repeatBadge}
+                        <div class="absolute inset-0 bg-black/20 z-10"></div>
+                        <div class="absolute top-0 right-0 p-2 z-20">
+                            <span class="font-bold font-gothic text-lg sm:text-xl italic text-rarity-${item.rarity} drop-shadow-md">${rarityNames[item.rarity] || item.rarity}</span>
+                        </div>
+                        <div class="card-image-container flex-1 relative overflow-hidden bg-gray-900 flex items-center justify-center">
+                            ${imgContent}
+                        </div>
+                        <div class="card-name-container relative z-20 p-2 text-center border-t border-white/10">
+                            <div class="text-xs sm:text-sm font-bold text-gray-200 tracking-wide truncate">${item.name}</div>
+                            <div class="text-xs text-gray-500">${item.type || '奖励'}</div>
+                        </div>
+                    `;
+                    cardGrid.appendChild(card);
+                    
+                    if (item.isRepeat) {
+                        totalRepeatBonus += (item.repeatBonus || 0);
+                    }
+                });
+                
+                const pullCount = items.length;
+                const totalNightingale = pullReward + milestoneBonus + totalRepeatBonus;
+                
+                footer.innerHTML = `
+                    <div class="text-center mb-4 p-3 bg-yellow-900/30 border border-yellow-600 rounded-lg">
+                        <p class="text-yellow-400 font-bold">本次获得夜莺祝福</p>
+                        <p class="text-2xl text-white">+${totalNightingale}</p>
+                        <p class="text-xs text-gray-400">
+                            ${pullReward} (抽取) + ${milestoneBonus} (里程碑) + ${totalRepeatBonus} (重复)
+                        </p>
+                    </div>
+                    <div class="flex gap-4">
+                        <button onclick="app.closeResult()" class="idv-btn w-40 py-3">确 认</button>
+                        <button onclick="app.pull(${pullCount}, true)" class="idv-btn w-40 py-3 text-amber-100 border-amber-700">再次 x${pullCount}</button>
+                    </div>
+                `;
+                
+                await new Promise(r => setTimeout(r, 200));
+                header.style.transition = 'opacity 1s';
+                header.style.opacity = '1';
+                
+                const allCardsAnimationTime = items.length * 150 + 500;
+                await new Promise(r => setTimeout(r, allCardsAnimationTime));
+                footer.style.transition = 'opacity 0.5s';
+                footer.style.opacity = '1';
+            }
+            
+            closeResult(showMain = true) {
+                const screen = document.getElementById('result-screen');
+                screen.classList.add('hidden');
+                screen.classList.remove('flex');
+                if (showMain) {
+                    document.getElementById('main-screen').classList.remove('hidden');
+                }
+            }
+            
+            _displayDetailModal(item) {
+                if (!item) return;
+                document.getElementById('detail-name').textContent = item.name || '未知物品';
+                document.getElementById('detail-type').textContent = item.type || '未知类型';
+                document.getElementById('detail-desc').textContent = item.description || '暂无描述。';
+                document.getElementById('detail-img').src = item.img || '';
+                
+                const glow = document.getElementById('detail-rarity-glow');
+                const rarityColors = {
+                    senior: 'gold',
+                    intermediate: 'royalblue',
+                    junior: 'green',
+                    basic: 'gray',
+                    discount: 'orange'
+                };
+                glow.style.background = rarityColors[item.rarity] || 'transparent';
+                
+                const repeatBonusInfo = document.getElementById('repeat-bonus-info');
+                if (item.isRepeat) {
+                    repeatBonusInfo.classList.remove('hidden');
+                    document.getElementById('repeat-bonus-amount').textContent = item.repeatBonus || 0;
+                } else {
+                    repeatBonusInfo.classList.add('hidden');
+                }
+                
+                const modal = document.getElementById('item-detail-modal');
+                modal.classList.remove('hidden');
+                modal.classList.add('flex', 'show');
+            }
+            
+            showItemDetail(index) {
+                this._displayDetailModal(this.currentResults[index]);
+            }
+            
+            closeItemDetail() {
+                const modal = document.getElementById('item-detail-modal');
+                modal.classList.add('hidden');
+                modal.classList.remove('flex', 'show');
+            }
+            
+            toggleHistory() {
+                const el = document.getElementById('history-modal');
+                el.classList.toggle('hidden');
+                if (!el.classList.contains('hidden')) {
+                    this.renderHistory();
+                }
+            }
+            
+            renderHistory() {
+                const list = document.getElementById('history-list');
+                const rarityNames = {
+                    senior: '高级',
+                    intermediate: '中级',
+                    junior: '初级',
+                    basic: '基础',
+                    discount: '折扣'
+                };
+                
+                list.innerHTML = this.state.history.map(h => {
+                    const textColorClass = `text-rarity-${h.rarity}`;
+                    const repeatBadge = h.isRepeat ? '<span class="text-red-400 text-xs">(重复)</span>' : '';
+                    return `<div class="flex justify-between p-2 border-b border-gray-700/50 ${textColorClass}">
+                        <span>[${rarityNames[h.rarity]}] ${h.name} ${repeatBadge}</span>
+                        <span class="text-xs text-gray-500">第${h.idx}抽</span>
+                    </div>`;
+                }).join('') || '<div class="text-center text-gray-500 mt-4">暂无记录</div>';
+            }
+            
+            togglePoolPreview() {
+                const el = document.getElementById('pool-preview-modal');
+                el.classList.toggle('hidden');
+                if (!el.classList.contains('hidden')) {
+                    this.renderPoolPreview();
+                }
+            }
+            
+            renderPoolPreview() {
+                const listContainer = document.getElementById('pool-preview-list');
+                if (!this.config) {
+                    listContainer.innerHTML = '<p class="text-center text-gray-500">加载数据失败...</p>';
+                    return;
+                }
+                
+                const rarities = [
+                    { key: 'senior', name: '高级奖励' },
+                    { key: 'intermediate', name: '中级奖励' },
+                    { key: 'junior', name: '初级奖励' },
+                    { key: 'basic', name: '基础奖励' },
+                    { key: 'discount', name: '随机折扣' }
+                ];
+                
+                const placeholderImg = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZHN0PSIxMDAiIGZpbGw9IiMzMzMiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSI0MCIgZmlsbD0iIzU1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+PzwvdGV4dD48L3N2Zz4=';
+                
+                let htmlContent = '';
+                
+                rarities.forEach(rarity => {
+                    const items = this.config.items[rarity.key] || [];
+                    if (items.length > 0) {
+                        htmlContent += `<div class="mb-8">
+                            <h4 class="text-rarity-${rarity.key} font-gothic text-xl mb-4 border-b-2 border-rarity-${rarity.key}/30 pb-2">${rarity.name}</h4>
+                            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">`;
+                        
+                        items.forEach((item, index) => {
+                            const itemKey = this.getItemKey(item);
+                            const isOwned = this.globalOwnedItems[itemKey];
+                            const ownedClass = isOwned ? 'owned' : 'not-owned';
+                            const itemImg = item.img || placeholderImg;
+                            
+                            htmlContent += `<div class="pool-item ${ownedClass}" title="${item.name}\n${item.type}" onclick="app.showPoolItemDetail('${rarity.key}', ${index})">
+                                <div class="img-container">
+                                    <img src="${itemImg}" alt="${item.name}" loading="lazy" onerror="this.src='${placeholderImg}'">
+                                </div>
+                                <p class="text-gray-300 truncate"><span class="inline-block">${item.name}</span></p>
+                            </div>`;
+                        });
+                        
+                        htmlContent += `</div></div>`;
+                    }
+                });
+                
+                listContainer.innerHTML = htmlContent || '<p class="text-center text-gray-500">奖池为空</p>';
+                
+                setTimeout(() => {
+                    const itemPs = listContainer.querySelectorAll('.pool-item p');
+                    itemPs.forEach(p => {
+                        const span = p.querySelector('span');
+                        p.classList.remove('truncate');
+                        
+                        if (span && span.scrollWidth > (p.clientWidth + 1)) {
+                            const originalText = span.textContent;
+                            p.innerHTML = `<div class="marquee-wrapper" style="white-space: nowrap;"><span>${originalText}&nbsp;&nbsp;&nbsp;${originalText}</span></div>`;
+                            
+                            const wrapper = p.querySelector('.marquee-wrapper');
+                            const innerSpan = wrapper.querySelector('span');
+                            const scrollSpeed = 30;
+                            const totalWidth = innerSpan.scrollWidth / 2;
+                            const duration = totalWidth / scrollSpeed;
+                            
+                            wrapper.style.setProperty('--marquee-duration', `${duration}s`);
+                        } else {
+                            p.classList.add('truncate');
+                        }
+                    });
+                }, 50);
+            }
+            
+            showPoolItemDetail(rarity, index) {
+                const item = this.config.items[rarity][index];
+                if (item) {
+                    this._displayDetailModal(item);
+                }
+            }
+        }
+        
+        let app;
+        document.addEventListener('DOMContentLoaded', async () => {
+            app = new HXMTApp();
+            NightingaleManager.updateUI(); // 更新夜莺祝福显示
+            HuoqiManager.updateUI(); // 更新火漆显示
+            await app.init();
+            
+            const MIN_WIDTH = 200;
+            const MIN_HEIGHT = 450;
+            const smallScreenAlertShown = sessionStorage.getItem('smallScreenAlertShownHXMT');
+            
+            if ((window.innerWidth < MIN_WIDTH || window.innerHeight < MIN_HEIGHT) && !smallScreenAlertShown) {
+                alert(`您的屏幕尺寸（${window.innerWidth}x${window.innerHeight}）过小，可能会导致显示问题。`);
+                sessionStorage.setItem('smallScreenAlertShownHXMT', 'true');
+            }
+        });
+    </script>
 </body>
 </html>

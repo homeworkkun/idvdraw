@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幻象迷途商店</title>
+    <script src="/resource/tailwind.min.css"></script>
+    <link rel="stylesheet" href="/resource/fontawesome/css/all.min.css">
+    <style>
+        @import url('/resource/999170bab05411645e8bba91bdd8f551.css');
+        @font-face {
+            font-family: 'DFPOP1W5-GB';
+            src: url('/fonts.ttf') format('truetype');
+        }
+
+        :root { 
+            --color-gold: #e8c668; 
+            --color-purple: #b568e8; 
+            --color-blue: #689de8; 
+            --color-green: #10b981;
+            --color-red: #ef4444;
+            --color-ss: #f97316;
+            --bg-dark: #0f1115; 
+        }
+        
+        html { font-size: clamp(10px, 0.8vw + 8px, 16px); }
+        
+        body { 
+            font-family: "DFPOP1W5-GB", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            background-color: var(--bg-dark); 
+            color: #d1d5db; 
+            user-select: none; 
+            background-image: radial-gradient(circle at 50% 50%, #1f232e 0%, #0a0b0e 100%); 
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .font-gothic { font-family:"DFPOP1W5-GB", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        
+        @keyframes fade-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+        
+        .goods-card { 
+            background: linear-gradient(135deg, #1f232e 0%, #141720 100%); 
+            border: 1px solid #333; 
+            border-radius: 12px; 
+            transition: all 0.3s;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .goods-card:hover { 
+            border-color: var(--color-gold); 
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(232, 198, 104, 0.2);
+        }
+        .goods-card.disabled { 
+            opacity: 0.5; 
+            cursor: not-allowed; 
+            filter: grayscale(50%);
+        }
+        .goods-card.disabled:hover { 
+            transform: none;
+            border-color: #333;
+            box-shadow: none;
+        }
+        
+        .rarity-S { border-color: var(--color-gold) !important; box-shadow: 0 0 15px rgba(232, 198, 104, 0.3); }
+        .rarity-SS { border-color: var(--color-ss) !important; box-shadow: 0 0 20px rgba(249, 115, 22, 0.5); background: linear-gradient(135deg, #2a1a10 0%, #1f1410 100%); }
+        .rarity-A { border-color: var(--color-purple) !important; box-shadow: 0 0 15px rgba(181, 104, 232, 0.3); }
+        .rarity-B { border-color: var(--color-blue) !important; box-shadow: 0 0 15px rgba(104, 157, 232, 0.3); }
+        .rarity-C { border-color: #6b7280 !important; }
+        
+        .text-rarity-S { color: var(--color-gold); }
+        .text-rarity-SS { color: var(--color-ss); text-shadow: 0 0 10px rgba(249, 115, 22, 0.5); }
+        .text-rarity-A { color: var(--color-purple); }
+        .text-rarity-B { color: var(--color-blue); }
+        .text-rarity-C { color: #6b7280; }
+        
+        .price-tag {
+            background: linear-gradient(90deg, rgba(232, 198, 104, 0.2), rgba(232, 198, 104, 0.05));
+            border: 1px solid rgba(232, 198, 104, 0.3);
+            border-radius: 8px;
+        }
+        
+        .btn-buy {
+            background: linear-gradient(180deg, #3a3a3a 0%, #1a1a1a 100%);
+            border: 1px solid #888;
+            color: #ccc;
+            transition: all 0.2s;
+        }
+        .btn-buy:hover:not(:disabled) {
+            border-color: var(--color-gold);
+            color: var(--color-gold);
+            background: linear-gradient(180deg, #4a4a4a 0%, #2a2a2a 100%);
+        }
+        .btn-buy:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0f1115; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+        .float-animation { animation: float 3s ease-in-out infinite; }
+
+        .scan-line { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+        .scan-line::before { content: ''; display: block; width: 100%; height: 200%; background: linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, 0.02) 50%, transparent 100%); animation: scanline 10s linear infinite; }
+        @keyframes scanline { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }
+
+        @media (max-width: 640px) {
+            .goods-card { aspect-ratio: 3/4; }
+            .goods-image { max-width: 60%; max-height: 50%; }
+        }
+    </style>
+</head>
+<body class="flex flex-col relative">
+    <div class="scan-line"></div>
+    
+    <!-- 顶部栏 -->
+    <div class="relative z-10 h-16 bg-gradient-to-b from-black/80 to-transparent flex items-center justify-between px-6">
+        <button onclick="window.location.href='/huanxiangmitu.html'" class="text-gray-400 hover:text-white transition">
+            <i class="fas fa-arrow-left text-xl"></i>
+            <span class="ml-2">返回</span>
+        </button>
+        
+        <div class="flex items-center gap-4">
+            <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-black/50 border border-yellow-600/50">
+                <img src="/resource/2a0d5b2b1c71883f6dcf987fe1c4f9e9.png" class="w-6 h-6">
+                <span id="nightingale-amount" class="font-bold text-yellow-400 text-lg">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 标题 -->
+    <div class="relative z-10 text-center py-4">
+        <h1 class="text-2xl font-gothic text-amber-100 tracking-widest drop-shadow-lg">幻象迷途商店</h1>
+        <p class="text-sm text-gray-500 mt-1">使用夜莺祝福兑换奖励</p>
+    </div>
+
+    <!-- 商品列表 -->
+    <div class="relative z-10 flex-1 overflow-y-auto px-4 pb-4">
+        <div id="goods-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <div class="col-span-full text-center text-gray-500 py-20">加载中...</div>
+        </div>
+    </div>
+
+    <!-- 购买确认弹窗 -->
+    <div id="purchase-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/80 backdrop-blur-sm" onclick="closeModal()">
+        <div class="bg-[#1a1c24] border border-gray-600 rounded-lg p-6 max-w-sm w-full mx-4 relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute top-2 right-3 text-gray-500 hover:text-white text-xl">×</button>
+            
+            <h3 class="text-lg font-gothic text-amber-500 mb-4 text-center">确认购买</h3>
+            
+            <div class="flex gap-4 mb-4">
+                <img id="modal-img" src="" class="w-24 h-24 object-contain border border-gray-600 rounded bg-black/50 mx-auto">
+            </div>
+            
+            <div class="text-center mb-4">
+                <p id="modal-name" class="text-lg font-bold text-white"></p>
+                <p id="modal-type" class="text-sm text-gray-400"></p>
+            </div>
+
+            <div class="space-y-2 mb-4">
+                <button id="btn-buy-normal" onclick="doPurchase(false)" class="btn-buy w-full py-3 rounded flex items-center justify-center gap-2">
+                    <img src="/resource/2a0d5b2b1c71883f6dcf987fe1c4f9e9.png" class="w-5 h-5">
+                    <span id="modal-price-normal">0</span>
+                    <span class="text-yellow-400">夜莺祝福</span>
+                </button>
+            </div>
+            
+            <p id="modal-msg" class="text-center text-red-400 text-sm h-5"></p>
+        </div>
+    </div>
+
+    <script>
+        // 统一资源管理器
+        class ResourceManager {
+            static SHARED_KEY = 'shared_resources';
+            
+            static getResource(resourceName) {
+                const resources = JSON.parse(localStorage.getItem(this.SHARED_KEY)) || {};
+                return resources[resourceName] || 0;
+            }
+            
+            static setResource(resourceName, amount) {
+                const resources = JSON.parse(localStorage.getItem(this.SHARED_KEY)) || {};
+                resources[resourceName] = amount;
+                localStorage.setItem(this.SHARED_KEY, JSON.stringify(resources));
+            }
+            
+            static deductResource(resourceName, amount) {
+                const current = this.getResource(resourceName);
+                if (current < amount) return false;
+                this.setResource(resourceName, current - amount);
+                return true;
+            }
+            
+            static addResource(resourceName, amount) {
+                this.setResource(resourceName, this.getResource(resourceName) + amount);
+            }
+        }
+        
+        // 夜莺祝福管理器
+        class NightingaleManager {
+            static updateUI() {
+                const amount = ResourceManager.getResource('nightingale');
+                document.getElementById('nightingale-amount').textContent = amount.toLocaleString();
+            }
+        }
+
+        // 全局拥有物品管理器 (幻象迷途专用)
+        class HXMTItemManager {
+            static STORAGE_KEY = 'hxmt_owned_items';
+            
+            static getOwnedItems() {
+                const saved = localStorage.getItem(this.STORAGE_KEY);
+                return saved ? JSON.parse(saved) : {};
+            }
+            
+            static setOwnedItems(items) {
+                localStorage.setItem(this.STORAGE_KEY, JSON.stringify(items));
+            }
+            
+            static hasItem(itemKey) {
+                const items = this.getOwnedItems();
+                return !!items[itemKey];
+            }
+            
+            static addItem(itemKey) {
+                const items = this.getOwnedItems();
+                items[itemKey] = true;
+                this.setOwnedItems(items);
+            }
+            
+            static getItemKey(item) {
+                return `${item.name}|${item.type}|${item.img || ''}`;
+            }
+        }
+
+        // 购买记录
+        function getPurchaseRecords() {
+            const records = localStorage.getItem('hxmt_purchase_records');
+            return records ? JSON.parse(records) : {};
+        }
+
+        function savePurchaseRecords(records) {
+            localStorage.setItem('hxmt_purchase_records', JSON.stringify(records));
+        }
+
+        function canPurchaseItem(item) {
+            if (!item.limit) return true;
+            const records = getPurchaseRecords();
+            const purchased = records[item.id] || 0;
+            return purchased < item.limit;
+        }
+
+        function updatePurchaseRecord(itemId) {
+            const records = getPurchaseRecords();
+            records[itemId] = (records[itemId] || 0) + 1;
+            savePurchaseRecords(records);
+        }
+
+        // 默认图片
+        const DEFAULT_IMG = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZHN0PSIxMDAiIGZpbGw9IiMzMzMiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9ntLXNpemU9IjQwIiBmaWxsPSIjNTU1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7nmb3pPC90ZXh0Pjwvc3ZnPg==';
+
+        let allGoods = [];
+        let selectedItem = null;
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            NightingaleManager.updateUI();
+            await loadGoods();
+        });
+
+        async function loadGoods() {
+            try {
+                const res = await fetch('/HXMT/store/goods.json');
+                if (res.ok) {
+                    allGoods = await res.json();
+                    renderGoods();
+                } else {
+                    document.getElementById('goods-container').innerHTML = 
+                        '<div class="col-span-full text-center text-red-400">无法加载商品数据</div>';
+                }
+            } catch (e) {
+                console.error('加载失败', e);
+                document.getElementById('goods-container').innerHTML = 
+                    `<div class="col-span-full text-center text-red-400">加载出错</div>`;
+            }
+        }
+
+        function renderGoods() {
+            const container = document.getElementById('goods-container');
+            container.innerHTML = '';
+
+            if (allGoods.length === 0) {
+                container.innerHTML = '<div class="col-span-full text-center text-gray-500">暂无商品</div>';
+                return;
+            }
+
+            const records = getPurchaseRecords();
+
+            allGoods.forEach(item => {
+                const canBuy = canPurchaseItem(item);
+                const purchased = records[item.id] || 0;
+                const itemKey = HXMTItemManager.getItemKey(item);
+                const isOwned = HXMTItemManager.hasItem(itemKey);
+
+                const card = document.createElement('div');
+                card.className = `goods-card flex flex-col p-3 ${canBuy ? '' : 'disabled'} rarity-${item.rarity || 'C'}`;
+                
+                let priceHtml = '';
+                if (item.prices && item.prices.length > 0) {
+                    const price = item.prices[0]; // 只取第一个价格
+                    priceHtml = `
+                        <div class="price-tag flex items-center justify-center gap-1 py-1 px-2">
+                            <img src="/resource/2a0d5b2b1c71883f6dcf987fe1c4f9e9.png" class="w-4 h-4">
+                            <span class="text-yellow-400 font-bold">${price.amount}</span>
+                        </div>
+                    `;
+                }
+
+                const limitHtml = (item.limit > 1) ? 
+                    `<div class="text-xs text-gray-500">已购: ${purchased}/${item.limit}</div>` : '';
+
+                const ownedHtml = isOwned ?
+                    `<div class="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded-full">已拥有</div>` : '';
+
+                card.innerHTML = `
+                    ${ownedHtml}
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="${item.img || DEFAULT_IMG}" 
+                             class="goods-image max-w-[80%] max-h-[60%] object-contain float-animation"
+                             onerror="this.src='${DEFAULT_IMG}'">
+                    </div>
+                    <div class="mt-2 text-center">
+                        <div class="text-sm font-bold text-gray-200 truncate">${item.name}</div>
+                        <div class="text-xs text-gray-500">${item.type || '道具'}</div>
+                    </div>
+                    <div class="mt-auto pt-2">
+                        ${priceHtml}
+                        ${limitHtml}
+                    </div>
+                `;
+
+                if (canBuy) {
+                    card.onclick = () => openPurchaseModal(item);
+                }
+
+                container.appendChild(card);
+            });
+        }
+
+        function openPurchaseModal(item) {
+            if (!canPurchaseItem(item)) {
+                alert('已达购买上限！');
+                return;
+            }
+
+            selectedItem = item;
+            const modal = document.getElementById('purchase-modal');
+            
+            document.getElementById('modal-img').src = item.img || DEFAULT_IMG;
+            document.getElementById('modal-name').textContent = item.name;
+            document.getElementById('modal-type').textContent = `${item.rarity || 'C'}级 · ${item.type || '道具'}`;
+            document.getElementById('modal-msg').textContent = '';
+
+            if (item.prices && item.prices.length > 0) {
+                const price = item.prices[0];
+                document.getElementById('modal-price-normal').textContent = price.amount;
+                
+                const btn = document.getElementById('btn-buy-normal');
+                const canAfford = ResourceManager.getResource('nightingale') >= price.amount;
+                btn.disabled = !canAfford;
+            }
+
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('purchase-modal').classList.add('hidden');
+            selectedItem = null;
+        }
+
+        function doPurchase() {
+            if (!selectedItem) return;
+            
+            if (!canPurchaseItem(selectedItem)) {
+                document.getElementById('modal-msg').textContent = '已达购买上限！';
+                return;
+            }
+
+            const price = selectedItem.prices[0];
+            if (!ResourceManager.deductResource('nightingale', price.amount)) {
+                document.getElementById('modal-msg').textContent = '夜莺祝福不足！';
+                return;
+            }
+
+            // 添加到幻象迷途已拥有物品（本地存储）
+            const itemKey = HXMTItemManager.getItemKey(selectedItem);
+            HXMTItemManager.addItem(itemKey);
+
+            // 同时添加到全局物品系统（index.html图鉴用）
+            try {
+                const globalOwned = JSON.parse(localStorage.getItem('global_owned_items') || '{}');
+                const globalItemKey = `HXMT_${selectedItem.id}`;
+                globalOwned[globalItemKey] = {
+                    id: selectedItem.id,
+                    name: selectedItem.name,
+                    type: selectedItem.type,
+                    rarity: selectedItem.rarity || 'C',
+                    img: selectedItem.img || '',
+                    description: selectedItem.description || '',
+                    source: 'HXMT商店',
+                    isOwned: true,
+                    timestamp: Date.now()
+                };
+                localStorage.setItem('global_owned_items', JSON.stringify(globalOwned));
+            } catch (e) {
+                console.error('保存到全局物品系统失败', e);
+            }
+
+            // 更新购买记录
+            updatePurchaseRecord(selectedItem.id);
+
+            // 提示
+            alert(`购买成功！获得：${selectedItem.name}`);
+
+            // 刷新
+            closeModal();
+            NightingaleManager.updateUI();
+            renderGoods();
+        }
+    </script>
+</body>
+</html>

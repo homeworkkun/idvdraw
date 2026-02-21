@@ -1,0 +1,323 @@
+{
+  "id": "S41E3",
+  "name": "深渊珍宝Ⅸ",
+  "essenceImage": "/resource/15b639d902b43599408d983c4ff377d1.png",
+  "diff_A": 0,
+  "initialCurrencies": {
+    "inspiration": 100000,
+    "fragments": 0
+  },
+  "discounts": [
+    {
+      "name": "-20%",
+      "rate": 0.8,
+      "chance": 0.03
+    },
+    {
+      "name": "-40%",
+      "rate": 0.6,
+      "chance": 0.015
+    }
+  ],
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+    "type": "通用货币"
+  },
+  "pitySettings": {
+    "gold": 250,
+    "purple": 60,
+    "blue": 10
+  },
+  "items": {
+    "S": [
+      {
+        "name": "“恒光”",
+        "img": "/resource/254d2f9c17397c92824da3062f4a6ed5.png",
+        "type": "时装",
+        "description": "“新世界”的印记：他的国度被维系在稳定的规律中，在这循环往复的黄金时代中，是否折射着“神明”对旧日的偏爱与怀恋？\n深渊珍宝Ⅸ限定稀世时装 ",
+        "repeat": 2000
+      }
+    ],
+    "A": [
+      {
+        "name": "深蓝暗面",
+        "img": "/resource/fea67f3fff3ce0df2364ff3892b4f051.png",
+        "type": "时装",
+        "description": "“月亮”的印记：他以艺术诠释这完满世界的“暗面”，即使与人们虔信的“常理”背道而驰，他与他的画笔仍拒绝噤声。\n深渊珍宝Ⅸ限定奇珍时装 ",
+        "repeat": 1000
+      },
+      {
+        "name": "匣中焰星",
+        "img": "/resource/d30c1b2aabbe47bf8050b3d95470fa95.png",
+        "type": "时装",
+        "description": "“太阳”的印记：行商的语调总是欢快而宜人，他以烛火点燃精心调配的香料，予友邻以片刻的安慰与宁静。\n深渊珍宝Ⅸ限定奇珍时装 ",
+        "repeat": 1000
+      },
+      {
+        "name": "苍白冠冕",
+        "img": "/resource/dbe6af26709b64e26100b9e095ebcf6c.png",
+        "type": "时装",
+        "description": "“圣徒”的印记：她长久地与这苍白的冠冕和长袍为伴，在无数个不被仰视的夜里，她才在镜前与真正的自我对话。\n深渊珍宝Ⅸ限定奇珍时装 ",
+        "repeat": 1000
+      },
+      {
+        "name": "不羁欢歌",
+        "img": "/resource/e241be7145101d6bd65800ec314e5016.png",
+        "type": "时装",
+        "description": "“罪人”的印记：人们因恐惧将枷锁施予离群者，但那些束缚住他的，仍无法摧折他未经驯服、仍具锋芒的灵魂。\n深渊珍宝Ⅸ限定奇珍时装 ",
+        "repeat": 1000
+      }
+    ],
+    "B": [
+      {
+        "name": "阴谋论者",
+        "img": "/resource/ef5b839361254f7ec60a35c91b886ab9.png",
+        "type": "时装",
+        "description": "在碎裂的、黑色的羽翼面具后，我们终于得以看清他的脸：他显然已经告别了纯真的信仰，却亦不因颠覆性的秘密而畏惧。\n深渊珍宝Ⅸ限定独特时装  ",
+        "repeat": 200
+      },
+      {
+        "name": "漆黑神官",
+        "img": "/resource/9e3959460e6a2a12883ee32d77724a73.png",
+        "type": "时装",
+        "description": "在那些身着白袍的学徒中，她总是最打眼的那一个，而如今洁白的大理石殿恒常未变，这种“未变”正清晰地映照着她已不在的事实。\n深渊珍宝Ⅸ限定独特时装  ",
+        "repeat": 200
+      },
+      {
+        "name": "惊惧故事集",
+        "img": "/resource/be499027bdcede296d9135359d6b7bc0.png",
+        "type": "时装",
+        "description": "戴着兔子面具的街头艺人，为“圣城”的民间创作注入绝佳的新点子：那些远超人们想象以外的，逸散在宇宙与太古中的伟大史诗。\n深渊珍宝Ⅸ限定独特时装  ",
+        "repeat": 200
+      },
+      {
+        "name": "乐园游人",
+        "img": "/resource/b92b266f367b0f17177790914841b608.png",
+        "type": "时装",
+        "description": "她轻巧地穿梭于圣城的庆典，与簇拥而至的人群背道而驰：她的目光更情愿停留在一切独特的事物上，而非那个意喻永恒的金色坐辇。\n深渊珍宝Ⅸ限定独特时装  ",
+        "repeat": 200
+      },
+      {
+        "name": "木偶师-起身",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
+        "type": "等待动作",
+        "description": "木偶师匹配大厅等待动作，起身",
+        "repeat": 200
+      },
+      {
+        "name": "飞行家-起身",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
+        "type": "等待动作",
+        "description": "飞行家匹配大厅等待动作，起身",
+        "repeat": 200
+      },
+      {
+        "name": "“逃脱大师”-准备",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
+        "type": "等待动作",
+        "description": "“逃脱大师”匹配大厅等待动作，准备",
+        "repeat": 200
+      },
+      {
+        "name": "时空之影-拜访",
+        "img": "/resource/912d4b99ec0d60277901025c664817f1.png",
+        "type": "等待动作",
+        "description": "时空之影专属匹配大厅等待动作，拜访，求生者可见",
+        "repeat": 200
+      }
+    ],
+    "C": [
+      {
+        "name": "深幽灰",
+        "img": "/resource/a4a5da91f741c6d4c4bcd14484536384.png",
+        "type": "时装",
+        "description": "还记得灰谷的月光么？",
+        "repeat": 36
+      },
+      {
+        "name": "阴沉蓝",
+        "img": "/resource/1aa1c27a251910af58eca27ba4670d9f.png",
+        "type": "时装",
+        "description": "阴沉而忧郁的雨天，正好适合一个人静静遐想。",
+        "repeat": 36
+      },
+      {
+        "name": "虚空黑",
+        "img": "/resource/675ca44e35183f3ddc5877518dd69b1a.png",
+        "type": "时装",
+        "description": "黑夜并非无尽的虚空，而是灵魂的归处。",
+        "repeat": 36
+      },
+      {
+        "name": "黯影紫",
+        "img": "/resource/878f72edf100edace809a633356fd867.png",
+        "type": "时装",
+        "description": "在被责任压抑的欲望之下，黯紫色的幽影正悄然伏动。",
+        "repeat": 36
+      },
+      {
+        "name": "迷影棕",
+        "img": "/resource/b354b03c645b7e5e494a671dc539cd8d.png",
+        "type": "时装",
+        "description": "她的身影迷人绰约，她的眼睛亦藏着难解的谜题。",
+        "repeat": 36
+      },
+      {
+        "name": "锁链银",
+        "img": "/resource/f01d8a76cf1838ac0b7e374bdee81e31.png",
+        "type": "时装",
+        "description": "被银色锁链束缚的，只是千疮百孔的肉体。",
+        "repeat": 36
+      },
+      {
+        "name": "秋叶棕",
+        "img": "/resource/6d5301c0111aa959d270cb7c1f49aaa6.png",
+        "type": "时装",
+        "description": "秋叶终将坠落，世界上还有什么不会凋零？",
+        "repeat": 36
+      },
+      {
+        "name": "记忆黄",
+        "img": "/resource/ce91571449b2b300ad7cc785fa28d6c8.png",
+        "type": "时装",
+        "description": "时光掩埋了过往的秘密，记忆却历久弥新。",
+        "repeat": 36
+      },
+      {
+        "name": "火灾调查员-羞愧",
+        "img": "/resource/74389bc7c428cda2edc3e8114ae5bfe2.png",
+        "type": "个性动作",
+        "description": "羞愧动作，火灾调查员专属",
+        "repeat": 36
+      },
+      {
+        "name": "气象学家-羞愧",
+        "img": "/resource/74389bc7c428cda2edc3e8114ae5bfe2.png",
+        "type": "个性动作",
+        "description": "羞愧动作，气象学家专属",
+        "repeat": 36
+      },
+      {
+        "name": "记者-挑衅",
+        "img": "/resource/44169a1e5f519d33ad5fc13115b43773.png",
+        "type": "个性动作",
+        "description": "挑衅动作，记者专属",
+        "repeat": 36
+      },
+      {
+        "name": "“骑士”-躺地",
+        "img": "/resource/873ca798d986ffc8dc43cbe5c115f127.png",
+        "type": "个性动作",
+        "description": "躺地动作，“骑士”专属",
+        "repeat": 36
+      },
+      {
+        "name": "弓箭手-欢呼",
+        "img": "/resource/190feae2e4427e910a46ac14e731ad4b.png",
+        "type": "个性动作",
+        "description": "欢呼动作，弓箭手专属",
+        "repeat": 36
+      },
+      {
+        "name": "“逃脱大师”-呼喊",
+        "img": "/resource/5d53d7deef61eabd78c43e481bc2d79c.png",
+        "type": "个性动作",
+        "description": "呼喊动作，“逃脱大师”专属",
+        "repeat": 36
+      },
+      {
+        "name": "记者-“巡于归途”",
+        "img": "/resource/2c538d9375193bb6ac69261b863a980c.png",
+        "type": "涂鸦",
+        "description": "记者专属涂鸦，“巡于归途”",
+        "repeat": 36
+      },
+      {
+        "name": "火灾调查员-匣中焰星",
+        "img": "/resource/6e655a01638040db35ef321f0f476b17.png",
+        "type": "涂鸦",
+        "description": "火灾调查员专属涂鸦，匣中焰星",
+        "repeat": 36
+      },
+      {
+        "name": "画家-深蓝暗面",
+        "img": "/resource/22077c81952443af1acb8f5d9db9ef04.png",
+        "type": "涂鸦",
+        "description": "画家专属涂鸦，深蓝暗面",
+        "repeat": 36
+      },
+      {
+        "name": "“骑士”-不羁欢歌",
+        "img": "/resource/8d67a8850934dd960dcd6addeb0d561c.png",
+        "type": "涂鸦",
+        "description": "“骑士”专属涂鸦，不羁欢歌",
+        "repeat": 36
+      },
+      {
+        "name": "“法罗女士”-苍白冠冕",
+        "img": "/resource/e37969e46a6709a08d79cd1b60a24922.png",
+        "type": "涂鸦",
+        "description": "“法罗女士”专属涂鸦，苍白冠冕",
+        "repeat": 36
+      },
+      {
+        "name": "守夜人-另一面",
+        "img": "/resource/0b103631a1b2e56ebefeed99c0f48d80.png",
+        "type": "头像",
+        "description": "守夜人的黑化头像，预示着他的另一面",
+        "repeat": 36
+      },
+      {
+        "name": "时空之影-另一面",
+        "img": "/resource/a5734def04c376c546c57abdf739935c.png",
+        "type": "头像",
+        "description": "时空之影的黑化头像，预示着他的另一面",
+        "repeat": 36
+      },
+      {
+        "name": "木偶师-另一面",
+        "img": "/resource/37cabac5fdd444b270d7fb66ff3c00b3.png",
+        "type": "头像",
+        "description": "木偶师的黑化头像，预示着他的另一面",
+        "repeat": 36
+      },
+      {
+        "name": "火灾调查员-另一面",
+        "img": "/resource/7ea9a98138401dbb6c43c6a7d7b5022c.png",
+        "type": "头像",
+        "description": "火灾调查员的黑化头像，预示着他的另一面",
+        "repeat": 36
+      },
+      {
+        "name": "拉拉队员-另一面",
+        "img": "/resource/31a7bda07295d2bd5b3498fa31a0cc7d.png",
+        "type": "头像",
+        "description": "拉拉队员的黑化头像，预示着他的另一面",
+        "repeat": 36
+      },
+      {
+        "name": "“法罗女士”-另一面",
+        "img": "/resource/be6055bece4b3fb9d01c1b2b9c3dad95.png",
+        "type": "头像",
+        "description": "“法罗女士”的黑化头像，预示着他的另一面",
+        "repeat": 36
+      },
+      {
+        "name": "“愚人金”-另一面",
+        "img": "/resource/2cbc62beee390a55ef9766d897f71e08.png",
+        "type": "头像",
+        "description": "“愚人金”的黑化头像，预示着他的另一面",
+        "repeat": 36
+      },
+      {
+        "name": "飞行家-另一面",
+        "img": "/resource/accfcc9742c14081c270a31751fe7b00.png",
+        "type": "头像",
+        "description": "飞行家的黑化头像，预示着他的另一面",
+        "repeat": 36
+      }
+    ],
+    "D": []
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "id": "JYXB2",
+  "name": "鉴影寻宝第2期",
+  "description": "火漆消耗型池子（旧机制）",
+  "essenceImage": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+  "pitySettings": {
+    "gold": 80,
+    "purple": 80,
+    "blue": 80
+  },
+  "items": {
+    "A": [
+      {
+        "name": "怀古",
+        "type": "时装",
+        "img": "/resource/45e0c4a11be4f0c1fd4aa9e4021c1a8a.png",
+        "description": "即使为守护而生，可她从未见过王座上的真颜"
+      },
+      {
+        "name": "黑女巫",
+        "type": "时装",
+        "img": "/resource/27affc4a883e88d1e94f0be976dfce5f.png",
+        "description": "即便被欺骗，被陷害，被囚于孤塔，她还是没有放弃曾经的名字，曾经的自己。"
+      },
+      {
+        "name": "慵懒的兔先生",
+        "type": "时装",
+        "img": "/resource/6423a7261d89bfbc33912111c2092768.png",
+        "description": "如果你跑得够快的话，为什么不打个盹？"
+      },
+      {
+        "name": "焗炉",
+        "type": "时装",
+        "img": "/resource/3afafd78fe9036635f20cef4bff31d96.png",
+        "description": "没有绝对的真相，也没有纯粹的骗局。愿意让灵魂沉沦的人，才能获得无限的美好。"
+      }
+    ],
+    "B": [
+      {
+        "name": "理发师",
+        "type": "时装",
+        "img": "/resource/126cec5746abe9f67d77b4744b20242c.png",
+        "description": "理发师曾是职业，身份，外壳，伪装……唯一真实的只有左手按耐不住的骚动"
+      },
+      {
+        "name": "多拿滋",
+        "type": "时装",
+        "img": "/resource/ff667a1abc125ff61d8027fbd30bbbce.png",
+        "description": "圈套时常包裹着华美的糖衣。事实上如果他早些意识到这一点，定不会放任伙伴独自前往危境。"
+      },
+      {
+        "name": "魔药师",
+        "type": "时装",
+        "img": "/resource/750681dfd8b537363f71f2028413ea54.png",
+        "description": "神秘妖娆的魔药师，担任着魔法学院的魔药课教授。可谁知道她背地里效忠于谁呢?"
+      },
+      {
+        "name": "哥特",
+        "type": "时装",
+        "img": "/resource/64e45cf7295a2a3b45c9b03a616a6fbe.png",
+        "description": "哥特风的俏皮小吊带，就是为了万圣节化妆舞会而准备的"
+      },
+      {
+        "name": "园艺手册",
+        "type": "随身物品",
+        "img": "/resource/f996f6d40e1b896872f0d47923149c85.png",
+        "description": "园丁将自己的手艺心得都写进了书里，除此之外还藏着许多她自己的秘密。"
+      },
+      {
+        "name": "封情",
+        "type": "随身物品",
+        "img": "/resource/b135acbc1a4bfbc736a926a8fe5964c7.png",
+        "description": "斯人已逝，丹青留影"
+      },
+      {
+        "name": "兔宝宝",
+        "type": "随身物品",
+        "img": "/resource/be5794063f5d662677322ef6999f04c3.png",
+        "description": "可爱的兔宝宝玩偶给盲女带来安全感，她们互相保护着对方"
+      },
+      {
+        "name": "曼陀林",
+        "type": "随身物品",
+        "img": "/resource/71e589b78f713c79414b9d05ebf44738.png",
+        "description": "每个牛仔都该给自己备上一把"
+      }
+    ],
+    "C": [
+      {
+        "name": "碎片*88",
+        "type": "碎片",
+        "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+        "description": "碎片"
+      }
+    ],
+    "D": [
+      {
+        "name": "线索*88",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "线索"
+      }
+    ]
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png"
+  }
+}

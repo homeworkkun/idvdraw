@@ -1,75 +1,75 @@
 {
   "id": "lucky_dice_7",
   "name": "幸运之骰·第7期",
-  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
   "description": "幸运之骰",
   "completeDrawLimit": 200,
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "conversionRate": 50
   },
   "items": {
     "蓝色妖姬": {
       "type": "头像框",
       "rarity": "B",
-      "img": "./img/rgoq46mxpg1wxepj2k94zyrhw4p83ge.png",
+      "img": "/resource/5cfe9ef3b4151f8c3168e2c8ed230ddb.png",
       "description": "2019年七夕蓝玫瑰之夜活动头像框",
       "repeat": 200
     },
     "长跑": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/ox3twvtqetc3ozk08grfhfhq21p2zt4.png",
+      "img": "/resource/8ff74975489b959c9d44b1c4a30dcbff.png",
       "description": "只等那一声哨响，奋力奔跑。（庄园接力赛活动获得） ",
       "repeat": 6
     },
     "梦之女巫-吃货": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/rmvxic87af59qijyolveoxf3pshw5qz.png",
+      "img": "/resource/e38fcf58fb17567ae17cf415358a411a.png",
       "description": "吃货主题涂鸦，梦之女巫专属 ",
       "repeat": 6
     },
     "牛仔-吃货": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/tr1md0pj6aj7yb9bib1qa5xtfqqi1op.png",
+      "img": "/resource/5907a2080bf03221bd1a782bf0abbe30.png",
       "description": "吃货主题涂鸦，牛仔专属 ",
       "repeat": 6
     },
     "红蝶-吃货": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/2r6pxm3ac2anagwshgckegtzw6vgnlm.png",
+      "img": "/resource/4dd678178d039ab6cecd5cea83a284f3.png",
       "description": "吃货主题涂鸦，红蝶专属 ",
       "repeat": 6
     },
     "通用奇珍时装体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
       "description": "限时体验",
       "repeat": 27
     },
     "监管者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
       "description": "限时体验",
       "repeat": 10
     },
     "求生者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
       "description": "限时体验",
       "repeat": 10
     },
     "通用独特时装体验卡*1天": {
       "type": "临时装扮",
       "rarity": "D",
-      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
       "description": "限时体验",
       "repeat": 10
     }

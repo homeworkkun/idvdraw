@@ -1,0 +1,95 @@
+{
+  "id": "JYXB13",
+  "name": "鉴影寻宝第13期",
+  "description": "火漆消耗型池子",
+  "essenceImage": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+  "pitySettings": {
+    "gold": 80,
+    "purple": 80,
+    "blue": 80
+  },
+  "items": {
+    "A": [
+      {
+        "name": "流离的月光",
+        "type": "时装",
+        "img": "/resource/cd374fe9ff79e201da61fb91c8955756.png",
+        "description": "“单纯”的精灵徘徊在名为谎言的湖上，想要掬一捧名为“爱”的月光。"
+      },
+      {
+        "name": "“厄运”",
+        "type": "时装",
+        "img": "hhttps://patchwiki.biligame.com/images/dwrg/b/bd/6cx6jeefzbsvudhxrkaxuktx3r89akk.png",
+        "description": "祭司抽出书匣里尘封的塔罗，排列出命运不祥的纹路。"
+      },
+      {
+        "name": "鬼脸天蛾",
+        "type": "时装",
+        "img": "/resource/a75547f2491237c6961d9ad5c6744dbb.png",
+        "description": "她追猎所有灼灼的憧憬，用以滋养她枯朽的梦境"
+      },
+      {
+        "name": "裁纸机",
+        "type": "时装",
+        "img": "/resource/3b9baac9b6782920f848e9f21d172e8e.png",
+        "description": "不论过去还是将来，在黑暗中搜寻情报就是他永恒不变的使命。"
+      },
+      {
+        "name": "衔尾蛇",
+        "type": "时装",
+        "img": "/resource/6da745c5bf0e5666089e773b6b14286b.png",
+        "description": "为了收获肉体和灵魂错位而产生的凝结物，衔尾蛇不停地吞噬周围的生命，也在吞噬自己。"
+      },
+      {
+        "name": "可可豆",
+        "type": "时装",
+        "img": "/resource/25280276ee8e02e5de07186ba8ddcb7a.png",
+        "description": "食物是否美味取决于能否让吃它的人感到开心，而不是取决于它来自街头小店，还是顶级餐厅。"
+      },
+      {
+        "name": "阿波罗",
+        "type": "时装",
+        "img": "/resource/0fb9a14119482534ef4e209b1b74dc6a.png",
+        "description": "你的阳光和希望，唯我能给予，也唯我能夺取"
+      },
+      {
+        "name": "思明",
+        "type": "时装",
+        "img": "/resource/d6c5dfcb9ee8b48d7e62dc593b5dec82.png",
+        "description": "他愿去寻找新的路，即使要为此毁去旧的"
+      },
+      {
+        "name": "诡笑症",
+        "type": "时装",
+        "img": "/resource/f8c63dd068f4ad7e79093a1119c28431.png",
+        "description": "症状：表情失控\n记录：因电椅治疗而受创导致表情管理失控，表现为受刺激时露出抽搐诡笑，可视作其“反抗”意识的表达一一可贵，却无用。"
+      },
+      {
+        "name": "万能钥匙",
+        "type": "时装",
+        "img": "/resource/73d2b9c7e20ed985fd061099d308c034.png",
+        "description": "她只做自己认为正确的事，打开自己认为正确的大门，直至今日，她还不曾见过无法开启的门扉。"
+      }
+    ],
+    "B": [
+      {
+        "name": "碎片*10",
+        "type": "碎片",
+        "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+        "description": "碎片"
+      }
+    ],
+    "C": [
+      {
+        "name": "线索*10",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "线索"
+      }
+    ]
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png"
+  }
+}

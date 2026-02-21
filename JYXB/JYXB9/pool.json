@@ -1,0 +1,109 @@
+{
+  "id": "JYXB9",
+  "name": "鉴影寻宝第9期",
+  "description": "火漆消耗型池子（旧机制）",
+  "essenceImage": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+  "pitySettings": {
+    "gold": 80,
+    "purple": 80,
+    "blue": 80
+  },
+  "items": {
+    "A": [
+      {
+        "name": "西部大亨",
+        "type": "时装",
+        "img": "/resource/1b864d16f7525618e77334999151631c.png",
+        "description": "当炸药炸开了河床，黄金从河道中源源不断流出，谁还曾在意那些埋葬在河床之下的淘金者。"
+      },
+      {
+        "name": "逃亡者",
+        "type": "时装",
+        "img": "/resource/fd36c20f9743b12cbf528ba640684b40.png",
+        "description": "无法理解恐惧的绝望，才勇于伸手抓住命运之绳。"
+      },
+      {
+        "name": "冰上舞蹈",
+        "type": "时装",
+        "img": "/resource/48381ec23da897cae7dd1e4b6a12ff04.png",
+        "description": "三个小冰人，湖面旋舞危机藏；初春冰面裂如网，三个只剩两。"
+      },
+      {
+        "name": "动植物学教授",
+        "type": "时装",
+        "img": "/resource/a62fbd1c0513af0e86c60b1aab2d8422.png",
+        "description": "飞蛾和人类一样，总会在感受到疼痛后，远离危险。"
+      }
+    ],
+    "B": [
+      {
+        "name": "雏鹰",
+        "type": "时装",
+        "img": "/resource/fd211edf6ad4ee1e43f47bc90eb0358a.png",
+        "description": "那场劫难后，公主向盟国求助，希望履行多年前平分财宝的约定。但这次她足够谨慎······谁知道这是不是下一个陷阱呢？"
+      },
+      {
+        "name": "慢滑种子",
+        "type": "时装",
+        "img": "/resource/2ced8f7f511eef3ea5cf08bbfdb74b21.png",
+        "description": "五个小冰人，哄闹一团相猜忌；言辞犀利招嫌疑，五个只剩四。"
+      },
+      {
+        "name": "战争后遗症",
+        "type": "时装",
+        "img": "/resource/8de468960e9a0e051de89c2db17d519e.png",
+        "description": "孤独、恐惧、紧张感、信念的落差，如影随形。"
+      },
+      {
+        "name": "匿名",
+        "type": "时装",
+        "img": "/resource/f5beb76b31178b18c34f89ef68ea4bd8.png",
+        "description": "她只需要两件东西：一个收取报酬的代号，一个埋葬遗骨的标记。"
+      },
+      {
+        "name": "诅咒图腾",
+        "type": "随身物品",
+        "img": "/resource/370915c5519f5a63a3c4bba37c26ebe2.png",
+        "description": "虽然是充满危险的图腾，但在合适的人手中也能行善举"
+      },
+      {
+        "name": "小火炉",
+        "type": "随身物品",
+        "img": "/resource/49e99ccb1e8b148f4930dc58ff86b47e.png",
+        "description": "勘探员在某次勘探作业中找到的古代遗物，散发着一股奇怪的气息"
+      },
+      {
+        "name": "雪人",
+        "type": "随身物品",
+        "img": "/resource/5dbafef6976bbe68ba39f7878f184781.png",
+        "description": "雪是无法长久保留的。"
+      },
+      {
+        "name": "手杖伞",
+        "type": "随身物品",
+        "img": "/resource/dfab9dbb8de953126785ddbb5b720baf.png",
+        "description": "他的藏品件件设计精巧，尤其是这把漆黑的手杖伞，传说有位公主曾用它对抗过一个邪恶的画师"
+      }
+    ],
+    "C": [
+      {
+        "name": "碎片*88",
+        "type": "碎片",
+        "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+        "description": "碎片"
+      }
+    ],
+    "D": [
+      {
+        "name": "线索*88",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "线索"
+      }
+    ]
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png"
+  }
+}

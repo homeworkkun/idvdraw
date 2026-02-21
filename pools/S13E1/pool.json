@@ -1,7 +1,7 @@
 {
   "id": "S13E1",
   "name": "名侦探柯南联动精华",
-  "essenceImage": "./img/0ycpi04ev0il1xogj9fj5whm9gxwrq8.png",
+  "essenceImage": "/resource/782243d6a21fbcdd08d18bb519bff442.png",
   "diff_A": 3,
   "initialCurrencies": {
     "inspiration": 100000,
@@ -10,7 +10,7 @@
   "discounts": [],
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "type": "通用货币"
   },
   "pitySettings": {
@@ -23,28 +23,28 @@
     "A": [
       {
         "name": "毛利小五郎",
-        "img": "./img/edmt0v2cufma1d2o6fk8094v8yppj8g.png",
+        "img": "/resource/59cf713ccfee274cbfe5b8ccbbe28d7d.png",
         "type": "时装",
         "description": "毛利小五郎的西服。\n名侦探柯南联动精华限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "毛利兰",
-        "img": "./img/pxntl0k3q924e1j70kvoelcce2p4xrk.png",
+        "img": "/resource/4c6b66386980ce9b71fcffc655199b7a.png",
         "type": "时装",
         "description": "毛利兰的服装。\n名侦探柯南联动精华限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "灰原哀",
-        "img": "./img/efpxpsqlgbam688d65aq3w23z4nkmqo.png",
+        "img": "/resource/d0054ce7de845e38c1b40d90cb6f78ad.png",
         "type": "时装",
         "description": "灰原哀的实验室工作服。\n名侦探柯南联动精华限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "服部平次",
-        "img": "./img/p09vqik88kr24iz5vwk595zcq39xoq3.png",
+        "img": "/resource/094116772cf38e52960df44fc88c00ee.png",
         "type": "时装",
         "description": "服部平次的服装。\n名侦探柯南联动精华限定奇珍时装",
         "repeat": 1000
@@ -53,42 +53,42 @@
     "B": [
       {
         "name": "调香师-警惕",
-        "img": "./img/ic7bw2zh315eamgq010shsg4m3hqe3p.png",
+        "img": "/resource/933442b4a0c8fa08ab8e39c690dfa1d3.png",
         "type": "个性动作",
         "description": "警惕动作，调香师专属",
         "repeat": 200
       },
       {
         "name": "律师-伸懒腰",
-        "img": "./img/e38j41ocibzbk7xuuojtvp7x64ba45c.png",
+        "img": "/resource/c0431cf213caa5c992e05d2a5879377b.png",
         "type": "个性动作",
         "description": "伸懒腰动作，律师专属",
         "repeat": 200
       },
       {
         "name": "前锋-警惕",
-        "img": "./img/ic7bw2zh315eamgq010shsg4m3hqe3p.png",
+        "img": "/resource/933442b4a0c8fa08ab8e39c690dfa1d3.png",
         "type": "个性动作",
         "description": "警惕动作，前锋专属",
         "repeat": 200
       },
       {
         "name": "沉睡的小五郎",
-        "img": "./img/5uagmz8t1vjnfub3xjzfw61gftarjbz.png",
+        "img": "/resource/a231bc970cdd7aa75bcb88290083b7d9.png",
         "type": "随身物品",
         "description": "沉睡的小五郎造型的布偶。\n名侦探柯南联动精华限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "“小黑”",
-        "img": "./img/7bnjim1r7fljopt55w3itsrm0y1u8tb.png",
+        "img": "/resource/8ad114bb5cf61e69fbda4fabf4c0710f.png",
         "type": "随身物品",
         "description": "“小黑”造型的布偶。\n名侦探柯南联动精华限定独特随身物品",
         "repeat": 200
       },
       {
         "name": "少年侦探团徽章",
-        "img": "./img/4a1zs1qs1mixxt7jrjmjp9q0ip467mr.png",
+        "img": "/resource/9b747e8589dbc890e4ac689096b5a756.png",
         "type": "随身物品",
         "description": "少年侦探团的专属徽章。\n名侦探柯南联动精华限定独特随身物品",
         "repeat": 200
@@ -97,154 +97,154 @@
     "C": [
       {
         "name": "蝴蝶结变声器",
-        "img": "./img/8tzfnawqb8g82ex4k97ssb2jfppqjhg.png",
+        "img": "/resource/70487672e5add54d75fd88478f15bc41.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "手表型麻醉枪",
-        "img": "./img/avzlkpzjb23bdnptwl4wb1p0x44p1xr.png",
+        "img": "/resource/74d28831bfd230b5a953bce174839a85.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "犯人追踪眼镜",
-        "img": "./img/tgyykj1ild57yqloh1rqvt17atoekch.png",
+        "img": "/resource/c1117f08104ee1aa05f7f68a58630997.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "第五个幸存者（前篇）",
-        "img": "./img/gxvoe5tr6rj3ec08k6gchihk1qsbceo.png",
+        "img": "/resource/6f091f95e0109f8349c146cc6e067ba1.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "服部平次 Ⅰ",
-        "img": "./img/s11hjrg3km96t7ie2rlls44kx9ug3ki.png",
+        "img": "/resource/13951a1a537aea4fe3024030e3bc2a16.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "工藤新一 Ⅰ",
-        "img": "./img/5198xmsvb89zsivfz54wb5xpnxsxjfe.png",
+        "img": "/resource/2bfd888215766cf0204f999aecc0129f.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "江户川柯南 Ⅰ",
-        "img": "./img/h0f212fbb4iejmtq8dnyvsrszr8vdt9.png",
+        "img": "/resource/af4c236e6505eeadd75f5221fc2a02bd.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "毛利兰 Ⅰ",
-        "img": "./img/eubt4uplfzml5mg5g3sbz4s5z0kd9pz.png",
+        "img": "/resource/7b7f53183927684673ec97bbd95be5ed.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "毛利小五郎 Ⅰ",
-        "img": "./img/4tssbs1u43u1e91w1k63gb7ss1zc9ar.png",
+        "img": "/resource/e4a9c9c92b1569b87d251750896ca3ed.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "灰原哀 Ⅰ",
-        "img": "./img/rxa144konfqrz3vu0umwzd27x68ey8h.png",
+        "img": "/resource/bccc821040e4671a831639f634348155.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "服部平次 Ⅱ",
-        "img": "./img/fcgiq54funz6z07h5kvjleel7kdg8af.png",
+        "img": "/resource/f2b7fbeef8e403f1f95805bea35acfba.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "工藤新一 Ⅱ",
-        "img": "./img/b76hedjd2c1bd65ansjx93ni37bgws7.png",
+        "img": "/resource/38cf90cd717a53dcc836ee1cd33c0a00.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "江户川柯南 Ⅱ",
-        "img": "./img/jl9ftg797ou9x60rnlm5scyfjtwsrx5.png",
+        "img": "/resource/8be84321c78480e5c205072517017b45.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "毛利兰 Ⅱ",
-        "img": "./img/m2irk1k6t6ly7k0gwuory9k8iq6zc03.png",
+        "img": "/resource/38ccb40255db9c865751abbf5f21d368.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "毛利小五郎 Ⅱ",
-        "img": "./img/16qizb0ehmlrqo6055jig0yqnedwg4a.png",
+        "img": "/resource/59e149ab39b649b89ea9cc0e8dde40ed.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "灰原哀 Ⅱ",
-        "img": "./img/jl8csq81qvttecxs0h8o4g1szla7nr6.png",
+        "img": "/resource/8cd52c473085dcb7dadd927578f0af4b.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "一封神秘的预告信",
-        "img": "./img/lisbjecfwlb18ieedzd2nfflh9zxlrk.png",
+        "img": "/resource/a990cdb05a8d6142c2bcc3da64e7a8e3.png",
         "type": "涂鸦",
         "description": "名侦探柯南联动涂鸦（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "灰原哀",
-        "img": "./img/1kftmzsjje18ln7x0m4bpdatb57ej3s.png",
+        "img": "/resource/3e12ec08ecc3f06f63adaad58fdba3c4.png",
         "type": "头像",
         "description": "名侦探柯南联动头像（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "服部平次",
-        "img": "./img/cvd9wsemkaghjngobcg6ts2qzo281vc.png",
+        "img": "/resource/24142dd0397b43970276877bd8035eb5.png",
         "type": "头像",
         "description": "名侦探柯南联动头像（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "毛利小五郎",
-        "img": "./img/mwt5m4jcym4mt6gp7wxp46s72ome5ol.png",
+        "img": "/resource/dd7245443ade4ed79a3be41c8213902a.png",
         "type": "头像",
         "description": "名侦探柯南联动头像（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "“小黑”",
-        "img": "./img/ad5n1ccwrdkogwi3fxrk7z2aqjsvqwl.png",
+        "img": "/resource/16198e4248b5e1de965bb45198d18318.png",
         "type": "头像",
         "description": "名侦探柯南联动头像（名侦探柯南联动限定获得）",
         "repeat": 36
       },
       {
         "name": "毛利兰",
-        "img": "./img/e9hmdmwugbpppgcxd1yx1krxk3xwtdw.png",
+        "img": "/resource/babd89d2e64afcb0ea3d503b087466e0.png",
         "type": "头像",
         "description": "名侦探柯南联动头像（名侦探柯南联动限定获得）",
         "repeat": 36

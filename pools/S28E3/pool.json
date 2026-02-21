@@ -1,7 +1,7 @@
 {
   "id": "S28E3",
   "name": "新枪弹辩驳V3联动精华",
-  "essenceImage": "./img/746xcjnbs7tyb23qty3fudmww57tjvf.png",
+  "essenceImage": "/resource/5666a1028485181ee3e65813d713a147.png",
   "diff_A": 0,
   "initialCurrencies": {
     "inspiration": 100000,
@@ -21,7 +21,7 @@
   ],
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "type": "通用货币"
   },
   "pitySettings": {
@@ -33,7 +33,7 @@
     "S": [
       {
         "name": "赤松枫",
-        "img": "./img/ho53wdnv9ltqclzrpe7148fo5cl2q7e.png",
+        "img": "/resource/8156e2130dd491d4558b53d33e1d1bec.png",
         "type": "时装",
         "description": "“超高中级的钢琴家”，之所以弹钢琴，是想看到别人的笑容。\n新枪弹辩驳V3联动精华限定稀世时装",
         "repeat": 2000
@@ -42,21 +42,21 @@
     "A": [
       {
         "name": "最原终一",
-        "img": "./img/k0bfdzcrxg4plxnz40cz888ni4vi20g.png",
+        "img": "/resource/e8168312065fd1439ba3d402da606bc0.png",
         "type": "时装",
         "description": "“超高中级的侦探”，虽然他经常表现出胆怯的言论，但他的行动力和洞察力令人瞩目。\n新枪弹辩驳V3联动精华限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "王马小吉",
-        "img": "./img/pgot12ru5zf1plb5wylf7c62defdn3a.png",
+        "img": "/resource/9e6e1bc876730c351e96a0e68328070f.png",
         "type": "时装",
         "description": "“超高中级的首脑”，自称是个说谎者，经常随意说出一些想法，或者假装哭泣，是一个相当难以捉摸的人物。\n新枪弹辩驳V3联动精华限定奇珍时装",
         "repeat": 1000
       },
       {
         "name": "入间美兔",
-        "img": "./img/lwgt32nsabt54adowy7dl9nvfr2eidn.png",
+        "img": "/resource/e47ba32cd2c215253f55552691af48ba.png",
         "type": "时装",
         "description": "“超高中级的发明家”，能做出各种各样神奇的发明。经常会说出一些令人意想不到的发言。\n新枪弹辩驳V3联动精华限定奇珍时装",
         "repeat": 1000
@@ -65,49 +65,49 @@
     "B": [
       {
         "name": "26号守卫-黑白熊仔出击！",
-        "img": "./img/ctk0jc215gelyyjw959w70y27f3dohm.png",
+        "img": "/resource/ef96305c7f5bb9f8b6b3abdc67e274e7.png",
         "type": "个性动作",
         "description": "黑白熊仔出击！26号守卫专属（枪弹辩驳联动限定获得）",
         "repeat": 200
       },
       {
         "name": "记者-击掌",
-        "img": "./img/5noi9l9avcwukbxtzts7dllpv2misct.png",
+        "img": "/resource/79b3dc73f67df1adfbfe3b95c6a2e221.png",
         "type": "个性动作",
         "description": "击掌动作，记者专属（枪弹辩驳联动限定获得）",
         "repeat": 200
       },
       {
         "name": "小说家-扶额",
-        "img": "./img/deecejjehfxyziax5j4c1qd8185ba3c.png",
+        "img": "/resource/e65051f1dca0557f3adc4b2e20c155fb.png",
         "type": "个性动作",
         "description": "扶额，小说家专属（枪弹辩驳联动限定获得）",
         "repeat": 200
       },
       {
         "name": "杂技演员-大笑",
-        "img": "./img/glxi2krh215faxqvlv0o2mu0ebofhd0.png",
+        "img": "/resource/50008571fbca2024cd00eaaa48992c0a.png",
         "type": "个性动作",
         "description": "大笑动作，杂技演员专属（枪弹辩驳联动限定获得）",
         "repeat": 200
       },
       {
         "name": "玩具商-转圈圈",
-        "img": "./img/jm28wkk27k18ngzyrz2juk4ql9p7bro.png",
+        "img": "/resource/bb926ffe40858ea3a3c0a26c81eec2d7.png",
         "type": "个性动作",
         "description": "转圈圈动作，玩具商专属（枪弹辩驳联动限定获得）",
         "repeat": 200
       },
       {
         "name": "“囚徒”-天降？？？",
-        "img": "./img/kqkq0a6rt1t3mdu08lsqfq09y2fw9p7.png",
+        "img": "/resource/5b1a7832039680f1bdd6aaf59cf0a69c.png",
         "type": "个性动作",
         "description": "天降？？？动作，“囚徒”专属（枪弹辩驳联动限定获得）",
         "repeat": 200
       },
       {
         "name": "黑白熊",
-        "img": "./img/5t9ejhmhvmqll0ynthwvdbbe5ez9g7u.png",
+        "img": "/resource/dea13615f6740243e6eff391ac39e276.png",
         "type": "头像框",
         "description": "枪弹辩驳联动头像框(枪弹辩驳联动限定获得)",
         "repeat": 200
@@ -116,147 +116,147 @@
     "C": [
       {
         "name": "黑白太郎",
-        "img": "./img/0zzw2u1f0t2ke9roryqq10waeoklbf3.png",
+        "img": "/resource/b4fad191f651bf393ef8ce26686c91ba.png",
         "type": "涂鸦",
         "description": "黑白太郎涂鸦（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "黑白基德",
-        "img": "./img/k0qbx3kz4pvxobv2sb65zz5qdbdxthh.png",
+        "img": "/resource/6d85f559f5e466e54d898cac435489fa.png",
         "type": "涂鸦",
         "description": "黑白基德涂鸦（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "黑白之介",
-        "img": "./img/aek75xdu9p09yoakkz118yuoqafz23r.png",
+        "img": "/resource/31de7f644404701a5c12d533435630ba.png",
         "type": "涂鸦",
         "description": "黑白之介涂鸦（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "黑白芬妮",
-        "img": "./img/4j3afwf4ozbjhgsoemn0wjad6xpo1e7.png",
+        "img": "/resource/ee0b974a8a336ae53bfa877ede8c153b.png",
         "type": "涂鸦",
         "description": "黑白芬妮涂鸦（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "黑白弹",
-        "img": "./img/4ymh7b7av6pl9atj10vc4xoi7ha2pbs.png",
+        "img": "/resource/58fe097696e1198c4172701458e313b2.png",
         "type": "涂鸦",
         "description": "黑白弹涂鸦（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "最原终一",
-        "img": "./img/2o6u8nvlor1qim48xzijyfhp1fadc7x.png",
+        "img": "/resource/4294810b869a15c9f31c54d5aed75fad.png",
         "type": "头像",
         "description": "超高中级的侦探，枪弹辩驳联动头像（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "百田解斗",
-        "img": "./img/3cjv5tw0ltjrkjb43fl9j0gt5srux3c.png",
+        "img": "/resource/b03ec90681bafc17b021f869dcdf1e16.png",
         "type": "头像",
         "description": "超高中级的航天员，枪弹辩驳联动头像（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "星龙马",
-        "img": "./img/fhx8pfj6dk4w0vp0jcn7ihq8kca322k.png",
+        "img": "/resource/1d7fe08a4a75f0cc987c5a8fb0af0c91.png",
         "type": "头像",
         "description": "超高中级的网球选手，枪弹辩驳联动头像（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "天海兰太郎",
-        "img": "./img/i3f89wtrt5sv4f390wdloy92hih67h5.png",
+        "img": "/resource/37ef09da6ccb254fb61fafb4373fe06f.png",
         "type": "头像",
         "description": "超高中级的？？？，枪弹辩驳联动头像（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "狱原权太",
-        "img": "./img/2bkekiy4qqw5wybbs6o2duok6u3rtbh.png",
+        "img": "/resource/da8b89d8ea8cbbfab3cba85fa999113a.png",
         "type": "头像",
         "description": "超高中级的昆虫博士，枪弹辩驳联动头像（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "王马小吉",
-        "img": "./img/a30hsw9d5riqa5gcqicshrybvjfp7b6.png",
+        "img": "/resource/6bcec0a6ae8cabf32a9c38567cb5d66c.png",
         "type": "头像",
         "description": "超高中级的首脑，枪弹辩驳联动头像（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "真宫寺是清",
-        "img": "./img/44lekt4yeyudcholw4zdbdg9hbhj08b.png",
+        "img": "/resource/67e4554c61a6ee0adafb02674618df07.png",
         "type": "头像",
         "description": "超高中级的民俗学家，枪弹辩驳联动头像（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "机望",
-        "img": "./img/956sp9cxub0t0rmze955bj2hv1fnxzc.png",
+        "img": "/resource/d2f6f29ce2c4da552564c2499cfb7ffc.png",
         "type": "头像",
         "description": "超高中级的机器人，枪弹辩驳联动头像（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "东条斩美",
-        "img": "./img/p5tfns6xrt82s6wm25t3qpd35gtwti6.png",
+        "img": "/resource/0a566dd9323620fc5c5792d8572b9515.png",
         "type": "头像",
         "description": "超高中级的女仆，枪弹辩驳联动头像（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "梦野秘密子",
-        "img": "./img/0yit4izodyxdk04l2wj06ut6qezsz5f.png",
+        "img": "/resource/91a5c867fa93d10b55ceea660d154ae0.png",
         "type": "头像",
         "description": "超高中级的魔术师，枪弹辩驳联动头像（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "春川魔姫",
-        "img": "./img/tdfayv9m104hcqwp62lrw7kbol4de6m.png",
+        "img": "/resource/31c192fc9c38cc2ae18c7e36534b615e.png",
         "type": "头像",
         "description": "超高中级的保姆，枪弹辩驳联动头像（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "茶柱转子",
-        "img": "./img/g7dra3omzz39hi634lkmy9heraafiv0.png",
+        "img": "/resource/287e7f1c7e63ec39783ce7112cb61652.png",
         "type": "头像",
         "description": "超高中级的合气道家，枪弹辩驳联动头像（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "白银纺",
-        "img": "./img/llfh2x71n1w2z5casfkbsqtspj4ss5y.png",
+        "img": "/resource/7e1b783a0fd3679baeb4fe97d7d15b45.png",
         "type": "头像",
         "description": "超高中级的角色扮演家，枪弹辩驳联动头像（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "夜长安琪",
-        "img": "./img/d0fkyr26etc1zfpl7047q5n6b1h0g7y.png",
+        "img": "/resource/f0c91ba4f0c23ca6e18f65202e53c210.png",
         "type": "头像",
         "description": "超高中级的美术社员，枪弹辩驳联动头像（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "入间美兔",
-        "img": "./img/c281yscftl0bdgmq5g9vxzgmkb8l46a.png",
+        "img": "/resource/06a9ca1527489cc750524024130598e3.png",
         "type": "头像",
         "description": "超高中级的发明家，枪弹辩驳联动头像（枪弹辩驳联动限定获得)",
         "repeat": 36
       },
       {
         "name": "赤松枫",
-        "img": "./img/nmmgyw5ok1lx7f9371a5l56htkd72gs.png",
+        "img": "/resource/06a42bdb31696c810b590196066daeda.png",
         "type": "头像",
         "description": "超高中级的钢琴家，枪弹辩驳联动头像（枪弹辩驳联动限定获得)",
         "repeat": 36

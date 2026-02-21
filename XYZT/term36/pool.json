@@ -1,82 +1,82 @@
 {
   "id": "lucky_dice_36",
   "name": "幸运之骰·第36期",
-  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
   "description": "幸运之骰",
   "completeDrawLimit": 200,
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "conversionRate": 50
   },
   "items": {
     "贝克街221B号": {
       "type": "头像框",
       "rarity": "B",
-      "img": "./img/70ol0t05updalh1sqult2ha85m05320.png",
+      "img": "/resource/2a368037d96d040935324ccd0ab6d38d.png",
       "description": "柯南·道尔联动头像框",
       "repeat": 200
     },
     "“华生小姐”": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/68mi5627fw8mjifr07w9elv7amyqqo2.png",
+      "img": "/resource/289ce26c57feacbc60f45954a3e28366.png",
       "description": "柯南·道尔联动头像",
       "repeat": 6
     },
     "福尔摩斯": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/mn776imtmj0m19mmwdqyod8hmlt89rm.png",
+      "img": "/resource/20846b8ebbc7d8debefb7f97d14e0482.png",
       "description": "柯南·道尔联动头像",
       "repeat": 6
     },
     "华生医生": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/hpbbwfz7le8hk6bpyd82zl0vyjpy4bv.png",
+      "img": "/resource/2069855156430047cffb6570854bb249.png",
       "description": "柯南·道尔联动头像",
       "repeat": 6
     },
     "艺术品商人": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/qucdlkiebvfpkptbsuma9qmuuui2dbp.png",
+      "img": "/resource/35045692a86068ca643473d5c57ae47e.png",
       "description": "柯南·道尔联动头像",
       "repeat": 6
     },
     "雷斯垂德探长": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/owx4xghpxfzy51wuaxojrm730arvpsj.png",
+      "img": "/resource/b9d240a46c02b5e8dee49dec8c45b0fa.png",
       "description": "柯南·道尔联动头像",
       "repeat": 6
     },
     "通用奇珍时装体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
       "description": "限时体验",
       "repeat": 27
     },
     "监管者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
       "description": "限时体验",
       "repeat": 10
     },
     "求生者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
       "description": "限时体验",
       "repeat": 10
     },
     "通用独特时装体验卡*1天": {
       "type": "临时装扮",
       "rarity": "D",
-      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
       "description": "限时体验",
       "repeat": 10
     }

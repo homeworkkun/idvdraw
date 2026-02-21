@@ -1,0 +1,95 @@
+{
+  "id": "JYXB15",
+  "name": "鉴影寻宝第15期",
+  "description": "火漆消耗型池子",
+  "essenceImage": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+  "pitySettings": {
+    "gold": 80,
+    "purple": 80,
+    "blue": 80
+  },
+  "items": {
+    "A": [
+      {
+        "name": "清洁翼",
+        "type": "时装",
+        "img": "/resource/9bc03d14da8f9414988143173cb8099b.png",
+        "description": "拂过面颊的微风不曾吹动云雾，她将希望寄托在手中透明的薄翼上，期望它能够带她穿过这片灰沉的天际。"
+      },
+      {
+        "name": "狰",
+        "type": "时装",
+        "img": "/resource/60e3102941eb37595f6cac360611b681.png",
+        "description": "倘若真理所存在的世界疯狂、没人性，那我会选择舍弃掉仅剩的理智。"
+      },
+      {
+        "name": "曼陀罗",
+        "type": "时装",
+        "img": "/resource/05e700c2b32f3df814fd48b90f7b8bea.png",
+        "description": "曼陀罗——她被赐予的花名叫曼陀罗，一个沉睡在黑暗中的边缘人物。或许一点鲜血的灌溉，花中的精灵才能被唤醒……"
+      },
+      {
+        "name": "笼中之蝶",
+        "type": "时装",
+        "img": "/resource/57cb00fec8703718833f4473bd41a85c.png",
+        "description": "她很喜欢《蝴蝶夫人》中那位纯真的东方女性，以为自己会寻到比之更为真挚的爱情，但未料自己的命运更是惨淡——汪洋吞噬了她的水手，也吞噬了她的一切。"
+      },
+      {
+        "name": "湖中影",
+        "type": "时装",
+        "img": "/resource/25700b45432f617c225313bde6c720e2.png",
+        "description": "当阿瓦隆的生灵被新的战争吞噬时，湖畔传来急切的哨音，他从不怀疑，来者映在湖面的那双眼眸，依旧会保持澄澈和清明。"
+      },
+      {
+        "name": "矿业董事",
+        "type": "时装",
+        "img": "/resource/fc59002f7403f013d0a416160ec76f8a.png",
+        "description": "幸运又成功的主角背后，总少不了更多愚蠢又失败的配角。"
+      },
+      {
+        "name": "罗刹绯春",
+        "type": "时装",
+        "img": "/resource/853ffe518d5c1ba1bd3b95acc2ca0f38.png",
+        "description": "娇艳和甜美也能成为武器，毕竟不是所有人都记得冰原上无法绽放玫瑰"
+      },
+      {
+        "name": "游隼",
+        "type": "时装",
+        "img": "/resource/d43830ca57cfd9f344883a3c15832656.png",
+        "description": "他是在大漠中游荡的猎人，除了黄沙和狂风，无人知道他的来处。"
+      },
+      {
+        "name": "KNIGHT-c3",
+        "type": "时装",
+        "img": "/resource/c90ba2c1b7af1d95d31c6ede29a6172b.png",
+        "description": "那些侥幸越过的危难，总会在你最脆弱时复返。"
+      },
+      {
+        "name": "纸皇后",
+        "type": "时装",
+        "img": "/resource/192eb8939767c8ccf77c3d0808f3890f.png",
+        "description": "一切美好的愿望，都有有效期，如同这些纸愿，一时穿风破雨，最终都是尘封入海。"
+      }
+    ],
+    "B": [
+      {
+        "name": "碎片*10",
+        "type": "碎片",
+        "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+        "description": "碎片"
+      }
+    ],
+    "C": [
+      {
+        "name": "线索*10",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "线索"
+      }
+    ]
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png"
+  }
+}

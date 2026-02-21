@@ -1,75 +1,75 @@
 {
   "id": "lucky_dice_10",
   "name": "幸运之骰·第10期",
-  "essenceImage": "./img/35umgwigukzywpwivmxicue3dun05gm.png",
+  "essenceImage": "/resource/bea8d406e5e9c735a2b8b96216f07635.png",
   "description": "幸运之骰",
   "completeDrawLimit": 200,
   "fragmentsInfo": {
     "name": "碎片",
-    "img": "./img/417bhrchsnd048x8yuxf62mrmmp6l1p.png",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
     "conversionRate": 50
   },
   "items": {
     "武装侦探社": {
       "type": "头像框",
       "rarity": "B",
-      "img": "./img/oktmpndcz7519kq4jxalvczihc13xq3.png",
+      "img": "/resource/da5cecf7062a9c6d22910d834308bc82.png",
       "description": "文豪野犬联动头像框(文豪野犬联动限定获得) ",
       "repeat": 200
     },
     "中岛敦": {
       "type": "头像",
       "rarity": "C",
-      "img": "./img/103jiim7bs0r4rwhpsfswru0dz0hnd6.png",
+      "img": "/resource/b5054e46ca998eceb96626b16cf38d8c.png",
       "description": "文豪野犬联动活动头像（文豪野犬联动限定获得） ",
       "repeat": 6
     },
     "中岛敦Ⅰ": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/a43y7gqykavmz6e8ohwr87lcsgdoqur.png",
+      "img": "/resource/be16f10912683725e3ebf5d14e87a70f.png",
       "description": "文豪野犬联动涂鸦（文豪野犬联动限定获得) ",
       "repeat": 6
     },
     "中岛敦Ⅱ": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/45qcthvlh2w9hx8x6ot9carj2c01inf.png",
+      "img": "/resource/331b6f12e47dc460a2f3a739d6694a08.png",
       "description": "文豪野犬联动涂鸦（文豪野犬联动限定获得) ",
       "repeat": 6
     },
     "《文豪野犬》": {
       "type": "涂鸦",
       "rarity": "C",
-      "img": "./img/1vr2fyoo1azpw6pol0i2qh4he73ca5h.png",
+      "img": "/resource/4e2167a9aeb0a6e8cf45725c430ad563.png",
       "description": "文豪野犬联动涂鸦（文豪野犬联动限定获得) ",
       "repeat": 6
     },
     "通用奇珍时装体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/p9ltpby4mnrph23jzct8bgrolhv7txn.png",
+      "img": "/resource/eafea403c0590a8c7a9b16dfa87b3c6e.png",
       "description": "限时体验",
       "repeat": 27
     },
     "监管者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/ipg383lraeqa8g0gr5kapbkt23ny3lf.png",
+      "img": "/resource/9cd89200958114b6534bfd9a8422a500.png",
       "description": "限时体验",
       "repeat": 10
     },
     "求生者角色体验卡*1天": {
       "type": "体验卡",
       "rarity": "D",
-      "img": "./img/oszm8fggwavbw04eww9nbnnx4zrnbrc.png",
+      "img": "/resource/ff761dbfbc07ff462a5fcd8b182ea61c.png",
       "description": "限时体验",
       "repeat": 10
     },
     "通用独特时装体验卡*1天": {
       "type": "临时装扮",
       "rarity": "D",
-      "img": "./img/e4anczhts5xe24z771w7nx5s6hwm4ss.png",
+      "img": "/resource/3a6bf597b5cc3e1e103b13570f940efa.png",
       "description": "限时体验",
       "repeat": 10
     }

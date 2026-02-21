@@ -1,0 +1,109 @@
+{
+  "id": "JYXB3",
+  "name": "鉴影寻宝第3期",
+  "description": "火漆消耗型池子（旧机制）",
+  "essenceImage": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+  "pitySettings": {
+    "gold": 80,
+    "purple": 80,
+    "blue": 80
+  },
+  "items": {
+    "A": [
+      {
+        "name": "思明",
+        "type": "时装",
+        "img": "/resource/d6c5dfcb9ee8b48d7e62dc593b5dec82.png",
+        "description": "他愿去寻找新的路，即使要为此毁去旧的"
+      },
+      {
+        "name": "校监夫人",
+        "type": "时装",
+        "img": "/resource/c5d7b0b3eccc7be723700ec3389c3c6c.png",
+        "description": "静默，有时才是最忠诚的守护。"
+      },
+      {
+        "name": "不愿醒来的女孩",
+        "type": "时装",
+        "img": "/resource/d29edcdd16b3c96b261a8af219a69abe.png",
+        "description": "要多大的勇气，才能走出梦中的永无乡。"
+      },
+      {
+        "name": "“向导”",
+        "type": "时装",
+        "img": "/resource/274b6c9f0055a5577410e23b40c27a0c.png",
+        "description": "如果说是那个被我视作“母亲”的人，将我推入那不该属于我的命运。那又是谁，将她的“命运”，导向这被诅咒的密林。"
+      }
+    ],
+    "B": [
+      {
+        "name": "迷失之皮",
+        "type": "时装",
+        "img": "/resource/b4fb959b4fe68d3e87c855e2be7b8297.png",
+        "description": "眼看着恶汇聚成一切的源头，她才意识到那些曾替他们祈求的胜利，也是在对他们自己降下的诅咒。"
+      },
+      {
+        "name": "咸沙",
+        "type": "时装",
+        "img": "/resource/724fa7c3202ad567a270dbed403d546c.png",
+        "description": "拙劣的作品不应当玷污神圣的艺术殿堂，于是她毁了它们，阻止了这场灾难的发生。"
+      },
+      {
+        "name": "棒棒糖",
+        "type": "时装",
+        "img": "/resource/53108ee050b6a44cd1109d3d572ad0f1.png",
+        "description": "曾经一起冒险的小伙伴，还能再找回你吗？"
+      },
+      {
+        "name": "暴投",
+        "type": "时装",
+        "img": "/resource/73bb6c759f219842c35282024a144e0c.png",
+        "description": "九局下半，投手准备"
+      },
+      {
+        "name": "海螺",
+        "type": "随身物品",
+        "img": "/resource/dc8a2d5c3804bd26edde35087d6096b5.png",
+        "description": "传说中有只海螺能起死回生，永驻容颜，是无数人渴求的珍宝，而这只连普通的光泽都失去了。"
+      },
+      {
+        "name": "太极镜",
+        "type": "随身物品",
+        "img": "/resource/622a7bc5e82128be1edeb0f03c6398e3.png",
+        "description": "事物的两面性总是容易被人忽略，或是被人夸大。"
+      },
+      {
+        "name": "栗子糕",
+        "type": "随身物品",
+        "img": "/resource/85ed809f1c286cd4584df26ef6fae362.png",
+        "description": "对自然食材，品鉴和培育同样重要!"
+      },
+      {
+        "name": "瓶中的萤火虫",
+        "type": "随身物品",
+        "img": "/resource/d327950fd24a40c1f91a41842bf76ffa.png",
+        "description": "佣兵深知战争的残酷，他知道最难能可贵的是明白这一切，依然对世界充满希望。"
+      }
+    ],
+    "C": [
+      {
+        "name": "碎片*88",
+        "type": "碎片",
+        "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+        "description": "碎片"
+      }
+    ],
+    "D": [
+      {
+        "name": "线索*88",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "线索"
+      }
+    ]
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png"
+  }
+}

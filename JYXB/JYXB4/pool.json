@@ -1,0 +1,109 @@
+{
+  "id": "JYXB4",
+  "name": "鉴影寻宝第4期",
+  "description": "火漆消耗型池子（旧机制）",
+  "essenceImage": "/resource/f446bcf698a56f61d326864643ec03d0.png",
+  "pitySettings": {
+    "gold": 80,
+    "purple": 80,
+    "blue": 80
+  },
+  "items": {
+    "A": [
+      {
+        "name": "安魂曲",
+        "type": "时装",
+        "img": "/resource/07de8901bc308d1ed2b932a695172903.png",
+        "description": "他早已用那把银色的镰刀，斩断与过去所有关联。"
+      },
+      {
+        "name": "罗刹绯春",
+        "type": "时装",
+        "img": "/resource/853ffe518d5c1ba1bd3b95acc2ca0f38.png",
+        "description": "娇艳和甜美也能成为武器，毕竟不是所有人都记得冰原上无法绽放玫瑰"
+      },
+      {
+        "name": "电解",
+        "type": "时装",
+        "img": "/resource/4981cda0e095440f39e75db91cade160.png",
+        "description": "他利用科学和炼金术之间的微妙关系，完成了“点石成金”的表演，却不知真正的点金石只是美化代价的谎言。"
+      },
+      {
+        "name": "蓝调阿拉丁",
+        "type": "时装",
+        "img": "/resource/d7b239ed506dcfd82c0ea9a8d2004079.png",
+        "description": "《一千零一夜》的故事可是许多奇怪把戏的灵感之源，这次蓝调的异国风情会带来好运么?"
+      }
+    ],
+    "B": [
+      {
+        "name": "红心王后",
+        "type": "时装",
+        "img": "/resource/595ac4ec39f546c73abfe061d03c64f7.png",
+        "description": "“砍掉他的头!”"
+      },
+      {
+        "name": "塞壬",
+        "type": "时装",
+        "img": "/resource/4a368d77bdd17ce1403133dcbf11ab4b.png",
+        "description": "被白魔法巫师们关押在禁林里的女巫，美艳多情，善以歌声惑人心智。这次的战争也许是地唯一逃出去投奔旧主的机会，她需要做些准备"
+      },
+      {
+        "name": "巫医",
+        "type": "时装",
+        "img": "/resource/2cf56d3c5cb91a7144c55b20909b4b44.png",
+        "description": "一定会有数不清的人会在这场战争中受伤，她得抓紧时间提前做些准备。善良年轻的巫医，不知为何每到月圆之夜总会消失一段时间"
+      },
+      {
+        "name": "雅典自由民",
+        "type": "时装",
+        "img": "/resource/8772170daddcca19fbeee29d9f75d5e9.png",
+        "description": "这座城市就像众神的玩具盒，精美绝伦，却只为了困住身为傀儡的我们"
+      },
+      {
+        "name": "黄金号角",
+        "type": "随身物品",
+        "img": "/resource/3666dcdc5c467eb6155b33b130f495ce.png",
+        "description": "他将自己最亲密伙伴唯一的留存之物，制成了这个金色的号角。"
+      },
+      {
+        "name": "古典配枪",
+        "type": "随身物品",
+        "img": "/resource/22402d2e9b51b010d62939f01c5cc4c9.png",
+        "description": "空军自入伍时便随身携带的配枪，即便没有什么特别的用处，她也相信这个老伙计会给自己带来一点好运"
+      },
+      {
+        "name": "幸运转盘",
+        "type": "随身物品",
+        "img": "/resource/df2865ca14d7e290688a52a543c88012.png",
+        "description": "相信运气也是一种实力的人－－说真的，他的实力也太宽泛了"
+      },
+      {
+        "name": "墨镜",
+        "type": "随身物品",
+        "img": "/resource/315a38ff53657fd70ee8dcc2da01e39a.png",
+        "description": "墨镜下的眼眸失去了光明，但没有失去信念。"
+      }
+    ],
+    "C": [
+      {
+        "name": "碎片*88",
+        "type": "碎片",
+        "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png",
+        "description": "碎片"
+      }
+    ],
+    "D": [
+      {
+        "name": "线索*88",
+        "type": "线索",
+        "img": "/resource/fc5a55c488fae00f1e606f5b9e33f349.png",
+        "description": "线索"
+      }
+    ]
+  },
+  "fragmentsInfo": {
+    "name": "碎片",
+    "img": "/resource/abb5919fc5926eb8e2da46469ff98487.png"
+  }
+}
